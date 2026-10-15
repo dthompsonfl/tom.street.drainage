@@ -1,0 +1,15 @@
+{
+ "path": "00_CONTROL/SYSTEM_RAW/acclaim_name_Builders_Holiday_20261015T235305Z.html",
+ "bytes": 46217,
+ "sha256": "1f36f66988f09112ef50423d4cec36431685f84571cb7a4790dfef201ca4cea2",
+ "url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeName",
+ "retrieved_utc": "2026-10-15T23:53:05.019598+00:00",
+ "displaying": null,
+ "total": null,
+ "released_through": "10/07/2026",
+ "query": {
+  "SearchOnName": "Builders, Holiday",
+  "Both": "Both"
+ },
+ "rows": []
+}

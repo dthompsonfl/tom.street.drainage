@@ -1,0 +1,5 @@
+agency_custodian,contact,record_category,requested,obtained,file_path,source_url,status,barriers,notes
+Santa Rosa County Property Appraiser,info@srcpa.gov,Parcel records for 2264/2265/2266/2268 Tom St,yes,no,,https://srcpa.gov/search,in_progress,Need to extract parcel IDs and details,
+Santa Rosa County Clerk of Court (Acclaim),https://acclaim.srccol.com,Recorded documents/deeds/plats,yes,no,,https://acclaim.srccol.com/AcclaimWeb/,in_progress,Requires targeted search by parcel/legal,
+Santa Rosa County Development Services,developmentservices@santarosa.fl.gov,Permits/building/grading,yes,no,,https://www.santarosa.fl.gov/149/Development-Services,in_progress,Check MyGovernmentOnline/MGO,
+Santa Rosa County GIS,GISTeam@santarosa.fl.gov,GIS layers/maps/data,yes,no,,https://www.santarosa.fl.gov/470/Mapping-GIS,in_progress,Check Open Data site,

@@ -1,0 +1,6 @@
+search_id,timestamp,search_terms,database_url,results_count,found_useful,notes
+SRCH-001,2026-10-15T23:24:00Z,"2265 Tom Street Navarre FL",https://www.google.com/search,10,yes,Found parcel 21-2S-26-0780-0QQ00-1180; built 2015; sold 2015
+SRCH-002,2026-10-15T23:24:00Z,"2268 Tom Street Navarre FL parcel",https://www.google.com/search,10,yes,Confirmed parcel 21-2S-26-0780-0QQ00-1060; 2026 under construction
+SRCH-003,2026-10-15T23:24:00Z,"2266 Tom Street Navarre FL parcel",https://www.google.com/search,10,partial,Need to resolve 2264 vs 2266; listings show nearby properties
+SRCH-004,2026-10-15T23:24:00Z,"2264 Tom Street Navarre FL parcel",https://www.google.com/search,10,partial,Search yielded related listings; need official PA/Clerk confirmation
+SRCH-005,2026-10-15T23:34:00Z,"2264 Tom St Navarre FL parcel",https://www.google.com/search,10,partial,Parcel not obvious from web snippets - need official PA lookup

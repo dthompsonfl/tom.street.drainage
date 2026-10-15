@@ -1,0 +1,2 @@
+evidence_id,file_path,sha256_hash,description,source_id,acquired_date,verified
+EV-001,/home/dylan/Tom-Street-Drainage-Investigation/02_PROPERTY_AND_PARCELS/PARCEL_SUMMARY.csv,SHA256_PENDING,Parcel summary with verified info,SRC-001,2026-10-15,web

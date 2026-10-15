@@ -1,0 +1,29 @@
+[
+ {
+  "parcelNumber": "21-2S-26-0780-0QQ00-1020",
+  "idSection": "21",
+  "idTownship": "2S",
+  "idRange": "26",
+  "idSubdivision": "0780",
+  "idBlock": "0QQ00",
+  "idLot": "1020",
+  "zoning": "R2M",
+  "situsAddress1": "2264 TOM ST",
+  "situsAddress2": null,
+  "situsCity": "NAVARRE",
+  "situsZip5": "32566",
+  "vacantImproved": "I",
+  "subdivisionName": "CRESCENT SHORES (00780)",
+  "ownerName": "HOLIDAY BUILDERS INC",
+  "homestead": "N",
+  "mailingName": "HOLIDAY BUILDERS INC",
+  "mailingAddress1": null,
+  "mailingAddress2": "2293 W EAU GALLIE BLVD",
+  "mailingAddress3": null,
+  "mailingCity": "MELBOURNE",
+  "mailingState": "FL",
+  "mailingZip5": "32935",
+  "mailingZip4": "3184",
+  "mailingCountry": null
+ }
+]

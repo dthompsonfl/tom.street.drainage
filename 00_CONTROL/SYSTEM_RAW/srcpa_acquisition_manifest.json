@@ -1,0 +1,59 @@
+[
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/RAW_HTTP/srcpa_property_query_street_TOM_NAVARRE.json",
+  "bytes": 30110,
+  "sha256": "68d4485e9aad479b47915a327f7e78630e43a7921c46fe14e2c4788c758a1341",
+  "retrieved_utc": "2026-10-15T23:56:55.097821+00:00",
+  "source_url": "https://search.srcpa.gov/property/query",
+  "query": "street=TOM city=NAVARRE",
+  "result_count": 123
+ },
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/2264_Tom_St/srcpa_property_query_parcel_21-2S-26-0780-0QQ00-1020.json",
+  "bytes": 262,
+  "sha256": "6d27eae4f5d4c6bcca2b2019af8f73fd272c663477cb269c99dc0fbc6c67d4b9",
+  "retrieved_utc": "2026-10-15T23:56:55.160508+00:00",
+  "source_url": "https://search.srcpa.gov/property/query",
+  "query": "parcelId=21-2S-26-0780-0QQ00-1020"
+ },
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/2264_Tom_St/srcpa_property_record_21-2S-26-0780-0QQ00-1020.json",
+  "bytes": 717,
+  "sha256": "abaf4fc25d03bb3f288197ff6c40aef9f45619fbbfaec239ef54a8a3be9da2fd",
+  "retrieved_utc": "2026-10-15T23:56:55.231258+00:00",
+  "source_url": "https://search.srcpa.gov/property/export/selected",
+  "query": "parcel=10082028 format=json"
+ },
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/2268_Tom_St/srcpa_property_query_parcel_21-2S-26-0780-0QQ00-1490.json",
+  "bytes": 262,
+  "sha256": "6f5f8b53fd625180594c9d1c7ae4ea548af6320103e95ac346494548b24631ac",
+  "retrieved_utc": "2026-10-15T23:56:56.796921+00:00",
+  "source_url": "https://search.srcpa.gov/property/query",
+  "query": "parcelId=21-2S-26-0780-0QQ00-1490"
+ },
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/2268_Tom_St/srcpa_property_record_21-2S-26-0780-0QQ00-1490.json",
+  "bytes": 717,
+  "sha256": "a30caebe5ffce59e3d07f750fc5b5a735542178f8f879e4806894ddd1a5d8405",
+  "retrieved_utc": "2026-10-15T23:56:56.864557+00:00",
+  "source_url": "https://search.srcpa.gov/property/export/selected",
+  "query": "parcel=10082068 format=json"
+ },
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/2265_Tom_St/srcpa_property_query_parcel_21-2S-26-0780-0QQ00-1180.json",
+  "bytes": 268,
+  "sha256": "e33f8e43b03fab2746d0984b6859f4c53d37b57cb298c4d0afa7535408fa96a4",
+  "retrieved_utc": "2026-10-15T23:56:58.436904+00:00",
+  "source_url": "https://search.srcpa.gov/property/query",
+  "query": "parcelId=21-2S-26-0780-0QQ00-1180"
+ },
+ {
+  "relative_path": "02_PROPERTY_AND_PARCELS/2265_Tom_St/srcpa_property_record_21-2S-26-0780-0QQ00-1180.json",
+  "bytes": 723,
+  "sha256": "a5912add230af8770a8e5a523c12e912401cdcdf531b856e4882815ecb39abb8",
+  "retrieved_utc": "2026-10-15T23:56:58.523447+00:00",
+  "source_url": "https://search.srcpa.gov/property/export/selected",
+  "query": "parcel=10082042 format=json"
+ }
+]
