@@ -1,0 +1,30 @@
+{
+  "retrieved_utc": "2026-10-16T07:08:10.096502+00:00",
+  "custodian": "Santa Rosa County Florida",
+  "acquisition_status": "PARTIAL_OR_NONE_PUBLIC_PDF_ACQUISITION",
+  "documents": [
+    {
+      "document_id": "SANTA_ROSA_WATERSHED_MASTER_PLAN_PUBLIC_DRAFT",
+      "original_url": "https://www.santarosa.fl.gov/DocumentCenter/View/9834/Santa_Rosa_County_Watershed_Master_Plan_Final_Draft",
+      "original_status": "ORIGINAL_COUNTY_PDF_CAPTURED_AND_STRUCTURALLY_VERIFIED",
+      "notes": "Public draft document; its publication and county adoption/final status must be distinguished.",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS/Santa_Rosa_County_Watershed_Master_Plan_Public_Draft.pdf",
+      "sha256": "f9c6264d2eab32fe3f0d25ee915aeff0f8eab71405f8823929aaa7be69efd166",
+      "bytes": 42882064,
+      "pages": 336
+    },
+    {
+      "document_id": "EAST_NAVARRE_WATERSHED_STUDY_AREA_MAP",
+      "original_url": "https://www.santarosa.fl.gov/DocumentCenter/View/8573/Overall-Study-Area-East-Navarre-Watershed",
+      "original_status": "NOT_OBTAINED",
+      "notes": "Official study-area map; not the hydrologic/hydraulic model or final report.",
+      "error": "AssertionError: "
+    }
+  ],
+  "limitations": [
+    "Study-area mapping cannot establish site-specific hydrologic model inclusion without geospatial verification.",
+    "Watershed master plan may be a draft; adopted status is not established by file title.",
+    "Regional studies are not an approved lot-grading plan or pipe as-built.",
+    "Document structural validation does not prove the contents were fully reviewed."
+  ]
+}
