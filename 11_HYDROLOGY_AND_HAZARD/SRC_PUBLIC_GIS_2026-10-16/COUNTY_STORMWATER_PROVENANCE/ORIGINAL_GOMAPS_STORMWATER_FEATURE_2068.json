@@ -1,0 +1,36 @@
+{
+ "displayFieldName": "DataSource",
+ "fieldAliases": {
+  "OBJECTID": "OBJECTID",
+  "DataSource": "DataSource",
+  "GlobalID": "GlobalID"
+ },
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "DataSource",
+   "type": "esriFieldTypeString",
+   "alias": "DataSource",
+   "length": 50
+  },
+  {
+   "name": "GlobalID",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "GlobalID",
+   "length": 38
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 2068,
+    "DataSource": "Road & Bridge Maps Marked Up by Foreman",
+    "GlobalID": "{6BE01BBB-27EB-445F-81C0-BAAEFE57C3DD}"
+   }
+  }
+ ]
+}

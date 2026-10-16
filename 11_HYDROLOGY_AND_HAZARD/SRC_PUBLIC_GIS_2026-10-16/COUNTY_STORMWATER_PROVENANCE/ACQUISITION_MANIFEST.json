@@ -1,0 +1,28 @@
+{
+  "status": "ORIGINAL_OFFICIAL_RESPONSES_DOWNLOADED_VERIFIED",
+  "retrieved_utc": "2026-10-16T19:31:16.038367+00:00",
+  "agency": "Santa Rosa County GIS",
+  "files": [
+    {
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_PROVENANCE/ORIGINAL_GOMAPS_STORMWATER_LAYER_79.json",
+      "source_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/79?f=pjson",
+      "sha256": "7487ed946c92a925f29320b60aa5dc6f4dfc35b702887a722d78e55452686ddd",
+      "bytes": 6144,
+      "type": "OFFICIAL_ORIGINAL_ARCGIS_RESPONSE",
+      "validation": "LAYER_ID_79_AND_APRIL_2006_GENERAL_DESCRIPTION_VERIFIED"
+    },
+    {
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_PROVENANCE/ORIGINAL_GOMAPS_STORMWATER_FEATURE_2068.json",
+      "source_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/79/query?where=OBJECTID%3D2068&outFields=OBJECTID%2CDataSource%2CGlobalID&returnGeometry=false&f=pjson",
+      "sha256": "fa49e4cb662899428ad2d7c194d91feb4a5a52177d8f0a11af78314526eec8c9",
+      "bytes": 652,
+      "type": "OFFICIAL_ORIGINAL_ARCGIS_RESPONSE",
+      "validation": "COUNTY_FEATURE_2068_AND_DATA_SOURCE_VERIFIED"
+    }
+  ],
+  "limitations": [
+    "Layer-wide April 2006 context does not establish when OBJECTID 2068 was mapped.",
+    "Historical polygon coverage is not parcel-level flooding proof or evidence of builder wrongdoing.",
+    "No surveyed pipe inverts, current grades, outfall, or hydraulic capacity established."
+  ]
+}
