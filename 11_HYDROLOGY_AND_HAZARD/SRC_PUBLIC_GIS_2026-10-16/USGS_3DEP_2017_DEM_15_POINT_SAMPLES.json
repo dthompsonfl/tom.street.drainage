@@ -1,0 +1,394 @@
+{
+  "scope": "Historical public USGS 3DEP EPQS elevation point samples, not legal boundary survey, not contemporary as-built, not a 2026 construction fill measurement.",
+  "retrieved_utc": "2026-10-16T06:33:47.969Z",
+  "agency": "USGS",
+  "api": "https://epqs.nationalmap.gov/v1/",
+  "sample_method": "Five manually selected interior WGS84 locations per parcel based on official Santa Rosa County GIS mapped parcel geometries, not independently surveyed boundaries.",
+  "units": "meters as requested; vertical reference must be confirmed in the underlying DEM metadata before engineering comparison",
+  "point_count": 15,
+  "records": [
+    {
+      "site": "2264_Tom_St",
+      "label": "center",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "x": -86.81466,
+      "y": 30.4152,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81466&y=30.4152&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81466,
+          "y": 30.4152,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.607597351",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2264_Tom_St",
+      "label": "west",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "x": -86.81481,
+      "y": 30.4152,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81481&y=30.4152&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81481,
+          "y": 30.4152,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.443757057",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2264_Tom_St",
+      "label": "east",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "x": -86.81452,
+      "y": 30.4152,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81452&y=30.4152&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81452,
+          "y": 30.4152,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.795023918",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2264_Tom_St",
+      "label": "north",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "x": -86.81466,
+      "y": 30.41524,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81466&y=30.41524&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81466,
+          "y": 30.41524,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.647597313",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2264_Tom_St",
+      "label": "south",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "x": -86.81466,
+      "y": 30.41516,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81466&y=30.41516&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81466,
+          "y": 30.41516,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.696743965",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2268_Tom_St",
+      "label": "center",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "x": -86.81466,
+      "y": 30.41534,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81466&y=30.41534&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81466,
+          "y": 30.41534,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.796424866",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2268_Tom_St",
+      "label": "west",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "x": -86.81481,
+      "y": 30.41534,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81481&y=30.41534&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81481,
+          "y": 30.41534,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.660101891",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2268_Tom_St",
+      "label": "east",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "x": -86.81452,
+      "y": 30.41534,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81452&y=30.41534&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81452,
+          "y": 30.41534,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "10.349779129",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2268_Tom_St",
+      "label": "north",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "x": -86.81466,
+      "y": 30.41538,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81466&y=30.41538&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81466,
+          "y": 30.41538,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.616424561",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2268_Tom_St",
+      "label": "south",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "x": -86.81466,
+      "y": 30.41529,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81466&y=30.41529&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81466,
+          "y": 30.41529,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.666110992",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2265_Tom_St",
+      "label": "center",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "x": -86.81521,
+      "y": 30.41515,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81521&y=30.41515&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81521,
+          "y": 30.41515,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.811657906",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2265_Tom_St",
+      "label": "west",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "x": -86.81537,
+      "y": 30.41515,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81537&y=30.41515&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81537,
+          "y": 30.41515,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.648832321",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2265_Tom_St",
+      "label": "east",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "x": -86.81506,
+      "y": 30.41515,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81506&y=30.41515&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81506,
+          "y": 30.41515,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.747203827",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2265_Tom_St",
+      "label": "north",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "x": -86.81521,
+      "y": 30.4152,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81521&y=30.4152&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81521,
+          "y": 30.4152,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.744336128",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    },
+    {
+      "site": "2265_Tom_St",
+      "label": "south",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "x": -86.81521,
+      "y": 30.4151,
+      "url": "https://epqs.nationalmap.gov/v1/json?x=-86.81521&y=30.4151&wkid=4326&units=Meters&includeDate=true",
+      "response": {
+        "location": {
+          "x": -86.81521,
+          "y": 30.4151,
+          "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+          }
+        },
+        "locationId": 0,
+        "value": "9.828477859",
+        "rasterId": 19247,
+        "resolution": 1,
+        "attributes": {
+          "AcquisitionDate": "5/5/2017"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "DEM elevations are gridded/interpolated and have vertical uncertainty.",
+    "Interpolation/acquisition date is part of API response.",
+    "Sample spacing and all features are insufficient to reconstruct graded drainage, invert heights, or 2026 fill quantities.",
+    "Site elevations in 2017 cannot establish 2026 field condition.",
+    "Raster acquisition dates may differ by point; do not assume a single dataset without checking.",
+    "This is a sample rather than a full 1m raster tile download."
+  ]
+}
