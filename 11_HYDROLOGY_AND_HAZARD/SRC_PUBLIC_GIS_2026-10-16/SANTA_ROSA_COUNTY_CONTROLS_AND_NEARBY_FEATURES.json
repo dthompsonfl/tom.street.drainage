@@ -1,0 +1,378 @@
+{
+  "retrieved_utc": "2026-10-16T06:46:57.357Z",
+  "source_agency": "Santa Rosa County GIS",
+  "queries": [
+    {
+      "id": "site_contours",
+      "layer": 50,
+      "bbox": "-86.81555,30.41490,-86.81430,30.41558",
+      "fields": "OBJECTID,CONTOUR,UNIT,DEPRESSION,INTERVAL_,FEATURE,QUAD_NUM",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/50/query?geometry=-86.81555%2C30.41490%2C-86.81430%2C30.41558&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CCONTOUR%2CUNIT%2CDEPRESSION%2CINTERVAL_%2CFEATURE%2CQUAD_NUM&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "UNIT",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID_1",
+          "CONTOUR": "CONTOUR",
+          "UNIT": "UNIT",
+          "DEPRESSION": "DEPRESSION",
+          "INTERVAL_": "INTERVAL_",
+          "FEATURE": "FEATURE",
+          "QUAD_NUM": "QUAD_NUM"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "CONTOUR",
+            "type": "esriFieldTypeDouble",
+            "alias": "CONTOUR"
+          },
+          {
+            "name": "UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "UNIT",
+            "length": 2
+          },
+          {
+            "name": "DEPRESSION",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "DEPRESSION"
+          },
+          {
+            "name": "INTERVAL_",
+            "type": "esriFieldTypeDouble",
+            "alias": "INTERVAL_"
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 30
+          },
+          {
+            "name": "QUAD_NUM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "QUAD_NUM"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "id": "wider_contours",
+      "layer": 50,
+      "bbox": "-86.8180,30.4137,-86.8120,30.4170",
+      "fields": "OBJECTID,CONTOUR,UNIT,DEPRESSION,INTERVAL_,FEATURE,QUAD_NUM",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/50/query?geometry=-86.8180%2C30.4137%2C-86.8120%2C30.4170&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CCONTOUR%2CUNIT%2CDEPRESSION%2CINTERVAL_%2CFEATURE%2CQUAD_NUM&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "UNIT",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID_1",
+          "CONTOUR": "CONTOUR",
+          "UNIT": "UNIT",
+          "DEPRESSION": "DEPRESSION",
+          "INTERVAL_": "INTERVAL_",
+          "FEATURE": "FEATURE",
+          "QUAD_NUM": "QUAD_NUM"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "CONTOUR",
+            "type": "esriFieldTypeDouble",
+            "alias": "CONTOUR"
+          },
+          {
+            "name": "UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "UNIT",
+            "length": 2
+          },
+          {
+            "name": "DEPRESSION",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "DEPRESSION"
+          },
+          {
+            "name": "INTERVAL_",
+            "type": "esriFieldTypeDouble",
+            "alias": "INTERVAL_"
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 30
+          },
+          {
+            "name": "QUAD_NUM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "QUAD_NUM"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 456,
+              "CONTOUR": 35,
+              "UNIT": "FT",
+              "DEPRESSION": 0,
+              "INTERVAL_": 5,
+              "FEATURE": " ",
+              "QUAD_NUM": 5255
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "id": "water_features",
+      "layer": 66,
+      "bbox": "-86.8180,30.4137,-86.8120,30.4170",
+      "fields": "OBJECTID,HYDRONAME,FEATTYPE,CATEGORY,CATEGORYTYPE",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/66/query?geometry=-86.8180%2C30.4137%2C-86.8120%2C30.4170&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CHYDRONAME%2CFEATTYPE%2CCATEGORY%2CCATEGORYTYPE&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "HYDRONAME",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID_1",
+          "HYDRONAME": "HYDRONAME",
+          "FEATTYPE": "FEATTYPE",
+          "CATEGORY": "CATEGORY",
+          "CATEGORYTYPE": "CategoryType"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "HYDRONAME",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRONAME",
+            "length": 50
+          },
+          {
+            "name": "FEATTYPE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATTYPE",
+            "length": 16
+          },
+          {
+            "name": "CATEGORY",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "CATEGORY"
+          },
+          {
+            "name": "CATEGORYTYPE",
+            "type": "esriFieldTypeString",
+            "alias": "CategoryType",
+            "length": 50
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "id": "structures",
+      "layer": 2,
+      "bbox": "-86.81555,30.41490,-86.81430,30.41558",
+      "fields": "OBJECTID,STNUM,St_Name,StructureType,STRUCTYPE,Ownership,Elev",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/2/query?geometry=-86.81555%2C30.41490%2C-86.81430%2C30.41558&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CSTNUM%2CSt_Name%2CStructureType%2CSTRUCTYPE%2COwnership%2CElev&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "COMMONPLACENAME",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "STNUM": "STNUM",
+          "St_Name": "Street Name",
+          "StructureType": "StructureType",
+          "STRUCTYPE": "STRUCTYPE",
+          "Ownership": "Ownership",
+          "Elev": "Elevation"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "STNUM",
+            "type": "esriFieldTypeInteger",
+            "alias": "STNUM"
+          },
+          {
+            "name": "St_Name",
+            "type": "esriFieldTypeString",
+            "alias": "Street Name",
+            "length": 60
+          },
+          {
+            "name": "StructureType",
+            "type": "esriFieldTypeString",
+            "alias": "StructureType",
+            "length": 50
+          },
+          {
+            "name": "STRUCTYPE",
+            "type": "esriFieldTypeString",
+            "alias": "STRUCTYPE",
+            "length": 50
+          },
+          {
+            "name": "Ownership",
+            "type": "esriFieldTypeString",
+            "alias": "Ownership",
+            "length": 50
+          },
+          {
+            "name": "Elev",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Elevation"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 86530,
+              "STNUM": 2263,
+              "St_Name": "Nina",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 96272,
+              "STNUM": 2265,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 96283,
+              "STNUM": 2263,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 96560,
+              "STNUM": 2267,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 96596,
+              "STNUM": 2269,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 97995,
+              "STNUM": 2258,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 97996,
+              "STNUM": 2260,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 97997,
+              "STNUM": 2264,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 97998,
+              "STNUM": 2268,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 97999,
+              "STNUM": 2270,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 98000,
+              "STNUM": 2272,
+              "St_Name": "Tom",
+              "StructureType": "SINGLE FAMILY",
+              "STRUCTYPE": "SINGLE FAMILY",
+              "Ownership": "RESIDENTIAL",
+              "Elev": null
+            }
+          }
+        ]
+      },
+      "feature_count": 11
+    }
+  ],
+  "disclaimers": [
+    "General contour line intersects reflect a 5 ft map interval; not parcel elevations, vertical benchmark survey or 2026 as-built measurements.",
+    "No lines crossing the narrow rectangle is not evidence of flat terrain.",
+    "County structure Elev fields null for nearby address points; these are NOT measured floor elevations.",
+    "No water feature returned in the county's mapped layer is not proof of absent roadside drainage pipes.",
+    "County GIS extent is approximate; it is not authoritative right-of-way boundary"
+  ]
+}
