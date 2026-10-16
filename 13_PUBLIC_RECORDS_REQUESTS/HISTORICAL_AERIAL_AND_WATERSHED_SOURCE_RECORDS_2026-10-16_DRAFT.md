@@ -1,6 +1,6 @@
 # Draft public-records requests | Historical Tom Street drainage evidence
 
-**NOT SUBMITTED.** These are two separate agency-specific templates for a homeowner's review and transmission; they are **not** legal advice and do not claim the requested records necessarily exist. The requester should preserve outgoing email, receipt, tracking number and every produced byte in the evidence ledger. No delivery or agency acknowledgment was performed by this research.
+**DRAFTED_NOT_SUBMITTED.** These two templates remain unsent. These are two separate agency-specific templates for a homeowner's review and transmission; they are **not** legal advice and do not claim the requested records necessarily exist. The requester should preserve outgoing email, receipt, tracking number and every produced byte in the evidence ledger. No delivery or agency acknowledgment was performed by this research.
 
 **Location:** 2264, 2265 and 2268 Tom Street, Navarre, FL 32566, Santa Rosa County; roadway/drainage corridor adjacent to these and 2260 and 2270 Tom Street.
 

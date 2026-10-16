@@ -142,9 +142,10 @@ base = {
 supplemental = {
     "COUNTY_PUBLIC_WORKS_DRAINAGE_WORK_REQUEST_DRAFT.md",
     "FDEP_CONSTRUCTION_STORMWATER_CGP_RECORDS_DRAFT.md",
+    "HISTORICAL_AERIAL_AND_WATERSHED_SOURCE_RECORDS_2026-10-16_DRAFT.md",
 }
 actual = {p.name for p in (ROOT/"13_PUBLIC_RECORDS_REQUESTS").glob("*.md")}
-assert_ok("five foundational and two supplemental drafts exactly tracked",
+assert_ok("five foundational and three supplemental draft files exactly tracked",
     actual == base | supplemental)
 for name in actual:
     content = load_text("13_PUBLIC_RECORDS_REQUESTS/"+name)
@@ -152,9 +153,11 @@ for name in actual:
 assert_ok("request receipt tracker not falsely submitted",
     all((r.get("submitted") or "").upper() != "TRUE"
         for r in REQUESTS))
-assert_ok("canonical release guide accurately counts seven drafts",
+assert_ok("canonical release guide accurately counts eight unsent draft files and nine templates",
     "five foundational" in load_text("15_RECONCILED_DRAFTS/README.md").lower()
-    and "two supplemental" in load_text("15_RECONCILED_DRAFTS/README.md").lower())
+    and "three supplemental" in load_text("15_RECONCILED_DRAFTS/README.md").lower()
+    and "eight draft files" in load_text("15_RECONCILED_DRAFTS/README.md").lower()
+    and "nine separate request/service templates" in load_text("15_RECONCILED_DRAFTS/README.md").lower())
 
 release = load_json("15_RECONCILED_DRAFTS/pdf/RELEASE_MANIFEST.json")
 assert_ok("current combined packet is five-page DRAFT, not signed",

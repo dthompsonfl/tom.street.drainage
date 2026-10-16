@@ -47,7 +47,7 @@ Parcel GIS polygons and sample positions are **not surveyed legal property lines
 7. **Private photo custody**: retrieve unmodified owner-authorized originals and sidecars, hash in private evidence vault, confirm actual capture dates and image directions. Do not publish personal geolocation, device identifiers or unrelated nearby residents in a public repo without review.
 8. **Official work history**: original Road & Bridge foreman marked-up maps behind mapped problem area `2068`, complaint/repair/maintenance work orders and any inspection evidence for Tom Street before and during 2026.
 
-The seven drafted Chapter 119 and service requests live in [`13_PUBLIC_RECORDS_REQUESTS/`](../13_PUBLIC_RECORDS_REQUESTS/). **Drafting a request is not submitting it**; do not mark a source obtained or a request submitted until a transmission receipt and the actual document are filed in the ledger.
+Eight unsent draft files containing nine distinct request/service templates live in [`13_PUBLIC_RECORDS_REQUESTS/`](../13_PUBLIC_RECORDS_REQUESTS/). **Drafting a request is not submitting it**; do not mark a source obtained or a request submitted until a transmission receipt and the actual document are filed in the ledger.
 
 ### Suggested handling standards for future public records
 
