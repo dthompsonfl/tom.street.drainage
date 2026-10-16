@@ -1,3 +1,5 @@
+> **HISTORICAL COMMIT-BOUND RESEARCH SUMMARY.** This is a frozen description of an earlier investigation stage. Its draft counts, privacy-inventory status and available artifacts have since changed. See [the current document status](DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md) and [the current packet guide](../15_RECONCILED_DRAFTS/README.md). No archived claim should be reused as a current fact without checking its original source and capture date.
+
 # Research and publication gate (2026-10-16 UTC)
 
 This repository is a **public research workspace**, not a certified engineering study, a legal opinion, or a completed government investigation. The factual claims in `15_RECONCILED_DRAFTS/` supersede the historical `14_MEETING_PACKET/` PDFs and `releases/2026-10-15/` release. The latter are **WITHDRAWN FOR DISTRIBUTION**, retained only as historical artifacts.

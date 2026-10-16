@@ -1,3 +1,5 @@
+> **HISTORICAL STATUS SNAPSHOT (October 15-16, 2026).** This file describes remediation performed at earlier commits, not the live `main` branch's current draft count, content or readiness. Current navigation and outstanding evidence are in [Document status for neighbors](DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md) and [Next actions](NEXT_ACTIONS.md). Do not treat outdated counts in the snapshot below as current.
+
 # Main branch remediation and outstanding evidence gates
 
 **As of:** October 15, 2026 (U.S. Central) / October 16, 2026 (UTC)  

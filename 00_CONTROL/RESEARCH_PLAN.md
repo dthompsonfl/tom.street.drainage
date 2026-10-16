@@ -1,3 +1,5 @@
+> **EARLY PLANNING CHECKLIST - NOT CURRENT TASK STATUS.** Several tasks shown unchecked below have since had their public-record search or source retrieval completed, while 2266 remains a historical address question rather than a confirmed 2026 building site. Read [the current open questions](OPEN_QUESTIONS.md) and [neighbor review guide](../NEIGHBOR_REVIEW_GUIDE.md) instead. This file is retained as a planning-history record.
+
 # Tom Street Drainage Investigation - Research Plan
 
 ## Project Overview

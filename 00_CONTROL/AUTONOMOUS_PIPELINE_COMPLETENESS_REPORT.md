@@ -1,3 +1,5 @@
+> **HISTORICAL DESIGN ASSESSMENT - NOT A VERIFIED COMPLETED IMPLEMENTATION.** This report describes intended automation and past test claims from a separate planning package. On the October 16, 2026 live `main` review, at least five named modules were absent: `analyze_lidar_terrain_change.py`, `audit_private_photo_vault.py`, `acquire_noaa_precipitation_and_storms.py`, `ingest_records_request_response.py` and `patch_legacy_checks_for_autonomy.py`. The stated "100% autonomous" and "19/19 passing" claims have **not** been demonstrated by this repository; the current test module imports missing files. Do **not** follow the full-execution instructions below as a production or public release procedure. Read the [current document status](DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md) instead.
+
 # Tom Street Drainage Investigation: Autonomous Pipeline Completeness & Gap Analysis Report
 
 **Prepared:** October 16, 2026  
