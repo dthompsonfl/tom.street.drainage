@@ -1,6 +1,8 @@
 # Tom Street | Records status and follow-up (DRAFT)
 
-**Date:** October 15, 2026. **Administrative status:** Five foundational Chapter 119 requests and two supplemental drafts prepared; **no submission receipts verified for any of the seven**. An archive contains 15 internally hash-matched photo copies; their native device originals and capture chronology remain unverified.
+**Updated:** October 16, 2026. **Administrative status:** Five foundational Chapter 119 requests and two supplemental drafts prepared; **no submission receipts verified for any of the seven**. An archive contains 15 internally hash-matched photo copies; their native device originals and capture chronology remain unverified.
+
+**New evidence:** County GIS classifies the target Tom Street road segment as County Maintained. Individual drainage-asset ownership and maintenance still require records.
 
 ## Three essential requests for County Engineering
 

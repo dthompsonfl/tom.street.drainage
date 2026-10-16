@@ -70,6 +70,7 @@ SOURCE_PREFIXES = (
     "08_LEGAL_AND_REGULATORY/",
     "09_ENVIRONMENTAL_PERMITS/",
     "11_HYDROLOGY_AND_HAZARD/",
+    "17_CURRENT_RESEARCH/captures/",
 )
 SOURCE_EXTENSIONS = frozenset({
     ".pdf", ".json", ".html", ".geojson", ".xml", ".jpg", ".jpeg",

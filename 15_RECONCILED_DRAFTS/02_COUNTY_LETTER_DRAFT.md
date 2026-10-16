@@ -21,7 +21,7 @@ The County's captured MGO records identify **BP-2026-1621** at 2264 Tom Street (
 
 Please confirm **whether a subdivision lot grading plan was on file**, which approved plan or permit pathway applies to each lot, and the actual status of the **Certified Drainage as Built** tasks. An MGO task labeled *Assigned* does not itself tell us whether a document is missing or overdue.
 
-We also request a **documented County Engineering inspection** of the shared roadside drainage, a written finding on actual outfalls and potential effects on established homes, and verification of Tom Street's road-maintainer and drainage-asset responsibilities.
+County GIS lists Tom Street as **County Maintained**. We request a **documented Engineering inspection**, written findings on outfalls and neighboring effects, and identification of each drainage asset's owner/maintainer.
 
 Please acknowledge this request, provide a tracking number and point of contact, allow rolling production, and estimate any substantial fees before incurring them. If any record is withheld, please identify the applicable statutory exemption and release nonexempt portions.
 

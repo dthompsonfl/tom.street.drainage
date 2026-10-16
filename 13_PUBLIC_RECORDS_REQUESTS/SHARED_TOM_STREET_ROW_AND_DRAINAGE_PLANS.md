@@ -126,3 +126,7 @@ Name: _______________________  Phone: _____________________
 Email: ______________________  Preferred format: [ ] email  [ ] portal link
 
 **Signature: _______________________  Date: ____________**
+
+## October 16 research update (request remains unsubmitted)
+
+**October 16 follow-up:** the target road is **County Maintained** in County GIS; asset ownership/maintenance remains unresolved. Actual Ordinances 2025-25 and 2026-03 and the generic grading guideline are now preserved. Clerk-certified electronic transmission dates are not separate Department of State filing receipts. No lot-specific approved plan, exemption, surveyed invert/outfall, or matched ERP/CGP authorization was obtained. See [17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md](../17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md) and its source links.

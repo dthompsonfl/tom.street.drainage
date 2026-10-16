@@ -18,7 +18,7 @@ We respectfully ask your office to help arrange:
 
 1. A named **County Engineering contact** and a coordinated review of both permits and the shared roadside drainage.
 2. Production of the **approved grading/drainage plans**, revisions, survey and stormwater information applicable to each lot, including any subdivision-level plan.
-3. A documented **field inspection**, with consideration of existing neighboring residences, driveway/culvert inverts, drainage outfall, verified road-maintainer and drainage-asset responsibilities, and any verified adverse impacts.
+3. A documented **field inspection**, with consideration of existing neighboring residences, driveway/culvert inverts, drainage outfall, asset-specific responsibilities along the GIS-listed County Maintained road, and any verified adverse impacts.
 4. A **written summary of findings**, a tracking/reference number, and a clear follow-up timetable identifying any action needed and the responsible entity.
 
 We understand that engineering judgments require actual plans, field measurements and qualified staff. Our request is simply that the relevant facts be examined before the issues become harder to document.

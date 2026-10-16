@@ -1,6 +1,6 @@
 # Tom Street Drainage | Homeowner Brief (Reconciled DRAFT)
 
-**October 15, 2026** | 2264 and 2268 Tom Street, Navarre, Florida; nearby established homes and roadside drainage.
+**Updated October 16, 2026** | 2264 and 2268 Tom Street, Navarre, Florida; nearby established homes and roadside drainage.
 
 ## Purpose
 
@@ -14,6 +14,8 @@ An **August 6, 2026** inspection comment at 2264 directed proposed 12-inch pipe 
 
 Both permit task lists label **Certified Drainage as Built: Assigned**. This does not prove a document exists, is late, was filed, or is missing. The portal's empty attachment results likewise do not prove that the County has no approved drawings.
 
+County GIS identifies this Tom Street segment as **County Maintained**. Ownership and maintenance of each drainage structure remain unverified.
+
 ## Documents needed
 
 1. Approved **original and revised grading/site plans**, engineering calculations, reviewer notes, and any subdivision grading plan or authorized alternative.
@@ -25,6 +27,6 @@ Both permit task lists label **Certified Drainage as Built: Assigned**. This doe
 
 Identify the plan governing each lot; provide the document index and missing records; arrange a coordinated drainage inspection; and give neighbors a **named contact, tracking number, timetable and written findings**.
 
-A separately preserved homeowner package has **15 internally hash-matched JPEG copies**, but native originals, capture times, exact parcel locations and release permissions are not verified. They remain private.
+The 15 hash-matched homeowner photo copies remain private; original capture data, parcel attribution and publication permission are unverified.
 
-*Sources: saved Property Appraiser and MGO records. No sealed drainage plans or surveyed outfall measurements have been obtained.*
+*Sources: saved Property Appraiser, MGO and October 16 County GIS records. No sealed drainage plans or surveyed outfall measurements have been obtained.*

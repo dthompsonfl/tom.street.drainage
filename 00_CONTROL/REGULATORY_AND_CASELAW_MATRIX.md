@@ -67,7 +67,7 @@ own page numbers in the footer; both are given because they differ.
   construction sediment is a routine precaution, not a finding of breach.
 
 ### B3 — § 4.04.01, Drainage and Stormwater Management Plan
-*Printed pages 249–250 = PDF pages 267–268.*
+*General provisions: printed 249-250 / PDF 267-268; D.1 continues on printed 251 / PDF 269.*
 
 **§ 4.04.01.A** — "adequate drainage and stormwater management" means design
 and construction that "will not cause flood damage to the property involved or
@@ -98,29 +98,16 @@ permit*:
    plan. Any major deviations … will require an as-built plan."**
 
 - **Status: CONDITIONALLY_APPLICABLE — and this is the pivotal provision.**
-- **Why it matters:** sub-paragraph (g) explains, in the county's own words, why
-  the MGO task **"Certified Drainage as Built"** exists and why it sits at
-  **Assigned** on both permits while **"Issue CO"** is also **Assigned**. The
-  county's workflow mirrors this code text.
-- **Applicability prerequisites — UNRESOLVED:** the section turns on whether a
-  *subdivision lot grading plan is on file with the County Engineering
-  Department* for these lots. Both parcels are well under one acre (lot sizes
-  recorded as ~0.14–0.16 ac in earlier secondary data, not yet confirmed from
-  an official survey). **That on-file status has not been determined.** It is
-  tracked as **GAP-11** and is the single highest-value factual question in the
-  investigation, because the answer determines whether the compliant path was a
-  sealed PE lot grading plan or an NWFWMD Individual ERP letter.
-- **NOT concluded:** non-compliance. Both permits remain **Active**. An open
-  pre-CO task on an active permit is the expected state of an unfinished
-  house, not evidence of breach.
+- **Workflow limitation:** the code describes a completion-stage certification, but the saved MGO task labels do not prove which legal pathway the County applied or whether a document exists.
+- **Applicability unresolved:** verify lot dimensions, on-file subdivision plan status, the actual approved plan or ERP-letter alternative, and any D.4 exemption. Whether a subdivision plan is on file does not itself choose between the two alternatives. Secondary lot-size estimates are not a certified survey.
+- **No breach determination:** Active is the archived permit status, not a new live check. An assigned task alone proves neither compliance nor noncompliance.
 
 ### B4 — § 4.04.01.D.2.b — lots 1–2 acres fronting county roads with <50 ft ROW
 *Printed page 250.* "A recorded drainage easement **may** be required prior to
 Certificate of Occupancy, when the County Engineer determines … necessary …
 **No drainage easement will be greater than 20-feet wide** along the right-of-way."
 
-- **Status: NOT_APPLICABLE on current evidence** — the D.2 band applies to lots
-  of one acre or more. If D.1 applies instead, a drainage easement could still
+- **Status: LOT-SPECIFIC APPLICABILITY UNRESOLVED**. The D.2 band applies to lots of one acre or more; confirm actual lot dimensions rather than treat secondary size estimates as an official survey. If D.1 applies instead, a drainage easement could still
   be relevant, but the text located here does not govern D.1 lots.
 - Recorded because the Tom Street frontage is the likely location of any such
   easement and **no easement has been located** (GAP-14).
@@ -135,7 +122,7 @@ Certificate of Occupancy, when the County Engineer determines … necessary …
 ### B6 — § 4.04.01.E, certified as-built before occupancy
 *Printed page 252 = PDF page 270.*
 
-- **Status: VERIFIED CODE TEXT / SITE-SPECIFIC COMPLIANCE UNRESOLVED.** Section E states: **"All lots will require a certified as-built prior to issuance of the Certificate of Occupancy."** This provision is **separate from** the conditional § 4.04.01.D.1.g engineer's conformance-letter pathway.
+- **Status: VERIFIED CODE TEXT / SITE-SPECIFIC COMPLIANCE UNRESOLVED.** Section E states: a requirement for a certified as-built before issuance of the Certificate of Occupancy (the printed source uses the spelling **as-build**) This provision is **separate from** the conditional § 4.04.01.D.1.g engineer's conformance-letter pathway.
 - The current site task **"Certified Drainage as Built: Assigned"** neither proves that a certified as-built has been produced nor that it is absent, due, overdue, or approved.
 - **Evidence needed:** actual MGO document record and county engineering approval/CO gate for each permit, plus the governing ordinance edition.
 
@@ -212,7 +199,7 @@ The original opinion is a legal research source, not a homeowner technical exhib
 | **LDC § 4.04.01.D.4 (lot grading exemptions)** | yes, primary PDF | conditional, not established | written exemption/pathway and site/fill measurements |
 | **LDC § 4.04.01.E (all-lots certified as-built)** | yes, primary PDF | general rule, permit-specific compliance unresolved | certified as-built document, county acceptance and CO stage |
 | **LDC § 4.04.01.G-H (swale geometry)** | yes, primary PDF | conditional | approved design, right-of-way acceptance, actual measurements |
-| LDC § 4.04.01.D.2.b drainage easement | yes, primary PDF | not applicable on current evidence | — |
+| LDC section 4.04.01.D.2.b drainage easement | yes, primary PDF | lot-specific applicability unresolved | certified dimensions and County approval pathway |
 | Fla. Stat. § 119.07 (2026) | yes, official text | yes | — |
 | Fla. Stat. § 373.042 (2026) | yes, official text | unresolved | minimum flow for the receiving watercourse |
 | ERP 9220-2 applicability | record yes, applicability no | **unresolved** | GAP-16 / GAP-17 |
@@ -226,7 +213,7 @@ means the compliance question cannot yet be reached in either direction.
 
 The county-hosted LDC edition identifies **Ord. 2025-25 (adopted November 10, 2025)** on its cover, with amendments to §§ 3.04.05 and 4.04.01. An internal PDF creation timestamp in January 2026 must not be reported as a new legal enactment. The 2026 Ordinances index shows later LDC-related enactments, some changing zoning/future-land-use maps. Review each ordinance's effective date and text against the actual permits **created February 11, 2026 and issued March 23, 2026** before asserting any amendment applied or did not apply. Sources: https://santarosa.fl.gov/182/Land-Development-Code and https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026 .
 
-**Jurisdiction and post-issuance ordinance control:** The official [Santa Rosa 2026 Ordinances index](https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026) lists **2026-03 (January 22, wellfield protection overlay)** before the March 2026 permits, and **2026-10 (May 21), 2026-14 (June 22), 2026-16 (July 23)** relating to zoning/land-use map revisions after their issuance. Index descriptions alone do not establish Tom Street parcel applicability. Collect final ordinance text, map exhibits and effective-date clauses, then distinguish law controlling initial review from any later revisions. County [Stormwater Requirements](https://santarosa.fl.gov/197/Stormwater-Requirements) identifies Santa Rosa County Engineering as the subdivision plan reviewer. County [Road Issues](https://santarosa.fl.gov/377/Road-Issues) limits maintenance services to county-maintained roads; **Tom Street maintainer and roadside asset acceptance are unresolved** and must be separately established. See [jurisdiction scope register](JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md). Do not use other Florida county ordinances as controlling local law.
+**Jurisdiction and post-issuance ordinance control:** The official [Santa Rosa 2026 Ordinances index](https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026) lists **2026-03 (January 22, wellfield protection overlay)** before the March 2026 permits, and **2026-10 (May 21), 2026-14 (June 22), 2026-16 (July 23)** relating to zoning/land-use map revisions after their issuance. Index descriptions alone do not establish Tom Street parcel applicability. Collect final ordinance text, map exhibits and effective-date clauses, then distinguish law controlling initial review from any later revisions. County [Stormwater Requirements](https://santarosa.fl.gov/197/Stormwater-Requirements) identifies Santa Rosa County Engineering as the subdivision plan reviewer. County [Road Issues](https://santarosa.fl.gov/377/Road-Issues) limits maintenance services to county-maintained roads; **Tom Street road GIS classification is now County Maintained; roadside asset ownership/acceptance remain unresolved** and must be separately established. See [jurisdiction scope register](JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md). Do not use other Florida county ordinances as controlling local law.
 
 ## H. DEP historical order-index leads (official PDFs preserved)
 
@@ -237,3 +224,7 @@ The county-hosted LDC edition identifies **Ord. 2025-25 (adopted November 10, 20
 ## I. Pending October 2026 administrative LDC reformat (not a substantive amendment)
 
 A [September 29, 2026 official Santa Rosa County notice](https://santarosa.fl.gov/m/newsflash/Home/Detail/2186) announces a proposed repeal-and-replacement **for formatting and section-navigation only**, with no change to development regulations. The Zoning Board hearing was scheduled for October 8 and the County Commission consideration for **October 22, 2026**. As of the October 15 investigation date, this advertised future Commission action must **not** be described as an already enacted law. For durable citations use **section numbers and ordinance effective dates**, not just PDF page numbers. Confirm final adoption and any intervening revisions directly from the County before later use. The older March 2026 permit dates must be compared to the rules legally controlling at those dates.
+
+## October 16: verified road classification and remaining questions
+
+**October 16 follow-up:** the target road is **County Maintained** in County GIS; asset ownership/maintenance remains unresolved. Actual Ordinances 2025-25 and 2026-03 and the generic grading guideline are now preserved. Clerk-certified electronic transmission dates are not separate Department of State filing receipts. No lot-specific approved plan, exemption, surveyed invert/outfall, or matched ERP/CGP authorization was obtained. See [17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md](../17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md) and its source links.

@@ -1,6 +1,6 @@
 # Tom Street: controlling jurisdiction and authority register
 
-**Reviewed:** October 15, 2026 (U.S. Central). **Status:** SOURCE-VERIFIED JURISDICTION, SITE-SPECIFIC APPLICABILITY UNRESOLVED. This is a research control, not a legal opinion, engineering report, road-title determination, or permit-compliance certification.
+**Updated:** October 16, 2026 UTC; original review October 15 local. **Status:** SOURCE-VERIFIED JURISDICTION, SITE-SPECIFIC APPLICABILITY UNRESOLVED. This is a research control, not a legal opinion, engineering report, road-title determination, or permit-compliance certification.
 
 ## Scope decision
 
@@ -14,7 +14,7 @@ The investigated properties are at **2264 Tom Street** (Santa Rosa County Proper
 |---|---|---|
 | Local: Santa Rosa County Development Services / Building Inspections | Permits, approved residential site plans, applicable Florida Building Code review, inspection and CO documentation | The County is a permit custodian/regulator. An inspection pass is not a sealed drainage calculation or proof of an installed system's capacity. |
 | Local: Santa Rosa County Engineering | Subdivision plans, drainage/grading standards, reviewed outfalls, right-of-way work and acceptance files | County's [Stormwater Requirements](https://santarosa.fl.gov/197/Stormwater-Requirements) says platted subdivision proposals are reviewed by Engineering. Obtain the actual lot-specific approval pathway and any master grading plan before classifying compliance. |
-| Local: Santa Rosa County Public Works | County-maintained roadside ditch/culvert assets, drainage work orders and complaints | [Road Issues](https://santarosa.fl.gov/377/Road-Issues) limits its stated maintenance service to county-maintained roads. **Tom Street's maintainer, ownership, easements and acceptance status are NOT verified.** Confirm using the [County Street-Maintainer application](https://santarosagis.maps.arcgis.com/apps/View/index.html?appid=a7fd63b5d7b241af943d8bcc617d1096), recorded instruments and Public Works. |
+| Local: Santa Rosa County Public Works | County-maintained roadside ditch/culvert assets, drainage work orders and complaints | [Road Issues](https://santarosa.fl.gov/377/Road-Issues) limits its stated maintenance service to county-maintained roads. **County GIS verifies County Maintained for the target road segment (FID 2006 / segment 2036). Road title, easements and acceptance/maintenance of individual drainage structures are NOT verified.** Confirm using the [County Street-Maintainer application](https://santarosagis.maps.arcgis.com/apps/View/index.html?appid=a7fd63b5d7b241af943d8bcc617d1096), recorded instruments and Public Works. |
 | Local: Santa Rosa County Property Appraiser | Appraiser parcel/situs/owner records | Tax/situs data is not a boundary survey, current title opinion or proof of an easement. |
 | Local: Santa Rosa County Clerk of Court | Recorded deed, plat and easement **images** and official index | A search-results grid does not substitute for the original recorded instrument. Clerk records are separate from the County Development Services custodian. |
 | State: Florida Legislature / state building code | Florida Statutes Ch. 119 (public records), Ch. 373 (ERP enabling authority), Ch. 403 (pollution control), Florida Building Code where applicable | Verify the exact amendment/effective date and applicability at each permit and construction stage; statewide law does not establish a site's physical drainage conditions. |
@@ -49,7 +49,7 @@ Relevant published sections (the provided PDF is the evidence for the text, not 
 ## Records and engineering gaps, not repository failures
 
 1. County written determination of the **subdivision grading plan on file**, actual approved and superseded lot plans, review conditions and any D.4 exemption.
-2. Original deed/plat/easement images; **Tom Street street-maintainer and public/private right-of-way determination**, ownership of drainage structures and accepted maintenance assets.
+2. Original deed/plat/easement images; **Tom Street right-of-way title and asset acceptance (GIS street-maintainer classification is now County Maintained)**, ownership of drainage structures and accepted maintenance assets.
 3. Original and certified surveys, historic/current perimeter and finished-floor elevations, ditch and culvert section, inlet/invert/outfall elevations, pipe specifications and verified construction as-builts.
 4. Any NWFWMD ERP/CGP/FDEP authorization boundary intersecting the parcels/common plan, including exemptions, construction-phase erosion controls, operators and maintenance conditions.
 5. Current permit/CO/task status **with retrieval timestamp**, a documented county field review and independent assessment of the altered vs prior drainage using real rainfall and measurements.
@@ -58,3 +58,7 @@ Relevant published sections (the provided PDF is the evidence for the text, not 
 ## Record integrity and release restrictions
 
 **Do not revise primary-source captures, archival PDFs, historical packets or their hashes to make the jurisdiction read cleanly.** Flag erroneous historic interpretations as superseded rather than falsifying the source. Active distribution baseline is [15_RECONCILED_DRAFTS](../15_RECONCILED_DRAFTS/README.md); [14_MEETING_PACKET](../14_MEETING_PACKET/) and [releases/2026-10-15](../releases/2026-10-15/) are historical, not currently approved. The repository is public: maintain private images, identity/EXIF and authenticated portal state off repository. This jurisdiction audit does not certify the packet for distribution.
+
+## October 16: verified road classification and remaining questions
+
+**October 16 follow-up:** the target road is **County Maintained** in County GIS; asset ownership/maintenance remains unresolved. Actual Ordinances 2025-25 and 2026-03 and the generic grading guideline are now preserved. Clerk-certified electronic transmission dates are not separate Department of State filing receipts. No lot-specific approved plan, exemption, surveyed invert/outfall, or matched ERP/CGP authorization was obtained. See [17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md](../17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md) and its source links.
