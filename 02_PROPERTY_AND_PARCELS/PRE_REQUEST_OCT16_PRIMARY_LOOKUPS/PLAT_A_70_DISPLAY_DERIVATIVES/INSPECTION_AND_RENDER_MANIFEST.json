@@ -1,0 +1,50 @@
+{
+  "rendered_utc": "2026-10-16T20:49:00.312043+00:00",
+  "source_authority": "Santa Rosa County Clerk of the Circuit Court",
+  "source_document_id": "875693",
+  "source_plat_book_page": "A/70",
+  "source_sha256": "37b48f9c727e42163bbca3f407c9e827b3b3af7cd106b86f457d38e9c6ac36d1",
+  "source_bytes": 3377943,
+  "source_official_url": "https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/875693",
+  "records": [
+    {
+      "source_page": 1,
+      "pdf_page_width_pt": 2588.0,
+      "pdf_page_height_pt": 1620.0,
+      "text_chars": 0,
+      "image_xobjects": 1,
+      "preview": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/PLAT_A_70_DISPLAY_DERIVATIVES/DERIVED_CRESCENT_SHORES_PLAT_A_70_PAGE_1_PREVIEW.jpg",
+      "preview_bytes": 390127,
+      "preview_sha256": "6077baff41dd70e6a13b711ac0f369088ac4734115b88e9a7aa36e73178b08f3",
+      "preview_dimensions_px": [
+        1800,
+        1127
+      ],
+      "text_excerpt": "",
+      "note": "Display derivative. Do not use to determine survey distances or drainage rights."
+    },
+    {
+      "source_page": 2,
+      "pdf_page_width_pt": 2585.0,
+      "pdf_page_height_pt": 1711.0,
+      "text_chars": 0,
+      "image_xobjects": 1,
+      "preview": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/PLAT_A_70_DISPLAY_DERIVATIVES/DERIVED_CRESCENT_SHORES_PLAT_A_70_PAGE_2_PREVIEW.jpg",
+      "preview_bytes": 376868,
+      "preview_sha256": "b040351da324a197a6a21acade897fcd6bff7f26c84ee3cb77fa91ea68887619",
+      "preview_dimensions_px": [
+        1800,
+        1192
+      ],
+      "text_excerpt": "",
+      "note": "Display derivative. Do not use to determine survey distances or drainage rights."
+    }
+  ],
+  "limitations": [
+    "Source PDF is immutable, previews are lossy JPEG derivatives.",
+    "No legal boundary, survey, plat dedication, drainage easement or lot split may be inferred solely from the previews.",
+    "Page text extraction count is not an OCR review or certified transcription.",
+    "Separate Lot QQ chain of title and 2026 approved grading plans remain necessary.",
+    "Public GitHub remains a disclosure surface; do not add private neighbor media or contact data."
+  ]
+}
