@@ -8,6 +8,8 @@ on:
       - 'tools/build_reconciled_packet.py'
       - 'tools/verify_reconciled_release.py'
       - 'tools/check_document_claims.py'
+      - 'tools/check_repository_consistency.py'
+      - '00_CONTROL/ACTIVE_ASSERTION_CONSISTENCY_2026-10-15.md'
       - 'tools/check_jurisdiction_scope.py'
       - '00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md'
       - 'README.md'
@@ -79,6 +81,7 @@ jobs:
           PY
           python tools/verify_reconciled_release.py
           python tools/check_document_claims.py
+          python tools/check_repository_consistency.py
           python tools/check_jurisdiction_scope.py
           python -B 00_CONTROL/tools/strict_release_gate.py
           python -B 00_CONTROL/tools/classify_for_release.py --check
