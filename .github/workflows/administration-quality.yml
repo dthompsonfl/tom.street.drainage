@@ -23,10 +23,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run negative and positive administration regression tests
-        run: python -m unittest discover -s tools -p 'test_administration.py' -v
+      - name: Run negative and positive administrative and private-operation regression tests
+        run: |
+          python -m unittest discover -s tools -p 'test_administration.py' -v
+          python -m unittest discover -s tools -p 'test_private_operations.py' -v
       - name: Check current evidence registers, active document links and privacy boundary
         run: python tools/check_administration.py --strict
+      - name: Read-only full worktree privacy classification gate
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
       - name: Compile Python sources without writing tracked files
         run: |
           python - <<'PY'
