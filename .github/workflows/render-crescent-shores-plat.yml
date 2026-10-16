@@ -1,0 +1,55 @@
+name: Render original Crescent Shores recorded plat for human review
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/render_crescent_shores_plat.py'
+      - '.github/workflows/render-crescent-shores-plat.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: crescent-shores-plat-display-derivatives
+  cancel-in-progress: false
+jobs:
+  render-and-preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned PDF renderer
+        run: python -m pip install pymupdf==1.26.4 pillow==11.3.0
+      - name: Validate source script syntax
+        run: python -m py_compile tools/render_crescent_shores_plat.py
+      - name: Confirm official index and original PDF source bytes then render pages
+        run: python tools/render_crescent_shores_plat.py
+      - name: Verify derivative file hashes and page count
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          p=pathlib.Path("02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/PLAT_A_70_DISPLAY_DERIVATIVES/INSPECTION_AND_RENDER_MANIFEST.json")
+          d=json.loads(p.read_text())
+          assert len(d["records"])==2
+          for r in d["records"]:
+            b=pathlib.Path(r["preview"]).read_bytes()
+            assert b.startswith(b"\xff\xd8\xff")
+            assert len(b)==r["preview_bytes"]
+            assert hashlib.sha256(b).hexdigest()==r["preview_sha256"]
+          print("PASS two original-linked recorded-plat derivatives")
+          PY
+      - name: Preserve only public plat display derivatives and immutable source-link manifest
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/PLAT_A_70_DISPLAY_DERIVATIVES/
+          if git diff --cached --quiet; then echo "No new display images";exit 0;fi
+          git commit -m "docs: render official recorded Crescent Shores plat for source review [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
