@@ -153,13 +153,22 @@ def clerk_search():
                         except Exception as exc: select_status.append({"error":type(exc).__name__})
                     if not select_status:
                         try:
-                            page.locator("button[onclick*='ShowTypes']").click()
-                            check=page.locator("#BookTypeDiv input[name='BookTypeInfoCheckBox'][value='3']").first
-                            check.check(force=True)
-                            page.locator("#BookTypeDiv input[value='Done']").first.click(force=True)
+                            info=page.evaluate("""() => {
+                              const selected=Array.from(document.querySelectorAll("input[name='BookTypeInfoCheckBox']"));
+                              if(!selected.some(c=>c.value==="3")) throw new Error("PLAT checkbox not in official form");
+                              selected.forEach(c=>{c.checked=c.value==="3";c.dispatchEvent(new Event("change",{bubbles:true}));});
+                              if(typeof window.GetBookTypeString==="function") window.GetBookTypeString();
+                              const display=document.querySelector("#BookTypesDisplay");
+                              const hidden=document.querySelector("#BookTypes");
+                              return {display:display?.value||"", book_types:hidden?.value||"",
+                                      plat_checked:selected.some(c=>c.value==="3"&&c.checked)};
+                            }""")
+                            if not info.get("plat_checked"):
+                                raise RuntimeError("Unable to select County PLAT book category")
                             select_status.append({"selected":"PLAT - Plats/Maps",
-                                                  "field":"BookTypeInfoCheckBox", "value":"3",
-                                                  "display":page.locator("#BookTypesDisplay").input_value()})
+                                                  "field":"BookTypeInfoCheckBox","value":"3",
+                                                  "display":info.get("display"),
+                                                  "book_types":info.get("book_types")})
                         except Exception as exc:
                             record["book_type_widget_error"]=type(exc).__name__+": "+str(exc)[:180]
                     record["selected_book_type_options"]=select_status
