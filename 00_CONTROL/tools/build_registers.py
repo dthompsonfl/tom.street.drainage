@@ -520,6 +520,7 @@ def write(name, rows, cols):
     print(f"wrote {p} ({len(rows)} rows)")
 
 if __name__ == "__main__":
+    raise SystemExit("LEGACY REGISTER BUILDER DISABLED: outdated source assumptions and duplicate identifiers. Use current acquisition and canonical reconciliation tools; never overwrite validated registers with these bootstrap fixtures.")
     CTL.mkdir(parents=True, exist_ok=True)
     write("SOURCE_REGISTER.csv", SOURCE_ROWS, list(SOURCE_ROWS[0].keys()))
     write("RECORDS_ACQUISITION_MATRIX.csv", MATRIX_ROWS, list(MATRIX_ROWS[0].keys()))
