@@ -1,0 +1,50 @@
+{
+  "status": "2006_ORIGINAL_PUBLIC_COPC_LAZ_PRESERVED_HEADER_AND_EXTENT_CHECKED",
+  "dataset": "2006 NWFWMD Lidar: Escambia, Santa Rosa and Walton Counties",
+  "source_agency": "NOAA Office for Coastal Management / NWFWMD",
+  "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/57/20060228_sr1369_ld_p17.copc.laz",
+  "index_source": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/tileindex_2006_FL_Panhandle_m57.acquisition.json",
+  "metadata_source": "https://www.fisheries.noaa.gov/inport/item/48209",
+  "source_date_in_filename": "2006-02-28",
+  "published_product_vertical_reference": "NAVD88 using GEOID18 per NOAA public geoid18 index. Verify site-specific vertical units and LAS VLR metadata before numeric comparison.",
+  "local_original": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/20060228_sr1369_ld_p17.copc.laz",
+  "bytes": 17352858,
+  "sha256": "d5e83be7740af296db227af9c29e253ccc9c0279ee062c32c1091bb2f4376faa",
+  "header": {
+    "LAS_version": "1.4",
+    "point_data_format": 6,
+    "legacy_point_count": 0,
+    "horizontal_bounds": {
+      "minx": 516903.89442768454,
+      "maxx": 518403.8870290471,
+      "miny": 3364698.839979577,
+      "maxy": 3366198.841079015
+    },
+    "vertical_bounds_source_units": {
+      "minz": -0.12394866845903962,
+      "maxz": 33.80432810269339
+    },
+    "point_scale": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "point_offset": [
+      517653.89072836586,
+      3365448.8405292956,
+      16.840189717117177
+    ],
+    "representative_site_inside_LAS_bounds": {
+      "2264_Tom_St": true,
+      "2265_Tom_St": true,
+      "2268_Tom_St": true
+    }
+  },
+  "limitations": [
+    "A preserved 2006 original point cloud; site ground points and their classifications have NOT been analyzed.",
+    "No 2006 lot elevation or changes to 2017/2026 inferred.",
+    "Published GEOID18 product not automatically interchangeable with 2017 NOAA GEOID12B raster.",
+    "Public parcel polygons and sample points are approximate, not surveys.",
+    "LAS header coverage does not establish adequacy or cause of drainage condition."
+  ]
+}
