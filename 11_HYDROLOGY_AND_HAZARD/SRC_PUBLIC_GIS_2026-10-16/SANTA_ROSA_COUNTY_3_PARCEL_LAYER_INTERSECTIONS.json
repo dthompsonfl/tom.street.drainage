@@ -1,0 +1,3130 @@
+{
+  "retrieved_utc": "2026-10-16T06:34:30.158Z",
+  "agency": "Santa Rosa County GIS",
+  "source_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer",
+  "query_description": "Three representative points within identified parcel polygons; 18 ArcGIS REST layer intersects; query URLs and complete feature attribute arrays retained",
+  "point_crs": "EPSG:4326 WGS84",
+  "capture_count": 18,
+  "captures": [
+    {
+      "site": "2264_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "layer_id": 35,
+      "label": "Soils",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/35/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "MUNAME",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "gisdata_GISADMIN_SRCSoils_AREA": "gisdata.GISADMIN.SRCSoils.AREA",
+          "PERIMETER": "PERIMETER",
+          "MUSYM": "Map Unit Symbol",
+          "MUKEY": "MAP UNIT KEY",
+          "MUNAME": "Map Unit Name",
+          "MUACRES": "MAP UNIT ACRES",
+          "FARMLNDCL": "FARMLAND CLASSIFICATION",
+          "SLOPEGRADD": "SLOPE GRADE",
+          "WTDEPANNMI": "WATER TABLE DEPTH MINIMUM",
+          "FLODFREQDC": "FLOODING FREQUENCY",
+          "DRCLASSDCD": "DRAINAGE CLASSIFICATION",
+          "ENGDWOBDCD": "DWELLINGS WO BASEMENTS SUITABILITY",
+          "ENGDWBDCD": "DWELLINGS WITH BASEMENTS SUITABILITY",
+          "ENGLRSDCD": "ROADS AND STREETS SUITABILITY",
+          "HYDCLPRS": "HYDRIC CLASSIFICATION",
+          "HYDRICON": "HYDRIC CONDITION",
+          "HYDRICRATI": "HYDRIC RATING",
+          "DRAINAGECL": "DRAINAGE CLASSIFICATION",
+          "GEOMDESC": "GEOMORPHIC DESCRIPTION",
+          "TAXCLNAME": "TAXONOMIC CLASSIFICATION",
+          "TAXPARTSIZ": "SOIL PARTICLE SIZE",
+          "FLSOILLEAC": "SOIL LEACH POTENTIAL",
+          "FLSOIRUNOF": "SOIL RUNOFF POTENTIAL",
+          "MAPUNITTEX": "MAP UNIT TEXT",
+          "TEXT": "SOIL DESCRIPTION",
+          "LEGENDNAME": "MAP UNIT NAME",
+          "HEL": "HEL",
+          "HIGHLYERODIBLESOILS": "HIGHLYERODIBLESOILS",
+          "DESCRIPTION": "DESCRIPTION",
+          "GlobalID": "GlobalID",
+          "SHAPE.STArea()": "SHAPE.STArea()",
+          "SHAPE.STLength()": "SHAPE.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "gisdata_GISADMIN_SRCSoils_AREA",
+            "type": "esriFieldTypeDouble",
+            "alias": "gisdata.GISADMIN.SRCSoils.AREA"
+          },
+          {
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble",
+            "alias": "PERIMETER"
+          },
+          {
+            "name": "MUSYM",
+            "type": "esriFieldTypeString",
+            "alias": "Map Unit Symbol",
+            "length": 8
+          },
+          {
+            "name": "MUKEY",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT KEY",
+            "length": 30
+          },
+          {
+            "name": "MUNAME",
+            "type": "esriFieldTypeString",
+            "alias": "Map Unit Name",
+            "length": 175
+          },
+          {
+            "name": "MUACRES",
+            "type": "esriFieldTypeInteger",
+            "alias": "MAP UNIT ACRES"
+          },
+          {
+            "name": "FARMLNDCL",
+            "type": "esriFieldTypeString",
+            "alias": "FARMLAND CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "SLOPEGRADD",
+            "type": "esriFieldTypeDouble",
+            "alias": "SLOPE GRADE"
+          },
+          {
+            "name": "WTDEPANNMI",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "WATER TABLE DEPTH MINIMUM"
+          },
+          {
+            "name": "FLODFREQDC",
+            "type": "esriFieldTypeString",
+            "alias": "FLOODING FREQUENCY",
+            "length": 254
+          },
+          {
+            "name": "DRCLASSDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DRAINAGE CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "ENGDWOBDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DWELLINGS WO BASEMENTS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "ENGDWBDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DWELLINGS WITH BASEMENTS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "ENGLRSDCD",
+            "type": "esriFieldTypeString",
+            "alias": "ROADS AND STREETS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "HYDCLPRS",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "HYDRICON",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC CONDITION",
+            "length": 254
+          },
+          {
+            "name": "HYDRICRATI",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC RATING",
+            "length": 254
+          },
+          {
+            "name": "DRAINAGECL",
+            "type": "esriFieldTypeString",
+            "alias": "DRAINAGE CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "GEOMDESC",
+            "type": "esriFieldTypeString",
+            "alias": "GEOMORPHIC DESCRIPTION",
+            "length": 254
+          },
+          {
+            "name": "TAXCLNAME",
+            "type": "esriFieldTypeString",
+            "alias": "TAXONOMIC CLASSIFICATION",
+            "length": 120
+          },
+          {
+            "name": "TAXPARTSIZ",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL PARTICLE SIZE",
+            "length": 254
+          },
+          {
+            "name": "FLSOILLEAC",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL LEACH POTENTIAL",
+            "length": 254
+          },
+          {
+            "name": "FLSOIRUNOF",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL RUNOFF POTENTIAL",
+            "length": 254
+          },
+          {
+            "name": "MAPUNITTEX",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT TEXT",
+            "length": 254
+          },
+          {
+            "name": "TEXT",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL DESCRIPTION",
+            "length": 254
+          },
+          {
+            "name": "LEGENDNAME",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT NAME",
+            "length": 50
+          },
+          {
+            "name": "HEL",
+            "type": "esriFieldTypeString",
+            "alias": "HEL",
+            "length": 15
+          },
+          {
+            "name": "HIGHLYERODIBLESOILS",
+            "type": "esriFieldTypeString",
+            "alias": "HIGHLYERODIBLESOILS",
+            "length": 25
+          },
+          {
+            "name": "DESCRIPTION",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPTION",
+            "length": 255
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "SHAPE.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STArea()"
+          },
+          {
+            "name": "SHAPE.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 14438,
+              "gisdata_GISADMIN_SRCSoils_AREA": 26623186.54472,
+              "PERIMETER": 109746.95248,
+              "MUSYM": "34",
+              "MUKEY": "636993",
+              "MUNAME": "Pactolus loamy sand, 0 to 5 percent slopes",
+              "MUACRES": 611,
+              "FARMLNDCL": "Not prime farmland",
+              "SLOPEGRADD": 3,
+              "WTDEPANNMI": 69,
+              "FLODFREQDC": "None",
+              "DRCLASSDCD": "Moderately well drained",
+              "ENGDWOBDCD": "Somewhat limited",
+              "ENGDWBDCD": "Very limited",
+              "ENGLRSDCD": "Somewhat limited",
+              "HYDCLPRS": "Partially hydric",
+              "HYDRICON": " ",
+              "HYDRICRATI": "No",
+              "DRAINAGECL": " ",
+              "GEOMDESC": " ",
+              "TAXCLNAME": " ",
+              "TAXPARTSIZ": " ",
+              "FLSOILLEAC": " ",
+              "FLSOIRUNOF": " ",
+              "MAPUNITTEX": "Nontechnical description",
+              "TEXT": "Map Unit 34, Pactolus Loamy Sand, 0 To 5 Percent Slopes.\r\n\r\n6w3- This capability unit consists of nearly level, very poorly drained soils that occur in depressions.  These soils are mineral soils.\r\n\r\n3s5- This map unit consists of nearly level and gently",
+              "LEGENDNAME": "PACTOLUS LOAMY SAND, 0-5% SLOPES",
+              "HEL": "No",
+              "HIGHLYERODIBLESOILS": "No",
+              "DESCRIPTION": "Consists of nearly level and gently sloping, somewhat poorly drained to moderately well drained soils on broad low ridges.",
+              "GlobalID": "{90C802C2-85FE-4BE4-8586-5F487F55F489}",
+              "SHAPE.STArea()": 26623186.06788478,
+              "SHAPE.STLength()": 109746.95449820305
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2264_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "layer_id": 36,
+      "label": "Wetlands",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/36/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "ATTRIBUTE",
+        "fieldAliases": {
+          "OBJECTID_1": "OBJECTID",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "SHAPE.STArea()",
+          "Shape.STLength()": "SHAPE.STLength()",
+          "OBJECTID": "OBJECTID",
+          "ATTRIBUTE": "ATTRIBUTE",
+          "WETLAND_TY": "WETLAND_TY",
+          "SYSTEM": "SYSTEM",
+          "SYSTEM_D": "SYSTEM_D",
+          "SUBSYSTEM": "SUBSYSTEM",
+          "SUBSYS_D": "SUBSYS_D",
+          "CLASS1": "CLASS1",
+          "CLASS1_D": "CLASS1_D",
+          "SUBCLASS1": "SUBCLASS1",
+          "SUBCL1_D": "SUBCL1_D",
+          "CLASS2": "CLASS2",
+          "CLASS2_D": "CLASS2_D",
+          "SUBCLASS2": "SUBCLASS2",
+          "SUBCL2_D": "SUBCL2_D",
+          "WATER1": "WATER1",
+          "WATER1_D": "WATER1_D",
+          "WATER2": "WATER2",
+          "WATER2_D": "WATER2_D",
+          "CHEMISTRY1": "CHEMISTRY1",
+          "CHEMIST1_D": "CHEMIST1_D",
+          "CHEMISTRY2": "CHEMISTRY2",
+          "CHEMIST2_D": "CHEMIST2_D",
+          "SOIL": "SOIL",
+          "SOIL_D": "SOIL_D",
+          "SPECIAL1": "SPECIAL1",
+          "SPECIAL1_D": "SPECIAL1_D",
+          "SPECIAL2": "SPECIAL2",
+          "SPECIAL2_D": "SPECIAL2_D",
+          "DESCRIPT": "DESCRIPT",
+          "DESCRIPT2": "DESCRIPT2",
+          "FGDLAQDATE": "FGDLAQDATE",
+          "AUTOID": "AUTOID"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          },
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeDouble",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "ATTRIBUTE",
+            "type": "esriFieldTypeString",
+            "alias": "ATTRIBUTE",
+            "length": 20
+          },
+          {
+            "name": "WETLAND_TY",
+            "type": "esriFieldTypeString",
+            "alias": "WETLAND_TY",
+            "length": 50
+          },
+          {
+            "name": "SYSTEM",
+            "type": "esriFieldTypeString",
+            "alias": "SYSTEM",
+            "length": 1
+          },
+          {
+            "name": "SYSTEM_D",
+            "type": "esriFieldTypeString",
+            "alias": "SYSTEM_D",
+            "length": 12
+          },
+          {
+            "name": "SUBSYSTEM",
+            "type": "esriFieldTypeString",
+            "alias": "SUBSYSTEM",
+            "length": 1
+          },
+          {
+            "name": "SUBSYS_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBSYS_D",
+            "length": 12
+          },
+          {
+            "name": "CLASS1",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS1",
+            "length": 2
+          },
+          {
+            "name": "CLASS1_D",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS1_D",
+            "length": 30
+          },
+          {
+            "name": "SUBCLASS1",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCLASS1",
+            "length": 1
+          },
+          {
+            "name": "SUBCL1_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCL1_D",
+            "length": 30
+          },
+          {
+            "name": "CLASS2",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS2",
+            "length": 2
+          },
+          {
+            "name": "CLASS2_D",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS2_D",
+            "length": 30
+          },
+          {
+            "name": "SUBCLASS2",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCLASS2",
+            "length": 1
+          },
+          {
+            "name": "SUBCL2_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCL2_D",
+            "length": 30
+          },
+          {
+            "name": "WATER1",
+            "type": "esriFieldTypeString",
+            "alias": "WATER1",
+            "length": 1
+          },
+          {
+            "name": "WATER1_D",
+            "type": "esriFieldTypeString",
+            "alias": "WATER1_D",
+            "length": 36
+          },
+          {
+            "name": "WATER2",
+            "type": "esriFieldTypeString",
+            "alias": "WATER2",
+            "length": 1
+          },
+          {
+            "name": "WATER2_D",
+            "type": "esriFieldTypeString",
+            "alias": "WATER2_D",
+            "length": 36
+          },
+          {
+            "name": "CHEMISTRY1",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMISTRY1",
+            "length": 1
+          },
+          {
+            "name": "CHEMIST1_D",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMIST1_D",
+            "length": 22
+          },
+          {
+            "name": "CHEMISTRY2",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMISTRY2",
+            "length": 1
+          },
+          {
+            "name": "CHEMIST2_D",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMIST2_D",
+            "length": 22
+          },
+          {
+            "name": "SOIL",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL",
+            "length": 1
+          },
+          {
+            "name": "SOIL_D",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL_D",
+            "length": 8
+          },
+          {
+            "name": "SPECIAL1",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL1",
+            "length": 1
+          },
+          {
+            "name": "SPECIAL1_D",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL1_D",
+            "length": 26
+          },
+          {
+            "name": "SPECIAL2",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL2",
+            "length": 1
+          },
+          {
+            "name": "SPECIAL2_D",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL2_D",
+            "length": 26
+          },
+          {
+            "name": "DESCRIPT",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPT",
+            "length": 12
+          },
+          {
+            "name": "DESCRIPT2",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPT2",
+            "length": 10
+          },
+          {
+            "name": "FGDLAQDATE",
+            "type": "esriFieldTypeDate",
+            "alias": "FGDLAQDATE",
+            "length": 8
+          },
+          {
+            "name": "AUTOID",
+            "type": "esriFieldTypeDouble",
+            "alias": "AUTOID"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "site": "2264_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "layer_id": 45,
+      "label": "County FEMA Flood Zones",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/45/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "FLD_AR_ID",
+        "fieldAliases": {
+          "OBJECTID_1": "OBJECTID_1",
+          "OBJECTID": "OBJECTID",
+          "DFIRM_ID": "DFIRM_ID",
+          "VERSION_ID": "VERSION_ID",
+          "FLD_AR_ID": "FLD_AR_ID",
+          "FLD_ZONE": "FLD_ZONE",
+          "ZONE_SUBTY": "ZONE_SUBTY",
+          "SFHA_TF": "SFHA_TF",
+          "STATIC_BFE": "STATIC_BFE",
+          "V_DATUM": "V_DATUM",
+          "DEPTH": "DEPTH",
+          "LEN_UNIT": "LEN_UNIT",
+          "VELOCITY": "VELOCITY",
+          "VEL_UNIT": "VEL_UNIT",
+          "AR_REVERT": "AR_REVERT",
+          "AR_SUBTRV": "AR_SUBTRV",
+          "BFE_REVERT": "BFE_REVERT",
+          "DEP_REVERT": "DEP_REVERT",
+          "DUAL_ZONE": "DUAL_ZONE",
+          "SOURCE_CIT": "SOURCE_CIT",
+          "SHAPE_Leng": "SHAPE_Leng",
+          "STUDY_TYP": "STUDY_TYP",
+          "Shape_Le_1": "Shape_Le_1",
+          "Label": "Label",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeInteger",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DFIRM_ID",
+            "type": "esriFieldTypeString",
+            "alias": "DFIRM_ID",
+            "length": 6
+          },
+          {
+            "name": "VERSION_ID",
+            "type": "esriFieldTypeString",
+            "alias": "VERSION_ID",
+            "length": 11
+          },
+          {
+            "name": "FLD_AR_ID",
+            "type": "esriFieldTypeString",
+            "alias": "FLD_AR_ID",
+            "length": 25
+          },
+          {
+            "name": "FLD_ZONE",
+            "type": "esriFieldTypeString",
+            "alias": "FLD_ZONE",
+            "length": 17
+          },
+          {
+            "name": "ZONE_SUBTY",
+            "type": "esriFieldTypeString",
+            "alias": "ZONE_SUBTY",
+            "length": 72
+          },
+          {
+            "name": "SFHA_TF",
+            "type": "esriFieldTypeString",
+            "alias": "SFHA_TF",
+            "length": 1
+          },
+          {
+            "name": "STATIC_BFE",
+            "type": "esriFieldTypeDouble",
+            "alias": "STATIC_BFE"
+          },
+          {
+            "name": "V_DATUM",
+            "type": "esriFieldTypeString",
+            "alias": "V_DATUM",
+            "length": 17
+          },
+          {
+            "name": "DEPTH",
+            "type": "esriFieldTypeDouble",
+            "alias": "DEPTH"
+          },
+          {
+            "name": "LEN_UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "LEN_UNIT",
+            "length": 16
+          },
+          {
+            "name": "VELOCITY",
+            "type": "esriFieldTypeDouble",
+            "alias": "VELOCITY"
+          },
+          {
+            "name": "VEL_UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "VEL_UNIT",
+            "length": 20
+          },
+          {
+            "name": "AR_REVERT",
+            "type": "esriFieldTypeString",
+            "alias": "AR_REVERT",
+            "length": 17
+          },
+          {
+            "name": "AR_SUBTRV",
+            "type": "esriFieldTypeString",
+            "alias": "AR_SUBTRV",
+            "length": 72
+          },
+          {
+            "name": "BFE_REVERT",
+            "type": "esriFieldTypeDouble",
+            "alias": "BFE_REVERT"
+          },
+          {
+            "name": "DEP_REVERT",
+            "type": "esriFieldTypeDouble",
+            "alias": "DEP_REVERT"
+          },
+          {
+            "name": "DUAL_ZONE",
+            "type": "esriFieldTypeString",
+            "alias": "DUAL_ZONE",
+            "length": 1
+          },
+          {
+            "name": "SOURCE_CIT",
+            "type": "esriFieldTypeString",
+            "alias": "SOURCE_CIT",
+            "length": 11
+          },
+          {
+            "name": "SHAPE_Leng",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE_Leng"
+          },
+          {
+            "name": "STUDY_TYP",
+            "type": "esriFieldTypeString",
+            "alias": "STUDY_TYP",
+            "length": 28
+          },
+          {
+            "name": "Shape_Le_1",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Le_1"
+          },
+          {
+            "name": "Label",
+            "type": "esriFieldTypeString",
+            "alias": "Label",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID_1": 928,
+              "OBJECTID": 930,
+              "DFIRM_ID": "12113C",
+              "VERSION_ID": "1.3.1.2",
+              "FLD_AR_ID": "931",
+              "FLD_ZONE": "X",
+              "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+              "SFHA_TF": "F",
+              "STATIC_BFE": -9999,
+              "V_DATUM": " ",
+              "DEPTH": -9999,
+              "LEN_UNIT": " ",
+              "VELOCITY": -9999,
+              "VEL_UNIT": " ",
+              "AR_REVERT": " ",
+              "AR_SUBTRV": " ",
+              "BFE_REVERT": -9999,
+              "DEP_REVERT": -9999,
+              "DUAL_ZONE": " ",
+              "SOURCE_CIT": "STUDY6",
+              "SHAPE_Leng": 2.69997141,
+              "STUDY_TYP": "NP",
+              "Shape_Le_1": 2.69997294,
+              "Label": "X - AREA OF MINIMAL FLOOD HAZARD  (-9999 BFE)",
+              "GlobalID": "{335DCFF1-A695-4131-A49F-23FA48FD94DD}",
+              "Shape.STArea()": 906330042.5838178,
+              "Shape.STLength()": 904225.3321151218
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2264_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "layer_id": 50,
+      "label": "Contour lines",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/50/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "UNIT",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID_1",
+          "LENGTH": "LENGTH",
+          "QUAD_NUM": "QUAD_NUM",
+          "CONTOUR": "CONTOUR",
+          "ORGCONT": "ORGCONT",
+          "DEPRESSION": "DEPRESSION",
+          "HILLTOP": "HILLTOP",
+          "INTERVAL_": "INTERVAL_",
+          "UNIT": "UNIT",
+          "FEA_SYM": "FEA_SYM",
+          "FEATURE": "FEATURE",
+          "SHAPE_LENG": "SHAPE_LENG",
+          "GlobalID": "GlobalID",
+          "SHAPE.STLength()": "SHAPE.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "LENGTH",
+            "type": "esriFieldTypeDouble",
+            "alias": "LENGTH"
+          },
+          {
+            "name": "QUAD_NUM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "QUAD_NUM"
+          },
+          {
+            "name": "CONTOUR",
+            "type": "esriFieldTypeDouble",
+            "alias": "CONTOUR"
+          },
+          {
+            "name": "ORGCONT",
+            "type": "esriFieldTypeDouble",
+            "alias": "ORGCONT"
+          },
+          {
+            "name": "DEPRESSION",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "DEPRESSION"
+          },
+          {
+            "name": "HILLTOP",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "HILLTOP"
+          },
+          {
+            "name": "INTERVAL_",
+            "type": "esriFieldTypeDouble",
+            "alias": "INTERVAL_"
+          },
+          {
+            "name": "UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "UNIT",
+            "length": 2
+          },
+          {
+            "name": "FEA_SYM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "FEA_SYM"
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 30
+          },
+          {
+            "name": "SHAPE_LENG",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE_LENG"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "SHAPE.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "site": "2264_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "layer_id": 79,
+      "label": "Stormwater Problem Area",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/79/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "DataSource",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "DataSource": "DataSource",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DataSource",
+            "type": "esriFieldTypeString",
+            "alias": "DataSource",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 2068,
+              "DataSource": "Road & Bridge Maps Marked Up by Foreman",
+              "GlobalID": "{6BE01BBB-27EB-445F-81C0-BAAEFE57C3DD}",
+              "Shape.STArea()": 3841664.7428849353,
+              "Shape.STLength()": 8570.301381931715
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2264_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "layer_id": 100,
+      "label": "Drainage Basins",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/100/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "HUC",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "gisdata_GISADMIN_drainage_basin": "gisdata.GISADMIN.drainage_basin_SRC.AREA",
+          "PERIMETER": "PERIMETER",
+          "HUC": "HUC",
+          "EXTHUC": "EXTHUC",
+          "BASIN": "BASIN",
+          "FEATURE": "FEATURE",
+          "SQ_MILES": "SQ_MILES",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "gisdata_GISADMIN_drainage_basin",
+            "type": "esriFieldTypeDouble",
+            "alias": "gisdata.GISADMIN.drainage_basin_SRC.AREA"
+          },
+          {
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble",
+            "alias": "PERIMETER"
+          },
+          {
+            "name": "HUC",
+            "type": "esriFieldTypeString",
+            "alias": "HUC",
+            "length": 9
+          },
+          {
+            "name": "EXTHUC",
+            "type": "esriFieldTypeString",
+            "alias": "EXTHUC",
+            "length": 9
+          },
+          {
+            "name": "BASIN",
+            "type": "esriFieldTypeString",
+            "alias": "BASIN",
+            "length": 23
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 7
+          },
+          {
+            "name": "SQ_MILES",
+            "type": "esriFieldTypeDouble",
+            "alias": "SQ_MILES"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 93,
+              "gisdata_GISADMIN_drainage_basin": 0,
+              "PERIMETER": 68449.89768,
+              "HUC": "03140105",
+              "EXTHUC": "99990000",
+              "BASIN": "DIRECT RUNOFF TO BAY",
+              "FEATURE": "STREAM",
+              "SQ_MILES": 16.71,
+              "GlobalID": "{0DF7CCEB-1EB4-46AD-A253-BEF6F246079B}",
+              "Shape.STArea()": 115766057.40523994,
+              "Shape.STLength()": 70451.1979431633
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2265_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "layer_id": 35,
+      "label": "Soils",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/35/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "MUNAME",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "gisdata_GISADMIN_SRCSoils_AREA": "gisdata.GISADMIN.SRCSoils.AREA",
+          "PERIMETER": "PERIMETER",
+          "MUSYM": "Map Unit Symbol",
+          "MUKEY": "MAP UNIT KEY",
+          "MUNAME": "Map Unit Name",
+          "MUACRES": "MAP UNIT ACRES",
+          "FARMLNDCL": "FARMLAND CLASSIFICATION",
+          "SLOPEGRADD": "SLOPE GRADE",
+          "WTDEPANNMI": "WATER TABLE DEPTH MINIMUM",
+          "FLODFREQDC": "FLOODING FREQUENCY",
+          "DRCLASSDCD": "DRAINAGE CLASSIFICATION",
+          "ENGDWOBDCD": "DWELLINGS WO BASEMENTS SUITABILITY",
+          "ENGDWBDCD": "DWELLINGS WITH BASEMENTS SUITABILITY",
+          "ENGLRSDCD": "ROADS AND STREETS SUITABILITY",
+          "HYDCLPRS": "HYDRIC CLASSIFICATION",
+          "HYDRICON": "HYDRIC CONDITION",
+          "HYDRICRATI": "HYDRIC RATING",
+          "DRAINAGECL": "DRAINAGE CLASSIFICATION",
+          "GEOMDESC": "GEOMORPHIC DESCRIPTION",
+          "TAXCLNAME": "TAXONOMIC CLASSIFICATION",
+          "TAXPARTSIZ": "SOIL PARTICLE SIZE",
+          "FLSOILLEAC": "SOIL LEACH POTENTIAL",
+          "FLSOIRUNOF": "SOIL RUNOFF POTENTIAL",
+          "MAPUNITTEX": "MAP UNIT TEXT",
+          "TEXT": "SOIL DESCRIPTION",
+          "LEGENDNAME": "MAP UNIT NAME",
+          "HEL": "HEL",
+          "HIGHLYERODIBLESOILS": "HIGHLYERODIBLESOILS",
+          "DESCRIPTION": "DESCRIPTION",
+          "GlobalID": "GlobalID",
+          "SHAPE.STArea()": "SHAPE.STArea()",
+          "SHAPE.STLength()": "SHAPE.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "gisdata_GISADMIN_SRCSoils_AREA",
+            "type": "esriFieldTypeDouble",
+            "alias": "gisdata.GISADMIN.SRCSoils.AREA"
+          },
+          {
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble",
+            "alias": "PERIMETER"
+          },
+          {
+            "name": "MUSYM",
+            "type": "esriFieldTypeString",
+            "alias": "Map Unit Symbol",
+            "length": 8
+          },
+          {
+            "name": "MUKEY",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT KEY",
+            "length": 30
+          },
+          {
+            "name": "MUNAME",
+            "type": "esriFieldTypeString",
+            "alias": "Map Unit Name",
+            "length": 175
+          },
+          {
+            "name": "MUACRES",
+            "type": "esriFieldTypeInteger",
+            "alias": "MAP UNIT ACRES"
+          },
+          {
+            "name": "FARMLNDCL",
+            "type": "esriFieldTypeString",
+            "alias": "FARMLAND CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "SLOPEGRADD",
+            "type": "esriFieldTypeDouble",
+            "alias": "SLOPE GRADE"
+          },
+          {
+            "name": "WTDEPANNMI",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "WATER TABLE DEPTH MINIMUM"
+          },
+          {
+            "name": "FLODFREQDC",
+            "type": "esriFieldTypeString",
+            "alias": "FLOODING FREQUENCY",
+            "length": 254
+          },
+          {
+            "name": "DRCLASSDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DRAINAGE CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "ENGDWOBDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DWELLINGS WO BASEMENTS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "ENGDWBDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DWELLINGS WITH BASEMENTS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "ENGLRSDCD",
+            "type": "esriFieldTypeString",
+            "alias": "ROADS AND STREETS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "HYDCLPRS",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "HYDRICON",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC CONDITION",
+            "length": 254
+          },
+          {
+            "name": "HYDRICRATI",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC RATING",
+            "length": 254
+          },
+          {
+            "name": "DRAINAGECL",
+            "type": "esriFieldTypeString",
+            "alias": "DRAINAGE CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "GEOMDESC",
+            "type": "esriFieldTypeString",
+            "alias": "GEOMORPHIC DESCRIPTION",
+            "length": 254
+          },
+          {
+            "name": "TAXCLNAME",
+            "type": "esriFieldTypeString",
+            "alias": "TAXONOMIC CLASSIFICATION",
+            "length": 120
+          },
+          {
+            "name": "TAXPARTSIZ",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL PARTICLE SIZE",
+            "length": 254
+          },
+          {
+            "name": "FLSOILLEAC",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL LEACH POTENTIAL",
+            "length": 254
+          },
+          {
+            "name": "FLSOIRUNOF",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL RUNOFF POTENTIAL",
+            "length": 254
+          },
+          {
+            "name": "MAPUNITTEX",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT TEXT",
+            "length": 254
+          },
+          {
+            "name": "TEXT",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL DESCRIPTION",
+            "length": 254
+          },
+          {
+            "name": "LEGENDNAME",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT NAME",
+            "length": 50
+          },
+          {
+            "name": "HEL",
+            "type": "esriFieldTypeString",
+            "alias": "HEL",
+            "length": 15
+          },
+          {
+            "name": "HIGHLYERODIBLESOILS",
+            "type": "esriFieldTypeString",
+            "alias": "HIGHLYERODIBLESOILS",
+            "length": 25
+          },
+          {
+            "name": "DESCRIPTION",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPTION",
+            "length": 255
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "SHAPE.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STArea()"
+          },
+          {
+            "name": "SHAPE.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 14438,
+              "gisdata_GISADMIN_SRCSoils_AREA": 26623186.54472,
+              "PERIMETER": 109746.95248,
+              "MUSYM": "34",
+              "MUKEY": "636993",
+              "MUNAME": "Pactolus loamy sand, 0 to 5 percent slopes",
+              "MUACRES": 611,
+              "FARMLNDCL": "Not prime farmland",
+              "SLOPEGRADD": 3,
+              "WTDEPANNMI": 69,
+              "FLODFREQDC": "None",
+              "DRCLASSDCD": "Moderately well drained",
+              "ENGDWOBDCD": "Somewhat limited",
+              "ENGDWBDCD": "Very limited",
+              "ENGLRSDCD": "Somewhat limited",
+              "HYDCLPRS": "Partially hydric",
+              "HYDRICON": " ",
+              "HYDRICRATI": "No",
+              "DRAINAGECL": " ",
+              "GEOMDESC": " ",
+              "TAXCLNAME": " ",
+              "TAXPARTSIZ": " ",
+              "FLSOILLEAC": " ",
+              "FLSOIRUNOF": " ",
+              "MAPUNITTEX": "Nontechnical description",
+              "TEXT": "Map Unit 34, Pactolus Loamy Sand, 0 To 5 Percent Slopes.\r\n\r\n6w3- This capability unit consists of nearly level, very poorly drained soils that occur in depressions.  These soils are mineral soils.\r\n\r\n3s5- This map unit consists of nearly level and gently",
+              "LEGENDNAME": "PACTOLUS LOAMY SAND, 0-5% SLOPES",
+              "HEL": "No",
+              "HIGHLYERODIBLESOILS": "No",
+              "DESCRIPTION": "Consists of nearly level and gently sloping, somewhat poorly drained to moderately well drained soils on broad low ridges.",
+              "GlobalID": "{90C802C2-85FE-4BE4-8586-5F487F55F489}",
+              "SHAPE.STArea()": 26623186.06788478,
+              "SHAPE.STLength()": 109746.95449820305
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2265_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "layer_id": 36,
+      "label": "Wetlands",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/36/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "ATTRIBUTE",
+        "fieldAliases": {
+          "OBJECTID_1": "OBJECTID",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "SHAPE.STArea()",
+          "Shape.STLength()": "SHAPE.STLength()",
+          "OBJECTID": "OBJECTID",
+          "ATTRIBUTE": "ATTRIBUTE",
+          "WETLAND_TY": "WETLAND_TY",
+          "SYSTEM": "SYSTEM",
+          "SYSTEM_D": "SYSTEM_D",
+          "SUBSYSTEM": "SUBSYSTEM",
+          "SUBSYS_D": "SUBSYS_D",
+          "CLASS1": "CLASS1",
+          "CLASS1_D": "CLASS1_D",
+          "SUBCLASS1": "SUBCLASS1",
+          "SUBCL1_D": "SUBCL1_D",
+          "CLASS2": "CLASS2",
+          "CLASS2_D": "CLASS2_D",
+          "SUBCLASS2": "SUBCLASS2",
+          "SUBCL2_D": "SUBCL2_D",
+          "WATER1": "WATER1",
+          "WATER1_D": "WATER1_D",
+          "WATER2": "WATER2",
+          "WATER2_D": "WATER2_D",
+          "CHEMISTRY1": "CHEMISTRY1",
+          "CHEMIST1_D": "CHEMIST1_D",
+          "CHEMISTRY2": "CHEMISTRY2",
+          "CHEMIST2_D": "CHEMIST2_D",
+          "SOIL": "SOIL",
+          "SOIL_D": "SOIL_D",
+          "SPECIAL1": "SPECIAL1",
+          "SPECIAL1_D": "SPECIAL1_D",
+          "SPECIAL2": "SPECIAL2",
+          "SPECIAL2_D": "SPECIAL2_D",
+          "DESCRIPT": "DESCRIPT",
+          "DESCRIPT2": "DESCRIPT2",
+          "FGDLAQDATE": "FGDLAQDATE",
+          "AUTOID": "AUTOID"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          },
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeDouble",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "ATTRIBUTE",
+            "type": "esriFieldTypeString",
+            "alias": "ATTRIBUTE",
+            "length": 20
+          },
+          {
+            "name": "WETLAND_TY",
+            "type": "esriFieldTypeString",
+            "alias": "WETLAND_TY",
+            "length": 50
+          },
+          {
+            "name": "SYSTEM",
+            "type": "esriFieldTypeString",
+            "alias": "SYSTEM",
+            "length": 1
+          },
+          {
+            "name": "SYSTEM_D",
+            "type": "esriFieldTypeString",
+            "alias": "SYSTEM_D",
+            "length": 12
+          },
+          {
+            "name": "SUBSYSTEM",
+            "type": "esriFieldTypeString",
+            "alias": "SUBSYSTEM",
+            "length": 1
+          },
+          {
+            "name": "SUBSYS_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBSYS_D",
+            "length": 12
+          },
+          {
+            "name": "CLASS1",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS1",
+            "length": 2
+          },
+          {
+            "name": "CLASS1_D",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS1_D",
+            "length": 30
+          },
+          {
+            "name": "SUBCLASS1",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCLASS1",
+            "length": 1
+          },
+          {
+            "name": "SUBCL1_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCL1_D",
+            "length": 30
+          },
+          {
+            "name": "CLASS2",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS2",
+            "length": 2
+          },
+          {
+            "name": "CLASS2_D",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS2_D",
+            "length": 30
+          },
+          {
+            "name": "SUBCLASS2",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCLASS2",
+            "length": 1
+          },
+          {
+            "name": "SUBCL2_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCL2_D",
+            "length": 30
+          },
+          {
+            "name": "WATER1",
+            "type": "esriFieldTypeString",
+            "alias": "WATER1",
+            "length": 1
+          },
+          {
+            "name": "WATER1_D",
+            "type": "esriFieldTypeString",
+            "alias": "WATER1_D",
+            "length": 36
+          },
+          {
+            "name": "WATER2",
+            "type": "esriFieldTypeString",
+            "alias": "WATER2",
+            "length": 1
+          },
+          {
+            "name": "WATER2_D",
+            "type": "esriFieldTypeString",
+            "alias": "WATER2_D",
+            "length": 36
+          },
+          {
+            "name": "CHEMISTRY1",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMISTRY1",
+            "length": 1
+          },
+          {
+            "name": "CHEMIST1_D",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMIST1_D",
+            "length": 22
+          },
+          {
+            "name": "CHEMISTRY2",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMISTRY2",
+            "length": 1
+          },
+          {
+            "name": "CHEMIST2_D",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMIST2_D",
+            "length": 22
+          },
+          {
+            "name": "SOIL",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL",
+            "length": 1
+          },
+          {
+            "name": "SOIL_D",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL_D",
+            "length": 8
+          },
+          {
+            "name": "SPECIAL1",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL1",
+            "length": 1
+          },
+          {
+            "name": "SPECIAL1_D",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL1_D",
+            "length": 26
+          },
+          {
+            "name": "SPECIAL2",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL2",
+            "length": 1
+          },
+          {
+            "name": "SPECIAL2_D",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL2_D",
+            "length": 26
+          },
+          {
+            "name": "DESCRIPT",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPT",
+            "length": 12
+          },
+          {
+            "name": "DESCRIPT2",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPT2",
+            "length": 10
+          },
+          {
+            "name": "FGDLAQDATE",
+            "type": "esriFieldTypeDate",
+            "alias": "FGDLAQDATE",
+            "length": 8
+          },
+          {
+            "name": "AUTOID",
+            "type": "esriFieldTypeDouble",
+            "alias": "AUTOID"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "site": "2265_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "layer_id": 45,
+      "label": "County FEMA Flood Zones",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/45/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "FLD_AR_ID",
+        "fieldAliases": {
+          "OBJECTID_1": "OBJECTID_1",
+          "OBJECTID": "OBJECTID",
+          "DFIRM_ID": "DFIRM_ID",
+          "VERSION_ID": "VERSION_ID",
+          "FLD_AR_ID": "FLD_AR_ID",
+          "FLD_ZONE": "FLD_ZONE",
+          "ZONE_SUBTY": "ZONE_SUBTY",
+          "SFHA_TF": "SFHA_TF",
+          "STATIC_BFE": "STATIC_BFE",
+          "V_DATUM": "V_DATUM",
+          "DEPTH": "DEPTH",
+          "LEN_UNIT": "LEN_UNIT",
+          "VELOCITY": "VELOCITY",
+          "VEL_UNIT": "VEL_UNIT",
+          "AR_REVERT": "AR_REVERT",
+          "AR_SUBTRV": "AR_SUBTRV",
+          "BFE_REVERT": "BFE_REVERT",
+          "DEP_REVERT": "DEP_REVERT",
+          "DUAL_ZONE": "DUAL_ZONE",
+          "SOURCE_CIT": "SOURCE_CIT",
+          "SHAPE_Leng": "SHAPE_Leng",
+          "STUDY_TYP": "STUDY_TYP",
+          "Shape_Le_1": "Shape_Le_1",
+          "Label": "Label",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeInteger",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DFIRM_ID",
+            "type": "esriFieldTypeString",
+            "alias": "DFIRM_ID",
+            "length": 6
+          },
+          {
+            "name": "VERSION_ID",
+            "type": "esriFieldTypeString",
+            "alias": "VERSION_ID",
+            "length": 11
+          },
+          {
+            "name": "FLD_AR_ID",
+            "type": "esriFieldTypeString",
+            "alias": "FLD_AR_ID",
+            "length": 25
+          },
+          {
+            "name": "FLD_ZONE",
+            "type": "esriFieldTypeString",
+            "alias": "FLD_ZONE",
+            "length": 17
+          },
+          {
+            "name": "ZONE_SUBTY",
+            "type": "esriFieldTypeString",
+            "alias": "ZONE_SUBTY",
+            "length": 72
+          },
+          {
+            "name": "SFHA_TF",
+            "type": "esriFieldTypeString",
+            "alias": "SFHA_TF",
+            "length": 1
+          },
+          {
+            "name": "STATIC_BFE",
+            "type": "esriFieldTypeDouble",
+            "alias": "STATIC_BFE"
+          },
+          {
+            "name": "V_DATUM",
+            "type": "esriFieldTypeString",
+            "alias": "V_DATUM",
+            "length": 17
+          },
+          {
+            "name": "DEPTH",
+            "type": "esriFieldTypeDouble",
+            "alias": "DEPTH"
+          },
+          {
+            "name": "LEN_UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "LEN_UNIT",
+            "length": 16
+          },
+          {
+            "name": "VELOCITY",
+            "type": "esriFieldTypeDouble",
+            "alias": "VELOCITY"
+          },
+          {
+            "name": "VEL_UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "VEL_UNIT",
+            "length": 20
+          },
+          {
+            "name": "AR_REVERT",
+            "type": "esriFieldTypeString",
+            "alias": "AR_REVERT",
+            "length": 17
+          },
+          {
+            "name": "AR_SUBTRV",
+            "type": "esriFieldTypeString",
+            "alias": "AR_SUBTRV",
+            "length": 72
+          },
+          {
+            "name": "BFE_REVERT",
+            "type": "esriFieldTypeDouble",
+            "alias": "BFE_REVERT"
+          },
+          {
+            "name": "DEP_REVERT",
+            "type": "esriFieldTypeDouble",
+            "alias": "DEP_REVERT"
+          },
+          {
+            "name": "DUAL_ZONE",
+            "type": "esriFieldTypeString",
+            "alias": "DUAL_ZONE",
+            "length": 1
+          },
+          {
+            "name": "SOURCE_CIT",
+            "type": "esriFieldTypeString",
+            "alias": "SOURCE_CIT",
+            "length": 11
+          },
+          {
+            "name": "SHAPE_Leng",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE_Leng"
+          },
+          {
+            "name": "STUDY_TYP",
+            "type": "esriFieldTypeString",
+            "alias": "STUDY_TYP",
+            "length": 28
+          },
+          {
+            "name": "Shape_Le_1",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Le_1"
+          },
+          {
+            "name": "Label",
+            "type": "esriFieldTypeString",
+            "alias": "Label",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID_1": 928,
+              "OBJECTID": 930,
+              "DFIRM_ID": "12113C",
+              "VERSION_ID": "1.3.1.2",
+              "FLD_AR_ID": "931",
+              "FLD_ZONE": "X",
+              "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+              "SFHA_TF": "F",
+              "STATIC_BFE": -9999,
+              "V_DATUM": " ",
+              "DEPTH": -9999,
+              "LEN_UNIT": " ",
+              "VELOCITY": -9999,
+              "VEL_UNIT": " ",
+              "AR_REVERT": " ",
+              "AR_SUBTRV": " ",
+              "BFE_REVERT": -9999,
+              "DEP_REVERT": -9999,
+              "DUAL_ZONE": " ",
+              "SOURCE_CIT": "STUDY6",
+              "SHAPE_Leng": 2.69997141,
+              "STUDY_TYP": "NP",
+              "Shape_Le_1": 2.69997294,
+              "Label": "X - AREA OF MINIMAL FLOOD HAZARD  (-9999 BFE)",
+              "GlobalID": "{335DCFF1-A695-4131-A49F-23FA48FD94DD}",
+              "Shape.STArea()": 906330042.5838178,
+              "Shape.STLength()": 904225.3321151218
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2265_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "layer_id": 50,
+      "label": "Contour lines",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/50/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "UNIT",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID_1",
+          "LENGTH": "LENGTH",
+          "QUAD_NUM": "QUAD_NUM",
+          "CONTOUR": "CONTOUR",
+          "ORGCONT": "ORGCONT",
+          "DEPRESSION": "DEPRESSION",
+          "HILLTOP": "HILLTOP",
+          "INTERVAL_": "INTERVAL_",
+          "UNIT": "UNIT",
+          "FEA_SYM": "FEA_SYM",
+          "FEATURE": "FEATURE",
+          "SHAPE_LENG": "SHAPE_LENG",
+          "GlobalID": "GlobalID",
+          "SHAPE.STLength()": "SHAPE.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "LENGTH",
+            "type": "esriFieldTypeDouble",
+            "alias": "LENGTH"
+          },
+          {
+            "name": "QUAD_NUM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "QUAD_NUM"
+          },
+          {
+            "name": "CONTOUR",
+            "type": "esriFieldTypeDouble",
+            "alias": "CONTOUR"
+          },
+          {
+            "name": "ORGCONT",
+            "type": "esriFieldTypeDouble",
+            "alias": "ORGCONT"
+          },
+          {
+            "name": "DEPRESSION",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "DEPRESSION"
+          },
+          {
+            "name": "HILLTOP",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "HILLTOP"
+          },
+          {
+            "name": "INTERVAL_",
+            "type": "esriFieldTypeDouble",
+            "alias": "INTERVAL_"
+          },
+          {
+            "name": "UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "UNIT",
+            "length": 2
+          },
+          {
+            "name": "FEA_SYM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "FEA_SYM"
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 30
+          },
+          {
+            "name": "SHAPE_LENG",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE_LENG"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "SHAPE.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "site": "2265_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "layer_id": 79,
+      "label": "Stormwater Problem Area",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/79/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "DataSource",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "DataSource": "DataSource",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DataSource",
+            "type": "esriFieldTypeString",
+            "alias": "DataSource",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 2068,
+              "DataSource": "Road & Bridge Maps Marked Up by Foreman",
+              "GlobalID": "{6BE01BBB-27EB-445F-81C0-BAAEFE57C3DD}",
+              "Shape.STArea()": 3841664.7428849353,
+              "Shape.STLength()": 8570.301381931715
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2265_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "layer_id": 100,
+      "label": "Drainage Basins",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/100/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "HUC",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "gisdata_GISADMIN_drainage_basin": "gisdata.GISADMIN.drainage_basin_SRC.AREA",
+          "PERIMETER": "PERIMETER",
+          "HUC": "HUC",
+          "EXTHUC": "EXTHUC",
+          "BASIN": "BASIN",
+          "FEATURE": "FEATURE",
+          "SQ_MILES": "SQ_MILES",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "gisdata_GISADMIN_drainage_basin",
+            "type": "esriFieldTypeDouble",
+            "alias": "gisdata.GISADMIN.drainage_basin_SRC.AREA"
+          },
+          {
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble",
+            "alias": "PERIMETER"
+          },
+          {
+            "name": "HUC",
+            "type": "esriFieldTypeString",
+            "alias": "HUC",
+            "length": 9
+          },
+          {
+            "name": "EXTHUC",
+            "type": "esriFieldTypeString",
+            "alias": "EXTHUC",
+            "length": 9
+          },
+          {
+            "name": "BASIN",
+            "type": "esriFieldTypeString",
+            "alias": "BASIN",
+            "length": 23
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 7
+          },
+          {
+            "name": "SQ_MILES",
+            "type": "esriFieldTypeDouble",
+            "alias": "SQ_MILES"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 93,
+              "gisdata_GISADMIN_drainage_basin": 0,
+              "PERIMETER": 68449.89768,
+              "HUC": "03140105",
+              "EXTHUC": "99990000",
+              "BASIN": "DIRECT RUNOFF TO BAY",
+              "FEATURE": "STREAM",
+              "SQ_MILES": 16.71,
+              "GlobalID": "{0DF7CCEB-1EB4-46AD-A253-BEF6F246079B}",
+              "Shape.STArea()": 115766057.40523994,
+              "Shape.STLength()": 70451.1979431633
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2268_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "layer_id": 35,
+      "label": "Soils",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/35/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "MUNAME",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "gisdata_GISADMIN_SRCSoils_AREA": "gisdata.GISADMIN.SRCSoils.AREA",
+          "PERIMETER": "PERIMETER",
+          "MUSYM": "Map Unit Symbol",
+          "MUKEY": "MAP UNIT KEY",
+          "MUNAME": "Map Unit Name",
+          "MUACRES": "MAP UNIT ACRES",
+          "FARMLNDCL": "FARMLAND CLASSIFICATION",
+          "SLOPEGRADD": "SLOPE GRADE",
+          "WTDEPANNMI": "WATER TABLE DEPTH MINIMUM",
+          "FLODFREQDC": "FLOODING FREQUENCY",
+          "DRCLASSDCD": "DRAINAGE CLASSIFICATION",
+          "ENGDWOBDCD": "DWELLINGS WO BASEMENTS SUITABILITY",
+          "ENGDWBDCD": "DWELLINGS WITH BASEMENTS SUITABILITY",
+          "ENGLRSDCD": "ROADS AND STREETS SUITABILITY",
+          "HYDCLPRS": "HYDRIC CLASSIFICATION",
+          "HYDRICON": "HYDRIC CONDITION",
+          "HYDRICRATI": "HYDRIC RATING",
+          "DRAINAGECL": "DRAINAGE CLASSIFICATION",
+          "GEOMDESC": "GEOMORPHIC DESCRIPTION",
+          "TAXCLNAME": "TAXONOMIC CLASSIFICATION",
+          "TAXPARTSIZ": "SOIL PARTICLE SIZE",
+          "FLSOILLEAC": "SOIL LEACH POTENTIAL",
+          "FLSOIRUNOF": "SOIL RUNOFF POTENTIAL",
+          "MAPUNITTEX": "MAP UNIT TEXT",
+          "TEXT": "SOIL DESCRIPTION",
+          "LEGENDNAME": "MAP UNIT NAME",
+          "HEL": "HEL",
+          "HIGHLYERODIBLESOILS": "HIGHLYERODIBLESOILS",
+          "DESCRIPTION": "DESCRIPTION",
+          "GlobalID": "GlobalID",
+          "SHAPE.STArea()": "SHAPE.STArea()",
+          "SHAPE.STLength()": "SHAPE.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "gisdata_GISADMIN_SRCSoils_AREA",
+            "type": "esriFieldTypeDouble",
+            "alias": "gisdata.GISADMIN.SRCSoils.AREA"
+          },
+          {
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble",
+            "alias": "PERIMETER"
+          },
+          {
+            "name": "MUSYM",
+            "type": "esriFieldTypeString",
+            "alias": "Map Unit Symbol",
+            "length": 8
+          },
+          {
+            "name": "MUKEY",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT KEY",
+            "length": 30
+          },
+          {
+            "name": "MUNAME",
+            "type": "esriFieldTypeString",
+            "alias": "Map Unit Name",
+            "length": 175
+          },
+          {
+            "name": "MUACRES",
+            "type": "esriFieldTypeInteger",
+            "alias": "MAP UNIT ACRES"
+          },
+          {
+            "name": "FARMLNDCL",
+            "type": "esriFieldTypeString",
+            "alias": "FARMLAND CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "SLOPEGRADD",
+            "type": "esriFieldTypeDouble",
+            "alias": "SLOPE GRADE"
+          },
+          {
+            "name": "WTDEPANNMI",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "WATER TABLE DEPTH MINIMUM"
+          },
+          {
+            "name": "FLODFREQDC",
+            "type": "esriFieldTypeString",
+            "alias": "FLOODING FREQUENCY",
+            "length": 254
+          },
+          {
+            "name": "DRCLASSDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DRAINAGE CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "ENGDWOBDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DWELLINGS WO BASEMENTS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "ENGDWBDCD",
+            "type": "esriFieldTypeString",
+            "alias": "DWELLINGS WITH BASEMENTS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "ENGLRSDCD",
+            "type": "esriFieldTypeString",
+            "alias": "ROADS AND STREETS SUITABILITY",
+            "length": 254
+          },
+          {
+            "name": "HYDCLPRS",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "HYDRICON",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC CONDITION",
+            "length": 254
+          },
+          {
+            "name": "HYDRICRATI",
+            "type": "esriFieldTypeString",
+            "alias": "HYDRIC RATING",
+            "length": 254
+          },
+          {
+            "name": "DRAINAGECL",
+            "type": "esriFieldTypeString",
+            "alias": "DRAINAGE CLASSIFICATION",
+            "length": 254
+          },
+          {
+            "name": "GEOMDESC",
+            "type": "esriFieldTypeString",
+            "alias": "GEOMORPHIC DESCRIPTION",
+            "length": 254
+          },
+          {
+            "name": "TAXCLNAME",
+            "type": "esriFieldTypeString",
+            "alias": "TAXONOMIC CLASSIFICATION",
+            "length": 120
+          },
+          {
+            "name": "TAXPARTSIZ",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL PARTICLE SIZE",
+            "length": 254
+          },
+          {
+            "name": "FLSOILLEAC",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL LEACH POTENTIAL",
+            "length": 254
+          },
+          {
+            "name": "FLSOIRUNOF",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL RUNOFF POTENTIAL",
+            "length": 254
+          },
+          {
+            "name": "MAPUNITTEX",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT TEXT",
+            "length": 254
+          },
+          {
+            "name": "TEXT",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL DESCRIPTION",
+            "length": 254
+          },
+          {
+            "name": "LEGENDNAME",
+            "type": "esriFieldTypeString",
+            "alias": "MAP UNIT NAME",
+            "length": 50
+          },
+          {
+            "name": "HEL",
+            "type": "esriFieldTypeString",
+            "alias": "HEL",
+            "length": 15
+          },
+          {
+            "name": "HIGHLYERODIBLESOILS",
+            "type": "esriFieldTypeString",
+            "alias": "HIGHLYERODIBLESOILS",
+            "length": 25
+          },
+          {
+            "name": "DESCRIPTION",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPTION",
+            "length": 255
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "SHAPE.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STArea()"
+          },
+          {
+            "name": "SHAPE.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 14438,
+              "gisdata_GISADMIN_SRCSoils_AREA": 26623186.54472,
+              "PERIMETER": 109746.95248,
+              "MUSYM": "34",
+              "MUKEY": "636993",
+              "MUNAME": "Pactolus loamy sand, 0 to 5 percent slopes",
+              "MUACRES": 611,
+              "FARMLNDCL": "Not prime farmland",
+              "SLOPEGRADD": 3,
+              "WTDEPANNMI": 69,
+              "FLODFREQDC": "None",
+              "DRCLASSDCD": "Moderately well drained",
+              "ENGDWOBDCD": "Somewhat limited",
+              "ENGDWBDCD": "Very limited",
+              "ENGLRSDCD": "Somewhat limited",
+              "HYDCLPRS": "Partially hydric",
+              "HYDRICON": " ",
+              "HYDRICRATI": "No",
+              "DRAINAGECL": " ",
+              "GEOMDESC": " ",
+              "TAXCLNAME": " ",
+              "TAXPARTSIZ": " ",
+              "FLSOILLEAC": " ",
+              "FLSOIRUNOF": " ",
+              "MAPUNITTEX": "Nontechnical description",
+              "TEXT": "Map Unit 34, Pactolus Loamy Sand, 0 To 5 Percent Slopes.\r\n\r\n6w3- This capability unit consists of nearly level, very poorly drained soils that occur in depressions.  These soils are mineral soils.\r\n\r\n3s5- This map unit consists of nearly level and gently",
+              "LEGENDNAME": "PACTOLUS LOAMY SAND, 0-5% SLOPES",
+              "HEL": "No",
+              "HIGHLYERODIBLESOILS": "No",
+              "DESCRIPTION": "Consists of nearly level and gently sloping, somewhat poorly drained to moderately well drained soils on broad low ridges.",
+              "GlobalID": "{90C802C2-85FE-4BE4-8586-5F487F55F489}",
+              "SHAPE.STArea()": 26623186.06788478,
+              "SHAPE.STLength()": 109746.95449820305
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2268_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "layer_id": 36,
+      "label": "Wetlands",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/36/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "ATTRIBUTE",
+        "fieldAliases": {
+          "OBJECTID_1": "OBJECTID",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "SHAPE.STArea()",
+          "Shape.STLength()": "SHAPE.STLength()",
+          "OBJECTID": "OBJECTID",
+          "ATTRIBUTE": "ATTRIBUTE",
+          "WETLAND_TY": "WETLAND_TY",
+          "SYSTEM": "SYSTEM",
+          "SYSTEM_D": "SYSTEM_D",
+          "SUBSYSTEM": "SUBSYSTEM",
+          "SUBSYS_D": "SUBSYS_D",
+          "CLASS1": "CLASS1",
+          "CLASS1_D": "CLASS1_D",
+          "SUBCLASS1": "SUBCLASS1",
+          "SUBCL1_D": "SUBCL1_D",
+          "CLASS2": "CLASS2",
+          "CLASS2_D": "CLASS2_D",
+          "SUBCLASS2": "SUBCLASS2",
+          "SUBCL2_D": "SUBCL2_D",
+          "WATER1": "WATER1",
+          "WATER1_D": "WATER1_D",
+          "WATER2": "WATER2",
+          "WATER2_D": "WATER2_D",
+          "CHEMISTRY1": "CHEMISTRY1",
+          "CHEMIST1_D": "CHEMIST1_D",
+          "CHEMISTRY2": "CHEMISTRY2",
+          "CHEMIST2_D": "CHEMIST2_D",
+          "SOIL": "SOIL",
+          "SOIL_D": "SOIL_D",
+          "SPECIAL1": "SPECIAL1",
+          "SPECIAL1_D": "SPECIAL1_D",
+          "SPECIAL2": "SPECIAL2",
+          "SPECIAL2_D": "SPECIAL2_D",
+          "DESCRIPT": "DESCRIPT",
+          "DESCRIPT2": "DESCRIPT2",
+          "FGDLAQDATE": "FGDLAQDATE",
+          "AUTOID": "AUTOID"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          },
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeDouble",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "ATTRIBUTE",
+            "type": "esriFieldTypeString",
+            "alias": "ATTRIBUTE",
+            "length": 20
+          },
+          {
+            "name": "WETLAND_TY",
+            "type": "esriFieldTypeString",
+            "alias": "WETLAND_TY",
+            "length": 50
+          },
+          {
+            "name": "SYSTEM",
+            "type": "esriFieldTypeString",
+            "alias": "SYSTEM",
+            "length": 1
+          },
+          {
+            "name": "SYSTEM_D",
+            "type": "esriFieldTypeString",
+            "alias": "SYSTEM_D",
+            "length": 12
+          },
+          {
+            "name": "SUBSYSTEM",
+            "type": "esriFieldTypeString",
+            "alias": "SUBSYSTEM",
+            "length": 1
+          },
+          {
+            "name": "SUBSYS_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBSYS_D",
+            "length": 12
+          },
+          {
+            "name": "CLASS1",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS1",
+            "length": 2
+          },
+          {
+            "name": "CLASS1_D",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS1_D",
+            "length": 30
+          },
+          {
+            "name": "SUBCLASS1",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCLASS1",
+            "length": 1
+          },
+          {
+            "name": "SUBCL1_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCL1_D",
+            "length": 30
+          },
+          {
+            "name": "CLASS2",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS2",
+            "length": 2
+          },
+          {
+            "name": "CLASS2_D",
+            "type": "esriFieldTypeString",
+            "alias": "CLASS2_D",
+            "length": 30
+          },
+          {
+            "name": "SUBCLASS2",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCLASS2",
+            "length": 1
+          },
+          {
+            "name": "SUBCL2_D",
+            "type": "esriFieldTypeString",
+            "alias": "SUBCL2_D",
+            "length": 30
+          },
+          {
+            "name": "WATER1",
+            "type": "esriFieldTypeString",
+            "alias": "WATER1",
+            "length": 1
+          },
+          {
+            "name": "WATER1_D",
+            "type": "esriFieldTypeString",
+            "alias": "WATER1_D",
+            "length": 36
+          },
+          {
+            "name": "WATER2",
+            "type": "esriFieldTypeString",
+            "alias": "WATER2",
+            "length": 1
+          },
+          {
+            "name": "WATER2_D",
+            "type": "esriFieldTypeString",
+            "alias": "WATER2_D",
+            "length": 36
+          },
+          {
+            "name": "CHEMISTRY1",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMISTRY1",
+            "length": 1
+          },
+          {
+            "name": "CHEMIST1_D",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMIST1_D",
+            "length": 22
+          },
+          {
+            "name": "CHEMISTRY2",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMISTRY2",
+            "length": 1
+          },
+          {
+            "name": "CHEMIST2_D",
+            "type": "esriFieldTypeString",
+            "alias": "CHEMIST2_D",
+            "length": 22
+          },
+          {
+            "name": "SOIL",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL",
+            "length": 1
+          },
+          {
+            "name": "SOIL_D",
+            "type": "esriFieldTypeString",
+            "alias": "SOIL_D",
+            "length": 8
+          },
+          {
+            "name": "SPECIAL1",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL1",
+            "length": 1
+          },
+          {
+            "name": "SPECIAL1_D",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL1_D",
+            "length": 26
+          },
+          {
+            "name": "SPECIAL2",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL2",
+            "length": 1
+          },
+          {
+            "name": "SPECIAL2_D",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL2_D",
+            "length": 26
+          },
+          {
+            "name": "DESCRIPT",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPT",
+            "length": 12
+          },
+          {
+            "name": "DESCRIPT2",
+            "type": "esriFieldTypeString",
+            "alias": "DESCRIPT2",
+            "length": 10
+          },
+          {
+            "name": "FGDLAQDATE",
+            "type": "esriFieldTypeDate",
+            "alias": "FGDLAQDATE",
+            "length": 8
+          },
+          {
+            "name": "AUTOID",
+            "type": "esriFieldTypeDouble",
+            "alias": "AUTOID"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "site": "2268_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "layer_id": 45,
+      "label": "County FEMA Flood Zones",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/45/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "FLD_AR_ID",
+        "fieldAliases": {
+          "OBJECTID_1": "OBJECTID_1",
+          "OBJECTID": "OBJECTID",
+          "DFIRM_ID": "DFIRM_ID",
+          "VERSION_ID": "VERSION_ID",
+          "FLD_AR_ID": "FLD_AR_ID",
+          "FLD_ZONE": "FLD_ZONE",
+          "ZONE_SUBTY": "ZONE_SUBTY",
+          "SFHA_TF": "SFHA_TF",
+          "STATIC_BFE": "STATIC_BFE",
+          "V_DATUM": "V_DATUM",
+          "DEPTH": "DEPTH",
+          "LEN_UNIT": "LEN_UNIT",
+          "VELOCITY": "VELOCITY",
+          "VEL_UNIT": "VEL_UNIT",
+          "AR_REVERT": "AR_REVERT",
+          "AR_SUBTRV": "AR_SUBTRV",
+          "BFE_REVERT": "BFE_REVERT",
+          "DEP_REVERT": "DEP_REVERT",
+          "DUAL_ZONE": "DUAL_ZONE",
+          "SOURCE_CIT": "SOURCE_CIT",
+          "SHAPE_Leng": "SHAPE_Leng",
+          "STUDY_TYP": "STUDY_TYP",
+          "Shape_Le_1": "Shape_Le_1",
+          "Label": "Label",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeInteger",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DFIRM_ID",
+            "type": "esriFieldTypeString",
+            "alias": "DFIRM_ID",
+            "length": 6
+          },
+          {
+            "name": "VERSION_ID",
+            "type": "esriFieldTypeString",
+            "alias": "VERSION_ID",
+            "length": 11
+          },
+          {
+            "name": "FLD_AR_ID",
+            "type": "esriFieldTypeString",
+            "alias": "FLD_AR_ID",
+            "length": 25
+          },
+          {
+            "name": "FLD_ZONE",
+            "type": "esriFieldTypeString",
+            "alias": "FLD_ZONE",
+            "length": 17
+          },
+          {
+            "name": "ZONE_SUBTY",
+            "type": "esriFieldTypeString",
+            "alias": "ZONE_SUBTY",
+            "length": 72
+          },
+          {
+            "name": "SFHA_TF",
+            "type": "esriFieldTypeString",
+            "alias": "SFHA_TF",
+            "length": 1
+          },
+          {
+            "name": "STATIC_BFE",
+            "type": "esriFieldTypeDouble",
+            "alias": "STATIC_BFE"
+          },
+          {
+            "name": "V_DATUM",
+            "type": "esriFieldTypeString",
+            "alias": "V_DATUM",
+            "length": 17
+          },
+          {
+            "name": "DEPTH",
+            "type": "esriFieldTypeDouble",
+            "alias": "DEPTH"
+          },
+          {
+            "name": "LEN_UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "LEN_UNIT",
+            "length": 16
+          },
+          {
+            "name": "VELOCITY",
+            "type": "esriFieldTypeDouble",
+            "alias": "VELOCITY"
+          },
+          {
+            "name": "VEL_UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "VEL_UNIT",
+            "length": 20
+          },
+          {
+            "name": "AR_REVERT",
+            "type": "esriFieldTypeString",
+            "alias": "AR_REVERT",
+            "length": 17
+          },
+          {
+            "name": "AR_SUBTRV",
+            "type": "esriFieldTypeString",
+            "alias": "AR_SUBTRV",
+            "length": 72
+          },
+          {
+            "name": "BFE_REVERT",
+            "type": "esriFieldTypeDouble",
+            "alias": "BFE_REVERT"
+          },
+          {
+            "name": "DEP_REVERT",
+            "type": "esriFieldTypeDouble",
+            "alias": "DEP_REVERT"
+          },
+          {
+            "name": "DUAL_ZONE",
+            "type": "esriFieldTypeString",
+            "alias": "DUAL_ZONE",
+            "length": 1
+          },
+          {
+            "name": "SOURCE_CIT",
+            "type": "esriFieldTypeString",
+            "alias": "SOURCE_CIT",
+            "length": 11
+          },
+          {
+            "name": "SHAPE_Leng",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE_Leng"
+          },
+          {
+            "name": "STUDY_TYP",
+            "type": "esriFieldTypeString",
+            "alias": "STUDY_TYP",
+            "length": 28
+          },
+          {
+            "name": "Shape_Le_1",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Le_1"
+          },
+          {
+            "name": "Label",
+            "type": "esriFieldTypeString",
+            "alias": "Label",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID_1": 928,
+              "OBJECTID": 930,
+              "DFIRM_ID": "12113C",
+              "VERSION_ID": "1.3.1.2",
+              "FLD_AR_ID": "931",
+              "FLD_ZONE": "X",
+              "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+              "SFHA_TF": "F",
+              "STATIC_BFE": -9999,
+              "V_DATUM": " ",
+              "DEPTH": -9999,
+              "LEN_UNIT": " ",
+              "VELOCITY": -9999,
+              "VEL_UNIT": " ",
+              "AR_REVERT": " ",
+              "AR_SUBTRV": " ",
+              "BFE_REVERT": -9999,
+              "DEP_REVERT": -9999,
+              "DUAL_ZONE": " ",
+              "SOURCE_CIT": "STUDY6",
+              "SHAPE_Leng": 2.69997141,
+              "STUDY_TYP": "NP",
+              "Shape_Le_1": 2.69997294,
+              "Label": "X - AREA OF MINIMAL FLOOD HAZARD  (-9999 BFE)",
+              "GlobalID": "{335DCFF1-A695-4131-A49F-23FA48FD94DD}",
+              "Shape.STArea()": 906330042.5838178,
+              "Shape.STLength()": 904225.3321151218
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2268_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "layer_id": 50,
+      "label": "Contour lines",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/50/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "UNIT",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID_1",
+          "LENGTH": "LENGTH",
+          "QUAD_NUM": "QUAD_NUM",
+          "CONTOUR": "CONTOUR",
+          "ORGCONT": "ORGCONT",
+          "DEPRESSION": "DEPRESSION",
+          "HILLTOP": "HILLTOP",
+          "INTERVAL_": "INTERVAL_",
+          "UNIT": "UNIT",
+          "FEA_SYM": "FEA_SYM",
+          "FEATURE": "FEATURE",
+          "SHAPE_LENG": "SHAPE_LENG",
+          "GlobalID": "GlobalID",
+          "SHAPE.STLength()": "SHAPE.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1"
+          },
+          {
+            "name": "LENGTH",
+            "type": "esriFieldTypeDouble",
+            "alias": "LENGTH"
+          },
+          {
+            "name": "QUAD_NUM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "QUAD_NUM"
+          },
+          {
+            "name": "CONTOUR",
+            "type": "esriFieldTypeDouble",
+            "alias": "CONTOUR"
+          },
+          {
+            "name": "ORGCONT",
+            "type": "esriFieldTypeDouble",
+            "alias": "ORGCONT"
+          },
+          {
+            "name": "DEPRESSION",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "DEPRESSION"
+          },
+          {
+            "name": "HILLTOP",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "HILLTOP"
+          },
+          {
+            "name": "INTERVAL_",
+            "type": "esriFieldTypeDouble",
+            "alias": "INTERVAL_"
+          },
+          {
+            "name": "UNIT",
+            "type": "esriFieldTypeString",
+            "alias": "UNIT",
+            "length": 2
+          },
+          {
+            "name": "FEA_SYM",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "FEA_SYM"
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 30
+          },
+          {
+            "name": "SHAPE_LENG",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE_LENG"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "SHAPE.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "SHAPE.STLength()"
+          }
+        ],
+        "features": []
+      },
+      "feature_count": 0
+    },
+    {
+      "site": "2268_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "layer_id": 79,
+      "label": "Stormwater Problem Area",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/79/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "DataSource",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "DataSource": "DataSource",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DataSource",
+            "type": "esriFieldTypeString",
+            "alias": "DataSource",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 2068,
+              "DataSource": "Road & Bridge Maps Marked Up by Foreman",
+              "GlobalID": "{6BE01BBB-27EB-445F-81C0-BAAEFE57C3DD}",
+              "Shape.STArea()": 3841664.7428849353,
+              "Shape.STLength()": 8570.301381931715
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "site": "2268_Tom_St",
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "layer_id": 100,
+      "label": "Drainage Basins",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/100/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=pjson",
+      "response": {
+        "displayFieldName": "HUC",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "gisdata_GISADMIN_drainage_basin": "gisdata.GISADMIN.drainage_basin_SRC.AREA",
+          "PERIMETER": "PERIMETER",
+          "HUC": "HUC",
+          "EXTHUC": "EXTHUC",
+          "BASIN": "BASIN",
+          "FEATURE": "FEATURE",
+          "SQ_MILES": "SQ_MILES",
+          "GlobalID": "GlobalID",
+          "Shape.STArea()": "Shape.STArea()",
+          "Shape.STLength()": "Shape.STLength()"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "gisdata_GISADMIN_drainage_basin",
+            "type": "esriFieldTypeDouble",
+            "alias": "gisdata.GISADMIN.drainage_basin_SRC.AREA"
+          },
+          {
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble",
+            "alias": "PERIMETER"
+          },
+          {
+            "name": "HUC",
+            "type": "esriFieldTypeString",
+            "alias": "HUC",
+            "length": 9
+          },
+          {
+            "name": "EXTHUC",
+            "type": "esriFieldTypeString",
+            "alias": "EXTHUC",
+            "length": 9
+          },
+          {
+            "name": "BASIN",
+            "type": "esriFieldTypeString",
+            "alias": "BASIN",
+            "length": 23
+          },
+          {
+            "name": "FEATURE",
+            "type": "esriFieldTypeString",
+            "alias": "FEATURE",
+            "length": 7
+          },
+          {
+            "name": "SQ_MILES",
+            "type": "esriFieldTypeDouble",
+            "alias": "SQ_MILES"
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          },
+          {
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STArea()"
+          },
+          {
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape.STLength()"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 93,
+              "gisdata_GISADMIN_drainage_basin": 0,
+              "PERIMETER": 68449.89768,
+              "HUC": "03140105",
+              "EXTHUC": "99990000",
+              "BASIN": "DIRECT RUNOFF TO BAY",
+              "FEATURE": "STREAM",
+              "SQ_MILES": 16.71,
+              "GlobalID": "{0DF7CCEB-1EB4-46AD-A253-BEF6F246079B}",
+              "Shape.STArea()": 115766057.40523994,
+              "Shape.STLength()": 70451.1979431633
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    }
+  ],
+  "interpretation_boundaries": [
+    "GIS intersect at one inside-parcel point does not prove whole-lot coverage or field conditions.",
+    "County layer 79 OBJECTID 2068 predates 2026 construction and may represent historic regional flood observations. It does not establish present causation or violation.",
+    "Soil polygons are generalized; does not determine geotechnical infiltration at a structure.",
+    "A zero-result wetlands intersection at a single point is not a delineation.",
+    "A zero-result contour line intersect is expected for exact point-on-line tests; do not treat as missing elevation data.",
+    "County FEMA Zone X does not rule out local stormwater problems.",
+    "Broad basin name does not identify a functioning positive outfall."
+  ]
+}
