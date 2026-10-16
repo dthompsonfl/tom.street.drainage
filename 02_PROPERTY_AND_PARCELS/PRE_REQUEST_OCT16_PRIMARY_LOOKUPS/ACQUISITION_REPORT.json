@@ -1,5 +1,5 @@
 {
-  "captured_utc": "2026-10-16T20:41:25.677578+00:00",
+  "captured_utc": "2026-10-16T20:43:43.133963+00:00",
   "purpose": "Limited pre-request official public parcel/plat and original Clerk URL retrieval",
   "privacy": "Clerk deed originals not committed to public repository without signature/third-party privacy review",
   "srcpa_parcels": {
@@ -103,7 +103,7 @@
       "record": "OR_BOOK_3653_PAGE_976",
       "status": "OFFICIAL_PDF_BYTES_RETRIEVED_PRIVACY_REVIEW_REQUIRED",
       "source_bytes": 181610,
-      "sha256": "1d10926f0b8bf807b781e9a40e04a7da5d63e21c33d36a94fdefb494ecff67c0",
+      "sha256": "fd67d0ee74b9d469ec1423b920c0ecb06cb334c2f244d4082edde9f5e6e0642b",
       "page_count": 3,
       "contains_image_based_pages": true
     },
@@ -112,7 +112,7 @@
       "record": "OR_BOOK_718_PAGE_289",
       "status": "OFFICIAL_PDF_BYTES_RETRIEVED_PRIVACY_REVIEW_REQUIRED",
       "source_bytes": 674332,
-      "sha256": "2265c6314bcf7b60feddc51c7decc65801c95d6b29ec7d70092eb206350d8634",
+      "sha256": "734f15dd6afbdf2944affc789c230058b3b6d1eb6055de983fa90c685a716a3d",
       "page_count": 4,
       "contains_image_based_pages": true
     }
@@ -164,7 +164,7 @@
             "tag": "BUTTON"
           }
         ],
-        "book_type_widget_error": "Error: Locator.check: Error: strict mode violation: locator(\"input[name='BookTypeInfoCheckBox'][value='3']\") resolved to 2 elements:\n    1) <input value=\"3\" type=\"checkbox\" title=\" PLAT -",
+        "book_type_widget_error": "Error: Locator.check: Element is not visible\nCall log:\n  - waiting for locator(\"#BookTypeDiv input[name='BookTypeInfoCheckBox'][value='3']\").first\n    - locator resolved to <input value=\"",
         "selected_book_type_options": [],
         "book_field_accepted": true,
         "page_field_accepted": true
@@ -212,7 +212,7 @@
             "tag": "BUTTON"
           }
         ],
-        "book_type_widget_error": "Error: Locator.check: Error: strict mode violation: locator(\"input[name='BookTypeInfoCheckBox'][value='3']\") resolved to 2 elements:\n    1) <input value=\"3\" type=\"checkbox\" title=\" PLAT -",
+        "book_type_widget_error": "Error: Locator.check: Element is not visible\nCall log:\n  - waiting for locator(\"#BookTypeDiv input[name='BookTypeInfoCheckBox'][value='3']\").first\n    - locator resolved to <input value=\"",
         "selected_book_type_options": [],
         "book_field_accepted": true,
         "page_field_accepted": true
