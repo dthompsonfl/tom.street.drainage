@@ -1,0 +1,38 @@
+{
+  "retrieved_utc": "2026-10-16T17:18:55.224148+00:00",
+  "agency": "Florida Department of Transportation GIS Aerial Photo Archive",
+  "official_portal": "https://www.fdot.gov/gis/aerialproducts.shtm",
+  "documents": [
+    {
+      "document": "FDOT_AVAILABLE_AERIAL_PHOTOGRAPHY_2026_LIST",
+      "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/aplus/aerial-photography-listecc67b89-a9cc-4abe-9516-b7e8a977c432.pdf?sfvrsn=446ef142_4",
+      "status": "ORIGINAL_FDOT_COUNTY_INDEX_PDF_SAVED",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX/FDOT_AVAILABLE_AERIAL_PHOTOGRAPHY_2026_LIST.pdf",
+      "sha256": "9f53ce4db71b3a7f2ac190d855a0fd3b80cbb9f8e1cc606df40f7933f40e341c",
+      "bytes": 248300,
+      "page_count": 3,
+      "visible_text_lines_mentioning_santa_rosa": [
+        "Santa Rosa  1966 1978 1988 1997 2005 2006 2010 2013 2016 2019 2022"
+      ],
+      "has_santa_rosa_visible_text": true
+    },
+    {
+      "document": "FDOT_RECENT_COUNTY_PHOTO_STATUS",
+      "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/aplus/aerial-status.pdf?sfvrsn=a300ebe_8",
+      "status": "ORIGINAL_FDOT_COUNTY_INDEX_PDF_SAVED",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX/FDOT_RECENT_COUNTY_PHOTO_STATUS.pdf",
+      "sha256": "29cd190be4c5709fdfc822819cd9400aee6974f11ec65446867ca40e01308d80",
+      "bytes": 1519166,
+      "page_count": 1,
+      "visible_text_lines_mentioning_santa_rosa": [],
+      "has_santa_rosa_visible_text": false
+    }
+  ],
+  "status": "ALL_SOURCE_LISTS_ACQUIRED",
+  "limitations": [
+    "County aerial collection year listing does not establish a photograph for every Tom Street lot and date.",
+    "Historic frames may require FDOT APLUS user access and manual geographic index review.",
+    "County lists are administrative inventories, not parcel surveys, flight-line GPS metadata or current impervious surface data.",
+    "Follow FDOT source restrictions/attribution for distribution of actual photographic frames."
+  ]
+}
