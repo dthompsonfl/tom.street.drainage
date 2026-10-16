@@ -15,7 +15,7 @@ Engineering Applications section, MGO Connect (mgoconnect.org, JID=276)
 
 ---
 
-## Subject — shared infrastructure serving two adjacent residential lots
+## Subject — roadside drainage records in the vicinity of two construction properties
 
 | | |
 |---|---|

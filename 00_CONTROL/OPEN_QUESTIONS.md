@@ -18,10 +18,10 @@ This checklist supersedes the earlier unchecked discovery-only version. It is ba
 - [ ] Parcel/title and historical-address explanation for 2266; 2000-era MGO records previously attributed to 2268 reference `...-1060`, which maps to 2274 on the current roll.
 - [ ] Original Clerk deed images, actual subdivision plat and legal descriptions. Clerk search grid alone is insufficient.
 - [ ] Spatial permit exhibits for NWFWMD ERP 9220-2; nearby location is not proof it covers these lots.
-- [ ] Actual DEP final-order PDFs before describing Holiday Builders' historical regulatory matters.
+- [ ] Actual **signed FDEP consent-order documents** (not only the two now-preserved quarterly index reports) and verified project-site linkage before describing Holiday Builders' historical regulatory matters.
 - [ ] Confirm all original resident-photo capture data and written permission before release of identifying images/EXIF.
 - [ ] Confirm signed/sent public-records requests from actual receipts. Five requests remain drafted, not confirmed sent.
-- [ ] Render, visually inspect and approve new final PDF packet based exclusively on reconciled release documents.
+- [ ] Review and sign the current **five-page draft** packet; automated page-count/hash checks passed, but independent visual/personal approval is not documented.
 - [ ] Independent professional site observations/measurements if engineering adequacy or runoff causation must be determined.
 
 See `15_RECONCILED_DRAFTS/04_CROSS_SOURCE_RECONCILIATION.md` and the release ledger for specific evidence boundaries.
