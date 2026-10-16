@@ -71,7 +71,7 @@ for output in manifest["outputs"]:
         check("draft footer present in " + p.name, "Evidence-based homeowner DRAFT" in extracted)
         if md.name in ("06_COMMISSIONER_COVER_LETTER_DRAFT.md", "02_COUNTY_LETTER_DRAFT.md"):
             check("recipient metadata renders on separate lines " + p.name,
-                  bool(re.search(r"Date: [^\\n]+\\nFrom: [^\\n]+\\n(?:To|Subject):",
+                  bool(re.search(r"Date: [^\n]+\nFrom: [^\n]+\n(?:To|Subject):",
                                  extracted)))
 
     else:
