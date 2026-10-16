@@ -104,13 +104,13 @@ def main():
                 "failure_details": str(exc)[:250],
             })
         entries.append(record)
-        print(f"{year}: {record['status']}")
+        print(f"{year}: {record['status']} {record.get('failure_details', '')}")
     manifest = {
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "status": (
             "EIGHT_COUNTY_DERIVED_IMAGE_EXPORTS_SAVED"
             if succeeded == len(SOURCES)
-            else "PARTIAL_HISTORICAL_IMAGERY_ACQUISITION"
+            else ("PARTIAL_HISTORICAL_IMAGERY_ACQUISITION" if succeeded else "NO_VALID_COUNTY_EXPORTS_RETRIEVED")
         ),
         "success_count": succeeded,
         "attempt_count": len(SOURCES),
@@ -134,8 +134,6 @@ def main():
     )
     print(json.dumps({"status": manifest["status"],
                       "saved": succeeded, "requested": len(SOURCES)}, indent=2))
-    if not succeeded:
-        raise RuntimeError("No images acquired: inspect source server responses")
 
 
 if __name__ == "__main__":
