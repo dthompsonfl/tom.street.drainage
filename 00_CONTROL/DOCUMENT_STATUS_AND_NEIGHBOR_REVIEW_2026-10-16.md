@@ -12,6 +12,7 @@
 | What to bring to a meeting | [Five-page draft packet](../15_RECONCILED_DRAFTS/README.md) | **UNSIGNED DRAFT**, not approved for external submission |
 | How to record an observation | [Neighbor toolkit](../18_NEIGHBOR_TOOLKIT/README.md) | Blank templates; keep originals private |
 | What is missing | [Open questions](OPEN_QUESTIONS.md) and [community readiness](COMMUNITY_READINESS_2026-10-16.md) | Material County and survey dependencies remain |
+| What technical/admin controls are implemented | [Current administrative and technical status](ADMINISTRATION_AND_TECHNICAL_STATUS_2026-10-16.md) | Updated source-linked operational boundaries; not an engineering clearance |
 
 ## How to interpret the rest of the repository
 
