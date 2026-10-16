@@ -29,7 +29,7 @@ This project deliberately keeps prior errors and raw records as evidence of the 
 - Inspection instructions, fees, task assignments and customer-portal attachment responses are distinct facts, **not proof of approved/stamped as-built drainage plans**.
 - The 2023 and 2024 DEP quarterly PDFs are **filing indexes**, not the signed underlying consent orders.
 - Fifteen resident JPEG **copies** hash-matched a separate private archive; device originals, authentic capture times, and permission for public release remain unresolved.
-- Five foundational Chapter 119 drafts plus two supplemental unsent drafts exist; no proof of transmission or receipts.
+- Five foundational and three supplemental draft files (eight files containing nine separate request/service templates) exist; no proof of transmission or receipts.
 - Engineering causation, drainage capacity, boundary lines, historical grade and maintenance responsibility require plans, survey measurements and agency responses.
 
 **Quality rule:** Only claim zero **known internal conflicts among tested current assertions** when the latest CI checks pass. Do not claim zero unanswered questions, no historical errors, or complete acquisition of engineering records.

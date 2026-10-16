@@ -23,7 +23,7 @@
 | Clerk ORB 3492/700 | Saved Clerk **results grid** contains a candidate instrument; **recorded deed image and association to a specific modern parcel remain unverified** | Not a title opinion |
 | DEP Holiday Builders filings | Two official quarterly **index** entries archived; **signed consent orders and Tom Street relevance not established** | No site-specific misconduct finding |
 | Homeowner photographs | Fifteen archived JPEG **copies** internally hash-matched; native device files, dates, exact parcel assignments and permission not authenticated | No public original-photo exhibit |
-| Records requests | **Five foundational Chapter 119 request drafts plus two supplemental unsent drafts**. **Zero verified sending receipts.** | Never mark as submitted until proof retained |
+| Records requests | **Five foundational and three supplemental draft files (eight files containing nine request/service templates).** **Zero verified sending receipts.** | Never mark as submitted until proof retained |
 | Engineering effects | Approved site designs, true surveyed pre/post grades, outfall/inverts, runoff modeling, ownership and responsibility **not established** | No violation, negligence or causation conclusion |
 
 ## Research contradictions versus outstanding questions
@@ -36,7 +36,7 @@ The remaining engineering plans, surveys, signed permits and photo originals are
 
 ## Enforcement
 
-`python3 tools/check_repository_consistency.py` validates PA/MGO primary pairs, capture-date limitations, permit inventory site bindings, the 1996/2000 historical distinctions, current five-page PDF draft status, five-plus-two unsent requests, permit-access snapshot scope, limitations of FEMA/ERP/photographs, and that old reports are conspicuously historical. `tools/check_document_claims.py` separately validates precise claim→exhibit→primary-source parity, including **both** lots and both neighboring driveway histories.
+`python3 tools/check_repository_consistency.py` validates PA/MGO primary pairs, capture-date limitations, permit inventory site bindings, the 1996/2000 historical distinctions, current five-page PDF draft status, eight unsent draft files, permit-access snapshot scope, limitations of FEMA/ERP/photographs, and that old reports are conspicuously historical. `tools/check_document_claims.py` separately validates precise claim→exhibit→primary-source parity, including **both** lots and both neighboring driveway histories.
 
 **Audit limitation:** Neither text patterns nor repository source hashes can certify that every statement in every old archive is factually correct. The tests are a bounded set of reproducible invariants. They cannot substitute for actual County engineering-file production, independent measurements, legal-effective-date verification, permission to release photos or homeowner review.
 

@@ -14,7 +14,7 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 | Document what you see near your home | [Neighbor guide and blank forms](18_NEIGHBOR_TOOLKIT/README.md) |
 | Check evidence and sources | [Plain-English evidence guide](PUBLIC_EVIDENCE_GUIDE.md) |
 | See what we still need | [Open questions](00_CONTROL/OPEN_QUESTIONS.md) |
-| Check which packet is current | [Current draft release guide](15_RECONCILED_DRAFTS/README.md) |
+| Check which packet is current | [Current draft release guide](15_RECONCILED_DRAFTS/README.md) and [five-page draft PDF](15_RECONCILED_DRAFTS/pdf/Tom_Street_Reconciled_Public_Meeting_Draft.pdf) |
 
 **All public letters and handouts remain DRAFTS until reviewed and signed by the person using them.** Older PDFs in [the previous meeting packet](14_MEETING_PACKET/RELEASE_README.md) and [older releases](releases/2026-10-15/) are superseded historical records. Do not hand them out as the current version.
 
