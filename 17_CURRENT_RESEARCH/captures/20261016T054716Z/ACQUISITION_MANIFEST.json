@@ -1,0 +1,953 @@
+{
+  "captured_utc": "2026-10-16T05:47:17.651461+00:00",
+  "scope": "Public agency GIS retrieval only; not a certification of legal ownership, engineering plans, elevation measurements or environmental permit applicability.",
+  "sources": [
+    {
+      "source_id": "SRC_STREET_APP",
+      "requested_url": "https://santarosagis.maps.arcgis.com/sharing/rest/content/items/a7fd63b5d7b241af943d8bcc617d1096?f=pjson",
+      "retrieved_utc": "2026-10-16T05:47:16.139589+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_STREET_APP.json",
+      "final_url": "https://santarosagis.maps.arcgis.com/sharing/rest/content/items/a7fd63b5d7b241af943d8bcc617d1096?f=pjson",
+      "http_status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "last_modified": null,
+      "bytes": 1477,
+      "sha256": "4db794d31e2adb8beef7a0fda692b72a551388d34a893c7e91adeb49c333c0ac"
+    },
+    {
+      "source_id": "SRC_STREET_APP_DATA",
+      "requested_url": "https://santarosagis.maps.arcgis.com/sharing/rest/content/items/a7fd63b5d7b241af943d8bcc617d1096/data?f=pjson",
+      "retrieved_utc": "2026-10-16T05:47:16.140228+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_STREET_APP_DATA.json",
+      "final_url": "https://santarosagis.maps.arcgis.com/sharing/rest/content/items/a7fd63b5d7b241af943d8bcc617d1096/data?f=pjson",
+      "http_status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "last_modified": null,
+      "bytes": 2051,
+      "sha256": "f6d4349067fd9f32d08281a06871a9d8e6bdb710a51e1e59ba582a5de0916362"
+    },
+    {
+      "source_id": "SRC_STREET_WEBMAP",
+      "requested_url": "https://santarosagis.maps.arcgis.com/sharing/rest/content/items/b48f751210f14be5aae454f627f6a095/data?f=pjson",
+      "retrieved_utc": "2026-10-16T05:47:16.140616+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_STREET_WEBMAP.json",
+      "final_url": "https://santarosagis.maps.arcgis.com/sharing/rest/content/items/b48f751210f14be5aae454f627f6a095/data?f=pjson",
+      "http_status": 200,
+      "content_type": "text/plain;charset=utf-8",
+      "last_modified": null,
+      "bytes": 11058,
+      "sha256": "d769a9811d6063380f90625130e99cfc10778bc7cd786ea492f115e27ec72913"
+    },
+    {
+      "source_id": "SRC_STREET_METADATA",
+      "requested_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0?f=pjson",
+      "retrieved_utc": "2026-10-16T05:47:16.466696+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_STREET_METADATA.json",
+      "final_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0?f=pjson",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "last_modified": "Thu, 08 Oct 2026 11:15:24 GMT",
+      "bytes": 24972,
+      "sha256": "29c4916763e472940a380366c2d8267ed366c14b45642a9af2bb59599eccb265",
+      "review_fields": [
+        "FID",
+        "STREETID",
+        "SEGMENTID",
+        "STREETNAME",
+        "ROADSTATUS",
+        "USPSCITY",
+        "SURFACETYP",
+        "MAINTAINER",
+        "RANGELOW",
+        "RANGEHIGH",
+        "RIGHTFROM",
+        "RIGHTTO",
+        "LEFTFROM",
+        "LEFTTO",
+        "OEB",
+        "GRID",
+        "SUBDONUM",
+        "MUNI",
+        "PRMExp",
+        "ROWWIDTH",
+        "MPH",
+        "FT_COST",
+        "TF_COST",
+        "TYPE",
+        "GPSDATE",
+        "Z_Value",
+        "ESN_Left",
+        "ESN_Right",
+        "ESNNameLef",
+        "ESNNameRig",
+        "ESN",
+        "OneWay",
+        "From_Elev",
+        "To_Elev",
+        "COUNTYNAME",
+        "COUNTYNA_1",
+        "STATELEFT",
+        "STATERIGHT",
+        "ZIPCODELEF",
+        "ZIPCODERIG",
+        "MAPLABEL",
+        "ROADTYPE",
+        "PRMINITIAL",
+        "PRMEXPIRE",
+        "GlobalID",
+        "Shape__Length"
+      ]
+    },
+    {
+      "source_id": "SRC_TOM_STREET",
+      "requested_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0/query?f=pjson&where=STREETNAME+%3D+%27TOM+ST%27&outFields=%2A&returnGeometry=true&outSR=4326",
+      "retrieved_utc": "2026-10-16T05:47:16.515150+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_TOM_STREET.json",
+      "final_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0/query?f=pjson&where=STREETNAME+%3D+%27TOM+ST%27&outFields=%2A&returnGeometry=true&outSR=4326",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "last_modified": "Thu, 08 Oct 2026 11:15:24 GMT",
+      "bytes": 15102,
+      "sha256": "87042a6cf55ad2d0a0a543d794ee716a3701e29eea5437d7f8c09899dcbb0e19",
+      "feature_count": 2,
+      "review_attributes": [
+        {
+          "FID": 2006,
+          "STREETID": 3503,
+          "SEGMENTID": 2036,
+          "STREETNAME": "TOM ST",
+          "ROADSTATUS": "OPEN",
+          "USPSCITY": "Navarre",
+          "SURFACETYP": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2100,
+          "RANGEHIGH": 2299,
+          "RIGHTFROM": 2100,
+          "RIGHTTO": 2298,
+          "LEFTFROM": 2101,
+          "LEFTTO": 2299,
+          "OEB": "Both",
+          "GRID": "45",
+          "SUBDONUM": " ",
+          "MUNI": " ",
+          "PRMExp": null,
+          "ROWWIDTH": 0,
+          "MPH": 25,
+          "FT_COST": 1.29338546,
+          "TF_COST": 1.29338546,
+          "TYPE": "Ranged",
+          "GPSDATE": 1090281600000,
+          "Z_Value": 0,
+          "ESN_Left": "217",
+          "ESN_Right": "217",
+          "ESNNameLef": "HOLLEY-NAVARRE",
+          "ESNNameRig": "HOLLEY-NAVARRE",
+          "ESN": "217",
+          "OneWay": " ",
+          "From_Elev": 0,
+          "To_Elev": 0,
+          "COUNTYNAME": "Santa Rosa",
+          "COUNTYNA_1": "Santa Rosa",
+          "STATELEFT": "FL",
+          "STATERIGHT": "FL",
+          "ZIPCODELEF": "32566",
+          "ZIPCODERIG": "32566",
+          "MAPLABEL": "TOM ST",
+          "ROADTYPE": "RuralLocal",
+          "PRMINITIAL": null,
+          "PRMEXPIRE": null,
+          "GlobalID": "{2472A3A8-94A9-4170-8F5C-1C80EA1196A0}",
+          "Shape__Length": 1009.4529430819991
+        },
+        {
+          "FID": 5967,
+          "STREETID": 3503,
+          "SEGMENTID": 6124,
+          "STREETNAME": "TOM ST",
+          "ROADSTATUS": "OPEN",
+          "USPSCITY": "Navarre",
+          "SURFACETYP": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2300,
+          "RANGEHIGH": 2330,
+          "RIGHTFROM": 2300,
+          "RIGHTTO": 2330,
+          "LEFTFROM": 2301,
+          "LEFTTO": 2329,
+          "OEB": "Both",
+          "GRID": "45",
+          "SUBDONUM": "1989S-572",
+          "MUNI": " ",
+          "PRMExp": null,
+          "ROWWIDTH": 0,
+          "MPH": 25,
+          "FT_COST": 0.10874704,
+          "TF_COST": 0.10874704,
+          "TYPE": "Ranged",
+          "GPSDATE": 1090281600000,
+          "Z_Value": 0,
+          "ESN_Left": "217",
+          "ESN_Right": "217",
+          "ESNNameLef": "HOLLEY-NAVARRE",
+          "ESNNameRig": "HOLLEY-NAVARRE",
+          "ESN": "217",
+          "OneWay": " ",
+          "From_Elev": 0,
+          "To_Elev": 0,
+          "COUNTYNAME": "Santa Rosa",
+          "COUNTYNA_1": "Santa Rosa",
+          "STATELEFT": "FL",
+          "STATERIGHT": "FL",
+          "ZIPCODELEF": "32566",
+          "ZIPCODERIG": "32566",
+          "MAPLABEL": "TOM ST",
+          "ROADTYPE": "RuralLocal",
+          "PRMINITIAL": null,
+          "PRMEXPIRE": null,
+          "GlobalID": "{B4DB5889-64B2-4101-AB66-03FB1F73D642}",
+          "Shape__Length": 84.49139556821387
+        }
+      ]
+    },
+    {
+      "source_id": "SRC_TOM_FID_2006",
+      "requested_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0/query?f=pjson&objectIds=2006&outFields=%2A&returnGeometry=true&outSR=4326",
+      "retrieved_utc": "2026-10-16T05:47:16.566437+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_TOM_FID_2006.json",
+      "final_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0/query?f=pjson&objectIds=2006&outFields=%2A&returnGeometry=true&outSR=4326",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "last_modified": "Thu, 08 Oct 2026 11:15:24 GMT",
+      "bytes": 13358,
+      "sha256": "840a81f17dee04a271a2b8645c4460e290b20f2be17a024a5eb8caec86fcf5ba",
+      "feature_count": 1,
+      "review_attributes": [
+        {
+          "FID": 2006,
+          "STREETID": 3503,
+          "SEGMENTID": 2036,
+          "STREETNAME": "TOM ST",
+          "ROADSTATUS": "OPEN",
+          "USPSCITY": "Navarre",
+          "SURFACETYP": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2100,
+          "RANGEHIGH": 2299,
+          "RIGHTFROM": 2100,
+          "RIGHTTO": 2298,
+          "LEFTFROM": 2101,
+          "LEFTTO": 2299,
+          "OEB": "Both",
+          "GRID": "45",
+          "SUBDONUM": " ",
+          "MUNI": " ",
+          "PRMExp": null,
+          "ROWWIDTH": 0,
+          "MPH": 25,
+          "FT_COST": 1.29338546,
+          "TF_COST": 1.29338546,
+          "TYPE": "Ranged",
+          "GPSDATE": 1090281600000,
+          "Z_Value": 0,
+          "ESN_Left": "217",
+          "ESN_Right": "217",
+          "ESNNameLef": "HOLLEY-NAVARRE",
+          "ESNNameRig": "HOLLEY-NAVARRE",
+          "ESN": "217",
+          "OneWay": " ",
+          "From_Elev": 0,
+          "To_Elev": 0,
+          "COUNTYNAME": "Santa Rosa",
+          "COUNTYNA_1": "Santa Rosa",
+          "STATELEFT": "FL",
+          "STATERIGHT": "FL",
+          "ZIPCODELEF": "32566",
+          "ZIPCODERIG": "32566",
+          "MAPLABEL": "TOM ST",
+          "ROADTYPE": "RuralLocal",
+          "PRMINITIAL": null,
+          "PRMEXPIRE": null,
+          "GlobalID": "{2472A3A8-94A9-4170-8F5C-1C80EA1196A0}",
+          "Shape__Length": 1009.4529430819991
+        }
+      ]
+    },
+    {
+      "source_id": "SRC_STREET_SPATIAL",
+      "requested_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0/query?f=pjson&geometry=-86.8147%2C30.4155&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&distance=100&units=esriSRUnit_Meter&outFields=%2A&returnGeometry=true&outSR=4326",
+      "retrieved_utc": "2026-10-16T05:47:16.703115+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_STREET_SPATIAL.json",
+      "final_url": "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/StreetsOpenData/FeatureServer/0/query?f=pjson&geometry=-86.8147%2C30.4155&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&distance=100&units=esriSRUnit_Meter&outFields=%2A&returnGeometry=true&outSR=4326",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "last_modified": "Thu, 08 Oct 2026 11:15:24 GMT",
+      "bytes": 15683,
+      "sha256": "6f7f0e0f4be26a841c1e09630cf9d21e659b2289f7bf12dca32950fda5a31e65",
+      "feature_count": 2,
+      "review_attributes": [
+        {
+          "FID": 2006,
+          "STREETID": 3503,
+          "SEGMENTID": 2036,
+          "STREETNAME": "TOM ST",
+          "ROADSTATUS": "OPEN",
+          "USPSCITY": "Navarre",
+          "SURFACETYP": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2100,
+          "RANGEHIGH": 2299,
+          "RIGHTFROM": 2100,
+          "RIGHTTO": 2298,
+          "LEFTFROM": 2101,
+          "LEFTTO": 2299,
+          "OEB": "Both",
+          "GRID": "45",
+          "SUBDONUM": " ",
+          "MUNI": " ",
+          "PRMExp": null,
+          "ROWWIDTH": 0,
+          "MPH": 25,
+          "FT_COST": 1.29338546,
+          "TF_COST": 1.29338546,
+          "TYPE": "Ranged",
+          "GPSDATE": 1090281600000,
+          "Z_Value": 0,
+          "ESN_Left": "217",
+          "ESN_Right": "217",
+          "ESNNameLef": "HOLLEY-NAVARRE",
+          "ESNNameRig": "HOLLEY-NAVARRE",
+          "ESN": "217",
+          "OneWay": " ",
+          "From_Elev": 0,
+          "To_Elev": 0,
+          "COUNTYNAME": "Santa Rosa",
+          "COUNTYNA_1": "Santa Rosa",
+          "STATELEFT": "FL",
+          "STATERIGHT": "FL",
+          "ZIPCODELEF": "32566",
+          "ZIPCODERIG": "32566",
+          "MAPLABEL": "TOM ST",
+          "ROADTYPE": "RuralLocal",
+          "PRMINITIAL": null,
+          "PRMEXPIRE": null,
+          "GlobalID": "{2472A3A8-94A9-4170-8F5C-1C80EA1196A0}",
+          "Shape__Length": 1009.4529430819991
+        },
+        {
+          "FID": 5966,
+          "STREETID": 183,
+          "SEGMENTID": 6123,
+          "STREETNAME": "NINA ST",
+          "ROADSTATUS": "OPEN",
+          "USPSCITY": "Navarre",
+          "SURFACETYP": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2100,
+          "RANGEHIGH": 2300,
+          "RIGHTFROM": 2100,
+          "RIGHTTO": 2300,
+          "LEFTFROM": 2101,
+          "LEFTTO": 2299,
+          "OEB": "Both",
+          "GRID": "45",
+          "SUBDONUM": "1989S-572",
+          "MUNI": " ",
+          "PRMExp": null,
+          "ROWWIDTH": 0,
+          "MPH": 25,
+          "FT_COST": 1.18725387,
+          "TF_COST": 1.18725387,
+          "TYPE": "Ranged",
+          "GPSDATE": 1090281600000,
+          "Z_Value": 0,
+          "ESN_Left": "217",
+          "ESN_Right": "217",
+          "ESNNameLef": "HOLLEY-NAVARRE",
+          "ESNNameRig": "HOLLEY-NAVARRE",
+          "ESN": "217",
+          "OneWay": " ",
+          "From_Elev": 0,
+          "To_Elev": 0,
+          "COUNTYNAME": "Santa Rosa",
+          "COUNTYNA_1": "Santa Rosa",
+          "STATELEFT": "FL",
+          "STATERIGHT": "FL",
+          "ZIPCODELEF": "32566",
+          "ZIPCODERIG": "32566",
+          "MAPLABEL": "NINA ST",
+          "ROADTYPE": "RuralLocal",
+          "PRMINITIAL": null,
+          "PRMEXPIRE": null,
+          "GlobalID": "{43A77C85-28EB-4471-99DD-7F8EFBC638A0}",
+          "Shape__Length": 926.6242163257363
+        }
+      ]
+    },
+    {
+      "source_id": "SRC_GOMAPS_METADATA",
+      "requested_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer?f=pjson",
+      "retrieved_utc": "2026-10-16T05:47:16.719247+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_GOMAPS_METADATA.json",
+      "final_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer?f=pjson",
+      "http_status": 200,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": null,
+      "bytes": 30844,
+      "sha256": "60b14cd9154d6a1d6ce609e1260084ab8990bc854986bf0e415d68aa92e725f5",
+      "review_layers": [
+        {
+          "id": 0,
+          "name": "Parcel For Report"
+        },
+        {
+          "id": 1,
+          "name": "Base Layers"
+        },
+        {
+          "id": 2,
+          "name": "Structures"
+        },
+        {
+          "id": 3,
+          "name": "Communities"
+        },
+        {
+          "id": 4,
+          "name": "Main Roads"
+        },
+        {
+          "id": 5,
+          "name": "Streets"
+        },
+        {
+          "id": 6,
+          "name": "Railroads"
+        },
+        {
+          "id": 7,
+          "name": "Public Land Survey"
+        },
+        {
+          "id": 8,
+          "name": "Parcel"
+        },
+        {
+          "id": 9,
+          "name": "Municipalities"
+        },
+        {
+          "id": 10,
+          "name": "Tax Districts"
+        },
+        {
+          "id": 11,
+          "name": "Zip Code"
+        },
+        {
+          "id": 12,
+          "name": "Airfields"
+        },
+        {
+          "id": 13,
+          "name": "Airfield Easements"
+        },
+        {
+          "id": 14,
+          "name": "Airfield Noise Contours"
+        },
+        {
+          "id": 15,
+          "name": "Airfields"
+        },
+        {
+          "id": 16,
+          "name": "Airfield Accident Potential Zones"
+        },
+        {
+          "id": 17,
+          "name": "Airfield Proximity Notification Zone"
+        },
+        {
+          "id": 18,
+          "name": "Airport Influence Areas"
+        },
+        {
+          "id": 19,
+          "name": "Airport Zones"
+        },
+        {
+          "id": 20,
+          "name": "Leash Law Areas"
+        },
+        {
+          "id": 21,
+          "name": "Building Areas"
+        },
+        {
+          "id": 22,
+          "name": "City of Gulf Breeze"
+        },
+        {
+          "id": 23,
+          "name": "GulfBreezeFLUM"
+        },
+        {
+          "id": 24,
+          "name": "GulfBreezeZoning"
+        },
+        {
+          "id": 25,
+          "name": "Milton City Wards"
+        },
+        {
+          "id": 26,
+          "name": "Commission Districts"
+        },
+        {
+          "id": 27,
+          "name": "Voting Precincts"
+        },
+        {
+          "id": 28,
+          "name": "Emergency Info"
+        },
+        {
+          "id": 29,
+          "name": "Hospitals"
+        },
+        {
+          "id": 30,
+          "name": "Evacuation Zones"
+        },
+        {
+          "id": 31,
+          "name": "Shelters"
+        },
+        {
+          "id": 32,
+          "name": "Environment"
+        },
+        {
+          "id": 33,
+          "name": "Habitat Landcover"
+        },
+        {
+          "id": 34,
+          "name": "Vegetative Communities"
+        },
+        {
+          "id": 35,
+          "name": "Soils"
+        },
+        {
+          "id": 36,
+          "name": "Wetlands"
+        },
+        {
+          "id": 37,
+          "name": "Biodiversity Hotspots"
+        },
+        {
+          "id": 38,
+          "name": "Mosquito Control Areas"
+        },
+        {
+          "id": 100,
+          "name": "Drainage Basins"
+        },
+        {
+          "id": 39,
+          "name": "Fire"
+        },
+        {
+          "id": 40,
+          "name": "Fire Hydrants"
+        },
+        {
+          "id": 41,
+          "name": "Fire Stations"
+        },
+        {
+          "id": 42,
+          "name": "Fire Districts"
+        },
+        {
+          "id": 43,
+          "name": "Flood Zone"
+        },
+        {
+          "id": 46,
+          "name": "LiMWA 2021"
+        },
+        {
+          "id": 44,
+          "name": "BFE 2021"
+        },
+        {
+          "id": 47,
+          "name": "Flood Panels 2021"
+        },
+        {
+          "id": 45,
+          "name": "Flood Zones 2021"
+        },
+        {
+          "id": 48,
+          "name": "Miscellaneous"
+        },
+        {
+          "id": 49,
+          "name": "Billboards"
+        },
+        {
+          "id": 50,
+          "name": "Contours"
+        },
+        {
+          "id": 51,
+          "name": "Recreation"
+        },
+        {
+          "id": 52,
+          "name": "City Parks"
+        },
+        {
+          "id": 53,
+          "name": "National Parks"
+        },
+        {
+          "id": 54,
+          "name": "Parks"
+        },
+        {
+          "id": 55,
+          "name": "State Recreation Areas"
+        },
+        {
+          "id": 99,
+          "name": "Blackwater River State Forest Boundary"
+        },
+        {
+          "id": 102,
+          "name": "Golf Cart Legal Roads"
+        },
+        {
+          "id": 103,
+          "name": "Boat Ramps"
+        },
+        {
+          "id": 56,
+          "name": "Schools"
+        },
+        {
+          "id": 57,
+          "name": "Schools"
+        },
+        {
+          "id": 58,
+          "name": "School Board Districts"
+        },
+        {
+          "id": 59,
+          "name": "Elementary Attendance Zones"
+        },
+        {
+          "id": 60,
+          "name": "High School Attendance Zones"
+        },
+        {
+          "id": 61,
+          "name": "Middle School Attendance Zones"
+        },
+        {
+          "id": 62,
+          "name": "Sheriff's Dept"
+        },
+        {
+          "id": 101,
+          "name": "Sheriff Sub-Districts"
+        },
+        {
+          "id": 63,
+          "name": "Sheriff Districts"
+        },
+        {
+          "id": 64,
+          "name": "SRSO Wrecker Service Areas"
+        },
+        {
+          "id": 65,
+          "name": "Water"
+        },
+        {
+          "id": 66,
+          "name": "Water Features"
+        },
+        {
+          "id": 67,
+          "name": "Water Franchise Areas"
+        },
+        {
+          "id": 68,
+          "name": "SewerFranchise"
+        },
+        {
+          "id": 69,
+          "name": "Zoning"
+        },
+        {
+          "id": 88,
+          "name": "Navarre Beach Dune Walk Over"
+        },
+        {
+          "id": 70,
+          "name": "Access Management Area"
+        },
+        {
+          "id": 90,
+          "name": "Coastal Construction Line"
+        },
+        {
+          "id": 71,
+          "name": "Heart Of Navarre"
+        },
+        {
+          "id": 72,
+          "name": "Navarre Height Restrictions"
+        },
+        {
+          "id": 73,
+          "name": "Navarre Town Center"
+        },
+        {
+          "id": 74,
+          "name": "Bagdad Historic Zoning"
+        },
+        {
+          "id": 75,
+          "name": "Navarre Beach Core Commercial Area"
+        },
+        {
+          "id": 76,
+          "name": "Navarre Beach"
+        },
+        {
+          "id": 77,
+          "name": "Garcon Point Protection Area"
+        },
+        {
+          "id": 94,
+          "name": "East Milton Wellfield Protection Area"
+        },
+        {
+          "id": 97,
+          "name": "Whiting Development Rights Easement"
+        },
+        {
+          "id": 95,
+          "name": "Rural Protection Zone"
+        },
+        {
+          "id": 96,
+          "name": "Rezones"
+        },
+        {
+          "id": 78,
+          "name": "Existing Land Use"
+        },
+        {
+          "id": 80,
+          "name": "Future Land Use"
+        },
+        {
+          "id": 81,
+          "name": "Zoning"
+        },
+        {
+          "id": 82,
+          "name": "Transportation"
+        },
+        {
+          "id": 83,
+          "name": "SRC Urban Area 2010"
+        },
+        {
+          "id": 84,
+          "name": "SRC NON Urban Area 2010"
+        },
+        {
+          "id": 92,
+          "name": "Stormwater Problem Area"
+        },
+        {
+          "id": 79,
+          "name": "Stormwater Problem Area"
+        },
+        {
+          "id": 85,
+          "name": "County Boundary"
+        },
+        {
+          "id": 86,
+          "name": "County Boundary"
+        },
+        {
+          "id": 87,
+          "name": "County Boundary"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC_GOMAPS_TOM",
+      "requested_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/5/query?f=pjson&where=STREETNAME+%3D+%27TOM+ST%27&outFields=%2A&returnGeometry=true&outSR=4326",
+      "retrieved_utc": "2026-10-16T05:47:16.796585+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/SRC_GOMAPS_TOM.json",
+      "final_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/5/query?f=pjson&where=STREETNAME+%3D+%27TOM+ST%27&outFields=%2A&returnGeometry=true&outSR=4326",
+      "http_status": 200,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": null,
+      "bytes": 4640,
+      "sha256": "a57dfd57ced22c79f818d3f47f680f8d1527bb1a5b1bf08adad0410cdb3588a6",
+      "feature_count": 2,
+      "review_attributes": [
+        {
+          "OBJECTID": 2036,
+          "STREETID": 3503,
+          "STREETNAME": "TOM ST",
+          "ROADSTATUS": "OPEN",
+          "SURFACETYPE": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2100,
+          "RANGEHIGH": 2299,
+          "RIGHTFROM": 2100,
+          "RIGHTTO": 2298,
+          "LEFTFROM": 2101,
+          "LEFTTO": 2299,
+          "MPH": 25,
+          "OneWay": "",
+          "NENARoadType": "NENA"
+        },
+        {
+          "OBJECTID": 6125,
+          "STREETID": 3503,
+          "STREETNAME": "TOM ST",
+          "ROADSTATUS": "OPEN",
+          "SURFACETYPE": "Paved",
+          "MAINTAINER": "County Maintained",
+          "RANGELOW": 2300,
+          "RANGEHIGH": 2330,
+          "RIGHTFROM": 2300,
+          "RIGHTTO": 2330,
+          "LEFTFROM": 2301,
+          "LEFTTO": 2329,
+          "MPH": 25,
+          "OneWay": "",
+          "NENARoadType": "NENA"
+        }
+      ]
+    },
+    {
+      "source_id": "NWFWMD_ERP_METADATA",
+      "requested_url": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer/0?f=pjson",
+      "retrieved_utc": "2026-10-16T05:47:16.867787+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/NWFWMD_ERP_METADATA.json",
+      "final_url": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer/0?f=pjson",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "last_modified": null,
+      "bytes": 8467,
+      "sha256": "6f68b2037bdacd84e03d94f166b944889c6fe614be8a187f7d2e115df48cc5d3",
+      "review_fields": [
+        "APPLICANT",
+        "RULE_TYPE",
+        "SHAPE",
+        "OBJECTID",
+        "CUR_PRMT_ID",
+        "OFFCL_PRMT_ID",
+        "SEQ_NO",
+        "SITE_ID",
+        "SITE_NM",
+        "SEQ_TYPE",
+        "PRMT_STAGE",
+        "RULE_TYPE_DESC",
+        "PRMT_PROJ_NM",
+        "RECV_DT",
+        "PRMT_DECISION_DT",
+        "PRMT_EXPIR_DT",
+        "OWNER",
+        "PRMT_RECOMMEND",
+        "PRMT_STTS",
+        "PROJ_ACRES",
+        "COUNTY",
+        "CMPLNC_STTS",
+        "EDITOR",
+        "EDIT_DATE",
+        "DISC_PRMT_STTS",
+        "FDEP_ID",
+        "LINK",
+        "PRMT_APP_PROC_STTS_CD",
+        "PROJ_USE_TYPE",
+        "LEGACY_PERMIT_NUM",
+        "LGCY_APP_NO"
+      ]
+    },
+    {
+      "source_id": "NWFWMD_ERP_SPATIAL",
+      "requested_url": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer/0/query?f=pjson&geometry=-86.8147%2C30.4155&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&distance=2000&units=esriSRUnit_Foot&outFields=%2A&returnGeometry=true&outSR=4326",
+      "retrieved_utc": "2026-10-16T05:47:17.136435+00:00",
+      "status": "CAPTURED_NOT_APPLICABILITY_VERIFIED",
+      "local_path": "17_CURRENT_RESEARCH/captures/20261016T054716Z/NWFWMD_ERP_SPATIAL.json",
+      "final_url": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer/0/query?f=pjson&geometry=-86.8147%2C30.4155&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&distance=2000&units=esriSRUnit_Foot&outFields=%2A&returnGeometry=true&outSR=4326",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "last_modified": null,
+      "bytes": 5318,
+      "sha256": "302b44ca30836fa37d7157cc6db502e55284d342462367b397f539e085fa6dbd",
+      "feature_count": 1,
+      "review_attributes": [
+        {
+          "APPLICANT": "Hadleigh Hills Development Group",
+          "RULE_TYPE": "62-330",
+          "OBJECTID": 9395,
+          "CUR_PRMT_ID": 17699,
+          "OFFCL_PRMT_ID": 9220,
+          "SEQ_NO": 2,
+          "SITE_ID": 24011,
+          "SITE_NM": "Hadleigh Hills, Phase 2",
+          "SEQ_TYPE": "Extension",
+          "PRMT_STAGE": "Compliance",
+          "RULE_TYPE_DESC": "ERP Individual",
+          "PRMT_PROJ_NM": "Hadleigh Hills, Phase 2 Ext. to P9220-1",
+          "RECV_DT": 1479081600000,
+          "PRMT_DECISION_DT": 1479686400000,
+          "PRMT_EXPIR_DT": 1637452800000,
+          "OWNER": null,
+          "PRMT_RECOMMEND": "Approval",
+          "PRMT_STTS": "Issued",
+          "PROJ_ACRES": 8.1,
+          "COUNTY": "Santa Rosa",
+          "CMPLNC_STTS": "In Compliance",
+          "EDITOR": null,
+          "EDIT_DATE": null,
+          "DISC_PRMT_STTS": "Active",
+          "FDEP_ID": null,
+          "LINK": null,
+          "PRMT_APP_PROC_STTS_CD": "COMP",
+          "PROJ_USE_TYPE": null,
+          "LEGACY_PERMIT_NUM": null,
+          "LGCY_APP_NO": null
+        }
+      ]
+    }
+  ]
+}

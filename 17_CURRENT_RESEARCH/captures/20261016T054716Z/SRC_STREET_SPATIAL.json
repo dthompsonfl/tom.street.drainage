@@ -1,0 +1,572 @@
+{
+  "objectIdFieldName" : "FID", 
+  "uniqueIdField" : 
+  {
+    "name" : "FID", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdFieldName" : "", 
+  "geometryProperties" : 
+  {
+    "shapeLengthFieldName" : "Shape__Length", 
+    "units" : "esriMeters"
+  }, 
+  "geometryType" : "esriGeometryPolyline", 
+  "spatialReference" : {
+    "wkid" : 4326, 
+    "latestWkid" : 4326
+  }, 
+  "fields" : [
+    {
+      "name" : "FID", 
+      "type" : "esriFieldTypeOID", 
+      "alias" : "FID", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "STREETID", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "STREETID", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SEGMENTID", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "SEGMENTID", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "STREETNAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "STREETNAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 75, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ROADSTATUS", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ROADSTATUS", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "USPSCITY", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "USPSCITY", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SURFACETYP", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SURFACETYP", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 15, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MAINTAINER", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "MAINTAINER", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "RANGELOW", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "RANGELOW", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "RANGEHIGH", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "RANGEHIGH", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "RIGHTFROM", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "RIGHTFROM", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "RIGHTTO", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "RIGHTTO", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LEFTFROM", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "LEFTFROM", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LEFTTO", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "LEFTTO", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "OEB", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "OEB", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "GRID", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "GRID", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SUBDONUM", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SUBDONUM", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 20, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MUNI", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "MUNI", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRMExp", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "PRMExp", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ROWWIDTH", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "ROWWIDTH", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MPH", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "MPH", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "FT_COST", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "FT_COST", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "TF_COST", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "TF_COST", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "TYPE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "TYPE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "GPSDATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "GPSDATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Z_Value", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Z_Value", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ESN_Left", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ESN_Left", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 20, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ESN_Right", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ESN_Right", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 20, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ESNNameLef", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ESNNameLef", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ESNNameRig", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ESNNameRig", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ESN", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ESN", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 20, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "OneWay", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "OneWay", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "From_Elev", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "From_Elev", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "To_Elev", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "To_Elev", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "COUNTYNAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "COUNTYNAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "COUNTYNA_1", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "COUNTYNA_1", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "STATELEFT", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "STATELEFT", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 2, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "STATERIGHT", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "STATERIGHT", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 2, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ZIPCODELEF", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ZIPCODELEF", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ZIPCODERIG", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ZIPCODERIG", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MAPLABEL", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "MAPLABEL", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ROADTYPE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ROADTYPE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRMINITIAL", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "PRMINITIAL", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRMEXPIRE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "PRMEXPIRE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "GlobalID", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "GlobalID", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 38, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape__Length", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape__Length", 
+      "sqlType" : "sqlTypeDouble", 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "features" : [
+    {
+      "attributes" : {
+        "FID" : 2006, 
+        "STREETID" : 3503, 
+        "SEGMENTID" : 2036, 
+        "STREETNAME" : "TOM ST", 
+        "ROADSTATUS" : "OPEN", 
+        "USPSCITY" : "Navarre", 
+        "SURFACETYP" : "Paved", 
+        "MAINTAINER" : "County Maintained", 
+        "RANGELOW" : 2100, 
+        "RANGEHIGH" : 2299, 
+        "RIGHTFROM" : 2100, 
+        "RIGHTTO" : 2298, 
+        "LEFTFROM" : 2101, 
+        "LEFTTO" : 2299, 
+        "OEB" : "Both", 
+        "GRID" : "45", 
+        "SUBDONUM" : " ", 
+        "MUNI" : " ", 
+        "PRMExp" : null, 
+        "ROWWIDTH" : 0, 
+        "MPH" : 25, 
+        "FT_COST" : 1.29338546, 
+        "TF_COST" : 1.29338546, 
+        "TYPE" : "Ranged", 
+        "GPSDATE" : 1090281600000, 
+        "Z_Value" : 0, 
+        "ESN_Left" : "217", 
+        "ESN_Right" : "217", 
+        "ESNNameLef" : "HOLLEY-NAVARRE", 
+        "ESNNameRig" : "HOLLEY-NAVARRE", 
+        "ESN" : "217", 
+        "OneWay" : " ", 
+        "From_Elev" : 0, 
+        "To_Elev" : 0, 
+        "COUNTYNAME" : "Santa Rosa", 
+        "COUNTYNA_1" : "Santa Rosa", 
+        "STATELEFT" : "FL", 
+        "STATERIGHT" : "FL", 
+        "ZIPCODELEF" : "32566", 
+        "ZIPCODERIG" : "32566", 
+        "MAPLABEL" : "TOM ST", 
+        "ROADTYPE" : "RuralLocal", 
+        "PRMINITIAL" : null, 
+        "PRMEXPIRE" : null, 
+        "GlobalID" : "{2472A3A8-94A9-4170-8F5C-1C80EA1196A0}", 
+        "Shape__Length" : 1009.4529430819991
+      }, 
+      "geometry" : 
+      {
+        "paths" : 
+        [
+          [
+            [-86.8150413531297, 30.4096740585055], 
+            [-86.8150274879992, 30.4105957602511], 
+            [-86.8150108494571, 30.4113782617894], 
+            [-86.8149933033711, 30.4120330875019], 
+            [-86.8149902174422, 30.412148236908], 
+            [-86.8149888167234, 30.4122004640716], 
+            [-86.814973390578, 30.4127760991034], 
+            [-86.8149567512192, 30.4135585993446], 
+            [-86.8149365376138, 30.4142321449857], 
+            [-86.8149225139931, 30.4149170773614], 
+            [-86.8149209454554, 30.4160262213656], 
+            [-86.8149208150946, 30.4166776405571], 
+            [-86.8149185283402, 30.4167033412727], 
+            [-86.8149116065877, 30.4167284098672], 
+            [-86.8149002226287, 30.4167522234417], 
+            [-86.8148846603225, 30.4167741896234], 
+            [-86.8148653066302, 30.4167937620454], 
+            [-86.8148426414837, 30.4168104522537], 
+            [-86.8148172309027, 30.4168238469725], 
+            [-86.814789706267, 30.4168336120773], 
+            [-86.8147607521032, 30.4168395045404], 
+            [-86.8147310895614, 30.4168413781348], 
+            [-86.8140834904401, 30.4168355161025]
+          ]
+        ]
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 5966, 
+        "STREETID" : 183, 
+        "SEGMENTID" : 6123, 
+        "STREETNAME" : "NINA ST", 
+        "ROADSTATUS" : "OPEN", 
+        "USPSCITY" : "Navarre", 
+        "SURFACETYP" : "Paved", 
+        "MAINTAINER" : "County Maintained", 
+        "RANGELOW" : 2100, 
+        "RANGEHIGH" : 2300, 
+        "RIGHTFROM" : 2100, 
+        "RIGHTTO" : 2300, 
+        "LEFTFROM" : 2101, 
+        "LEFTTO" : 2299, 
+        "OEB" : "Both", 
+        "GRID" : "45", 
+        "SUBDONUM" : "1989S-572", 
+        "MUNI" : " ", 
+        "PRMExp" : null, 
+        "ROWWIDTH" : 0, 
+        "MPH" : 25, 
+        "FT_COST" : 1.18725387, 
+        "TF_COST" : 1.18725387, 
+        "TYPE" : "Ranged", 
+        "GPSDATE" : 1090281600000, 
+        "Z_Value" : 0, 
+        "ESN_Left" : "217", 
+        "ESN_Right" : "217", 
+        "ESNNameLef" : "HOLLEY-NAVARRE", 
+        "ESNNameRig" : "HOLLEY-NAVARRE", 
+        "ESN" : "217", 
+        "OneWay" : " ", 
+        "From_Elev" : 0, 
+        "To_Elev" : 0, 
+        "COUNTYNAME" : "Santa Rosa", 
+        "COUNTYNA_1" : "Santa Rosa", 
+        "STATELEFT" : "FL", 
+        "STATERIGHT" : "FL", 
+        "ZIPCODELEF" : "32566", 
+        "ZIPCODERIG" : "32566", 
+        "MAPLABEL" : "NINA ST", 
+        "ROADTYPE" : "RuralLocal", 
+        "PRMINITIAL" : null, 
+        "PRMEXPIRE" : null, 
+        "GlobalID" : "{43A77C85-28EB-4471-99DD-7F8EFBC638A0}", 
+        "Shape__Length" : 926.62421632573626
+      }, 
+      "geometry" : 
+      {
+        "paths" : 
+        [
+          [
+            [-86.8134350411496, 30.4102445382966], 
+            [-86.8140770996375, 30.4102556052843], 
+            [-86.8140969414705, 30.4102605687396], 
+            [-86.814115659586, 30.4102681333521], 
+            [-86.8141328020686, 30.4102781157925], 
+            [-86.8141479552553, 30.4102902770204], 
+            [-86.8141607573042, 30.41030432385], 
+            [-86.8141708963252, 30.4103199180055], 
+            [-86.8141781313808, 30.4103366838718], 
+            [-86.8141822864544, 30.4103542176235], 
+            [-86.8141832621501, 30.4103720978459], 
+            [-86.8141405912238, 30.4132576522279], 
+            [-86.8140834904401, 30.4168355161025]
+          ]
+        ]
+      }
+    }
+  ]
+}

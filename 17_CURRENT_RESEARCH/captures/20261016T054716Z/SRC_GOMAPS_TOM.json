@@ -1,0 +1,256 @@
+{
+ "displayFieldName": "STREETNAME",
+ "fieldAliases": {
+  "OBJECTID": "OBJECTID",
+  "STREETID": "STREETID",
+  "STREETNAME": "STREETNAME",
+  "ROADSTATUS": "ROADSTATUS",
+  "SURFACETYPE": "SURFACETYPE",
+  "MAINTAINER": "MAINTAINER",
+  "RANGELOW": "RANGELOW",
+  "RANGEHIGH": "RANGEHIGH",
+  "RIGHTFROM": "RIGHTFROM",
+  "RIGHTTO": "RIGHTTO",
+  "LEFTFROM": "LEFTFROM",
+  "LEFTTO": "LEFTTO",
+  "MPH": "MPH",
+  "OneWay": "OneWay",
+  "NENARoadType": "NENARoadType"
+ },
+ "geometryType": "esriGeometryPolyline",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "STREETID",
+   "type": "esriFieldTypeInteger",
+   "alias": "STREETID"
+  },
+  {
+   "name": "STREETNAME",
+   "type": "esriFieldTypeString",
+   "alias": "STREETNAME",
+   "length": 75
+  },
+  {
+   "name": "ROADSTATUS",
+   "type": "esriFieldTypeString",
+   "alias": "ROADSTATUS",
+   "length": 25
+  },
+  {
+   "name": "SURFACETYPE",
+   "type": "esriFieldTypeString",
+   "alias": "SURFACETYPE",
+   "length": 15
+  },
+  {
+   "name": "MAINTAINER",
+   "type": "esriFieldTypeString",
+   "alias": "MAINTAINER",
+   "length": 25
+  },
+  {
+   "name": "RANGELOW",
+   "type": "esriFieldTypeInteger",
+   "alias": "RANGELOW"
+  },
+  {
+   "name": "RANGEHIGH",
+   "type": "esriFieldTypeInteger",
+   "alias": "RANGEHIGH"
+  },
+  {
+   "name": "RIGHTFROM",
+   "type": "esriFieldTypeInteger",
+   "alias": "RIGHTFROM"
+  },
+  {
+   "name": "RIGHTTO",
+   "type": "esriFieldTypeInteger",
+   "alias": "RIGHTTO"
+  },
+  {
+   "name": "LEFTFROM",
+   "type": "esriFieldTypeInteger",
+   "alias": "LEFTFROM"
+  },
+  {
+   "name": "LEFTTO",
+   "type": "esriFieldTypeInteger",
+   "alias": "LEFTTO"
+  },
+  {
+   "name": "MPH",
+   "type": "esriFieldTypeInteger",
+   "alias": "MPH"
+  },
+  {
+   "name": "OneWay",
+   "type": "esriFieldTypeString",
+   "alias": "OneWay",
+   "length": 10
+  },
+  {
+   "name": "NENARoadType",
+   "type": "esriFieldTypeString",
+   "alias": "NENARoadType",
+   "length": 50
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 2036,
+    "STREETID": 3503,
+    "STREETNAME": "TOM ST",
+    "ROADSTATUS": "OPEN",
+    "SURFACETYPE": "Paved",
+    "MAINTAINER": "County Maintained",
+    "RANGELOW": 2100,
+    "RANGEHIGH": 2299,
+    "RIGHTFROM": 2100,
+    "RIGHTTO": 2298,
+    "LEFTFROM": 2101,
+    "LEFTTO": 2299,
+    "MPH": 25,
+    "OneWay": "",
+    "NENARoadType": "NENA"
+   },
+   "geometry": {
+    "paths": [
+     [
+      [
+       -86.815041353129743,
+       30.409674058505445
+      ],
+      [
+       -86.815027487999373,
+       30.410595760251056
+      ],
+      [
+       -86.815010849457167,
+       30.411378261789263
+      ],
+      [
+       -86.814993303371224,
+       30.412033087501875
+      ],
+      [
+       -86.8149902174423,
+       30.412148236907914
+      ],
+      [
+       -86.814988816723513,
+       30.412200464071464
+      ],
+      [
+       -86.814973390578089,
+       30.412776099103265
+      ],
+      [
+       -86.814956751219285,
+       30.413558599344469
+      ],
+      [
+       -86.814936537613846,
+       30.414232144985636
+      ],
+      [
+       -86.814922513993153,
+       30.414917077361292
+      ],
+      [
+       -86.814920945455569,
+       30.416026221365495
+      ],
+      [
+       -86.814920815094681,
+       30.416677640557026
+      ],
+      [
+       -86.814915836786653,
+       30.41670811412871
+      ],
+      [
+       -86.814905651728907,
+       30.416737263514996
+      ],
+      [
+       -86.814890568261873,
+       30.416764206253237
+      ],
+      [
+       -86.814871043019352,
+       30.416788126684398
+      ],
+      [
+       -86.814847667104644,
+       30.41680830064616
+      ],
+      [
+       -86.814821148195449,
+       30.416824117396068
+      ],
+      [
+       -86.814792289119922,
+       30.416835098101018
+      ],
+      [
+       -86.814761963551874,
+       30.416840910333359
+      ],
+      [
+       -86.814731089561462,
+       30.416841378134741
+      ],
+      [
+       -86.81408349044024,
+       30.416835516102452
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 6125,
+    "STREETID": 3503,
+    "STREETNAME": "TOM ST",
+    "ROADSTATUS": "OPEN",
+    "SURFACETYPE": "Paved",
+    "MAINTAINER": "County Maintained",
+    "RANGELOW": 2300,
+    "RANGEHIGH": 2330,
+    "RIGHTFROM": 2300,
+    "RIGHTTO": 2330,
+    "LEFTFROM": 2301,
+    "LEFTTO": 2329,
+    "MPH": 25,
+    "OneWay": "",
+    "NENARoadType": "NENA"
+   },
+   "geometry": {
+    "paths": [
+     [
+      [
+       -86.81408349044024,
+       30.416835516102452
+      ],
+      [
+       -86.813324941327636,
+       30.416812980338747
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
