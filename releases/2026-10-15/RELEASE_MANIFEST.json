@@ -1,0 +1,32 @@
+{
+ "version": "2026-10-15",
+ "built_utc": "2026-10-16T02:46:57.878687+00:00",
+ "zip": "releases/2026-10-15/Tom_Street_Public_Meeting_Packet_2026-10-15.zip",
+ "zip_bytes": 599508,
+ "zip_sha256": "398dfadbd091b70b070b4e4d71efb87fd8246e1ca85a1b1c65370faeffac6187",
+ "members": 22,
+ "privacy_review": "PUBLIC-SAFE. No authenticated portal captures, no account identity, no private homeowner media, no session material. Screenshots are redacted derivatives and labelled as such.",
+ "excluded": [
+  ".evidence_vault",
+  ".git",
+  "__pycache__",
+  "mgo_auth.json",
+  "acclaim_state.json",
+  "SYSTEM_RAW"
+ ],
+ "restricted_evidence_location": ".evidence_vault/ (local only, not packaged)",
+ "validation_steps": [
+  {
+   "step": "validate_evidence",
+   "rc": "0"
+  },
+  {
+   "step": "classify_for_release",
+   "rc": "0"
+  },
+  {
+   "step": "test_evidence",
+   "rc": "0"
+  }
+ ]
+}

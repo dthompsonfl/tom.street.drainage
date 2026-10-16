@@ -1,0 +1,52 @@
+[
+ {
+  "source_md": "14_MEETING_PACKET/01_EXECUTIVE_HOMEOWNER_BRIEF.md",
+  "pdf": "14_MEETING_PACKET/pdf/Tom_Street_Drainage_Homeowner_Brief.pdf",
+  "engine": "pandoc+chrome",
+  "status": "OK",
+  "bytes": 126123,
+  "sha256": "c21ea20aafe4bd75ee7a8447cbf748ad09a2d8bbea37209c6053b5ba4c5b3fb1",
+  "is_pdf": true,
+  "pages": 4
+ },
+ {
+  "source_md": "14_MEETING_PACKET/02_HOMEOWNER_LETTER.md",
+  "pdf": "14_MEETING_PACKET/pdf/Tom_Street_Drainage_Homeowner_Letter.pdf",
+  "engine": "pandoc+chrome",
+  "status": "OK",
+  "bytes": 73611,
+  "sha256": "163f6a0eb54492485b0e217549551e79c85dbae205b2cd938d603afb12e01e72",
+  "is_pdf": true,
+  "pages": 3
+ },
+ {
+  "source_md": "14_MEETING_PACKET/03_PROXY_SPEAKING_NOTES.md",
+  "pdf": "14_MEETING_PACKET/pdf/Tom_Street_Drainage_Proxy_Speaking_Notes.pdf",
+  "engine": "pandoc+chrome",
+  "status": "OK",
+  "bytes": 98558,
+  "sha256": "97088df1e7d7cce92cad5ed95121c1aabc9f89ab8ace4787b40b00b442a824c2",
+  "is_pdf": true,
+  "pages": 4
+ },
+ {
+  "source_md": "14_MEETING_PACKET/HOMEOWNER_EVIDENCE_INTAKE_CHECKLIST.md",
+  "pdf": "14_MEETING_PACKET/pdf/Tom_Street_Drainage_Evidence_Intake_Checklist.pdf",
+  "engine": "pandoc+chrome",
+  "status": "OK",
+  "bytes": 81813,
+  "sha256": "d3e834d328999ce6e3054a49ffc89af7816a9e19dd74a61bac898773aada9eea",
+  "is_pdf": true,
+  "pages": 2
+ },
+ {
+  "source_md": "14_MEETING_PACKET/05_FOLLOW_UP_TRACKER.md",
+  "pdf": "14_MEETING_PACKET/pdf/Tom_Street_Drainage_Follow_Up_Tracker.pdf",
+  "engine": "pandoc+chrome",
+  "status": "OK",
+  "bytes": 169391,
+  "sha256": "85d96a0252189529778e7607d4e7802f96575895547b83c72612b771eca9b245",
+  "is_pdf": true,
+  "pages": 2
+ }
+]
