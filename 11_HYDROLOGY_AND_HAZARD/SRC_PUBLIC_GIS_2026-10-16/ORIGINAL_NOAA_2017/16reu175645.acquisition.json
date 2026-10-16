@@ -1,0 +1,64 @@
+{
+  "status": "ORIGINAL_BINARY_DOWNLOADED_AND_GEOMETRY_VALIDATED",
+  "agency": "NOAA Office for Coastal Management / Northwest Florida Water Management District",
+  "dataset": "2017 NWFWMD Lidar DEM: Escambia Santa Rosa",
+  "dataset_id": "NOAA 8683",
+  "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/FL_Escam_St_Rosa_DEM_2017_8683/16reu175645.tif",
+  "source_catalog": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/FL_Escam_St_Rosa_DEM_2017_8683/index.html",
+  "dataset_metadata": "https://www.fisheries.noaa.gov/inport/item/55909",
+  "source_acquisition_window": "2017-03-31 to 2017-04-08",
+  "source_vertical_reference": "NAVD88, GEOID12B per dataset lineage; confirm raster-specific tags before engineering comparison",
+  "bytes": 6589870,
+  "sha256": "449070da44acbdc23a289bdbfb436ef0eeb75b2cdc5cdee1fda154b263e507e0",
+  "local_original": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2017/16reu175645.tif",
+  "validation": {
+    "crs": "EPSG:6345",
+    "width": 1500,
+    "height": 1500,
+    "resolution": [
+      1.0,
+      1.0
+    ],
+    "bounds": {
+      "left": 517500.0,
+      "bottom": 3364500.0,
+      "right": 519000.0,
+      "top": 3366000.0
+    },
+    "count": 1,
+    "nodata": -3.4028234663852886e+38,
+    "raster_samples": {
+      "2264_Tom_St": {
+        "parcel": "21-2S-26-0780-0QQ00-1020",
+        "lon": -86.81466,
+        "lat": 30.41519,
+        "raster_x": 517800.7500079329,
+        "raster_y": 3364807.8000179916,
+        "elevation_raster_units": 31.454923629760742
+      },
+      "2265_Tom_St": {
+        "parcel": "21-2S-26-0780-0QQ00-1180",
+        "lon": -86.81521,
+        "lat": 30.41515,
+        "raster_x": 517747.9330888165,
+        "raster_y": 3364803.281022018,
+        "elevation_raster_units": 32.14788055419922
+      },
+      "2268_Tom_St": {
+        "parcel": "21-2S-26-0780-0QQ00-1490",
+        "lon": -86.81466,
+        "lat": 30.41534,
+        "raster_x": 517800.7227861772,
+        "raster_y": 3364824.4223297015,
+        "elevation_raster_units": 31.661670684814453
+      }
+    }
+  },
+  "limitations": [
+    "2017 historical hydro-flattened 1 m DEM, not current 2026 surveyed conditions.",
+    "Tax parcel display coordinates, not survey control points.",
+    "Raster-derived elevations cannot establish pipe-invert levels or compliance.",
+    "USGS EPQS responses report rasterId 19247 and a 2017-05-05 acquisition date; equivalence of sources is unverified.",
+    "Dataset project-wide vertical accuracy cannot substitute for lot-specific field survey."
+  ]
+}
