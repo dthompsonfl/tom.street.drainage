@@ -1,0 +1,53 @@
+{
+  "release_status": "DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION",
+  "generated_utc": "2026-10-16T03:50:52.970947+00:00",
+  "photo_originals_included": false,
+  "file_scope": "Four explicitly named public-safe Markdown drafts",
+  "unresolved": [
+    "Approved signed engineering and surveys not acquired",
+    "Current official permit/CO status not refreshed",
+    "Photo original provenance/permission not verified",
+    "Homeowner release sign-off outstanding"
+  ],
+  "outputs": [
+    {
+      "source_md": "01_HOMEOWNER_BRIEF.md",
+      "source_sha256": "f9e2c860b4a5ee515eaf32aa0e3901f35f4f60dfbc9f7c47c6be2a19d800c5c5",
+      "pdf": "Tom_Street_Homeowner_Brief.pdf",
+      "bytes": 5309,
+      "sha256": "f57a8e4582ed3a2d516333ca69c568e9bef9059c23d61925f625c905cb3c191c",
+      "pages": 2
+    },
+    {
+      "source_md": "02_COUNTY_LETTER_DRAFT.md",
+      "source_sha256": "c3f49964973c055ac5cca3f83d80e4eabf54c5c9edec4ba8912bc7be1c55cee6",
+      "pdf": "Tom_Street_County_Letter_Draft.pdf",
+      "bytes": 4970,
+      "sha256": "da40070b474fbbfde2ac89f70ac33ca84685eeba998423409e5387d61598122c",
+      "pages": 2
+    },
+    {
+      "source_md": "03_PROXY_MEETING_NOTES.md",
+      "source_sha256": "928fb5114cf1b52263daa7ba36a5db3d590c58be2ee6c33e8990eca13554d0ad",
+      "pdf": "Tom_Street_Proxy_Meeting_Notes.pdf",
+      "bytes": 3578,
+      "sha256": "9a4d829cdd0794c230abbe93ab479d8acc6e89695cb49de3a716860044573727",
+      "pages": 1
+    },
+    {
+      "source_md": "05_RECORDS_STATUS_AND_FOLLOW_UP.md",
+      "source_sha256": "e844eafe5b655cd38b85385f419eadd4e923cbfc801394044482a2f80a33ee69",
+      "pdf": "Tom_Street_Records_Status_and_Follow_Up.pdf",
+      "bytes": 3318,
+      "sha256": "79f8fcf249a450762cb1330d932054ff9d8cebe90e4208b8a05fa89600e330d1",
+      "pages": 1
+    },
+    {
+      "source_md": "merge of approved-scope source drafts",
+      "pdf": "Tom_Street_Reconciled_Public_Meeting_Draft.pdf",
+      "bytes": 14328,
+      "sha256": "059b0159591ba5c2688f1d27227f701a5128ff447f96250c6cce82bcbfc57415",
+      "pages": 6
+    }
+  ]
+}
