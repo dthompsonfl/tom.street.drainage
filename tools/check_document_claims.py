@@ -92,10 +92,26 @@ exhibits = csvrows("00_CONTROL/EXHIBIT_INDEX.csv")
 index = {row["exhibit_id"]: row for row in exhibits}
 check("evidence exhibit IDs are unique",
       len(index) == len(exhibits) and len(exhibits) >= 19)
+links = csvrows("00_CONTROL/CLAIM_SOURCE_LINKS.csv")
+source_links = {}
+for item in links:
+    source_links.setdefault(item["claim_id"], set()).add(item["source_file"])
 for row in claims:
-    eid = (row.get("source_exhibit") or "").strip()
-    if eid:
-        check(row["claim_id"] + " cites a registered exhibit", eid in index)
+    cid = row["claim_id"]
+    eids = [s.strip() for s in (row.get("source_exhibit") or "").split("|") if s.strip()]
+    requires_exhibit = row.get("evidentiary_class") in {"OFFICIAL_RECORD", "OBSERVATION"}
+    check(cid + " has exhibit citations where official proof is asserted",
+          not requires_exhibit or bool(eids))
+    check(cid + " cites only registered exhibit IDs",
+          len(eids) == len(set(eids)) if eids else not requires_exhibit)
+    if not eids:
+        continue
+    check(cid + " all exhibit IDs exist", all(eid in index for eid in eids))
+    if all(eid in index for eid in eids):
+        referenced = {index[eid]["source_file"] for eid in eids}
+        expected = source_links.get(cid, set())
+        check(cid + " exhibit files exactly equal linked primary files",
+              referenced == expected)
 for row in exhibits:
     name = row["source_file"]
     path = ROOT / name
@@ -107,6 +123,34 @@ for row in exhibits:
     if row["exhibit_id"] in {"EX-16", "EX-17", "EX-18"}:
         check(row["exhibit_id"] + " legal only, not a construction evidence exhibit",
               row["public_release"] == "LEGAL_RESEARCH_ONLY_NOT_MEETING_EXHIBIT")
+
+# Harden the exact pairings that historically passed despite incomplete exhibits.
+for cid, must in {
+    "CLM-006": {"EX-04", "EX-05"},
+    "CLM-010": {"EX-09", "EX-19"},
+    "CLM-011": {"EX-09", "EX-19"},
+    "CLM-012": {"EX-10", "EX-20"},
+    "CLM-015": {"EX-22"},
+    "CLM-016": {"EX-13", "EX-21"},
+}.items():
+    claim = next((row for row in claims if row["claim_id"] == cid), {})
+    found = set((claim.get("source_exhibit") or "").split("|"))
+    check(cid + " paired sources explicitly cited", found == must)
+check("EX-09 refers to 2264 only",
+      "2264 only" in index["EX-09"]["what_it_proves"]
+      and "both permits" not in index["EX-09"]["what_it_proves"].lower())
+check("EX-12 limits FEMA conclusion to queried points",
+      "queried points" in index["EX-12"]["what_it_proves"]
+      and "entire parcel" in index["EX-12"]["what_it_does_NOT_prove"])
+check("EX-13 describes only its 2260 permit",
+      "2260" in index["EX-13"]["what_it_proves"]
+      and "2270" in index["EX-13"]["what_it_does_NOT_prove"])
+check("private photo chronology does not pretend to assign parcel locations",
+      "each photo's parcel location unverified" in text("00_CONTROL/CHRONOLOGY.csv"))
+check("FDEP applicability is not inferred from a negative search",
+      "POTENTIAL_AUTHORITY_SCOPE_UNVERIFIED" in text("00_CONTROL/RESPONSIBILITY_MATRIX.csv"))
+check("archived MGO guest failure is labelled historical rather than current",
+      "HISTORICAL_GUEST_SEARCH_BLOCKED_SUPERSEDED" in text("00_CONTROL/SOURCE_REGISTER.csv"))
 
 contradictions = csvrows("00_CONTROL/CONTRADICTION_LOG.csv")
 cids = [row["id"] for row in contradictions]
