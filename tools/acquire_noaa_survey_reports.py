@@ -15,7 +15,7 @@ from urllib.request import Request, urlopen
 from pypdf import PdfReader
 
 ROOT = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS")
-BASE17 = "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid12b/8680/supplemental/"
+BASE17 = "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8680/supplemental/"
 BASE18 = "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8945/supplemental/"
 REPORTS = [
     ("2017_NWFWMD_Project_Report", BASE17 + "FL_Escambia_Santa_Rosa_NWFWMD_Lidar_Project_Report_20180301.pdf", "2017 NWFWMD Escambia/Santa Rosa project report"),
