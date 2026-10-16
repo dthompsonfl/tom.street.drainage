@@ -1,0 +1,1331 @@
+{
+  "retrieved_utc": "2026-10-16T06:36:09.608Z",
+  "source_agency": "Santa Rosa County GIS",
+  "source_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer",
+  "note": "Raw ArcGIS response parsed to JSON with full coordinate precision retained, not survey-grade boundary or measured grading data; source URLs preserve exact queries.",
+  "captures": [
+    {
+      "key": "verified_parcel_shapes",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/8/query?where=OBJECTID%20IN%20(5033386%2C4999556%2C5042788)&outFields=OBJECTID%2CPAR_NUM%2CStrNum%2CStrName%2CCALC_ACRE&returnGeometry=true&outSR=4326&f=pjson",
+      "response": {
+        "displayFieldName": "FEAT_TYPE",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "PAR_NUM": "Parcel Number",
+          "StrNum": "House Number",
+          "StrName": "Street Name",
+          "CALC_ACRE": "Calculated Acres"
+        },
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "PAR_NUM",
+            "type": "esriFieldTypeString",
+            "alias": "Parcel Number",
+            "length": 19
+          },
+          {
+            "name": "StrNum",
+            "type": "esriFieldTypeString",
+            "alias": "House Number",
+            "length": 7
+          },
+          {
+            "name": "StrName",
+            "type": "esriFieldTypeString",
+            "alias": "Street Name",
+            "length": 50
+          },
+          {
+            "name": "CALC_ACRE",
+            "type": "esriFieldTypeDouble",
+            "alias": "Calculated Acres"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 4999556,
+              "PAR_NUM": "212S2607800QQ001180",
+              "StrNum": "2265",
+              "StrName": "TOM",
+              "CALC_ACRE": 0.16062187
+            },
+            "geometry": {
+              "rings": [
+                [
+                  [
+                    -86.81501596875316,
+                    30.415227526800695
+                  ],
+                  [
+                    -86.81501843565016,
+                    30.41507355839837
+                  ],
+                  [
+                    -86.8154151455625,
+                    30.415075687583045
+                  ],
+                  [
+                    -86.81541269649644,
+                    30.415229368768692
+                  ],
+                  [
+                    -86.81501596875316,
+                    30.415227526800695
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 5033386,
+              "PAR_NUM": "212S2607800QQ001020",
+              "StrNum": "2264",
+              "StrName": "TOM",
+              "CALC_ACRE": 0.14308703
+            },
+            "geometry": {
+              "rings": [
+                [
+                  [
+                    -86.81446120492949,
+                    30.415264764550695
+                  ],
+                  [
+                    -86.8144635347717,
+                    30.41512721804446
+                  ],
+                  [
+                    -86.81485870936515,
+                    30.415132726044362
+                  ],
+                  [
+                    -86.81485638005174,
+                    30.415270271655586
+                  ],
+                  [
+                    -86.81446120492949,
+                    30.415264764550695
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 5042788,
+              "PAR_NUM": "212S2607800QQ001490",
+              "StrNum": "2268",
+              "StrName": "TOM",
+              "CALC_ACRE": 0.14308825
+            },
+            "geometry": {
+              "rings": [
+                [
+                  [
+                    -86.81445886991996,
+                    30.415402312947975
+                  ],
+                  [
+                    -86.81446120492949,
+                    30.415264764550695
+                  ],
+                  [
+                    -86.81485638005174,
+                    30.415270271655586
+                  ],
+                  [
+                    -86.81485405173021,
+                    30.415407815440286
+                  ],
+                  [
+                    -86.81445886991996,
+                    30.415402312947975
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "feature_count": 3
+    },
+    {
+      "key": "tom_street_sections",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/5/query?where=STREETNAME%3D'TOM%20ST'&outFields=OBJECTID%2CSTREETID%2CSTREETNAME%2CMAINTAINER%2CROADSTATUS%2CRANGELOW%2CRANGEHIGH&returnGeometry=true&outSR=4326&f=pjson",
+      "response": {
+        "displayFieldName": "STREETNAME",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "STREETID": "STREETID",
+          "STREETNAME": "STREETNAME",
+          "MAINTAINER": "MAINTAINER",
+          "ROADSTATUS": "ROADSTATUS",
+          "RANGELOW": "RANGELOW",
+          "RANGEHIGH": "RANGEHIGH"
+        },
+        "geometryType": "esriGeometryPolyline",
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "STREETID",
+            "type": "esriFieldTypeInteger",
+            "alias": "STREETID"
+          },
+          {
+            "name": "STREETNAME",
+            "type": "esriFieldTypeString",
+            "alias": "STREETNAME",
+            "length": 75
+          },
+          {
+            "name": "MAINTAINER",
+            "type": "esriFieldTypeString",
+            "alias": "MAINTAINER",
+            "length": 25
+          },
+          {
+            "name": "ROADSTATUS",
+            "type": "esriFieldTypeString",
+            "alias": "ROADSTATUS",
+            "length": 25
+          },
+          {
+            "name": "RANGELOW",
+            "type": "esriFieldTypeInteger",
+            "alias": "RANGELOW"
+          },
+          {
+            "name": "RANGEHIGH",
+            "type": "esriFieldTypeInteger",
+            "alias": "RANGEHIGH"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 2036,
+              "STREETID": 3503,
+              "STREETNAME": "TOM ST",
+              "MAINTAINER": "County Maintained",
+              "ROADSTATUS": "OPEN",
+              "RANGELOW": 2100,
+              "RANGEHIGH": 2299
+            },
+            "geometry": {
+              "paths": [
+                [
+                  [
+                    -86.81504135312974,
+                    30.409674058505445
+                  ],
+                  [
+                    -86.81502748799937,
+                    30.410595760251056
+                  ],
+                  [
+                    -86.81501084945717,
+                    30.411378261789263
+                  ],
+                  [
+                    -86.81499330337122,
+                    30.412033087501875
+                  ],
+                  [
+                    -86.8149902174423,
+                    30.412148236907914
+                  ],
+                  [
+                    -86.81498881672351,
+                    30.412200464071464
+                  ],
+                  [
+                    -86.81497339057809,
+                    30.412776099103265
+                  ],
+                  [
+                    -86.81495675121928,
+                    30.41355859934447
+                  ],
+                  [
+                    -86.81493653761385,
+                    30.414232144985636
+                  ],
+                  [
+                    -86.81492251399315,
+                    30.41491707736129
+                  ],
+                  [
+                    -86.81492094545557,
+                    30.416026221365495
+                  ],
+                  [
+                    -86.81492081509468,
+                    30.416677640557026
+                  ],
+                  [
+                    -86.81491583678665,
+                    30.41670811412871
+                  ],
+                  [
+                    -86.8149056517289,
+                    30.416737263514996
+                  ],
+                  [
+                    -86.81489056826187,
+                    30.416764206253237
+                  ],
+                  [
+                    -86.81487104301935,
+                    30.4167881266844
+                  ],
+                  [
+                    -86.81484766710464,
+                    30.41680830064616
+                  ],
+                  [
+                    -86.81482114819545,
+                    30.416824117396068
+                  ],
+                  [
+                    -86.81479228911992,
+                    30.416835098101018
+                  ],
+                  [
+                    -86.81476196355187,
+                    30.41684091033336
+                  ],
+                  [
+                    -86.81473108956146,
+                    30.41684137813474
+                  ],
+                  [
+                    -86.81408349044024,
+                    30.416835516102452
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 6125,
+              "STREETID": 3503,
+              "STREETNAME": "TOM ST",
+              "MAINTAINER": "County Maintained",
+              "ROADSTATUS": "OPEN",
+              "RANGELOW": 2300,
+              "RANGEHIGH": 2330
+            },
+            "geometry": {
+              "paths": [
+                [
+                  [
+                    -86.81408349044024,
+                    30.416835516102452
+                  ],
+                  [
+                    -86.81332494132764,
+                    30.416812980338747
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "feature_count": 2
+    },
+    {
+      "key": "historical_stormwater_problem_area_2068",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/GoMaps4_0/MapServer/79/query?where=OBJECTID%3D2068&outFields=OBJECTID%2CDataSource%2CGlobalID&returnGeometry=true&outSR=4326&f=pjson",
+      "response": {
+        "displayFieldName": "DataSource",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "DataSource": "DataSource",
+          "GlobalID": "GlobalID"
+        },
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "DataSource",
+            "type": "esriFieldTypeString",
+            "alias": "DataSource",
+            "length": 50
+          },
+          {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "length": 38
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 2068,
+              "DataSource": "Road & Bridge Maps Marked Up by Foreman",
+              "GlobalID": "{6BE01BBB-27EB-445F-81C0-BAAEFE57C3DD}"
+            },
+            "geometry": {
+              "rings": [
+                [
+                  [
+                    -86.81206069522183,
+                    30.416742693901103
+                  ],
+                  [
+                    -86.81205338630008,
+                    30.416349789689068
+                  ],
+                  [
+                    -86.81205156234296,
+                    30.415074007706494
+                  ],
+                  [
+                    -86.8120529169422,
+                    30.413439664488973
+                  ],
+                  [
+                    -86.81205847089304,
+                    30.413405102964525
+                  ],
+                  [
+                    -86.81207396062905,
+                    30.413341149572553
+                  ],
+                  [
+                    -86.81209400774486,
+                    30.413270338235357
+                  ],
+                  [
+                    -86.81210700754428,
+                    30.41323731230826
+                  ],
+                  [
+                    -86.8121223980989,
+                    30.413205068123276
+                  ],
+                  [
+                    -86.81214011786612,
+                    30.41317373398102
+                  ],
+                  [
+                    -86.8121600938363,
+                    30.413143437481406
+                  ],
+                  [
+                    -86.81222089523774,
+                    30.413065410666178
+                  ],
+                  [
+                    -86.81227136618892,
+                    30.41301107670675
+                  ],
+                  [
+                    -86.81233374690987,
+                    30.41295970662382
+                  ],
+                  [
+                    -86.81232565635682,
+                    30.411287521464374
+                  ],
+                  [
+                    -86.81233928139757,
+                    30.411218773652074
+                  ],
+                  [
+                    -86.81235253388552,
+                    30.411177655309828
+                  ],
+                  [
+                    -86.81239695283436,
+                    30.411069379120864
+                  ],
+                  [
+                    -86.81241467215268,
+                    30.41103804582826
+                  ],
+                  [
+                    -86.81248104096288,
+                    30.41095075029827
+                  ],
+                  [
+                    -86.81252779899349,
+                    30.41090573242322
+                  ],
+                  [
+                    -86.81259613518432,
+                    30.41084930851715
+                  ],
+                  [
+                    -86.81266073119501,
+                    30.410807702415184
+                  ],
+                  [
+                    -86.81273088591969,
+                    30.410773518939386
+                  ],
+                  [
+                    -86.81280546716579,
+                    30.410747308523415
+                  ],
+                  [
+                    -86.8128097215217,
+                    30.410151491523763
+                  ],
+                  [
+                    -86.81282414877164,
+                    30.40964797893019
+                  ],
+                  [
+                    -86.812833128495,
+                    30.409567938726365
+                  ],
+                  [
+                    -86.8128517558226,
+                    30.40950007821169
+                  ],
+                  [
+                    -86.81288014561247,
+                    30.40943480695997
+                  ],
+                  [
+                    -86.81293999116421,
+                    30.40934403933677
+                  ],
+                  [
+                    -86.81299046086,
+                    30.40928970503725
+                  ],
+                  [
+                    -86.81307999460259,
+                    30.409219653735267
+                  ],
+                  [
+                    -86.8131130539814,
+                    30.40919974033101
+                  ],
+                  [
+                    -86.81325778623798,
+                    30.40913934413399
+                  ],
+                  [
+                    -86.81337532006894,
+                    30.4091158615616
+                  ],
+                  [
+                    -86.81341537968689,
+                    30.409112390596977
+                  ],
+                  [
+                    -86.81345561388406,
+                    30.409111129813162
+                  ],
+                  [
+                    -86.813495857217,
+                    30.40911208212034
+                  ],
+                  [
+                    -86.81357573273033,
+                    30.409120606563057
+                  ],
+                  [
+                    -86.81365371950004,
+                    30.409137825957533
+                  ],
+                  [
+                    -86.81369161211057,
+                    30.409149616098432
+                  ],
+                  [
+                    -86.8137285650466,
+                    30.40916346459188
+                  ],
+                  [
+                    -86.81376443026295,
+                    30.409179317200312
+                  ],
+                  [
+                    -86.8137990636229,
+                    30.409197108790124
+                  ],
+                  [
+                    -86.81386408042005,
+                    30.4092382182147
+                  ],
+                  [
+                    -86.81392257042285,
+                    30.40928613094853
+                  ],
+                  [
+                    -86.81394906942576,
+                    30.40931240166358
+                  ],
+                  [
+                    -86.81397359327252,
+                    30.409340075864048
+                  ],
+                  [
+                    -86.81401632500851,
+                    30.409399185047853
+                  ],
+                  [
+                    -86.81405008127734,
+                    30.409462506925586
+                  ],
+                  [
+                    -86.81408273683628,
+                    30.40956314702694
+                  ],
+                  [
+                    -86.81408864289254,
+                    30.40959766495069
+                  ],
+                  [
+                    -86.81409282886317,
+                    30.409667324904948
+                  ],
+                  [
+                    -86.81408968800064,
+                    30.409705851979794
+                  ],
+                  [
+                    -86.8141546046537,
+                    30.409709863562114
+                  ],
+                  [
+                    -86.81419438521719,
+                    30.409715225066517
+                  ],
+                  [
+                    -86.81427237360448,
+                    30.409732444073597
+                  ],
+                  [
+                    -86.81431026651681,
+                    30.409744234034687
+                  ],
+                  [
+                    -86.81438308529324,
+                    30.409773934790074
+                  ],
+                  [
+                    -86.81441292210049,
+                    30.409600398925814
+                  ],
+                  [
+                    -86.81442410708826,
+                    30.40954683293798
+                  ],
+                  [
+                    -86.81443019176619,
+                    30.409527419130267
+                  ],
+                  [
+                    -86.81444766140582,
+                    30.40948013241313
+                  ],
+                  [
+                    -86.81448076792236,
+                    30.409416553460773
+                  ],
+                  [
+                    -86.8145007434349,
+                    30.40938625565966
+                  ],
+                  [
+                    -86.81454713379735,
+                    30.409329255954383
+                  ],
+                  [
+                    -86.81460147701895,
+                    30.409277805979706
+                  ],
+                  [
+                    -86.81466289720132,
+                    30.409232731377607
+                  ],
+                  [
+                    -86.81469595624438,
+                    30.409212816673676
+                  ],
+                  [
+                    -86.81476610807121,
+                    30.40917863121653
+                  ],
+                  [
+                    -86.81484068757386,
+                    30.409152419637177
+                  ],
+                  [
+                    -86.81491849603638,
+                    30.409134601829223
+                  ],
+                  [
+                    -86.81499828061182,
+                    30.40912546420383
+                  ],
+                  [
+                    -86.81507875812655,
+                    30.40912515385692
+                  ],
+                  [
+                    -86.81576299605427,
+                    30.40914372400421
+                  ],
+                  [
+                    -86.81584278055904,
+                    30.40913458586658
+                  ],
+                  [
+                    -86.81596335238969,
+                    30.40913743883575
+                  ],
+                  [
+                    -86.8160424427015,
+                    30.40915033537296
+                  ],
+                  [
+                    -86.81615596724355,
+                    30.409185654082005
+                  ],
+                  [
+                    -86.81622646668319,
+                    30.40921929788097
+                  ],
+                  [
+                    -86.81629148448356,
+                    30.409260405203707
+                  ],
+                  [
+                    -86.81634997567635,
+                    30.409308316857942
+                  ],
+                  [
+                    -86.81640099986251,
+                    30.409362260831596
+                  ],
+                  [
+                    -86.81642344881772,
+                    30.409391227087923
+                  ],
+                  [
+                    -86.81646177271227,
+                    30.409452565946626
+                  ],
+                  [
+                    -86.81647749089178,
+                    30.40948469048104
+                  ],
+                  [
+                    -86.81650172900959,
+                    30.409551207407375
+                  ],
+                  [
+                    -86.81651014893006,
+                    30.40958532997925
+                  ],
+                  [
+                    -86.81651942561398,
+                    30.409654620522282
+                  ],
+                  [
+                    -86.81648625851612,
+                    30.41154149601593
+                  ],
+                  [
+                    -86.81641404042894,
+                    30.41535874716317
+                  ],
+                  [
+                    -86.81636256151045,
+                    30.41697901770605
+                  ],
+                  [
+                    -86.81634145925699,
+                    30.417046333022913
+                  ],
+                  [
+                    -86.81629183823264,
+                    30.417141621866424
+                  ],
+                  [
+                    -86.81624755446899,
+                    30.41719986886897
+                  ],
+                  [
+                    -86.8161951192236,
+                    30.417252788948627
+                  ],
+                  [
+                    -86.81613537659304,
+                    30.417299529928897
+                  ],
+                  [
+                    -86.81606928651897,
+                    30.417339340452262
+                  ],
+                  [
+                    -86.81599791355242,
+                    30.417371579201312
+                  ],
+                  [
+                    -86.81588347876041,
+                    30.417404641949265
+                  ],
+                  [
+                    -86.81580406163059,
+                    30.417415969626525
+                  ],
+                  [
+                    -86.81568343669477,
+                    30.417416434006892
+                  ],
+                  [
+                    -86.81552658250435,
+                    30.417386363634787
+                  ],
+                  [
+                    -86.81545270674886,
+                    30.41735868148866
+                  ],
+                  [
+                    -86.81531998360305,
+                    30.417280240529987
+                  ],
+                  [
+                    -86.81524813160156,
+                    30.417216431072536
+                  ],
+                  [
+                    -86.81521911477535,
+                    30.41724062270881
+                  ],
+                  [
+                    -86.81515607151046,
+                    30.41728398550029
+                  ],
+                  [
+                    -86.81512229811376,
+                    30.417302981671085
+                  ],
+                  [
+                    -86.81505092382388,
+                    30.41733521992496
+                  ],
+                  [
+                    -86.81497541640448,
+                    30.417359368072958
+                  ],
+                  [
+                    -86.8148973230799,
+                    30.417374990152027
+                  ],
+                  [
+                    -86.81475400969431,
+                    30.417390975864734
+                  ],
+                  [
+                    -86.81326739775554,
+                    30.417360674748572
+                  ],
+                  [
+                    -86.81318786924989,
+                    30.417349957723832
+                  ],
+                  [
+                    -86.81311054438886,
+                    30.41733060149541
+                  ],
+                  [
+                    -86.81303667037143,
+                    30.417302917071986
+                  ],
+                  [
+                    -86.81293490577626,
+                    30.41724678555027
+                  ],
+                  [
+                    -86.81290394817779,
+                    30.417224473693107
+                  ],
+                  [
+                    -86.81286977427143,
+                    30.417188976720375
+                  ],
+                  [
+                    -86.81283084648015,
+                    30.417197888972247
+                  ],
+                  [
+                    -86.81275143020727,
+                    30.417209214788905
+                  ],
+                  [
+                    -86.81267099788617,
+                    30.417211736060388
+                  ],
+                  [
+                    -86.81259084469788,
+                    30.417205411968844
+                  ],
+                  [
+                    -86.81251225981374,
+                    30.417190345265265
+                  ],
+                  [
+                    -86.8124739525974,
+                    30.41717960325893
+                  ],
+                  [
+                    -86.81240007785168,
+                    30.417151919397252
+                  ],
+                  [
+                    -86.81233084081367,
+                    30.41711635206874
+                  ],
+                  [
+                    -86.81226735738572,
+                    30.417073474453233
+                  ],
+                  [
+                    -86.812210646266,
+                    30.417023976930825
+                  ],
+                  [
+                    -86.81218512207792,
+                    30.416996990393674
+                  ],
+                  [
+                    -86.8121616224507,
+                    30.4169686563681
+                  ],
+                  [
+                    -86.81212107294121,
+                    30.41690840120592
+                  ],
+                  [
+                    -86.8121041849119,
+                    30.416876723544867
+                  ],
+                  [
+                    -86.81208965130894,
+                    30.41684418162927
+                  ],
+                  [
+                    -86.8120678616649,
+                    30.416777031803175
+                  ],
+                  [
+                    -86.81206069522183,
+                    30.416742693901103
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "feature_count": 1
+    },
+    {
+      "key": "hosted_stormwater_layer_metadata",
+      "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/Hosted/OpenData_StormwaterProblemAreas/FeatureServer/0?f=pjson",
+      "response": {
+        "isCoGoEnabled": false,
+        "extent": {
+          "ymin": 496833.9674744755,
+          "xmin": 1084829.4488802254,
+          "ymax": 736866.6484973878,
+          "xmax": 1251421.120945558,
+          "spatialReference": {
+            "falseM": 0,
+            "xyTolerance": 0.003280833333333333,
+            "mUnits": 1,
+            "zUnits": 1,
+            "latestWkid": 2238,
+            "zTolerance": 2,
+            "wkid": 102660,
+            "xyUnits": 3048.0060960121928,
+            "mTolerance": 2,
+            "falseX": -125939000,
+            "falseY": -91453300,
+            "falseZ": 0
+          }
+        },
+        "isDataBranchVersioned": false,
+        "supportsApplyEditsWithGlobalIds": false,
+        "maxRecordCount": 2000,
+        "infoInEstimates": [
+          "extent",
+          "count"
+        ],
+        "datesInUnknownTimezone": false,
+        "type": "Feature Layer",
+        "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+        "supportsAttachmentsByUploadId": true,
+        "editingInfo": {
+          "lastEditDate": 1767122458411
+        },
+        "relationships": [],
+        "supportsAttachmentsResizing": true,
+        "cimVersion": "3.5.0",
+        "isDataArchived": false,
+        "id": 0,
+        "spatialReference": {
+          "falseM": 0,
+          "xyTolerance": 0.003280833333333333,
+          "mUnits": 1,
+          "zUnits": 1,
+          "latestWkid": 2238,
+          "zTolerance": 2,
+          "wkid": 102660,
+          "xyUnits": 3048.0060960121928,
+          "mTolerance": 2,
+          "falseX": -125939000,
+          "falseY": -91453300,
+          "falseZ": 0
+        },
+        "supportsSubtypeEditing": true,
+        "supportsStatistics": true,
+        "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson",
+        "standardMaxRecordCount": 2000,
+        "isDataVersioned": false,
+        "templates": [
+          {
+            "name": "OpenData_StormwaterProblemAreas",
+            "description": "",
+            "drawingTool": "esriFeatureEditToolPolygon",
+            "prototype": {
+              "attributes": {
+                "datasource": null,
+                "globalid": null
+              }
+            }
+          }
+        ],
+        "hasGeometryProperties": true,
+        "supportsAdvancedQueries": true,
+        "parentLayer": null,
+        "currentVersion": 11.5,
+        "canScaleSymbols": false,
+        "hasZ": false,
+        "advancedEditingCapabilities": {
+          "supportsAsyncApplyEdits": true,
+          "supportsApplyEditsbyUploadID": true,
+          "supportsReturnEditResults": true,
+          "supportedSqlFormatsInCalculate": [
+            "standard"
+          ],
+          "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+        },
+        "objectIdField": "fid",
+        "supportsQuantizationEditMode": true,
+        "hasContingentValuesDefinition": false,
+        "name": "OpenData_StormwaterProblemAreas",
+        "allowTrueCurvesUpdates": false,
+        "displayField": "datasource",
+        "supportsCalculate": true,
+        "fields": [
+          {
+            "nullable": false,
+            "defaultValue": null,
+            "editable": false,
+            "length": 4,
+            "type": "esriFieldTypeOID",
+            "modelName": "fid",
+            "domain": null,
+            "name": "fid",
+            "alias": "FID"
+          },
+          {
+            "modelName": "datasource",
+            "nullable": true,
+            "editable": true,
+            "defaultValue": null,
+            "domain": null,
+            "name": "datasource",
+            "length": 50,
+            "alias": "DataSource",
+            "type": "esriFieldTypeString"
+          },
+          {
+            "modelName": "globalid",
+            "nullable": true,
+            "editable": true,
+            "defaultValue": null,
+            "domain": null,
+            "name": "globalid",
+            "length": 38,
+            "alias": "GlobalID",
+            "type": "esriFieldTypeString"
+          },
+          {
+            "virtual": true,
+            "nullable": true,
+            "editable": false,
+            "defaultValue": null,
+            "domain": null,
+            "name": "SHAPE__Length",
+            "alias": "SHAPE__Length",
+            "type": "esriFieldTypeDouble"
+          },
+          {
+            "virtual": true,
+            "nullable": true,
+            "editable": false,
+            "defaultValue": null,
+            "domain": null,
+            "name": "SHAPE__Area",
+            "alias": "SHAPE__Area",
+            "type": "esriFieldTypeDouble"
+          }
+        ],
+        "maxRecordCountFactor": 1,
+        "dateFieldsTimeReference": {
+          "timeZoneIANA": "Etc/UTC",
+          "respectsDaylightSaving": false,
+          "timeZone": "UTC"
+        },
+        "supportsFieldDescriptionProperty": true,
+        "hasM": false,
+        "allowGeometryUpdates": true,
+        "useStandardizedQueries": true,
+        "globalIdField": null,
+        "sourceSpatialReference": {
+          "wkt": "PROJCS[\"NAD_1983_StatePlane_Florida_North_FIPS_0903_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",1968500.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-84.5],PARAMETER[\"Standard_Parallel_1\",29.58333333333333],PARAMETER[\"Standard_Parallel_2\",30.75],PARAMETER[\"Latitude_Of_Origin\",29.0],UNIT[\"Foot_US\",0.3048006096012192]]",
+          "falseM": -100000,
+          "mUnits": 10000,
+          "zUnits": 10000,
+          "zTolerance": 0.001,
+          "wkid": 2238,
+          "xyUnits": 3048.0060960121928,
+          "mTolerance": 0.001,
+          "falseX": -125939000,
+          "falseY": -91453300,
+          "falseZ": -100000
+        },
+        "description": "This dataset is an ArcGIS Shapefile representing areas that Planning &amp; Zoning has determined to be Stormwater Draininage Problem Areas for use in the Minor Subdivision Review Process. The specific area's were identified by Roger Blaylock, County Engineer, Road &amp; Bridge Foreman for each Commission District, and data received from Roads &amp; Bridges during the April 2006 100 Year Flood Event. The Digital DFRIM was appended to the layer to replace FEMA Q3 data in April 2009.",
+        "syncCanReturnChanges": true,
+        "supportsAsyncDelete": true,
+        "supportedSpatialRelationships": [
+          "esriSpatialRelIntersects",
+          "esriSpatialRelContains",
+          "esriSpatialRelCrosses",
+          "esriSpatialRelEnvelopeIntersects",
+          "esriSpatialRelOverlaps",
+          "esriSpatialRelTouches",
+          "esriSpatialRelWithin"
+        ],
+        "geometryProperties": {
+          "shapeAreaFieldName": "SHAPE__Area",
+          "shapeLengthFieldName": "SHAPE__Length",
+          "units": "esriFeet"
+        },
+        "supportsRollbackOnFailureParameter": true,
+        "isDataReplicaTracked": false,
+        "standardMaxRecordCountNoGeometry": 16000,
+        "supportsTruncate": true,
+        "indexes": [
+          {
+            "name": "r183_sde_rowid_uk",
+            "isUnique": true,
+            "description": "",
+            "fields": "fid",
+            "isAscending": true
+          },
+          {
+            "name": "a147_ix1",
+            "isUnique": false,
+            "description": "",
+            "fields": "shape",
+            "isAscending": true
+          }
+        ],
+        "supportedAppendSourceFilterFormats": "featureService",
+        "editFieldsInfo": null,
+        "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+        "GUIDFormat": "O",
+        "minScale": 0,
+        "hasAttachments": false,
+        "queryBinsCapabilities": {
+          "supportsFirstDayOfWeek": false,
+          "supportedNormalizationTypes": [
+            "boxCox",
+            "field",
+            "inverse",
+            "log",
+            "naturalLog",
+            "percentOfTotal",
+            "squareRoot"
+          ],
+          "supportedStatisticTypes": [
+            "count",
+            "sum",
+            "min",
+            "max",
+            "avg",
+            "stddev",
+            "var",
+            "percentile_cont",
+            "percentile_disc"
+          ],
+          "supportsNormalization": true,
+          "supportsSnapToData": true,
+          "supportsFixedIntervalBin": true,
+          "supportsStackBy": true,
+          "supportsAutoIntervalBin": true,
+          "supportsFixedBoundariesBin": true,
+          "supportsDateBin": true,
+          "supportsSplitBy": true,
+          "supportsReturnFullIntervalBin": true
+        },
+        "advancedQueryCapabilities": {
+          "supportsSqlExpression": true,
+          "supportsQueryWithResultType": true,
+          "supportsQueryRelatedPagination": true,
+          "supportsQueryWithCacheHint": false,
+          "supportsQueryWithDatumTransformation": true,
+          "supportsCurrentUserQueries": true,
+          "supportsQueryAttachmentsWithReturnUrl": true,
+          "fullTextSearchCapabilities": {
+            "supportsOperator": true,
+            "supportsSearchOperator": true
+          },
+          "supportsDefaultSR": true,
+          "supportsQueryDateBins": false,
+          "supportsQueryWithLodSR": true,
+          "supportsPaginationOnAggregatedQueries": true,
+          "supportsPagination": true,
+          "supportsMaxRecordCountFactor": true,
+          "fullTextSearchableFields": [],
+          "supportsStatistics": true,
+          "supportsOrderBy": true,
+          "supportsReturningGeometryProperties": true,
+          "supportsFullTextSearch": true,
+          "supportsQueryWithDistance": true,
+          "supportsLod": true,
+          "supportsSpatialAggregationStatistics": false,
+          "supportsCountDistinct": true,
+          "supportsAdvancedQueryRelated": true,
+          "supportsQueryAttachments": true,
+          "supportsReturningQueryExtent": true,
+          "supportsQueryAttachmentsCountOnly": true,
+          "supportsOrderByOnlyOnLayerFields": false,
+          "supportsOutFieldSqlExpression": true,
+          "supportsTopFeaturesQuery": true,
+          "supportsReturningGeometryEnvelope": true,
+          "supportsDistinct": true,
+          "supportsReturningGeometryCentroid": true,
+          "supportsQueryAnalytic": true,
+          "supportsPercentileStatistics": true,
+          "supportsHavingClause": true
+        },
+        "subtypeField": "",
+        "supportsValidateSQL": true,
+        "enableZDefaults": true,
+        "serviceItemId": "356285ea99f64e9bb1520e9991fd0748",
+        "allowUpdateWithoutMValues": true,
+        "supportsCoordinatesQuantization": true,
+        "types": [],
+        "capabilities": "Query",
+        "maxScale": 0,
+        "supportsAppend": true,
+        "supportsExceedsLimitStatistics": true,
+        "defaultVisibility": true,
+        "advancedQueryAnalyticCapabilities": {
+          "supportsAsync": true,
+          "supportsLinearRegression": true,
+          "supportsPercentileAnalytic": false
+        },
+        "hasMetadata": true,
+        "supportedAppendFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+        "tileMaxRecordCount": 2000,
+        "typeIdField": "",
+        "supportsASyncCalculate": true,
+        "supportedQueryFormats": "JSON, geoJSON, PBF",
+        "sqlParserVersion": "PG_11.4.0",
+        "drawingInfo": {
+          "renderer": {
+            "symbol": {
+              "outline": {
+                "color": [
+                  110,
+                  110,
+                  110,
+                  255
+                ],
+                "width": 0.7,
+                "style": "esriSLSSolid",
+                "type": "esriSLS"
+              },
+              "color": [
+                0,
+                230,
+                169,
+                166
+              ],
+              "style": "esriSFSSolid",
+              "type": "esriSFS"
+            },
+            "type": "simple"
+          },
+          "scaleSymbols": true,
+          "transparency": 0,
+          "labelingInfo": null
+        },
+        "geometryField": {
+          "sqlType": "sqlTypeOther",
+          "nullable": true,
+          "editable": true,
+          "name": "shape",
+          "typeName": "st_geometry",
+          "length": 2147483647,
+          "type": "esriFieldTypeGeometry"
+        },
+        "copyrightText": "",
+        "zDefault": 0,
+        "geometryType": "esriGeometryPolygon",
+        "supportsLayerOverrides": true
+      },
+      "feature_count": null
+    }
+  ],
+  "limitations": [
+    "Parcel polygons are tax/GIS display lines, not a legal survey.",
+    "Stormwater problem-area boundary is a historical regional planning overlay, not proof of current flooding or a defect.",
+    "Road-maintainer attribute classifies the roadway, not culvert and stormwater infrastructure ownership.",
+    "County hosted layer metadata may report a rehosting/edit date distinct from source field survey date."
+  ]
+}
