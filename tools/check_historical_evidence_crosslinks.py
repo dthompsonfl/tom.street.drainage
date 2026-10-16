@@ -39,11 +39,13 @@ def main():
     exhibits=rows("EXHIBIT_INDEX.csv")
     claims=rows("EVIDENCE_LEDGER.csv")
     sources=[x for x in registers if x["source_id"].startswith("SRC-HIST-")]
-    new_exhibits=[x for x in exhibits if x["exhibit_id"].startswith("EX-") and int(x["exhibit_id"][3:])>=29]
-    new_claims=[x for x in claims if x["claim_id"].startswith("CLM-") and int(x["claim_id"][4:])>=29]
-    assert len(sources)>=23,f"Expected 23 captured source register additions, found {len(sources)}"
-    assert len(new_exhibits)>=11,f"Expected 11 new exhibit references, found {len(new_exhibits)}"
-    assert len(new_claims)>=9,f"Expected 9 new claim references, found {len(new_claims)}"
+    # This audit is bounded to the 23 archived historical sources. Select by
+    # actual file path, not EX-/CLM- numeric ranges that grow with new research.
+    new_exhibits=[x for x in exhibits if x["source_file"] in FILES]
+    new_claims=[x for x in claims if x["source_file"] in FILES]
+    assert len(sources)>=len(FILES),f"Expected >= {len(FILES)} historic source rows"
+    assert len(new_exhibits)>=11,f"Expected >= 11 archived historical source exhibits, found {len(new_exhibits)}"
+    assert len(new_claims)>=9,f"Expected >= 9 archived historical claims, found {len(new_claims)}"
     assert len({x["source_id"] for x in registers})==len(registers),"Duplicate source IDs"
     assert len({x["exhibit_id"] for x in exhibits})==len(exhibits),"Duplicate exhibit IDs"
     assert len({x["claim_id"] for x in claims})==len(claims),"Duplicate claim IDs"
