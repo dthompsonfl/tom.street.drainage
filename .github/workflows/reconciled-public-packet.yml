@@ -10,6 +10,11 @@ on:
       - 'requirements-release.txt'
       - '00_CONTROL/EVIDENCE_LEDGER.csv'
       - '00_CONTROL/SOURCE_REGISTER.csv'
+      - '00_CONTROL/PERMIT_DOCUMENT_INVENTORY.csv'
+      - '00_CONTROL/CHRONOLOGY.csv'
+      - '00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv'
+      - '00_CONTROL/RECORDS_ACQUISITION_MATRIX.csv'
+      - '00_CONTROL/tools/validate_evidence.py'
       - '.github/workflows/reconciled-public-packet.yml'
   workflow_dispatch:
 
@@ -37,6 +42,7 @@ jobs:
         run: |
           python -m py_compile tools/build_reconciled_packet.py
           python tools/build_reconciled_packet.py
+          python 00_CONTROL/tools/validate_evidence.py
           python tools/verify_reconciled_release.py
           python - <<'PY'
           import json, pathlib
@@ -54,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 15_RECONCILED_DRAFTS/pdf/
+          git add 15_RECONCILED_DRAFTS/pdf/ 00_CONTROL/EVIDENCE_MANIFEST.csv
           if git diff --cached --quiet; then
             echo "No new generated files"
             exit 0

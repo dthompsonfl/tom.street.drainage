@@ -24,7 +24,7 @@ ROOT = _ROOT
 MANIFEST = ROOT / "00_CONTROL/EVIDENCE_MANIFEST.csv"
 SKIP_DIRS = {".git", "00_CONTROL/tools", "__pycache__"}
 
-EXCLUDE = re.compile(r"(^\.git/)|(tools/)|(__pycache__)")
+EXCLUDE = re.compile(r"(^\.git/)|(^\.evidence_vault/)|(^private-)|(^\.env(?:\.|$))|(tools/)|(__pycache__)|(^00_CONTROL/EVIDENCE_MANIFEST\.csv$)")
 
 def filetype(p: Path) -> str:
     try:
@@ -118,6 +118,8 @@ def main():
         if r["integrity_validation"] != "PASS":
             print("  FAIL", r["relative_path"], r["integrity_note"])
     print("wrote", MANIFEST)
+    if n_fail:
+        raise SystemExit(1)
 
 if __name__ == "__main__":
     main()

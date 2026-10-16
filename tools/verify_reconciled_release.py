@@ -106,7 +106,34 @@ check("existing official source-file hashes/sizes remain valid (" + str(tested) 
 if mismatch:
     print("MISMATCHES " + ", ".join(mismatch[:10]))
 
+inventory = list(csv.DictReader((ROOT / "00_CONTROL/PERMIT_DOCUMENT_INVENTORY.csv").open(newline="")))
+ids = [row["document_id"] for row in inventory]
+check("permit inventory has 43 unique IDs", len(ids) == 43 and len(ids) == len(set(ids)))
+for site, pid in [("2264", "21-2S-26-0780-0QQ00-1020"), ("2268", "21-2S-26-0780-0QQ00-1490")]:
+    bad = [row["document_id"] for row in inventory
+           if row["document_id"].startswith("DOC-" + site) and row["parcel_id"] != pid]
+    check("all inventory rows bind to correct parcel " + site, not bad)
+    code = next((row for row in inventory if row["document_id"] == "DOC-" + site + "-0015"), {})
+    check("certification recorded as unverified rather than absent " + site,
+          "Assigned" in code.get("notes", "") and
+          "unverified" in code.get("notes", "").lower())
+    plan = next((row for row in inventory if row["document_id"] == "DOC-" + site + "-0011"), {})
+    check("fee line does not prove grading plan " + site,
+          "not establishing" in plan.get("notes", "").lower())
+snapshot = (ROOT / "00_CONTROL/CHRONOLOGY.csv").read_text()
+check("2000-era historical lot attribution explicitly unresolved",
+      "2000-era MGO historical address/parcel unresolved" in snapshot)
+photo_rows = list(csv.DictReader((ROOT / "00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv").open(newline="")))
+photo_gap = next((row for row in photo_rows if row["gap_id"] == "GAP-21"), {})
+check("photo gap distinguishes copies from native originals",
+      photo_gap.get("status") == "PRIVATE_COPIES_HASH_MATCHED_ORIGINALS_UNVERIFIED")
+check("records requests have no unsourced sent status",
+      all((row.get("submitted") or "").upper() != "TRUE" or bool(row.get("receipt_id"))
+          for row in photo_rows))
+
 ledger = (ROOT / "00_CONTROL/EVIDENCE_LEDGER.csv").read_text()
+check("ledger status marks verified copies rather than native originals",
+      ",PRIVATE_COPY_HASH_MATCHED," in ledger)
 check("ledger distinguishes private copies from native originals",
       "15 independently hash-matched JPEG copies" in ledger and
       "native camera originals" in ledger.lower())
