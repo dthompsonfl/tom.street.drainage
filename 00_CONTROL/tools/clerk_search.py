@@ -7,6 +7,12 @@ Usage examples:
   python3 clerk_search.py legal "POPE SUBD"
 Results are printed as TSV and the full result HTML is saved for evidence.
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import csv
 import hashlib
 import json
@@ -17,11 +23,9 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-sys.path.insert(0, "/home/dylan/Tom-Street-Drainage-Investigation/00_CONTROL/tools")
 from acclaim_search import boot, open_search, set_val, submit  # noqa: E402
 
-OUT = Path("/home/dylan/Tom-Street-Drainage-Investigation/00_CONTROL/SYSTEM_RAW")
-
+OUT = _ROOT / "00_CONTROL" / "SYSTEM_RAW"
 
 def collect_rows(pg):
     rows = []
@@ -32,17 +36,15 @@ def collect_rows(pg):
             rows.append(cells)
     return rows
 
-
 def save(name, pg):
     OUT.mkdir(parents=True, exist_ok=True)
     html = pg.content()
     p = OUT / f"acclaim_{name}_{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}.html"
     p.write_text(html, encoding="utf-8")
-    return {"path": str(p.relative_to(Path("/home/dylan/Tom-Street-Drainage-Investigation"))),
+    return {"path": str(p.relative_to(_ROOT)),
             "bytes": p.stat().st_size,
             "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
             "url": pg.url, "retrieved_utc": datetime.now(timezone.utc).isoformat()}
-
 
 def summarise(pg):
     t = pg.inner_text("body")
@@ -50,7 +52,6 @@ def summarise(pg):
     return {"displaying": m.group(0) if m else None,
             "total": m.group(2) if m else None,
             "released_through": (re.search(r"Released through date:\s*([\d/]+)", t) or [None, None])[1]}
-
 
 def run(kind, fields, tag):
     path = {"bookpage": "search/SearchTypeBookPage",
@@ -102,7 +103,6 @@ def run(kind, fields, tag):
         ctx.close()
         b.close()
     return meta
-
 
 if __name__ == "__main__":
     cmd = sys.argv[1]

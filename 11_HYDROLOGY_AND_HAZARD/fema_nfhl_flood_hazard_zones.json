@@ -1,0 +1,69 @@
+{
+ "source_agency": "Federal Emergency Management Agency (FEMA)",
+ "source_system": "National Flood Hazard Layer (NFHL) ArcGIS REST",
+ "source_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query",
+ "layer_id": 28,
+ "layer_name": "Flood Hazard Zones",
+ "retrieved_utc": "2026-10-16T02:35:42.781862+00:00",
+ "crs": "EPSG:4326 (WGS84) input; attributes as published",
+ "results": {
+  "2264_Tom_St": [
+   {
+    "attributes": {
+     "OBJECTID": 3004740,
+     "DFIRM_ID": "12113C",
+     "FLD_AR_ID": "12113C_2350",
+     "STUDY_TYP": "NP",
+     "FLD_ZONE": "X",
+     "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+     "SFHA_TF": "F",
+     "STATIC_BFE": -9999.0,
+     "V_DATUM": "",
+     "DEPTH": -9999.0,
+     "LEN_UNIT": "",
+     "VELOCITY": -9999.0,
+     "VEL_UNIT": "",
+     "AR_REVERT": "",
+     "AR_SUBTRV": "",
+     "BFE_REVERT": -9999.0,
+     "DEP_REVERT": -9999.0,
+     "DUAL_ZONE": "",
+     "SOURCE_CIT": "12113C_STUDY6",
+     "SHAPE.STArea()": 0.007904974650081503,
+     "SHAPE.STLength()": 2.699972880697878,
+     "GFID": "88539124-8365-4755-84c7-3f014b37a6f0",
+     "GlobalID": "{86F3E093-16B3-4AF2-9306-5F26335E081C}"
+    }
+   }
+  ],
+  "2268_Tom_St": [
+   {
+    "attributes": {
+     "OBJECTID": 3004740,
+     "DFIRM_ID": "12113C",
+     "FLD_AR_ID": "12113C_2350",
+     "STUDY_TYP": "NP",
+     "FLD_ZONE": "X",
+     "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+     "SFHA_TF": "F",
+     "STATIC_BFE": -9999.0,
+     "V_DATUM": "",
+     "DEPTH": -9999.0,
+     "LEN_UNIT": "",
+     "VELOCITY": -9999.0,
+     "VEL_UNIT": "",
+     "AR_REVERT": "",
+     "AR_SUBTRV": "",
+     "BFE_REVERT": -9999.0,
+     "DEP_REVERT": -9999.0,
+     "DUAL_ZONE": "",
+     "SOURCE_CIT": "12113C_STUDY6",
+     "SHAPE.STArea()": 0.007904974650081503,
+     "SHAPE.STLength()": 2.699972880697878,
+     "GFID": "88539124-8365-4755-84c7-3f014b37a6f0",
+     "GlobalID": "{86F3E093-16B3-4AF2-9306-5F26335E081C}"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "retrieved_utc": "2026-10-16T02:36:15.810518+00:00",
+ "permit_number": "BP-2026-1621",
+ "parcel_property_appraiser": "21-2S-26-0780-0QQ00-1020",
+ "parcel_mgo": "212S2607800QQ001020",
+ "status_at_refresh": null,
+ "status_in_search_index": "Active",
+ "dateCreated": "2026-02-11T12:36:02",
+ "dateIssued": "2026-03-23T15:18:01",
+ "dateUpdated": "2026-10-01T10:00:50",
+ "applicant": {
+  "name": "Amy Riddle",
+  "business": "Holiday Builders INC"
+ },
+ "subdivision": "CRESCENT SHORES",
+ "lot": "1020",
+ "squareFootage": 2704.0,
+ "customer_files_exposed": 0,
+ "inspection_count": 15,
+ "latest_inspection": "2026-10-01T09:59:00",
+ "requirement_count": 48,
+ "open_requirement_count": 17,
+ "certificate_of_occupancy_requirement": {
+  "requirement": "Issue CO (\ud835\uddd4\ud835\ude02\ud835\ude01\ud835\uddfc)",
+  "status": "Assigned"
+ },
+ "certified_drainage_as_built_requirement": {
+  "requirement": "Certified Drainage as Built",
+  "status": "Assigned"
+ },
+ "open_requirements": [
+  {
+   "requirement": "Certified Drainage as Built",
+   "status": "Assigned"
+  },
+  {
+   "requirement": "Close Project (Auto)",
+   "status": "Assigned"
+  },
+  {
+   "requirement": "Document Needed - Provide Blower Door Test",
+   "status": "Assigned"
+  },
+  {
+   "requirement": "Document Needed - Provide Final Termite Certificate",
+   "status": "Assigned"
+  },
+  {
+   "requirement": "Driveway Final Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Issue CO (\ud835\uddd4\ud835\ude02\ud835\ude01\ud835\uddfc)",
+   "status": "Assigned"
+  },
+  {
+   "requirement": "Notify Power Company",
+   "status": "Assigned"
+  },
+  {
+   "requirement": "Residential - Building Final Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Residential - Building Roof Final Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Residential - Building Roof Misc. Inspection 02",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Residential - Electrical Final Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Residential - Mechanical Final Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Residential - Plumbing Final Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Residential \u2013 Building Misc. Windload Inspection",
+   "status": "Partial Pass"
+  },
+  {
+   "requirement": "Site Grading / Drainage (final construction) Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Site Grading / Drainage (mid-construction) Inspection",
+   "status": "Not Complete"
+  },
+  {
+   "requirement": "Verify All Fees Paid - Final (\ud835\uddd4\ud835\ude02\ud835\ude01\ud835\uddfc)",
+   "status": "Assigned"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+PASS	sha256 matches hashlib	
+PASS	sha256 of empty bytes stable	
+PASS	manifest self-entry declares an explicit exclusion policy	manifest lists itself with a hash that cannot be stable
+PASS	all PDFs are real PDFs with parseable page counts	
+PASS	unique IDs in 00_CONTROL/EVIDENCE_LEDGER.csv	20 rows, 20 unique
+PASS	unique IDs in 00_CONTROL/EXHIBIT_INDEX.csv	15 rows, 15 unique
+PASS	unique IDs in 00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv	22 rows, 22 unique
+PASS	unique IDs in 00_CONTROL/CHRONOLOGY.csv	16 rows, 16 unique
+PASS	unique IDs in 00_CONTROL/DESIGN_VS_FIELD_MATRIX.csv	10 rows, 10 unique
+PASS	unique IDs in 00_CONTROL/SOURCE_REGISTER.csv	41 rows, 41 unique
+PASS	all register file references resolve (67 checked)	
+PASS	SOURCE_REGISTER checksums and sizes match reality (34 files)	
+PASS	every OFFICIAL_RECORD/OBSERVATION claim cites an existing file	
+PASS	search log records non-success outcomes too	outcomes seen: ['BLOCKED', 'BLOCKED - AUTHENTICATION_REQUIRED', 'NO_ROUTE', 'PARTIAL', 'SUCCESS', 'SUCCESS (negative finding recorded)', 'SUCCESS (refutes prior attribution)']
+PASS	document inventory uses explicit non-obtained statuses	statuses: ['AUTHENTICATION_REQUIRED', 'DOWNLOADED_VERIFIED', 'NOT_FOUND_IN_SEARCHED_SYSTEM', 'NOT_OFFERED_IN_PORTAL', 'REQUEST_DRAFTED']
+PASS	no gap marked submitted without a receipt id	
+PASS	every tracked request file exists	
+PASS	no account identity in packet/release/root files	
+PASS	no account identity embedded in packet PDFs	
+PASS	redaction index present for derived images	
+PASS	every redacted derivative exists on disk	
+PASS	no unsupported violation/culpability assertions in the packet	
+PASS	parcel IDs are paired with the right address in the packet	
+PASS	all tools compile	
+PASS	no hardcoded /home/ paths in tools	
+PASS	all importable tools import cleanly	
+PASS	no empty files in the repository	
+PASS	every chronology row has a date field or an explicit UNKNOWN	
+PASS	no fabricated numeric 'approved' values in design-vs-field	
+
+29 passed, 0 failed

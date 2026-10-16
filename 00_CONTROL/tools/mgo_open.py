@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """Open an MGO Connect permit record via Search -> Row actions -> View Project,
+
 then capture every tab, field and document list the county exposes.
 
 Usage: python3 mgo_open.py BP-2026-1621 2264_Tom_St "2264 TOM ST"
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -13,8 +20,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
-
+ROOT = _ROOT
 
 def auth_page(p, url):
     b = p.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
@@ -24,7 +30,6 @@ def auth_page(p, url):
     pg.goto(url, wait_until="domcontentloaded", timeout=90000)
     pg.wait_for_timeout(9000)
     return b, ctx, pg
-
 
 def search_and_open(pg, address, project_number):
     pg.goto("https://www.mgoconnect.org/cp/search?jid=276&pid=3",
@@ -48,7 +53,6 @@ def search_and_open(pg, address, project_number):
             break
     pg.wait_for_timeout(18000)
     return pg.url
-
 
 if __name__ == "__main__":
     pn, slug, addr = sys.argv[1], sys.argv[2], sys.argv[3]

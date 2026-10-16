@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """Open an MGO Connect permit record and enumerate every document, plan,
+
 attachment, inspection and revision tab the county exposes.
 
 Usage:
   python3 mgo_record.py BP-2026-1621 2264_Tom_St
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -15,8 +22,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
-
+ROOT = _ROOT
 
 def prepare(pg):
     pg.goto("https://www.mgoconnect.org/cp/search?jid=276&pid=3",
@@ -39,7 +45,6 @@ def prepare(pg):
                 bt.click()
                 break
         pg.wait_for_timeout(12000)
-
 
 def open_project(pg, project_number, slug):
     api = []
@@ -96,7 +101,6 @@ def open_project(pg, project_number, slug):
     (out / f"{project_number}_api_calls.json").write_text(json.dumps(api, indent=1))
     print("api calls:", len(api))
     return api
-
 
 if __name__ == "__main__":
     pn, slug = sys.argv[1], sys.argv[2]

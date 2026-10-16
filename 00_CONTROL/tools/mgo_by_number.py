@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """Pull an MGO permit record directly by project number (no address search),
+
 used to inspect the neighbouring driveway-connection permits that the 2264 Tom St
 inspection named as the tie-in points."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import json
 import sys
 from pathlib import Path
@@ -10,8 +17,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
-
+ROOT = _ROOT
 
 def main(pns, slug):
     out = ROOT / "04_ENGINEERING_AND_DRAINAGE" / "Tom_Street_Shared_System"
@@ -79,7 +85,6 @@ def main(pns, slug):
         ctx.close()
         b.close()
     print("\nsaved to", out)
-
 
 if __name__ == "__main__":
     main(sys.argv[1].split(","), sys.argv[2] if len(sys.argv) > 2 else "neighbours")

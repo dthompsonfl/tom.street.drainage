@@ -1,0 +1,7 @@
+relative_path,bytes,sha256,description
+11_HYDROLOGY_AND_HAZARD/fema_nfhl_firm_panels.json,1837,3915188aa2372c74c5d989023a0523bab2cc41a272a9f811603430838d5cf2cb,"FIRM Panels: 2 feature(s) across 2 parcels"
+11_HYDROLOGY_AND_HAZARD/fema_nfhl_jurisdictions.json,1775,2bb54bffa2ffe6326885bde6be5e9dec2a692a768a11d24279bf95cd061cba8d,"Political Jurisdictions: 2 feature(s) across 2 parcels"
+11_HYDROLOGY_AND_HAZARD/fema_nfhl_flood_hazard_zones.json,1936,ddbdaa30814e624b960ec853f4da925e68a173536f074bdd16f4dc5a4a3bec83,"Flood Hazard Zones: 2 feature(s) across 2 parcels"
+11_HYDROLOGY_AND_HAZARD/fema_nfhl_flood_hazard_boundaries.json,461,60bc5a420e01e7b2a4d4750d14b8a8f524d46c3fe8a303bc79bb7cfa08d72c6b,"Flood Hazard Boundaries: 0 feature(s) across 2 parcels"
+11_HYDROLOGY_AND_HAZARD/noaa_ghcndaily_construction_window.json,167371,1e9a102782db7c47ca1846417645045881e6c3216478a578e31df29c9d67e7db,"284 days, total PRCP 1067.0 mm"
+11_HYDROLOGY_AND_HAZARD/noaa_ghcndaily_2025_full_year.json,212517,7ed651a49e090ec665af526bd4f26ca8f94cf5966d1e9f36825dfd8e90d525ae,"365 days, total PRCP 1044.3 mm"

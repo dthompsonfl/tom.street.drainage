@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """Search the Florida Water Permits ERP portal by site address.
+
 Public, no login.  Saves results HTML + extracted record rows as evidence.
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -11,10 +18,9 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "09_ENVIRONMENTAL_PERMITS/SYSTEM_RAW"
 URL = "http://flwaterpermits.com/agws10/fpperp1/"
-
 
 def search(addr, tag):
     with sync_playwright() as p:
@@ -39,7 +45,6 @@ def search(addr, tag):
         ctx.close()
         b.close()
     return rec, txt
-
 
 if __name__ == "__main__":
     addr = sys.argv[1]

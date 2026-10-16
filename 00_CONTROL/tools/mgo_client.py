@@ -13,6 +13,12 @@ Usage:
     python3 mgo_client.py search "2264 Tom St"
     python3 mgo_client.py search "21-2S-26-0780-0QQ00-1020"
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -22,11 +28,10 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "03_PERMITS_AND_INSPECTIONS/SYSTEM_RAW"
 AUTH = "/tmp/opencode/mgo_auth.json"
 SEARCH_URL = "https://www.mgoconnect.org/cp/search?jid=276&pid=3"
-
 
 def launch(state=AUTH):
     p = sync_playwright().start()
@@ -40,7 +45,6 @@ def launch(state=AUTH):
     pg.set_default_timeout(75000)
     return p, b, ctx, pg
 
-
 def save_html(pg, tag):
     OUT.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -51,7 +55,6 @@ def save_html(pg, tag):
             "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
             "url": pg.url,
             "retrieved_utc": datetime.now(timezone.utc).isoformat()}
-
 
 def probe():
     p, b, ctx, pg = launch()
@@ -85,7 +88,6 @@ def probe():
     ctx.close()
     b.close()
     p.stop()
-
 
 def search(term):
     p, b, ctx, pg = launch()
@@ -131,7 +133,6 @@ def search(term):
     ctx.close()
     b.close()
     p.stop()
-
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "probe"

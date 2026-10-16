@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 """Lean MGO Connect sweep: confirm whether any permit other than the two single-
+
 family permits exists for the Tom Street frontage, using targeted developer,
 subdivision and neighbouring-address queries. Per-request timeouts are enforced
 so a slow endpoint cannot stall the run."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import json
 import sys
 from datetime import datetime, timezone
@@ -12,7 +19,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "03_PERMITS_AND_INSPECTIONS/SYSTEM_RAW"
 
 QUERIES = [
@@ -30,7 +37,6 @@ QUERIES = [
     ("ADDRESS", "2274 TOM ST"),
 ]
 
-
 def search(ctx, hdr, key, val):
     body = {"filters": {"JURISDICTIONID": 276, "PROJECTTYPEID": 3, key: val,
                         "ISADDRESSEXACTMATCH": False, "ISUNITEXACTMATCH": True,
@@ -44,7 +50,6 @@ def search(ctx, hdr, key, val):
         return r.json()
     except Exception as e:
         return {"error": str(e)}
-
 
 if __name__ == "__main__":
     with sync_playwright() as p:

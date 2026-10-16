@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """Acquire ERP evidence for the Tom Street parcels from the official NWFWMD /
+
 FDEP / other-WMD public ArcGIS services, and record the distance from each
 parcel to the nearest Environmental Resource Permit boundary."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import math
@@ -10,7 +17,7 @@ from pathlib import Path
 
 import requests
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "09_ENVIRONMENTAL_PERMITS/SYSTEM_RAW"
 SVC = ("https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/"
        "EPermit_ERP/MapServer")
@@ -29,7 +36,6 @@ POINTS = {
 S = requests.Session()
 S.headers.update({"User-Agent": "Tom-Street-Drainage-Investigation/1.0 "
                                "(public-records research)"})
-
 
 def nearest_permits(pt, radii=(150, 500, 1000, 2000)):
     found = {}
@@ -51,7 +57,6 @@ def nearest_permits(pt, radii=(150, 500, 1000, 2000)):
                     rec.setdefault("geometry_wgs84", g)
     return list(found.values())
 
-
 def ring_distance_ft(pt, geom):
     """Approximate distance from point to nearest vertex of the permit polygon."""
     if not geom:
@@ -65,7 +70,6 @@ def ring_distance_ft(pt, geom):
             d = math.hypot(dx, dy)
             best = d if best is None else min(best, d)
     return round(best, 1) if best else None
-
 
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)

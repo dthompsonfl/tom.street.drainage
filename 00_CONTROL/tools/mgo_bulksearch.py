@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """Bulk MGO Connect project search across address variants, developer names,
+
 subdivisions and parcels, using the authenticated API.
 
 Usage: python3 mgo_bulksearch.py
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -15,7 +22,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "03_PERMITS_AND_INSPECTIONS/SYSTEM_RAW"
 
 QUERIES = []
@@ -34,7 +41,6 @@ for b in ("Holiday Builders", "HOLIDAY BUILDERS INC", "Holiday Builders Inc",
 for s in ("CRESCENT SHORES", "Crescent Shores"):
     QUERIES.append(("SUBDIVISION", s))
 
-
 def search(ctx, hdr, key, val):
     body = {"filters": {"JURISDICTIONID": 276, "PROJECTTYPEID": 3, key: val,
                         "ISADDRESSEXACTMATCH": False, "ISUNITEXACTMATCH": True,
@@ -48,7 +54,6 @@ def search(ctx, hdr, key, val):
         return r.json()
     except Exception as e:
         return {"error": str(e)}
-
 
 if __name__ == "__main__":
     with sync_playwright() as p:

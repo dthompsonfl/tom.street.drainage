@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """Generate 00_CONTROL/SOURCE_REGISTER.csv, RECORDS_ACQUISITION_MATRIX.csv,
+
 PERMIT_DOCUMENT_INVENTORY.csv and SEARCH_LOG.csv from the real evidence archive.
 
 Every file_size_bytes and sha256_hash is read from the actual file on disk.
 Nothing is marked verified unless the file exists and passed validation.
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import csv
 import hashlib
 import json
@@ -12,10 +19,9 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 CTL = ROOT / "00_CONTROL"
 UA_DATE = "2026-10-15T"
-
 
 def sha_of(rel):
     p = ROOT / rel
@@ -23,7 +29,6 @@ def sha_of(rel):
         return None, None
     d = p.read_bytes()
     return len(d), hashlib.sha256(d).hexdigest()
-
 
 def row(**kw):
     r = {"source_id": "", "document_title": "", "issuing_agency": "",
@@ -39,7 +44,6 @@ def row(**kw):
             r["file_size_bytes"] = size
             r["sha256_hash"] = sha
     return r
-
 
 SRCPA = "Santa Rosa County Property Appraiser"
 QURL = "https://search.srcpa.gov/property/query"
@@ -507,7 +511,6 @@ SEARCH_ROWS = [
          outcome="SUCCESS"),
 ]
 
-
 def write(name, rows, cols):
     p = CTL / name
     with p.open("w", newline="") as fh:
@@ -515,7 +518,6 @@ def write(name, rows, cols):
         w.writeheader()
         w.writerows(rows)
     print(f"wrote {p} ({len(rows)} rows)")
-
 
 if __name__ == "__main__":
     CTL.mkdir(parents=True, exist_ok=True)

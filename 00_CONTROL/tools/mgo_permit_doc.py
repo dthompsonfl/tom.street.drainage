@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 """Render a complete, readable permit record for each target property from the
+
 captured MGO Connect API responses."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 BASE = ROOT / "03_PERMITS_AND_INSPECTIONS"
 
 PROPS = [
     ("2264_Tom_St", "BP-2026-1621", "21-2S-26-0780-0QQ00-1020", "2264 Tom Street"),
     ("2268_Tom_St", "BP-2026-1612", "21-2S-26-0780-0QQ00-1490", "2268 Tom Street"),
 ]
-
 
 def build(slug, pn, parcel, addr):
     d = json.load(open(BASE / slug / f"{pn}_project_by_uid.json"))["data"]
@@ -109,7 +115,6 @@ def build(slug, pn, parcel, addr):
     f = BASE / slug / f"{pn}_PERMIT_RECORD.md"
     f.write_text("\n".join(L), encoding="utf-8")
     return f, len(open_items)
-
 
 if __name__ == "__main__":
     for slug, pn, parcel, addr in PROPS:

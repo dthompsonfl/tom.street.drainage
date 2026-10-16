@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """Validate every file in the evidence archive and (re)build
+
 00_CONTROL/EVIDENCE_MANIFEST.csv directly from what is actually on disk.
 
 No entry is marked verified unless the file exists, is non-empty, its type was
 identified, and (for PDFs) it parses locally.
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import csv
 import hashlib
 import json
@@ -13,12 +20,11 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 MANIFEST = ROOT / "00_CONTROL/EVIDENCE_MANIFEST.csv"
 SKIP_DIRS = {".git", "00_CONTROL/tools", "__pycache__"}
 
 EXCLUDE = re.compile(r"(^\.git/)|(tools/)|(__pycache__)")
-
 
 def filetype(p: Path) -> str:
     try:
@@ -28,7 +34,6 @@ def filetype(p: Path) -> str:
     except Exception:
         return "unknown"
 
-
 def file_desc(p: Path) -> str:
     try:
         out = subprocess.run(["file", "-b", str(p)], capture_output=True,
@@ -36,7 +41,6 @@ def file_desc(p: Path) -> str:
         return out.stdout.strip()[:160]
     except Exception:
         return ""
-
 
 def validate_pdf(p: Path):
     """Return (ok, note, pages). Checks it is a real PDF, not an HTML error."""
@@ -53,7 +57,6 @@ def validate_pdf(p: Path):
     except Exception as e:
         return False, f"PDFINFO_ERROR {e}", None
 
-
 def walk():
     for p in sorted(ROOT.rglob("*")):
         if not p.is_file():
@@ -62,7 +65,6 @@ def walk():
         if EXCLUDE.search(rel):
             continue
         yield p, rel
-
 
 def main():
     rows = []
@@ -116,7 +118,6 @@ def main():
         if r["integrity_validation"] != "PASS":
             print("  FAIL", r["relative_path"], r["integrity_note"])
     print("wrote", MANIFEST)
-
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,11 @@
+item_id,parameter,approved_value,observed_or_surveyed_value,unit,datum,responsible_party,source,discrepancy,status
+DVF-01,"Finished floor elevation, 2264",NOT_OBTAINED,NOT_MEASURED,ft NAVD88 (assumed; unconfirmed),unknown,Engineer of Record (unidentified),GAP-03 / GAP-06,CANNOT COMPUTE,NOT_TESTABLE
+DVF-02,"Finished floor elevation, 2268",NOT_OBTAINED,NOT_MEASURED,ft,unknown,Engineer of Record (unidentified),GAP-08 / GAP-10,CANNOT COMPUTE,NOT_TESTABLE
+DVF-03,Roadway crown / centreline elevation at 2264 frontage,NOT_OBTAINED,NOT_MEASURED,ft,unknown,Santa Rosa County Public Works,GAP-12,CANNOT COMPUTE,NOT_TESTABLE
+DVF-04,"Driveway invert / outfall elevation, 2264",NOT_OBTAINED,NOT_MEASURED,ft,unknown,Contractor / Engineer of Record,GAP-05,CANNOT COMPUTE,NOT_TESTABLE
+DVF-05,"Driveway cross-slope / fall, 2268",'Match Existing roadway Grades' (CLM-009) — no numeric value,NOT_MEASURED,%,n/a,Engineer of Record (unidentified),EX-08,No numeric approved value exists to compare against,NOT_TESTABLE
+DVF-06,Invert elevation of existing concrete drainage structure at 2260,NOT_OBTAINED,NOT_MEASURED,ft,unknown,Santa Rosa County Public Works,GAP-13,CANNOT COMPUTE,NOT_TESTABLE
+DVF-07,Invert elevation of existing concrete drainage structure at 2270,NOT_OBTAINED,NOT_MEASURED,ft,unknown,Santa Rosa County Public Works,GAP-13,CANNOT COMPUTE,NOT_TESTABLE
+DVF-08,"Pipe size actually installed, 2264 driveway","12-inch ADS perforated pipe with sock (inspector direction only, CLM-007)",NOT OBSERVED — no site visit or photograph yet,in,n/a,Contractor (unidentified),EX-06,Direction is not proof of installation,NOT_TESTABLE
+DVF-09,"Stormwater ditch invert / cross-section, Tom St frontage",NOT_OBTAINED,NOT_MEASURED,ft / ft,unknown,Santa Rosa County Public Works,GAP-12 / GAP-13,CANNOT COMPUTE,NOT_TESTABLE
+DVF-10,Rainfall during documented drainage events,"Design storm criteria: not obtained (LDC 4.04.01.J referenced, full text not yet extracted)",NOAA Pensacola RGNL AP 2026-01-01..2026-10-15 total PRCP 1067.0 mm; 2025 full year 1044.3 mm,mm,n/a,"NOAA (regional, not on-site)",11_HYDROLOGY_AND_HAZARD/noaa_ghcndaily_construction_window.json,Off-site regional gauge; cannot be used to compute site hydrology,CONTEXT_ONLY

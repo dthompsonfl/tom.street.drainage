@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Render the MGO inspection history for a permit into a readable evidence
+
 document and attempt to download the county's own inspection report."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import sys
@@ -11,8 +18,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
-
+ROOT = _ROOT
 
 def render(pn, slug, ins, types, proj):
     out = ROOT / "03_PERMITS_AND_INSPECTIONS" / slug
@@ -56,7 +62,6 @@ def render(pn, slug, ins, types, proj):
     f = out / f"{pn}_INSPECTION_HISTORY.md"
     f.write_text("\n".join(L), encoding="utf-8")
     return f
-
 
 def try_reports(pn, slug, ins, pid):
     """Attempt the county's SSRS inspection report endpoints."""
@@ -104,7 +109,6 @@ def try_reports(pn, slug, ins, pid):
         ctx.close()
         b.close()
     return got
-
 
 if __name__ == "__main__":
     pn, slug = sys.argv[1], sys.argv[2]

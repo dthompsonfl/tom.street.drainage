@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Query the official Florida ERP MapServer services (FDEP + 5 water management
+
 districts) for Environmental Resource Permit records near the Tom Street
 parcels in Navarre, Santa Rosa County, Florida.
 
@@ -11,6 +12,12 @@ Official public ArcGIS REST endpoints published by each agency:
   SJRWMD https://permitting.sjrwmd.com/arcgis02/rest/services/SJRWMD/EPermit_ERP/MapServer
   SWFWMD https://www25.swfwmd.state.fl.us/arcgis11/rest/services/prjFLPermitPortal/EPermitERP/MapServer
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import sys
@@ -20,7 +27,7 @@ from pathlib import Path
 
 import requests
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "09_ENVIRONMENTAL_PERMITS/SYSTEM_RAW"
 
 SITES = {
@@ -42,7 +49,6 @@ S = requests.Session()
 S.headers.update({"User-Agent": "Tom-Street-Drainage-Investigation/1.0 "
                                "(public-records research)"})
 
-
 def layers(svc):
     try:
         d = S.get(svc, params={"f": "json"}, timeout=60).json()
@@ -51,7 +57,6 @@ def layers(svc):
     except Exception as e:
         print("   layer discovery failed:", e)
         return []
-
 
 def query(svc, lid, pt, dist=150):
     """ArcGIS REST spatial query in WGS84 (inSR=4326) around a lon/lat point."""
@@ -74,7 +79,6 @@ def query(svc, lid, pt, dist=150):
         return r.json()
     except Exception as e:
         return {"error": str(e)}
-
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -110,7 +114,6 @@ def main():
     fp.write_text(json.dumps(report, indent=1))
     print("saved", fp, fp.stat().st_size, "bytes")
     print("sha256", hashlib.sha256(fp.read_bytes()).hexdigest())
-
 
 if __name__ == "__main__":
     main()

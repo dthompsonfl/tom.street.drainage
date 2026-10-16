@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """Direct authenticated MGO Connect API access using the logged-in browser
+
 context (shares cookies/headers). Used for bulk permit and document retrieval.
 
 Endpoints discovered from the live application:
   POST /api/v3/cp/project/search-projects
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import json
 import sys
 from datetime import datetime, timezone
@@ -14,8 +21,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
-
+ROOT = _ROOT
 
 def ctx_with_auth(p, url="https://www.mgoconnect.org/cp/home"):
     b = p.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
@@ -25,7 +31,6 @@ def ctx_with_auth(p, url="https://www.mgoconnect.org/cp/home"):
     pg.goto(url, wait_until="domcontentloaded", timeout=90000)
     pg.wait_for_timeout(7000)
     return b, ctx, pg
-
 
 def search_projects(ctx, **filters):
     f = {"JURISDICTIONID": 276, "PROJECTTYPEID": 3,
@@ -41,7 +46,6 @@ def search_projects(ctx, **filters):
         return r.json()
     except Exception:
         return {"status": r.status, "text": r.text()[:2000]}
-
 
 if __name__ == "__main__":
     with sync_playwright() as p:

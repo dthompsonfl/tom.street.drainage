@@ -1,0 +1,63 @@
+{
+ "source_agency": "Federal Emergency Management Agency (FEMA)",
+ "source_system": "National Flood Hazard Layer (NFHL) ArcGIS REST",
+ "source_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/3/query",
+ "layer_id": 3,
+ "layer_name": "FIRM Panels",
+ "retrieved_utc": "2026-10-16T02:35:42.450170+00:00",
+ "crs": "EPSG:4326 (WGS84) input; attributes as published",
+ "results": {
+  "2264_Tom_St": [
+   {
+    "attributes": {
+     "OBJECTID": 31618,
+     "DFIRM_ID": "12113C",
+     "VERSION_ID": "1.3.1.2",
+     "FIRM_ID": "12113C_222",
+     "ST_FIPS": "12",
+     "PCOMM": "113C",
+     "PANEL": "0587",
+     "SUFFIX": "H",
+     "FIRM_PAN": "12113C0587H",
+     "PANEL_TYP": "Countywide, Panel Printed",
+     "PRE_DATE": 253392451200000,
+     "EFF_DATE": 1637280000000,
+     "SCALE": "6000",
+     "PNP_REASON": "",
+     "BASE_TYP": "Orthophoto",
+     "SOURCE_CIT": "12113C_STUDY1",
+     "GFID": "88539124-8365-4755-84c7-3f014b37a6f0",
+     "SHAPE.STArea()": 0.0009765634655201387,
+     "SHAPE.STLength()": 0.1250000617939891,
+     "GlobalID": "{B92686E4-08A3-4C52-B75B-09452D82CA87}"
+    }
+   }
+  ],
+  "2268_Tom_St": [
+   {
+    "attributes": {
+     "OBJECTID": 31618,
+     "DFIRM_ID": "12113C",
+     "VERSION_ID": "1.3.1.2",
+     "FIRM_ID": "12113C_222",
+     "ST_FIPS": "12",
+     "PCOMM": "113C",
+     "PANEL": "0587",
+     "SUFFIX": "H",
+     "FIRM_PAN": "12113C0587H",
+     "PANEL_TYP": "Countywide, Panel Printed",
+     "PRE_DATE": 253392451200000,
+     "EFF_DATE": 1637280000000,
+     "SCALE": "6000",
+     "PNP_REASON": "",
+     "BASE_TYP": "Orthophoto",
+     "SOURCE_CIT": "12113C_STUDY1",
+     "GFID": "88539124-8365-4755-84c7-3f014b37a6f0",
+     "SHAPE.STArea()": 0.0009765634655201387,
+     "SHAPE.STLength()": 0.1250000617939891,
+     "GlobalID": "{B92686E4-08A3-4C52-B75B-09452D82CA87}"
+    }
+   }
+  ]
+ }
+}

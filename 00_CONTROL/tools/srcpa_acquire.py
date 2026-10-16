@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Acquire Santa Rosa County Property Appraiser evidence for the Tom Street
+
 parcels and write machine-verifiable source files.
 
 Public endpoints, discovered from the live site on 2026-10-15:
@@ -7,6 +8,12 @@ Public endpoints, discovered from the live site on 2026-10-15:
   POST https://search.srcpa.gov/property/export/selected -> JSON/CSV record export
   POST https://search.srcpa.gov/property/print/selected -> PDF mailing label
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import csv
 import hashlib
 import json
@@ -17,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 BASE = "https://search.srcpa.gov"
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
@@ -28,7 +35,6 @@ TARGETS = {
     "2265_Tom_St": ("2265 TOM ST", "21-2S-26-0780-0QQ00-1180"),
 }
 
-
 def session():
     s = requests.Session()
     s.headers.update({"User-Agent": UA,
@@ -36,7 +42,6 @@ def session():
                       "Accept-Language": "en-US,en;q=0.9"})
     s.get(BASE + "/", timeout=45)
     return s
-
 
 def write(path, content):
     p = ROOT / path
@@ -46,7 +51,6 @@ def write(path, content):
     return {"relative_path": path, "bytes": len(data),
             "sha256": hashlib.sha256(data).hexdigest(),
             "retrieved_utc": datetime.now(timezone.utc).isoformat()}
-
 
 def search_street(s, street="TOM", city="NAVARRE"):
     r = s.post(BASE + "/property/query", timeout=90,
@@ -64,14 +68,12 @@ def search_street(s, street="TOM", city="NAVARRE"):
     r.raise_for_status()
     return r.json()
 
-
 def export(s, parcel_key):
     r = s.post(BASE + "/property/export/selected", timeout=90,
                headers={"Referer": BASE + "/", "Origin": BASE},
                data=[("parcel", str(parcel_key)), ("format", "json")])
     r.raise_for_status()
     return r.content
-
 
 def search_parcel(s, pid):
     r = s.post(BASE + "/property/query", timeout=90,
@@ -87,7 +89,6 @@ def search_parcel(s, pid):
                      "heatedSquareFootageTo": "", "action": "Search"})
     r.raise_for_status()
     return r.json()
-
 
 def main():
     manifest = []
@@ -125,7 +126,6 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(manifest, indent=1))
     print("wrote", out)
-
 
 if __name__ == "__main__":
     main()

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Search the authenticated MGO Connect permit & project search for Santa Rosa
+
 County (JID=276, PID=3), then open and capture each matching project record
 and every attachment listed against it.
 
@@ -14,6 +15,12 @@ Usage:
   python3 mgo_search.py address "2264 Tom St"
   python3 mgo_search.py business "Holiday Builders"
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -24,7 +31,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "03_PERMITS_AND_INSPECTIONS/SYSTEM_RAW"
 SEARCH = "https://www.mgoconnect.org/cp/search?jid=276&pid=3"
 
@@ -39,7 +46,6 @@ PLACEHOLDER = {
     "lastname": "Last Name",
     "firstname": "First Name",
 }
-
 
 def open_app(pg):
     pg.goto(SEARCH, wait_until="domcontentloaded", timeout=90000)
@@ -74,7 +80,6 @@ def open_app(pg):
         pg.wait_for_timeout(14000)
     return pg.url
 
-
 def do_search(pg, kind, value):
     url = open_app(pg)
     if "/cp/login" in url:
@@ -105,7 +110,6 @@ def do_search(pg, kind, value):
     pg.wait_for_timeout(16000)
     return extract(pg)
 
-
 def extract(pg):
     txt = pg.inner_text("body")
     m = re.search(r"Showing\s+(\d+)\s+to\s+(\d+)\s+of\s+(\d+)\s+entries", txt)
@@ -118,7 +122,6 @@ def extract(pg):
             rows.append(cells)
     print("TOTAL ENTRIES:", total, "| rows captured:", len(rows))
     return {"total": total, "rows": rows, "text": txt}
-
 
 if __name__ == "__main__":
     kind, value = sys.argv[1], sys.argv[2]

@@ -1,0 +1,13 @@
+{
+ "source_agency": "Federal Emergency Management Agency (FEMA)",
+ "source_system": "National Flood Hazard Layer (NFHL) ArcGIS REST",
+ "source_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/27/query",
+ "layer_id": 27,
+ "layer_name": "Flood Hazard Boundaries",
+ "retrieved_utc": "2026-10-16T02:35:43.126452+00:00",
+ "crs": "EPSG:4326 (WGS84) input; attributes as published",
+ "results": {
+  "2264_Tom_St": [],
+  "2268_Tom_St": []
+ }
+}

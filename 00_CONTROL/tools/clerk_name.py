@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """Santa Rosa County Clerk (AcclaimWeb) name search with date narrowing.
+
 Public Guest access only.
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import csv
 import json
 import re
@@ -11,12 +18,10 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-sys.path.insert(0, "/home/dylan/Tom-Street-Drainage-Investigation/00_CONTROL/tools")
 from acclaim_search import boot, open_search, set_val  # noqa: E402
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 OUT = ROOT / "00_CONTROL/SYSTEM_RAW"
-
 
 def rows_of(pg):
     out = []
@@ -26,7 +31,6 @@ def rows_of(pg):
         if len(c) >= 8 and c[0].isdigit():
             out.append(c)
     return out
-
 
 def search(name, dfrom="1/1/2014", dto="10/15/2026", radio="Both",
            doctype="", tag=None):
@@ -83,7 +87,6 @@ def search(name, dfrom="1/1/2014", dto="10/15/2026", radio="Both",
         b.close()
     (OUT / f"acclaim_name_{tag}.json").write_text(json.dumps(meta, indent=1))
     return meta
-
 
 if __name__ == "__main__":
     nm = sys.argv[1]

@@ -1,0 +1,61 @@
+{
+ "source_agency": "Federal Emergency Management Agency (FEMA)",
+ "source_system": "National Flood Hazard Layer (NFHL) ArcGIS REST",
+ "source_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/22/query",
+ "layer_id": 22,
+ "layer_name": "Political Jurisdictions",
+ "retrieved_utc": "2026-10-16T02:35:42.606004+00:00",
+ "crs": "EPSG:4326 (WGS84) input; attributes as published",
+ "results": {
+  "2264_Tom_St": [
+   {
+    "attributes": {
+     "OBJECTID": 53383,
+     "DFIRM_ID": "12113C",
+     "VERSION_ID": "1.3.1.2",
+     "POL_AR_ID": "12113C_80",
+     "POL_NAME1": "SANTA ROSA COUNTY",
+     "POL_NAME2": "UNINCORPORATED AREAS",
+     "POL_NAME3": "",
+     "CO_FIPS": "113",
+     "ST_FIPS": "12",
+     "COMM_NO": "0274",
+     "CID": "120274",
+     "ANI_TF": "F",
+     "ANI_FIRM": "",
+     "COM_NFO_ID": "12113C_120274",
+     "SOURCE_CIT": "12113C_BASE1",
+     "SHAPE.STArea()": 0.27587252097703907,
+     "SHAPE.STLength()": 3.5506562550698293,
+     "GFID": "88539124-8365-4755-84c7-3f014b37a6f0",
+     "GlobalID": "{2FB67289-9341-40EC-8FCF-00D37F36D51B}"
+    }
+   }
+  ],
+  "2268_Tom_St": [
+   {
+    "attributes": {
+     "OBJECTID": 53383,
+     "DFIRM_ID": "12113C",
+     "VERSION_ID": "1.3.1.2",
+     "POL_AR_ID": "12113C_80",
+     "POL_NAME1": "SANTA ROSA COUNTY",
+     "POL_NAME2": "UNINCORPORATED AREAS",
+     "POL_NAME3": "",
+     "CO_FIPS": "113",
+     "ST_FIPS": "12",
+     "COMM_NO": "0274",
+     "CID": "120274",
+     "ANI_TF": "F",
+     "ANI_FIRM": "",
+     "COM_NFO_ID": "12113C_120274",
+     "SOURCE_CIT": "12113C_BASE1",
+     "SHAPE.STArea()": 0.27587252097703907,
+     "SHAPE.STLength()": 3.5506562550698293,
+     "GFID": "88539124-8365-4755-84c7-3f014b37a6f0",
+     "GlobalID": "{2FB67289-9341-40EC-8FCF-00D37F36D51B}"
+    }
+   }
+  ]
+ }
+}

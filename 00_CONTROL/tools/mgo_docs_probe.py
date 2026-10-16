@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Probe MGO Connect for customer-visible documents, permit card / receipt
+
 reports, and project photos on a given permit."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import json
 import sys
 from pathlib import Path
@@ -9,7 +16,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 
 pn = sys.argv[1]
 slug = sys.argv[2]

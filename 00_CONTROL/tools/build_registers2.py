@@ -1,22 +1,27 @@
 #!/usr/bin/env python3
 """Append the MGO Connect permit evidence to SOURCE_REGISTER.csv and
+
 PERMIT_DOCUMENT_INVENTORY.csv, generated from the actual captured files."""
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import csv
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 CTL = ROOT / "00_CONTROL"
 BASE = ROOT / "03_PERMITS_AND_INSPECTIONS"
 RETRIEVED = "2026-10-16T"  # UTC session continues past local midnight
-
 
 def sha(rel):
     p = ROOT / rel
     return (p.stat().st_size, __import__("hashlib").sha256(p.read_bytes()).hexdigest()) \
         if p.exists() else (None, None)
-
 
 PROPS = [
     dict(slug="2264_Tom_St", pn="BP-2026-1621", parcel="21-2S-26-0780-0QQ00-1020",

@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """Pull the full MGO Connect record for a permit: project detail, project
+
 files/documents, work orders, inspections, contacts, types and requirements.
 
 The x-csrf-token is captured from the live page (the application issues one per
 session); it is never written to disk.
 """
+
+import os as _os, sys as _sys  # noqa: E402
+_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
+if _HERE not in _sys.path:  # noqa: E402
+    _sys.path.insert(0, _HERE)  # noqa: E402
+from paths import ROOT as _ROOT  # noqa: E402
 import hashlib
 import json
 import re
@@ -16,7 +23,7 @@ from playwright.sync_api import sync_playwright
 
 AUTH = "/tmp/opencode/mgo_auth.json"
 API = "https://api.mgoconnect.org"
-ROOT = Path("/home/dylan/Tom-Street-Drainage-Investigation")
+ROOT = _ROOT
 
 PROJECT_NUMBER = sys.argv[1] if len(sys.argv) > 1 else "BP-2026-1621"
 SLUG = sys.argv[2] if len(sys.argv) > 2 else "2264_Tom_St"
@@ -32,7 +39,6 @@ ENDPOINTS = [
     ("payments", "/api/v3/cp/project-payments/{pid}"),
     ("fees", "/api/v3/cp/project-type-fees/type-fees/{pid}?isProjectContractor=false"),
 ]
-
 
 def main():
     with sync_playwright() as p:
@@ -135,7 +141,6 @@ def main():
         ctx.close()
         b.close()
     print("saved bundle under 03_PERMITS_AND_INSPECTIONS/" + SLUG)
-
 
 if __name__ == "__main__":
     main()
