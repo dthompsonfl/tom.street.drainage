@@ -108,6 +108,17 @@ for row in exhibits:
         check(row["exhibit_id"] + " legal only, not a construction evidence exhibit",
               row["public_release"] == "LEGAL_RESEARCH_ONLY_NOT_MEETING_EXHIBIT")
 
+contradictions = csvrows("00_CONTROL/CONTRADICTION_LOG.csv")
+cids = [row["id"] for row in contradictions]
+check("contradiction register has twelve uniquely identified resolutions/gaps",
+      len(contradictions) >= 12 and len(cids) == len(set(cids)))
+for cid in ["CON-03", "CON-04", "CON-06", "CON-09", "CON-11", "CON-12"]:
+    record = next((row for row in contradictions if row["id"] == cid), None)
+    check(cid + " remains explicitly unresolved or evidence-limited",
+          bool(record) and any(word in
+              (record["status"] + " " + record["resolution"]).upper()
+              for word in ("UNRESOLVED", "UNPROVEN", "NOT_OBTAINED", "VERIFIED_ORIGINALITY")))
+
 readme = text("README.md")
 check("root navigation exclusively recommends current packet",
       "15_RECONCILED_DRAFTS/pdf/Tom_Street_Reconciled_Public_Meeting_Draft.pdf" in readme
