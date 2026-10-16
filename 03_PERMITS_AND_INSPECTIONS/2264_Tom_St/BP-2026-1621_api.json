@@ -1,0 +1,167 @@
+[
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/session",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/GetJurisdictionByID/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/GetJurisdictionUIConfiguration/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/jurisdiction-states/all",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/public/jurisdictions",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/filter-items/jurisdiction-project-types/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/project/search-projects-chart-data?ParishID=276&ProjectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/GetJurisdictionDesignations/276?projectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/GetJurisdictionWorkTypes/276?projectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/GetJurisdictionSites/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/JurisdictionProjectStatuses?jurisdictionID=276&projectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Applications/GetApplicationStatuses",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/ApplicationTypes/GetApplicationTypesForDropDownList/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/GetJurisdictionDesignations/276?projectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/GetJurisdictionWorkTypes/276?projectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/GetJurisdictionSites/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Projects/JurisdictionProjectStatuses?jurisdictionID=276&projectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/project/search-projects-addresses?ParishID=276&ProjectTypeID=3&AddressHint=2264%20TOM%20ST&PageNumber=1&PageSize=15",
+  "p": ""
+ },
+ {
+  "m": "POST",
+  "u": "https:///api/v3/cp/project/search-projects",
+  "p": "{\"filters\":{\"JURISDICTIONID\":276,\"PROJECTTYPEID\":3,\"ADDRESS\":\"2264 TOM ST\",\"ISADDRESSEXACTMATCH\":false,\"ISUNITEXACTMATCH\":true,\"ISSUBDIVISIONEXACTMATCH\":false,\"ISLOTNUMBEREXACTMATCH\":false,\"ISPARCELNUMBEREXACTMATCH\":false,\"EXPANDED\":true},\"Rows\":100,\"OffSet\":0,\"SortOrder\":1}"
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/account-customers/get-user-by-token",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/project/by-uid/DBFA3383-592A-4486-A392-F88065C90F95",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/ProjectRequirements/byProjectID/17513349?forceLoad=false",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/project-public-comments/get-by-project-id/17513349",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/GetJurisdictionByID/276",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///cp/Contractors/jurisdiction/paymentoptions/276?ProjectTypeID=3",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/ProjectFiles/get-customer-files-by-project-id/17513349",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/project-contacts/17513349",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/work-orders/17513349/inspections",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/work-orders/17513349",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/types/get-types-by-project-id/17513349",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/project-type-fees/type-fees/17513349?isProjectContractor=false",
+  "p": ""
+ },
+ {
+  "m": "GET",
+  "u": "https:///api/v3/cp/project-payments/17513349",
+  "p": ""
+ },
+ {
+  "m": "POST",
+  "u": "https:///api/v3/types/get-project-auto-assessment-fees",
+  "p": "{\"jurisdictionID\":276,\"projectTypeID\":3,\"calculationFormulaTotal\":0,\"isAch\":null}"
+ }
+]

@@ -1,0 +1,107 @@
+[
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/api/v3/mgoc/software-version/MGOConnectWeb?mgoAuthenticationTokenRequired=false",
+  "post": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.mgoconnect.org/signalr/project/negotiate?negotiateVersion=1",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/api/v3/cp/session",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/GetJurisdictionByID/276",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/GetJurisdictionUIConfiguration/276",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/api/v3/cp/jurisdiction-states/all",
+  "post": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.mgoconnect.org/signalr/main/negotiate?SourcePlatform=MGO+Connect+Web&negotiateVersion=1",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/api/v3/cp/public/jurisdictions",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/api/v3/cp/filter-items/jurisdiction-project-types/276",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/api/v3/cp/project/search-projects-chart-data?ParishID=276&ProjectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/GetJurisdictionDesignations/276?projectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/GetJurisdictionWorkTypes/276?projectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/GetJurisdictionSites/276",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/JurisdictionProjectStatuses?jurisdictionID=276&projectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Applications/GetApplicationStatuses",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/ApplicationTypes/GetApplicationTypesForDropDownList/276",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/GetJurisdictionDesignations/276?projectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/GetJurisdictionWorkTypes/276?projectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/GetJurisdictionSites/276",
+  "post": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://api.mgoconnect.org/cp/Projects/JurisdictionProjectStatuses?jurisdictionID=276&projectTypeID=3",
+  "post": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.mgoconnect.org/api/v3/cp/project/search-projects",
+  "post": "{\"filters\":{\"JURISDICTIONID\":276,\"PROJECTTYPEID\":3,\"PROJECTNUMBER\":\"BP-2026-1621\",\"ISADDRESSEXACTMATCH\":false,\"ISUNITEXACTMATCH\":true,\"ISSUBDIVISIONEXACTMATCH\":false,\"ISLOTNUMBEREXACTMATCH\":false,\"ISPARCELNUMBEREXACTMATCH\":false,\"EXPANDED\":true},\"Rows\":100,\"OffSet\":0,\"SortOrder\":1}"
+ }
+]

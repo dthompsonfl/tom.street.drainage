@@ -1,0 +1,52 @@
+{
+ "retrieved_utc": "2026-10-16T00:17:53.163186+00:00",
+ "source": "Santa Rosa County Approved Land Development Projects (ArcGIS StoryMaps)",
+ "years": {
+  "2026": {
+   "item": "63da6c68c2da44b7b0068d91424e2bf1",
+   "chars": 45389,
+   "hits": {}
+  },
+  "2025": {
+   "item": "3ce6a90e76744e35958b7e0f4852a9e9",
+   "chars": 46149,
+   "hits": {
+    "Navarre": [
+     "{\"text\": \"Mer Sea is a 47-Lot, 7.05-acre private subdivision located in District 4. Sidewalks are required for the subdivision. The final plat was accepted by the BOCC on April 24 th , 2025. The property is zoned NB-MD (Navarre Beach Medium Density Residential). \", \"type\": \"paragraph\"}, \"config\": {\"size\": \"wide\"}}, \"n-Uct5DH\": {\"type\": \"image\", \"data\": {\"image\": \"r-zRhs5k\"}}, \"n-DXySvq\": {\"type\": \"image\", \"data\": {\"image\": \"r-hWx2Qj\"}}, \"n-kYvHEL\": {\"type\": \"image\", \"data\": {\"image\": \"r-D9vT4g\"}}, \"n-96tyjH\": {\"type\": \"carousel\", \"chi"
+    ]
+   }
+  },
+  "2024": {
+   "item": "7aa471170df24578bbc244044c116205",
+   "chars": 23268,
+   "hits": {}
+  },
+  "2023": {
+   "item": "f792cb0954504f0da672fbdd0848c9a5",
+   "chars": 19371,
+   "hits": {}
+  },
+  "2022": {
+   "item": "7cacf164fbf94245ab6d383122fbef96",
+   "chars": 109105,
+   "hits": {
+    "Navarre": [
+     "config\": {\"size\": \"wide\"}}, \"n-TuX8yo\": {\"type\": \"text\", \"data\": {\"text\": \"Approval Date: 12/27/2024 Project: Pohlman Storage Building Type: Self-Storage Facility Parcel: 17-2S-26-0000-00134-0000 Address: 2181 Hwy. 87 S Navarre\", \"type\": \"paragraph\"}, \"config\": {\"size\": \"wide\"}}, \"n-AlXsWv\": {\"type\": \"text\", \"data\": {\"text\": \" Pohlman Storage Building This 0.73-acre lot zoned HCD (Highway Commercial Development) is a Self-Storage Project to construct a 4,272 sq. ft. warehouse building with gravel parking lot and stormwater retention f",
+     "-JYmF7C\", \"n-9AuBkT\"]}, \"n-iHLUkl\": {\"type\": \"text\", \"data\": {\"text\": \"PZ-2024-57-SP\", \"type\": \"h3\"}, \"config\": {\"size\": \"wide\"}}, \"n-SDca7J\": {\"type\": \"text\", \"data\": {\"text\": \"Approval Date: 12/12/2024 Project: YMCA - Navarre Type: Childcare Facility Parcel: 16-2S-26-0000-00124-0000 Address: 2379 Pawnee Dr. Navarre\", \"type\": \"paragraph\"}, \"config\": {\"size\": \"wide\"}}, \"n-QtjUe3\": {\"type\": \"text\", \"data\": {\"text\": \" YMCA \\u2013 Navarre This 6.8-acre lot zoned HCD (Highway Commercial Development) is a Childcare Facility Project to cons",
+     "e\": \"h3\"}, \"config\": {\"size\": \"wide\"}}, \"n-SDca7J\": {\"type\": \"text\", \"data\": {\"text\": \"Approval Date: 12/12/2024 Project: YMCA - Navarre Type: Childcare Facility Parcel: 16-2S-26-0000-00124-0000 Address: 2379 Pawnee Dr. Navarre\", \"type\": \"paragraph\"}, \"config\": {\"size\": \"wide\"}}, \"n-QtjUe3\": {\"type\": \"text\", \"data\": {\"text\": \" YMCA \\u2013 Navarre This 6.8-acre lot zoned HCD (Highway Commercial Development) is a Childcare Facility Project to construct a 4,343 sq. ft. prefabricated modular building for use as additional offices and clas",
+     " YMCA - Navarre Type: Childcare Facility Parcel: 16-2S-26-0000-00124-0000 Address: 2379 Pawnee Dr. Navarre\", \"type\": \"paragraph\"}, \"config\": {\"size\": \"wide\"}}, \"n-QtjUe3\": {\"type\": \"text\", \"data\": {\"text\": \" YMCA \\u2013 Navarre This 6.8-acre lot zoned HCD (Highway Commercial Development) is a Childcare Facility Project to construct a 4,343 sq. ft. prefabricated modular building for use as additional offices and classrooms for the Navarre YMCA. Associated sidewalks, utility services, and roof drain connection to the existing stormwater"
+    ]
+   }
+  },
+  "2021": {
+   "item": "76b720554c0f4f9fbedc0e3a92b01cb8",
+   "chars": 23419,
+   "hits": {}
+  },
+  "2020": {
+   "item": "258fb6aa23ad4995a0fccb8c66c9a656",
+   "chars": 22730,
+   "hits": {}
+  }
+ }
+}

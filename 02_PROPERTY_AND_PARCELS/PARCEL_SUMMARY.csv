@@ -1,5 +1,6 @@
-address,verified_parcel,source,year_built,status,subdivision,lot_size_acres,notes
-2265 Tom St Navarre FL 32566,21-2S-26-0780-0QQ00-1180,RealtyHop/PA (web search),2015,Existing (user residence),Crescent Shores area,0.16,User's home since 2019
-2264 Tom St Navarre FL 32566,,To verify,2026 (reported),New construction (Holiday Builders?),Crescent Shores area,,Previously reported as 21-2S-26-0780-0QQ00-1490
-2268 Tom St Navarre FL 32566,21-2S-26-0780-0QQ00-1060,MLS/PA (web search),2026,New construction (under active),Crescent Shores area,0.14,Site A - previously reported correct parcel
-2266 Tom St Navarre FL 32566,,To verify,,,,
+address,verified_parcel,parcel_key,verified_owner,zoning,filing_subdivision,lot,verification_source,verification_date,status,notes
+2264 Tom St Navarre FL 32566,21-2S-26-0780-0QQ00-1020,10082028,HOLIDAY BUILDERS INC,R2M,CRESCENT SHORES (00780),1020,Santa Rosa County Property Appraiser official roll,2026-10-15,VERIFIED,TARGET SITE A. Owner/builder Holiday Builders Inc confirmed from official record.
+2268 Tom St Navarre FL 32566,21-2S-26-0780-0QQ00-1490,10082068,HOLIDAY BUILDERS INC,R2M,CRESCENT SHORES (00780),1490,Santa Rosa County Property Appraiser official roll,2026-10-15,VERIFIED,TARGET SITE B. Owner/builder Holiday Builders Inc confirmed from official record.
+2265 Tom St Navarre FL 32566,21-2S-26-0780-0QQ00-1180,10082042,BOGART CHRISTOPHER DAVID &,R2M,CRESCENT SHORES (00780),1180,Santa Rosa County Property Appraiser official roll,2026-10-15,VERIFIED,Existing affected residence.
+2266 Tom St Navarre FL 32566,NO CURRENT PARCEL,NONE,N/A,N/A,N/A,N/A,SRCPA official roll (no current parcel) + MGO historical permit records,2026-10-16,HISTORICAL_ADDRESS_NO_CURRENT_PARCEL,Not in the current official roll. Five closed Mobile-Home-era permits exist (1996-2741-000-B/E/G/P-0 of 1996-07-16 and 1998-323-000-G-0 of 1998-02-04). Address was absorbed by renumbering. Do not substitute for 2264 or 2268.
+2274 Tom St Navarre FL 32566,21-2S-26-0780-0QQ00-1060,10082031,MATIG-A CEPRIANO P JR,R2M,CRESCENT SHORES (00780),1060,Santa Rosa County Property Appraiser official roll,2026-10-15,VERIFIED,Not a target site. This parcel was previously and incorrectly assigned to 2268 Tom St by prior research. It is also the parcel associated with recorded instrument 201603296 at ORB 3492 PG 700.

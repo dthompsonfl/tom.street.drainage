@@ -1,0 +1,162 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Florida Water Permits: ERP</title>
+
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/themes/light/main.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/main.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/permitportal.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="dgrid.css">
+<script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/MapView.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/WebMap.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/widgets/Search.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/layers/GraphicsLayer.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/widgets/BasemapToggle.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/tasks/FindTask.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/rest/support/FindParameters.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dgrid/Grid.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/declare.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dgrid/Keyboard.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dgrid/Selection.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/domReady.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/rest/find.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/widgets/BasemapToggle/BasemapToggleViewModel.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/lang.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom-construct.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom-class.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/on.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/has.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dgrid/List.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dgrid/util/misc.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/sniff.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/kernel.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/aspect.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/query.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/global.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/rest/support/FindResult.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/tasks/operations/find.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/sniff.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/window.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom-attr.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/array.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/config.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/selector/_loader.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/layers/support/layerUtils.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom-style.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom-prop.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/selector/lite.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/connect.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/topic.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/_base/event.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/mouse.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/keys.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/Evented.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/dojo/dom-geometry.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/webgl.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/mapViewDeps.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/layers/TileLayer.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/identity/IdentityManager.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/layers/MapImageLayer.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/layers/VectorTileLayer.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/MapImageLayerView2D.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/TileLayerView2D.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/VectorTileLayerView2D.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/GraphicsLayerView2D.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/LayerView2D.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/graphics/HighlightGraphicContainer.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/layers/support/ExportStrategy.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/layers/MapImageLayerView.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/support/drapedUtils.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/2d/viewStateUtils.js"></script><script type="text/javascript" charset="utf-8" src="https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/views/layers/support/popupUtils.js"></script><script type="text/javascript">
+if (window.navigator.userAgent.indexOf('MSIE ') > 0) {
+               
+                alert("Make sure your web browser is Internet Explorer to 11 and above or use Firefox, Chrome, or Safari.Clear browser cache regularly. Please contact webmaster@sjrwmd.com if these steps do not improve site performance issues directly on this site. Contact individual agency directly for their site performance issues.");
+            }
+if(window.location.href.indexOf("water")>0){
+window.location.href="http://webapub.sjrwmd.com/agws10/fpperp1/";
+}
+</script>
+ 
+<script src="https://secure.sjrwmd.com/agws10/arcgis_js_api/Library/4.20s/init.js"></script>
+    <script src="css/config.js"></script>
+    <script src="css/JavaScript.js"></script>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <a href="#outer" name="main_content" id="main_content" class="skip-main">skip to main</a>
+    <table id="outer">
+        <tbody><tr>
+            <td id="leftside"></td>
+            <td id="maincell">
+                <div id="container">
+
+                    <table id="headertable">
+                        <tbody><tr>
+                            <td class="top1"><div id="myflalink"><a href="http://myflorida.com" target="_blank" title="Go to MyFlorida.com"></a></div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table id="buttonrow">
+                                    <tbody><tr>
+                                        <td id="blank1"></td>
+                                        <td class="brow"><div><a href="http://flwaterpermits.com/" title="Portal Home">Portal Home</a></div></td>
+                                        <td class="brow"><div><a href="http://flwaterpermits.com/typesofpermits.html" title="Information on types of permits">Types of permits</a></div></td>
+                                        <td><div class="brow"><a href="https://secure.sjrwmd.com/agws10/fppcup2/" target="_blank" title="Search for CUPs">Search for CUPs</a></div></td>
+                                        <td class="brow"><div><a class="thispage" href="https://secure.sjrwmd.com/agws10/fpperp2/" target="_" title="Search for ERPs">Search for ERPs</a></div></td>
+                                        <td id="blank2"></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div id="panelTop" class="panelBottom">
+                        <!--<img src="images/fullextent.png" alt="Full Extent" title="Full Extent" onmousedown="doMapZoom(9999)"
+                             style="position: absolute; left: 5px; top: 10px; cursor: pointer" />-->
+                        <button title="Full Extent" onclick="doMapZoom(9999)" class="fullextent"></button>
+                        <!--<img src="images/zoomin.png" alt="Zoom In" title="Zoom In" onmousedown="doMapZoom(1)" style="position: absolute;
+            left: 40px; top: 10px; cursor: pointer" />-->
+                        <button title="zoom in" onclick="doMapZoom(1)" class="zoomin"></button>
+                        <!--<img src="images/zoomout.png" alt="Zoom Out" title="Zoom Out" onmousedown="doMapZoom(-1)" style="position: absolute;
+            left: 75px; top: 10px; cursor: pointer" />-->
+                        <button title="zoom out" onclick="doMapZoom(-1)" class="zoomout"></button>
+                        <!--<img src="images/clear.png" alt="Clear Selections" title="Clear Selections" onmousedown="clearSelect()" style="position: absolute;
+            left: 110px; top: 10px; cursor: pointer" />-->
+                        <button title="clear selection" onclick="clearSelect()" class="clear"></button>
+                        <label class="textw1">Find Location</label>
+                        <div id="div2" class="searchDiv1">
+                             <!--<div id="search"  ></div>--> 
+
+                            <!--<img id="imgLoc" class="searchIcon" src="images/search.gif" onclick="javascript:document.getElementById('imgLocReset').style.display='none'; document.getElementById('imgLocWait').style.display='block';locate(document.getElementById('locText').value);" />-->
+                            <button id="imgLoc" class="searchIcon" title="search location" onclick="javascript: document.getElementById('imgLocReset').style.display = 'none'; document.getElementById('imgLocWait').style.display = 'block'; locate(document.getElementById('locText').value); "></button>
+                            <input id="locText" type="text" class="searchInput1" value="Address or place name" title="search location" onfocus="if (this.value == 'Address or place name') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Address or place name'; }" onkeydown="locKeydown(event)" style="">
+                            <button id="imgLocReset" class="resetIcon1" onclick="javascript:document.getElementById('locText').value='';document.getElementById('imgLocReset').style.display='none';" style="display: block;"><!--<img id="imgLocReset" src="images/close.png" class="resetIcon" onclick="javascript:document.getElementById('locText').value='';document.getElementById('imgLocReset').style.display='none';" /><img id="imgLocWait" class="waitIcon" src="images/loading.gif" />--></button><button id="imgLocWait" class="waitIcon" style="display: none;">&nbsp;&nbsp;
+                        </button></div>
+                        <label class="textw">Find Permit</label>
+                        <div id="Div3" class="searchDiv2">
+                            <!--<img id="imgSrch0" class="searchIcon" src="images/search.gif" onclick="javascript:document.getElementById('imgReset').style.display='none'; document.getElementById('imgWait').style.display='block';execute(document.getElementById('searchText').value);" />-->
+                            <table><tbody><tr><td>
+                            <button id="imgSrch" class="searchIcon" title="search permit" onclick="javascript:document.getElementById('imgReset').style.display='none'; document.getElementById('imgWait').style.display='block';execute(document.getElementById('searchText').value);">
+                           </button></td><td><input id="searchText" type="text" class="searchInput" value="Number, project, or permittee" title="search permit" onfocus="if (this.value == 'Number, project, or permittee') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Number, project, or permittee'; }" onkeydown="searchKeydown(event)" style="">
+                            </td><td><button id="imgReset" class="resetIcon" onclick="javascript:document.getElementById('searchText').value='';document.getElementById('imgReset').style.display='none';"><!--<img id="imgReset" src="images/close.png" class="resetIcon" onclick="javascript:document.getElementById('searchText').value='';document.getElementById('imgReset').style.display='none';" /><img id="imgWait" class="waitIcon" src="images/loading.gif" />--></button><button id="imgWait" class="waitIcon">&nbsp;&nbsp;
+                        </button></td></tr></tbody></table>
+                        </div>
+
+                        <div id="mapinfo" class="textw9">Click map for permit info</div>
+                        <form id="excl" action="ws.aspx" method="POST">
+                            <input type="hidden" name="csv" id="csv" value="" style="">
+                        </form>
+                        <div id="lnk">
+                            <!--<img src="images/excel.jpg" width="30" onclick="javascript: download();"
+                                 alt="Download search results to excel" title="Download search results to excel" />-->
+                            <button onclick="javascript: download();" class="dlIcon" title="Download search results to excel">
+                        </button></div>
+
+                    </div>
+
+
+
+
+
+                    <div id="panelCenter">
+                        <div id="map" class="esri-view esri-view-width-large esri-view-width-greater-than-xsmall esri-view-width-greater-than-small esri-view-width-greater-than-medium esri-view-width-less-than-xlarge esri-view-height-medium esri-view-height-greater-than-xsmall esri-view-height-greater-than-small esri-view-height-less-than-large esri-view-height-less-than-xlarge esri-view-orientation-landscape"><div class="esri-view-root"><div class="esri-view-surface esri-view-surface--touch-none"><canvas style="width: 996px; height: 804px; display: block;" width="996" height="804"></canvas></div><div class="esri-overlay-surface"><div style="visibility: hidden;"></div></div><div class="esri-ui calcite-theme-light" style="inset: 0px;"><div class="esri-ui-inner-container esri-ui-corner-container" style="inset: 15px 15px 30px;"><div class="esri-ui-top-left esri-ui-corner"></div><div class="esri-ui-top-right esri-ui-corner"></div><div class="esri-ui-bottom-left esri-ui-corner"></div><div class="esri-ui-bottom-right esri-ui-corner"></div></div><div class="esri-ui-inner-container esri-ui-manual-container"><div class="esri-component esri-popup esri-popup--aligned-top-center esri-popup--shadow" style="inset: auto auto 417.999px 298px;"><div class="esri-popup__main-container esri-widget esri-popup--is-collapsible"><div class="esri-popup__header"><button id="1a14201b073-widget-0-popup-title" title="Collapse" class="esri-popup__header-container esri-popup__header-container--button" aria-expanded="true"><h2 class="esri-widget__heading esri-popup__header-title">Search result</h2></button><div class="esri-popup__header-buttons"><div title="Dock" class="esri-popup__button esri-popup__button--dock"><span aria-hidden="true" class="esri-popup__icon--dock-icon esri-icon-dock-right esri-popup__icon"></span></div><div class="esri-popup__button" title="Close"><span aria-hidden="true" class="esri-popup__icon esri-icon-close"></span></div></div></div><div id="1a14201b073-widget-0-popup-content" class="esri-popup__content"><div><div class="esri-feature esri-widget"><div class="esri-feature__size-container"><div class="esri-feature__main-container"><div><div class="esri-search-result-renderer esri-widget"><div class="esri-search-result-renderer__more-results"><div class="esri-search-result-renderer__more-results-item">2268 Tom St, Navarre, Florida, 32566</div><div></div></div></div></div></div></div></div></div></div><div class="esri-popup__footer esri-popup__footer--has-actions"><div data-inline-actions="true" data-menu-actions="false" class="esri-popup__inline-actions-container"><div title="Zoom to" class="esri-popup__button esri-popup__action"><span aria-hidden="true" class="esri-popup__icon esri-icon-zoom-in-magnifying-glass"></span><span class="esri-popup__action-text">Zoom to</span></div></div></div><div class="esri-popup__feature-menu"><strong class="esri-popup__feature-menu-header">1 results</strong><div class="esri-popup__feature-menu-viewport" data-node-ref="_featureMenuViewportNode"><div class="esri-popup__feature-menu-observer"></div></div></div></div><div class="esri-popup__pointer"><div class="esri-popup__pointer-direction esri-popup--shadow"></div></div></div><div class="esri-component" style="display: none;"></div></div></div></div><div class="esri-view-user-storage">
+                            <button id="loading" style="display: none;">
+                        </button></div></div>
+                        <div id="leftDiv">
+
+                        </div>
+                        <div id="divTogg" class="esri-basemap-toggle esri-widget" data-basemap-id="hybrid" title="Toggle basemap"><div class="esri-basemap-thumbnail esri-basemap-toggle__container esri-basemap-toggle__image--secondary"><div class="esri-basemap-thumbnail__image esri-basemap-toggle__image" style="background-image: url(&quot;https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/images/basemap/topo-vector.jpg&quot;);"></div></div><div class="esri-basemap-thumbnail esri-basemap-toggle__container"><div class="esri-basemap-thumbnail__image esri-basemap-toggle__image" style="background-image: url(&quot;https://secure.sjrwmd.com/agws10/arcgis_js_api/library/4.20s/esri/images/basemap/hybrid.jpg&quot;);"></div></div></div>
+                        <div id="ov" class="esri-view esri-view-width-xsmall esri-view-width-less-than-small esri-view-width-less-than-medium esri-view-width-less-than-large esri-view-width-less-than-xlarge esri-view-height-xsmall esri-view-height-less-than-small esri-view-height-less-than-medium esri-view-height-less-than-large esri-view-height-less-than-xlarge esri-view-orientation-landscape"><div class="esri-view-root"><div class="esri-view-surface esri-view-surface--touch-none"><canvas style="width: 240px; height: 180px; display: block;" width="240" height="180"></canvas></div><div class="esri-overlay-surface"><div style="visibility: hidden;"></div></div><div class="esri-ui calcite-theme-light" style="inset: 0px;"><div class="esri-ui-inner-container esri-ui-corner-container" style="inset: 15px;"><div class="esri-ui-top-left esri-ui-corner"></div><div class="esri-ui-top-right esri-ui-corner"></div><div class="esri-ui-bottom-left esri-ui-corner"></div><div class="esri-ui-bottom-right esri-ui-corner"></div></div><div class="esri-ui-inner-container esri-ui-manual-container"><div class="esri-component" style="display: none;"></div><div class="esri-component" style="display: none;"></div></div></div></div><div class="esri-view-user-storage"><div id="extentDiv"></div></div></div>
+
+                        <div id="panelSelection" class="panelSelection">
+                            <!--<img alt="Search Result" src="images/tab10.png" style="cursor: pointer;" onmouseover="showSelection();"
+                                 onmouseout="hideSelection()">-->
+                            <button id="searchTab" class="searchTab" onmouseover="showSelection()">
+                            <!-- Panel List -->
+                            <div id="panelList" class="panelList" onmouseover="cancelHideSelection();" onmouseout="hideSelection()">
+                                <!--<table data-dojo-type="dojox.grid.DataGrid" data-dojo-id="grid" id="grid"></table>-->
+                                <div id="grid" class="grid"></div>
+                                <div id="res" style="display: none;">
+                                    <span class="textw8">No record.</span>
+                                </div>
+                            </div>
+                        </button></div>
+                        <div id="results"></div>
+                        <div id="legendPanel" class="legendPanel">
+
+                            <div id="legendDiv" class="legend" onmouseover="cancelHideLegend();" onmouseout="hideLegend();">
+                                <table><tbody><tr><td>&nbsp;</td></tr><tr><td class="pend">&nbsp;</td></tr><tr><td class="style1">Pending</td></tr><tr><td class="cur">&nbsp;&nbsp;&nbsp;</td></tr><tr><td>Currently Permitted</td></tr></tbody></table>
+                            </div>
+                            <button id="leg" title="Legend" class="legTab" onmouseover="showLegend();">
+                        </button></div>
+                    </div>
+                    <div id="footer"><p id="copyright">© <span class="small">2022</span></p><p></p><h1>Permitting portal of the Florida Department of Environmental Protection and Florida’s water management districts</h1><p></p></div>
+
+
+
+                </div>
+
+            </td>
+            <td id="rightside"></td>
+        </tr>
+        <tr><td id="leftcorner"></td><td id="bottomedge"></td><td id="rightcorner"></td></tr>
+    </tbody></table>
+
+ 
+
+</body></html>

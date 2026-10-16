@@ -1,0 +1,286 @@
+{
+ "data": [
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6713,
+   "typeCategory": "Residential Driveway Connection",
+   "typeID": 43926,
+   "typeName": "Base Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 43911,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44019,
+   "typeName": "Zoning Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44052,
+   "typeName": "BCAIB Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44056,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44060,
+   "typeName": "Plan Check Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44255,
+   "typeName": "Base Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44299,
+   "typeName": "Erosion Control/Site Grade Flat Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6727,
+   "typeCategory": "Residential New Single-Family Building",
+   "typeID": 44301,
+   "typeName": "Trip Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6787,
+   "typeCategory": "Residential New Roof",
+   "typeID": 44423,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6787,
+   "typeCategory": "Residential New Roof",
+   "typeID": 44424,
+   "typeName": "Base Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6787,
+   "typeCategory": "Residential New Roof",
+   "typeID": 44425,
+   "typeName": "BCAIB Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6787,
+   "typeCategory": "Residential New Roof",
+   "typeID": 44428,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 6787,
+   "typeCategory": "Residential New Roof",
+   "typeID": 61681,
+   "typeName": "Plan Check Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 11733,
+   "typeCategory": "Impact Fee Land Use Category \u2013 Area 3",
+   "typeID": 104419,
+   "typeName": "Area 3 Impact Fee Land Use Fees - Per Unit"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14196,
+   "typeCategory": "Residential Early Permanent Power Permit",
+   "typeID": 113905,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14196,
+   "typeCategory": "Residential Early Permanent Power Permit",
+   "typeID": 113908,
+   "typeName": "Early Permanent Power"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14196,
+   "typeCategory": "Residential Early Permanent Power Permit",
+   "typeID": 113917,
+   "typeName": "BCAIB Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14196,
+   "typeCategory": "Residential Early Permanent Power Permit",
+   "typeID": 113918,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14223,
+   "typeCategory": "Residential Mechanical Permit - Add to Existing",
+   "typeID": 114104,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14223,
+   "typeCategory": "Residential Mechanical Permit - Add to Existing",
+   "typeID": 114106,
+   "typeName": "Fee for heating, ventilation, duct, A/C, and refrigeration including repairs, alterations, and additions up to 5 tons"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14223,
+   "typeCategory": "Residential Mechanical Permit - Add to Existing",
+   "typeID": 114112,
+   "typeName": "BCAIB Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14223,
+   "typeCategory": "Residential Mechanical Permit - Add to Existing",
+   "typeID": 114113,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14226,
+   "typeCategory": "Residential New House Wiring",
+   "typeID": 114127,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14226,
+   "typeCategory": "Residential New House Wiring",
+   "typeID": 114128,
+   "typeName": "BCAIB Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14226,
+   "typeCategory": "Residential New House Wiring",
+   "typeID": 114129,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14226,
+   "typeCategory": "Residential New House Wiring",
+   "typeID": 114130,
+   "typeName": "New Construction"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14236,
+   "typeCategory": "Residential Plumbing Permit - Add to Existing",
+   "typeID": 114208,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14236,
+   "typeCategory": "Residential Plumbing Permit - Add to Existing",
+   "typeID": 114220,
+   "typeName": "BCAIB Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14236,
+   "typeCategory": "Residential Plumbing Permit - Add to Existing",
+   "typeID": 114221,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14236,
+   "typeCategory": "Residential Plumbing Permit - Add to Existing",
+   "typeID": 114222,
+   "typeName": "Fee for New Installation (4 inspections)"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14251,
+   "typeCategory": "Residential Temporary Service Pole",
+   "typeID": 114301,
+   "typeName": "Temporary Service Pole"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14251,
+   "typeCategory": "Residential Temporary Service Pole",
+   "typeID": 114302,
+   "typeName": "Administrative Fee"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14251,
+   "typeCategory": "Residential Temporary Service Pole",
+   "typeID": 114303,
+   "typeName": "FBC Surcharge"
+  },
+  {
+   "jurisdictionID": 276,
+   "projectTypeID": 3,
+   "typeCategoryID": 14251,
+   "typeCategory": "Residential Temporary Service Pole",
+   "typeID": 114304,
+   "typeName": "BCAIB Surcharge"
+  }
+ ],
+ "message": null,
+ "status": "success"
+}

@@ -1,0 +1,120 @@
+{
+ "retrieved_utc": "2026-10-16T00:02:34.119219+00:00",
+ "service": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer",
+ "sites": {
+  "2264_Tom_St": [
+   {
+    "attributes": {
+     "APPLICANT": "Hadleigh Hills Development Group",
+     "RULE_TYPE": "62-330",
+     "OBJECTID": 9395,
+     "CUR_PRMT_ID": 17699,
+     "OFFCL_PRMT_ID": 9220,
+     "SEQ_NO": 2,
+     "SITE_ID": 24011,
+     "SITE_NM": "Hadleigh Hills, Phase 2",
+     "SEQ_TYPE": "Extension",
+     "PRMT_STAGE": "Compliance",
+     "RULE_TYPE_DESC": "ERP Individual",
+     "PRMT_PROJ_NM": "Hadleigh Hills, Phase 2 Ext. to P9220-1",
+     "RECV_DT": 1479081600000,
+     "PRMT_DECISION_DT": 1479686400000,
+     "PRMT_EXPIR_DT": 1637452800000,
+     "OWNER": null,
+     "PRMT_RECOMMEND": "Approval",
+     "PRMT_STTS": "Issued",
+     "PROJ_ACRES": 8.1,
+     "COUNTY": "Santa Rosa",
+     "CMPLNC_STTS": "In Compliance",
+     "EDITOR": null,
+     "EDIT_DATE": null,
+     "DISC_PRMT_STTS": "Active",
+     "FDEP_ID": null,
+     "LINK": null,
+     "PRMT_APP_PROC_STTS_CD": "COMP",
+     "PROJ_USE_TYPE": null,
+     "LEGACY_PERMIT_NUM": null,
+     "LGCY_APP_NO": null
+    },
+    "radius_ft": 1000,
+    "vertex_distance_ft": null
+   }
+  ],
+  "2268_Tom_St": [
+   {
+    "attributes": {
+     "APPLICANT": "Hadleigh Hills Development Group",
+     "RULE_TYPE": "62-330",
+     "OBJECTID": 9395,
+     "CUR_PRMT_ID": 17699,
+     "OFFCL_PRMT_ID": 9220,
+     "SEQ_NO": 2,
+     "SITE_ID": 24011,
+     "SITE_NM": "Hadleigh Hills, Phase 2",
+     "SEQ_TYPE": "Extension",
+     "PRMT_STAGE": "Compliance",
+     "RULE_TYPE_DESC": "ERP Individual",
+     "PRMT_PROJ_NM": "Hadleigh Hills, Phase 2 Ext. to P9220-1",
+     "RECV_DT": 1479081600000,
+     "PRMT_DECISION_DT": 1479686400000,
+     "PRMT_EXPIR_DT": 1637452800000,
+     "OWNER": null,
+     "PRMT_RECOMMEND": "Approval",
+     "PRMT_STTS": "Issued",
+     "PROJ_ACRES": 8.1,
+     "COUNTY": "Santa Rosa",
+     "CMPLNC_STTS": "In Compliance",
+     "EDITOR": null,
+     "EDIT_DATE": null,
+     "DISC_PRMT_STTS": "Active",
+     "FDEP_ID": null,
+     "LINK": null,
+     "PRMT_APP_PROC_STTS_CD": "COMP",
+     "PROJ_USE_TYPE": null,
+     "LEGACY_PERMIT_NUM": null,
+     "LGCY_APP_NO": null
+    },
+    "radius_ft": 1000,
+    "vertex_distance_ft": null
+   }
+  ],
+  "2265_Tom_St": [
+   {
+    "attributes": {
+     "APPLICANT": "Hadleigh Hills Development Group",
+     "RULE_TYPE": "62-330",
+     "OBJECTID": 9395,
+     "CUR_PRMT_ID": 17699,
+     "OFFCL_PRMT_ID": 9220,
+     "SEQ_NO": 2,
+     "SITE_ID": 24011,
+     "SITE_NM": "Hadleigh Hills, Phase 2",
+     "SEQ_TYPE": "Extension",
+     "PRMT_STAGE": "Compliance",
+     "RULE_TYPE_DESC": "ERP Individual",
+     "PRMT_PROJ_NM": "Hadleigh Hills, Phase 2 Ext. to P9220-1",
+     "RECV_DT": 1479081600000,
+     "PRMT_DECISION_DT": 1479686400000,
+     "PRMT_EXPIR_DT": 1637452800000,
+     "OWNER": null,
+     "PRMT_RECOMMEND": "Approval",
+     "PRMT_STTS": "Issued",
+     "PROJ_ACRES": 8.1,
+     "COUNTY": "Santa Rosa",
+     "CMPLNC_STTS": "In Compliance",
+     "EDITOR": null,
+     "EDIT_DATE": null,
+     "DISC_PRMT_STTS": "Active",
+     "FDEP_ID": null,
+     "LINK": null,
+     "PRMT_APP_PROC_STTS_CD": "COMP",
+     "PROJ_USE_TYPE": null,
+     "LEGACY_PERMIT_NUM": null,
+     "LGCY_APP_NO": null
+    },
+    "radius_ft": 1000,
+    "vertex_distance_ft": null
+   }
+  ]
+ }
+}

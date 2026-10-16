@@ -1,0 +1,98 @@
+{
+ "retrieved_utc": "2026-10-16T00:01:40.670732+00:00",
+ "points": {
+  "2264_Tom_St": [
+   -86.814654128074,
+   30.415261890933
+  ],
+  "2268_Tom_St": [
+   -86.814732079774,
+   30.415812456243
+  ],
+  "2265_Tom_St": [
+   -86.815198029771,
+   30.415138383589
+  ]
+ },
+ "services": {
+  "FDEP_ERP": {
+   "service": "https://ca.dep.state.fl.us/arcgis/rest/services/External_Services/FDEP_ERP/MapServer",
+   "layers": [
+    [
+     1,
+     "Pending"
+    ],
+    [
+     2,
+     "Currently Permitted"
+    ]
+   ]
+  },
+  "NWFWMD_EPermit_ERP": {
+   "service": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer",
+   "layers": [
+    [
+     0,
+     "Currently Permitted"
+    ]
+   ]
+  },
+  "SFWMD_ERP": {
+   "service": "https://geoweb.sfwmd.gov/agsext1/rest/services/RegulationApplicationPermitsApp/RegulationFloridaPermitsERP/MapServer",
+   "layers": [
+    [
+     1,
+     "Pending"
+    ],
+    [
+     2,
+     "Currently Permitted"
+    ]
+   ]
+  },
+  "SRWMD_EPermit_ERP": {
+   "service": "https://permitting.sjrwmd.com/arcgis02/rest/services/SRWMD/EPermit_ERP/MapServer",
+   "layers": [
+    [
+     1,
+     "Pending"
+    ],
+    [
+     2,
+     "Currently Permitted"
+    ]
+   ]
+  },
+  "SJRWMD_EPermit_ERP": {
+   "service": "https://permitting.sjrwmd.com/arcgis02/rest/services/SJRWMD/EPermit_ERP/MapServer",
+   "layers": [
+    [
+     1,
+     "Pending"
+    ],
+    [
+     2,
+     "Currently Permitted"
+    ]
+   ]
+  },
+  "SWFWMD_EPermitERP": {
+   "service": "https://www25.swfwmd.state.fl.us/arcgis11/rest/services/prjFLPermitPortal/EPermitERP/MapServer",
+   "layers": [
+    [
+     1,
+     "Pending"
+    ],
+    [
+     2,
+     "Currently Permitted"
+    ]
+   ]
+  }
+ },
+ "results": {
+  "2264_Tom_St": [],
+  "2268_Tom_St": [],
+  "2265_Tom_St": []
+ }
+}

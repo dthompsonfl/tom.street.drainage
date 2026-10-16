@@ -1,0 +1,15 @@
+# Session state / credentials - MUST NEVER be committed
+mgo_auth.json
+acclaim_state.json
+*.storage_state.json
+.env
+.env.*
+credentials*
+*secret*
+*token*
+__pycache__/
+*.pyc
+
+# Bulbulky original evidence retained locally but excluded from version control
+# (remove the comment marker below to start tracking evidence files)
+# 00_CONTROL/SYSTEM_RAW/*.html

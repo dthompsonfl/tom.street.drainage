@@ -1,0 +1,15 @@
+{
+ "path": "00_CONTROL/SYSTEM_RAW/acclaim_bookpage_3492_700_20261015T235902Z.html",
+ "bytes": 43776,
+ "sha256": "01791b2fd50a4311cc5508662fad61f4ed3c5d597840d1334804d5def1b11515",
+ "url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeBookPage",
+ "retrieved_utc": "2026-10-15T23:59:02.906731+00:00",
+ "displaying": null,
+ "total": null,
+ "released_through": "10/07/2026",
+ "query": {
+  "BookNumber": "3492",
+  "PageNumber": "700"
+ },
+ "rows": []
+}
