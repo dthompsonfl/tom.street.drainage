@@ -15,6 +15,11 @@ on:
       - '00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv'
       - '00_CONTROL/RECORDS_ACQUISITION_MATRIX.csv'
       - '00_CONTROL/tools/validate_evidence.py'
+      - '00_CONTROL/tools/test_evidence.py'
+      - '00_CONTROL/tools/strict_release_gate.py'
+      - '00_CONTROL/tools/classify_for_release.py'
+      - '00_CONTROL/CLAIM_SOURCE_LINKS.csv'
+      - '00_CONTROL/EXHIBIT_INDEX.csv'
       - '.github/workflows/reconciled-public-packet.yml'
   workflow_dispatch:
 
