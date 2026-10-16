@@ -9,6 +9,7 @@ on:
       - 'tools/verify_reconciled_release.py'
       - 'requirements-release.txt'
       - '00_CONTROL/EVIDENCE_LEDGER.csv'
+      - '00_CONTROL/SOURCE_REGISTER.csv'
       - '.github/workflows/reconciled-public-packet.yml'
   workflow_dispatch:
 
