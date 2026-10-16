@@ -1,25 +1,23 @@
-# Tom Street | Proxy meeting notes (reconciled draft)
+# Talking points for a neighbor attending a meeting (DRAFT)
 
-**Opening (read aloud):**
+**Use only with permission from the resident you represent.** A neighbor does not automatically speak on someone else's behalf.
 
-I am speaking on behalf of neighboring residents concerned about drainage along Tom Street near the new construction at 2264 and 2268. We are here to request documents and a coordinated engineering review, not to accuse anyone of wrongdoing.
+## Suggested opening
 
-The County's saved permit data identifies **BP-2026-1621 at 2264 Tom Street** and **BP-2026-1612 at 2268 Tom Street**. Both were marked Active when the records were captured. Inspector comments reference roadside drainage, proposed pipe and inlet work near the 2260 and 2270 street addresses, and a direction to match existing roadway grades. We have not obtained the approved plans, surveyed elevations, installed-pipe measurements, or capacity calculations, so those remarks cannot tell us whether drainage is adequate.
+I am here to ask the County for clear answers about drainage on Tom Street. Dylan Thompson lives at **2265 Tom Street** and has been gathering public records about nearby construction. The concern is whether grading changes and the roadside drainage may affect existing homes.
 
-Both permit task lists have an item called **Certified Drainage as Built**, marked **Assigned**. The saved task status alone is not proof of an absent or late document or a violation.
+The saved County records identify construction permits **BP-2026-1621 at 2264 Tom Street** and **BP-2026-1612 at 2268 Tom Street**. Inspector remarks mention proposed pipe and inlet work and keeping the ditch clear. We do not have the approved drawings or measured elevations needed to say what was installed or whether the drainage is adequate.
 
-**Questions to request on the record:**
+## Five questions to ask
 
-1. Can County Engineering provide the approved grading and drainage plans, with all revisions and calculations, for each lot?
-2. Is a subdivision lot-grading plan on file, and what exact approval or alternative applies?
-3. County GIS lists Tom Street as County Maintained. Which drainage structures does the County maintain, and where are the surveyed inverts and outfalls?
-4. Will County Engineering document a site inspection and review potential changes to runoff reaching nearby existing homes?
-5. Who will provide the written response, document index, and follow-up schedule?
+1. Who at County Engineering is responsible, and what is the case number?
+2. Where are the original and revised grading and drainage plans for both lots?
+3. Does a subdivision grading plan govern them, or was another approval or exemption used?
+4. Who maintains the roadside ditch, inlets and pipes, and where is the receiving outlet?
+5. Can the County inspect the area and provide written findings and a date for follow-up?
 
-**Closing:**
+Before leaving, write down the official's name, any case number, the records promised and the expected reply date.
 
-We are asking for transparent engineering records and a measured answer while work is still under way. Higher fill by itself does not establish a violation, and a passed inspection by itself does not prove the whole drainage system is adequate. We want the facts confirmed and any necessary correction identified by the proper professionals.
+**Suggested closing:** We are not asking the County to assume a violation occurred. We are asking for the plans, measurements and a clear explanation of how the drainage is supposed to work.
 
-**If challenged:** The records support the questions, not a determination of fault. We have not established flooding causation, negligence, an easement violation, or an unacceptable stormwater design.
-
-**Handling instruction:** Use the revised homeowner brief. Do not distribute the earlier PDF packet as a final document, and do not show unredacted portal captures or personal photos without permission.
+*These are draft speaking notes, not independent testimony. Do not display private photos or contact details without permission.*

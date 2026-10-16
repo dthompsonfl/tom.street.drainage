@@ -1,89 +1,50 @@
-# Tom Street Drainage Investigation
+# Tom Street drainage | Shared evidence for neighbors
 
-> **Research status (updated October 16, 2026 UTC): DRAFT EVIDENCE PACKET; NOT AN ENGINEERING OR LEGAL FINDING.** Start with the [current assertion consistency register](00_CONTROL/ACTIVE_ASSERTION_CONSISTENCY_2026-10-15.md) and [reading-order guide distinguishing historical snapshots](00_CONTROL/READING_ORDER_AND_SNAPSHOT_STATUS.md). The [frozen prior audit](00_CONTROL/FINAL_REVIEW_READINESS_2026-10-15.md) and [file-by-file inventory](00_CONTROL/FINAL_FILE_SCOPE_INVENTORY_2026-10-15.csv) describe earlier revisions, not today's tracked-file count. This GitHub repository is **public**. The approved plans and measurements needed to determine drainage performance have **not** been obtained. Read [the current release guide](15_RECONCILED_DRAFTS/README.md) before using anything in a meeting.
+I live at **2265 Tom Street in Navarre, Florida**. I started collecting public records because I am concerned about grading near the new houses and how water may drain around the existing homes. Some construction areas appear higher than neighboring properties. I have **not** measured those elevations, and I am **not** claiming that construction has caused flooding or broken any law.
 
+I want the County to show us the approved plans, inspect the actual drainage, identify who maintains the roadside structures and explain what the records and measurements mean. This repository is a public, versioned evidence library that neighbors can use for meetings, records requests and follow-up. It is not an engineering report or a finding of fault.
 
-## Historical evidence acquisition and preservation (October 16, 2026)
+## Start here
 
-**Latest verified source and gap register:** [historical evidence completeness and provenance](00_CONTROL/HISTORICAL_EVIDENCE_COMPLETENESS_2026-10-16.md). The [new historic source directory](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/) contains original 2006 NOAA point cloud, 2017 NOAA bare-earth GeoTIFF, 2017 survey report, official preconstruction aerial exports (1994 through 2023), the 336-page county watershed public draft, East Navarre official study-area image, and county GIS source captures. [File hashes, byte counts and failed acquisition status](00_CONTROL/HISTORICAL_PUBLIC_EVIDENCE_INTEGRITY_AUDIT_2026-10-16.json) are machine-checked. Original 2018 Panhandle LiDAR index is preserved, but that survey does **not** cover the subject sites. Not all archive-year aerial images are downloaded, and site-specific approved engineering plans or current as-built measurements are still missing.
-
-**Private homeowner photographs must not be published to the public repository.** The [privacy-safe photo filename index](00_CONTROL/PRIVATE_RESIDENT_PHOTO_INVENTORY_PUBLIC_SAFE_2026-10-16.csv) records 37 reported file instances / 35 unique contents. Only owner-authorized files, with metadata and permission review, can be added to separately access-controlled private evidence storage. A public list is not the same as preserving the private originals.
-
-## Controlling jurisdiction: Santa Rosa County only
-
-**Local authority is Santa Rosa County, Florida**, not any neighboring county. Use the [jurisdiction, agency and legal-edition register](00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md) to distinguish County Engineering, Building Inspections, Public Works, Property Appraiser and Clerk roles from Florida DEP/NWFWMD requirements and federal FEMA/NOAA/EPA background. **County GIS now identifies the relevant Tom Street segment as County Maintained** (FID 2006 / segment 2036, range 2100-2299). Individual drainage-asset ownership, acceptance and easements remain unresolved. See the [five-question findings](17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md). The November 2025 LDC PDF must be read alongside effective 2026 ordinances, conditional lot-grading exemptions (§ 4.04.01.D.4), and the separate **all-lots certified-as-built** provision (§ 4.04.01.E). None establishes a site violation without actual plans and measurements.
-
-## Current property and permit register
-
-These identifiers come from saved Santa Rosa County Property Appraiser and MGO permit records, **not a live status guarantee**. The source timestamps are in the original files.
-
-| Role | Address | Parcel ID | Saved permit and status |
-| --- | --- | --- | --- |
-| Construction site | **2264 Tom Street, Navarre** | `21-2S-26-0780-0QQ00-1020` | `BP-2026-1621`, Active at capture |
-| Construction site | **2268 Tom Street, Navarre** | `21-2S-26-0780-0QQ00-1490` | `BP-2026-1612`, Active at capture |
-| Neighboring established property | **2265 Tom Street** | `21-2S-26-0780-0QQ00-1180` | Historical site context; not one of the two construction permits |
-
-Both construction parcels listed **Holiday Builders Inc.** as owner of record on the captured appraiser roll. Owner, permit applicant, licensed builder and engineer-of-record roles must not be conflated. Historical MGO permits referred to **2266 Tom Street**, although no current appraiser situs record for that address appeared in the saved search; there is **no verified address-renumbering or parcel-merger instrument**.
-
-## Use these meeting materials, not the older release
-
-| Current document | Purpose |
+| What you need | Where to go |
 | --- | --- |
-| [Five-page reconciled meeting PDF](15_RECONCILED_DRAFTS/pdf/Tom_Street_Reconciled_Public_Meeting_Draft.pdf) | Homeowner brief, commissioner cover letter, records letter, proxy notes and follow-up sheet |
-| [Commissioner letter](15_RECONCILED_DRAFTS/06_COMMISSIONER_COVER_LETTER_DRAFT.md) | Request a named engineering contact, site review and written response |
-| [County Chapter 119 letter](15_RECONCILED_DRAFTS/02_COUNTY_LETTER_DRAFT.md) | Records request and engineering clarification |
-| [Current draft-source folder](15_RECONCILED_DRAFTS/) | The five editable source documents, manifest and checksums |
-| [Controlled PDF/ZIP release manifest](15_RECONCILED_DRAFTS/pdf/RELEASE_MANIFEST.json) | Specifies exactly what entered the **draft** package |
+| Understand the concern | [One-page homeowner brief](15_RECONCILED_DRAFTS/01_HOMEOWNER_BRIEF.md) |
+| Take a letter to a commissioner | [Commissioner letter draft](15_RECONCILED_DRAFTS/06_COMMISSIONER_COVER_LETTER_DRAFT.md) |
+| Request records from the County | [County records letter draft](15_RECONCILED_DRAFTS/02_COUNTY_LETTER_DRAFT.md) |
+| Document what you see near your home | [Neighbor guide and blank forms](18_NEIGHBOR_TOOLKIT/README.md) |
+| Check evidence and sources | [Plain-English evidence guide](PUBLIC_EVIDENCE_GUIDE.md) |
+| See what we still need | [Open questions](00_CONTROL/OPEN_QUESTIONS.md) |
+| Check which packet is current | [Current draft release guide](15_RECONCILED_DRAFTS/README.md) |
 
-**Superseded historic materials:** `14_MEETING_PACKET/` and `releases/2026-10-15/` contain an earlier packet and must **not** be distributed as current. Those originals remain only for chronology and audit trails. The word “final” in an older ZIP filename is not evidence of factual review or signing. The new five-page packet likewise remains **DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION** until a homeowner verifies its contents, signs any letter, and approves what is shared.
+**All public letters and handouts remain DRAFTS until reviewed and signed by the person using them.** Older PDFs in [the previous meeting packet](14_MEETING_PACKET/RELEASE_README.md) and [older releases](releases/2026-10-15/) are superseded historical records. Do not hand them out as the current version.
 
-## What the saved inspection records actually show
+## What we have confirmed from saved County records
 
-- **2264, August 6, 2026:** a driveway inspector recorded **instructions** for roughly 100 feet of 12-inch perforated pipe and inlets, referring to structures near 2260 and 2270. This is **not** proof of construction, easement rights, invert elevation or capacity.
-- **2268, August 31, 2026:** an inspection comment referred to keeping a roadway/stormwater ditch free of construction sediment. On **September 10** another comment directed matching existing roadway grades. Those comments provide no numerical heights, storm design or proof of field adequacy.
-- Both permits' saved MGO task lists show **Certified Drainage as Built: Assigned**. This **does not establish** whether an engineer's letter exists, was submitted, is late or has been approved. Both permits had no customer-visible plan attachments in the captured portal endpoint.
+| Property | Parcel number | Saved permit |
+| --- | --- | --- |
+| **2264 Tom Street**, construction site | **21-2S-26-0780-0QQ00-1020** | **BP-2026-1621** |
+| **2268 Tom Street**, construction site | **21-2S-26-0780-0QQ00-1490** | **BP-2026-1612** |
+| **2265 Tom Street**, existing home | **21-2S-26-0780-0QQ00-1180** | Not one of these construction permits |
 
-## Governing code context (applicability not determined)
+The construction permits showed **Active** when County records were saved in October 2026. Their live status may have changed. Inspector notes discuss proposed pipe and inlet work, a roadside ditch and matching road grades. Those notes do not establish the approved design, prove installation or measure capacity.
 
-The saved [Santa Rosa County Land Development Code](08_LEGAL_AND_REGULATORY/SOURCE/santa_rosa_county_LDC.pdf) is a 509-page PDF whose **cover and revisions table identify November 10, 2025 (Ordinance 2025-25)**. The PDF's January 13, 2026 internal creation timestamp **is not its enactment or effective date**. County [official LDC site](https://www.santarosa.fl.gov/182/Land-Development-Code).
+County GIS identifies the relevant Tom Street segment as **County Maintained**. It does not prove which individual pipes, ditches or inlets the County owns or maintains.
 
-- **§ 4.04.01.D.1:** for the class of residential lot it specifies, the required lot-grading information depends on whether the County has a subdivision grading plan on file. It lists the ERP-letter or Florida PE plan pathway, elevations and positive outfall, plus a conformance certification at the appropriate completion stage.
-- **§ 4.04.01.D.4:** lists possible lot-grading-plan exemptions, which cannot be ruled in or out from unsurveyed photographs or lot height alone.
-- **§ 4.04.01.E:** addresses certified as-builts before issuance of a certificate of occupancy.
+## Four questions for the County
 
-Before alleging noncompliance, verify the lot-specific approval pathway, controlling ordinance edition and amendments on the permit's application/issuance dates, actual plans and applicable exceptions. See [regulatory and case-law matrix](00_CONTROL/REGULATORY_AND_CASELAW_MATRIX.md) and [the scanned corrected *Westland* opinion](08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/Westland_Skating_Center_v_Gus_Machado_Buick_Fla_1989_CORRECTED_OPINION.pdf). Neither code text nor a case-law rule establishes liability without physical facts.
+1. Which approved grading and drainage plans, revisions or written exemptions apply to **both** lots?
+2. What are the measured ditch, inlet, pipe-invert and outlet elevations, and where does the water go?
+3. Who is responsible for the roadway drainage structures and their maintenance?
+4. Will County Engineering inspect the area and provide a case number and written findings?
 
-## Evidence catalogue and acquisition status
+We have **five foundational and three supplemental draft files**, together containing **nine request/service templates across eight files**. No submission receipts have been verified. [Drafts are stored here](13_PUBLIC_RECORDS_REQUESTS/) and [outstanding records here](00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv).
 
-| Location | What it contains |
-| --- | --- |
-| [`00_CONTROL/SOURCE_REGISTER.csv`](00_CONTROL/SOURCE_REGISTER.csv) | Local source identities and preserved SHA-256 hashes |
-| [`00_CONTROL/EVIDENCE_LEDGER.csv`](00_CONTROL/EVIDENCE_LEDGER.csv) | Claim classification, exhibit, limitations and contrary evidence |
-| [`00_CONTROL/PERMIT_DOCUMENT_INVENTORY.csv`](00_CONTROL/PERMIT_DOCUMENT_INVENTORY.csv) | Obtained documents and precisely named missing files |
-| [`00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv`](00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv) | Custodians, draft requests and response tracking |
-| [`00_CONTROL/CHRONOLOGY.csv`](00_CONTROL/CHRONOLOGY.csv) | Dated events and uncertain historical attribution |
-| [`08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/`](08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/) | Corrected Florida Supreme Court opinion plus two **DEP index reports**; signed DEP consent orders **not** obtained |
-| [`16_ARCHIVE_RECONCILIATION/`](16_ARCHIVE_RECONCILIATION/) | Boundaries of archive verification and candidate photographic exhibits (without the images) |
+## Using this library safely
 
-**Known major gaps:** originals of approved/revised grading and drainage plans; original surveys; finished grades; pipe and outfall geometry; shared roadside design and maintenance/ROW/easements; actual deed/plat images; certified completion/CO status; ERP permit-file geographic scope; storm-event field chronology; and qualified, measured effects on neighboring homes.
+Please do not upload original homeowner photos, precise photo GPS metadata, private names and contact details, unredacted email threads, account information or session captures to this **public** GitHub repository. Keep originals in private storage and share only a permission-checked, labeled copy. [Follow the neighbor sharing guide](18_NEIGHBOR_TOOLKIT/04_PRIVACY_AND_SHARING.md).
 
-**Five foundational Chapter 119 requests plus two supplemental drafts** in [`13_PUBLIC_RECORDS_REQUESTS/`](13_PUBLIC_RECORDS_REQUESTS/) have **no verified submission receipts**. Do not mark them sent.
+Official source files remain original records, **not rewritten in my voice**. Historical 2006/2017 LiDAR, earlier aerial images and the 2023 preconstruction aerial support investigation but do not measure completed 2026 grades or prove runoff direction.
 
-## Private evidence and public-repository warning
+For detailed review, see [the sources](00_CONTROL/SOURCE_REGISTER.csv), [claim-to-source references](00_CONTROL/CLAIM_SOURCE_LINKS.csv), [evidence ledger](00_CONTROL/EVIDENCE_LEDGER.csv), [public records and permit archive](03_PERMITS_AND_INSPECTIONS/), [five-question findings](17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md), [historical imagery](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/README.md) and [publication controls](PUBLICATION_AND_VERSIONING.md).
 
-A separate protected resident package contains **15 JPEG copies that matched their archived hashes**. Native camera originals, capture timestamps, precise site attribution and public-release permission are **not validated**. Do not commit photographs/EXIF, private ZIPs, authenticated login captures or residents' identities into this public repository.
-
-Prior authenticated portal material containing requester identity **was committed in older Git history**. Deleting current tracked copies does **not** remove historical exposure. A history rewrite would require coordinated approval, not an automatic force-push.
-
-## Regenerating and checking the current draft
-
-```bash
-python3 -m pip install -r requirements-release.txt
-python3 tools/build_reconciled_packet.py
-python3 tools/verify_reconciled_release.py
-python3 00_CONTROL/tools/test_evidence.py
-```
-
-The [GitHub Actions workflow](.github/workflows/reconciled-public-packet.yml) builds the exact public-scope drafts, verifies the original record hashes and controls the ZIP contents. Passing tests means **file integrity and internal consistency**, **not engineering adequacy, legal applicability or complete records acquisition**.
-
-**Highest-value next action:** request the full County engineering/permit files for both lots and the Tom Street roadside system; obtain the official design, responsible professional and surveyed before/after condition before making a causation or violation claim.
+**I am asking for clear records and a measured answer, not an assumption about the outcome.**

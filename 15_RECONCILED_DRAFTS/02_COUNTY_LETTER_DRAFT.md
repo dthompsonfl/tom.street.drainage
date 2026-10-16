@@ -1,36 +1,29 @@
-# Draft Homeowner Letter | Tom Street Drainage Review
+# Letter to Santa Rosa County | Records and site review (DRAFT)
 
-Date: _________________________
+**Date:** October 16, 2026  
+**From:** Dylan Thompson, 2265 Tom Street, Navarre, Florida  
+**To:** Santa Rosa County Development Services, Engineering and Public Works
 
-To: **Santa Rosa County Development Services and County Engineering/Public Works**
+Dear County Staff,
 
-**Re: Records request and coordinated drainage review, 2264 and 2268 Tom Street, Navarre, Florida**
+I live at 2265 Tom Street and am concerned about grading at nearby construction sites and how the roadside drainage serves our homes. Please provide the existing records below and arrange a documented Engineering review. I want the facts established, not an assumption of fault.
 
-Dear County Staff:
+The saved County records identify **2264 Tom Street**, parcel **21-2S-26-0780-0QQ00-1020**, permit **BP-2026-1621**, and **2268 Tom Street**, parcel **21-2S-26-0780-0QQ00-1490**, permit **BP-2026-1612**. Inspection remarks mention proposed pipes and inlets, the ditch and roadway grades; they do not give us approved drawings or final measurements.
 
-As a neighboring homeowner, I request the approved drainage records and a coordinated field review for recent construction at **2264 and 2268 Tom Street**. We are concerned about roadside drainage and its effect on established homes. This is a request for facts and an engineering assessment, **not an allegation of a code violation or wrongdoing**.
+Under **Chapter 119, Florida Statutes**, I request electronic copies, in the formats already maintained, of:
 
-The County's captured MGO records identify **BP-2026-1621** at 2264 Tom Street (parcel **21-2S-26-0780-0QQ00-1020**) and **BP-2026-1612** at 2268 Tom Street (parcel **21-2S-26-0780-0QQ00-1490**). Both were marked Active when saved in October 2026. Inspection notes refer to proposed roadside pipe/inlet work, protection of a stormwater ditch, and matching roadway grades. The notes do not establish approved designs, final installation, actual elevations or drainage capacity.
+1. Approved original and revised site, grading and drainage plans for both permits, including any subdivision plan, calculations, conditions, waivers or exemptions.
+2. Existing surveys, as-builts, certified elevations, pipe/inlet specifications and receiving-outfall information.
+3. Road right-of-way, drainage easements, asset ownership and maintenance agreements, repair records and complaints.
+4. Inspection reports, certifications, review correspondence and documented certificate-of-occupancy status for both permits.
 
-**Under Chapter 119, Florida Statutes**, please provide the following existing records for *each* permit in the electronic formats maintained by the County, with all revisions:
+**Separately from the records request**, please arrange a field inspection and identify which County department or other entity maintains each drainage structure. County GIS lists the road as County Maintained, but ownership of every adjacent pipe or inlet remains unclear.
 
-1. Approved site/lot-grading and stormwater plans, engineering calculations, subdivision master grading plan (if any), approval conditions and review correspondence.
-2. Preconstruction and final topographic/boundary surveys, finished floor/perimeter elevations, driveway/culvert/inlet specifications, invert elevations and receiving outfalls.
-3. Erosion controls, inspection reports, engineer of record, licensed contractor, required sealed certifications/as-builts and CO status.
-4. Shared Tom Street right-of-way/ditch plans, easements, road-maintainer and asset-acceptance records, ownership, maintenance logs and drainage complaints/corrective-action records.
+Please provide a tracking number, a records custodian and an Engineering contact. Let me know about substantial fees before incurring them, and provide records in batches if convenient.
 
-Please confirm **whether a subdivision lot grading plan was on file**, which approved plan or permit pathway applies to each lot, and the actual status of the **Certified Drainage as Built** tasks. An MGO task labeled *Assigned* does not itself tell us whether a document is missing or overdue.
+Thank you,
 
-County GIS lists Tom Street as **County Maintained**. We request a **documented Engineering inspection**, written findings on outfalls and neighboring effects, and identification of each drainage asset's owner/maintainer.
+**Dylan Thompson**  
+2265 Tom Street, Navarre, Florida
 
-Please acknowledge this request, provide a tracking number and point of contact, allow rolling production, and estimate any substantial fees before incurring them. If any record is withheld, please identify the applicable statutory exemption and release nonexempt portions.
-
-Respectfully,
-
-Name: __________________________________
-
-Address: _________________________________
-
-Contact: __________________________________
-
-*DRAFT for homeowner review and submission. No public-records request submission receipt has been verified.*
+*Draft only; not a submission receipt. Requesting an inspection is separate from requesting existing records.*
