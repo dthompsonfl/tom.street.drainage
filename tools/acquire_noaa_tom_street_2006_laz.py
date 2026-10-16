@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 NAME = "20060228_sr1369_ld_p17.copc.laz"
 SOURCE = ("https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/"
           "laz/geoid18/57/" + NAME)
-BASE = Path(
+BASE = Path(__file__).resolve().parents[1] / (
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/"
     "ORIGINAL_NOAA_2006"
 )

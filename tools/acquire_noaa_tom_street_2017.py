@@ -27,7 +27,7 @@ SOURCE_CATALOG = (
     "dem/FL_Escam_St_Rosa_DEM_2017_8683/index.html"
 )
 METADATA = "https://www.fisheries.noaa.gov/inport/item/55909"
-DEST = Path(
+DEST = Path(__file__).resolve().parents[1] / (
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/"
     "ORIGINAL_NOAA_2017/16reu175645.tif"
 )

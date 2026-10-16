@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 from PIL import Image
 
 URL = "https://www.santarosa.fl.gov/DocumentCenter/View/8573/Overall-Study-Area-East-Navarre-Watershed"
-DEST = Path(
+DEST = Path(__file__).resolve().parents[1] / (
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/"
     "WATERSHED_DOCUMENTS/East_Navarre_Watershed_Study_Area_Official.jpg"
 )

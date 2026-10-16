@@ -14,7 +14,7 @@ from tempfile import NamedTemporaryFile
 from urllib.request import Request, urlopen
 from pypdf import PdfReader
 
-ROOT = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS")
+ROOT = Path(__file__).resolve().parents[1] / ("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS")
 BASE17 = "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8680/supplemental/"
 BASE18 = "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8945/supplemental/"
 REPORTS = [

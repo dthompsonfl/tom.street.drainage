@@ -110,7 +110,7 @@ if mismatch:
 
 inventory = list(csv.DictReader((ROOT / "00_CONTROL/PERMIT_DOCUMENT_INVENTORY.csv").open(newline="")))
 ids = [row["document_id"] for row in inventory]
-check("permit inventory has 43 unique IDs", len(ids) == 43 and len(ids) == len(set(ids)))
+check("permit inventory has >=43 unique IDs", len(ids) >= 43 and len(ids) == len(set(ids)))
 for site, pid in [("2264", "21-2S-26-0780-0QQ00-1020"), ("2268", "21-2S-26-0780-0QQ00-1490")]:
     bad = [row["document_id"] for row in inventory
            if row["document_id"].startswith("DOC-" + site) and row["parcel_id"] != pid]

@@ -24,7 +24,7 @@ from shapely.geometry import Point, shape
 from shapely.ops import transform as transform_geometry
 from rasterio.warp import transform
 
-DEST = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018")
+DEST = Path(__file__).resolve().parents[1] / ("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018")
 INDEX_URL = ("https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/"
              "FL_Panhandle_DEM_2018_8942/tileindex_FL_Panhandle_DEM_2018.zip")
 BASE_URL = "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/"

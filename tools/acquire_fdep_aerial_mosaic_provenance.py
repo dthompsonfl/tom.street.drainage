@@ -14,7 +14,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 ROOT = "https://ca.dep.state.fl.us/image/rest/services"
-DEST = Path(
+DEST = Path(__file__).resolve().parents[1] / (
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/"
     "FLORIDA_DEP_HISTORICAL_AERIALS/MOSAIC_CATALOG_PROVENANCE.json"
 )

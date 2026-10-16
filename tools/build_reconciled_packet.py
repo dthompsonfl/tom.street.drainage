@@ -150,7 +150,7 @@ def main():
         "release_status": "DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "photo_originals_included": False,
-        "file_scope": "Five explicitly named homeowner Markdown drafts; not independently approved",
+        "file_scope": "Four explicitly named public-safe Markdown drafts",
         "unresolved": ["Approved signed engineering and surveys not acquired",
                        "Current official permit/CO status not refreshed",
                        "Photo original provenance/permission not verified",

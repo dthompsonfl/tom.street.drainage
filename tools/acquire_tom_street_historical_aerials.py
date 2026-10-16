@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 
 from PIL import Image
 
-DEST = Path(
+DEST = Path(__file__).resolve().parents[1] / (
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/"
     "COUNTY_HISTORICAL_AERIAL_EXPORTS"
 )

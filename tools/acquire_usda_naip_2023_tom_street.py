@@ -17,7 +17,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from PIL import Image, ImageStat
 
-ROOT = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023")
+ROOT = Path(__file__).resolve().parents[1] / ("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023")
 SERVICE = "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2023_CONUS/ImageServer"
 BBOX = [-86.8162, 30.4144, -86.8134, 30.4160]
 SIZE = [1800, 1028]

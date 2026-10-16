@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 
 from pypdf import PdfReader
 
-BASE = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS")
+BASE = Path(__file__).resolve().parents[1] / ("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS")
 REPORTS = {
     "SANTA_ROSA_WATERSHED_MASTER_PLAN_PUBLIC_DRAFT": {
         "url": "https://www.santarosa.fl.gov/DocumentCenter/View/9834/Santa_Rosa_County_Watershed_Master_Plan_Final_Draft",
