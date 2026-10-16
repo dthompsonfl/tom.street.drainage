@@ -151,6 +151,17 @@ def clerk_search():
                                 e.select_option(value=candidates[0][0])
                                 select_status.append({"selected":"PLAT", "field_id":e.get_attribute("id")})
                         except Exception as exc: select_status.append({"error":type(exc).__name__})
+                    if not select_status:
+                        try:
+                            page.locator("button[onclick*='ShowTypes']").click()
+                            check=page.locator("input[name='BookTypeInfoCheckBox'][value='3']")
+                            check.check()
+                            page.locator("input[value='Done']").click()
+                            select_status.append({"selected":"PLAT - Plats/Maps",
+                                                  "field":"BookTypeInfoCheckBox", "value":"3",
+                                                  "display":page.locator("#BookTypesDisplay").input_value()})
+                        except Exception as exc:
+                            record["book_type_widget_error"]=type(exc).__name__+": "+str(exc)[:180]
                     record["selected_book_type_options"]=select_status
                     record["book_field_accepted"]=set_val(page,"BookNumber","A")
                     record["page_field_accepted"]=set_val(page,"PageNumber",page_no)
@@ -162,14 +173,49 @@ def clerk_search():
                         submit(page);page.wait_for_timeout(4000)
                         html=page.content(); text=page.inner_text("body")
                         record["result_book_terms"]=safe_excerpt(text)
-                        ids=sorted(set(re.findall(r"DocumentPdfAllPages/(\d+)",html,re.I)))
-                        record["candidate_official_document_ids"]=ids[:50]
-                        record["result_count_document_id_candidates"]=len(ids)
-                        if ids and re.search(r"CRESCENT\s+SHORES",text,re.I) and re.search(r"\bPLAT\b",text,re.I):
-                            record["status"]="POTENTIAL_PLAT_INDEX_MATCH_REQUIRES_DOCUMENT_LEVEL_VERIFICATION"
-                            record["candidates_not_auto_published"]=ids[:10]
-                        else:
-                            record["status"]="NO_POSITIVELY_VERIFIED_PLAT_PDF_FROM_GUEST_INDEX"
+                        rows=[]
+                        for tr in page.query_selector_all(".t-grid-content tbody tr"):
+                            tds=tr.query_selector_all("td")
+                            if len(tds)<10:continue
+                            cells=[(v.inner_text() or "").strip() for v in tds]
+                            check=tr.query_selector("input[name='checkedRecords']")
+                            candidate_id=(check.get_attribute("value") or "") if check else ""
+                            if not candidate_id.isdigit():continue
+                            rows.append({"book_type":cells[7],"book_page":cells[8],
+                                         "document_type":cells[10] if len(cells)>10 else "",
+                                         "legal_region":cells[-1],"document_id":candidate_id})
+                        record["safe_index_rows"]=rows[:45]
+                        record["safe_index_count_visible"]=len(rows)
+                        matching=[r for r in rows if r["book_type"].upper()=="PLAT"
+                                  and r["book_page"].upper().replace(" ","")==f"A/{page_no}".upper()
+                                  and ("PLAT" in r["document_type"].upper() or
+                                       "MAP" in r["document_type"].upper())]
+                        record["exact_plat_index_matches"]=matching
+                        for match in matching[:2]:
+                            doc_id=match["document_id"]
+                            url=f"https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/{doc_id}"
+                            try:
+                                res=requests.get(url,timeout=60,headers={"User-Agent":UA})
+                                res.raise_for_status()
+                                if not res.content.startswith(b"%PDF-") or len(res.content)>24_000_000:
+                                    raise RuntimeError("Result was not a bounded official PDF")
+                                pdf=PdfReader(BytesIO(res.content))
+                                if not 1<=len(pdf.pages)<=25:
+                                    raise RuntimeError("Unexpected document page count")
+                                content="\n".join((p.extract_text() or "") for p in pdf.pages)
+                                if re.search(r"\b\d{3}[- ]\d{2}[- ]\d{4}\b|social security number|bank account|date of birth",content,re.I):
+                                    raise RuntimeError("Document has sensitive information: withhold from public repo")
+                                # Plat is a published land survey/record, not a private resident photograph or deed.
+                                filename=f"ORIGINAL_CLERK_PLAT_BOOK_A_PAGE_{page_no}.pdf"
+                                match["original"]=store(OUT/filename,res.content)
+                                match["original"].update({"url":url,"pages":len(pdf.pages),
+                                  "release":"PUBLIC_CLERK_PLAT_SUBJECT_TO_HUMAN_EXHIBIT_REVIEW"})
+                                match["original_acquisition_status"]="SOURCE_PDF_ARCHIVED_EXACT_PLAT_INDEX_MATCH"
+                            except Exception as exc:
+                                match["original_acquisition_status"]="PDF_DOWNLOAD_OR_PRIVACY_GATE_FAILED"
+                                match["original_failure"]=type(exc).__name__+": "+str(exc)[:190]
+                        record["status"]=("EXACT_PLAT_INDEX_MATCH_FOUND" if matching
+                                         else "NO_EXACT_PLAT_RECORD_FOUND_IN_GUEST_VISIBLE_PAGE")
                 except Exception as exc:
                     record["status"]="CLERK_GUEST_SEARCH_FAILED"
                     record["failure"]=type(exc).__name__+": "+str(exc)[:260]
