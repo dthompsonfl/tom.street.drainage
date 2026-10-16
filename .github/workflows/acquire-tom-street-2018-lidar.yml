@@ -1,0 +1,54 @@
+name: Preserve original 2018 USGS Panhandle bare-earth DEM
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_noaa_tom_street_2018.py'
+      - '.github/workflows/acquire-tom-street-2018-lidar.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: acquire-noaa-tom-street-2018
+  cancel-in-progress: false
+jobs:
+  acquire-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check acquisition script syntax
+        run: python -m py_compile tools/acquire_noaa_tom_street_2018.py
+      - name: Install fixed geospatial source validators
+        run: python -m pip install rasterio==1.4.3 fiona==1.10.1 shapely==2.0.7 pyproj==3.7.1
+      - name: Acquire NOAA 2018 geospatial index and only matched original DEM
+        id: attempt
+        continue-on-error: true
+        run: python tools/acquire_noaa_tom_street_2018.py
+      - name: Preserve checked public source files and exact failure manifest
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018/
+          if git diff --cached --quiet; then
+            echo "2018 source already preserved"
+          else
+            git commit -m "evidence: preserve NOAA USGS 2018 Panhandle source terrain [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Report actual downloaded evidence status
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018/ACQUISITION_MANIFEST.json')
+          o=json.loads(p.read_text())
+          print('2018 DEM status:', o['status'], 'error:', o.get('error', 'none'))
+          PY
