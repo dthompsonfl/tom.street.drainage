@@ -69,8 +69,19 @@ for output in manifest["outputs"]:
         check("Markdown source hash " + md.name, digest(md) == output["source_sha256"])
         extracted = "\n".join(page.extract_text() or "" for page in reader.pages)
         check("draft footer present in " + p.name, "Evidence-based homeowner DRAFT" in extracted)
+        if md.name in ("06_COMMISSIONER_COVER_LETTER_DRAFT.md", "02_COUNTY_LETTER_DRAFT.md"):
+            check("recipient metadata renders on separate lines " + p.name,
+                  bool(re.search(r"Date: [^\\n]+\\nFrom: [^\\n]+\\n(?:To|Subject):",
+                                 extracted)))
+
     else:
         check("merged packet page count matches five components", pages == all_pages)
+        page_texts = [page.extract_text() or "" for page in reader.pages]
+        check("combined packet pages have distinct sequential numbering",
+              all(f"Packet page {n} of {pages}" in txt
+                  for n, txt in enumerate(page_texts, start=1)))
+        check("merged packet has no hidden repeated component page numbers",
+              all(not re.search(r"(?m)^Page 1$", txt) for txt in page_texts))
 
 sums = {}
 for line in (PDF / "SHA256SUMS.txt").read_text().splitlines():
