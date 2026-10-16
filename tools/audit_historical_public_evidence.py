@@ -121,6 +121,23 @@ def main():
             ERRORS.append({"source":"USDA_2023_NAIP","issue":"MISSING_SITE_SPATIAL_CATALOG_VERIFICATION"})
     else:
         MISSING.append({"source":"USDA_2023_NAIP","status":naip["image_status"]})
+    naip21=parse(ROOT/"USDA_NAIP_2021/ACQUISITION_MANIFEST.json")
+    if naip21["image_status"]=="PUBLIC_NAIP_2021_EXPORT_BYTES_SAVED_AND_VALIDATED":
+        check("USDA_2021_NAIP",naip21["path"],naip21["sha256"],naip21["bytes"],
+              "official_derived_ortho_jpeg")
+    else:
+        MISSING.append({"source":"USDA_2021_NAIP",
+                        "status":"NO_USEFUL_SITE_IMAGE",
+                        "reason":naip21.get("image_failure"),
+                        "catalog_primary_tile_status":naip21.get("catalog_status")})
+    fdot=parse(ROOT/"FDOT_AERIAL_ARCHIVE_INDEX/ACQUISITION_MANIFEST.json")
+    for record in fdot["documents"]:
+        if record["status"]=="ORIGINAL_FDOT_COUNTY_INDEX_PDF_SAVED":
+            check(record["document"],record["path"],record["sha256"],record["bytes"],
+                  "official_public_historical_photo_coverage_index")
+        else:
+            MISSING.append({"source":record["document"],"status":record["status"],
+                            "reason":record.get("error")})
     wat=parse(ROOT/"WATERSHED_DOCUMENTS/ACQUISITION_MANIFEST.json")
     for doc in wat["documents"]:
         if doc["original_status"].startswith("ORIGINAL_"):
