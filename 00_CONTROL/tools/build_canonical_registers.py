@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Build the canonical evidence ledger, action tracker, chronology, exhibit
+"""HISTORICAL GENERATOR DISABLED; retained for original research reproducibility.
+
+Build the canonical evidence ledger, action tracker, chronology, exhibit
 index, design-vs-field matrix, responsibility matrix and contradiction log.
 
 Every claim row is generated FROM a captured evidence file where one exists, so
@@ -690,6 +692,7 @@ CONTRA = [
 ]
 
 if __name__ == "__main__":
+    raise SystemExit("RETIRED HISTORICAL GENERATOR: this fixed-2026 source table must not overwrite current evidence, action, chronology, exhibit, or responsibility registers. Use reviewed current acquisition and append-safe reconciliation.")
     print("building canonical registers:")
     w("EVIDENCE_LEDGER.csv", LEDGER_COLS, LEDGER)
     w("MISSING_RECORDS_AND_ACTIONS.csv", ACT_COLS, ACTS)
