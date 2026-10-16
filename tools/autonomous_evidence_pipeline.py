@@ -234,7 +234,7 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(plan, indent=2))
         return 0  # diagnostic output only; not a successful pipeline run
 
-    if args.mode in ("full", "discover", "acquire", "sync", "build") and not args.allow_network_and_writes:
+    if not args.allow_network_and_writes:
         print(json.dumps({
             "status": "BLOCKED_OPERATOR_CONFIRMATION_REQUIRED",
             "mode": args.mode,

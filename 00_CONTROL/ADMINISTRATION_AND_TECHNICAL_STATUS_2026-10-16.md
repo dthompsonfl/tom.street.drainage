@@ -17,7 +17,7 @@ This is the active entry point for determining **which repository procedures are
 | Public toolkit | Complete blank 18-page packet, separate worksheets, editable registers, automated PDF generator and publication checks on `main` | Resident usability feedback and permission-controlled adoption | Real neighbor prints/uses forms and controls own originals |
 | Current meeting letters | Source-limited, unsigned drafts and reproducible PDFs | Individual sender wording approval, signature, sending and tracking | Human-verified outgoing copy and actual transmittal receipt; no false submission claims |
 | Public privacy | Generic automated classification, separate restricted-material policy, and an optional off-repository duplicate/hash auditor | Human inspection of native originals, third-party permissions and previous public Git history | Private risk review and documented authorized remediation; a hash cannot prove authenticity |
-| Autonomous research runner | Existing runner has dry-run diagnostic and fail-closed missing-module preflight | Five historically promised helper modules not all present; network/acquisition operations not audited end-to-end | Bounded isolated testing, network scopes, immutable archival writes and verified result before claiming ready |
+| Autonomous research runner | Existing runner has a dry-run diagnostic, missing-module preflight and explicit operator acknowledgement before **any** non-dry-run mode | Five historically promised helper modules not all present; network/acquisition operations not audited end-to-end | Bounded isolated testing, network scopes, immutable archival writes and verified result before claiming ready |
 
 ## Administrative changes and acceptance
 
