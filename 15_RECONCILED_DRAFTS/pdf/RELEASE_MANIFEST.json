@@ -1,6 +1,6 @@
 {
   "release_status": "DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION",
-  "generated_utc": "2026-10-16T03:52:15.727026+00:00",
+  "generated_utc": "2026-10-16T03:53:00.343819+00:00",
   "photo_originals_included": false,
   "file_scope": "Four explicitly named public-safe Markdown drafts",
   "unresolved": [
@@ -15,11 +15,11 @@
       "source_sha256": "f9e2c860b4a5ee515eaf32aa0e3901f35f4f60dfbc9f7c47c6be2a19d800c5c5",
       "pdf": "Tom_Street_Homeowner_Brief.pdf",
       "bytes": 5309,
-      "sha256": "b4a487cdcd93591e3964e866bc8af335d23a29e89efb3dcb7422de92114930a8",
+      "sha256": "782757f5ae58fd6e93d1b0b791382281bcd8a10e3f8b258c3bc2aa2aa2d745dc",
       "pages": 2,
       "page_text_lengths": [
-        0,
-        0
+        2920,
+        734
       ]
     },
     {
@@ -27,11 +27,11 @@
       "source_sha256": "c3f49964973c055ac5cca3f83d80e4eabf54c5c9edec4ba8912bc7be1c55cee6",
       "pdf": "Tom_Street_County_Letter_Draft.pdf",
       "bytes": 4970,
-      "sha256": "abc4459f86260060d0194dca1b673187ba534cabe42965a41be21077cf3c9a50",
+      "sha256": "63c583e4868f62da23527753962c5e558a3ebd7d5b6eca756b585d898e4b43fa",
       "pages": 2,
       "page_text_lengths": [
-        0,
-        0
+        3324,
+        234
       ]
     },
     {
@@ -39,10 +39,10 @@
       "source_sha256": "928fb5114cf1b52263daa7ba36a5db3d590c58be2ee6c33e8990eca13554d0ad",
       "pdf": "Tom_Street_Proxy_Meeting_Notes.pdf",
       "bytes": 3578,
-      "sha256": "2a360d959b09a7d1732f692924dd15164f07bf91905b63052cb24ff712824e9c",
+      "sha256": "0a45dcdbab34c07023cdf3a2d7b65b8d9955918b2c021fdac7115ba72e82ca2f",
       "pages": 1,
       "page_text_lengths": [
-        0
+        2379
       ]
     },
     {
@@ -50,10 +50,10 @@
       "source_sha256": "e844eafe5b655cd38b85385f419eadd4e923cbfc801394044482a2f80a33ee69",
       "pdf": "Tom_Street_Records_Status_and_Follow_Up.pdf",
       "bytes": 3318,
-      "sha256": "07d0a75eca34def54fb075b0ab5374c1533d977e5ad69f6dd850bd321aec5e2e",
+      "sha256": "2933fd1f6655dc9249d9d1cc4b684bd94b3e7abd55cd7aea6fd7124f568fff46",
       "pages": 1,
       "page_text_lengths": [
-        0
+        2052
       ]
     },
     {
