@@ -24,12 +24,10 @@ respectively, Section 21, Township 2S, Range 26, Block 0QQ00.
 
 Also R2M / Crescent Shores (00780), lot 1180.
 
-## 2266 Tom Street — resolved
+## 2266 Tom Street — current status versus historical evidence
 
-**There is no 2266 Tom Street.** The official Tom Street roll contains no
-parcel with that situs address; the numbering sequence simply skips it
-(2263 → 2264 → 2265 → 2267 → 2268 → 2269). 2266 must not be substituted for
-either target site.
+No 2266 situs appears on the archived current Property Appraiser roll. However, 1996–1998 MGO records use **2266 Tom Street**. Do not claim this historical address never existed. Its later addressing/parcel disposition is unverified; request county address-change and recorded parcel history.
+
 
 ## Developer / builder identity
 

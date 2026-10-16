@@ -33,30 +33,24 @@ Verified against the **Santa Rosa County Property Appraiser official roll** on
 - The previously reported parcel `21-2S-26-0780-0QQ00-1020` is **NOT** 2268 Tom St.
   That parcel is **2264 Tom St**. The earlier notes had the two target
   addresses transposed.
-- The MLS claim that 2268 Tom St begins at **ORB 3492 PG 700** is **not
-  supported**. ORB 3492/700 is instrument **201603296**, a deed dated
-  2016-01-28 from MATIGA CIPRIANO A SR to MATIGA CEPRIANO P JR with legal
-  description "**21-2S-26 POPE SUBD LOT 22 UNREC**" — that instrument matches
-  2274 Tom St, not 2268 Tom St. See
-  `00_CONTROL/SYSTEM_RAW/acclaim_bookpage_3492_700_20261015T235902Z.html`.
+- The MLS deed attribution to **ORB 3492 PG 700** is not established for this lot. The saved Clerk record is a **search-results grid**, not a downloaded instrument. Its apparent 2274 Tom Street relationship needs verification against the actual recorded deed image.
 
 ## Environmental permit finding
 
-The only Environmental Resource Permit within 2,000 ft of this parcel is
+A nearby Environmental Resource Permit returned by a 2,000-ft spatial search is
 **NWFWMD ERP Official Permit ID 9220-2**, project "**Hadleigh Hills, Phase 2
 Ext. to P9220-1**", applicant **Hadleigh Hills Development Group**, ERP
 Individual, 8.1 acres, Santa Rosa County, received 2016-11-14, decided
-2016-11-21. No FDEP-issued ERP exists within 2,000 ft.
+2016-11-21. The limited search returned no nearby FDEP-issued ERP; that is not proof of absence of an applicable permit.
 
 Saved evidence:
 `09_ENVIRONMENTAL_PERMITS/SYSTEM_RAW/erp_nearest_permits_tom_street.json`
 
-This indicates "Hadleigh Hills" is the likely **development of record**, while
-"Crescent Shores (00780)" is the **filing / plat name** used by the Property
-Appraiser. Both names must be used in future county and clerk searches.
+ERP 9220-2's geographical and legal applicability to this parcel **has not been established**. Hadleigh Hills is a search lead; Crescent Shores is an appraiser filing name, not independently verified as a recorded plat.
 
 ## Still not established from an official source
 
 - Recorded legal description for this specific lot.
 - Building card, improvement history, and sales history.
-- Permit numbers and approved plans (MGO Connect requires an account).
+- Building permit identified in archived MGO: BP-2026-1612, status Active at capture. Approved sealed grading drawings/revisions remain unavailable.
+- The archived 2000 mobile-home permit leads cite a parcel currently mapped to 2274 Tom Street; do not attribute them to current 2268 without legal parcel history.

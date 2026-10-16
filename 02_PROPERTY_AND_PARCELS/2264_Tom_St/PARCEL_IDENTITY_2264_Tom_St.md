@@ -40,4 +40,4 @@ Verified against the **Santa Rosa County Property Appraiser official roll** on
 - Recorded legal description (the clerk's Legal Search endpoint is unavailable).
 - Building card, improvement history, and sales history (not exposed by the
   current public search application).
-- Permit numbers and approved plans (MGO Connect requires an account).
+- Building permit identified in archived MGO: BP-2026-1621, status Active at capture. Approved sealed grading drawings/revisions remain unavailable in this repository.
