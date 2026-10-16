@@ -97,6 +97,15 @@ These comments **refer to** a roadway ditch and proposed connections to structur
 18. Existing Street-Maintainer records for **Tom Street**, including its official maintaining entity, road acceptance and right-of-way title/easement/asset inventories; if a separate entity maintains any portion, identify it using existing records.
 19. The **Santa Rosa County LDC ordinance edition and amendments applied** to these two permits at original review/issuance and each revised approval, including any identified § 4.04.01.D.4 grading-plan exemption and § 4.04.01.E certified-as-built determination; request existing records only.
 
+## County's historical stormwater mapping: existing review records requested
+
+Santa Rosa County's published **Stormwater Problem Area** layer includes feature **OBJECTID 2068**, source description **"Road & Bridge Maps Marked Up by Foreman."** The layer-wide metadata mentions information obtained for planning/minor-subdivision review, including Road & Bridge reports concerning the April 2006 flood event. The layer description does **not** establish the date, source event, severity, or cause of feature 2068.
+
+Please include any **existing** source maps, staff annotations, complaint/work-order records, feature history and GIS source files that underpin feature 2068. Also include any existing **engineering-review checklists, map overlays, review notes, approved design comments or correspondence** reflecting whether that mapped designation was considered during `BP-2026-1621` or `BP-2026-1612` review, and any existing documents recording how a drainage design or approval addressed it. This request is for **records already held** by the County, not a new staff opinion or hydraulic analysis.
+
+County source metadata already preserved in the public research repository:
+`11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_PROVENANCE/`.
+
 ## Custodian note
 
 MGO Connect (`mgoconnect.org/cp/project-details/...`) was queried on

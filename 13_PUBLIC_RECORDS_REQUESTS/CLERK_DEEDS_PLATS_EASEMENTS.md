@@ -70,6 +70,14 @@ Street**.
 **The recorded instrument image has not been obtained**, so that attribution is not a title determination. The search information suggests a lead outside the two target lots. Please confirm this and provide the original image and identify the instrument that **does** convey
 lots 1020 and 1490 of block 0QQ00, subdivision 0780.
 
+## Additional indexed plat lead (October 16, 2026; original plat not yet obtained)
+
+A separately published **Clerk-hosted recorded instrument** (Official Records Book 3653, Page 976) references **Lot QQ, Crescent Shores Subdivision, Plat Book A, Page 70**, and portions also described as lots of the **unrecorded Pope Subdivision**:
+
+https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/3266090
+
+This is a **search lead**, not the original subdivision plat or a verified chain of title for 2264 or 2268 Tom Street. Please search the actual **Plat Book A, Page 70**, check whether related **Page 70A** applies, and provide original complete recorded images, indexes, amendments, dedications, and any instruments identifying divisions of Lot QQ relevant to parcel suffixes `-1020` and `-1490`. A related Clerk-hosted instrument does not itself establish that those documents govern the subject parcels. If there is no recorded Pope plat, identify responsive recorded deeds and other existing instruments, rather than assuming an unrecorded map is a County-approved drainage plan.
+
 ## Search notes for the Clerk
 
 The public AcclaimWeb guest interface was exercised on 2026-10-15:
