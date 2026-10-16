@@ -1,0 +1,61 @@
+name: Acquire Florida historical Tom Street aerial exports
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_fdep_historical_tom_street_aerials.py'
+      - '.github/workflows/acquire-fdep-historical-tom-street-aerials.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: acquire-fdep-historical-tom-street-aerials
+  cancel-in-progress: false
+jobs:
+  preserve-official-imagery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify acquisition script syntax
+        run: python -m py_compile tools/acquire_fdep_historical_tom_street_aerials.py
+      - name: Install fixed image validator
+        run: python -m pip install pillow==11.3.0
+      - name: Acquire official 1994-2021 image mosaics
+        id: acquisition
+        continue-on-error: true
+        run: python tools/acquire_fdep_historical_tom_street_aerials.py
+      - name: Report source status and archive only original public exports
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path('11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/ACQUISITION_MANIFEST.json')
+          d = json.loads(p.read_text())
+          for row in d['images']:
+              if row['status'] == 'PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED':
+                  f = pathlib.Path(row['file'])
+                  if not f.exists() or f.stat().st_size != row['bytes']:
+                      raise SystemExit('Missing or inconsistent archive: ' + row['service_label'])
+              print(row['service_label'], row['status'], row.get('failure', ''))
+          print('ACQUIRED', d['downloaded_validated_count'], 'of', d['requested_count'])
+          PY
+      - name: Publish successful exports and explicit failures to main
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/
+          if git diff --cached --quiet; then
+            echo "No changed public source bytes"
+          else
+            git commit -m "evidence: archive Florida 1994-2021 aerial exports with acquisition manifest [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
