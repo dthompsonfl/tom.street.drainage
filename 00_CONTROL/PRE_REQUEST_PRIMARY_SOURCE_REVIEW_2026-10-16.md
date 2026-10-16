@@ -16,6 +16,12 @@ Each original source has an ID in [SOURCE_REGISTER.csv](SOURCE_REGISTER.csv), su
 
 [Clerk OR Book 3653, Page 976](https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/3266090) (3 pages) and [OR Book 718, Page 289](https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/7838) (4 pages) were accessed and their source hashes/page counts recorded, but signed/third-party images are **not in this public Git repository**, awaiting privacy and lot-attribution review. The recorded source descriptions reference Lot QQ / Pope Subdivision; these are not verified links to either current property deed.
 
+## DEP and NWFWMD public point-source checks
+
+Four original [FDEP/NWFWMD public GIS responses](../09_ENVIRONMENTAL_PERMITS/PRE_REQUEST_PUBLIC_PERMIT_REFRESH_2026-10-16/) were archived with SHA-256 hashes. FDEP stormwater map queries returned **zero facility points within 500 m** of the selected location, and **one point within 2 km named Soundside Hollow / FLR10WY27** with no demonstrated connection to either Tom Street construction parcel. NWFWMD ERP ID 9220 returned one Hadleigh Hills Phase 2 **sequence 2 point feature**.
+
+These limited public map returns do **not** establish a no-record determination, whether CGP or ERP authorization covers either lot, or any permitting violation. Actual agency documents, boundaries, operator and common-plan status remain unverified. Source and claim ledgers now include `SRC-PRE-009`–`SRC-PRE-012` and `CLM-042`–`CLM-043`.
+
 ## Acquisition attempts that remain open
 
 - **2022 County aerial originals:** live County MapServer metadata did not yield usable source information; direct tile requests at four zoom levels returned HTTP 404. [The official attempted acquisition manifest](../11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_2022_CACHED_ORTHOPHOTO/ACQUISITION_MANIFEST.json) lists failures. This is **not a County no-records determination**. FDOT APLUS original site-covering imagery, exact flight dates and an alternative County-held dataset are needed.
