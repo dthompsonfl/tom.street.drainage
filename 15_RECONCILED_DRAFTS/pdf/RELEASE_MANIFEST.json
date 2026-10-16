@@ -1,6 +1,6 @@
 {
   "release_status": "DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION",
-  "generated_utc": "2026-10-16T03:55:44.778667+00:00",
+  "generated_utc": "2026-10-16T04:01:22.375018+00:00",
   "photo_originals_included": false,
   "file_scope": "Four explicitly named public-safe Markdown drafts",
   "unresolved": [
@@ -15,7 +15,7 @@
       "source_sha256": "c625b2dba1b23f1cf130cbfe05fd313da3eeb37d3baa824757e5581b9538de68",
       "pdf": "Tom_Street_Homeowner_Brief.pdf",
       "bytes": 4047,
-      "sha256": "011126f00c28657782c9ba8dce6f5bc068b5cc99fa39b513d958dc05a15947af",
+      "sha256": "e3d83a6f4299b03228992f7a06a6c8f50929ae4f4de709769c06432d53e8d9d0",
       "pages": 1,
       "page_text_lengths": [
         2696
@@ -26,7 +26,7 @@
       "source_sha256": "3e5847e7c92f32861f730487a755fcc03df2e7d0c415ca3bced8bbeff43c5871",
       "pdf": "Tom_Street_County_Letter_Draft.pdf",
       "bytes": 4073,
-      "sha256": "6c2b6f2640b937080d527f9c2aad35fbbad3b3dfc7fae4b550c5fd66df9e3167",
+      "sha256": "6d60a6e2ead6a1ff4e574cf21f1cf68a6e088efe08a056a7bba1a29e8b26973d",
       "pages": 1,
       "page_text_lengths": [
         2924
@@ -37,7 +37,7 @@
       "source_sha256": "928fb5114cf1b52263daa7ba36a5db3d590c58be2ee6c33e8990eca13554d0ad",
       "pdf": "Tom_Street_Proxy_Meeting_Notes.pdf",
       "bytes": 3578,
-      "sha256": "13ed944ec2264fae621484318d83770b1d765b74f2ace6a93e67d8ecb3beaf8e",
+      "sha256": "17e27a719de806a7907ab33c3cdfdcac0b5b055a54393bffbeca57716f6b3693",
       "pages": 1,
       "page_text_lengths": [
         2379
@@ -48,7 +48,7 @@
       "source_sha256": "e844eafe5b655cd38b85385f419eadd4e923cbfc801394044482a2f80a33ee69",
       "pdf": "Tom_Street_Records_Status_and_Follow_Up.pdf",
       "bytes": 3318,
-      "sha256": "c78628b32799d9675721226df86d07309677f659a5e13cba12287cddeb94092e",
+      "sha256": "f0e9ed4aa92a32008ea890afca5db84feb47907f0ea6d0eb8ea9084472f109c9",
       "pages": 1,
       "page_text_lengths": [
         2052
