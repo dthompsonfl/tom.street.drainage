@@ -7,7 +7,9 @@
   "source_catalog": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/FL_Escam_St_Rosa_DEM_2017_8683/index.html",
   "dataset_metadata": "https://www.fisheries.noaa.gov/inport/item/55909",
   "source_acquisition_window": "2017-03-31 to 2017-04-08",
-  "source_vertical_reference": "NAVD88, GEOID12B per dataset lineage; confirm raster-specific tags before engineering comparison",
+  "source_vertical_reference": "NAVD88 (GEOID12B), U.S. survey feet, as stated in NOAA InPort 55909 process step 12 (vertical EPSG:6360)",
+  "horizontal_grid_units": "meters, 1 meter cell size, EPSG:6345",
+  "vertical_elevation_units": "U.S. survey feet; derived meters use factor 1200/3937",
   "bytes": 6589870,
   "sha256": "449070da44acbdc23a289bdbfb436ef0eeb75b2cdc5cdee1fda154b263e507e0",
   "local_original": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2017/16reu175645.tif",
@@ -34,7 +36,9 @@
         "lat": 30.41519,
         "raster_x": 517800.7500079329,
         "raster_y": 3364807.8000179916,
-        "elevation_raster_units": 31.454923629760742
+        "elevation_raster_units": 31.454923629760742,
+        "elevation_units": "U.S. survey feet (EPSG:6360)",
+        "elevation_meters_derived": 9.587479897310867
       },
       "2265_Tom_St": {
         "parcel": "21-2S-26-0780-0QQ00-1180",
@@ -42,7 +46,9 @@
         "lat": 30.41515,
         "raster_x": 517747.9330888165,
         "raster_y": 3364803.281022018,
-        "elevation_raster_units": 32.14788055419922
+        "elevation_raster_units": 32.14788055419922,
+        "elevation_units": "U.S. survey feet (EPSG:6360)",
+        "elevation_meters_derived": 9.798693590307101
       },
       "2268_Tom_St": {
         "parcel": "21-2S-26-0780-0QQ00-1490",
@@ -50,7 +56,9 @@
         "lat": 30.41534,
         "raster_x": 517800.7227861772,
         "raster_y": 3364824.4223297015,
-        "elevation_raster_units": 31.661670684814453
+        "elevation_raster_units": 31.661670684814453,
+        "elevation_units": "U.S. survey feet (EPSG:6360)",
+        "elevation_meters_derived": 9.650496525724495
       }
     }
   },
