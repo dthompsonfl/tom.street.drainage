@@ -1,3 +1,5 @@
+> **HISTORICAL BASELINE AUDIT for 2026-10-16, not today's current repository state.** Paths and availability below reflect only that earlier workstation session. Later source archives and county records were reconciled separately; consult `00_CONTROL/FINAL_REVIEW_READINESS_2026-10-15.md` and `15_RECONCILED_DRAFTS/` for current conclusions.
+
 # CURRENT STATE RECONCILIATION
 
 Prepared: 2026-10-16 · Repo: `/home/dylan/Tom-Street-Drainage-Investigation`

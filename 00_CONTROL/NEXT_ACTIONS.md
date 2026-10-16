@@ -7,7 +7,7 @@
 1. **2264 Tom Street — BP-2026-1621** (PA parcel 21-2S-26-0780-0QQ00-1020). Request the complete original/revised approved site and grading plans, preconstruction survey, positive outfall, driveway/ROW 12-inch pipe and inlet design, review history, engineer-of-record certification, site inspection attachments, and any final CO/as-built records. The archived customer MGO files list was empty; this does **not** establish that the County lacks the records.
 2. **2268 Tom Street — BP-2026-1612** (PA parcel 21-2S-26-0780-0QQ00-1490). Request equivalent original and amended sealed site-grading/survey/driveway records, erosion controls, inspection details, outfall and current CO/certification status.
 3. **Shared Tom Street drainage corridor.** Ask County Engineering/Public Works for parent subdivision/road drainage plans, swale and driveway pipe profile, documented inverts, receiving positive outfall, ROW and easements, maintenance records and historic complaints. The 2264 inspection contains *instructions* for frontage pipe/inlet work, not a confirmed installation or surveyed design.
-4. **Actual requests and receipts.** The five drafts under `13_PUBLIC_RECORDS_REQUESTS/` are currently **DRAFTED_NOT_SUBMITTED**. Obtain homeowner approval before sending; retain the transmission, acknowledgment, production and response timestamps.
+4. **Actual requests and receipts.** The five foundational Chapter 119 requests and two supplemental drafts in `13_PUBLIC_RECORDS_REQUESTS/` are currently **DRAFTED_NOT_SUBMITTED**. Obtain homeowner approval before sending; retain the transmission, acknowledgment, production and response timestamps.
 
 ## Priority 1: Correct proof gaps and independently verify project identity
 

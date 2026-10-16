@@ -60,7 +60,7 @@ Before alleging noncompliance, verify the lot-specific approval pathway, control
 
 **Known major gaps:** originals of approved/revised grading and drainage plans; original surveys; finished grades; pipe and outfall geometry; shared roadside design and maintenance/ROW/easements; actual deed/plat images; certified completion/CO status; ERP permit-file geographic scope; storm-event field chronology; and qualified, measured effects on neighboring homes.
 
-**Five** Chapter 119 drafts in [`13_PUBLIC_RECORDS_REQUESTS/`](13_PUBLIC_RECORDS_REQUESTS/) have **no verified submission receipts**. Do not mark them sent.
+**Five foundational Chapter 119 requests plus two supplemental drafts** in [`13_PUBLIC_RECORDS_REQUESTS/`](13_PUBLIC_RECORDS_REQUESTS/) have **no verified submission receipts**. Do not mark them sent.
 
 ## Private evidence and public-repository warning
 

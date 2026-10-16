@@ -20,7 +20,7 @@ This checklist supersedes the earlier unchecked discovery-only version. It is ba
 - [ ] Spatial permit exhibits for NWFWMD ERP 9220-2; nearby location is not proof it covers these lots.
 - [ ] Actual **signed FDEP consent-order documents** (not only the two now-preserved quarterly index reports) and verified project-site linkage before describing Holiday Builders' historical regulatory matters.
 - [ ] Confirm all original resident-photo capture data and written permission before release of identifying images/EXIF.
-- [ ] Confirm signed/sent public-records requests from actual receipts. Five requests remain drafted, not confirmed sent.
+- [ ] Confirm signed/sent public-records requests from actual receipts. Five foundational requests and two supplemental drafts remain unsubmitted; no receipts verified.
 - [ ] Review and sign the current **five-page draft** packet; automated page-count/hash checks passed, but independent visual/personal approval is not documented.
 - [ ] Independent professional site observations/measurements if engineering adequacy or runoff causation must be determined.
 

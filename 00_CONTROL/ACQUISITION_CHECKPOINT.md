@@ -1,3 +1,5 @@
+> **SUPERSEDED HISTORICAL ACQUISITION CHECKPOINT (2026-10-15).** The access results and early ERP ranking below describe their original limited searches, not the current state. Subsequent authenticated MGO records were acquired; ERP proximity is not permit applicability. See `15_RECONCILED_DRAFTS/` and `00_CONTROL/SOURCE_REGISTER.csv` for current research conclusions.
+
 # EVIDENCE ACQUISITION CHECKPOINT
 
 Generated: 2026-10-15 (UTC session, continuous)

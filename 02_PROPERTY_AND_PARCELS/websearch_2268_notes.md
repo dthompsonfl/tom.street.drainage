@@ -1,4 +1,4 @@
-# 2268 Tom St — VERIFIED (supersedes prior web-search notes)
+# 2268 Tom St — VERIFIED PARCEL IDENTIFIER; HISTORICAL DEVELOPMENTS UNVERIFIED
 
 **Status: OVERWRITTEN 2026-10-15 with verified official data.**
 Original web-search notes were not official records and have been preserved
