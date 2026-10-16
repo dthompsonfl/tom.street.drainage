@@ -1,0 +1,45 @@
+name: Capture targeted ordinance and drainage sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_followup_sources.py'
+      - 'tools/test_followup_capture.py'
+      - '.github/workflows/followup-source-acquisition.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: followup-source-acquisition
+  cancel-in-progress: false
+jobs:
+  capture-for-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run offline source safety tests
+        run: |
+          python tools/test_followup_capture.py
+          python tools/test_research_capture.py
+      - name: Capture fixed public sources without authentication
+        run: python tools/acquire_followup_sources.py
+      - name: Package baseline and captures for independent review
+        if: always()
+        run: |
+          mkdir -p /tmp/followup-review
+          git archive --format=zip --output=/tmp/followup-review/source_snapshot.zip HEAD
+          cp -r 17_CURRENT_RESEARCH/captures /tmp/followup-review/captures
+          git rev-parse HEAD > /tmp/followup-review/BASE_COMMIT.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tom-street-followup-source-review
+          path: /tmp/followup-review/
+          retention-days: 30
+# The workflow never pushes captures or claims to main. Review precedes publication.
