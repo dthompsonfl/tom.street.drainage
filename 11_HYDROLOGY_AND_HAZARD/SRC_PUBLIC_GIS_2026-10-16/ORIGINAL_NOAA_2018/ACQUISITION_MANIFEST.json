@@ -1,0 +1,28 @@
+{
+  "captured_utc": "2026-10-16T17:05:47.070153+00:00",
+  "source_agency": "NOAA / USGS / NWFWMD",
+  "dataset": "https://www.fisheries.noaa.gov/inport/item/58332",
+  "source_window": "2018-03-31 to 2018-05-10",
+  "index": {
+    "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018/tileindex_FL_Panhandle_DEM_2018.zip",
+    "bytes": 709205,
+    "sha256": "125d20e4c32a28d1660109b2f7f112994046f016e3bc4418f5c3b2aae1835b7a",
+    "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/tileindex_FL_Panhandle_DEM_2018.zip"
+  },
+  "index_crs": "EPSG:4269",
+  "index_feature_count": 16801,
+  "parcel_point_matches": {
+    "2264_Tom_St": [],
+    "2265_Tom_St": [],
+    "2268_Tom_St": []
+  },
+  "status": "INDEX_PRESERVED_TILE_FAILED",
+  "error": "ValueError: Could not uniquely identify common Tom Street source tile: {}",
+  "limitations": [
+    "Each timestamp/year identifies a regional acquisition window rather than the exact site flight date.",
+    "Original 2018 DEM has distinct horizontal projection from 2017 NOAA and must be coregistered before comparing heights.",
+    "Only indexed tiles covering the 3 site sample points are acquired, not the whole regional 44GB source.",
+    "Grid elevations are 2018 terrain, not 2026 grading or a certified cadastral survey.",
+    "Hydro-flattened DEM cannot measure buried culvert inverts or impervious-construction outfall capacity."
+  ]
+}
