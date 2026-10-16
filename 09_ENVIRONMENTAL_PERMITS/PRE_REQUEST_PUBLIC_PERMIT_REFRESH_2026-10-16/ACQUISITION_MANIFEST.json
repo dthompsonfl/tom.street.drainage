@@ -1,0 +1,64 @@
+{
+  "captured_utc": "2026-10-16T21:00:37.586666+00:00",
+  "jurisdiction": "Florida DEP and NWFWMD original public ArcGIS sources",
+  "requested_point_wgs84": "-86.81466,30.41519",
+  "sources": [
+    {
+      "source_name": "ORIGINAL_FDEP_NPDES_STORMWATER_LAYER_METADATA.json",
+      "official_url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/WAFR/MapServer/0?f=pjson",
+      "status": "ORIGINAL_OFFICIAL_ARCGIS_RESPONSE_ARCHIVED",
+      "layer_name": "NPDES Stormwater Facilities and Activities",
+      "path": "09_ENVIRONMENTAL_PERMITS/PRE_REQUEST_PUBLIC_PERMIT_REFRESH_2026-10-16/ORIGINAL_FDEP_NPDES_STORMWATER_LAYER_METADATA.json",
+      "sha256": "694bf1b02af23d914bf944aa3ee5bdc64fae810dc9ac556443217e6f02688a3c",
+      "bytes": 25998
+    },
+    {
+      "source_name": "ORIGINAL_FDEP_NPDES_STORMWATER_WITHIN_500M.json",
+      "official_url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/WAFR/MapServer/0/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&distance=500&units=esriSRUnit_Meter&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "status": "ORIGINAL_OFFICIAL_ARCGIS_RESPONSE_ARCHIVED",
+      "features_returned": 0,
+      "feature_ids": [],
+      "distances_are_meter_bounded_queries": true,
+      "path": "09_ENVIRONMENTAL_PERMITS/PRE_REQUEST_PUBLIC_PERMIT_REFRESH_2026-10-16/ORIGINAL_FDEP_NPDES_STORMWATER_WITHIN_500M.json",
+      "sha256": "08ea303ab071e67fc5c003268ca0da8d470b6298b2f9aad01562f821cedf207f",
+      "bytes": 5349
+    },
+    {
+      "source_name": "ORIGINAL_FDEP_NPDES_STORMWATER_WITHIN_2000M.json",
+      "official_url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/WAFR/MapServer/0/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&distance=2000&units=esriSRUnit_Meter&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "status": "ORIGINAL_OFFICIAL_ARCGIS_RESPONSE_ARCHIVED",
+      "features_returned": 1,
+      "feature_ids": [
+        18926
+      ],
+      "distances_are_meter_bounded_queries": true,
+      "path": "09_ENVIRONMENTAL_PERMITS/PRE_REQUEST_PUBLIC_PERMIT_REFRESH_2026-10-16/ORIGINAL_FDEP_NPDES_STORMWATER_WITHIN_2000M.json",
+      "sha256": "55cfe7619f83fb2b59253b44f29ce337173ffbada73b7de7445d9807d092af29",
+      "bytes": 6712
+    },
+    {
+      "source_name": "ORIGINAL_NWFWMD_ERP_9220_ALL_SEQUENCES.json",
+      "official_url": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer/0/query?where=OFFCL_PRMT_ID%3D9220&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "status": "ORIGINAL_OFFICIAL_ARCGIS_RESPONSE_ARCHIVED",
+      "features_returned": 1,
+      "feature_ids": [
+        9395
+      ],
+      "observed_seqs": [
+        2
+      ],
+      "path": "09_ENVIRONMENTAL_PERMITS/PRE_REQUEST_PUBLIC_PERMIT_REFRESH_2026-10-16/ORIGINAL_NWFWMD_ERP_9220_ALL_SEQUENCES.json",
+      "sha256": "302b44ca30836fa37d7157cc6db502e55284d342462367b397f539e085fa6dbd",
+      "bytes": 5318
+    }
+  ],
+  "failed_queries": [],
+  "conclusion_limitations": [
+    "A bounded search of public GIS is neither a complete permit-register search nor a legal no-record certification.",
+    "The FDEP NPDES stormwater feature is a permit point, NOT mapped construction plan, footprint or qualifying discharge.",
+    "Nearness of NWFWMD ERP point 9220 (Hadleigh Hills) does not associate the project with these particular Tom Street parcels.",
+    "An empty public GIS result does not prove an absent NOI or violation; some FDEP permit records require agency/OCULUS lookup.",
+    "Local grading compliance and hydraulic adequacy require actual County engineering plans and field measurements."
+  ],
+  "source_coverage_status": "ALL_FOUR_QUERIES_CAPTURED_SOURCE_SCOPE_LIMITED"
+}

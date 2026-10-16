@@ -1,0 +1,845 @@
+{
+ "currentVersion": 11.1,
+ "cimVersion": "3.1.0",
+ "id": 0,
+ "name": "NPDES Stormwater Facilities and Activities",
+ "type": "Feature Layer",
+ "description": "In October 2000, the U.S. Environmental Protection Agency (EPA) authorized the Florida Department of Environmental Protection (FDEP) to implement the National Pollutant Discharge Elimination Systems (NPDES) stormwater permitting program in the State of Florida (in all areas except Indian Country lands). FDEP's authority to administer the NPDES program is set forth in Section 403.0885, Florida Statutes (F.S.). The NPDES stormwater program regulates point source discharges of stormwater into surface waters of the State of Florida from certain municipal, industrial and construction activities. As the NPDES stormwater permitting authority, FDEP is responsible for promulgating rules and issuing permits, managing and reviewing permit applications, and performing compliance and enforcement activities. Only facilities with valid Florida locations are included in this dataset. The data locations provided represent the center of the facilities and activities. The accuracy of these data points is unknown and locational verification has not been performed.",
+ "geometryType": "esriGeometryPoint",
+ "sourceSpatialReference": {
+  "wkid": 3086,
+  "latestWkid": 3086,
+  "xyTolerance": 1.0E-6,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -4.50359960495E7,
+  "falseY": -4.50359960495E7,
+  "xyUnits": 10000000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "FDEP",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 5000000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "PERMIT_TYPE",
+   "field2": "FACILITY_TYPE_CODE",
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "e608e7a2aa09a284efc96a48ab104b1a",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/ElEQVQoka3RPyjEYRgH8M91UheSqxtkOjZGf5LtksEmOpuUm0yyKkaDwb+UrKJsutkt6hBJFEYx2CTTDYdLrk53/e4uyXd73+f9vD3P+zb4Yxr+G8Y76X4l98Y5cnVhM7EkqzMMd9H+wecRV7vsHbNZC4bm2Z5loqwYHqV/kO45whnWAnCcVIqxan230TRFKsNOqe0fOECikXCtx0jQM8TIKekKGKG1FiodjBEtLsrhC8/q5JH3Fy4C8IGNS5J9xZGCSXN2wl0A7nPfwVKI5V5aSvt5HHLzxHT5RRX/uMJWnuwtC1HiBXKPZCMsHlCoCb+zzjUm681bFf42X01xNwsh+1nDAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Large Construction (>= 5 AC);MSP",
+     "label": "CGP (>= 5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "e608e7a2aa09a284efc96a48ab104b1a",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/ElEQVQoka3RPyjEYRgH8M91UheSqxtkOjZGf5LtksEmOpuUm0yyKkaDwb+UrKJsutkt6hBJFEYx2CTTDYdLrk53/e4uyXd73+f9vD3P+zb4Yxr+G8Y76X4l98Y5cnVhM7EkqzMMd9H+wecRV7vsHbNZC4bm2Z5loqwYHqV/kO45whnWAnCcVIqxan230TRFKsNOqe0fOECikXCtx0jQM8TIKekKGKG1FiodjBEtLsrhC8/q5JH3Fy4C8IGNS5J9xZGCSXN2wl0A7nPfwVKI5V5aSvt5HHLzxHT5RRX/uMJWnuwtC1HiBXKPZCMsHlCoCb+zzjUm681bFf42X01xNwsh+1nDAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Construction Generic Dewatering Large;CGP",
+     "label": "CGP (>= 5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "e608e7a2aa09a284efc96a48ab104b1a",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/ElEQVQoka3RPyjEYRgH8M91UheSqxtkOjZGf5LtksEmOpuUm0yyKkaDwb+UrKJsutkt6hBJFEYx2CTTDYdLrk53/e4uyXd73+f9vD3P+zb4Yxr+G8Y76X4l98Y5cnVhM7EkqzMMd9H+wecRV7vsHbNZC4bm2Z5loqwYHqV/kO45whnWAnCcVIqxan230TRFKsNOqe0fOECikXCtx0jQM8TIKekKGKG1FiodjBEtLsrhC8/q5JH3Fy4C8IGNS5J9xZGCSXN2wl0A7nPfwVKI5V5aSvt5HHLzxHT5RRX/uMJWnuwtC1HiBXKPZCMsHlCoCb+zzjUm681bFf42X01xNwsh+1nDAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Large Construction (>= 5 AC);CGP",
+     "label": "CGP (>= 5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "418df5be6620205798247998cfb8cf13",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABNElEQVQokWNhIBOwUFujoqoEg9b7Lwzf3nxhOMnAwPANr0YeHgbRBBuGvhwPBmd1KQbJP38Z/m4+y3Buxi6GJbsuMUzCpZGxLoBheqkfQzBckpmBOdCMwdROi0ErbgoD87ZzDP0YGmNsGZLzPBkCsLlbmIeBO8OVIXnbOYaZMGfDNVprMjiyszIw4woMTwMGbVstBtfD1xg2omjkZGHgx6UJBFiYGRikBBiEwBxkja8+MTxlwAPuvGD4/eQDwykMjXffMkw8fosh1FKNQRCbxhVHGY4fvcZwFUPjzO0M12T5GOoYGRnaLFQZeGHiP38zMCw7wnDx7kuGeGSDUOKxZiXDlG8/GY6cf8BQJcrLoPj7L8O3ey8ZjvzRYKhdMJ3hH06NINC2geECAwNDGD7/YtVILAAAq55TLXpgOHIAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Large Construction (>= 5 AC);CGD",
+     "label": "CGD (>= 5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "418df5be6620205798247998cfb8cf13",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABNElEQVQokWNhIBOwUFujoqoEg9b7Lwzf3nxhOMnAwPANr0YeHgbRBBuGvhwPBmd1KQbJP38Z/m4+y3Buxi6GJbsuMUzCpZGxLoBheqkfQzBckpmBOdCMwdROi0ErbgoD87ZzDP0YGmNsGZLzPBkCsLlbmIeBO8OVIXnbOYaZMGfDNVprMjiyszIw4woMTwMGbVstBtfD1xg2omjkZGHgx6UJBFiYGRikBBiEwBxkja8+MTxlwAPuvGD4/eQDwykMjXffMkw8fosh1FKNQRCbxhVHGY4fvcZwFUPjzO0M12T5GOoYGRnaLFQZeGHiP38zMCw7wnDx7kuGeGSDUOKxZiXDlG8/GY6cf8BQJcrLoPj7L8O3ey8ZjvzRYKhdMJ3hH06NINC2geECAwNDGD7/YtVILAAAq55TLXpgOHIAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Construction Generic Dewatering Large;CGD",
+     "label": "CGD (>= 5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "04c2cfb0886abbcb272507073406c523",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABM0lEQVQokWNhIBOwUFujoiqDvNZ7ho/f3jB8OMnAwPANr0YeBh7RBAb3vhyGEGd1BjnJPwx//25mOHJuBsP6JbsYTk/CpZGxjiF+eilDVDBCkpk5kMHe1I7BUCuOoZF5G8OJfgyNMQzuyXkMoQHY3C3MwMedwRCUvI3hxEyYs+EarRn0HNkZWJlxBYYng4W2LYOB62GGCxtRNHIysPHj0gQCLAzMDFIMQkJgDrLGVwwfnjLgAXcYnvx+wvD2FIbGuwyvJh5nuBJqyaAjiE3jCobdx48yXLyKoXEmw+prsgyCdYwMjG0WDNq8MPGfDL8ZljHsvHiX4Uk8skEo8VjDMGvKN4YvR84z3K4SZeBX/M3w59s9hmdH/jBI1S5g2PEPp0YQaGNYdoGBgSEMn3+xaiQWAADcfVMvqtv85wAAAABJRU5ErkJggg==",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Small Construction (1-5 AC);CGP",
+     "label": "CGP (1-5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "04c2cfb0886abbcb272507073406c523",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABM0lEQVQokWNhIBOwUFujoiqDvNZ7ho/f3jB8OMnAwPANr0YeBh7RBAb3vhyGEGd1BjnJPwx//25mOHJuBsP6JbsYTk/CpZGxjiF+eilDVDBCkpk5kMHe1I7BUCuOoZF5G8OJfgyNMQzuyXkMoQHY3C3MwMedwRCUvI3hxEyYs+EarRn0HNkZWJlxBYYng4W2LYOB62GGCxtRNHIysPHj0gQCLAzMDFIMQkJgDrLGVwwfnjLgAXcYnvx+wvD2FIbGuwyvJh5nuBJqyaAjiE3jCobdx48yXLyKoXEmw+prsgyCdYwMjG0WDNq8MPGfDL8ZljHsvHiX4Uk8skEo8VjDMGvKN4YvR84z3K4SZeBX/M3w59s9hmdH/jBI1S5g2PEPp0YQaGNYdoGBgSEMn3+xaiQWAADcfVMvqtv85wAAAABJRU5ErkJggg==",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Construction Generic Dewatering Small;CGP",
+     "label": "CGP (1-5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "751c6e06e748b11e1a55fffe89e5fe53",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABN0lEQVQokWNhIBOwUFujoqq0ktb7j+++vfny4SQDA8M3vBp5eHhEE1zC+3ICk5zVZZUl//z983fz8V3nZmxeuGTX6YOTcGlkrIspml4alhUMl2RmYQ608TK107PQiuvIY952Yk8/hsYY15DkvMCUAGzuFuYT4s7wi0vedmLPTJiz4Rqtdcwc2VnZmHEFhqepk7atgZXr4QvHNqJo5GRj58elCQRYmFkYpIREhcAcZI2vPrx5yoAH3Hn64PeTt29OYWi8++LexOPXzoRaapkIYtO4Yv/640cvHr2KoXHmxqXXZIVk6xgZGNsstIx5YeI/f/9iWLZ37cW7zx7GIxuEEo818zumfPv548j5u1eqRPmEFH///fvt3ouHR/7IsNcu2LHiH06NINC2bMIFBgaGMHz+xaqRWAAA/ktuUVh1DDcAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Small Construction (1-5 AC);CGD",
+     "label": "CGD (1-5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "751c6e06e748b11e1a55fffe89e5fe53",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABN0lEQVQokWNhIBOwUFujoqq0ktb7j+++vfny4SQDA8M3vBp5eHhEE1zC+3ICk5zVZZUl//z983fz8V3nZmxeuGTX6YOTcGlkrIspml4alhUMl2RmYQ608TK107PQiuvIY952Yk8/hsYY15DkvMCUAGzuFuYT4s7wi0vedmLPTJiz4Rqtdcwc2VnZmHEFhqepk7atgZXr4QvHNqJo5GRj58elCQRYmFkYpIREhcAcZI2vPrx5yoAH3Hn64PeTt29OYWi8++LexOPXzoRaapkIYtO4Yv/640cvHr2KoXHmxqXXZIVk6xgZGNsstIx5YeI/f/9iWLZ37cW7zx7GIxuEEo818zumfPv548j5u1eqRPmEFH///fvt3ouHR/7IsNcu2LHiH06NINC2bMIFBgaGMHz+xaqRWAAA/ktuUVh1DDcAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Construction Generic Dewatering Small;CGD",
+     "label": "CGD (1-5 Acres)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "cb8ba89c47be231598e64cbc1e3d8676",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXElEQVQokWNhIBOwUKxRXo/BiY2LQQCf4s8vGM69eMDwAEWjbzFDuV0cgxs+jTPTGLJfzGaYRh2nkgpYSNYxEjW+uMvw+uRahkv4FP/9w/AWQ+OaJoYYsmwkFQAAecUVPaT4UBoAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Multisector Generic Permit;NEX",
+     "label": "Multisector Generic Permit (MSP)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "cb8ba89c47be231598e64cbc1e3d8676",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXElEQVQokWNhIBOwUKxRXo/BiY2LQQCf4s8vGM69eMDwAEWjbzFDuV0cgxs+jTPTGLJfzGaYRh2nkgpYSNYxEjW+uMvw+uRahkv4FP/9w/AWQ+OaJoYYsmwkFQAAecUVPaT4UBoAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Multisector Generic Permit;MSP",
+     "label": "Multisector Generic Permit (MSP)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "e035536ade02dd8f44eefad938aadfab",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVUlEQVQokWNhIBOwUK5RXM+JgYlLAK/q7y/OMXx48ABVo35xOYNWnBtejfvSshk+zJ5GJaeSCFhI1TAyNX66+5rhztpLeFX//vMWU+OJphjybCQRAABz6xVvQXnUJQAAAABJRU5ErkJggg==",
+      "contentType": "image/png",
+      "width": 10,
+      "height": 10,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - No Exposure Certification;NEX",
+     "label": "No Exposure Certification (NEX)"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "d5e96335d1003a30ddf054ff96b9291a",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABPklEQVQokcWTPWvCUBSGn2Bw8Af0D2Rt0VU3BwWtHdrS0X7gJOLmEDBDClEEXRyiY7K0ow5SzeQg6Cro4mDp33AopFzFFtPblg6l73Q+eO4959xzVX4p9X+AYpF7RcHvdDB/BEyTiOdRUZSt3TBNNt8C6zUPhQIR34fJhEfg4kvAMNDGY3Kuu/NdlzMRsyyepcB8Tt8wUEOhnV+tona79IDoJ6BS4XS55DiT+Tggm4V2mxORa7V4OgBmMxzbRgn21GiglMs4wNEBIKYikxKIvwPxOHe6zsDzDm/RdfxEgtvpNACIGnM5FqMR0X0fwyGEwyyaTYbSKcViXNZqrNLpXbxe5zWZ5HwwkJQkJOadz9N3HK7Ew2kaPcviRdrDXprGteuSFXYqxU0wL9ulTalEHfCDeyQFhGx7C0j19x/oDbLbXcLucrOjAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 9,
+      "height": 15,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Stormwater - Municipal Separate Storm Sewer Systems;MS4",
+     "label": "Phase I MS4"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "fa13f256a7fac95133a4160da9133e5d",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVQokcWSvUuCURSHn9ekwSkKGsMQiaAyggyCUqgIUqEPoiH6sL2lD2gKc5CoqEEaWnRKoUGHMggLtCjDBkMKIok+HFr6AxqCN65UpO+r4dRvuuec+1x+59yjpUxp/wdox7kiIclJfK4/AQcuXYqDBQmw4lqN4XovCbxwu9vGuA5knkkEgOGiQCeLhiwx+yDeXJwi6BC5C9YfVIE3rsMW5rUaKnKxhTltEn8IMCmALmZtr9w0Gen5ecBILwl2mkXtDG8kD3ji0m9nTfSapz6WpQhLfqC2wJLi7ldWQgxAYUlPhzOKe3+CvTwyiluuwzyd5SofEB4b6E9nODF995HhGA2V6XO2D1WnVEPLSJzNOwPWXD7O1kc93UP3HCktCYl5tzIWThEcFb6r0YdO2Xj8fUfx01U0TqYIDIizAdtUYV0BiN0xM+ORkeTCPVIFhJL4PGr5okAplQ18AmLhXo1e4b76AAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 9,
+      "height": 15,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "MS2, >50K;MS2",
+     "label": "Phase II MS4"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "fa13f256a7fac95133a4160da9133e5d",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVQokcWSvUuCURSHn9ekwSkKGsMQiaAyggyCUqgIUqEPoiH6sL2lD2gKc5CoqEEaWnRKoUGHMggLtCjDBkMKIok+HFr6AxqCN65UpO+r4dRvuuec+1x+59yjpUxp/wdox7kiIclJfK4/AQcuXYqDBQmw4lqN4XovCbxwu9vGuA5knkkEgOGiQCeLhiwx+yDeXJwi6BC5C9YfVIE3rsMW5rUaKnKxhTltEn8IMCmALmZtr9w0Gen5ecBILwl2mkXtDG8kD3ji0m9nTfSapz6WpQhLfqC2wJLi7ldWQgxAYUlPhzOKe3+CvTwyiluuwzyd5SofEB4b6E9nODF995HhGA2V6XO2D1WnVEPLSJzNOwPWXD7O1kc93UP3HCktCYl5tzIWThEcFb6r0YdO2Xj8fUfx01U0TqYIDIizAdtUYV0BiN0xM+ORkeTCPVIFhJL4PGr5okAplQ18AmLhXo1e4b76AAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 9,
+      "height": 15,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "MS2, > 10-50K;MS2",
+     "label": "Phase II MS4"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "fa13f256a7fac95133a4160da9133e5d",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVQokcWSvUuCURSHn9ekwSkKGsMQiaAyggyCUqgIUqEPoiH6sL2lD2gKc5CoqEEaWnRKoUGHMggLtCjDBkMKIok+HFr6AxqCN65UpO+r4dRvuuec+1x+59yjpUxp/wdox7kiIclJfK4/AQcuXYqDBQmw4lqN4XovCbxwu9vGuA5knkkEgOGiQCeLhiwx+yDeXJwi6BC5C9YfVIE3rsMW5rUaKnKxhTltEn8IMCmALmZtr9w0Gen5ecBILwl2mkXtDG8kD3ji0m9nTfSapz6WpQhLfqC2wJLi7ldWQgxAYUlPhzOKe3+CvTwyiluuwzyd5SofEB4b6E9nODF995HhGA2V6XO2D1WnVEPLSJzNOwPWXD7O1kc93UP3HCktCYl5tzIWThEcFb6r0YdO2Xj8fUfx01U0TqYIDIizAdtUYV0BiN0xM+ORkeTCPVIFhJL4PGr5okAplQ18AmLhXo1e4b76AAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 9,
+      "height": 15,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "MSE, < OR = 10K or Other;MS2",
+     "label": "Phase II MS4"
+    }
+   ],
+   "fieldDelimiter": ";",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        252,
+        192,
+        255
+       ],
+       "toColor": [
+        252,
+        252,
+        192,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        237,
+        182,
+        252,
+        255
+       ],
+       "toColor": [
+        237,
+        182,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        197,
+        239,
+        252,
+        255
+       ],
+       "toColor": [
+        197,
+        239,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        189,
+        190,
+        255
+       ],
+       "toColor": [
+        252,
+        189,
+        190,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        252,
+        214,
+        255
+       ],
+       "toColor": [
+        182,
+        252,
+        214,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        190,
+        252,
+        255
+       ],
+       "toColor": [
+        179,
+        190,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        230,
+        212,
+        255
+       ],
+       "toColor": [
+        252,
+        230,
+        212,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        252,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        211,
+        252,
+        179,
+        255
+       ],
+       "toColor": [
+        211,
+        252,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        192,
+        252,
+        243,
+        255
+       ],
+       "toColor": [
+        192,
+        252,
+        243,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        189,
+        219,
+        252,
+        255
+       ],
+       "toColor": [
+        189,
+        219,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        222,
+        179,
+        255
+       ],
+       "toColor": [
+        252,
+        222,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        224,
+        252,
+        215,
+        255
+       ],
+       "toColor": [
+        224,
+        252,
+        215,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -115000.0000000014,
+  "ymin": -115000.00000000186,
+  "xmax": 1015000.0000000006,
+  "ymax": 1015000.0000000019,
+  "spatialReference": {
+   "wkid": 102967,
+   "latestWkid": 6439,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -19550100,
+   "falseY": -7526400,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "FACILITY_NAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "LOCATIONAL_ID",
+   "type": "esriFieldTypeDouble",
+   "alias": "LOCATIONAL_ID",
+   "domain": null
+  },
+  {
+   "name": "FACILITY_ID",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_ID",
+   "length": 9,
+   "domain": null
+  },
+  {
+   "name": "FACILITY_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_NAME",
+   "length": 60,
+   "domain": null
+  },
+  {
+   "name": "ISSUE_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "ISSUE_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "EXPIRATION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "EXPIRATION_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "FACILITY_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_STATUS",
+   "length": 2,
+   "domain": null
+  },
+  {
+   "name": "FACILITY_TYPE_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_TYPE_CODE",
+   "length": 3,
+   "domain": null
+  },
+  {
+   "name": "PERMIT_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "PERMIT_TYPE",
+   "length": 255,
+   "domain": null
+  },
+  {
+   "name": "COUNTY",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "COUNTY",
+   "domain": null
+  },
+  {
+   "name": "COUNTY_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "COUNTY_NAME",
+   "length": 12,
+   "domain": null
+  },
+  {
+   "name": "OFFICE_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "OFFICE_NAME",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "ENVIRONMENTAL_INTEREST",
+   "type": "esriFieldTypeString",
+   "alias": "ENVIRONMENTAL_INTEREST",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "MANAGED_ENTITY_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "MANAGED_ENTITY_TYPE",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "QA_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "QA_STATUS",
+   "length": 12,
+   "domain": null
+  },
+  {
+   "name": "CMCD_COORDINATE_METHOD_ID",
+   "type": "esriFieldTypeString",
+   "alias": "CMCD_COORDINATE_METHOD_ID",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "CAC1_COORDINATE_ACCURACY_ID",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "CAC1_COORDINATE_ACCURACY_ID",
+   "domain": null
+  },
+  {
+   "name": "OOIC_OBJECT_OF_INTEREST_ID",
+   "type": "esriFieldTypeString",
+   "alias": "OOIC_OBJECT_OF_INTEREST_ID",
+   "length": 40,
+   "domain": null
+  },
+  {
+   "name": "PPC_POINT_PROXIMITY_ID",
+   "type": "esriFieldTypeString",
+   "alias": "PPC_POINT_PROXIMITY_ID",
+   "length": 5,
+   "domain": null
+  },
+  {
+   "name": "DISTRICT_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "DISTRICT_NAME",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "LAT_DD",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LAT_DD",
+   "domain": null
+  },
+  {
+   "name": "LAT_MM",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LAT_MM",
+   "domain": null
+  },
+  {
+   "name": "LAT_SS",
+   "type": "esriFieldTypeSingle",
+   "alias": "LAT_SS",
+   "domain": null
+  },
+  {
+   "name": "LONG_DD",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LONG_DD",
+   "domain": null
+  },
+  {
+   "name": "LONG_MM",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LONG_MM",
+   "domain": null
+  },
+  {
+   "name": "LONG_SS",
+   "type": "esriFieldTypeSingle",
+   "alias": "LONG_SS",
+   "domain": null
+  },
+  {
+   "name": "DCD_DATUM_ID",
+   "type": "esriFieldTypeString",
+   "alias": "DCD_DATUM_ID",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "DETERMINATION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "DETERMINATION_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "COLLECTOR_USERNAME",
+   "type": "esriFieldTypeString",
+   "alias": "COLLECTOR_USERNAME",
+   "length": 30,
+   "domain": null
+  },
+  {
+   "name": "VERIFICATION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "VERIFICATION_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "VERIFY_CMCD_METHOD_ID",
+   "type": "esriFieldTypeString",
+   "alias": "VERIFY_CMCD_METHOD_ID",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "VERIFIER_USERNAME",
+   "type": "esriFieldTypeString",
+   "alias": "VERIFIER_USERNAME",
+   "length": 30,
+   "domain": null
+  },
+  {
+   "name": "DOCUMENTS",
+   "type": "esriFieldTypeString",
+   "alias": "DOCUMENTS",
+   "length": 130,
+   "domain": null
+  },
+  {
+   "name": "LAST_INSPECTION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "LAST_INSPECTION_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "GEOMETRY",
+   "type": "esriFieldTypeGeometry",
+   "alias": "GEOMETRY",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "GEOMETRY",
+  "type": "esriFieldTypeGeometry",
+  "alias": "GEOMETRY"
+ },
+ "indexes": [
+  {
+   "name": "R1175_SDE_ROWID_UK",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "WAFR_STW_IMS_SPIDX",
+   "fields": "GEOMETRY",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 3000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true,
+ "serviceItemId": "2965cf944aeb41d0b1ecae68b102d20b"
+}

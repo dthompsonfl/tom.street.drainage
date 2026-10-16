@@ -1,0 +1,284 @@
+{
+ "displayFieldName": "FACILITY_NAME",
+ "fieldAliases": {
+  "LOCATIONAL_ID": "LOCATIONAL_ID",
+  "FACILITY_ID": "FACILITY_ID",
+  "FACILITY_NAME": "FACILITY_NAME",
+  "ISSUE_DATE": "ISSUE_DATE",
+  "EXPIRATION_DATE": "EXPIRATION_DATE",
+  "FACILITY_STATUS": "FACILITY_STATUS",
+  "FACILITY_TYPE_CODE": "FACILITY_TYPE_CODE",
+  "PERMIT_TYPE": "PERMIT_TYPE",
+  "COUNTY": "COUNTY",
+  "COUNTY_NAME": "COUNTY_NAME",
+  "OFFICE_NAME": "OFFICE_NAME",
+  "ENVIRONMENTAL_INTEREST": "ENVIRONMENTAL_INTEREST",
+  "MANAGED_ENTITY_TYPE": "MANAGED_ENTITY_TYPE",
+  "QA_STATUS": "QA_STATUS",
+  "CMCD_COORDINATE_METHOD_ID": "CMCD_COORDINATE_METHOD_ID",
+  "CAC1_COORDINATE_ACCURACY_ID": "CAC1_COORDINATE_ACCURACY_ID",
+  "OOIC_OBJECT_OF_INTEREST_ID": "OOIC_OBJECT_OF_INTEREST_ID",
+  "PPC_POINT_PROXIMITY_ID": "PPC_POINT_PROXIMITY_ID",
+  "DISTRICT_NAME": "DISTRICT_NAME",
+  "LAT_DD": "LAT_DD",
+  "LAT_MM": "LAT_MM",
+  "LAT_SS": "LAT_SS",
+  "LONG_DD": "LONG_DD",
+  "LONG_MM": "LONG_MM",
+  "LONG_SS": "LONG_SS",
+  "DCD_DATUM_ID": "DCD_DATUM_ID",
+  "DETERMINATION_DATE": "DETERMINATION_DATE",
+  "COLLECTOR_USERNAME": "COLLECTOR_USERNAME",
+  "VERIFICATION_DATE": "VERIFICATION_DATE",
+  "VERIFY_CMCD_METHOD_ID": "VERIFY_CMCD_METHOD_ID",
+  "VERIFIER_USERNAME": "VERIFIER_USERNAME",
+  "DOCUMENTS": "DOCUMENTS",
+  "LAST_INSPECTION_DATE": "LAST_INSPECTION_DATE",
+  "OBJECTID": "OBJECTID"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "LOCATIONAL_ID",
+   "type": "esriFieldTypeDouble",
+   "alias": "LOCATIONAL_ID"
+  },
+  {
+   "name": "FACILITY_ID",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_ID",
+   "length": 9
+  },
+  {
+   "name": "FACILITY_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_NAME",
+   "length": 60
+  },
+  {
+   "name": "ISSUE_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "ISSUE_DATE",
+   "length": 8
+  },
+  {
+   "name": "EXPIRATION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "EXPIRATION_DATE",
+   "length": 8
+  },
+  {
+   "name": "FACILITY_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_STATUS",
+   "length": 2
+  },
+  {
+   "name": "FACILITY_TYPE_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "FACILITY_TYPE_CODE",
+   "length": 3
+  },
+  {
+   "name": "PERMIT_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "PERMIT_TYPE",
+   "length": 255
+  },
+  {
+   "name": "COUNTY",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "COUNTY"
+  },
+  {
+   "name": "COUNTY_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "COUNTY_NAME",
+   "length": 12
+  },
+  {
+   "name": "OFFICE_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "OFFICE_NAME",
+   "length": 80
+  },
+  {
+   "name": "ENVIRONMENTAL_INTEREST",
+   "type": "esriFieldTypeString",
+   "alias": "ENVIRONMENTAL_INTEREST",
+   "length": 80
+  },
+  {
+   "name": "MANAGED_ENTITY_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "MANAGED_ENTITY_TYPE",
+   "length": 80
+  },
+  {
+   "name": "QA_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "QA_STATUS",
+   "length": 12
+  },
+  {
+   "name": "CMCD_COORDINATE_METHOD_ID",
+   "type": "esriFieldTypeString",
+   "alias": "CMCD_COORDINATE_METHOD_ID",
+   "length": 4
+  },
+  {
+   "name": "CAC1_COORDINATE_ACCURACY_ID",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "CAC1_COORDINATE_ACCURACY_ID"
+  },
+  {
+   "name": "OOIC_OBJECT_OF_INTEREST_ID",
+   "type": "esriFieldTypeString",
+   "alias": "OOIC_OBJECT_OF_INTEREST_ID",
+   "length": 40
+  },
+  {
+   "name": "PPC_POINT_PROXIMITY_ID",
+   "type": "esriFieldTypeString",
+   "alias": "PPC_POINT_PROXIMITY_ID",
+   "length": 5
+  },
+  {
+   "name": "DISTRICT_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "DISTRICT_NAME",
+   "length": 4
+  },
+  {
+   "name": "LAT_DD",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LAT_DD"
+  },
+  {
+   "name": "LAT_MM",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LAT_MM"
+  },
+  {
+   "name": "LAT_SS",
+   "type": "esriFieldTypeSingle",
+   "alias": "LAT_SS"
+  },
+  {
+   "name": "LONG_DD",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LONG_DD"
+  },
+  {
+   "name": "LONG_MM",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LONG_MM"
+  },
+  {
+   "name": "LONG_SS",
+   "type": "esriFieldTypeSingle",
+   "alias": "LONG_SS"
+  },
+  {
+   "name": "DCD_DATUM_ID",
+   "type": "esriFieldTypeString",
+   "alias": "DCD_DATUM_ID",
+   "length": 10
+  },
+  {
+   "name": "DETERMINATION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "DETERMINATION_DATE",
+   "length": 8
+  },
+  {
+   "name": "COLLECTOR_USERNAME",
+   "type": "esriFieldTypeString",
+   "alias": "COLLECTOR_USERNAME",
+   "length": 30
+  },
+  {
+   "name": "VERIFICATION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "VERIFICATION_DATE",
+   "length": 8
+  },
+  {
+   "name": "VERIFY_CMCD_METHOD_ID",
+   "type": "esriFieldTypeString",
+   "alias": "VERIFY_CMCD_METHOD_ID",
+   "length": 4
+  },
+  {
+   "name": "VERIFIER_USERNAME",
+   "type": "esriFieldTypeString",
+   "alias": "VERIFIER_USERNAME",
+   "length": 30
+  },
+  {
+   "name": "DOCUMENTS",
+   "type": "esriFieldTypeString",
+   "alias": "DOCUMENTS",
+   "length": 130
+  },
+  {
+   "name": "LAST_INSPECTION_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "LAST_INSPECTION_DATE",
+   "length": 8
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "LOCATIONAL_ID": 136831.0,
+    "FACILITY_ID": "FLR10WY27",
+    "FACILITY_NAME": "Soundside Hollow",
+    "ISSUE_DATE": 1720051200000,
+    "EXPIRATION_DATE": 1877731200000,
+    "FACILITY_STATUS": "A",
+    "FACILITY_TYPE_CODE": "CGP",
+    "PERMIT_TYPE": "Stormwater - Small Construction (1-5 AC)",
+    "COUNTY": 57,
+    "COUNTY_NAME": "Santa Rosa",
+    "OFFICE_NAME": "Tallahassee NPDES Stormwater",
+    "ENVIRONMENTAL_INTEREST": "NPDES Stormwater Program",
+    "MANAGED_ENTITY_TYPE": "NPDES Stormwater Facility",
+    "QA_STATUS": "NOT REVIEWED",
+    "CMCD_COORDINATE_METHOD_ID": "DPHO",
+    "CAC1_COORDINATE_ACCURACY_ID": 3,
+    "OOIC_OBJECT_OF_INTEREST_ID": "Facility",
+    "PPC_POINT_PROXIMITY_ID": "APPRX",
+    "DISTRICT_NAME": "NWD",
+    "LAT_DD": 30,
+    "LAT_MM": 24,
+    "LAT_SS": 31.7754,
+    "LONG_DD": 86,
+    "LONG_MM": 49,
+    "LONG_SS": 3.773,
+    "DCD_DATUM_ID": "WGS84",
+    "DETERMINATION_DATE": 1719836679000,
+    "COLLECTOR_USERNAME": "INOI_AUTOMATIC_PROCESS",
+    "VERIFICATION_DATE": null,
+    "VERIFY_CMCD_METHOD_ID": null,
+    "VERIFIER_USERNAME": null,
+    "DOCUMENTS": "https://prodenv.dep.state.fl.us/DepNexus/public/electronic-documents/FLR10WY27/gis-facility!search",
+    "LAST_INSPECTION_DATE": null,
+    "OBJECTID": 18926
+   },
+   "geometry": {
+    "x": -86.817719456066641,
+    "y": 30.408832120163197
+   }
+  }
+ ]
+}
