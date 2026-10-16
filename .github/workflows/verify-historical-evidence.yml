@@ -1,0 +1,32 @@
+name: Verify public historical evidence crosslinks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/check_historical_evidence_crosslinks.py'
+      - '.github/workflows/verify-historical-evidence.yml'
+      - '00_CONTROL/SOURCE_REGISTER.csv'
+      - '00_CONTROL/EVIDENCE_LEDGER.csv'
+      - '00_CONTROL/EXHIBIT_INDEX.csv'
+      - '00_CONTROL/PRIVATE_RESIDENT_PHOTO_INVENTORY_PUBLIC_SAFE_2026-10-16.csv'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-historical-evidence-refs
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check independent crosslink test syntax
+        run: python -m py_compile tools/check_historical_evidence_crosslinks.py
+      - name: Read and rehash all source files, exhibits and claim links
+        run: python tools/check_historical_evidence_crosslinks.py
