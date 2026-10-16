@@ -1,11 +1,11 @@
 {
-  "audited_utc": "2026-10-16T17:17:12.670220+00:00",
+  "audited_utc": "2026-10-16T17:19:56.924018+00:00",
   "repository": "dthompsonfl/tom.street.drainage",
   "branch": "main",
   "scope": "Historical source files and associated manifests named in this audit, not every repository source.",
   "integrity_status": "PASS",
-  "checked_file_count": 21,
-  "checked_bytes": 103914294,
+  "checked_file_count": 23,
+  "checked_bytes": 105681760,
   "verified_files": [
     {
       "source": "NOAA_2006_SOURCE_INDEX",
@@ -120,6 +120,22 @@
       "state": "HASH_VERIFIED"
     },
     {
+      "source": "FDOT_AVAILABLE_AERIAL_PHOTOGRAPHY_2026_LIST",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX/FDOT_AVAILABLE_AERIAL_PHOTOGRAPHY_2026_LIST.pdf",
+      "bytes": 248300,
+      "sha256": "9f53ce4db71b3a7f2ac190d855a0fd3b80cbb9f8e1cc606df40f7933f40e341c",
+      "kind": "official_public_historical_photo_coverage_index",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDOT_RECENT_COUNTY_PHOTO_STATUS",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX/FDOT_RECENT_COUNTY_PHOTO_STATUS.pdf",
+      "bytes": 1519166,
+      "sha256": "29cd190be4c5709fdfc822819cd9400aee6974f11ec65446867ca40e01308d80",
+      "kind": "official_public_historical_photo_coverage_index",
+      "state": "HASH_VERIFIED"
+    },
+    {
       "source": "COUNTY_SANTA_ROSA_WATERSHED_MASTER_PLAN_PUBLIC_DRAFT",
       "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS/Santa_Rosa_County_Watershed_Master_Plan_Public_Draft.pdf",
       "bytes": 42882064,
@@ -231,6 +247,12 @@
       "source": "FDEP_2021_FDOT",
       "status": "NOT_ACQUIRED",
       "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "USDA_2021_NAIP",
+      "status": "NO_USEFUL_SITE_IMAGE",
+      "reason": "ValueError: Image center likely blank or no coverage; SD 0.0",
+      "catalog_primary_tile_status": "POINT_INTERSECTION_RETRIEVED"
     },
     {
       "source": "COUNTY_AERIALS_MAPSERVER",
