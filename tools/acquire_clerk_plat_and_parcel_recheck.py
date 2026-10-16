@@ -154,9 +154,9 @@ def clerk_search():
                     if not select_status:
                         try:
                             page.locator("button[onclick*='ShowTypes']").click()
-                            check=page.locator("input[name='BookTypeInfoCheckBox'][value='3']")
-                            check.check()
-                            page.locator("input[value='Done']").click()
+                            check=page.locator("#BookTypeDiv input[name='BookTypeInfoCheckBox'][value='3']").first
+                            check.check(force=True)
+                            page.locator("#BookTypeDiv input[value='Done']").first.click(force=True)
                             select_status.append({"selected":"PLAT - Plats/Maps",
                                                   "field":"BookTypeInfoCheckBox", "value":"3",
                                                   "display":page.locator("#BookTypesDisplay").input_value()})
