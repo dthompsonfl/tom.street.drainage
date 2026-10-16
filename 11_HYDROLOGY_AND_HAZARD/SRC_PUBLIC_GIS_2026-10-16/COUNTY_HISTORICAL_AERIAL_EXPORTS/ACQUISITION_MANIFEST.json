@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-10-16T06:58:52.486700+00:00",
+  "status": "NO_VALID_COUNTY_EXPORTS_RETRIEVED",
+  "success_count": 0,
+  "attempt_count": 8,
+  "source_agency": "Santa Rosa County Geographic Information Systems",
+  "source_disclaimer": "https://www.santarosa.fl.gov/470/Mapping-GIS",
+  "bounding_box_wgs84_west_south_east_north": [
+    -86.8162,
+    30.4144,
+    -86.8134,
+    30.416
+  ],
+  "image_size_pixels": [
+    1600,
+    1000
+  ],
+  "entries": [
+    {
+      "service_year_label": 2001,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2001/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2001/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2005,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2005/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2005/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2006,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2006/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2006/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2010,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2010/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2010/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2012,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2012/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2012/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2016,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2016/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/GoSpatial/Aerials2016/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2019,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2019/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2019/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "service_year_label": 2022,
+      "map_service": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer",
+      "request_url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer/export?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C1000&format=jpg&dpi=96&f=image&transparent=false",
+      "status": "NOT_ACQUIRED",
+      "failure_type": "HTTPError",
+      "failure_details": "HTTP Error 500: Internal Server Error"
+    }
+  ],
+  "limitations": [
+    "Derived county MapServer JPEG exports, not original survey-grade aerial imagery or originals from acquisition.",
+    "Service year labels do not establish exact aerial flight date of every pixel; underlying orthophoto metadata is required.",
+    "Map export bbox uses WGS84 and fixed pixel size, and individual years may have different ground sampling distance and georegistration.",
+    "Raster exports do not prove a land elevation or lawful runoff drainage path.",
+    "Imagery from 2022 or earlier does not establish what grading exists in 2026.",
+    "County GIS metadata/distribution liability and source URL must accompany redistributed extracts.",
+    "No resident private photographs or metadata are included."
+  ]
+}
