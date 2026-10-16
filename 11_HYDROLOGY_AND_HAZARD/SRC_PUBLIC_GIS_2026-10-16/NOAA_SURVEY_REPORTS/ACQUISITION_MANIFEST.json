@@ -1,19 +1,22 @@
 {
-  "retrieved_utc": "2026-10-16T17:08:55.739601+00:00",
+  "retrieved_utc": "2026-10-16T17:16:46.837303+00:00",
   "agency": "NOAA Office for Coastal Management / NWFWMD / USGS",
   "source_metadata": [
     "https://www.fisheries.noaa.gov/inport/item/55909",
     "https://www.fisheries.noaa.gov/inport/item/58332"
   ],
-  "retrieved_count": 4,
+  "retrieved_count": 5,
   "requested_count": 5,
   "records": [
     {
       "id": "2017_NWFWMD_Project_Report",
       "title": "2017 NWFWMD Escambia/Santa Rosa project report",
-      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid12b/8680/supplemental/FL_Escambia_Santa_Rosa_NWFWMD_Lidar_Project_Report_20180301.pdf",
-      "status": "NOT_ACQUIRED",
-      "reason": "HTTPError: HTTP Error 404: Not Found"
+      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8680/supplemental/FL_Escambia_Santa_Rosa_NWFWMD_Lidar_Project_Report_20180301.pdf",
+      "status": "ORIGINAL_NOAA_PDF_SAVED_STRUCTURALLY_VALIDATED",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2017_NWFWMD_Project_Report.pdf",
+      "sha256": "1ca8884e6e3dd2d35580a9807b356ff7bb29ea4c90fd84c9338567bb407beb06",
+      "bytes": 6103932,
+      "pages": 91
     },
     {
       "id": "2018_Panhandle_Acquisition_Report",
