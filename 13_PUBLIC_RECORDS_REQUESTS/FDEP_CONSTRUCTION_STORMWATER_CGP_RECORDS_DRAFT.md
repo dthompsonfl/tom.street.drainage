@@ -15,6 +15,10 @@ Please provide existing Notices of Intent, coverage acknowledgment/IDs, operator
 
 Please produce existing non-exempt files electronically in native format if practicable, provide rolling batches, state any exemption relied upon for withholding, and advise of estimated fees before extensive production. If no responsive records are held, please confirm the search scope and whether another office is the appropriate custodian. This is a records request, not a request that DEP prepare a new legal/engineering opinion.
 
+**Bounded public FDEP GIS check completed October 16:** the FDEP stormwater map returned zero points within 500 metres of the selected Tom Street location and one facility, **Soundside Hollow / FLR10WY27**, within 2 km. There is no proven connection to 2264 or 2268. This GIS result does **not** establish that a separate CGP authorization, NOI or SWPPP does not exist, so please search your official underlying permitting records independently of spatial point proximity.
+
+**Public FDEP program contact for routing questions:** NPDES-Stormwater@floridadep.gov / (850) 245-7522. Confirm the correct public-records custodian at submission.
+
 Research basis: https://floridadep.gov/water/stormwater/content/construction-activity
 
 Submission recipient/date/receipt: **NOT PROVIDED - DO NOT MARK SENT**.
