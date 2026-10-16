@@ -1,5 +1,5 @@
 {
-  "captured_utc": "2026-10-16T20:43:43.133963+00:00",
+  "captured_utc": "2026-10-16T20:45:43.660081+00:00",
   "purpose": "Limited pre-request official public parcel/plat and original Clerk URL retrieval",
   "privacy": "Clerk deed originals not committed to public repository without signature/third-party privacy review",
   "srcpa_parcels": {
@@ -103,7 +103,7 @@
       "record": "OR_BOOK_3653_PAGE_976",
       "status": "OFFICIAL_PDF_BYTES_RETRIEVED_PRIVACY_REVIEW_REQUIRED",
       "source_bytes": 181610,
-      "sha256": "fd67d0ee74b9d469ec1423b920c0ecb06cb334c2f244d4082edde9f5e6e0642b",
+      "sha256": "10df7fbc44964abc0d2b2aeafd0477e131ba8d9c3f4708a8e56cd9c48047972a",
       "page_count": 3,
       "contains_image_based_pages": true
     },
@@ -112,7 +112,7 @@
       "record": "OR_BOOK_718_PAGE_289",
       "status": "OFFICIAL_PDF_BYTES_RETRIEVED_PRIVACY_REVIEW_REQUIRED",
       "source_bytes": 674332,
-      "sha256": "734f15dd6afbdf2944affc789c230058b3b6d1eb6055de983fa90c685a716a3d",
+      "sha256": "36c5a24e9a20a2ed5722fb751d9e40725eaf84415db67f0033fd370d7482fddc",
       "page_count": 4,
       "contains_image_based_pages": true
     }
@@ -125,7 +125,7 @@
         "book_type_requested": "PLAT",
         "book_number_requested": "A",
         "page_requested": "70",
-        "status": "PLAT_BOOK_TYPE_CONTROL_NOT_VERIFIED",
+        "status": "EXACT_PLAT_INDEX_MATCH_FOUND",
         "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeBookPage",
         "form_field_names": [
           {
@@ -164,16 +164,140 @@
             "tag": "BUTTON"
           }
         ],
-        "book_type_widget_error": "Error: Locator.check: Element is not visible\nCall log:\n  - waiting for locator(\"#BookTypeDiv input[name='BookTypeInfoCheckBox'][value='3']\").first\n    - locator resolved to <input value=\"",
-        "selected_book_type_options": [],
+        "selected_book_type_options": [
+          {
+            "selected": "PLAT - Plats/Maps",
+            "field": "BookTypeInfoCheckBox",
+            "value": "3",
+            "display": "PLAT",
+            "book_types": "3"
+          }
+        ],
         "book_field_accepted": true,
-        "page_field_accepted": true
+        "page_field_accepted": true,
+        "result_book_terms": [
+          {
+            "term": "CRESCENT SHORES",
+            "found": true
+          },
+          {
+            "term": "PLAT",
+            "found": true
+          }
+        ],
+        "safe_index_rows": [
+          {
+            "book_type": "PLAT",
+            "book_page": "A/70",
+            "document_type": "PLAT",
+            "legal_region": "CRESCENT SHORES",
+            "document_id": "875693",
+            "original": {
+              "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_CLERK_PLAT_BOOK_A_PAGE_70.pdf",
+              "bytes": 3377943,
+              "sha256": "37b48f9c727e42163bbca3f407c9e827b3b3af7cd106b86f457d38e9c6ac36d1",
+              "url": "https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/875693",
+              "pages": 2,
+              "release": "PUBLIC_CLERK_PLAT_SUBJECT_TO_HUMAN_EXHIBIT_REVIEW"
+            },
+            "original_acquisition_status": "SOURCE_PDF_ARCHIVED_EXACT_PLAT_INDEX_MATCH"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/71",
+            "document_type": "PLAT",
+            "legal_region": "WOODLAWN SHORES",
+            "document_id": "875694"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/72",
+            "document_type": "PLAT",
+            "legal_region": "LEBER",
+            "document_id": "875695"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/73",
+            "document_type": "PLAT",
+            "legal_region": "EULA",
+            "document_id": "875696"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/76",
+            "document_type": "PLAT",
+            "legal_region": "SOUNDSIDE",
+            "document_id": "875697"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/77",
+            "document_type": "PLAT",
+            "legal_region": "TOWN POINT ESTATES",
+            "document_id": "875698"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/78",
+            "document_type": "PLAT",
+            "legal_region": "MAGNOLIA MANOR",
+            "document_id": "875699"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/80",
+            "document_type": "PLAT",
+            "legal_region": "BOONES FIRST ADDITION TO ORIOLE BEACH",
+            "document_id": "875700"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/81",
+            "document_type": "PLAT",
+            "legal_region": "POINT HERNANDEZ",
+            "document_id": "875701"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/82",
+            "document_type": "PLAT",
+            "legal_region": "CASABLANCA PARCEL NUMBER ONE",
+            "document_id": "875702"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/83",
+            "document_type": "PLAT",
+            "legal_region": "CASABLANCA PARCEL NUMBER TWO",
+            "document_id": "875703"
+          }
+        ],
+        "safe_index_count_visible": 11,
+        "exact_plat_index_matches": [
+          {
+            "book_type": "PLAT",
+            "book_page": "A/70",
+            "document_type": "PLAT",
+            "legal_region": "CRESCENT SHORES",
+            "document_id": "875693",
+            "original": {
+              "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_CLERK_PLAT_BOOK_A_PAGE_70.pdf",
+              "bytes": 3377943,
+              "sha256": "37b48f9c727e42163bbca3f407c9e827b3b3af7cd106b86f457d38e9c6ac36d1",
+              "url": "https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/875693",
+              "pages": 2,
+              "release": "PUBLIC_CLERK_PLAT_SUBJECT_TO_HUMAN_EXHIBIT_REVIEW"
+            },
+            "original_acquisition_status": "SOURCE_PDF_ARCHIVED_EXACT_PLAT_INDEX_MATCH"
+          }
+        ]
       },
       {
         "book_type_requested": "PLAT",
         "book_number_requested": "A",
         "page_requested": "70A",
-        "status": "PLAT_BOOK_TYPE_CONTROL_NOT_VERIFIED",
+        "status": "NO_EXACT_PLAT_RECORD_FOUND_IN_GUEST_VISIBLE_PAGE",
         "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeBookPage",
         "form_field_names": [
           {
@@ -210,12 +334,200 @@
             "id": "toggleForm",
             "name": null,
             "tag": "BUTTON"
+          },
+          {
+            "id": "btnAddToCart",
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": "SearchCriteriaButton",
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": "btnSelCols",
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": "rsltsClr",
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": "Wrap",
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": "printResults",
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": null,
+            "name": null,
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": "checkedRecords",
+            "tag": "INPUT"
           }
         ],
-        "book_type_widget_error": "Error: Locator.check: Element is not visible\nCall log:\n  - waiting for locator(\"#BookTypeDiv input[name='BookTypeInfoCheckBox'][value='3']\").first\n    - locator resolved to <input value=\"",
-        "selected_book_type_options": [],
+        "selected_book_type_options": [
+          {
+            "selected": "PLAT - Plats/Maps",
+            "field": "BookTypeInfoCheckBox",
+            "value": "3",
+            "display": "PLAT",
+            "book_types": "3"
+          }
+        ],
         "book_field_accepted": true,
-        "page_field_accepted": true
+        "page_field_accepted": true,
+        "result_book_terms": [
+          {
+            "term": "CRESCENT SHORES",
+            "found": true
+          },
+          {
+            "term": "PLAT",
+            "found": true
+          }
+        ],
+        "safe_index_rows": [
+          {
+            "book_type": "PLAT",
+            "book_page": "A/70",
+            "document_type": "PLAT",
+            "legal_region": "CRESCENT SHORES",
+            "document_id": "875693"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/71",
+            "document_type": "PLAT",
+            "legal_region": "WOODLAWN SHORES",
+            "document_id": "875694"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/72",
+            "document_type": "PLAT",
+            "legal_region": "LEBER",
+            "document_id": "875695"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/73",
+            "document_type": "PLAT",
+            "legal_region": "EULA",
+            "document_id": "875696"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/76",
+            "document_type": "PLAT",
+            "legal_region": "SOUNDSIDE",
+            "document_id": "875697"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/77",
+            "document_type": "PLAT",
+            "legal_region": "TOWN POINT ESTATES",
+            "document_id": "875698"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/78",
+            "document_type": "PLAT",
+            "legal_region": "MAGNOLIA MANOR",
+            "document_id": "875699"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/80",
+            "document_type": "PLAT",
+            "legal_region": "BOONES FIRST ADDITION TO ORIOLE BEACH",
+            "document_id": "875700"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/81",
+            "document_type": "PLAT",
+            "legal_region": "POINT HERNANDEZ",
+            "document_id": "875701"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/82",
+            "document_type": "PLAT",
+            "legal_region": "CASABLANCA PARCEL NUMBER ONE",
+            "document_id": "875702"
+          },
+          {
+            "book_type": "PLAT",
+            "book_page": "A/83",
+            "document_type": "PLAT",
+            "legal_region": "CASABLANCA PARCEL NUMBER TWO",
+            "document_id": "875703"
+          }
+        ],
+        "safe_index_count_visible": 11,
+        "exact_plat_index_matches": []
       }
     ]
   }
