@@ -83,6 +83,8 @@ def validate(tmp_path: Path) -> dict:
                 "parcel": info["parcel"],
                 "lon": info["lon"], "lat": info["lat"],
                 "raster_x": x, "raster_y": y, "elevation_raster_units": float(val),
+                "elevation_units": "U.S. survey feet (EPSG:6360)",
+                "elevation_meters_derived": float(val) * (1200.0 / 3937.0),
             }
         return {
             "crs": str(src.crs), "width": src.width, "height": src.height,
@@ -121,7 +123,9 @@ def main() -> None:
         "source_catalog": SOURCE_CATALOG,
         "dataset_metadata": METADATA,
         "source_acquisition_window": "2017-03-31 to 2017-04-08",
-        "source_vertical_reference": "NAVD88, GEOID12B per dataset lineage; confirm raster-specific tags before engineering comparison",
+        "source_vertical_reference": "NAVD88 (GEOID12B), U.S. survey feet, as stated in NOAA InPort 55909 process step 12 (vertical EPSG:6360)",
+        "horizontal_grid_units": "meters, 1 meter cell size, EPSG:6345",
+        "vertical_elevation_units": "U.S. survey feet; derived meters use factor 1200/3937",
         "bytes": len(raw),
         "sha256": hashlib.sha256(raw).hexdigest(),
         "local_original": str(DEST),
