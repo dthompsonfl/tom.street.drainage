@@ -164,6 +164,7 @@ for i, p in enumerate(PROPS, start=110):
             local_relative_path="", notes=note))
 
 if __name__ == "__main__":
+    raise SystemExit("LEGACY REGISTER BUILDER DISABLED: outdated source assumptions and duplicate identifiers. Use current acquisition and canonical reconciliation tools; never overwrite validated registers with these bootstrap fixtures.")
     # append to SOURCE_REGISTER
     f = CTL / "SOURCE_REGISTER.csv"
     existing = list(csv.DictReader(f.open()))
