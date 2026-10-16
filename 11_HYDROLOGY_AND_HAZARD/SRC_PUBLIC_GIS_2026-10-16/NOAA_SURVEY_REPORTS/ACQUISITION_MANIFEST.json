@@ -1,0 +1,65 @@
+{
+  "retrieved_utc": "2026-10-16T17:08:55.739601+00:00",
+  "agency": "NOAA Office for Coastal Management / NWFWMD / USGS",
+  "source_metadata": [
+    "https://www.fisheries.noaa.gov/inport/item/55909",
+    "https://www.fisheries.noaa.gov/inport/item/58332"
+  ],
+  "retrieved_count": 4,
+  "requested_count": 5,
+  "records": [
+    {
+      "id": "2017_NWFWMD_Project_Report",
+      "title": "2017 NWFWMD Escambia/Santa Rosa project report",
+      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid12b/8680/supplemental/FL_Escambia_Santa_Rosa_NWFWMD_Lidar_Project_Report_20180301.pdf",
+      "status": "NOT_ACQUIRED",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "2018_Panhandle_Acquisition_Report",
+      "title": "2018 project flight acquisition report",
+      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8945/supplemental/3143_NWFWMD_FL_PanHandle_Aquisition_Report.pdf",
+      "status": "ORIGINAL_NOAA_PDF_SAVED_STRUCTURALLY_VALIDATED",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Acquisition_Report.pdf",
+      "sha256": "a2d3fbeac68732c22ef373b75e1b36ced70babaff4aebbbfbdc0d321b7e7f4ec",
+      "bytes": 14853962,
+      "pages": 148
+    },
+    {
+      "id": "2018_Panhandle_Control_Report",
+      "title": "2018 acquisition/control report",
+      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8945/supplemental/FL_PanHandle_Aquisition_Control_Report.pdf",
+      "status": "ORIGINAL_NOAA_PDF_SAVED_STRUCTURALLY_VALIDATED",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Control_Report.pdf",
+      "sha256": "15cf825b7d879776fae1785264bbd816a550d01abc59689271a599be0fa2a03f",
+      "bytes": 1153067,
+      "pages": 12
+    },
+    {
+      "id": "2018_Panhandle_Checkpoint_Survey_Report",
+      "title": "2018 independent survey checkpoint report",
+      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8945/supplemental/FL_PanHandle_Checkpoints_Survey_Report.pdf",
+      "status": "ORIGINAL_NOAA_PDF_SAVED_STRUCTURALLY_VALIDATED",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Checkpoint_Survey_Report.pdf",
+      "sha256": "f5adb31dfb4e07c242407e7ed9b059cd25526d852d5a40e5c824a60c363b55cc",
+      "bytes": 1300498,
+      "pages": 32
+    },
+    {
+      "id": "2018_Panhandle_Project_Report",
+      "title": "2018 overall project report",
+      "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8945/supplemental/FL_Panhandle_Lidar_Project_Report_20190601.pdf",
+      "status": "ORIGINAL_NOAA_PDF_SAVED_STRUCTURALLY_VALIDATED",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Project_Report.pdf",
+      "sha256": "4107fbdacc006bc6593837943c72e817ec3ca703e7471d4d59c0be8a1e08a30b",
+      "bytes": 7706553,
+      "pages": 149
+    }
+  ],
+  "limitations": [
+    "Regional LiDAR QA reports, not surveyed elevations for individual Tom Street lot corners.",
+    "Preserved PDF bytes and page count do not equal comprehensive technical audit of each report.",
+    "2018 coverage of the target sites must be established by 2018 index intersections; broader dataset bounds are not proof.",
+    "Vertical datums/units/geoid models vary across products and need engineer/surveyor reconciliation."
+  ]
+}
