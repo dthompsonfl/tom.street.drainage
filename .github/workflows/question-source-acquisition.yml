@@ -1,0 +1,46 @@
+name: Acquire public question sources for review
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_question_sources.py'
+      - 'tools/test_research_capture.py'
+      - '.github/workflows/question-source-acquisition.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: question-source-acquisition
+  cancel-in-progress: false
+jobs:
+  capture-for-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline acquisition safety tests
+        run: python tools/test_research_capture.py
+      - name: Capture bounded public agency responses
+        run: python tools/acquire_question_sources.py
+      - name: Package exact source baseline and new captures for review
+        if: always()
+        run: |
+          mkdir -p /tmp/research-review
+          git archive --format=zip --output=/tmp/research-review/source_snapshot.zip HEAD
+          if [ -d 17_CURRENT_RESEARCH/captures ]; then
+            cp -r 17_CURRENT_RESEARCH/captures /tmp/research-review/captures
+          fi
+          git rev-parse HEAD > /tmp/research-review/BASE_COMMIT.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tom-street-public-source-review
+          path: /tmp/research-review/
+          retention-days: 30
+# No automatically acquired data are committed. Review raw bytes, identity,
+# geographic scope and privacy before a separate authorized main-branch update.
