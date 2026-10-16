@@ -1,0 +1,61 @@
+name: Capture public Clerk plat lookup and parcel refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_clerk_plat_and_parcel_recheck.py'
+      - '.github/workflows/acquire-clerk-plat-and-parcels.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+concurrency:
+  group: tom-street-clerk-pa-public-index
+  cancel-in-progress: false
+
+jobs:
+  search-and-preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install bounded public portal search dependencies
+        run: |
+          python -m pip install requests==2.32.5 beautifulsoup4==4.14.2 pypdf==6.1.1 playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Validate source scraper
+        run: python -m py_compile tools/acquire_clerk_plat_and_parcel_recheck.py
+      - name: Fetch County Property Appraiser and Clerk public references
+        run: python tools/acquire_clerk_plat_and_parcel_recheck.py
+      - name: Check source bytes and source-status limitations
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          p=pathlib.Path("02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ACQUISITION_REPORT.json")
+          r=json.loads(p.read_text())
+          assert r["privacy"].startswith("Clerk deed originals not committed")
+          for v in r.get("srcpa_parcels",{}).get("results",[]):
+            for key in ["query","export"]:
+              if key in v:
+                f=pathlib.Path(v[key]["path"])
+                assert f.is_file() and f.stat().st_size==v[key]["bytes"]
+                assert hashlib.sha256(f.read_bytes()).hexdigest()==v[key]["sha256"]
+          print("Validated official parcel original byte counts and SHA256 if obtainable")
+          PY
+      - name: Preserve only safe public search indices and parcel exports on main
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "evidence: preserve official Clerk plat search results and dated parcel refresh [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
