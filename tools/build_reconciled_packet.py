@@ -137,7 +137,8 @@ def main():
         for page in PdfReader(str(pdf)).pages:
             writer.add_page(page)
         outputs.append({"source_md": md_name, "source_sha256": sha(markdown.read_bytes()), "pdf": pdf_name,
-                        "bytes": pdf.stat().st_size, "sha256": sha(pdf.read_bytes()), "pages": pages})
+                        "bytes": pdf.stat().st_size, "sha256": sha(pdf.read_bytes()), "pages": pages,
+                        "page_text_lengths": [len((page.extract_text() or "").split("TOM STREET |")[0].strip()) for page in PdfReader(str(pdf)).pages]})
     combined = OUT / COMBINED
     with combined.open("wb") as stream:
         writer.write(stream)
