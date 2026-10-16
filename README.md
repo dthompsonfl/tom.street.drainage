@@ -1,6 +1,6 @@
 # Tom Street Drainage Investigation
 
-> **Research status (October 15, 2026 local): DRAFT EVIDENCE PACKET; NOT AN ENGINEERING OR LEGAL FINDING.** This GitHub repository is **public**. The approved plans and measurements needed to determine drainage performance have **not** been obtained. Read [the current release guide](15_RECONCILED_DRAFTS/README.md) before using anything in a meeting.
+> **Research status (October 15, 2026 local): DRAFT EVIDENCE PACKET; NOT AN ENGINEERING OR LEGAL FINDING.** See the [final review decision](00_CONTROL/FINAL_REVIEW_READINESS_2026-10-15.md) and [file-by-file scope inventory](00_CONTROL/FINAL_FILE_SCOPE_INVENTORY_2026-10-15.csv). This GitHub repository is **public**. The approved plans and measurements needed to determine drainage performance have **not** been obtained. Read [the current release guide](15_RECONCILED_DRAFTS/README.md) before using anything in a meeting.
 
 ## Current property and permit register
 
