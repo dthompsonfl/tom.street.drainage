@@ -125,6 +125,26 @@ Certificate of Occupancy, when the County Engineer determines … necessary …
 - Recorded because the Tom Street frontage is the likely location of any such
   easement and **no easement has been located** (GAP-14).
 
+### B5 — § 4.04.01.D.4, conditional lot-grading-plan exemptions
+*Printed page 252 = PDF page 270.*
+
+- **Status: CONDITIONALLY_APPLICABLE / EXEMPTION UNRESOLVED.** The published code provides four alternative paths for exempting a **lot grading plan**, with conditions involving structure/fill configuration, stem-wall lot width, wide lots, or special circumstances at the discretion of the County Engineer/Building Official. It expressly notes construction **BMP requirements remain** despite lot grading exemptions.
+- A narrow single-family-lot exemption from a plan must not be read as a blanket exemption from drainage, erosion control, certified as-built, or other applicable requirements.
+- **Evidence needed:** the County's written exemption/waiver record or documented classification, and elevations, fill quantity, foundation configuration, lot dimensions and neighboring runoff consequences. Neither photos nor an unverified lot size establish an exemption or its absence.
+
+### B6 — § 4.04.01.E, certified as-built before occupancy
+*Printed page 252 = PDF page 270.*
+
+- **Status: VERIFIED CODE TEXT / SITE-SPECIFIC COMPLIANCE UNRESOLVED.** Section E states: **"All lots will require a certified as-built prior to issuance of the Certificate of Occupancy."** This provision is **separate from** the conditional § 4.04.01.D.1.g engineer's conformance-letter pathway.
+- The current site task **"Certified Drainage as Built: Assigned"** neither proves that a certified as-built has been produced nor that it is absent, due, overdue, or approved.
+- **Evidence needed:** actual MGO document record and county engineering approval/CO gate for each permit, plus the governing ordinance edition.
+
+### B7 — § 4.04.01.G-H and I, roadside geometry and calculations
+*Printed pages 253 onward = PDF pages 271 onward.*
+
+- **Status: CONDITIONALLY_APPLICABLE.** The published code includes ditch/swale, right-of-way, minimum-slope and stormwater-design requirements. The exact provisions controlling an existing ditch, a lot-grading exemption or a subdivision-installed system depend on approved plans, asset ownership, design and any approved exception.
+- Request documented roadside cross-sections, minimum slopes, swale depth, ditch maintenance acceptance, engineered calculations and the receiving outfall. **Do not derive grade compliance from an inspector's adjective or uncalibrated photographs.**
+
 ---
 
 ## C. Florida public-records law — verified text
@@ -190,6 +210,9 @@ The original opinion is a legal research source, not a homeowner technical exhib
 | LDC § 3.04.05 erosion/sediment control | yes, primary PDF | conditionally | SWPPP applicability; evidence of any discharge |
 | LDC § 4.04.01.B PE-sealed plan before permit | yes, primary PDF | conditionally | whether such a plan exists for these lots |
 | **LDC § 4.04.01.D.1 (sub-1-acre lots)** | yes, primary PDF | **conditionally — pivotal** | **GAP-11: on-file subdivision lot grading plan?** |
+| **LDC § 4.04.01.D.4 (lot grading exemptions)** | yes, primary PDF | conditional, not established | written exemption/pathway and site/fill measurements |
+| **LDC § 4.04.01.E (all-lots certified as-built)** | yes, primary PDF | general rule, permit-specific compliance unresolved | certified as-built document, county acceptance and CO stage |
+| **LDC § 4.04.01.G-H (swale geometry)** | yes, primary PDF | conditional | approved design, right-of-way acceptance, actual measurements |
 | LDC § 4.04.01.D.2.b drainage easement | yes, primary PDF | not applicable on current evidence | — |
 | Fla. Stat. § 119.07 (2026) | yes, official text | yes | — |
 | Fla. Stat. § 373.042 (2026) | yes, official text | unresolved | minimum flow for the receiving watercourse |
@@ -203,6 +226,8 @@ means the compliance question cannot yet be reached in either direction.
 ## G. Edition and amendment control (October 2026)
 
 The county-hosted LDC edition identifies **Ord. 2025-25 (adopted November 10, 2025)** on its cover, with amendments to §§ 3.04.05 and 4.04.01. An internal PDF creation timestamp in January 2026 must not be reported as a new legal enactment. The 2026 Ordinances index shows later LDC-related enactments, some changing zoning/future-land-use maps. Review each ordinance's effective date and text against the actual permits **created February 11, 2026 and issued March 23, 2026** before asserting any amendment applied or did not apply. Sources: https://santarosa.fl.gov/182/Land-Development-Code and https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026 .
+
+**Jurisdiction and post-issuance ordinance control:** The official [Santa Rosa 2026 Ordinances index](https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026) lists **2026-03 (January 22, wellfield protection overlay)** before the March 2026 permits, and **2026-10 (May 21), 2026-14 (June 22), 2026-16 (July 23)** relating to zoning/land-use map revisions after their issuance. Index descriptions alone do not establish Tom Street parcel applicability. Collect final ordinance text, map exhibits and effective-date clauses, then distinguish law controlling initial review from any later revisions. County [Stormwater Requirements](https://santarosa.fl.gov/197/Stormwater-Requirements) identifies Santa Rosa County Engineering as the subdivision plan reviewer. County [Road Issues](https://santarosa.fl.gov/377/Road-Issues) limits maintenance services to county-maintained roads; **Tom Street maintainer and roadside asset acceptance are unresolved** and must be separately established. See [jurisdiction scope register](JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md). Do not use other Florida county ordinances as controlling local law.
 
 ## H. DEP historical order-index leads (official PDFs preserved)
 

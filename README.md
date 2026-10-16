@@ -2,6 +2,10 @@
 
 > **Research status (October 15, 2026 local): DRAFT EVIDENCE PACKET; NOT AN ENGINEERING OR LEGAL FINDING.** See the [final review decision](00_CONTROL/FINAL_REVIEW_READINESS_2026-10-15.md) and [file-by-file scope inventory](00_CONTROL/FINAL_FILE_SCOPE_INVENTORY_2026-10-15.csv). This GitHub repository is **public**. The approved plans and measurements needed to determine drainage performance have **not** been obtained. Read [the current release guide](15_RECONCILED_DRAFTS/README.md) before using anything in a meeting.
 
+## Controlling jurisdiction: Santa Rosa County only
+
+**Local authority is Santa Rosa County, Florida**, not any neighboring county. Use the [jurisdiction, agency and legal-edition register](00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md) to distinguish County Engineering, Building Inspections, Public Works, Property Appraiser and Clerk roles from Florida DEP/NWFWMD requirements and federal FEMA/NOAA/EPA background. **Do not assume Tom Street is county-maintained** without the Street-Maintainer lookup and easement/acceptance documents. The November 2025 LDC PDF must be read alongside effective 2026 ordinances, conditional lot-grading exemptions (§ 4.04.01.D.4), and the separate **all-lots certified-as-built** provision (§ 4.04.01.E). None establishes a site violation without actual plans and measurements.
+
 ## Current property and permit register
 
 These identifiers come from saved Santa Rosa County Property Appraiser and MGO permit records, **not a live status guarantee**. The source timestamps are in the original files.

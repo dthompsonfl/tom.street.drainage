@@ -5,7 +5,7 @@
 To: Florida Department of Environmental Protection, NPDES Stormwater Program / Public Records Custodian
 Subject: Existing CGP, NOI, acknowledgment, SWPPP, inspection and termination records potentially associated with the Tom Street construction parcels in Santa Rosa County
 
-Please search available electronic and physical records for existing construction-stormwater documents during 2025-2026 associated with:
+Florida DEP's [Construction Activity](https://floridadep.gov/water/stormwater/content/construction-activity) guidance states that CGP coverage depends on disturbed acreage **or a common plan of development** and a qualifying discharge to state waters or an MS4. This request **does not assert that either small individual lot necessarily requires CGP coverage**, or that FDEP issued a site-specific ERP. Please search available electronic and physical records for existing construction-stormwater documents during 2025-2026 associated with:
 
 - 2264 Tom Street, Navarre FL; parcel 21-2S-26-0780-0QQ00-1020; county building permit BP-2026-1621
 - 2268 Tom Street, Navarre FL; parcel 21-2S-26-0780-0QQ00-1490; county building permit BP-2026-1612

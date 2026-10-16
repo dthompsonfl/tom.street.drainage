@@ -12,7 +12,7 @@ Both permit task lists have an item called **Certified Drainage as Built**, mark
 
 1. Can County Engineering provide the approved grading and drainage plans, with all revisions and calculations, for each lot?
 2. Is a subdivision lot-grading plan on file, and what exact approval or alternative applies?
-3. What are the actual roadside/driveway pipe and inlet invert elevations, positive outfalls, and maintenance responsibilities?
+3. What are the roadside/driveway pipe and inlet invert elevations and outfalls? Who maintains Tom Street's road and drainage structures?
 4. Will County Engineering document a site inspection and review potential changes to runoff reaching nearby existing homes?
 5. Who will provide the written response, document index, and follow-up schedule?
 

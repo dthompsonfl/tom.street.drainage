@@ -17,11 +17,11 @@ The County's captured MGO records identify **BP-2026-1621** at 2264 Tom Street (
 1. Approved site/lot-grading and stormwater plans, engineering calculations, subdivision master grading plan (if any), approval conditions and review correspondence.
 2. Preconstruction and final topographic/boundary surveys, finished floor/perimeter elevations, driveway/culvert/inlet specifications, invert elevations and receiving outfalls.
 3. Erosion controls, inspection reports, engineer of record, licensed contractor, required sealed certifications/as-builts and CO status.
-4. Shared Tom Street right-of-way/ditch plans, easements, ownership/acceptance, maintenance logs and drainage complaints/corrective-action records.
+4. Shared Tom Street right-of-way/ditch plans, easements, road-maintainer and asset-acceptance records, ownership, maintenance logs and drainage complaints/corrective-action records.
 
 Please confirm **whether a subdivision lot grading plan was on file**, which approved plan or permit pathway applies to each lot, and the actual status of the **Certified Drainage as Built** tasks. An MGO task labeled *Assigned* does not itself tell us whether a document is missing or overdue.
 
-We also request a **documented County Engineering inspection** of the shared roadside drainage, a written finding on actual outfalls and potential effects on established homes, and identification of the responsible maintenance parties.
+We also request a **documented County Engineering inspection** of the shared roadside drainage, a written finding on actual outfalls and potential effects on established homes, and verification of Tom Street's road-maintainer and drainage-asset responsibilities.
 
 Please acknowledge this request, provide a tracking number and point of contact, allow rolling production, and estimate any substantial fees before incurring them. If any record is withheld, please identify the applicable statutory exemption and release nonexempt portions.
 

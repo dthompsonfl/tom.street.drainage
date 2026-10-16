@@ -93,6 +93,10 @@ These comments **refer to** a roadway ditch and proposed connections to structur
     stormwater drawings and the County's own acceptance of the drainage
     facilities that credit it.
 
+**Jurisdiction / road-maintainer and approval-version records**
+18. Existing Street-Maintainer records for **Tom Street**, including its official maintaining entity, road acceptance and right-of-way title/easement/asset inventories; if a separate entity maintains any portion, identify it using existing records.
+19. The **Santa Rosa County LDC ordinance edition and amendments applied** to these two permits at original review/issuance and each revised approval, including any identified § 4.04.01.D.4 grading-plan exemption and § 4.04.01.E certified-as-built determination; request existing records only.
+
 ## Custodian note
 
 MGO Connect (`mgoconnect.org/cp/project-details/...`) was queried on

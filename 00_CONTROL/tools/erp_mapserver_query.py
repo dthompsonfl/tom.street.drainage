@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Query the official Florida ERP MapServer services (FDEP + 5 water management
+"""Query statewide DEP and regional NWFWMD ERP map services near Tom Street.
 
-districts) for Environmental Resource Permit records near the Tom Street
-parcels in Navarre, Santa Rosa County, Florida.
+The investigated sites are in Santa Rosa County, within NWFWMD. Other water
+management districts are not local permit custodians for these parcels and are
+intentionally excluded from this actively maintained acquisition query. Keep
+saved historic raw search responses intact. Map proximity is not ERP coverage.
 
-Official public ArcGIS REST endpoints published by each agency:
+Official public ArcGIS REST endpoints:
   FDEP   https://ca.dep.state.fl.us/arcgis/rest/services/External_Services/FDEP_ERP/MapServer
   NWFWMD https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer
-  SFWMD  https://geoweb.sfwmd.gov/agsext1/rest/services/RegulationApplicationPermitsApp/RegulationFloridaPermitsERP/MapServer
-  SRWMD  https://permitting.sjrwmd.com/arcgis02/rest/services/SRWMD/EPermit_ERP/MapServer
-  SJRWMD https://permitting.sjrwmd.com/arcgis02/rest/services/SJRWMD/EPermit_ERP/MapServer
-  SWFWMD https://www25.swfwmd.state.fl.us/arcgis11/rest/services/prjFLPermitPortal/EPermitERP/MapServer
 """
 
 import os as _os, sys as _sys  # noqa: E402
@@ -33,10 +31,6 @@ OUT = ROOT / "09_ENVIRONMENTAL_PERMITS/SYSTEM_RAW"
 SITES = {
     "FDEP_ERP": "https://ca.dep.state.fl.us/arcgis/rest/services/External_Services/FDEP_ERP/MapServer",
     "NWFWMD_EPermit_ERP": "https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer",
-    "SFWMD_ERP": "https://geoweb.sfwmd.gov/agsext1/rest/services/RegulationApplicationPermitsApp/RegulationFloridaPermitsERP/MapServer",
-    "SRWMD_EPermit_ERP": "https://permitting.sjrwmd.com/arcgis02/rest/services/SRWMD/EPermit_ERP/MapServer",
-    "SJRWMD_EPermit_ERP": "https://permitting.sjrwmd.com/arcgis02/rest/services/SJRWMD/EPermit_ERP/MapServer",
-    "SWFWMD_EPermitERP": "https://www25.swfwmd.state.fl.us/arcgis11/rest/services/prjFLPermitPortal/EPermitERP/MapServer",
 }
 
 POINTS = {
