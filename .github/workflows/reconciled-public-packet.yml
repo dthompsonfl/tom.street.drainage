@@ -9,6 +9,7 @@ on:
       - 'PUBLICATION_AND_VERSIONING.md'
       - '18_NEIGHBOR_TOOLKIT/**'
       - 'tools/check_neighbor_release.py'
+      - 'tools/reviewed_question_report.md'
       - '00_CONTROL/OPEN_QUESTIONS.md'
       - '00_CONTROL/READING_ORDER_AND_SNAPSHOT_STATUS.md'
       - '17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md'
