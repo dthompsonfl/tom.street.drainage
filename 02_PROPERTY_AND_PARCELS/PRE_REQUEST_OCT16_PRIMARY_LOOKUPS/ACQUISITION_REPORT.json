@@ -1,0 +1,220 @@
+{
+  "captured_utc": "2026-10-16T20:37:51.576099+00:00",
+  "purpose": "Limited pre-request official public parcel/plat and original Clerk URL retrieval",
+  "privacy": "Clerk deed originals not committed to public repository without signature/third-party privacy review",
+  "srcpa_parcels": {
+    "authority": "Santa Rosa County Property Appraiser",
+    "status": "PARCEL_REFRESH_PARTIAL",
+    "results": [
+      {
+        "requested_parcel": "21-2S-26-0780-0QQ00-1020",
+        "label": "2264_TOM_ST",
+        "status": "OFFICIAL_PARCEL_AND_SITUS_MATCH_AT_CAPTURE",
+        "query": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_QUERY_2264_TOM_ST.json",
+          "bytes": 210,
+          "sha256": "8d10a7c3c89e179228b978f4a93e2629e5dc31b486963b18091e5e1172ce3256"
+        },
+        "export": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_EXPORT_2264_TOM_ST.json",
+          "bytes": 612,
+          "sha256": "b90079a19566a6dc01ad892d71a9c38c6a9e0404ff46aa998d248a5f2338715f"
+        },
+        "situs": "2264 TOM ST",
+        "owner_role": "Agency owner name is in saved original; no inferred relationship"
+      },
+      {
+        "requested_parcel": "21-2S-26-0780-0QQ00-1490",
+        "label": "2268_TOM_ST",
+        "status": "OFFICIAL_PARCEL_AND_SITUS_MATCH_AT_CAPTURE",
+        "query": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_QUERY_2268_TOM_ST.json",
+          "bytes": 210,
+          "sha256": "26ef9fba8d51acc08b5268cdb0cf053bc57aa2e0dd31224412d53daa62b9129d"
+        },
+        "export": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_EXPORT_2268_TOM_ST.json",
+          "bytes": 612,
+          "sha256": "9937b2f954b0f26d2b91d062902928c1bead18e7c4ea2e105e095ed8c3d0c4d8"
+        },
+        "situs": "2268 TOM ST",
+        "owner_role": "Agency owner name is in saved original; no inferred relationship"
+      },
+      {
+        "requested_parcel": "21-2S-26-0780-0QQ00-1180",
+        "label": "2265_TOM_ST",
+        "status": "OFFICIAL_PARCEL_AND_SITUS_MATCH_AT_CAPTURE",
+        "query": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_QUERY_2265_TOM_ST.json",
+          "bytes": 216,
+          "sha256": "8d7b99ea07ee080d728f3abe97360ffa2cbab0d923887d20a0cc1262fabbd64a"
+        },
+        "export": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_EXPORT_2265_TOM_ST.json",
+          "bytes": 618,
+          "sha256": "2fd7ade5580b7fc4757e66a07fac9d61b7da6d7ba245fb81f31e546026ff1964"
+        },
+        "situs": "2265 TOM ST",
+        "owner_role": "Agency owner name is in saved original; no inferred relationship"
+      },
+      {
+        "requested_parcel": "21-2S-26-0780-0QQ00-1060",
+        "label": "2274_TOM_ST_DISPUTED",
+        "status": "OFFICIAL_PARCEL_AND_SITUS_MATCH_AT_CAPTURE",
+        "query": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_QUERY_2274_TOM_ST_DISPUTED.json",
+          "bytes": 211,
+          "sha256": "81346e625a11ec3e07ad0ab7a517a2a345c7739f4f76fd3125cc896455072cec"
+        },
+        "export": {
+          "path": "02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_SRCPA_EXPORT_2274_TOM_ST_DISPUTED.json",
+          "bytes": 613,
+          "sha256": "9020f2bad9164d484452284f51f73636e95b091be2662ac1795ada895aa20407"
+        },
+        "situs": "2274 TOM ST",
+        "owner_role": "Agency owner name is in saved original; no inferred relationship"
+      }
+    ],
+    "session_note": "HTTPError: 404 Client Error: Not Found for url: https://search.srcpa.gov/property"
+  },
+  "srcpa_plat_search": {
+    "status": "FORM_SCHEMA_CAPTURED_EXACT_PLAT_QUERY_NOT_CONFIRMED",
+    "source": "https://search.srcpa.gov/plat",
+    "search_phrase": "CRESCENT SHORES",
+    "page_status": "HTML_ACCESSIBLE",
+    "candidate_forms": [
+      {
+        "action": "/plat/query",
+        "method": "post",
+        "input_names": [
+          "phase"
+        ]
+      },
+      {
+        "action": "https://map.srcpa.gov/map",
+        "method": "POST",
+        "input_names": []
+      }
+    ]
+  },
+  "clerk_known_document_probes": [
+    {
+      "source": "https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/3266090",
+      "record": "OR_BOOK_3653_PAGE_976",
+      "status": "OFFICIAL_PDF_BYTES_RETRIEVED_PRIVACY_REVIEW_REQUIRED",
+      "source_bytes": 181610,
+      "sha256": "452f9db26736214907d807da952945b86f049774dea37c52c3f40a9456d46c18",
+      "page_count": 3,
+      "contains_image_based_pages": true
+    },
+    {
+      "source": "https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/7838",
+      "record": "OR_BOOK_718_PAGE_289",
+      "status": "OFFICIAL_PDF_BYTES_RETRIEVED_PRIVACY_REVIEW_REQUIRED",
+      "source_bytes": 674332,
+      "sha256": "c2c0deda283431487d8281a6cddf4455dec128f07524c46b3745a27fc8f3cf4e",
+      "page_count": 4,
+      "contains_image_based_pages": true
+    }
+  ],
+  "clerk_plat_search": {
+    "authority": "Santa Rosa County Clerk AcclaimWeb",
+    "status": "GUEST_PLAT_SEARCH_PERFORMED",
+    "queries": [
+      {
+        "book_type_requested": "PLAT",
+        "book_number_requested": "A",
+        "page_requested": "70",
+        "status": "PLAT_BOOK_TYPE_CONTROL_NOT_VERIFIED",
+        "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeBookPage",
+        "form_field_names": [
+          {
+            "id": "BookNumber",
+            "name": "BookNumber",
+            "tag": "INPUT"
+          },
+          {
+            "id": "PageNumber",
+            "name": "PageNumber",
+            "tag": "INPUT"
+          },
+          {
+            "id": "BookTypesDisplay",
+            "name": "BookTypesDisplay",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": null,
+            "name": null,
+            "tag": "INPUT"
+          },
+          {
+            "id": "btnSearch",
+            "name": null,
+            "tag": "INPUT"
+          },
+          {
+            "id": "toggleForm",
+            "name": null,
+            "tag": "BUTTON"
+          }
+        ],
+        "selected_book_type_options": [],
+        "book_field_accepted": true,
+        "page_field_accepted": true
+      },
+      {
+        "book_type_requested": "PLAT",
+        "book_number_requested": "A",
+        "page_requested": "70A",
+        "status": "PLAT_BOOK_TYPE_CONTROL_NOT_VERIFIED",
+        "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeBookPage",
+        "form_field_names": [
+          {
+            "id": "BookNumber",
+            "name": "BookNumber",
+            "tag": "INPUT"
+          },
+          {
+            "id": "PageNumber",
+            "name": "PageNumber",
+            "tag": "INPUT"
+          },
+          {
+            "id": "BookTypesDisplay",
+            "name": "BookTypesDisplay",
+            "tag": "INPUT"
+          },
+          {
+            "id": null,
+            "name": null,
+            "tag": "BUTTON"
+          },
+          {
+            "id": null,
+            "name": null,
+            "tag": "INPUT"
+          },
+          {
+            "id": "btnSearch",
+            "name": null,
+            "tag": "INPUT"
+          },
+          {
+            "id": "toggleForm",
+            "name": null,
+            "tag": "BUTTON"
+          }
+        ],
+        "selected_book_type_options": [],
+        "book_field_accepted": true,
+        "page_field_accepted": true
+      }
+    ]
+  }
+}
