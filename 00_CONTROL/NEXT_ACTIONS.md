@@ -11,7 +11,7 @@
 
 ## Priority 1: Correct proof gaps and independently verify project identity
 
-5. Obtain actual Clerk instrument images for the property deeds, plat, subdivision history and relevant drainage easements. The archived ORB 3492/700 search screen is not a recovered deed image. Do not assert historic 2266 property disposition without documentary proof.
+5. Original Clerk Crescent Shores PLAT A/70 is now downloaded. Obtain later Lot QQ deed and lot-division history, subdivision amendments, current ROW acceptance documents and drainage easements. The archived ORB 3492/700 search screen is not a recovered deed image. Do not assert historic 2266 property disposition without documentary proof.
 6. Reconfirm current MGO permit statuses; an archived `Certified Drainage as Built: Assigned` item does not establish whether an engineer's certificate exists or is overdue.
 7. Evaluate applicability of NWFWMD ERP 9220-2 from its actual permit polygon, applicant/development plans and parcel geometry. Geographic proximity alone does not prove connection to Tom Street. Separately verify ERP/CGP exemptions and common-plan facts.
 

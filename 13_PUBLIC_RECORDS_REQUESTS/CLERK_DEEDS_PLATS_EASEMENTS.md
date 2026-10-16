@@ -6,6 +6,7 @@ Prepared: 2026-10-15 · Prepared by: Tom Street Drainage Investigation
 ---
 
 **Custodian:** Office of the Clerk, Santa Rosa County, Florida
+**Official public-records contact:** PublicRecordRequest@santarosaclerk.com · (850) 981-5554 (https://santarosaclerk.com/links/online-forms/records/)
 Official Records search: https://acclaim.srccol.com/AcclaimWeb/
 (Recorder: Jason D. English, Esq.)
 
@@ -70,13 +71,15 @@ Street**.
 **The recorded instrument image has not been obtained**, so that attribution is not a title determination. The search information suggests a lead outside the two target lots. Please confirm this and provide the original image and identify the instrument that **does** convey
 lots 1020 and 1490 of block 0QQ00, subdivision 0780.
 
-## Additional indexed plat lead (October 16, 2026; original plat not yet obtained)
+## Original recorded Crescent Shores plat recovered October 16, 2026
 
-A separately published **Clerk-hosted recorded instrument** (Official Records Book 3653, Page 976) references **Lot QQ, Crescent Shores Subdivision, Plat Book A, Page 70**, and portions also described as lots of the **unrecorded Pope Subdivision**:
+The Clerk's actual **PLAT Book A, Page 70** search returned **CRESCENT SHORES**, official document **875693**. Its complete two-page original recorded PDF has been downloaded and preserved as `02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_CLERK_PLAT_BOOK_A_PAGE_70.pdf` (3,377,943 bytes; SHA-256 `37b48f9c727e42163bbca3f407c9e827b3baf7cd106b86f457d38e9c6ac36d1`). [Original document at the Clerk](https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/875693).
 
-https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/3266090
+The **second page of this same original PDF is visibly marked 70 A**, even though the test search for a separate A/70A plat did not return another record. Thus please check for any *later* amended/re-recorded plat, but do not assume a separate 70A PDF must exist. The 1946 recorded subdivision dedication text references streets and roads shown on its original plat. That is **not** proof that the County accepted the present Tom Street right-of-way or is responsible for its current ditches and pipes.
 
-This is a **search lead**, not the original subdivision plat or a verified chain of title for 2264 or 2268 Tom Street. Please search the actual **Plat Book A, Page 70**, check whether related **Page 70A** applies, and provide original complete recorded images, indexes, amendments, dedications, and any instruments identifying divisions of Lot QQ relevant to parcel suffixes `-1020` and `-1490`. A related Clerk-hosted instrument does not itself establish that those documents govern the subject parcels. If there is no recorded Pope plat, identify responsive recorded deeds and other existing instruments, rather than assuming an unrecorded map is a County-approved drainage plan.
+**Records still needed:** original later Lot QQ divisions and title instruments identifying present parcel suffixes `-1020` and `-1490`, deeds, any Pope Subdivision unrecorded survey materials held by the Clerk, recorded drainage/roadway easements, dedications, maintenance agreements, restrictions and later survey or plat amendments. The original historical plat does not itself establish any of these. Please avoid duplicate copy charges for the original A/70 source already held.
+
+A related [Official Records Book 3653, Page 976](https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/3266090) references Lot QQ and Pope unrecorded lots. Its original signed image was retrieved for source checking but **not republished** into this public repo pending privacy review; attribution to the target lots is not independently established.
 
 ## Search notes for the Clerk
 
