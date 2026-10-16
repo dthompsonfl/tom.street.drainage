@@ -1,5 +1,5 @@
 {
-  "acquisition_utc": "2026-10-16T20:33:33.550550+00:00",
+  "acquisition_utc": "2026-10-16T20:39:14.815175+00:00",
   "method": "public Santa Rosa County published ArcGIS service and cache",
   "imagery": {
     "source": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer",
@@ -13,6 +13,44 @@
     "failures": [],
     "status": "2022_CACHE_ACQUISITION_FAILED",
     "failure": "RuntimeError: Invalid County GIS response for ORIGINAL_AERIALS2022_MAPSERVER_METADATA.json",
+    "fallback_tile_probes": [
+      {
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer/tile/19/215608/135710",
+        "level": 19,
+        "row": 215608,
+        "column": 135710,
+        "georeference": "HYPOTHESIS_STANDARD_ARCGIS_3857_TILE_GRID",
+        "status": "PUBLIC_TILE_NOT_AVAILABLE",
+        "failure": "HTTPError: HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer/tile/18/107804/67855",
+        "level": 18,
+        "row": 107804,
+        "column": 67855,
+        "georeference": "HYPOTHESIS_STANDARD_ARCGIS_3857_TILE_GRID",
+        "status": "PUBLIC_TILE_NOT_AVAILABLE",
+        "failure": "HTTPError: HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer/tile/17/53902/33927",
+        "level": 17,
+        "row": 53902,
+        "column": 33927,
+        "georeference": "HYPOTHESIS_STANDARD_ARCGIS_3857_TILE_GRID",
+        "status": "PUBLIC_TILE_NOT_AVAILABLE",
+        "failure": "HTTPError: HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer/tile/16/26951/16963",
+        "level": 16,
+        "row": 26951,
+        "column": 16963,
+        "georeference": "HYPOTHESIS_STANDARD_ARCGIS_3857_TILE_GRID",
+        "status": "PUBLIC_TILE_NOT_AVAILABLE",
+        "failure": "HTTPError: HTTP Error 404: Not Found"
+      }
+    ],
     "note": [
       "These are official cached map-render tiles and a stitched derivative, not raw camera frames or the original flight survey.",
       "County Aerials2022 service title is not proof of the exact acquisition day; obtain catalogue/flight metadata from FDOT.",
