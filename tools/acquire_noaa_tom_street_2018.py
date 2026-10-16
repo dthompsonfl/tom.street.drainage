@@ -21,6 +21,7 @@ import fiona
 import rasterio
 from pyproj import Transformer
 from shapely.geometry import Point, shape
+from shapely.ops import transform as transform_geometry
 from rasterio.warp import transform
 
 DEST = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018")
@@ -95,6 +96,9 @@ def select_tiles(index: Path):
                 x, y = transf.transform(lon, lat)
                 xy[key] = Point(x, y)
             sites = {key: [] for key in POINTS}
+            near = {key: [] for key in POINTS}
+            to_m = Transformer.from_crs(src.crs, "EPSG:26916", always_xy=True)
+            xy_m = {key: transform_geometry(to_m.transform, point) for key, point in xy.items()}
             n = 0
             for feature in src:
                 n += 1
@@ -108,10 +112,14 @@ def select_tiles(index: Path):
                     "properties": dict(feature.properties),
                     "bounds": list(geom.bounds),
                 }
+                geom_m = transform_geometry(to_m.transform, geom)
                 for key, point in xy.items():
                     if geom.intersects(point):
                         sites[key].append(record)
-            return str(src.crs), n, sites
+                    distance = round(geom_m.distance(xy_m[key]), 1)
+                    near[key].append({"distance_m": distance, "feature_id": str(feature.id), "properties": dict(feature.properties)})
+            near = {key: sorted(items, key=lambda a: a["distance_m"])[:3] for key, items in near.items()}
+            return str(src.crs), n, sites, near
 
 
 def choose_url(sites):
@@ -161,34 +169,42 @@ def inspect_raster(path):
 def main():
     DEST.mkdir(parents=True, exist_ok=True)
     idx = download(INDEX_URL, DEST / "tileindex_FL_Panhandle_DEM_2018.zip", max_bytes=25_000_000)
-    crs, features, sites = select_tiles(Path(idx["path"]))
+    crs, features, sites, nearest = select_tiles(Path(idx["path"]))
     manifest = {
         "captured_utc": datetime.now(timezone.utc).isoformat(),
         "source_agency": "NOAA / USGS / NWFWMD", "dataset": DATASET,
         "source_window": "2018-03-31 to 2018-05-10",
         "index": idx, "index_crs": crs,
         "index_feature_count": features, "parcel_point_matches": sites,
+        "closest_index_polygons_by_projected_distance": nearest,
         "status": "INDEX_OBTAINED_SOURCE_TILE_PENDING",
     }
-    try:
-        tile_url = choose_url(sites)
-        base = Path(urlparse(tile_url).path).name
-        if not base.endswith((".tif", ".tiff")):
-            raise ValueError(f"Unexpected indexed source filename {base}")
-        tile = download(tile_url, DEST / base)
-        with Path(tile["path"]).open("rb") as fh:
-            if fh.read(4) not in (b"II*\x00", b"MM\x00*", b"II+\x00", b"MM\x00+"):
-                raise ValueError("Not a TIFF")
-        validation = inspect_raster(Path(tile["path"]))
+    if not all(sites.values()):
         manifest.update({
-            "source_tile": tile, "raster_validation": validation,
-            "status": "ORIGINAL_2018_DEM_TILE_AND_INDEX_PRESERVED_AND_CHECKED",
+            "status": "NO_2018_DEM_TILE_AT_ALL_THREE_SAMPLE_POINTS",
+            "missing_points": [site for site, matches in sites.items() if not matches],
+            "no_tile_explanation": "The official regional 2018 index does not include the sample points; a bounding extent cannot prove coverage.",
         })
-    except Exception as exc:
-        manifest.update({
-            "status": "INDEX_PRESERVED_TILE_FAILED",
-            "error": f"{type(exc).__name__}: {exc}"[:400],
-        })
+    else:
+        try:
+            tile_url = choose_url(sites)
+            base = Path(urlparse(tile_url).path).name
+            if not base.endswith((".tif", ".tiff")):
+                raise ValueError(f"Unexpected indexed source filename {base}")
+            tile = download(tile_url, DEST / base)
+            with Path(tile["path"]).open("rb") as fh:
+                if fh.read(4) not in (b"II*\x00", b"MM\x00*", b"II+\x00", b"MM\x00+"):
+                    raise ValueError("Not a TIFF")
+            validation = inspect_raster(Path(tile["path"]))
+            manifest.update({
+                "source_tile": tile, "raster_validation": validation,
+                "status": "ORIGINAL_2018_DEM_TILE_AND_INDEX_PRESERVED_AND_CHECKED",
+            })
+        except Exception as exc:
+            manifest.update({
+                "status": "INDEX_PRESERVED_TILE_FAILED",
+                "error": f"{type(exc).__name__}: {exc}"[:400],
+            })
     manifest["limitations"] = [
         "Each timestamp/year identifies a regional acquisition window rather than the exact site flight date.",
         "Original 2018 DEM has distinct horizontal projection from 2017 NOAA and must be coregistered before comparing heights.",
@@ -198,7 +214,7 @@ def main():
     ]
     (DEST / "ACQUISITION_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print("NOAA 2018:", manifest["status"], manifest.get("source_tile", {}).get("path", ""))
-    if manifest["status"] != "ORIGINAL_2018_DEM_TILE_AND_INDEX_PRESERVED_AND_CHECKED":
+    if manifest["status"] == "INDEX_PRESERVED_TILE_FAILED":
         raise RuntimeError(manifest.get("error", "2018 source not fully acquired"))
 
 
