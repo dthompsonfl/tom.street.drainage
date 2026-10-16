@@ -48,4 +48,8 @@
 - **Evidence preservation:** do not rename/recompress originals or delete previous source captures; maintain checksum and retrieval date. Review private-data history exposure before any broad sharing.
 - **Testing:** GitHub CI checks structure/byte integrity and selected claim invariants. A successful automated run **does not equal final factual/legal/engineering certification**; the latest run and head must be confirmed after the last edit.
 
+## Final post-correction validation evidence
+
+GitHub Actions [run 38852118428](https://github.com/dthompsonfl/tom.street.drainage/actions/runs/38852118428) completed **SUCCESS** after the editorial-regression gate was added. The run logged **60 primary-evidence file-integrity checks passed**, **15 register invariants passed**, **64 release-verification checks passed**, **73 editorial/source-to-exhibit checks passed**, **0 strict-gate errors**, and a combined **five-page** print packet with each component fitting on one page. It did **not** independently certify rendering against printed paper: final visual/typographic acceptance and resident sign-off remain outstanding. Current `main` may contain later generated-PDF commits; always verify the HEAD and release manifest before circulation.
+
 **Audit limitation:** all 210 tracked files were inventoried by Git path/object metadata and substantive high-risk narratives, registers and primary-capture links were reviewed; not all historical source documents, camera-native files, and archived third-party workspaces were independently re-authenticated or read line-by-line in this pass. Completeness cannot be certified without County records and the remaining archives.
