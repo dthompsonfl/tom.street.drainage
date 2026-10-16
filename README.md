@@ -1,6 +1,6 @@
 # Tom Street Drainage Investigation
 
-> **Research status (October 15, 2026 local): DRAFT EVIDENCE PACKET; NOT AN ENGINEERING OR LEGAL FINDING.** See the [final review decision](00_CONTROL/FINAL_REVIEW_READINESS_2026-10-15.md) and [file-by-file scope inventory](00_CONTROL/FINAL_FILE_SCOPE_INVENTORY_2026-10-15.csv). This GitHub repository is **public**. The approved plans and measurements needed to determine drainage performance have **not** been obtained. Read [the current release guide](15_RECONCILED_DRAFTS/README.md) before using anything in a meeting.
+> **Research status (October 15, 2026 local): DRAFT EVIDENCE PACKET; NOT AN ENGINEERING OR LEGAL FINDING.** Start with the [current assertion consistency register](00_CONTROL/ACTIVE_ASSERTION_CONSISTENCY_2026-10-15.md) and [reading-order guide distinguishing historical snapshots](00_CONTROL/READING_ORDER_AND_SNAPSHOT_STATUS.md). The [frozen prior audit](00_CONTROL/FINAL_REVIEW_READINESS_2026-10-15.md) and [file-by-file inventory](00_CONTROL/FINAL_FILE_SCOPE_INVENTORY_2026-10-15.csv) describe earlier revisions, not today's tracked-file count. This GitHub repository is **public**. The approved plans and measurements needed to determine drainage performance have **not** been obtained. Read [the current release guide](15_RECONCILED_DRAFTS/README.md) before using anything in a meeting.
 
 ## Controlling jurisdiction: Santa Rosa County only
 

@@ -28,6 +28,8 @@
 
 ## Research contradictions versus outstanding questions
 
+For interpretation of stale statuses and formerly incorrect claims, see [historical snapshot and reading-order control](READING_ORDER_AND_SNAPSHOT_STATUS.md).
+
 The original `00_CONTROL/CONTRADICTION_LOG.csv` intentionally documents **earlier conflicting assertions**, including wrong parcel attributions and overstatements about nonexistent plans, ERP scope, task states and photograph provenance. Keeping that ledger is correct evidence practice. The live statements above accept **only supported propositions**, and assign genuinely unresolved questions a single status of **UNVERIFIED/NOT_OBTAINED**, not competing assertions.
 
 The remaining engineering plans, surveys, signed permits and photo originals are **external verification gaps**, not contradictions to be resolved by rewriting. The legal opinion and DEP index PDFs are general/reference sources, not proof of a Tom Street drainage defect.
