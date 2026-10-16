@@ -1,11 +1,11 @@
 {
-  "audited_utc": "2026-10-16T17:15:58.160858+00:00",
+  "audited_utc": "2026-10-16T17:17:12.670220+00:00",
   "repository": "dthompsonfl/tom.street.drainage",
   "branch": "main",
   "scope": "Historical source files and associated manifests named in this audit, not every repository source.",
   "integrity_status": "PASS",
-  "checked_file_count": 20,
-  "checked_bytes": 97810362,
+  "checked_file_count": 21,
+  "checked_bytes": 103914294,
   "verified_files": [
     {
       "source": "NOAA_2006_SOURCE_INDEX",
@@ -136,6 +136,14 @@
       "state": "HASH_VERIFIED"
     },
     {
+      "source": "NOAA_REPORT_2017_NWFWMD_Project_Report",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2017_NWFWMD_Project_Report.pdf",
+      "bytes": 6103932,
+      "sha256": "1ca8884e6e3dd2d35580a9807b356ff7bb29ea4c90fd84c9338567bb407beb06",
+      "kind": "official_regional_survey_report",
+      "state": "HASH_VERIFIED"
+    },
+    {
       "source": "NOAA_REPORT_2018_Panhandle_Acquisition_Report",
       "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Acquisition_Report.pdf",
       "bytes": 14853962,
@@ -225,15 +233,6 @@
       "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
     },
     {
-      "source": "COUNTY_EAST_NAVARRE_WATERSHED_STUDY_AREA_MAP",
-      "status": "NOT_OBTAINED"
-    },
-    {
-      "source": "NOAA_REPORT_2017_NWFWMD_Project_Report",
-      "status": "NOT_ACQUIRED",
-      "reason": "HTTPError: HTTP Error 404: Not Found"
-    },
-    {
       "source": "COUNTY_AERIALS_MAPSERVER",
       "status": "EIGHT_REQUESTS_FAILED_HTTP_500",
       "reason": "Source historic map services not started; FDEP official aerials separately archived."
@@ -248,6 +247,10 @@
         "2265_Tom_St": 38284.4,
         "2268_Tom_St": 38265.7
       }
+    },
+    {
+      "source": "COUNTY_EAST_NAVARRE_STUDY_AREA_MAP",
+      "status": "ORIGINAL_JPEG_CAPTURED_SEPARATELY_PDF_REQUEST_WRONG_MEDIA_TYPE"
     },
     {
       "source": "RESIDENT_PHOTOGRAPHS",
