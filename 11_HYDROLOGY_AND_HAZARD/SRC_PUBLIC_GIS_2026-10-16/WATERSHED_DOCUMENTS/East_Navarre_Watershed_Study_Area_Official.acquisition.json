@@ -1,0 +1,19 @@
+{
+  "retrieved_utc": "2026-10-16T16:57:13.271522+00:00",
+  "status": "OFFICIAL_STUDY_AREA_IMAGE_PRESERVED",
+  "source_url": "https://www.santarosa.fl.gov/DocumentCenter/View/8573/Overall-Study-Area-East-Navarre-Watershed",
+  "source_agency": "Santa Rosa County / Baskerville-Donovan, Inc.",
+  "source_content_type": "image/jpeg",
+  "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS/East_Navarre_Watershed_Study_Area_Official.jpg",
+  "image_format": "JPEG",
+  "image_width": 2550,
+  "image_height": 1650,
+  "bytes": 1109232,
+  "sha256": "84c59529ddbefa7b67e0c5cc35a2fcfe5dbf0784ed4626ed903efeac14120c03",
+  "limitations": [
+    "This is the project's published overall study-area image, not a site-specific drainage plan.",
+    "The study's formal geospatial boundary and its inclusion of all Tom Street parcels are not separately checked.",
+    "The image does not supply hydrologic calculations, field measurements, or the final study report.",
+    "The source is an image, not a PDF. Any previous failed PDF request is a type mismatch, not proof of missing image."
+  ]
+}
