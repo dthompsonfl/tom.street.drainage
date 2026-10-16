@@ -43,19 +43,22 @@ def file_desc(p: Path) -> str:
         return ""
 
 def validate_pdf(p: Path):
-    """Return (ok, note, pages). Checks it is a real PDF, not an HTML error."""
+    """Return (ok, note, pages), using pypdf rather than a host PDF binary."""
     head = p.open("rb").read(2048)
     if not head.startswith(b"%PDF-"):
         return False, "NOT_A_PDF_HEADER (possible HTML error page)", None
     try:
-        r = subprocess.run(["pdfinfo", str(p)], capture_output=True,
-                           text=True, timeout=60)
-        if r.returncode != 0:
-            return False, "PDFINFO_FAILED: " + r.stderr.strip()[:120], None
-        m = re.search(r"Pages:\s+(\d+)", r.stdout)
-        return True, "pdfinfo_ok", int(m.group(1)) if m else None
-    except Exception as e:
-        return False, f"PDFINFO_ERROR {e}", None
+        from pypdf import PdfReader
+        with p.open("rb") as source:
+            document = PdfReader(source, strict=False)
+            pages = len(document.pages)
+        if pages <= 0:
+            return False, "PDF_HAS_NO_PAGES", None
+        return True, "pypdf_ok", pages
+    except ImportError:
+        return False, "PYPDF_NOT_INSTALLED: install requirements-release.txt", None
+    except Exception as exc:
+        return False, "PDF_PARSE_FAILED: " + str(exc)[:120], None
 
 def walk():
     for p in sorted(ROOT.rglob("*")):
@@ -73,14 +76,14 @@ def main():
         data = p.read_bytes()
         size = len(data)
         sha = hashlib.sha256(data).hexdigest()
-        mime = filetype(p)
+        mime = "text/markdown" if p.suffix.lower() == ".md" else filetype(p)
         integrity = "PASS"
         note = ""
         pages = ""
         if size == 0:
             integrity = "FAIL"
             note = "EMPTY_FILE"
-        elif mime == "application/pdf":
+        elif p.suffix.lower() == ".pdf":
             ok, n, pg = validate_pdf(p)
             if not ok:
                 integrity = "FAIL"
