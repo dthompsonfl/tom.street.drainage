@@ -1,0 +1,63 @@
+{
+  "acquisition_utc": "2026-10-16T20:33:33.550550+00:00",
+  "method": "public Santa Rosa County published ArcGIS service and cache",
+  "imagery": {
+    "source": "https://cloud.santarosa.fl.gov/arcgis/rest/services/santarosa/Aerials2022/MapServer",
+    "bbox_lonlat": [
+      -86.8162,
+      30.4144,
+      -86.8134,
+      30.416
+    ],
+    "tiles": [],
+    "failures": [],
+    "status": "2022_CACHE_ACQUISITION_FAILED",
+    "failure": "RuntimeError: Invalid County GIS response for ORIGINAL_AERIALS2022_MAPSERVER_METADATA.json",
+    "note": [
+      "These are official cached map-render tiles and a stitched derivative, not raw camera frames or the original flight survey.",
+      "County Aerials2022 service title is not proof of the exact acquisition day; obtain catalogue/flight metadata from FDOT.",
+      "Map tile spatial resolution is not a vertical elevation or survey-quality map.",
+      "Original tile SHA-256, service metadata, spatial extent and image format preserved; no parcel boundary lines are certified.",
+      "OpenData stormwater polygon is a historic planning indicator; it does not prove current flooding, severity, cause or a violation.",
+      "Reusers must include the County GIS source metadata and distribution-liability/usage statement."
+    ]
+  },
+  "stormwater": {
+    "source": "https://cloud.santarosa.fl.gov/arcgis/rest/services/Hosted/OpenData_StormwaterProblemAreas/FeatureServer/0",
+    "status": "CAPTURED",
+    "captures": [
+      {
+        "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_HOSTED_FEATURE/ORIGINAL_HOSTED_LAYER_METADATA.json",
+        "bytes": 9701,
+        "sha256": "0e754fecdb6f28c216254b91ab301e9aeffce08d83f89ef92f90131108f3b1c3",
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/Hosted/OpenData_StormwaterProblemAreas/FeatureServer/0?f=pjson",
+        "mime": "text/plain; charset=UTF-8",
+        "feature_count": null
+      },
+      {
+        "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_HOSTED_FEATURE/ORIGINAL_HOSTED_SERVICE_ITEMINFO.json",
+        "bytes": 2902,
+        "sha256": "73e85a8b1c3bcd2f34ce74da98fcb64a84ca16e3380ccb813919ddd9fd4d0477",
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/Hosted/OpenData_StormwaterProblemAreas/FeatureServer/info/iteminfo?f=pjson",
+        "mime": "text/plain; charset=UTF-8",
+        "feature_count": null
+      },
+      {
+        "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_HOSTED_FEATURE/ORIGINAL_HOSTED_FEATURES_AT_2264_POINT.json",
+        "bytes": 10998,
+        "sha256": "04dbd08865f204103206c9e61abe92290c827949914e0c583e708c77ebbab569",
+        "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/Hosted/OpenData_StormwaterProblemAreas/FeatureServer/0/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+        "mime": "text/plain; charset=UTF-8",
+        "feature_count": 1
+      }
+    ],
+    "intersecting_features": [
+      {
+        "fid": 2068,
+        "datasource": "Road & Bridge Maps Marked Up by Foreman",
+        "globalid": "{6BE01BBB-27EB-445F-81C0-BAAEFE57C3DD}"
+      }
+    ],
+    "interpretation": "Hosted FIDs may differ from GoMaps OBJECTID 2068. Match GlobalID or geometry before equating entries."
+  }
+}

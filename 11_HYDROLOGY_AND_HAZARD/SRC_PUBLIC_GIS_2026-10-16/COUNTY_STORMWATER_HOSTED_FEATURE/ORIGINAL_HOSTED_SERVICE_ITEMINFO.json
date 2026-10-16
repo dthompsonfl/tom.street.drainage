@@ -1,0 +1,43 @@
+{
+ "culture": "en-US",
+ "name": "OpenData_StormwaterProblemAreas",
+ "guid": "D22573D9-E1C8-4DDC-8575-B6A9008B2959",
+ "catalogPath": "",
+ "snippet": "This dataset is to be used to provide vector data for Planning & Zoning analysis in Santa Rosa County. The dataset is also to be used for planning purposes for various county and private agencies and to provide GIS feature mapping.",
+ "description": "<div style='text-align:Left;'><div><p><span>This dataset is an ArcGIS Shapefile representing areas that Planning &amp; Zoning has determined to be Stormwater Draininage Problem Areas for use in the Minor Subdivision Review Process. The specific area's were identified by Roger Blaylock, County Engineer, Road &amp; Bridge Foreman for each Commission District, and data received from Roads &amp; Bridges during the April 2006 100 Year Flood Event. The Digital DFRIM was appended to the layer to replace FEMA Q3 data in April 2009.<\/span><\/p><\/div><\/div>",
+ "summary": "This dataset is to be used to provide vector data for Planning &amp; Zoning analysis in Santa Rosa County. The dataset is also to be used for planning purposes for various county and private agencies and to provide GIS feature mapping.",
+ "title": "OpenData_StormwaterProblemAreas",
+ "tags": [
+  "Drainage",
+  "Santa Rosa County",
+  "Shapefile"
+ ],
+ "type": "Feature Service",
+ "typeKeywords": [
+  "ArcGIS",
+  "ArcGIS Server",
+  "Data",
+  "Feature Access",
+  "Feature Service",
+  "providerSDS",
+  "Service"
+ ],
+ "thumbnail": "thumbnail/thumbnail.png",
+ "url": "",
+ "extent": [
+  [
+   -87.3202449828982,
+   30.3363017979201
+  ],
+  [
+   -86.7734508240807,
+   31.0062946090289
+  ]
+ ],
+ "minScale": 0,
+ "maxScale": 1.7976931348623157E308,
+ "spatialReference": "NAD_1983_StatePlane_Florida_North_FIPS_0903_Feet",
+ "accessInformation": "",
+ "licenseInfo": "The metadata must be transmitted along with the data if the data is further distributed. The recipient may not transfer this data to others without also transferring the Distribution-Liability information.  The GIS maps and data distributed by the Santa Rosa County BOCC departments are derived from a variety of public and private sector sources considered to be dependable, but the accuracy, completeness, and currency thereof are not guaranteed.  The Santa Rosa County Commission makes no warranties, expressed or implied, as to the accuracy, completeness, currency, reliability, or suitability for any particular purpose of information or data contained in or generated from the County Geographic Database.  Additionally, the Santa Rosa Commission or any agent, servant, or employee thereof assume no liability associated with the use of this data, and assume no responsibility to maintain it in any matter or form.  For further map assistance, call 850-983-1840 or  email: gisupdates@santarosa.fl.gov.   SRC mapping website:  http://santarosa.fl.gov/gis",
+ "portalUrl": ""
+}
