@@ -72,6 +72,39 @@ def project(lon,lat):
     r=6378137.0
     return (r*math.radians(lon), r*math.log(math.tan(math.pi/4+math.radians(lat)/2)))
 
+def probe_standard_site_center_tiles():
+    """Last-resort public cache probe when County metadata returns a 500.
+
+    ArcGIS traditional 3857 tile origin is a documented hypothesis here, not
+    an agency-supplied tiling/flight-date confirmation. No composite is made.
+    """
+    r=6378137.0; origin=20037508.342789244
+    lon,lat=-86.81466,30.41519
+    x=r*math.radians(lon)
+    y=r*math.log(math.tan(math.pi/4+math.radians(lat)/2))
+    rows=[]
+    for z in (19,18,17,16):
+        resolution=156543.03392804097/(2**z)
+        col=math.floor((x+origin)/(256*resolution))
+        row=math.floor((origin-y)/(256*resolution))
+        url=f"{MAP}/tile/{z}/{row}/{col}"
+        hit={"url":url,"level":z,"row":row,"column":col,
+             "georeference":"HYPOTHESIS_STANDARD_ARCGIS_3857_TILE_GRID"}
+        try:
+            blob,mime=fetch(url,limit=2_500_000)
+            ext="jpg" if blob.startswith(b"\xff\xd8\xff") else "png" if blob.startswith(b"\x89PNG\r\n\x1a\n") else None
+            if not ext:raise ValueError("not JPEG or PNG cache tile")
+            img=Image.open(BytesIO(blob));img.load()
+            if img.size!=(256,256) or max(ImageStat.Stat(img.convert("RGB")).var)<4:
+                raise ValueError("tile is blank or wrong dimensions")
+            out=DEST/"FALLBACK_TILE_PROBES"/f"z{z}_r{row}_c{col}.{ext}"
+            hit.update(saved(out,blob));hit["status"]="RAW_PUBLIC_CACHE_TILE_DOWNLOADED_BUT_GRID_NOT_VERIFIED"
+        except Exception as exc:
+            hit["status"]="PUBLIC_TILE_NOT_AVAILABLE";hit["failure"]=type(exc).__name__+": "+str(exc)[:180]
+        rows.append(hit)
+    return rows
+
+
 def imagery():
     rawmeta={"source":MAP,"bbox_lonlat":BBOX,"tiles":[],"failures":[],"status":"NOT_OBTAINED"}
     try:
@@ -134,6 +167,10 @@ def imagery():
     except Exception as exc:
         rawmeta["status"]="2022_CACHE_ACQUISITION_FAILED"
         rawmeta["failure"]=type(exc).__name__+": "+str(exc)[:300]
+        rawmeta["fallback_tile_probes"]=probe_standard_site_center_tiles()
+        if any(z["status"].startswith("RAW_PUBLIC") for z in rawmeta["fallback_tile_probes"]):
+            rawmeta["status"]="PUBLIC_CENTER_CACHE_TILE_ONLY_METADATA_AND_FULL_COVERAGE_UNVERIFIED"
+            rawmeta["tiles"]=[z for z in rawmeta["fallback_tile_probes"] if z["status"].startswith("RAW_PUBLIC")]
     rawmeta["note"]=NOTES
     return rawmeta
 
