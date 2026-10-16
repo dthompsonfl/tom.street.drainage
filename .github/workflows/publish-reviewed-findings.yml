@@ -1,0 +1,59 @@
+name: Publish reviewed five-question evidence and findings
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/reconcile_question_findings.py'
+      - 'tools/check_question_findings.py'
+      - 'tools/reviewed_question_report.md'
+      - '.github/workflows/publish-reviewed-findings.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: reconciled-public-packet-main
+  cancel-in-progress: false
+jobs:
+  publish-reviewed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-release.txt
+      - name: Retrieve exact independently reviewed artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/dthompsonfl/tom.street.drainage/actions/artifacts/12028730709/zip > /tmp/reviewed-followup.zip
+      - name: Import exact original bytes and apply reviewed reconciliation
+        run: |
+          python -B tools/reconcile_question_findings.py /tmp/reviewed-followup.zip
+          python -B tools/reconcile_question_findings.py /tmp/reviewed-followup.zip
+          python -B tools/check_question_findings.py
+          python -B tools/test_research_capture.py
+          python -B tools/test_followup_capture.py
+      - name: Rebuild and validate the current evidence and public draft
+        run: |
+          python -B tools/build_reconciled_packet.py
+          python -B 00_CONTROL/tools/validate_evidence.py
+          python -B tools/verify_reconciled_release.py
+          python -B tools/check_document_claims.py
+          python -B tools/check_repository_consistency.py
+          python -B tools/check_jurisdiction_scope.py
+          python -B 00_CONTROL/tools/strict_release_gate.py
+          timeout 180 python -u -B 00_CONTROL/tools/test_evidence.py
+          python -B 00_CONTROL/tools/classify_for_release.py --write --check
+      - name: Commit verified findings and preserved sources without force
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md 17_CURRENT_RESEARCH/ 15_RECONCILED_DRAFTS/ 13_PUBLIC_RECORDS_REQUESTS/ 00_CONTROL/SOURCE_REGISTER.csv 00_CONTROL/EVIDENCE_LEDGER.csv 00_CONTROL/EXHIBIT_INDEX.csv 00_CONTROL/CLAIM_SOURCE_LINKS.csv 00_CONTROL/RESPONSIBILITY_MATRIX.csv 00_CONTROL/CONTRADICTION_LOG.csv 00_CONTROL/EVIDENCE_MANIFEST.csv 00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv 00_CONTROL/TEST_RESULTS.txt 00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md 00_CONTROL/REGULATORY_AND_CASELAW_MATRIX.md 00_CONTROL/OPEN_QUESTIONS.md 00_CONTROL/NEXT_ACTIONS.md 00_CONTROL/MAIN_BRANCH_REMEDIATION_STATUS.md 00_CONTROL/ACTIVE_ASSERTION_CONSISTENCY_2026-10-15.md 00_CONTROL/READING_ORDER_AND_SNAPSHOT_STATUS.md 00_CONTROL/tools/validate_evidence.py
+          if git diff --cached --quiet; then exit 0; fi
+          git diff --cached --stat
+          git commit -m 'research: reconcile five-question findings, preserve enacted ordinances and verify County road maintenance [skip ci]'
+          git push origin HEAD:main
