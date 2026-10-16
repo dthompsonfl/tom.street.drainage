@@ -1,0 +1,326 @@
+{
+  "captured_utc": "2026-10-16T16:59:54.137287+00:00",
+  "source_agency": "Florida Department of Environmental Protection, Florida DOT, USGS/USDA for labelled subcollections",
+  "source_catalogs": [
+    "https://ca.dep.state.fl.us/image/rest/services/MISC",
+    "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials"
+  ],
+  "requested_count": 20,
+  "downloaded_validated_count": 9,
+  "bbox_wgs84": [
+    -86.8162,
+    30.4144,
+    -86.8134,
+    30.416
+  ],
+  "image_dimensions_pixels": [
+    1600,
+    920
+  ],
+  "images": [
+    {
+      "service_label": "1994_DOQQ",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_1994/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_1994/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:37.339840+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/1994_DOQQ_Tom_Street_export.jpg",
+      "bytes": 188339,
+      "sha256": "a49c77ecd90174261cd698845cf11afa656e59348099314732f60fae48061ee9",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 67.789
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "1999_DOQQ",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_1999/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_1999/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:37.340717+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/1999_DOQQ_Tom_Street_export.jpg",
+      "bytes": 193602,
+      "sha256": "e14e20f0206d6bfb4b860747a97a0bae389076d4b763df3c95fa7addd14ac989",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 51.785
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2004_DOQQ",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_2004/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_2004/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:37.341267+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2004_DOQQ_Tom_Street_export.jpg",
+      "bytes": 171352,
+      "sha256": "030725004d79b8009c0cf45e67975f55a0f0f593346f2117f322a1aa86741512",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 27.35
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2008_DOQQ",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_2008/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/MISC/DOQQ_2008/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:37.343062+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2010_NAIP",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/MISC/NAIP_Imagery_2010/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/MISC/NAIP_Imagery_2010/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:38.015023+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2010_NAIP_Tom_Street_export.jpg",
+      "bytes": 207014,
+      "sha256": "9ecb3578ffb67a4a3640324fc16aaee00c918f549da5023c20bfb324295597e5",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 37.301
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2004_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2004/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2004/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:42.323127+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2007_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2007/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2007/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:42.329970+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2007_FDOT_Tom_Street_export.jpg",
+      "bytes": 333097,
+      "sha256": "32dad3a365f47b05ac7909e0d6e5259a17f8df83e6360b857c6e46b01101d089",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 26.753
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2008_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2008/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2008/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:42.790147+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2009_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2009/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2009/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:43.290725+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2010_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2010/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2010/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:43.459066+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2010_FDOT_Tom_Street_export.jpg",
+      "bytes": 430641,
+      "sha256": "abdcdbf87d1e00f37dddf5a7a5741d6c08c0708d05bae4bfec8376d4206ecf4c",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 47.262
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2011_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2011/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2011/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:43.747325+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2012_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2012/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2012/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:44.172644+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2013_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2013/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2013/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:44.598126+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2013_FDOT_Tom_Street_export.jpg",
+      "bytes": 279309,
+      "sha256": "e03211355316018252bd52cf302c29ab410f248780370a28147d7158a36901d8",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 22.805
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2015_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2015/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2015/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:44.639731+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2016_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2016/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2016/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:44.896626+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2016_FDOT_Tom_Street_export.jpg",
+      "bytes": 352049,
+      "sha256": "80fe627835f5c987e222ff6b9ac35b5cbe3f11d39537f990ea56e0228cab1022",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 37.871
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2017_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2017/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2017/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:48.380711+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2018_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2018/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2018/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:48.625494+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2019_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2019/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2019/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "PUBLIC_IMAGE_EXPORT_BYTES_VALIDATED",
+      "retrieved_utc": "2026-10-16T16:59:48.691180+00:00",
+      "source_content_type": "image/jpeg",
+      "file": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2019_FDOT_Tom_Street_export.jpg",
+      "bytes": 558728,
+      "sha256": "3f95d1a16b6afc26c1d7a82e584b0c015d54c058bacc2a836ee3d927aa08e537",
+      "validation": {
+        "width": 1600,
+        "height": 920,
+        "center_luminance_sd": 47.557
+      },
+      "worldfile_geometry": {
+        "pixel_width_degrees": 1.7499999999959215e-06,
+        "pixel_height_degrees": -1.7391304347824171e-06,
+        "top_left_pixel_center_lon": -86.816199125,
+        "top_left_pixel_center_lat": 30.415999130434784,
+        "crs": "EPSG:4326"
+      }
+    },
+    {
+      "service_label": "2020_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2020/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2020/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:48.910718+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "service_label": "2021_FDOT",
+      "official_service": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2021/ImageServer",
+      "export_url": "https://ca.dep.state.fl.us/image/rest/services/FDOT_Yearly_Aerials/Aerial_Imagery_2021/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1600%2C920&format=jpg&f=image&compressionQuality=92",
+      "status": "NOT_ACQUIRED",
+      "retrieved_utc": "2026-10-16T16:59:49.177075+00:00",
+      "failure": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    }
+  ],
+  "limitations": [
+    "These are image exports from an official raster mosaic, not full unmodified aerial survey source files. Original camera/ortho files remain to be obtained.",
+    "Service name/year does NOT verify photo acquisition date at the Tom Street pixel; request source mosaic catalog item metadata and flight history.",
+    "Geographic coverage tested by pixel variance only; metadata must confirm actual mosaic imagery intersects Tom Street, particularly older years.",
+    "Images contain variable spatial resolution; overlaid comparisons require registration checks before measuring footprint changes.",
+    "The image depicts visible surfaces; it does not directly measure elevation, drainage capacity, fill, infiltration or physical property boundaries.",
+    "No resident-supplied private photographs are stored here. They require permission and a separate restricted evidence vault.",
+    "Failures and partial coverage do not establish nonexistence of original imagery at the issuing government custodian."
+  ]
+}
