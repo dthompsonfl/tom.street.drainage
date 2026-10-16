@@ -72,7 +72,7 @@ From **FEMA NFHL**: both parcels are **Zone X** (minimal flood hazard), FIRM pan
 | Surveys, driveway inverts, roadway profile | Dev Services / Public Works | `REQUEST_DRAFTED` |
 | Recorded plat, deeds, drainage easements | Clerk of Court | `REQUEST_DRAFTED` |
 | NWFWMD ERP 9220-2 file | NWFWMD | `REQUEST_DRAFTED` |
-| **Homeowner dated photographs / observations** | Homeowner | `REQUEST_DRAFTED` |
+| **Homeowner photos** | Private archive contains 15 hash-matched JPEG copies; original capture provenance and permission unverified | `PRIVATE_COPIES_VERIFIED_ONLY` |
 | Surveyor / PE field measurements | to be engaged | `NOT_OBTAINED` |
 
 **All five public-records requests are `DRAFTED_NOT_SUBMITTED`.** No submission
@@ -159,9 +159,7 @@ history would require a rewrite, which is outside this project's authorisation.
 3. Proximity of **ERP 9220-2** does **not** prove it covers these lots — no
    polygon intersection was performed.
 4. Regional rainfall from Pensacola airport is **not** on-site measurement.
-5. **Westland Skating Center v. Gus Machado Buick** (Fla. 1989) — the primary
-   text could not be retrieved from an authoritative source and is recorded as
-   **UNRESOLVED**. No proposition from it is relied on anywhere in this repo.
+5. **Westland Skating Center v. Gus Machado Buick** (Fla. 1989) — the corrected Florida Supreme Court opinion was retrieved and read from FSU College of Law's digital docket. Its reasonable-use rule is verified; subsequent legal treatment and application to these specific lots remain unresolved. See the updated legal matrix.
 6. Party-name search on the Clerk's portal exceeds its result limit; Legal
    Search returns HTTP 404. Recorded as gaps, not as "no records".
 

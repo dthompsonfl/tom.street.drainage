@@ -1,29 +1,30 @@
-# Tom Street Drainage | Homeowner Brief (Reconciled draft)
+# Tom Street Drainage | Homeowner Brief (Reconciled DRAFT)
 
-**Date:** October 15, 2026 | **Scope:** 2264 and 2268 Tom Street, Navarre, Santa Rosa County, Florida, and the associated roadside drainage.
+**Prepared October 15, 2026** | 2264 and 2268 Tom Street, Navarre, Florida, and nearby established homes and roadside drainage.
 
-## Why we are requesting a review
-Nearby homeowners seek the approved drainage plans and a coordinated County engineering review of the roadside swale, proposed driveway/pipe works, and any impacts on established properties. We are not alleging a code violation or asserting that construction caused flooding. The question needs actual plans and site measurements, not assumptions.
+## Why we are here
 
-## What the captured records establish
-The Santa Rosa County Property Appraiser records identify Holiday Builders Inc. as owner of record of **2264 Tom Street (parcel 21-2S-26-0780-0QQ00-1020)** and **2268 Tom Street (parcel 21-2S-26-0780-0QQ00-1490)**. Archived MGO permit records associate 2264 with **BP-2026-1621**, and 2268 with **BP-2026-1612**; both show **Active** in the saved October 2026 extracts. Current live status has not been independently refreshed for this draft.
+We request the approved engineering records and a documented County review of the Tom Street drainage corridor during nearby construction. We are **not** alleging that higher fill is illegal, that anyone caused flooding, or that a permit was improperly issued. Those questions require plans, measurements and qualified review.
 
-MGO's **August 6, 2026** driveway consultation for 2264 directs proposed 12-inch pipe/inlet work and mentions existing structures by the 2260 and 2270 street addresses. This **does not** establish exact pipe alignment, completed installation, adequate capacity, easement rights, or whether structures sit in private property or right-of-way.
+## What the saved official records establish
 
-MGO's **August 31, 2026** site inspection for 2268 mentions keeping the roadway and stormwater ditch free of sediment. Its **September 10** driveway consultation says to match existing roadway grades. These comments give **no numeric survey elevations, freeboard, storm design event, or outfall capacity**.
+Santa Rosa County Property Appraiser exports pair **2264 Tom Street** with parcel **21-2S-26-0780-0QQ00-1020** and **2268 Tom Street** with parcel **21-2S-26-0780-0QQ00-1490**. Holiday Builders Inc. is listed as owner of both in those captured records. County MGO permit extracts identify **BP-2026-1621** (2264) and **BP-2026-1612** (2268), each marked **Active at the October 2026 capture**. Current live status still requires confirmation.
 
-Both permit task lists show **“Certified Drainage as Built” as Assigned**. This identifies a workflow item only: it is not evidence that an engineer's certification was required immediately, submitted, missing, rejected, or overdue. The customer portal returned no plan attachments for either permit, which is not proof the County lacks plans.
+An **August 6, 2026** driveway inspector comment for 2264 directs proposed 12-inch perforated pipe and inlet work referencing structures near street addresses 2260 and 2270. A **August 31, 2026** inspector comment for 2268 refers to keeping the roadway/stormwater ditch free of sediment; a **September 10** consultation says to match existing roadway grades. These are **inspection remarks**, not approved hydraulic plans, measured elevations, proven installation or evidence of legal easement rights.
 
-## What is missing
-The approved initial and revised grading/site plans, the basis for each permit's grading/ERP pathway, historical and present surveys, actual invert and positive outfall elevations, shared ROW/ditch design and maintenance documents, recorded legal instruments, and any final certified grading/as-built records. Resident photographs in separate project materials require original-file, date, and sharing-permission reconciliation before inclusion as numbered exhibits.
+Both permit task lists show **Certified Drainage as Built: Assigned**. That status alone does not establish whether a certification exists, was filed, is due or is missing. The portal's empty attachment listings likewise do not establish that the County has no drawings.
 
-## What we request
-1. Provide the complete approved and revised plan/permit files for both lots, including engineering review conditions and the engineer of record.
-2. Confirm whether a subdivision lot-grading plan was on file for these parcels and which version of County requirements governed the approvals.
-3. Identify surveyed driveway/culvert/ditch inverts, positive outfalls and the responsible party for construction and maintenance.
-4. Conduct a documented site inspection and written engineering review of potential off-site drainage effects, considering alternative explanations such as antecedent rainfall, existing road/swale condition and blockages.
-5. Provide a contact, tracking/reference number, anticipated document production stages, and a written findings/follow-up schedule.
+## Documents and verification needed
 
-The objective is a measured, documented answer, not a presumption of fault.
+1. Each permit's stamped **original and revised site/lot grading plans**, review comments, engineering calculations and any subdivision grading plan or authorized alternative.
+2. **Historic and final surveys**, finished-floor and perimeter spot elevations, driveway/inlet/culvert invert elevations and positive drainage outfalls.
+3. Shared Tom Street **right-of-way, drainage drawings, easements, acceptance and maintenance records**, including any correction or complaint files.
+4. A **joint County Engineering field assessment**, current CO/certification status, and written findings addressing possible effects on neighboring properties and other drainage causes.
 
-**Source pointers:** `02_PROPERTY_AND_PARCELS/` official exports; `03_PERMITS_AND_INSPECTIONS/` captured MGO files; `04_ENGINEERING_AND_DRAINAGE/` archived related-inspection records; `00_CONTROL/REGULATORY_AND_CASELAW_MATRIX.md`. All interpretations are limited by the date and scope of the saved sources.
+## Evidence and requested outcome
+
+A separately preserved homeowner package has **15 internally hash-matched JPEG copies**; native phone originals, reliable capture times, parcel locations and release permissions are not yet verified. We are keeping them private rather than asserting what they cannot prove.
+
+**We ask for a named County contact, tracking number, document-production plan, site-review timetable and written engineering response.** No legal breach or drainage-capacity conclusion is asserted.
+
+*Source basis: archived Santa Rosa County Property Appraiser/MGO exports and county inspection text. The actual sealed engineering documents and field measurements have not been obtained.*
