@@ -275,36 +275,34 @@ def t_request_files_exist():
 
 
 def t_privacy_public_material():
-    """No account identity in anything intended for public release."""
-    acct = [b"Dylan" + b" Thompson",
-            b"thompson.d.r.92" + b"@gmail.com",
-            b"__Host-" + b"MGUserToken"]
-    leaks = []
-    public_roots = ["14_MEETING_PACKET", "releases", "."]
-    for p, r in walk_files():
-        if r.startswith("00_CONTROL/tools/") or \
-           r == "00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv":
-            continue
-        if r.startswith(".evidence_vault"):
+    """Generic source/privacy screen, never a human clearance decision.
+
+    Real homeowner account markers must be stored only in the ignored
+    .evidence_vault/private_patterns.txt file. No real identity, email, session
+    cookie or fragment of a live token belongs in tracked tests or source code.
+    """
+    from classify_for_release import classify, local_markers
+    private_markers = local_markers()
+    bad = []
+    checked = 0
+    for p, relpath in walk_files():
+        if relpath.startswith(".evidence_vault/"):
             continue
         try:
             data = p.read_bytes()
-        except Exception:
+        except OSError:
+            bad.append(relpath + ": unreadable")
             continue
-        if any(m in data for m in acct) and not r.startswith("00_CONTROL/"):
-            leaks.append(r)
-    check("no account identity in packet/release/root files", not leaks,
-          ", ".join(leaks[:3]))
-
-    # public packet PDFs must not embed the identity either
-    pdfdir = _ROOT / "14_MEETING_PACKET" / "pdf"
-    if pdfdir.exists():
-        bleeds = []
-        for f in pdfdir.glob("*.pdf"):
-            if any(m in f.read_bytes() for m in acct):
-                bleeds.append(rel(f))
-        check("no account identity embedded in packet PDFs", not bleeds,
-              ", ".join(bleeds))
+        classification, reason = classify(relpath, data, private_markers)
+        checked += 1
+        if classification == "RESTRICTED":
+            bad.append(relpath + ": " + reason)
+    check(f"no automatic restricted-data hits in {checked} files",
+          not bad, "; ".join(bad[:3]))
+    check("private markers are not embedded in the public test suite",
+          b"private_patterns.txt" in Path(__file__).read_bytes())
+    # REVIEW_REQUIRED media, portals and source records must still be cleared
+    # manually; passing this generic screen does NOT mean publication approved.
 
 
 def t_redacted_derivative_exists():

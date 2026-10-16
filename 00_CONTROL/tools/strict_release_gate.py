@@ -62,7 +62,9 @@ def check_privacy_and_release():
  classifier=ROOT/'00_CONTROL/tools/classify_for_release.py'
  code=classifier.read_bytes()
  # Ban self-exempting real-world credential patterns; synthetic fixtures only.
- if b'ACCOUNT_MARKERS =' in code or b'7568CBA6' in code or b'__Host-' in code:fail('account-specific legacy marker remains in classifier')
+ if b'ACCOUNT_MARKERS =' in code:fail('legacy real-identity marker array must not appear in published classifier')
+ # Real-life identifiers are configured in an ignored local reviewer pattern file.
+ # Never add secret suffixes, session names, or account-specific strings here.
  # A pyc created during local checks is ignored by .gitignore, but a
  # previously *tracked* pyc is unsafe; query the Git index when available.
  if (ROOT/'.git').exists():

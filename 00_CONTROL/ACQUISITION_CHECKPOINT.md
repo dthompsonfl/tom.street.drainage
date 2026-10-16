@@ -1,7 +1,7 @@
 # EVIDENCE ACQUISITION CHECKPOINT
 
 Generated: 2026-10-15 (UTC session, continuous)
-Project directory: `/home/dylan/Tom-Street-Drainage-Investigation`
+Original local working directory: `[private workstation path withheld]`
 
 ## 1. Project directory inspected
 
