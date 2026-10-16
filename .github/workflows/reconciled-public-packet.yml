@@ -43,6 +43,24 @@ jobs:
           python -m py_compile tools/build_reconciled_packet.py
           python tools/build_reconciled_packet.py
           python 00_CONTROL/tools/validate_evidence.py
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, "00_CONTROL/tools")
+          import test_evidence as checks
+          for fn in (
+              checks.t_manifest_no_self_hash,
+              checks.t_unique_ids,
+              checks.t_checksums_match,
+              checks.t_release_zip_hash_parity,
+              checks.t_no_submitted_without_receipt,
+              checks.t_request_files_exist,
+          ):
+              fn()
+          failed = [name for name, ok, _ in checks.RESULTS if not ok]
+          if failed:
+              raise SystemExit("Evidence invariant failures: " + ", ".join(failed))
+          print(f"Evidence invariants: {len(checks.RESULTS)} checks PASS")
+          PY
           python tools/verify_reconciled_release.py
           python - <<'PY'
           import json, pathlib
