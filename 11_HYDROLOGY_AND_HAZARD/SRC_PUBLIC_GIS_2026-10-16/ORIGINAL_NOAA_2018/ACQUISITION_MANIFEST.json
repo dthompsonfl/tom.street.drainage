@@ -1,5 +1,5 @@
 {
-  "captured_utc": "2026-10-16T17:05:47.070153+00:00",
+  "captured_utc": "2026-10-16T17:07:59.278603+00:00",
   "source_agency": "NOAA / USGS / NWFWMD",
   "dataset": "https://www.fisheries.noaa.gov/inport/item/58332",
   "source_window": "2018-03-31 to 2018-05-10",
@@ -16,8 +16,102 @@
     "2265_Tom_St": [],
     "2268_Tom_St": []
   },
-  "status": "INDEX_PRESERVED_TILE_FAILED",
-  "error": "ValueError: Could not uniquely identify common Tom Street source tile: {}",
+  "closest_index_polygons_by_projected_distance": {
+    "2264_Tom_St": [
+      {
+        "distance_m": 38282.3,
+        "feature_id": "14418",
+        "properties": {
+          "location": "e0873n0896.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0873n0896.tif",
+          "missionid": 8942
+        }
+      },
+      {
+        "distance_m": 38326.6,
+        "feature_id": "14417",
+        "properties": {
+          "location": "e0873n0895.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0873n0895.tif",
+          "missionid": 8942
+        }
+      },
+      {
+        "distance_m": 38343.3,
+        "feature_id": "14388",
+        "properties": {
+          "location": "e0872n0895.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0872n0895.tif",
+          "missionid": 8942
+        }
+      }
+    ],
+    "2265_Tom_St": [
+      {
+        "distance_m": 38284.4,
+        "feature_id": "14418",
+        "properties": {
+          "location": "e0873n0896.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0873n0896.tif",
+          "missionid": 8942
+        }
+      },
+      {
+        "distance_m": 38327.3,
+        "feature_id": "14417",
+        "properties": {
+          "location": "e0873n0895.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0873n0895.tif",
+          "missionid": 8942
+        }
+      },
+      {
+        "distance_m": 38343.9,
+        "feature_id": "14388",
+        "properties": {
+          "location": "e0872n0895.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0872n0895.tif",
+          "missionid": 8942
+        }
+      }
+    ],
+    "2268_Tom_St": [
+      {
+        "distance_m": 38265.7,
+        "feature_id": "14418",
+        "properties": {
+          "location": "e0873n0896.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0873n0896.tif",
+          "missionid": 8942
+        }
+      },
+      {
+        "distance_m": 38310.0,
+        "feature_id": "14417",
+        "properties": {
+          "location": "e0873n0895.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0873n0895.tif",
+          "missionid": 8942
+        }
+      },
+      {
+        "distance_m": 38326.7,
+        "feature_id": "14388",
+        "properties": {
+          "location": "e0872n0895.tif",
+          "url": "https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/FL_Panhandle_DEM_2018_8942/block_1/e0872n0895.tif",
+          "missionid": 8942
+        }
+      }
+    ]
+  },
+  "status": "NO_2018_DEM_TILE_AT_ALL_THREE_SAMPLE_POINTS",
+  "missing_points": [
+    "2264_Tom_St",
+    "2265_Tom_St",
+    "2268_Tom_St"
+  ],
+  "no_tile_explanation": "The official regional 2018 index does not include the sample points; a bounding extent cannot prove coverage.",
   "limitations": [
     "Each timestamp/year identifies a regional acquisition window rather than the exact site flight date.",
     "Original 2018 DEM has distinct horizontal projection from 2017 NOAA and must be coregistered before comparing heights.",
