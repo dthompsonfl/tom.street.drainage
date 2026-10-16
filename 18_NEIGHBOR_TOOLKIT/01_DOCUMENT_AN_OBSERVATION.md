@@ -1,13 +1,25 @@
-# How to document water, drainage and construction conditions
+# Document an observation without guessing the cause
 
-A short note made at the time is more useful than a confident explanation written weeks later. You can use the [blank CSV log](templates/OBSERVATION_LOG.csv) or plain paper.
+The best entry is written soon after the event, in ordinary language. Start with the [one-page event worksheet](print/03_Event_Observation.pdf) (page 3 of the [complete packet](print/Tom_Street_Neighbor_Documentation_Forms.pdf)). Use another sheet for a new event or a substantially different viewing point.
 
-**Record the basics:** local date and time (including time zone); the nearest cross-street or a safe general location; where you were standing; whether water was entering, remaining or leaving; approximate weather and rain timing; and which direction water appeared to move. Say when visibility was poor or you could not tell.
+## Five details to capture
 
-**Describe only what you actually saw.** For example: "At 3:15 PM, water remained near the driveway after rain stopped" is an observation. "The construction blocked the drainage" is a possible cause, not a verified fact.
+1. **When:** calendar date, local start/end time and time zone; note separately when you filled out the form. Do not reconstruct an exact time from memory without saying it is approximate.
+2. **Where:** the part of the road, property or drainage area, plus where you stood or held the camera. Record detailed locations privately; a safe general location is enough for public summaries.
+3. **Conditions:** whether it was raining, when rain stopped, where water pooled or moved, how long it remained, and anything blocking visibility. If you know rainfall quantity, name the gauge/station, measurement period and whether it was measured or reported.
+4. **What you actually saw:** describe the location, visible direction of movement, observed work and any actual measurement. Record the method, units, reference points and uncertainty. Do not write an estimated slope or pipe size as a measured fact.
+5. **Evidence references:** use simple IDs such as `E-001` for the event, `P-001` for the photograph and `F-001` for the drainage feature. Save your source file separately; write down the ID, not a public link to private material.
 
-**Photographs:** keep the unedited original and any related Live Photo/video files privately. Save a copy for annotation, name it clearly as an edited copy, and record the original file's hash if possible. Avoid faces, license plates, other residents and precise GPS on anything public.
+## Keep observations and explanations separate
 
-**Never risk injury for evidence.** Do not stand in traffic, approach active equipment, enter construction areas, touch drainage structures or enter moving floodwater. Photos from your own safe location are enough.
+**Firsthand observation:** "At 3:15 PM, water was standing at the edge of the driveway." **Possible explanation:** "I wonder whether recent grading changed its route." Only the first sentence describes something directly seen. A photograph does not automatically establish a precise elevation, upstream cause or ownership of a ditch.
 
-Keep a row even if the observation contradicts earlier concerns; a reliable record includes dry conditions, existing drainage problems and repairs as well as flooding.
+Record **dry days, earlier drainage problems, unusual storms, past repairs, and other explanations** as well. A complete chronology includes facts that may change the initial understanding. If you did not personally see an event, say who reported it (use a private reference) and whether you have their permission to share a summary.
+
+## Safely photograph water and work
+
+Use repeatable viewpoints when possible. Photograph identifiable permanent landmarks from a safe place. Save the unedited original, including any related Live Photo or video component. Keep the original filename, capture date/time if available and any metadata privately. If you annotate, crop, brighten or blur an image, label that as a **separate edited copy** and keep a reference to its original. Metadata can be incomplete or incorrect, so check it against other records.
+
+Do not enter moving water, traffic, active construction or somebody else's property to collect material. Do not touch pipes, inlets, markers, barricades, sediment controls or equipment. If conditions pose an immediate danger, prioritize safety and report the hazard through the appropriate channel.
+
+For repeating rain events, use packet page 5. For a rough drainage sketch, use page 6. For a specific ditch, inlet or pipe, use page 7. For comparisons, use page 8. For detailed provenance, see [originals and IDs](05_ORIGINALS_AND_IDS.md).

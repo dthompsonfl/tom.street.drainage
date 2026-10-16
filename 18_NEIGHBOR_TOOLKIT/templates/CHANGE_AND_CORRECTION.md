@@ -1,19 +1,19 @@
-# Proposed public evidence update | Template
+# Proposed public evidence correction | Blank template
 
-**Status:** PROPOSED / NOT YET PUBLICATION-APPROVED
+**Status: PROPOSED / NOT APPROVED FOR PUBLICATION**
 
-- Date proposed:
-- Current public page/claim ID:
-- What wording or information should change:
-- Why the old wording is wrong or incomplete:
-- Direct source (official URL or source ID):
-- Date the source was issued and retrieved:
-- Exact part of source supporting the correction:
-- Other evidence or alternative explanation:
-- Original preserved privately (reference only):
-- Sensitive details reviewed and removed?:
-- Homeowner/speaker approval for first-person wording?:
-- Independent source and privacy reviewer:
-- Version/commit after publication:
+- Proposed date and private reviewer ID:
+- Current public document and claim/reference ID:
+- Exact words or information to correct:
+- Suggested replacement (clearly label firsthand observation versus sourced fact):
+- Why the earlier wording was incomplete or incorrect:
+- Dated primary source ID, official URL if public, and page/sheet or precise excerpt:
+- Date the primary source was issued and date accessed:
+- Additional sources or reasonable alternative explanation:
+- Original source retained privately (reference only):
+- Personal information and metadata checked and removed from proposed public copy?:
+- Resident approval for first-person words and intended sharing scope (private reference):
+- Independent source and privacy reviewer / date:
+- Public version or commit after publication, if approved:
 
-Do not upload private original documents or full metadata here. An unresolved question should remain unresolved rather than being filled with an assumption.
+Keep earlier versions and a dated correction trail. Do not silently overwrite original evidence, make a source say more than it does, or publish completed private forms here. An unresolved point must stay unresolved.
