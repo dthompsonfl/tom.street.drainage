@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Build an auditable claim -> primary-source table from preserved archive bytes.
+"""HISTORICAL SOURCE-LINK GENERATOR DISABLED: current ledger has later claims.
+
+Build an auditable claim -> primary-source table from preserved archive bytes.
 
 Do not infer a second-property source automatically from a first-property capture.
 This generator only inserts explicitly enumerated, locally corroborated links.
@@ -52,4 +54,6 @@ def run():
  with out.open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=FIELDS);w.writeheader();w.writerows(rows)
  return len(rows)
-if __name__=='__main__':print('link rows',run())
+if __name__=='__main__':
+    raise SystemExit("RETIRED HISTORICAL SOURCE-LINK BUILDER: cannot overwrite later claim/source joins. Use active reviewed register updates.")
+    print('link rows',run())

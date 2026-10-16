@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Build public, minimal extracts from preserved PA/MGO records.
+"""HISTORICAL PUBLIC-EXTRACT GENERATOR DISABLED.
+
+Build public, minimal extracts from preserved PA/MGO records.
 
 This intentionally excludes applicants' private contact information, resident
 photos, authenticated portal shells, session data, and unrelated raw records.
@@ -60,4 +62,6 @@ def main():
     out=ROOT/'15_RECONCILED_DRAFTS/05_PRIMARY_SOURCE_EXTRACTS.md'
     out.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print('created',out.relative_to(ROOT),len(lines),'lines')
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit("RETIRED HISTORICAL EXTRACT BUILDER: do not overwrite current curated research extracts with a fixed older selection.")
+    main()
