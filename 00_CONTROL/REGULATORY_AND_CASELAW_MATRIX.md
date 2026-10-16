@@ -177,8 +177,7 @@ compliance standard this investigation relies on.
 ## D. Environmental permitting — applicability deliberately unproven
 
 - **ERP 9220-2** ("Hadleigh Hills, Phase 2 Ext. to P9220-1", applicant
-  *Hadleigh Hills Development Group*, 8.1 ac, decided 2016-11-21) is the only
-  ERP within 2,000 ft of either parcel in NWFWMD's public map service.
+  *Hadleigh Hills Development Group*, 8.1 ac, decided 2016-11-21) was returned as a nearby ERP lead by the **limited archived radius search** near the properties; neither exhaustive permit coverage nor parcel intersection was checked.
   **Status: UNRESOLVED.** No polygon intersection against the parcel polygons
   has been performed; no permit document obtained. It is a lead, not an
   attribution (CON-06, GAP-17).

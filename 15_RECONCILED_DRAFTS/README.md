@@ -1,5 +1,5 @@
 # Tom Street | Reconciled homeowner drafts
-Prepared 2026-10-15. **Status: FACT-CHECKED DRAFTS, NOT APPROVED FINAL PRINT PACKET.**
+Prepared 2026-10-15. **Status: SOURCE-RECONCILED, EVIDENCE-LIMITED DRAFTS; NOT AN APPROVED FINAL PACKET.**
 
 These documents supersede the narrative text in `14_MEETING_PACKET/`. The old PDF files and `releases/2026-10-15/` ZIP are retained *solely for historical traceability*; their SHA checks establish file identity, not factual accuracy. They must not be circulated as the final meeting packet.
 
@@ -34,4 +34,4 @@ The canonical public text comprises `01_HOMEOWNER_BRIEF.md`, `06_COMMISSIONER_CO
 
 ## Preserved legal source PDFs
 
-Three previously missing **public primary/legal record PDFs** were downloaded and byte-hashed via the governed GitHub workflow: the 1989 Florida Supreme Court corrected *Westland* opinion and two FDEP final-order quarterly **indexes**. These are under [`08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/`](../08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/) with an acquisition manifest. No signed DEP consent order or lot-specific approved engineering plan was recovered by this legal-source acquisition. This annex is **not part of the public four-page homeowner handout**.
+Three previously missing **public primary/legal record PDFs** were downloaded and byte-hashed via the governed GitHub workflow: the 1989 Florida Supreme Court corrected *Westland* opinion and two FDEP final-order quarterly **indexes**. These are under [`08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/`](../08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/) with an acquisition manifest. No signed DEP consent order or lot-specific approved engineering plan was recovered by this legal-source acquisition. This legal-reference annex is **not part of the current five-page draft homeowner meeting handout**.

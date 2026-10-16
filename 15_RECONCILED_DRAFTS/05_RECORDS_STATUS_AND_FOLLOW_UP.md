@@ -5,7 +5,7 @@
 ## Three essential requests for County Engineering
 
 1. Confirm whether an approved subdivision lot grading plan is on file for 2264 and 2268; if not, identify each lot's actual stamped approved grading plan or permit alternative.
-2. Provide or arrange the surveyed elevations of swales, driveway/culvert inverts, roadside grade and positive outfall, plus who owns/maintains the shared structures.
+2. Produce any **existing** surveyed elevations of swales, driveway/culvert inverts, roadside grade and the receiving outfall; if none are held, explain how the County will assess the drainage and identify the responsible owner/maintainer.
 3. Identify the engineer of record, the inspection/certification gate before any CO, and the County's process for reviewing drainage impacts on neighboring existing homes.
 
 ## Meeting follow-up record
