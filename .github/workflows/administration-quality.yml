@@ -1,0 +1,67 @@
+name: Verify administrative and technical documentation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tom-street-admin-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  read-only-administration-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run negative and positive administrative and private-operation regression tests
+        run: |
+          python -m unittest discover -s tools -p 'test_administration.py' -v
+          python -m unittest discover -s tools -p 'test_private_operations.py' -v
+          python -m unittest discover -s tools -p 'test_pipeline_guard.py' -v
+          python -m unittest discover -s tools -p 'test_retired_builders.py' -v
+          python -m unittest discover -s tools -p 'test_live_status.py' -v
+      - name: Check current evidence registers, active document links and privacy boundary
+        run: python tools/check_administration.py --strict
+      - name: Derive current evidence and engineering gap counts without writes
+        run: python -B tools/report_current_status.py --format json
+      - name: Read-only full worktree privacy classification gate
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Compile Python sources without writing tracked files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          paths = sorted(p for p in Path('.').rglob('*.py') if not any(x in {'.git', '__pycache__', '.evidence_vault'} for x in p.parts))
+          errors = []
+          for p in paths:
+              try:
+                  compile(p.read_bytes(), str(p), 'exec')
+              except (SyntaxError, UnicodeDecodeError) as error:
+                  errors.append(f'{p}: {error}')
+          print(f'Python source syntax: checked {len(paths)} files, {len(errors)} errors')
+          if errors:
+              raise SystemExit('\n'.join(errors))
+          PY
+      - name: Verify full automation reports missing dependencies honestly (no execution)
+        run: |
+          python tools/autonomous_evidence_pipeline.py --mode full --dry-run > /tmp/tom-street-pipeline-preflight.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          plan = json.loads(Path('/tmp/tom-street-pipeline-preflight.json').read_text())
+          declared = {item for values in plan['phases'].values() for item in values}
+          missing = {name for name in declared if not (Path('tools')/name).is_file()}
+          assert set(plan['missing_required_scripts']) == missing
+          assert plan['ready_to_execute'] == (not missing)
+          print('Autonomous pipeline preflight: diagnostic accurate; full acquisition NOT run')
+          print('Missing modules:', ', '.join(sorted(missing)) or 'none')
+          PY

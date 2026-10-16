@@ -208,6 +208,11 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="List planned phases and scripts without executing network or file writes.",
     )
+    parser.add_argument(
+        "--allow-network-and-writes",
+        action="store_true",
+        help="Operator acknowledges network acquisition and source-file writes; never implies agency or release approval",
+    )
     args = parser.parse_args(argv)
 
     if args.dry_run:
@@ -228,6 +233,14 @@ def main(argv: list[str] | None = None) -> int:
         plan["ready_to_execute"] = not missing
         print(json.dumps(plan, indent=2))
         return 0  # diagnostic output only; not a successful pipeline run
+
+    if not args.allow_network_and_writes:
+        print(json.dumps({
+            "status": "BLOCKED_OPERATOR_CONFIRMATION_REQUIRED",
+            "mode": args.mode,
+            "note": "No acquisition, report, source update or publication step was started. Re-run with explicit --allow-network-and-writes only after reviewing scripts and permission scope.",
+        }, indent=2), file=sys.stderr)
+        return 3
 
     missing = missing_required_scripts(args.mode)
     if missing:

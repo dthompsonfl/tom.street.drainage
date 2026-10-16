@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Unit tests for the complete 11-script autonomous evidence suite."""
+"""HISTORICAL integration expectations; not a verified complete autonomous suite.
+
+Some referenced modules remain unavailable. Running this full historical suite
+may fail before executing tests; it is not part of the supported release checks.
+Use read-only administration-quality CI and the pipeline --dry-run dependency
+preflight for current supported functionality. Do not report it as passing.
+"""
 from __future__ import annotations
 
 import hashlib

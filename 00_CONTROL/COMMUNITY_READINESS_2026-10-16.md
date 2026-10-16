@@ -18,6 +18,7 @@ This is the current disposition of the October 16 independent archive review. It
 | Public draft PDF matching current text | **AUTOMATED BUILD AND SHA CHECK** | Confirm a successful build commit and inspect printed pages before handoff |
 | Unsigned resident photographs | **PRIVATE INVENTORY ONLY** | Obtain owner-authorized native originals, custody history, image dates and publication permission |
 | Approved lot grading and drainage plans | **NOT OBTAINED** | Request from Santa Rosa County for 2264/BP-2026-1621 and 2268/BP-2026-1612 |
+| Original recorded subdivision plat | **CRESCENT SHORES PLAT A/70 OBTAINED** | Obtain later Lot QQ deeds, modern legal descriptions, drainage easements and roadway acceptance documents; plat is not a current survey |
 | Field-measured grades, pipe inverts, receiving outfall | **NOT OBTAINED** | Obtain existing as-builts and qualified common-datum measurements |
 | Drainage responsibility | **COUNTY ROAD CLASSIFICATION KNOWN; ASSETS UNRESOLVED** | County Public Works asset inventory, acceptance documents and easements |
 | Environmental authorization and code pathway | **APPLICABILITY UNRESOLVED** | Signed ERP/CGP files or written exemption and applicable County approvals |

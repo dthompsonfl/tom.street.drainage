@@ -15,6 +15,7 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 | Document what you see near your home | [One-page event form](18_NEIGHBOR_TOOLKIT/print/03_Event_Observation.pdf) and [full neighbor toolkit](18_NEIGHBOR_TOOLKIT/README.md) |
 | Check evidence and sources | [Plain-English evidence guide](PUBLIC_EVIDENCE_GUIDE.md) |
 | See what we still need | [Open questions](00_CONTROL/OPEN_QUESTIONS.md) |
+| Technical administration and current verification | [Administrative status and control matrix](00_CONTROL/ADMINISTRATION_AND_TECHNICAL_STATUS_2026-10-16.md) and [automation decisions](00_CONTROL/AUTOMATION_COMPONENT_DECISIONS_2026-10-16.md) |
 | Check which packet is current | [Current draft release guide](15_RECONCILED_DRAFTS/README.md) and [five-page draft PDF](15_RECONCILED_DRAFTS/pdf/Tom_Street_Reconciled_Public_Meeting_Draft.pdf) |
 
 **This repository is available for neighbor review and corrections, not as an approved finding or a signed filing.** All public letters and handouts remain DRAFTS until reviewed and signed by the person using them. Older PDFs in [the previous meeting packet](14_MEETING_PACKET/RELEASE_README.md) and [older releases](releases/2026-10-15/) are superseded historical records. Do not hand them out as the current version.
