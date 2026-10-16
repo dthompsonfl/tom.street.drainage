@@ -1,0 +1,40 @@
+name: Preserve independently reviewed question sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/import_reviewed_question_sources.py'
+      - '.github/workflows/preserve-reviewed-question-sources.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: preserve-reviewed-question-sources
+  cancel-in-progress: false
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retrieve exact already-reviewed artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/dthompsonfl/tom.street.drainage/actions/artifacts/12027603047/zip > /tmp/reviewed-sources.zip
+      - name: Verify whole artifact and preserve only approved original JSON
+        run: python tools/import_reviewed_question_sources.py /tmp/reviewed-sources.zip
+      - name: Publish reviewed bytes without replacing existing evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 17_CURRENT_RESEARCH/captures/20261016T054716Z/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'evidence: preserve 11 reviewed official GIS responses and provenance [skip ci]'
+          git push origin HEAD:main
+# No agency requests, photo archives, new downloads, or unreviewed results are published.
