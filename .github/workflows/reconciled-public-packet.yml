@@ -5,6 +5,13 @@ on:
     branches: [main]
     paths:
       - '15_RECONCILED_DRAFTS/*.md'
+      - 'PUBLIC_EVIDENCE_GUIDE.md'
+      - 'PUBLICATION_AND_VERSIONING.md'
+      - '18_NEIGHBOR_TOOLKIT/**'
+      - 'tools/check_neighbor_release.py'
+      - '00_CONTROL/OPEN_QUESTIONS.md'
+      - '00_CONTROL/READING_ORDER_AND_SNAPSHOT_STATUS.md'
+      - '17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md'
       - 'tools/build_reconciled_packet.py'
       - 'tools/verify_reconciled_release.py'
       - 'tools/check_document_claims.py'
@@ -84,7 +91,9 @@ jobs:
           python tools/check_repository_consistency.py
           python tools/check_jurisdiction_scope.py
           python -B 00_CONTROL/tools/strict_release_gate.py
+          python -B 00_CONTROL/tools/classify_for_release.py --write
           python -B 00_CONTROL/tools/classify_for_release.py --check
+          python -B tools/check_neighbor_release.py
           python - <<'PY'
           import json, pathlib
           from pypdf import PdfReader
@@ -101,7 +110,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 15_RECONCILED_DRAFTS/pdf/ 00_CONTROL/EVIDENCE_MANIFEST.csv
+          git add 15_RECONCILED_DRAFTS/pdf/ 00_CONTROL/EVIDENCE_MANIFEST.csv 00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv
           if git diff --cached --quiet; then
             echo "No new generated files"
             exit 0
