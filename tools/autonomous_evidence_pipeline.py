@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Master autonomous pipeline orchestrator for the Tom Street drainage investigation.
+"""Incomplete research pipeline orchestrator for the Tom Street investigation.
+
+NOT A VERIFIED COMPLETE ACQUISITION OR RELEASE SYSTEM. Required modules may be
+missing; execution must fail closed rather than report a misleading success.
 
 Provides a single unified command-line entry point to:
 1. Run proactive multi-agency discovery (`discover_agency_updates.py`).
@@ -157,6 +160,35 @@ def run_phase_sequential(scripts: list[str], extra_args: list[str] | None = None
     return [run_script(s, extra_args=extra_args, retries=0) for s in scripts]
 
 
+def required_scripts(mode: str) -> list[str]:
+    """Return all scripts whose successful presence is required for the mode.
+
+    This check is intentionally separate from source-file provenance checks.
+    A skipped or unavailable acquisition step cannot count as a successful
+    end-to-end evidence review.
+    """
+    groups = (
+        ("discovery", DISCOVERY_SCRIPTS, ("full", "discover")),
+        ("acquisition", ACQUISITION_SCRIPTS, ("full", "acquire")),
+        ("analysis_and_sync", ANALYSIS_AND_SYNC_SCRIPTS, ("full", "sync")),
+        ("audit_and_verify", AUDIT_AND_VERIFY_SCRIPTS, ("full", "verify")),
+        ("build_and_release", BUILD_AND_RELEASE_SCRIPTS, ("full", "build")),
+    )
+    names: list[str] = []
+    for _phase, scripts, modes in groups:
+        if mode in modes:
+            for name in scripts:
+                if name not in names:
+                    names.append(name)
+    return names
+
+
+def missing_required_scripts(mode: str) -> list[str]:
+    """Report missing expected implementations without changing any files."""
+    return [name for name in required_scripts(mode)
+            if not (TOOLS_DIR / name).is_file()]
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -191,8 +223,21 @@ def main(argv: list[str] | None = None) -> int:
                 "build_and_release": BUILD_AND_RELEASE_SCRIPTS if args.mode in ("full", "build") else [],
             },
         }
+        missing = missing_required_scripts(args.mode)
+        plan["missing_required_scripts"] = missing
+        plan["ready_to_execute"] = not missing
         print(json.dumps(plan, indent=2))
-        return 0
+        return 0  # diagnostic output only; not a successful pipeline run
+
+    missing = missing_required_scripts(args.mode)
+    if missing:
+        print(json.dumps({
+            "status": "BLOCKED_MISSING_REQUIRED_SCRIPTS",
+            "mode": args.mode,
+            "missing_required_scripts": missing,
+            "note": "No acquisition, report or publication steps were started.",
+        }, indent=2), file=sys.stderr)
+        return 2
 
     started_utc = datetime.now(timezone.utc).isoformat()
     phases_output: dict[str, list[dict]] = {}
@@ -216,7 +261,7 @@ def main(argv: list[str] | None = None) -> int:
 
     all_runs = [item for phase_list in phases_output.values() for item in phase_list]
     succeeded = sum(1 for r in all_runs if r["status"] == "SUCCEEDED")
-    failed = sum(1 for r in all_runs if r["status"] in ("FAILED", "TIMEOUT"))
+    failed = sum(1 for r in all_runs if r["status"] != "SUCCEEDED")
 
     report = {
         "started_utc": started_utc,
@@ -237,7 +282,7 @@ def main(argv: list[str] | None = None) -> int:
         "report_path": report_path.relative_to(ROOT).as_posix(),
         "summary": report["summary"],
     }, indent=2))
-    return 1 if failed > 0 and args.mode in ("verify", "build") else 0
+    return 1 if failed > 0 else 0
 
 
 if __name__ == "__main__":
