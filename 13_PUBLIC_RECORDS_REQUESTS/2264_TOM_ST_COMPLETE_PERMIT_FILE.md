@@ -80,7 +80,7 @@ spreadsheet, or native image) where that format is releasable.
 
 ## Why this cannot be satisfied from the public portal
 
-MGO Connect (`mgoconnect.org/cp/search?jid=276&pid=3`) redirects all anonymous
+MGO Connect (`mgoconnect.org/cp/search?jid=276&pid=3`) redirected the tested anonymous
 "Guest" requests to a login page. Six separate public search routes were tested
 on 2026-10-15 and all were refused without an account. This request is made
 under Chapter 119, Florida Statutes.
