@@ -1,3 +1,5 @@
+> **SUPERSEDED SOURCE DRAFT.** The earlier generated PDFs reflect this older text and must not be presented as the final document. Current drafts are in [`15_RECONCILED_DRAFTS`](../15_RECONCILED_DRAFTS/README.md). Preserve this file for historical audit only.
+
 # Homeowner Evidence Intake Checklist
 
 This is a short intake form for gathering the one category of evidence that

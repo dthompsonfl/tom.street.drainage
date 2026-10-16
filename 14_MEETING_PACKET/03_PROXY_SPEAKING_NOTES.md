@@ -1,3 +1,5 @@
+> **SUPERSEDED SOURCE DRAFT.** The earlier generated PDFs reflect this older text and must not be presented as the final document. Current drafts are in [`15_RECONCILED_DRAFTS`](../15_RECONCILED_DRAFTS/README.md). Preserve this file for historical audit only.
+
 # Proxy Speaking Notes — Tom Street Drainage
 
 **For a neighbour presenting on the homeowner's behalf**

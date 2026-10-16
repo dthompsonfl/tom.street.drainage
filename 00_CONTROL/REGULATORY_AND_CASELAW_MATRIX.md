@@ -19,9 +19,9 @@ Status vocabulary: `VERIFIED_APPLICABLE` · `CONDITIONALLY_APPLICABLE` ·
 | Source | Where retrieved | Verification |
 |---|---|---|
 | Fla. Stat. § 119.07 (2026) | `flsenate.gov/Laws/Statutes/2026/119.07` | Full statutory text read |
-| Santa Rosa County LDC (official PDF, 509 pp) | `santarosa.fl.gov/DocumentCenter/View/5820/…` | Downloaded; `%PDF-1.6`; 7,225,217 bytes; SHA-256 `12f0ec8d024c95fa15af73f1cde340867068bb51d51bb9fcb6f1ca3e6e69ebae`; PDF internal CreationDate 2026-01-13 |
+| Santa Rosa County LDC (official PDF, 509 pp) | `santarosa.fl.gov/DocumentCenter/View/5820/…` | Downloaded; `%PDF-1.6`; 7,225,217 bytes; SHA-256 `12f0ec8d024c95fa15af73f1cde340867068bb51d51bb9fcb6f1ca3e6e69ebae`; PDF cover/ordinance text dated 2025-11-10 (Ord. 2025-25); PDF CreationDate 2026-01-13 is *file metadata*, not legal effective date |
 | Fla. Stat. § 373.042 (2026) | `flsenate.gov/Laws/Statutes/2026/373.042` | Full statutory text read |
-| **Westland Skating Center, Inc. v. Gus Machado Buick, Inc., 542 So. 2d 959 (Fla. 1989)** | — | **PRIMARY TEXT NOT OBTAINED** — see §E |
+| **Westland Skating Center, Inc. v. Gus Machado Buick, Inc., 542 So. 2d 959 (Fla. 1989)** | [FSU College of Law corrected Supreme Court opinion](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/op-72492.pdf) | **PRIMARY OPINION LOCATED AND READ**; subsequent treatment not comprehensively reviewed — see §E |
 
 ---
 
@@ -162,8 +162,7 @@ compliance standard this investigation relies on.
   **Status: UNRESOLVED.** No polygon intersection against the parcel polygons
   has been performed; no permit document obtained. It is a lead, not an
   attribution (CON-06, GAP-17).
-- **No FDEP-issued ERP** lies within 2,000 ft. **Status: NOT_APPLICABLE on
-  current evidence** — and per the directive, a negative search hit does *not*
+- **No FDEP-issued ERP** was returned by the archived 2,000-ft query. **Status: UNRESOLVED** — and per the directive, a negative search hit does *not*
   prove no authorisation exists (GAP-18).
 - **Construction-stormwater NPDES coverage / common-plan-of-development:**
   **UNRESOLVED.** No CGP coverage record, NOI or common-plan determination has
@@ -171,28 +170,16 @@ compliance standard this investigation relies on.
 
 ---
 
-## E. Case law — primary text NOT obtained
+## E. Case law — primary opinion verified, application unresolved
 
-**Westland Skating Center, Inc. v. Gus Machado Buick, Inc., 542 So. 2d 959
-(Fla. 1989)** is cited in the directive as the controlling Florida authority on
-the reasonable-use surface-water doctrine.
+**Westland Skating Center, Inc. v. Gus Machado Buick, Inc., 542 So. 2d 959 (Fla. 1989)**, Florida Supreme Court, docket 72492, March 30, 1989.
 
-- **What I did:** attempted retrieval from Cornell LII (returned an unrelated
-  federal reporter page — 542 **U.S.** 959 is a different case), Justia (HTTP
-  403), CourtListener (0 Florida results; its coverage does not reach 1989
-  Florida Supreme Court opinions), and Google Scholar (404).
-- **Status: UNRESOLVED — PRIMARY TEXT NOT VERIFIED.**
-- **What is therefore NOT claimed in this repository:** any quotation,
-  pinpoint page, or paraphrase of Westland's holding. The commonly taught
-  proposition — that Florida applies a *reasonable-use* balancing analysis
-  rather than an automatic ban on elevating a lot and causing surface-water
-  flow onto a neighbour — is recorded here as a **research direction only**,
-  to be confirmed against the official reporter or a law-library copy before
-  it is relied on or repeated to the county or a neighbour.
-- **Corresponding caution applied:** no older First DCA "strict rule" language
-  is relied on as if it survived a Supreme Court reasonable-use analysis,
-  because that survival has not itself been verified here.
+- **Primary document:** [FSU College of Law docket 72492](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/72492.html), [11-page corrected opinion](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/op-72492.pdf), retrieved and text-checked on 2026-10-15. The original PDF is not archived in this Git repository; its public source URL is retained.
+- **Rule adopted by Court:** Florida applies the **reasonable-use rule** to damage from interference with surface water. The court adopts it at opinion PDF page 6 and describes the comparison of improved-property conduct at PDF pages 7-8.
+- **Critical distinction:** compliance with a building code may be evidence of reasonable use but is **not reasonableness as a matter of law** (opinion PDF pages 9-10). This undermines both automatic allegations from high fill and automatic absolution from an approved building permit.
+- **Status:** primary text verified; subsequent citator/treatment and direct applicability to actual Tom Street engineering facts **not completed**. No liability finding is asserted.
 
+The original opinion is a legal research source, not a homeowner technical exhibit without factual and legal professional review.
 ---
 
 ## F. Summary
@@ -207,9 +194,12 @@ the reasonable-use surface-water doctrine.
 | Fla. Stat. § 119.07 (2026) | yes, official text | yes | — |
 | Fla. Stat. § 373.042 (2026) | yes, official text | unresolved | minimum flow for the receiving watercourse |
 | ERP 9220-2 applicability | record yes, applicability no | **unresolved** | GAP-16 / GAP-17 |
-| **Westland Skating Center (Fla. 1989)** | **NO** | **unresolved** | official reporter text |
+| **Westland Skating Center (Fla. 1989)** | primary FSU corrected opinion checked | factual application unresolved | subsequent treatment and surveyed effects |
 
 **Nothing in this matrix supports a statement that any violation occurred.** The
 verified text establishes *what the County's rules require*; the absence of
 approved plans, surveys, as-builts and field measurements in this repository
 means the compliance question cannot yet be reached in either direction.
+## G. Edition and amendment control (October 2026)
+
+The county-hosted LDC edition identifies **Ord. 2025-25 (adopted November 10, 2025)** on its cover, with amendments to §§ 3.04.05 and 4.04.01. An internal PDF creation timestamp in January 2026 must not be reported as a new legal enactment. The 2026 Ordinances index shows later LDC-related enactments, some changing zoning/future-land-use maps. Review each ordinance's effective date and text against the actual permits **created February 11, 2026 and issued March 23, 2026** before asserting any amendment applied or did not apply. Sources: https://santarosa.fl.gov/182/Land-Development-Code and https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026 .

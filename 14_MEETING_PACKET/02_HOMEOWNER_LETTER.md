@@ -1,3 +1,5 @@
+> **SUPERSEDED SOURCE DRAFT.** The earlier generated PDFs reflect this older text and must not be presented as the final document. Current drafts are in [`15_RECONCILED_DRAFTS`](../15_RECONCILED_DRAFTS/README.md). Preserve this file for historical audit only.
+
 # Letter Regarding Drainage Records and Field Verification
 
 **2264 Tom Street and 2268 Tom Street, Navarre, Florida 32566**

@@ -1,3 +1,5 @@
+> **SUPERSEDED SNAPSHOT:** This report includes historical statements later corrected: 2266 was used as an address in 1996–1998 MGO records, older 2000 permits are not reliably attributable to current 2268, and Assigned certifications do not prove no submission. See `15_RECONCILED_DRAFTS` for the current evidence assessment.
+
 # PROGRESS — Tom Street Drainage Investigation
 
 **Status: ACQUISITION IN PROGRESS**

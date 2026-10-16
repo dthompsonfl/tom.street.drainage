@@ -1,3 +1,5 @@
+> **SUPERSEDED ACQUISITION SNAPSHOT:** Contains some early overconfident assertions about 2266 historical address use, 2000-era mobile-home attribution, what grading fees prove, and whether assigned as-builts exist. The underlying saved raw agency results are preserved; use `15_RECONCILED_DRAFTS/04_CROSS_SOURCE_RECONCILIATION.md` for governing interpretation.
+
 # Acquisition Results — Tom Street Drainage Investigation
 
 **Status: ACQUISITION IN PROGRESS**

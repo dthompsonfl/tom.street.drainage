@@ -1,3 +1,5 @@
+> **SUPERSEDED SOURCE DRAFT.** The earlier generated PDFs reflect this older text and must not be presented as the final document. Current drafts are in [`15_RECONCILED_DRAFTS`](../15_RECONCILED_DRAFTS/README.md). Preserve this file for historical audit only.
+
 # Tom Street Drainage — Homeowner Brief
 
 **2264 Tom Street** (parcel 21-2S-26-0780-0QQ00-1020) and **2268 Tom Street**

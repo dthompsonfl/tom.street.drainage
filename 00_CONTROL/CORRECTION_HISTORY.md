@@ -1,3 +1,5 @@
+> **HISTORICAL ERRATUM (2026-10-15):** The correction log below itself made statements that 2266 never existed and that the archived Clerk results conclusively proved a deed's parcel association. Historical MGO permit records use 2266. The saved Clerk item is a search grid, not the native deed image. Original quoted excerpts do not establish verbatim preservation of all older source notes. See current reconciled documents.
+
 # CORRECTION HISTORY — LEGACY RESEARCH CLAIMS
 
 This file preserves, verbatim, every factual claim made by the earlier research

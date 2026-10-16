@@ -1,3 +1,5 @@
+> **SUPERSEDED SOURCE DRAFT.** The earlier generated PDFs reflect this older text and must not be presented as the final document. Current drafts are in [`15_RECONCILED_DRAFTS`](../15_RECONCILED_DRAFTS/README.md). Preserve this file for historical audit only.
+
 # Follow-Up and Response Tracker
 
 2264 / 2268 Tom Street, Navarre, FL 32566 · prepared 16 October 2026
