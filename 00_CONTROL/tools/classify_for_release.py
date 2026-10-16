@@ -1,117 +1,102 @@
 #!/usr/bin/env python3
-"""Classify every file for public-release safety.
+"""Privacy triage for Tom Street public evidence (no embedded account identifiers).
 
-Privacy classes
-  PUBLIC       safe to track and publish
-  RESTRICTED   contains authenticated account identity or logged-in portal state;
-               must be removed from the PUBLIC remote and retained only in the
-               local evidence vault
-  BUILD_ARTIFACT  compiled bytecode; should not be tracked
+This is an automated *screen*, never permission for public release. No real
+personal identifiers, session values, hashes of sensitive values or cookies may
+be added to this tracked source. Keep project-specific sensitive patterns in
+an ignored local file and obtain a human privacy sign-off outside Git.
 
-Scans raw BYTES, because portal HTML captures are not valid UTF-8 and are
-silently skipped by line-oriented text tools.
-
-Run:  python3 00_CONTROL/tools/classify_for_release.py --write
+Run: python3 00_CONTROL/tools/classify_for_release.py [--write] [--check]
 """
-import os as _os, sys as _sys  # noqa: E402
-_HERE = _os.path.dirname(_os.path.abspath(__file__))  # noqa: E402
-if _HERE not in _sys.path:
-    _sys.path.insert(0, _HERE)  # noqa: E402
-from paths import ROOT as _ROOT, rel, sha256_file  # noqa: E402
-
+from __future__ import annotations
 import csv
-import re
+import hashlib
+import os
 from pathlib import Path
+import re
+import sys
 
-# Account-identifying markers observed in this investigation.
-# The literals are split at import time so this tracked source file does not
-# itself contain the requester's identifying strings verbatim.
-ACCOUNT_MARKERS = [
-    b"Dylan" + b" Thompson",                 # requester display name
-    b"thompson.d.r.92" + b"@gmail.com",       # requester e-mail
-    b"__Host-" + b"MGUserToken",
-    b"7568CBA6" + b"-CB19-40AA-80FF-B02974F19C71",  # session token
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+from paths import ROOT  # noqa: E402
+
+# Generic signature patterns only. Never store literal actual secrets here.
+GENERIC_SECRETS = [
+    ("private-key-header", re.compile(rb"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
+    ("auth-header", re.compile(rb"(?im)^\s*(?:authorization|proxy-authorization)\s*[:=]\s*(?:bearer|basic)\s+[A-Za-z0-9._+/-]{12,}")),
+    ("set-cookie", re.compile(rb"(?im)^\s*(?:set-cookie|cookie)\s*:\s*[^\r\n]{20,}")),
+    ("environment-secret", re.compile(rb"(?im)^\s*[A-Za-z_]*(?:SECRET|TOKEN|PASSWORD|API_KEY)\s*=\s*[^\r\n\s#]{12,}\s*$")),
 ]
-# Markers showing the capture is a logged-in (not guest) portal shell.
-AUTHENTICATED_SHELL = [
-    b"Current Jurisdiction",
-    b"cp/project-details",
-    b"mgoconnect.org/cp",
-]
+NAME_RISK = re.compile(r"(?:^|/)(?:\.env(?:\..*)?|credentials[^/]*|.*(?:auth|session)[^/]*state[^/]*\.json)$", re.I)
+AUTH_CAPTURE_RE = re.compile(r"(?:^|/)(?:SYSTEM_RAW/.*\.(?:html|png)|[^/]*_record_page\.html|[^/]*_project\.html|[^/]*_api_calls\.json)$", re.I)
 
-# Whole-page captures of portals, regardless of marker presence.
-AUTH_CAPTURE_RE = re.compile(
-    r"(SYSTEM_RAW/.*\.(html|png)$|_project\.(html|png)$|_record_page\.html$|"
-    r"_record\.png$|_api_calls\.json$)", re.I)
-
-
-def classify(relpath: str, data: bytes) -> tuple[str, str]:
-    if relpath.endswith(".pyc") or "/__pycache__/" in relpath:
-        return "BUILD_ARTIFACT", "compiled bytecode"
-    if relpath == __file__.replace(str(_ROOT) + "/", "") or \
-            relpath.endswith("tools/classify_for_release.py"):
-        # this detector necessarily embeds the markers it searches for
-        return "PUBLIC", "source code (detector; embeds marker literals)"
-    hits = [m.decode() for m in ACCOUNT_MARKERS if m in data]
-    if hits:
-        return "RESTRICTED", "account identity present (" + \
-            ", ".join(sorted({_label(h) for h in hits})) + ")"
-    if AUTH_CAPTURE_RE.search(relpath):
-        shell = [m.decode() for m in AUTHENTICATED_SHELL if m in data]
-        if shell:
-            return "RESTRICTED", "authenticated portal shell: " + ", ".join(shell)
-        return "PUBLIC", "public (guest) portal capture"
-    if relpath.startswith("00_CONTROL/tools/"):
-        return "PUBLIC", "source code"
-    return "PUBLIC", ""
+# This public scanner intentionally doesn't know actual homeowner/account names.
+# Use a local, ignored `private_patterns.txt` when a reviewer can safely run it.
+def local_markers():
+    path = ROOT / ".evidence_vault" / "private_patterns.txt"
+    if not path.exists():
+        return []
+    return [x.strip().encode("utf-8") for x in path.read_text().splitlines()
+            if x.strip() and not x.lstrip().startswith("#")]
 
 
-_LABELS = {}
+def classify(path: str, data: bytes, additional=()):
+    if path.endswith(".pyc") or "/__pycache__/" in path:
+        return "BUILD_ARTIFACT", "compiled output; not distributable"
+    if path.startswith(".evidence_vault/") or NAME_RISK.search(path):
+        return "RESTRICTED", "restricted pathname"
+    for label, pattern in GENERIC_SECRETS:
+        if pattern.search(data):
+            return "RESTRICTED", label  # never echo a matched secret
+    if any(m in data for m in additional):
+        return "RESTRICTED", "local-private-pattern"
+    if path.startswith("03_PERMITS_AND_INSPECTIONS/") and path.endswith(("_contacts.json", "_project_by_uid.json", "_api.json", "_payments.json")):
+        return "REVIEW_REQUIRED", "agency response can contain personal or private third-party contact fields"
+    if AUTH_CAPTURE_RE.search(path):
+        return "REVIEW_REQUIRED", "portal/raw capture; human provenance and redaction required"
+    if path.lower().endswith((".pdf", ".zip", ".png", ".jpg", ".jpeg")):
+        return "REVIEW_REQUIRED", "binary/media: inspect metadata and extracted contents"
+    return "PUBLIC_CANDIDATE", "mechanical screen only, not release approval"
 
 
-def _label(marker: bytes) -> str:
-    """Stable, non-identifying label for a marker."""
-    if not _LABELS:
-        for i, m in enumerate(ACCOUNT_MARKERS, start=1):
-            _LABELS[m] = f"marker-{i}"
-    return _LABELS.get(marker, "marker")
+def scan(include_release=True):
+    # Any stale path absent from this fresh walk is never silently classified.
+    rows=[]
+    marks=local_markers()
+    for root, dirs, files in os.walk(ROOT):
+        dirs[:]=sorted(d for d in dirs if d not in {".git", ".evidence_vault", "__pycache__"}
+                           and (include_release or d != "releases"))
+        for name in sorted(files):
+            path=Path(root)/name
+            rel=path.relative_to(ROOT).as_posix()
+            if rel=="00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv":
+                continue  # generated output cannot self-hash
+            data=path.read_bytes()
+            cls, reason=classify(rel,data,marks)
+            rows.append(dict(path=rel,bytes=str(len(data)),sha256=hashlib.sha256(data).hexdigest(),privacy_class=cls,reason=reason))
+    return sorted(rows,key=lambda row:row["path"])
 
 
-def main(write: bool = False):
-    rows = []
-    for dirpath, dirnames, filenames in _os.walk(_ROOT):
-        dirnames[:] = [d for d in dirnames
-                       if d not in {".git", "__pycache__", ".evidence_vault"}]
-        for fn in sorted(filenames):
-            p = Path(dirpath) / fn
-            data = p.read_bytes()
-            cls, why = classify(rel(p), data)
-            rows.append({"path": rel(p), "bytes": len(data),
-                         "sha256": sha256_file(p),
-                         "privacy_class": cls, "reason": why})
-    rows.sort(key=lambda x: x["path"])
-    counts = {}
-    for x in rows:
-        counts[x["privacy_class"]] = counts.get(x["privacy_class"], 0) + 1
-    if write:
-        out = _ROOT / "00_CONTROL" / "RELEASE_PRIVACY_CLASSIFICATION.csv"
-        with out.open("w", newline="") as fh:
-            w = csv.DictWriter(fh, fieldnames=["path", "bytes", "sha256",
-                                                "privacy_class", "reason"])
-            w.writeheader()
-            w.writerows(rows)
-        print("wrote", rel(out))
-    print("counts:", counts)
-    print("\nRESTRICTED (must be removed from the public remote):")
-    for x in rows:
-        if x["privacy_class"] == "RESTRICTED":
-            print(f"  {x['bytes']:>9}  {x['path']}  [{x['reason']}]")
-    print("\nBUILD_ARTIFACT (should be untracked):")
-    for x in rows:
-        if x["privacy_class"] == "BUILD_ARTIFACT":
-            print(f"  {x['bytes']:>9}  {x['path']}")
-    return rows
+def main():
+    rows=scan()
+    if "--write" in sys.argv:
+        out=ROOT/"00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv"
+        with out.open("w",newline="") as f:
+            w=csv.DictWriter(f,fieldnames=["path","bytes","sha256","privacy_class","reason"])
+            w.writeheader();w.writerows(rows)
+        print("wrote",out.relative_to(ROOT),len(rows),"rows (self excluded)")
+    counts={x:sum(r["privacy_class"]==x for r in rows) for x in {r["privacy_class"] for r in rows}}
+    print("classification counts",counts)
+    for row in rows:
+        if row["privacy_class"] in ("RESTRICTED","BUILD_ARTIFACT"):
+            print(row["privacy_class"],row["path"])
+    # --check is a mechanical gate. It cannot approve media/third-party disclosure.
+    if "--check" in sys.argv:
+        forbidden=[r for r in rows if r["privacy_class"] in ("RESTRICTED","BUILD_ARTIFACT")]
+        if forbidden:
+            print("FAIL: restricted/build artifacts still in public worktree")
+            return 1
+    return 0
 
-
-if __name__ == "__main__":
-    main(write="--write" in _sys.argv)
+if __name__=="__main__":
+    raise SystemExit(main())

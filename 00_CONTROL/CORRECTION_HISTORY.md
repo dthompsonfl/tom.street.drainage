@@ -33,7 +33,7 @@ Also recorded previously as:
 | 2264 Tom St | `21-2S-26-0780-0QQ00-1490` | **`21-2S-26-0780-0QQ00-1020`** | WRONG |
 | 2268 Tom St | `21-2S-26-0780-0QQ00-1060` | **`21-2S-26-0780-0QQ00-1490`** | WRONG |
 | 2265 Tom St | `21-2S-26-0780-0QQ00-1180` | **`21-2S-26-0780-0QQ00-1180`** | CORRECT |
-| 2266 Tom St | unresolved | **no such address exists** | RESOLVED |
+| 2266 Tom St | unresolved | **no current parcel under this situs; historical MGO permits use 2266** | UNRESOLVED |
 
 `21-2S-26-0780-0QQ00-1060` is in fact **2274 Tom St**, owner MATIG-A CEPRIANO P JR.
 

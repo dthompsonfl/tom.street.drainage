@@ -49,11 +49,11 @@ target; per-parcel official record export for all three addresses.
 | 2264 Tom St | `...0QQ00-1490` ❌ | **`21-2S-26-0780-0QQ00-1020`** | HOLIDAY BUILDERS INC |
 | 2268 Tom St | `...0QQ00-1060` ❌ | **`21-2S-26-0780-0QQ00-1490`** | HOLIDAY BUILDERS INC |
 | 2265 Tom St | `...0QQ00-1180` ✅ | **`21-2S-26-0780-0QQ00-1180`** | BOGART CHRISTOPHER DAVID & |
-| 2266 Tom St | unknown | **DOES NOT EXIST** in the official roll | — |
+| 2266 Tom St | unknown | **NOT FOUND ON CURRENT ROLL** (historical MGO permits use 2266) | — |
 
 The prior agent had **transposed** the two target parcels. `...-1060` is
 actually **2274 Tom St** (MATIG-A CEPRIANO P JR). The 2266 ambiguity is now
-resolved: there is no 2266 Tom St.
+unresolved: current situs roll omits 2266; historic permit records include it.
 
 ## 5–6. Permit records located
 

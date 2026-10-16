@@ -23,8 +23,8 @@ Last updated: 2026-10-16 (UTC session, continuous)
 1. **The two target parcels had been transposed.** 2264 Tom St is
    `21-2S-26-0780-0QQ00-1020`; 2268 Tom St is `21-2S-26-0780-0QQ00-1490`.
 2. **`...-1060` is not 2268 Tom St** — it is **2274 Tom St** (MATIG-A CEPRIANO P JR).
-3. **2266 Tom Street does not exist.** The address sequence skips it.
-4. **ORB 3492 PG 700 is not a 2268 Tom Street instrument.** It is deed 201603296
+3. **The current Property Appraiser roll contains no 2266 Tom Street situs parcel.** Archived MGO permits refer to historical 2266; disposition and any renumbering are unverified.
+4. **ORB 3492 PG 700 is a Clerk results-grid lead, not a downloaded certified instrument.** The search includes instrument 201603296
    for "21-2S-26 POPE SUBD LOT 22 UNREC" = 2274 Tom Street.
 5. **A second development name has surfaced:** "Hadleigh Hills" is the NWFWMD ERP
    project name; "Crescent Shores (00780)" is the Property Appraiser filing name.
@@ -49,7 +49,7 @@ Plus 4 legacy permits on each lot (1996 mobile home at 2264; 2000 mobile home at
 - **2268** driveway line-and-grade inspection (2026-09-10): *"Flat; Match Existing
   roadway Grades."*
 - **Both permits: the county requirement "Certified Drainage as Built" is still
-  `Assigned` — it has not been submitted or approved on either lot.**
+  `Assigned` in the archived permit task list. This cannot independently establish whether a signed certification was submitted, approved, missing or due.**
 
 ## Immediate next operations
 

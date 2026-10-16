@@ -1,5 +1,5 @@
 item_id,parameter,approved_value,observed_or_surveyed_value,unit,datum,responsible_party,source,discrepancy,status
-DVF-01,"Finished floor elevation, 2264",NOT_OBTAINED,NOT_MEASURED,ft NAVD88 (assumed; unconfirmed),unknown,Engineer of Record (unidentified),GAP-03 / GAP-06,CANNOT COMPUTE,NOT_TESTABLE
+DVF-01,"Finished floor elevation, 2264",NOT_OBTAINED,NOT_MEASURED,ft (datum not verified),unknown,Engineer of Record (unidentified),GAP-03 / GAP-06,CANNOT COMPUTE,NOT_TESTABLE
 DVF-02,"Finished floor elevation, 2268",NOT_OBTAINED,NOT_MEASURED,ft,unknown,Engineer of Record (unidentified),GAP-08 / GAP-10,CANNOT COMPUTE,NOT_TESTABLE
 DVF-03,Roadway crown / centreline elevation at 2264 frontage,NOT_OBTAINED,NOT_MEASURED,ft,unknown,Santa Rosa County Public Works,GAP-12,CANNOT COMPUTE,NOT_TESTABLE
 DVF-04,"Driveway invert / outfall elevation, 2264",NOT_OBTAINED,NOT_MEASURED,ft,unknown,Contractor / Engineer of Record,GAP-05,CANNOT COMPUTE,NOT_TESTABLE

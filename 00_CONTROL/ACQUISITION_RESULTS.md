@@ -27,7 +27,7 @@ roll**, retrieved directly from the agency's own search application.
 2. `...-1060` is actually **2274 Tom St** (MATIG-A CEPRIANO P JR).
 3. **2266 Tom St has no current parcel**, but it *was* a real historical address:
    five closed Mobile-Home-era permits exist from 1996–1998. The address was
-   absorbed by renumbering.
+   No County renumbering or parcel merger instrument has been obtained; this history is unresolved.
 4. The MLS claim that 2268 Tom St begins at **ORB 3492 PG 700** is wrong — that
    instrument (deed 201603296, "21-2S-26 POPE SUBD LOT 22 UNREC") belongs to
    **2274 Tom St**.
@@ -53,8 +53,7 @@ an authenticated customer session.
 ### Prior permits on the same parcels (historical grading relevance)
 
 `1996-2765-000-B-0 / -E-0 / -M-0 / -P-0` (2264 Tom St, 1996) and
-`2000-4250-000-B-0 / -E-0 / -G-0 / -P-0` (2268 Tom St, 2000) — **both lots
-previously carried a mobile home.**
+`2000-4250-000-B-0 / -E-0 / -G-0 / -P-0` (2268 Tom St, 2000) — these historical permits are address-indexed, and parcel continuity (especially 2268) has not been verified.
 
 ### Adjacent frontage (drainage tie-in points named in county records)
 
@@ -105,7 +104,7 @@ HTTP 404. This is not an authentication problem — it is the portal's design.
 | Approved site plan / plot plan | both | `NOT_OFFERED_IN_PORTAL` | Chapter 119 request |
 | Approved grading plan + all revisions | both | `NOT_OFFERED_IN_PORTAL` | Chapter 119 request |
 | Existing-conditions / topographic survey | both | `NOT_OFFERED_IN_PORTAL` | Chapter 119 request |
-| Erosion & sediment control plan | both | `NOT_OFFERED_IN_PORTAL` | Chapter 119 request — county charged an "Erosion Control/Site Grade Flat Fee", confirming it exists |
+| Erosion & sediment control plan | both | `NOT_OFFERED_IN_PORTAL` | Chapter 119 request — the permit carries an erosion/site grade fee; a fee cannot establish that any particular plan was filed or approved |
 | Driveway plan and culvert details | both | `NOT_OFFERED_IN_PORTAL` | Chapter 119 request |
 | **Certified Drainage as Built** | both | `AUTHENTICATION_REQUIRED` | County requirement still `Assigned` on both permits — document not yet submitted |
 | Certificate of Occupancy | both | `NOT_FOUND_IN_SEARCHED_SYSTEM` | `Issue CO` still `Assigned`; both permits `Active` |

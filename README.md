@@ -52,13 +52,12 @@ From **MGO Connect** (Santa Rosa County Development Services), authenticated:
 - The open task **"Certified Drainage as Built" is still `Assigned` on both.**
 
 From the **Santa Rosa County Land Development Code** (official PDF, 509 pp,
-dated 2026-01-13) — § 4.04.01.D.1 requires, for a sub-one-acre lot without a
+cover dated November 10, 2025; PDF CreationDate January 13, 2026 is metadata, not enactment) — § 4.04.01.D.1 requires, for a sub-one-acre lot without a
 subdivision lot grading plan on file with County Engineering, a sealed Florida PE
 lot grading plan or an NWFWMD Individual ERP letter, **and** a sealed engineer's
 conformance letter **before Certificate of Occupancy**.
 
-From **FEMA NFHL**: both parcels are **Zone X** (minimal flood hazard), FIRM panel
-12113C0587H. From **NOAA NCEI**: rainfall context for the construction window.
+From **FEMA NFHL**: archived **geocoded sample points** returned Zone X on FIRM panel 12113C0587H. Whole-parcel flood-zone coverage has not been verified by a parcel-polygon overlay, and the mapping does not measure local street flooding. From **NOAA NCEI**: rainfall context for the construction window.
 
 ---
 

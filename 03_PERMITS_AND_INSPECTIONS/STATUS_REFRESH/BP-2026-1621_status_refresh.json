@@ -3,7 +3,7 @@
  "permit_number": "BP-2026-1621",
  "parcel_property_appraiser": "21-2S-26-0780-0QQ00-1020",
  "parcel_mgo": "212S2607800QQ001020",
- "status_at_refresh": null,
+ "status_at_refresh": "Active",
  "status_in_search_index": "Active",
  "dateCreated": "2026-02-11T12:36:02",
  "dateIssued": "2026-03-23T15:18:01",
@@ -21,7 +21,7 @@
  "requirement_count": 48,
  "open_requirement_count": 17,
  "certificate_of_occupancy_requirement": {
-  "requirement": "Issue CO (\ud835\uddd4\ud835\ude02\ud835\ude01\ud835\uddfc)",
+  "requirement": "Issue CO (𝗔𝘂𝘁𝗼)",
   "status": "Assigned"
  },
  "certified_drainage_as_built_requirement": {
@@ -50,7 +50,7 @@
    "status": "Not Complete"
   },
   {
-   "requirement": "Issue CO (\ud835\uddd4\ud835\ude02\ud835\ude01\ud835\uddfc)",
+   "requirement": "Issue CO (𝗔𝘂𝘁𝗼)",
    "status": "Assigned"
   },
   {
@@ -82,7 +82,7 @@
    "status": "Not Complete"
   },
   {
-   "requirement": "Residential \u2013 Building Misc. Windload Inspection",
+   "requirement": "Residential – Building Misc. Windload Inspection",
    "status": "Partial Pass"
   },
   {
@@ -94,8 +94,10 @@
    "status": "Not Complete"
   },
   {
-   "requirement": "Verify All Fees Paid - Final (\ud835\uddd4\ud835\ude02\ud835\ude01\ud835\uddfc)",
+   "requirement": "Verify All Fees Paid - Final (𝗔𝘂𝘁𝗼)",
    "status": "Assigned"
   }
- ]
+ ],
+ "status_at_refresh_source": "03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_project_by_uid.json:data.status (archived, NOT a new network refresh)",
+ "status_verification_scope": "Archived capture only; never treat as real-time county status."
 }
