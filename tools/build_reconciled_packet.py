@@ -12,12 +12,14 @@ import json
 import re
 import zipfile
 from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.platypus import HRFlowable, Paragraph, SimpleDocTemplate
+from reportlab.pdfgen import canvas as pdf_canvas
 from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,9 +39,9 @@ STYLE = {
     "title": ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=17.5, leading=21, textColor=colors.HexColor("#142D3B"), spaceAfter=8),
     "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=12, leading=15.5, textColor=colors.HexColor("#183C4E"), spaceBefore=9, spaceAfter=4, keepWithNext=True),
     "h3": ParagraphStyle("h3", fontName="Helvetica-Bold", fontSize=11, leading=14.5, textColor=colors.HexColor("#183C4E"), spaceBefore=8, spaceAfter=4, keepWithNext=True),
-    "body": ParagraphStyle("body", fontName="Helvetica", fontSize=10.6, leading=14, spaceAfter=5, allowWidows=0, allowOrphans=0),
-    "item": ParagraphStyle("item", fontName="Helvetica", fontSize=10.6, leading=14, leftIndent=18, firstLineIndent=-12, spaceAfter=4, allowWidows=0, allowOrphans=0),
-    "fine": ParagraphStyle("fine", fontName="Helvetica-Oblique", fontSize=9.3, leading=12.5, textColor=colors.HexColor("#52656E"), spaceAfter=7),
+    "body": ParagraphStyle("body", fontName="Helvetica", fontSize=11.25, leading=15.3, spaceAfter=7, allowWidows=0, allowOrphans=0),
+    "item": ParagraphStyle("item", fontName="Helvetica", fontSize=11.1, leading=15.2, leftIndent=18, firstLineIndent=-12, spaceAfter=5, allowWidows=0, allowOrphans=0),
+    "fine": ParagraphStyle("fine", fontName="Helvetica-Oblique", fontSize=9.6, leading=13.2, textColor=colors.HexColor("#52656E"), spaceAfter=7),
 }
 
 def sha(data: bytes) -> str:
@@ -59,6 +61,7 @@ def read_markdown(source: str):
             flow.append(Paragraph(markup(" ".join(para)), STYLE["body"]))
             para.clear()
     for raw in source.splitlines():
+        hard_break = raw.endswith("  ")  # Markdown: two trailing spaces start a new line
         line = raw.strip()
         if not line:
             flush()
@@ -92,6 +95,8 @@ def read_markdown(source: str):
         if line.startswith("|"):
             raise ValueError("Public packet source cannot contain a Markdown table")
         para.append(line)
+        if hard_break:
+            flush()
     flush()
     return flow
 
@@ -103,7 +108,6 @@ def footer(canvas, doc):
     canvas.setFont("Helvetica", 8)
     canvas.setFillColor(colors.HexColor("#586971"))
     canvas.drawString(.76 * inch, .42 * inch, "TOM STREET | Evidence-based homeowner DRAFT | Not a legal or engineering conclusion")
-    canvas.drawRightString(width - .76 * inch, .42 * inch, "Page " + str(doc.page))
     canvas.restoreState()
 
 def create_pdf(source: str, path: Path) -> int:
@@ -140,6 +144,19 @@ def main():
         outputs.append({"source_md": md_name, "source_sha256": sha(markdown.read_bytes()), "pdf": pdf_name,
                         "bytes": pdf.stat().st_size, "sha256": sha(pdf.read_bytes()), "pages": pages,
                         "page_text_lengths": [len(re.sub(r"TOM STREET \| Evidence-based homeowner DRAFT \| Not a legal or engineering conclusion|Page \d+", "", page.extract_text() or "").strip()) for page in PdfReader(str(pdf)).pages]})
+    # Number only the combined handout so printed copies have meaningful
+    # sequential pagination, without an underlying duplicate "Page 1" layer.
+    packet_pages = len(writer.pages)
+    for page_number, page in enumerate(writer.pages, start=1):
+        buffer = BytesIO()
+        canvas = pdf_canvas.Canvas(buffer, pagesize=letter)
+        canvas.setFont("Helvetica", 8)
+        canvas.setFillColor(colors.HexColor("#586971"))
+        canvas.drawRightString(letter[0] - .76 * inch, .42 * inch,
+                               f"Packet page {page_number} of {packet_pages}")
+        canvas.save()
+        buffer.seek(0)
+        page.merge_page(PdfReader(buffer).pages[0])
     combined = OUT / COMBINED
     with combined.open("wb") as stream:
         writer.write(stream)
