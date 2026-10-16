@@ -1,5 +1,8 @@
 # Tom Street Drainage Investigation
 
+> **CURRENT RELEASE CONTROL (2026-10-15):** The PDF and ZIP publications under `14_MEETING_PACKET/` and `releases/2026-10-15/` are **superseded historical exports**, not approved final evidence. The latest fact-checked text and reconciliation status are to be maintained in `15_RECONCILED_DRAFTS/`. This is a **public** repository: do not upload unredacted authenticated-portal captures, homeowner photo originals/EXIF, or raw multi-source workspace archives without privacy and permission review.
+
+
 An evidence-based public-records investigation into drainage at two residential
 lots under construction in Navarre, Santa Rosa County, Florida:
 

@@ -2,7 +2,7 @@
 
 **Address:** 2264 TOM ST NAVARRE, FL 32566
 **Work type:** New Single Family (R)
-**Status:** None
+**Permit status:** Active (archived MGO project; verify again before external use)
 **Parcel (MGO):** 212S2607800QQ001020
 **Created:** 2026-02-11T12:36:02   **Updated:** 2026-10-01T10:00:50
 **Project UID:** DBFA3383-592A-4486-A392-F88065C90F95
@@ -32,8 +32,7 @@
 
 ## Fee lines present on this permit
 
-These confirm which disciplines the county actually reviewed and
-charged for this project.
+These list fee categories assessed. Fees do not by themselves establish that any particular engineering plan was filed, reviewed, or approved.
 
 - Administrative Fee
 - Area 3 Impact Fee Land Use Fees - Per Unit

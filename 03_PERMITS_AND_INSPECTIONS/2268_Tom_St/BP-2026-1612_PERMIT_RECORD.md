@@ -9,7 +9,7 @@
 |---|---|
 | Project / permit number | BP-2026-1612 |
 | Work type | New Single Family (R) |
-| Current status | None |
+| Current status | **Active** (archived MGO record; verify before use) |
 | Site address | 2268 TOM ST |
 | Lot | 1490 |
 | Subdivision | CRESCENT SHORES |
@@ -28,7 +28,7 @@
 
 | Role | Name | Business | Email |
 |---|---|---|---|
-| Applicant | Amy Riddle | Holiday Builders INC | ariddle@holidaybuilders.com |
+| Applicant | Amy Riddle | Holiday Builders INC | omitted from public derivative |
 | Owner of record (Property Appraiser) | Holiday Builders Inc | — | — |
 
 Applicant mailing address of record: 2293 W Eau Gallie Blvd Melbourne FL 32935, Melbourne, FL 32935
@@ -77,7 +77,7 @@ Applicant mailing address of record: 2293 W Eau Gallie Blvd Melbourne FL 32935, 
 
 The endpoint `/api/v3/cp/ProjectFiles/get-customer-files-by-project-id/17513025` returns `data: []`.
 
-Note that the county's own task list requires a **"Certified Drainage as Built"** document for this permit, which confirms such documents exist in the county's internal file even though they are not released through the portal.
+Note that the county's own task list requires a **"Certified Drainage as Built"** document for this permit, which records a required workflow item. It does **not** prove that a signed document already exists, has been submitted, is overdue, or has been accepted. The customer-facing attachment list is empty; ask the custodian for the underlying record and its actual status.
 
 ## Provenance
 

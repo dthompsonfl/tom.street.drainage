@@ -1,3 +1,5 @@
+> **SUPERSEDED HISTORICAL RELEASE.** Do **not** distribute this earlier PDF packet or ZIP as the current/final meeting submission. Its documents include overconfident inferences about certification availability, completed drainage connections, and missing photos. Hashes verify file bytes, not underlying factual accuracy. The corrected text will be indexed under `15_RECONCILED_DRAFTS/`. Revised PDFs have **not** yet been generated or visually approved. Preserve the historical packet as an audit record.
+
 # Tom Street Drainage — Public Meeting Packet
 
 **Version:** see `RELEASE_MANIFEST.json`
