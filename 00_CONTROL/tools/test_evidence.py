@@ -69,17 +69,35 @@ def t_hash():
 
 
 def t_manifest_no_self_hash():
+    """Only primary source captures are included, never mutable/private files."""
+    from validate_evidence import is_source_evidence
+
     rows = csvrows("00_CONTROL/EVIDENCE_MANIFEST.csv")
-    self_rows = [r for r in rows
-                 if r["relative_path"] == "00_CONTROL/EVIDENCE_MANIFEST.csv"]
-    if not self_rows:
-        return check("manifest excludes itself (no self-hash paradox)", True,
-                     "manifest not self-listed - documented policy")
-    r = self_rows[0]
-    live = sha256_file(_ROOT / "00_CONTROL/EVIDENCE_MANIFEST.csv")
-    check("manifest self-entry declares an explicit exclusion policy",
-          r.get("sha256") in ("", "SELF_EXCLUDED") or r["sha256"] != live,
-          "manifest lists itself with a hash that cannot be stable")
+    paths = [r["relative_path"] for r in rows]
+    bad_scope = [p for p in paths if not is_source_evidence(p)]
+    check("manifest excludes self, private files and mutable derivatives",
+          not bad_scope, "; ".join(bad_scope[:3]))
+    check("manifest paths are unique", len(paths) == len(set(paths)))
+
+    expected = {p for _, p in walk_files() if is_source_evidence(p)}
+    listed = set(paths)
+    check("manifest covers exactly all repository primary evidence files",
+          expected == listed,
+          f"missing={sorted(expected - listed)[:3]}, unexpected={sorted(listed - expected)[:3]}")
+
+    bad_hashes = []
+    for row in rows:
+        path = _ROOT / row["relative_path"]
+        if not path.is_file():
+            bad_hashes.append(row["relative_path"] + ": absent")
+            continue
+        if sha256_file(path) != row["sha256"]:
+            bad_hashes.append(row["relative_path"] + ": SHA-256 mismatch")
+        if str(path.stat().st_size) != row["bytes"]:
+            bad_hashes.append(row["relative_path"] + ": size mismatch")
+    check(f"manifest SHA-256 and byte sizes verified ({len(rows)} sources)",
+          not bad_hashes, "; ".join(bad_hashes[:3]))
+
 
 
 def t_pdfs_real():
@@ -131,8 +149,18 @@ def t_release_zip_hash_parity():
     if not (_ROOT / "releases").exists():
         return
     for mf in sorted((_ROOT / "releases").rglob("SHA256SUMS.txt")):
-        zp = mf.with_suffix("").with_suffix(".zip")
-        if not zp.exists():
+        release_info = mf.parent / "RELEASE_MANIFEST.json"
+        if not release_info.is_file():
+            check("release manifest accompanies SHA256SUMS", False, str(mf))
+            continue
+        try:
+            zip_relative = json.loads(release_info.read_text())["zip"]
+            zp = _ROOT / zip_relative
+        except (OSError, KeyError, ValueError) as exc:
+            check("release ZIP path is documented", False, str(exc))
+            continue
+        if not zp.is_file():
+            check("release ZIP exists at manifest path", False, str(zp))
             continue
         expect = {}
         for line in mf.read_text().splitlines():
@@ -152,7 +180,8 @@ def t_unique_ids():
                       ("00_CONTROL/MISSING_RECORDS_AND_ACTIONS.csv", "gap_id"),
                       ("00_CONTROL/CHRONOLOGY.csv", "event_id"),
                       ("00_CONTROL/DESIGN_VS_FIELD_MATRIX.csv", "item_id"),
-                      ("00_CONTROL/SOURCE_REGISTER.csv", "source_id")]:
+                      ("00_CONTROL/SOURCE_REGISTER.csv", "source_id"),
+                      ("00_CONTROL/PERMIT_DOCUMENT_INVENTORY.csv", "document_id")]:
         rows = csvrows(name)
         ids = [r[key] for r in rows]
         check(f"unique IDs in {name}", len(ids) == len(set(ids)),

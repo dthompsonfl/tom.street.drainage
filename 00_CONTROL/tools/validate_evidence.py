@@ -60,12 +60,38 @@ def validate_pdf(p: Path):
     except Exception as exc:
         return False, "PDF_PARSE_FAILED: " + str(exc)[:120], None
 
+# Only immutable original-source captures belong in this hash manifest.
+# Drafts, public releases and control CSVs change while being generated.
+SOURCE_PREFIXES = (
+    "00_CONTROL/SYSTEM_RAW/",
+    "02_PROPERTY_AND_PARCELS/",
+    "03_PERMITS_AND_INSPECTIONS/",
+    "04_ENGINEERING_AND_DRAINAGE/",
+    "08_LEGAL_AND_REGULATORY/",
+    "09_ENVIRONMENTAL_PERMITS/",
+    "11_HYDROLOGY_AND_HAZARD/",
+)
+SOURCE_EXTENSIONS = frozenset({
+    ".pdf", ".json", ".html", ".geojson", ".xml", ".jpg", ".jpeg",
+    ".png", ".tif", ".tiff", ".dwg", ".dxf", ".shp", ".dbf",
+    ".prj", ".gpkg", ".gdb", ".kml", ".kmz", ".xls", ".xlsx",
+})
+
+
+def is_source_evidence(relative_path: str) -> bool:
+    """True only for source evidence, never private vault or mutable outputs."""
+    return (
+        relative_path.startswith(SOURCE_PREFIXES)
+        and Path(relative_path).suffix.lower() in SOURCE_EXTENSIONS
+    )
+
+
 def walk():
     for p in sorted(ROOT.rglob("*")):
         if not p.is_file():
             continue
         rel = p.relative_to(ROOT).as_posix()
-        if EXCLUDE.search(rel):
+        if EXCLUDE.search(rel) or not is_source_evidence(rel):
             continue
         yield p, rel
 
