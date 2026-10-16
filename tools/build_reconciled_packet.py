@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build PUBLIC-SAFE Tom Street homeowner draft PDFs, never resident photographs.
 
-Only the four explicitly listed Markdown files are eligible release inputs.
+Only the five explicitly listed Markdown files are eligible release inputs.
 Each PDF remains DRAFT, with its own footer and an evidence-scope manifest.
 """
 from __future__ import annotations

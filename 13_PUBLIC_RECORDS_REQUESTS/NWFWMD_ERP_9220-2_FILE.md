@@ -30,9 +30,7 @@ Permitting portal: https://permitting.sjrwmd.com (shared Florida Water Permits P
 | Stage | Compliance |
 | Source | `https://permitting.sjrwmd.com/arcgis02/rest/services/NWFWMD/EPermit_ERP/MapServer/0/query` |
 
-This is the **only** Environmental Resource Permit record returned within
-2,000 feet of either 2264 Tom Street or 2268 Tom Street by the District's own
-public map service. No FDEP-issued ERP exists within that radius.
+The saved public map query returned ERP 9220-2 within a **2,000-foot search radius**. That does not establish that the permit covers either parcel or that no other applicable permit exists. The separate limited FDEP query returned no entry; it was **not** a certified no-permit finding. Please provide the actual ERP project boundaries or any linked permit and exemption records for the identified Tom Street lots.
 
 ## Subject properties
 
@@ -58,7 +56,7 @@ public map service. No FDEP-issued ERP exists within that radius.
    and any earlier phases of the Hadleigh Hills project.
 3. Any **construction generic permit (CGP)** coverage or **Notice of Intent /
    Termination** associated with construction activity in the Hadleigh Hills
-   development, together with any CGP inspection or compliance records.
+   development (if NWFWMD is the custodian), together with any relevant inspection or compliance records; otherwise please identify the FDEP custodian.
 4. Any **self-certification, verification, exemption determination or written
    determination of exemption** for the Hadleigh Hills project.
 5. Any **NOI/NOT filed for construction stormwater** covering Tom Street or the

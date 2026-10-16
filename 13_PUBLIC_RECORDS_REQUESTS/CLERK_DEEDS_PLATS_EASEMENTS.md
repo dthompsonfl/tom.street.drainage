@@ -22,7 +22,7 @@ Official Records search: https://acclaim.srccol.com/AcclaimWeb/
 | Address | **2264 Tom Street**, Navarre, FL 32566 | **2268 Tom Street**, Navarre, FL 32566 |
 | Parcel (verified, Property Appraiser) | `21-2S-26-0780-0QQ00-1020` | `21-2S-26-0780-0QQ00-1490` |
 | Current owner of record | Holiday Builders, Inc. | Holiday Builders, Inc. |
-| Prior occupant per county permit records | Mobile home, permits of 1996 | Mobile home, permits of 2000 |
+| Older MGO permit leads | 1996-era records associated with 2264, parcel continuity unverified | 2000-era records previously attributed to 2268 use a parcel now associated with 2274; identity **unresolved** |
 
 **Subdivision names to search:** "Crescent Shores" (Property Appraiser filing
 `00780`), "Pope Subdivision" / "Pope Subd" (appears in the legal description of
@@ -35,8 +35,7 @@ Development Group.
 
 1. **All recorded deeds, conveyances and other instruments** conveying, or
    encumbering, the lots described above — including the chain of title back
-   through the mobile-home era (1996 for 2264 Tom St, 2000 for 2268 Tom St) and
-   forward to the present owner, Holiday Builders, Inc.
+   through any historical mobile-home period that actually relates to the current legal parcels, and forward to Holiday Builders, Inc. Please help reconcile the disputed 2000 permit attribution.
 2. **All recorded subdivision plats** for Crescent Shores (00780), Pope
    Subdivision and Hadleigh Hills, and any plat amendment, correction, replat
    or affidavit of plat.
@@ -62,15 +61,13 @@ Development Group.
 
 ## Specific lead already tested — please confirm
 
-The prior research lead "ORB 3492 PG 700" was checked on 2026-10-15 and is
-**ORB 3492/700 = Instrument No. 201603296**, a deed recorded 2016-01-28 from
+The public **search-results grid**, not the deed image, associated “ORB 3492 PG 700” with instrument 201603296, apparently recorded 2016-01-28 from
 MATIGA CIPRIANO A SR to MATIGA CEPRIANO P JR, consideration $500.00, legal
 description "**21-2S-26 POPE SUBD LOT 22 UNREC**". On the Property Appraiser
 roll that grantee holds parcel `21-2S-26-0780-0QQ00-1060`, situs **2274 Tom
 Street**.
 
-This instrument therefore appears **not** to relate to 2264 or 2268 Tom Street.
-Please confirm that assessment and identify the instrument that **does** convey
+**The recorded instrument image has not been obtained**, so that attribution is not a title determination. The search information suggests a lead outside the two target lots. Please confirm this and provide the original image and identify the instrument that **does** convey
 lots 1020 and 1490 of block 0QQ00, subdivision 0780.
 
 ## Search notes for the Clerk

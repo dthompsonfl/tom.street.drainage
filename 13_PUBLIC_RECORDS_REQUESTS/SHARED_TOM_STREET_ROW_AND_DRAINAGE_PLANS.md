@@ -25,12 +25,11 @@ Engineering Applications section, MGO Connect (mgoconnect.org, JID=276)
 | Adjacent lots named in county records | **2260 Tom Street**, **2270 Tom Street** |
 | Owner of record, both lots | Holiday Builders, Inc., 2293 W Eau Gallie Blvd, Melbourne, FL 32935 |
 | Subdivision names to search | **Crescent Shores (00780)** and **Hadleigh Hills** |
-| Environmental authorization | **NWFWMD ERP Official Permit ID 9220-2**, "Hadleigh Hills, Phase 2 Ext. to P9220-1", applicant Hadleigh Hills Development Group, 8.1 acres, decided 2016-11-21 |
+| Nearby environmental search lead | **NWFWMD ERP 9220-2** (“Hadleigh Hills, Phase 2”), 2016. **No lot or drainage-basin coverage established**; request any verified link or other applicable authorization |
 
 ## Why these records are being requested
 
-The county's own inspection records establish facts about the shared drainage
-system that the public portal does not otherwise document:
+County inspection records contain useful **observations and work instructions**, but do not yet establish the geometry, completion or legal responsibility for a shared drainage system:
 
 - On **2026-08-06**, the driveway line-and-grade inspection for 2264 Tom Street
   was passed with the instruction: *"Use 100 ft of 12 inch ADS perforated pipe
@@ -43,10 +42,7 @@ system that the public portal does not otherwise document:
 - On **2026-09-10**, the driveway line-and-grade inspection for 2268 Tom Street
   was passed with: *"Flat; Match Existing roadway Grades."*
 
-These comments describe an existing roadside storm drainage system with
-inlet boxes and concrete drainage structures serving the Tom Street frontage.
-The plans, profiles and specifications governing that system are held by the
-County and are not exposed through the MGO customer portal.
+These comments **refer to** a roadway ditch and proposed connections to structures associated with nearby addresses. They do **not** prove what was installed, where structures sit relative to the right-of-way, the system's hydraulic adequacy or ownership. Please confirm **whether the County holds** approved plans, profiles, reviews and specifications; the customer-facing attachment endpoint returned no files.
 
 ## Records requested
 
@@ -103,7 +99,7 @@ MGO Connect (`mgoconnect.org/cp/project-details/...`) was queried on
 2026-10-15 for both properties. For permits `BP-2026-1621` and `BP-2026-1612`
 the endpoint `/api/v3/cp/ProjectFiles/get-customer-files-by-project-id/{id}`
 returned **zero** files, so no plans, surveys or as-builts are released through
-the customer portal at any access level tested. Engineering Applications in
+the tested authenticated customer view; this is not an agency no-records certification. Engineering Applications in
 MGO additionally require an account. This request is therefore directed at the
 county's Engineering and Public Works custodians under Chapter 119.
 

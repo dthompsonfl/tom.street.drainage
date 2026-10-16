@@ -144,30 +144,7 @@ def render(md: Path, pdf: Path):
 
 
 if __name__ == "__main__":
-    PDFDIR.mkdir(parents=True, exist_ok=True)
-    report = []
-    for src, out in DOCS:
-        md = PKT / src
-        if not md.exists():
-            report.append({"doc": src, "status": "MISSING_SOURCE"})
-            continue
-        pdf = PDFDIR / out
-        ok, engine = render(md, pdf)
-        entry = {"source_md": rel(md), "pdf": rel(pdf) if ok else "",
-                 "engine": engine, "status": "OK" if ok else "RENDER_FAILED"}
-        if ok:
-            data = pdf.read_bytes()
-            entry["bytes"] = len(data)
-            entry["sha256"] = hashlib.sha256(data).hexdigest()
-            entry["is_pdf"] = data[:5] == b"%PDF-"
-            info = subprocess.run(["pdfinfo", str(pdf)], capture_output=True,
-                                  text=True).stdout
-            for ln in info.split("\n"):
-                if ln.startswith("Pages:"):
-                    entry["pages"] = int(ln.split()[1])
-        report.append(entry)
-        print(f"  {src:<44} -> {entry['status']} ({engine}) "
-              f"{entry.get('bytes',0)}b {entry.get('pages','?')}pp")
-    import json
-    (PKT / "PDF_BUILD_REPORT.json").write_text(json.dumps(report, indent=1))
-    print("wrote", rel(PKT / "PDF_BUILD_REPORT.json"))
+    raise SystemExit(
+        "RETIRED: this generator targets SUPERSEDED 14_MEETING_PACKET content. "
+        "Use python3 tools/build_reconciled_packet.py for public-safe current draft PDFs."
+    )

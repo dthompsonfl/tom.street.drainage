@@ -1,10 +1,10 @@
 # 2266 Tom St — RESOLVED: NO CURRENT PARCEL, BUT A HISTORICAL ADDRESS EXISTED
 
-**Status: OVERWRITTEN 2026-10-15/16 with verified official data.**
+**Status: HISTORICAL RESEARCH LEAD, NOT A RECORDED ADDRESS-CHANGE FINDING.** Existing 1996–1998 MGO files establish historical usage, but disposition is not verified.
 
 ## Finding 1 — no current parcel
 
-An exhaustive query of the Santa Rosa County Property Appraiser official roll
+A captured street-address query of the Santa Rosa County Property Appraiser roll
 (`street=TOM, city=NAVARRE` → 123 parcels) returns **no parcel with situs
 address 2266 Tom St**. The current address sequence skips it:
 
@@ -25,19 +25,14 @@ Santa Rosa County permit records (MGO Connect) contain **five** projects at
 | `1996-2741-000-P-0` | Plumbing (R) | 1996-07-16 | `212S2607800QQ890000` |
 | `1998-323-000-G-0` | Gas Permit (R) | 1998-02-04 | `212S2607800QQ001030` |
 
-All are Mobile-Home-era permits. The 2266 address appears to have been
-**absorbed by renumbering** into the lots now numbered 2260 / 2270 (MGO maps
-both 2260 and the historic 2266 permits to `...QQ890000`, which indicates the
-block was replatted or renumbered at some point).
+These historical records give no certified address-change or parcel-merger history. The old MGO parcel keys overlap other present-day records, but that alone does **not** establish that 2266 was renumbered to 2260 or 2270, or that any merger/replat occurred. Request the original permit legal descriptions, County addressing history, and Clerk title/plat instruments.
 
 ## Consequence for the investigation
 
 2266 must **not** be substituted for either target site: there is no current
 parcel, building or permit record at 2266 that relates to 2264 or 2268.
 
-It is retained here as background because it confirms the block's mobile-home
-history and the renumbering that produced the current lot layout — both
-relevant to interpreting historic grading.
+It is retained as evidence of historical MGO address usage and possible mobile-home-era improvements. Changes in addressing, parcel boundaries and grading remain **unverified**, not established.
 
 ## Evidence
 

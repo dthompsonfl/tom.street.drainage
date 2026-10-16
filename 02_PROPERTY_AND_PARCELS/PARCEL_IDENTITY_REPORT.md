@@ -34,15 +34,14 @@ No 2266 situs appears on the archived current Property Appraiser roll. However, 
 **HOLIDAY BUILDERS INC** is the **owner of record** on both target parcels,
 mailing address 2293 W Eau Gallie Blvd, Melbourne, FL 32935-3184.
 
-Note carefully: owner of record ≠ permit applicant ≠ licensed contractor. Those
-roles are only established by the MGO permit records, which are account-gated.
+Note carefully: owner of record, applicant, licensed contractor and engineer of record are different roles. The saved MGO records identify the **permit applicant/business** but do not alone establish the responsible licensed contractor or engineer of record.
 
 ## Development of record — two names
 
 | Name | Where it appears | Status |
 |---|---|---|
-| **Crescent Shores (00780)** | Santa Rosa County Property Appraiser filing/plat name | Verified |
-| **Hadleigh Hills, Phase 2** | NWFWMD Environmental Resource Permit 9220-2, applicant *Hadleigh Hills Development Group*, 8.1 ac, decided 2016-11-21 | Verified ERP record within 2,000 ft |
+| **Crescent Shores (00780)** | Property Appraiser filing label (not a retrieved recorded plat) | Filing label verified; recorded plat unverified |
+| **Hadleigh Hills, Phase 2** | Nearby NWFWMD ERP 9220-2, separate applicant *Hadleigh Hills Development Group* | Nearby indexed permit exists; no verified lot coverage |
 
 Both names must be used in further county, clerk and water-management-district
 searches.
@@ -68,7 +67,4 @@ python3 00_CONTROL/tools/srcpa_acquire.py
    recorded plat exists at all.
 3. Deeds in the chain of title for the two target lots.
 4. Building card, improvement history and sales history.
-5. **All permit records** — building permits, approved grading plans,
-   drainage drawings, surveys, driveway/culvert permits, inspections,
-   certified as-builts and certificates of occupancy. MGO Connect requires an
-   account; see `00_CONTROL/ACQUISITION_CHECKPOINT.md` §9.
+5. **Outstanding permit attachments, not all permit records:** building-permit identities, current-at-capture statuses and many inspections **were acquired** from MGO, under `03_PERMITS_AND_INSPECTIONS/`. Approved original/revised grading and drainage plans, surveys, driveway/culvert drawings, engineering calculations, certified as-builts and actual CO documents are still unobtained. The earlier acquisition checkpoint was superseded.
