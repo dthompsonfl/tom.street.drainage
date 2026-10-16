@@ -1,0 +1,65 @@
+name: Audit historical public evidence integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/audit_historical_public_evidence.py'
+      - '.github/workflows/audit-historical-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: audit-historical-public-evidence
+  cancel-in-progress: false
+jobs:
+  verify-originals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify audit script syntax
+        run: python -m py_compile tools/audit_historical_public_evidence.py
+      - name: Rehash public aerial imagery, original LiDAR and published PDFs
+        id: verify
+        continue-on-error: true
+        run: python tools/audit_historical_public_evidence.py
+      - name: Print exact integrity and archive completeness findings
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('00_CONTROL/HISTORICAL_PUBLIC_EVIDENCE_INTEGRITY_AUDIT_2026-10-16.json')
+          d=json.loads(p.read_text())
+          print('Integrity:', d['integrity_status'], 'verified:',d['checked_file_count'], 'bytes:',d['checked_bytes'])
+          print('Errors:',len(d['hash_or_safety_errors']), 'unavailable sources:',len(d['available_but_unacquired']))
+          for x in d['hash_or_safety_errors']:
+              print('ERROR',x)
+          for x in d['available_but_unacquired']:
+              print('MISSING',x.get('source'),x.get('status'))
+          PY
+      - name: Commit public manifest verification report without changing originals
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 00_CONTROL/HISTORICAL_PUBLIC_EVIDENCE_INTEGRITY_AUDIT_2026-10-16.json
+          if git diff --cached --quiet; then
+            echo "Evidence audit report unchanged"
+          else
+            git commit -m "audit: preserve actual public historical evidence hash verification [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Enforce source integrity
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          d=json.loads(pathlib.Path('00_CONTROL/HISTORICAL_PUBLIC_EVIDENCE_INTEGRITY_AUDIT_2026-10-16.json').read_text())
+          if d['integrity_status']!='PASS':
+              raise SystemExit('Original data integrity failed; see committed audit report')
+          PY
