@@ -62,6 +62,8 @@ jobs:
           print(f"Evidence invariants: {len(checks.RESULTS)} checks PASS")
           PY
           python tools/verify_reconciled_release.py
+          python -B 00_CONTROL/tools/strict_release_gate.py
+          python -B 00_CONTROL/tools/classify_for_release.py --check
           python - <<'PY'
           import json, pathlib
           from pypdf import PdfReader
