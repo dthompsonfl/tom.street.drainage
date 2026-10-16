@@ -1,0 +1,70 @@
+{
+  "retrieved_utc": "2026-10-16T17:18:05.331016+00:00",
+  "dataset": "USDA NAIP 2021 CONUS",
+  "agency": "USDA FPAC via US Forest Service and Federal GeoPlatform IIPP",
+  "service": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2021_CONUS/ImageServer",
+  "source_export_url": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2021_CONUS/ImageServer/exportImage?bbox=-86.8162%2C30.4144%2C-86.8134%2C30.416&bboxSR=4326&imageSR=4326&size=1800%2C1028&format=jpg&compressionQuality=94&f=image",
+  "source_catalog_query_url": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2021_CONUS/ImageServer/query?geometry=%7B%22x%22%3A+-86.81466%2C+%22y%22%3A+30.41519%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&outFields=objectid%2Cname%2Cyear%2Cstate%2Cmetadata%2Cresolution&returnGeometry=false&f=pjson",
+  "bbox_wgs84": [
+    -86.8162,
+    30.4144,
+    -86.8134,
+    30.416
+  ],
+  "dimensions": [
+    1800,
+    1028
+  ],
+  "image_status": "NOT_ACQUIRED",
+  "catalog_status": "POINT_INTERSECTION_RETRIEVED",
+  "catalog_intersecting_features": [
+    {
+      "attributes": {
+        "objectid": 106149,
+        "name": "NAIP_2021_CONUS",
+        "year": 2021,
+        "state": "CONUS",
+        "metadata": null,
+        "resolution": 4.8
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13539701.193500001,
+              2814062.909499999
+            ],
+            [
+              -13539701.193500001,
+              6350184.509499997
+            ],
+            [
+              -7450704.3935,
+              6350184.509499997
+            ],
+            [
+              -7450704.3935,
+              2814062.909499999
+            ],
+            [
+              -13539701.193500001,
+              2814062.909499999
+            ]
+          ]
+        ],
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      }
+    }
+  ],
+  "image_failure": "ValueError: Image center likely blank or no coverage; SD 0.0",
+  "limitations": [
+    "2021 refers to dataset acquisition year; individual tile date must be verified from official catalog metadata.",
+    "Service-rendered JPEG crop, not underlying original JP2 orthophoto tile.",
+    "This shows pre-2026 visible terrain appearance, not height measurements or drain capacity.",
+    "Image service mosaics and geographic resampling may affect direct comparisons across years.",
+    "No private resident photographs are saved in this public archive."
+  ]
+}
