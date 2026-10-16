@@ -1,0 +1,59 @@
+name: Build reconciled public draft PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '15_RECONCILED_DRAFTS/*.md'
+      - 'tools/build_reconciled_packet.py'
+      - 'requirements-release.txt'
+      - '.github/workflows/reconciled-public-packet.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reconciled-public-packet-main
+  cancel-in-progress: false
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned PDF dependencies
+        run: python -m pip install -r requirements-release.txt
+      - name: Validate and render public-scope drafts
+        run: |
+          python -m py_compile tools/build_reconciled_packet.py
+          python tools/build_reconciled_packet.py
+          python - <<'PY'
+          import json, pathlib
+          from pypdf import PdfReader
+          r=pathlib.Path('15_RECONCILED_DRAFTS/pdf')
+          m=json.loads((r/'RELEASE_MANIFEST.json').read_text())
+          assert m['release_status']=='DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION'
+          assert m['photo_originals_included'] is False
+          assert len(m['outputs'])==5
+          assert all(item['pages']>=1 for item in m['outputs'])
+          assert len(PdfReader(str(r/'Tom_Street_Reconciled_Public_Meeting_Draft.pdf')).pages)==sum(item['pages'] for item in m['outputs'][:4])
+          print('Public PDF QA: PASS')
+          PY
+      - name: Commit generated public PDFs to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 15_RECONCILED_DRAFTS/pdf/
+          if git diff --cached --quiet; then
+            echo "No new generated files"
+            exit 0
+          fi
+          git commit -m "docs: rebuild reconciled public draft PDF bundle [skip ci]"
+          git push origin HEAD:main
