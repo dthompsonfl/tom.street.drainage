@@ -1,0 +1,5 @@
+# Additional imports used by the full evidence tooling test suite.
+# Browser binaries are not needed for import-only verification.
+-r requirements-release.txt
+requests==2.32.5
+playwright==1.57.0
