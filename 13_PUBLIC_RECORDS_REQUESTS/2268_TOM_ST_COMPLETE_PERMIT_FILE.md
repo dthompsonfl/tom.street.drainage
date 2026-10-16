@@ -10,7 +10,7 @@ Submit via: https://www.santarosa.fl.gov/FormCenter/Public-Record-Request-10/Sub
 
 **Custodian:** Santa Rosa County Development Services
 (6051 Old Bagdad Highway, Suite 202, Milton, FL 32583)
-**Email:** srcpermits@santarosa.fl.gov · **Phone:** (850) 981-7000
+**Email:** developmentservices@santarosa.fl.gov · **Phone:** (850) 981-7000
 
 ## Subject property — please search by ALL of the following
 
