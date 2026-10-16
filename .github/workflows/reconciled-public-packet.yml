@@ -125,4 +125,12 @@ jobs:
             exit 0
           fi
           git commit -m "docs: rebuild reconciled public draft PDF bundle [skip ci]"
-          git push origin HEAD:main
+          for i in 1 2 3; do
+            git pull --rebase origin main || true
+            if git push origin HEAD:main; then
+              echo "pushed"
+              break
+            fi
+            echo "push failed, retry $i"
+            sleep 5
+          done

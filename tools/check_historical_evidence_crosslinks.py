@@ -43,7 +43,7 @@ def main():
     # actual file path, not EX-/CLM- numeric ranges that grow with new research.
     new_exhibits=[x for x in exhibits if x["source_file"] in FILES]
     new_claims=[x for x in claims if x["source_file"] in FILES]
-    assert len(sources)>=len(FILES),f"Expected >= {len(FILES)} historic source rows"
+    assert len(sources)>=23, f"Expected >= 23 historic source rows"
     assert len(new_exhibits)>=11,f"Expected >= 11 archived historical source exhibits, found {len(new_exhibits)}"
     assert len(new_claims)>=9,f"Expected >= 9 archived historical claims, found {len(new_claims)}"
     assert len({x["source_id"] for x in registers})==len(registers),"Duplicate source IDs"

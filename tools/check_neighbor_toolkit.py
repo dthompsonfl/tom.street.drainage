@@ -61,20 +61,31 @@ for name in sorted(REQUIRED_GUIDES):
 for name in sorted(REQUIRED_TEMPLATES):
     path = TOOLKIT/'templates'/name
     check('blank CSV: ' + name,
-          path.is_file() and len(text(path).splitlines()) == 1 and
+          path.is_file() and text(path).strip() == text(path).splitlines()[0].strip() and
+          len([l for l in text(path).splitlines() if l.strip()]) == 1 and
           len(next(csv.reader(text(path).splitlines()))) >= 7)
 for name in ('MEETING_NOTES.md', 'CHANGE_AND_CORRECTION.md'):
-    check('editable text template: ' + name, (TOOLKIT/'templates'/name).is_file())
+    check('editable text template: ' + name, (TOOLKIT/'templates'/name).is_file() )
 
 # Restrict binary material to exact generated PDF names. Never accept resident
 # originals, photographs, completed CSV logs or arbitrary source archives.
 allowed_pdf_paths = {'print/'+MASTER} | {'print/'+x for x in SINGLES}
+# Only allow explicitly enumerated blank template files and the generated PDFs/markdown guides
+allowed_template_paths = {
+    'templates/OBSERVATION_LOG.csv', 'templates/REQUEST_TRACKER.csv', 'templates/PHOTO_VIDEO_INDEX.csv',
+    'templates/SOURCE_DOCUMENT_LOG.csv', 'templates/DOCUMENTED_ROLE_TRACKER.csv',
+    'templates/DRAINAGE_FEATURE_LOG.csv', 'templates/WORK_AND_CONDITION_LOG.csv',
+    'templates/ORIGINAL_FILE_AND_TRANSFER_LOG.csv', 'templates/WEATHER_AND_COMPARISON_LOG.csv',
+    'templates/PROPERTY_CONDITION_AND_EXPENSE_LOG.csv',
+    'templates/MEETING_NOTES.md', 'templates/CHANGE_AND_CORRECTION.md',
+}
 for path in sorted(TOOLKIT.rglob('*')):
     if not path.is_file():
         continue
     relative = path.relative_to(TOOLKIT).as_posix()
     check('allowed toolkit file: '+relative,
-          path.suffix in ('.md', '.csv') or relative in allowed_pdf_paths)
+          (relative in allowed_template_paths) or (relative in REQUIRED_GUIDES) or (relative in allowed_pdf_paths))
+
 
 if (PRINT/MASTER).is_file():
     master = PdfReader(str(PRINT/MASTER))
@@ -93,8 +104,10 @@ if (PRINT/MASTER).is_file():
         parsed = PdfReader(str(pdfpath))
         check('standalone one page: '+name, len(parsed.pages)==1)
         if parsed.pages:
+            box = parsed.pages[0].mediabox
             from_master = master.pages[number-1].extract_text() or ''
             as_single = parsed.pages[0].extract_text() or ''
+            check('standalone US Letter: '+name, abs(float(box.width)-612)<0.1 and abs(float(box.height)-792)<0.1)
             check('standalone matches master: '+name, from_master==as_single)
 else:
     check('full packet exists', False)

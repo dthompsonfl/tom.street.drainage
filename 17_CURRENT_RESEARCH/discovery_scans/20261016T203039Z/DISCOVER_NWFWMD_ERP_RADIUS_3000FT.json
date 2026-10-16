@@ -1,0 +1,407 @@
+{
+ "displayFieldName": "SITE_NM",
+ "fieldAliases": {
+  "APPLICANT": "APPLICANT",
+  "RULE_TYPE": "RULE_TYPE",
+  "OBJECTID": "OBJECTID",
+  "CUR_PRMT_ID": "CUR_PRMT_ID",
+  "OFFCL_PRMT_ID": "OFFCL_PRMT_ID",
+  "SEQ_NO": "SEQ_NO",
+  "SITE_ID": "SITE_ID",
+  "SITE_NM": "SITE_NM",
+  "SEQ_TYPE": "SEQ_TYPE",
+  "PRMT_STAGE": "PRMT_STAGE",
+  "RULE_TYPE_DESC": "RULE_TYPE_DESC",
+  "PRMT_PROJ_NM": "PRMT_PROJ_NM",
+  "RECV_DT": "RECV_DT",
+  "PRMT_DECISION_DT": "PRMT_DECISION_DT",
+  "PRMT_EXPIR_DT": "PRMT_EXPIR_DT",
+  "OWNER": "OWNER",
+  "PRMT_RECOMMEND": "PRMT_RECOMMEND",
+  "PRMT_STTS": "PRMT_STTS",
+  "PROJ_ACRES": "PROJ_ACRES",
+  "COUNTY": "COUNTY",
+  "CMPLNC_STTS": "CMPLNC_STTS",
+  "EDITOR": "EDITOR",
+  "EDIT_DATE": "EDIT_DATE",
+  "DISC_PRMT_STTS": "DISC_PRMT_STTS",
+  "FDEP_ID": "FDEP_ID",
+  "LINK": "LINK",
+  "PRMT_APP_PROC_STTS_CD": "PRMT_APP_PROC_STTS_CD",
+  "PROJ_USE_TYPE": "PROJ_USE_TYPE",
+  "LEGACY_PERMIT_NUM": "LEGACY_PERMIT_NUM",
+  "LGCY_APP_NO": "LGCY_APP_NO"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "APPLICANT",
+   "type": "esriFieldTypeString",
+   "alias": "APPLICANT",
+   "length": 250
+  },
+  {
+   "name": "RULE_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "RULE_TYPE",
+   "length": 60
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "CUR_PRMT_ID",
+   "type": "esriFieldTypeInteger",
+   "alias": "CUR_PRMT_ID"
+  },
+  {
+   "name": "OFFCL_PRMT_ID",
+   "type": "esriFieldTypeInteger",
+   "alias": "OFFCL_PRMT_ID"
+  },
+  {
+   "name": "SEQ_NO",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "SEQ_NO"
+  },
+  {
+   "name": "SITE_ID",
+   "type": "esriFieldTypeInteger",
+   "alias": "SITE_ID"
+  },
+  {
+   "name": "SITE_NM",
+   "type": "esriFieldTypeString",
+   "alias": "SITE_NM",
+   "length": 100
+  },
+  {
+   "name": "SEQ_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "SEQ_TYPE",
+   "length": 50
+  },
+  {
+   "name": "PRMT_STAGE",
+   "type": "esriFieldTypeString",
+   "alias": "PRMT_STAGE",
+   "length": 63
+  },
+  {
+   "name": "RULE_TYPE_DESC",
+   "type": "esriFieldTypeString",
+   "alias": "RULE_TYPE_DESC",
+   "length": 60
+  },
+  {
+   "name": "PRMT_PROJ_NM",
+   "type": "esriFieldTypeString",
+   "alias": "PRMT_PROJ_NM",
+   "length": 200
+  },
+  {
+   "name": "RECV_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "RECV_DT",
+   "length": 8
+  },
+  {
+   "name": "PRMT_DECISION_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "PRMT_DECISION_DT",
+   "length": 8
+  },
+  {
+   "name": "PRMT_EXPIR_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "PRMT_EXPIR_DT",
+   "length": 8
+  },
+  {
+   "name": "OWNER",
+   "type": "esriFieldTypeString",
+   "alias": "OWNER",
+   "length": 250
+  },
+  {
+   "name": "PRMT_RECOMMEND",
+   "type": "esriFieldTypeString",
+   "alias": "PRMT_RECOMMEND",
+   "length": 30
+  },
+  {
+   "name": "PRMT_STTS",
+   "type": "esriFieldTypeString",
+   "alias": "PRMT_STTS",
+   "length": 12
+  },
+  {
+   "name": "PROJ_ACRES",
+   "type": "esriFieldTypeDouble",
+   "alias": "PROJ_ACRES"
+  },
+  {
+   "name": "COUNTY",
+   "type": "esriFieldTypeString",
+   "alias": "COUNTY",
+   "length": 20
+  },
+  {
+   "name": "CMPLNC_STTS",
+   "type": "esriFieldTypeString",
+   "alias": "CMPLNC_STTS",
+   "length": 50
+  },
+  {
+   "name": "EDITOR",
+   "type": "esriFieldTypeString",
+   "alias": "EDITOR",
+   "length": 10
+  },
+  {
+   "name": "EDIT_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "EDIT_DATE",
+   "length": 8
+  },
+  {
+   "name": "DISC_PRMT_STTS",
+   "type": "esriFieldTypeString",
+   "alias": "DISC_PRMT_STTS",
+   "length": 20
+  },
+  {
+   "name": "FDEP_ID",
+   "type": "esriFieldTypeString",
+   "alias": "FDEP_ID",
+   "length": 50
+  },
+  {
+   "name": "LINK",
+   "type": "esriFieldTypeString",
+   "alias": "LINK",
+   "length": 250
+  },
+  {
+   "name": "PRMT_APP_PROC_STTS_CD",
+   "type": "esriFieldTypeString",
+   "alias": "PRMT_APP_PROC_STTS_CD",
+   "length": 4
+  },
+  {
+   "name": "PROJ_USE_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "PROJ_USE_TYPE",
+   "length": 60
+  },
+  {
+   "name": "LEGACY_PERMIT_NUM",
+   "type": "esriFieldTypeDouble",
+   "alias": "LEGACY_PERMIT_NUM"
+  },
+  {
+   "name": "LGCY_APP_NO",
+   "type": "esriFieldTypeString",
+   "alias": "LGCY_APP_NO",
+   "length": 35
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "APPLICANT": "Hadleigh Hills Development Group",
+    "RULE_TYPE": "62-330",
+    "OBJECTID": 9395,
+    "CUR_PRMT_ID": 17699,
+    "OFFCL_PRMT_ID": 9220,
+    "SEQ_NO": 2,
+    "SITE_ID": 24011,
+    "SITE_NM": "Hadleigh Hills, Phase 2",
+    "SEQ_TYPE": "Extension",
+    "PRMT_STAGE": "Compliance",
+    "RULE_TYPE_DESC": "ERP Individual",
+    "PRMT_PROJ_NM": "Hadleigh Hills, Phase 2 Ext. to P9220-1",
+    "RECV_DT": 1479081600000,
+    "PRMT_DECISION_DT": 1479686400000,
+    "PRMT_EXPIR_DT": 1637452800000,
+    "OWNER": null,
+    "PRMT_RECOMMEND": "Approval",
+    "PRMT_STTS": "Issued",
+    "PROJ_ACRES": 8.1,
+    "COUNTY": "Santa Rosa",
+    "CMPLNC_STTS": "In Compliance",
+    "EDITOR": null,
+    "EDIT_DATE": null,
+    "DISC_PRMT_STTS": "Active",
+    "FDEP_ID": null,
+    "LINK": null,
+    "PRMT_APP_PROC_STTS_CD": "COMP",
+    "PROJ_USE_TYPE": null,
+    "LEGACY_PERMIT_NUM": null,
+    "LGCY_APP_NO": null
+   },
+   "geometry": {
+    "x": -86.813060288796606,
+    "y": 30.416116732348989
+   }
+  },
+  {
+   "attributes": {
+    "APPLICANT": "Navarre 1st Assembly of God",
+    "RULE_TYPE": "62-330",
+    "OBJECTID": 2625,
+    "CUR_PRMT_ID": 9236,
+    "OFFCL_PRMT_ID": 9236,
+    "SEQ_NO": 1,
+    "SITE_ID": 14288,
+    "SITE_NM": "Navarre 1st Assembly of God",
+    "SEQ_TYPE": "Initial Sequence",
+    "PRMT_STAGE": "Compliance",
+    "RULE_TYPE_DESC": "ERP Individual",
+    "PRMT_PROJ_NM": "Navarre 1st Assembly of God",
+    "RECV_DT": 1314144000000,
+    "PRMT_DECISION_DT": 1325635200000,
+    "PRMT_EXPIR_DT": 1483488000000,
+    "OWNER": "Navarre 1st Assembly of God",
+    "PRMT_RECOMMEND": "Approval",
+    "PRMT_STTS": "Issued",
+    "PROJ_ACRES": 3.66,
+    "COUNTY": "Santa Rosa",
+    "CMPLNC_STTS": "In Compliance",
+    "EDITOR": null,
+    "EDIT_DATE": null,
+    "DISC_PRMT_STTS": "Active",
+    "FDEP_ID": null,
+    "LINK": null,
+    "PRMT_APP_PROC_STTS_CD": "COMP",
+    "PROJ_USE_TYPE": null,
+    "LEGACY_PERMIT_NUM": null,
+    "LGCY_APP_NO": "1235"
+   },
+   "geometry": {
+    "x": -86.821169457148883,
+    "y": 30.410245897604309
+   }
+  },
+  {
+   "attributes": {
+    "APPLICANT": "James Enterprises of NW FL, Inc.",
+    "RULE_TYPE": "62-330",
+    "OBJECTID": 116,
+    "CUR_PRMT_ID": 8755,
+    "OFFCL_PRMT_ID": 8755,
+    "SEQ_NO": 1,
+    "SITE_ID": 13893,
+    "SITE_NM": "Crescent RV Park - Navarre",
+    "SEQ_TYPE": "Initial Sequence",
+    "PRMT_STAGE": "Compliance",
+    "RULE_TYPE_DESC": "ERP Individual",
+    "PRMT_PROJ_NM": "Crescent RV Park - Navarre",
+    "RECV_DT": 1265760000000,
+    "PRMT_DECISION_DT": 1273536000000,
+    "PRMT_EXPIR_DT": 1431302400000,
+    "OWNER": "James Enterprises of NW FL, Inc.",
+    "PRMT_RECOMMEND": "Approval",
+    "PRMT_STTS": "Issued",
+    "PROJ_ACRES": 3.85,
+    "COUNTY": "Santa Rosa",
+    "CMPLNC_STTS": "In Compliance",
+    "EDITOR": null,
+    "EDIT_DATE": null,
+    "DISC_PRMT_STTS": "Active",
+    "FDEP_ID": null,
+    "LINK": null,
+    "PRMT_APP_PROC_STTS_CD": "COMP",
+    "PROJ_USE_TYPE": null,
+    "LEGACY_PERMIT_NUM": null,
+    "LGCY_APP_NO": "834"
+   },
+   "geometry": {
+    "x": -86.813035288625315,
+    "y": 30.408977841403953
+   }
+  },
+  {
+   "attributes": {
+    "APPLICANT": "Navarre First Assembly of God",
+    "RULE_TYPE": "62-330",
+    "OBJECTID": 12200,
+    "CUR_PRMT_ID": 311233,
+    "OFFCL_PRMT_ID": 311233,
+    "SEQ_NO": 1,
+    "SITE_ID": 580881,
+    "SITE_NM": "Navarre First Assembly of God Building Addition",
+    "SEQ_TYPE": "Initial Sequence",
+    "PRMT_STAGE": "Compliance",
+    "RULE_TYPE_DESC": "ERP Individual",
+    "PRMT_PROJ_NM": "Navarre First Assembly of God Building Addition",
+    "RECV_DT": 1681344000000,
+    "PRMT_DECISION_DT": 1686268800000,
+    "PRMT_EXPIR_DT": 1844121600000,
+    "OWNER": null,
+    "PRMT_RECOMMEND": "Approval",
+    "PRMT_STTS": "Issued",
+    "PROJ_ACRES": 6.9714,
+    "COUNTY": "Santa Rosa",
+    "CMPLNC_STTS": "In Compliance",
+    "EDITOR": null,
+    "EDIT_DATE": null,
+    "DISC_PRMT_STTS": "Active",
+    "FDEP_ID": null,
+    "LINK": null,
+    "PRMT_APP_PROC_STTS_CD": "COMP",
+    "PROJ_USE_TYPE": null,
+    "LEGACY_PERMIT_NUM": null,
+    "LGCY_APP_NO": null
+   },
+   "geometry": {
+    "x": -86.821115845657843,
+    "y": 30.410561175983361
+   }
+  },
+  {
+   "attributes": {
+    "APPLICANT": "Driven Brands",
+    "RULE_TYPE": "62-330",
+    "OBJECTID": 14425,
+    "CUR_PRMT_ID": 331320,
+    "OFFCL_PRMT_ID": 328837,
+    "SEQ_NO": 2,
+    "SITE_ID": 601040,
+    "SITE_NM": "Take 5 Navarre",
+    "SEQ_TYPE": "Minor Modification",
+    "PRMT_STAGE": "Compliance",
+    "RULE_TYPE_DESC": "ERP Individual",
+    "PRMT_PROJ_NM": "Take 5 Navarre",
+    "RECV_DT": 1782777600000,
+    "PRMT_DECISION_DT": 1784073600000,
+    "PRMT_EXPIR_DT": 1941840000000,
+    "OWNER": "Yates Holdings, LLC",
+    "PRMT_RECOMMEND": "Approval",
+    "PRMT_STTS": "Issued",
+    "PROJ_ACRES": 1.0,
+    "COUNTY": "Santa Rosa",
+    "CMPLNC_STTS": "In Compliance",
+    "EDITOR": null,
+    "EDIT_DATE": null,
+    "DISC_PRMT_STTS": "Active",
+    "FDEP_ID": null,
+    "LINK": null,
+    "PRMT_APP_PROC_STTS_CD": "COMP",
+    "PROJ_USE_TYPE": null,
+    "LEGACY_PERMIT_NUM": null,
+    "LGCY_APP_NO": null
+   },
+   "geometry": {
+    "x": -86.820796401634468,
+    "y": 30.409180619636064
+   }
+  }
+ ]
+}

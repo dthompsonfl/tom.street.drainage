@@ -196,11 +196,27 @@ allowed_blank_pdfs = {
     "18_NEIGHBOR_TOOLKIT/print/18_Continuation_Page.pdf",
 }
 unsafe = []
+allowed_kit_blank = {
+    "18_NEIGHBOR_TOOLKIT/templates/OBSERVATION_LOG.csv", "18_NEIGHBOR_TOOLKIT/templates/REQUEST_TRACKER.csv",
+    "18_NEIGHBOR_TOOLKIT/templates/PHOTO_VIDEO_INDEX.csv", "18_NEIGHBOR_TOOLKIT/templates/SOURCE_DOCUMENT_LOG.csv",
+    "18_NEIGHBOR_TOOLKIT/templates/DOCUMENTED_ROLE_TRACKER.csv", "18_NEIGHBOR_TOOLKIT/templates/DRAINAGE_FEATURE_LOG.csv",
+    "18_NEIGHBOR_TOOLKIT/templates/WORK_AND_CONDITION_LOG.csv", "18_NEIGHBOR_TOOLKIT/templates/ORIGINAL_FILE_AND_TRANSFER_LOG.csv",
+    "18_NEIGHBOR_TOOLKIT/templates/WEATHER_AND_COMPARISON_LOG.csv", "18_NEIGHBOR_TOOLKIT/templates/PROPERTY_CONDITION_AND_EXPENSE_LOG.csv",
+    "18_NEIGHBOR_TOOLKIT/templates/MEETING_NOTES.md", "18_NEIGHBOR_TOOLKIT/templates/CHANGE_AND_CORRECTION.md",
+}
+# guides are allowed
+allowed_kit_guides = {
+    "18_NEIGHBOR_TOOLKIT/README.md", "18_NEIGHBOR_TOOLKIT/01_DOCUMENT_AN_OBSERVATION.md", "18_NEIGHBOR_TOOLKIT/02_REQUESTS_AND_RESPONSES.md",
+    "18_NEIGHBOR_TOOLKIT/03_MEETING_GUIDE.md", "18_NEIGHBOR_TOOLKIT/04_PRIVACY_AND_SHARING.md", "18_NEIGHBOR_TOOLKIT/05_ORIGINALS_AND_IDS.md",
+    "18_NEIGHBOR_TOOLKIT/06_DOCUMENTED_ROLES.md", "18_NEIGHBOR_TOOLKIT/07_SOURCE_AND_MEASUREMENT_GUIDE.md", "18_NEIGHBOR_TOOLKIT/08_COORDINATOR_CHECKLIST.md",
+    "18_NEIGHBOR_TOOLKIT/09_WHERE_TO_REQUEST_AND_REPORT.md", "18_NEIGHBOR_TOOLKIT/print/README.md", "18_NEIGHBOR_TOOLKIT/templates/README.md",
+}
 for p in (ROOT / "18_NEIGHBOR_TOOLKIT").rglob("*"):
     if p.is_file():
         rel = p.relative_to(ROOT).as_posix()
-        if p.suffix.lower() not in allowed and rel not in allowed_blank_pdfs:
-            unsafe.append(rel)
+        if rel in allowed_blank_pdfs or rel in allowed_kit_blank or rel in allowed_kit_guides:
+            continue
+        unsafe.append(rel)
 check("no original resident media in public neighbor toolkit", not unsafe)
 
 for rel in ("14_MEETING_PACKET/README.md", "releases/2026-10-15/README.md"):

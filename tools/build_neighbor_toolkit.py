@@ -62,7 +62,7 @@ c=canvas.Canvas(str(OUT),pagesize=letter,pageCompression=1)
 c.setTitle('Tom Street - Neighbor Documentation | Blank Forms')
 c.setAuthor('Tom Street community documentation project')
 c.setSubject('Blank printable worksheets for observations, official records and follow-up')
-c.setKeywords('Tom Street, community, drainage, observations, records, print-ready, forms')
+c.setKeywords('Tom Street,community,drainage,observations,records,print-ready,forms')
 
 # Coordinates below are all TOP-ORIGIN points, which avoids mismatched rectangles.
 def txt(x,top,s,font='Lato',size=9.5,color=BODY):
@@ -497,9 +497,10 @@ p.finish()
 
 c.save()
 
-# Standalone prints are extracted from the same master pages. Never duplicate
-# descriptions by maintaining independent templates that can become stale.
+# Standalone prints are extracted from the same master pages. Build in temp and replace atomically.
 from pypdf import PdfReader, PdfWriter
+import tempfile
+import shutil
 
 EXPORTS = {
     '03_Event_Observation.pdf': 3,
@@ -514,17 +515,33 @@ EXPORTS = {
 reader = PdfReader(str(OUT))
 if len(reader.pages) != TOTAL:
     raise RuntimeError(f'Expected {TOTAL} pages, found {len(reader.pages)}')
-for filename, number in EXPORTS.items():
-    output = OUT_DIR / filename
-    writer = PdfWriter()
-    writer.add_page(reader.pages[number - 1])
-    writer.add_metadata({'/Title': 'Tom Street - ' + filename.replace('_', ' ').removesuffix('.pdf'),
-                         '/Subject': 'Blank neighborhood documentation worksheet'})
-    with output.open('wb') as fp:
-        writer.write(fp)
-    extracted = (PdfReader(str(output)).pages[0].extract_text() or '')
-    if len(extracted) < 150:
-        raise RuntimeError('Missing extractable text in ' + filename)
+tmpdir = Path(tempfile.mkdtemp(dir=OUT_DIR.parent))
+try:
+    tmp_master = tmpdir / OUT.name
+    shutil.copy2(str(OUT), str(tmp_master))
+    for filename, number in EXPORTS.items():
+        output = tmpdir / filename
+        writer = PdfWriter()
+        writer.add_page(reader.pages[number - 1])
+        writer.add_metadata({'/Title': 'Tom Street - ' + filename.replace('_', ' ').removesuffix('.pdf'),
+                             '/Subject': 'Blank neighborhood documentation worksheet',
+                             '/Producer': 'TomStreetNeighborToolkit/1.0'})
+        with output.open('wb') as fp:
+            writer.write(fp)
+        extracted = (PdfReader(str(output)).pages[0].extract_text() or '')
+        if len(extracted) < 150:
+            raise RuntimeError('Missing extractable text in ' + filename)
+    # validate all written
+    for p in tmpdir.glob('*.pdf'):
+        PdfReader(str(p))
+    # replace atomically
+    for p in tmpdir.glob('*.pdf'):
+        dest = OUT_DIR / p.name
+        if dest.exists():
+            dest.unlink()
+        shutil.move(str(p), str(dest))
+finally:
+    shutil.rmtree(tmpdir, ignore_errors=True)
 
 # Text-only sidecar supports review without including private input files.
 checksums = sorted((p.name, hashlib.sha256(p.read_bytes()).hexdigest())
