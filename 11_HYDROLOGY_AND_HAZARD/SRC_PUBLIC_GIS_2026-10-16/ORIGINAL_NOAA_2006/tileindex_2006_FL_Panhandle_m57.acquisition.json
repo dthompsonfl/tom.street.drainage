@@ -1,0 +1,112 @@
+{
+  "status": "ORIGINAL_GPKG_PRESERVED_AND_TILES_IDENTIFIED",
+  "agency": "NOAA Office for Coastal Management",
+  "data_source": "2006 NWFWMD Lidar: Escambia, Santa Rosa, and Walton Counties",
+  "dataset_id": 57,
+  "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/57/tileindex_2006_FL_Panhandle_m57.gpkg",
+  "metadata_url": "https://www.fisheries.noaa.gov/inport/item/48209",
+  "source_coverage_period_santa_rosa": "2006-01-12 to 2006-02-28",
+  "vertical_reference": "Published version NAVD88 GEOID18; original 2006 datum and possible transformation must be verified when comparing years",
+  "sha256": "33e4e61c7970f99207eb25a584ee4f2b74a3211880564ef28057d3c80fc1d191",
+  "bytes": 958464,
+  "local_original": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/tileindex_2006_FL_Panhandle_m57.gpkg",
+  "sites": {
+    "2264_Tom_St": {
+      "parcel": "21-2S-26-0780-0QQ00-1020",
+      "lon": -86.81466,
+      "lat": 30.41519
+    },
+    "2265_Tom_St": {
+      "parcel": "21-2S-26-0780-0QQ00-1180",
+      "lon": -86.81521,
+      "lat": 30.41515
+    },
+    "2268_Tom_St": {
+      "parcel": "21-2S-26-0780-0QQ00-1490",
+      "lon": -86.81466,
+      "lat": 30.41534
+    }
+  },
+  "layers": [
+    {
+      "layer_name": "tileindex_2006_FL_Panhandle_m57",
+      "layer_crs": "PROJCS[\"NAD83_HARN_UTM_Zone_16N\",GEOGCS[\"North_American_1983_HARN_3D\",DATUM[\"NAD83_High_Accuracy_Reference_Network\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6152\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "feature_count": 2404,
+      "site_projected_points": {
+        "2264_Tom_St": [
+          517801.195,
+          3364807.179
+        ],
+        "2265_Tom_St": [
+          517748.379,
+          3364802.66
+        ],
+        "2268_Tom_St": [
+          517801.168,
+          3364823.801
+        ]
+      },
+      "site_tile_intersections": {
+        "2264_Tom_St": [
+          {
+            "feature_id": "1488",
+            "properties": {
+              "filename": "20060228_sr1369_ld_p17.copc.laz",
+              "srs": "EPSG:4957",
+              "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/57/20060228_sr1369_ld_p17.copc.laz"
+            },
+            "bounds": [
+              516903.8944,
+              3364698.84,
+              518403.88700000005,
+              3366198.841
+            ]
+          }
+        ],
+        "2265_Tom_St": [
+          {
+            "feature_id": "1488",
+            "properties": {
+              "filename": "20060228_sr1369_ld_p17.copc.laz",
+              "srs": "EPSG:4957",
+              "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/57/20060228_sr1369_ld_p17.copc.laz"
+            },
+            "bounds": [
+              516903.8944,
+              3364698.84,
+              518403.88700000005,
+              3366198.841
+            ]
+          }
+        ],
+        "2268_Tom_St": [
+          {
+            "feature_id": "1488",
+            "properties": {
+              "filename": "20060228_sr1369_ld_p17.copc.laz",
+              "srs": "EPSG:4957",
+              "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/57/20060228_sr1369_ld_p17.copc.laz"
+            },
+            "bounds": [
+              516903.8944,
+              3364698.84,
+              518403.88700000005,
+              3366198.841
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "site_intersection_counts": {
+    "2264_Tom_St": 1,
+    "2265_Tom_St": 1,
+    "2268_Tom_St": 1
+  },
+  "limitations": [
+    "A polygon index hit does not establish a usable 2006 point cloud or elevation for a site.",
+    "Older 2006 vertical accuracy and classifications differ from the 2017 product.",
+    "A tax/GIS sample coordinate is not a property survey.",
+    "Do not infer modern drainage or construction impacts from a historic data footprint."
+  ]
+}
