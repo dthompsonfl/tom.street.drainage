@@ -1,5 +1,5 @@
 {
-  "retrieved_utc": "2026-10-16T17:12:43.611012+00:00",
+  "retrieved_utc": "2026-10-16T19:49:53.235677+00:00",
   "dataset": "USDA NAIP 2023 CONUS",
   "agency": "USDA FPAC via US Forest Service and Federal GeoPlatform IIPP",
   "service": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2023_CONUS/ImageServer",
@@ -532,7 +532,7 @@
     }
   ],
   "source_content_type": "image/jpeg",
-  "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023/Tom_Street_USDA_NAIP_2023_WGS84_Export.jpg",
+  "path": "/home/runner/work/tom.street.drainage/tom.street.drainage/11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023/Tom_Street_USDA_NAIP_2023_WGS84_Export.jpg",
   "bytes": 480458,
   "sha256": "32427d9550ab3ff80caf3ce39e26d9187f86a9a1a4766916e97f57decd6ea169",
   "center_pixel_intensity_sd": 37.917,
