@@ -1,0 +1,268 @@
+{
+  "audited_utc": "2026-10-16T17:15:58.160858+00:00",
+  "repository": "dthompsonfl/tom.street.drainage",
+  "branch": "main",
+  "scope": "Historical source files and associated manifests named in this audit, not every repository source.",
+  "integrity_status": "PASS",
+  "checked_file_count": 20,
+  "checked_bytes": 97810362,
+  "verified_files": [
+    {
+      "source": "NOAA_2006_SOURCE_INDEX",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/tileindex_2006_FL_Panhandle_m57.gpkg",
+      "bytes": 958464,
+      "sha256": "33e4e61c7970f99207eb25a584ee4f2b74a3211880564ef28057d3c80fc1d191",
+      "kind": "official_original_index",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_2006_COPC",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/20060228_sr1369_ld_p17.copc.laz",
+      "bytes": 17352858,
+      "sha256": "d5e83be7740af296db227af9c29e253ccc9c0279ee062c32c1091bb2f4376faa",
+      "kind": "official_original_lidar",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_2017_DEM",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2017/16reu175645.tif",
+      "bytes": 6589870,
+      "sha256": "449070da44acbdc23a289bdbfb436ef0eeb75b2cdc5cdee1fda154b263e507e0",
+      "kind": "official_original_dem",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_2018_INDEX_NO_SITE_COVERAGE",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2018/tileindex_FL_Panhandle_DEM_2018.zip",
+      "bytes": 709205,
+      "sha256": "125d20e4c32a28d1660109b2f7f112994046f016e3bc4418f5c3b2aae1835b7a",
+      "kind": "official_index_no_coverage",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_1994_DOQQ",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/1994_DOQQ_Tom_Street_export.jpg",
+      "bytes": 188339,
+      "sha256": "a49c77ecd90174261cd698845cf11afa656e59348099314732f60fae48061ee9",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_1999_DOQQ",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/1999_DOQQ_Tom_Street_export.jpg",
+      "bytes": 193602,
+      "sha256": "e14e20f0206d6bfb4b860747a97a0bae389076d4b763df3c95fa7addd14ac989",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2004_DOQQ",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2004_DOQQ_Tom_Street_export.jpg",
+      "bytes": 171352,
+      "sha256": "030725004d79b8009c0cf45e67975f55a0f0f593346f2117f322a1aa86741512",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2010_NAIP",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2010_NAIP_Tom_Street_export.jpg",
+      "bytes": 207014,
+      "sha256": "9ecb3578ffb67a4a3640324fc16aaee00c918f549da5023c20bfb324295597e5",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2007_FDOT",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2007_FDOT_Tom_Street_export.jpg",
+      "bytes": 333097,
+      "sha256": "32dad3a365f47b05ac7909e0d6e5259a17f8df83e6360b857c6e46b01101d089",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2010_FDOT",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2010_FDOT_Tom_Street_export.jpg",
+      "bytes": 430641,
+      "sha256": "abdcdbf87d1e00f37dddf5a7a5741d6c08c0708d05bae4bfec8376d4206ecf4c",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2013_FDOT",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2013_FDOT_Tom_Street_export.jpg",
+      "bytes": 279309,
+      "sha256": "e03211355316018252bd52cf302c29ab410f248780370a28147d7158a36901d8",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2016_FDOT",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2016_FDOT_Tom_Street_export.jpg",
+      "bytes": 352049,
+      "sha256": "80fe627835f5c987e222ff6b9ac35b5cbe3f11d39537f990ea56e0228cab1022",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "FDEP_2019_FDOT",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/2019_FDOT_Tom_Street_export.jpg",
+      "bytes": 558728,
+      "sha256": "3f95d1a16b6afc26c1d7a82e584b0c015d54c058bacc2a836ee3d927aa08e537",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "USDA_2023_NAIP",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023/Tom_Street_USDA_NAIP_2023_WGS84_Export.jpg",
+      "bytes": 480458,
+      "sha256": "32427d9550ab3ff80caf3ce39e26d9187f86a9a1a4766916e97f57decd6ea169",
+      "kind": "official_derived_ortho_jpeg",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "COUNTY_SANTA_ROSA_WATERSHED_MASTER_PLAN_PUBLIC_DRAFT",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS/Santa_Rosa_County_Watershed_Master_Plan_Public_Draft.pdf",
+      "bytes": 42882064,
+      "sha256": "f9c6264d2eab32fe3f0d25ee915aeff0f8eab71405f8823929aaa7be69efd166",
+      "kind": "official_published_pdf",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "COUNTY_EAST_NAVARRE_MAP",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/WATERSHED_DOCUMENTS/East_Navarre_Watershed_Study_Area_Official.jpg",
+      "bytes": 1109232,
+      "sha256": "84c59529ddbefa7b67e0c5cc35a2fcfe5dbf0784ed4626ed903efeac14120c03",
+      "kind": "official_original_published_map",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_REPORT_2018_Panhandle_Acquisition_Report",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Acquisition_Report.pdf",
+      "bytes": 14853962,
+      "sha256": "a2d3fbeac68732c22ef373b75e1b36ced70babaff4aebbbfbdc0d321b7e7f4ec",
+      "kind": "official_regional_survey_report",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_REPORT_2018_Panhandle_Control_Report",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Control_Report.pdf",
+      "bytes": 1153067,
+      "sha256": "15cf825b7d879776fae1785264bbd816a550d01abc59689271a599be0fa2a03f",
+      "kind": "official_regional_survey_report",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_REPORT_2018_Panhandle_Checkpoint_Survey_Report",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Checkpoint_Survey_Report.pdf",
+      "bytes": 1300498,
+      "sha256": "f5adb31dfb4e07c242407e7ed9b059cd25526d852d5a40e5c824a60c363b55cc",
+      "kind": "official_regional_survey_report",
+      "state": "HASH_VERIFIED"
+    },
+    {
+      "source": "NOAA_REPORT_2018_Panhandle_Project_Report",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/2018_Panhandle_Project_Report.pdf",
+      "bytes": 7706553,
+      "sha256": "4107fbdacc006bc6593837943c72e817ec3ca703e7471d4d59c0be8a1e08a30b",
+      "kind": "official_regional_survey_report",
+      "state": "HASH_VERIFIED"
+    }
+  ],
+  "available_but_unacquired": [
+    {
+      "source": "FDEP_2008_DOQQ",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2004_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2008_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2009_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2011_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2012_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2015_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2017_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2018_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2020_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "FDEP_2021_FDOT",
+      "status": "NOT_ACQUIRED",
+      "reason": "ValueError: Near-uniform center suggests no mosaic coverage (stddev 0.00)"
+    },
+    {
+      "source": "COUNTY_EAST_NAVARRE_WATERSHED_STUDY_AREA_MAP",
+      "status": "NOT_OBTAINED"
+    },
+    {
+      "source": "NOAA_REPORT_2017_NWFWMD_Project_Report",
+      "status": "NOT_ACQUIRED",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "source": "COUNTY_AERIALS_MAPSERVER",
+      "status": "EIGHT_REQUESTS_FAILED_HTTP_500",
+      "reason": "Source historic map services not started; FDEP official aerials separately archived."
+    }
+  ],
+  "other_stated_statuses": [
+    {
+      "source": "NOAA_2018_TERRAIN",
+      "status": "NO_SITE_COVERAGE",
+      "distance_to_nearest_tile_m": {
+        "2264_Tom_St": 38282.3,
+        "2265_Tom_St": 38284.4,
+        "2268_Tom_St": 38265.7
+      }
+    },
+    {
+      "source": "RESIDENT_PHOTOGRAPHS",
+      "status": "PRIVATE_REPORTED_37_INSTANCES_35_DISTINCT_NOT_PUBLISHED_IN_PUBLIC_GITHUB",
+      "native_originals_authenticated": false
+    }
+  ],
+  "hash_or_safety_errors": [],
+  "completed_definition": "Each checked file exists, matches captured size and SHA-256, and uses expected file signature. Does not verify substantive accuracy, latest agency record, or complete universe of available data.",
+  "site_and_legal_open_issues": [
+    "2026 approved sealed grading/drainage and subdivision plans and revisions not held",
+    "current common-datum licensed survey, pipe invert elevations and positive downstream outfall unavailable",
+    "formal County asset/ditch maintenance ownership, acceptance and easements unavailable",
+    "actual NWFWMD ERP and FDEP construction-stormwater coverage applicability unresolved",
+    "source orthophotos and exact per-year flight dates partly missing",
+    "private resident photo originals and publish permissions incomplete; do not upload to public repo"
+  ]
+}
