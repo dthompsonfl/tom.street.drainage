@@ -3,11 +3,11 @@
   "dataset": "2006 NWFWMD Lidar: Escambia, Santa Rosa and Walton Counties",
   "source_agency": "NOAA Office for Coastal Management / NWFWMD",
   "source_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/57/20060228_sr1369_ld_p17.copc.laz",
-  "index_source": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/tileindex_2006_FL_Panhandle_m57.acquisition.json",
+  "index_source": "/home/runner/work/tom.street.drainage/tom.street.drainage/11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/tileindex_2006_FL_Panhandle_m57.acquisition.json",
   "metadata_source": "https://www.fisheries.noaa.gov/inport/item/48209",
   "source_date_in_filename": "2006-02-28",
   "published_product_vertical_reference": "NAVD88 using GEOID18 per NOAA public geoid18 index. Verify site-specific vertical units and LAS VLR metadata before numeric comparison.",
-  "local_original": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/20060228_sr1369_ld_p17.copc.laz",
+  "local_original": "/home/runner/work/tom.street.drainage/tom.street.drainage/11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2006/20060228_sr1369_ld_p17.copc.laz",
   "bytes": 17352858,
   "sha256": "d5e83be7740af296db227af9c29e253ccc9c0279ee062c32c1091bb2f4376faa",
   "header": {
