@@ -1,6 +1,6 @@
 {
   "release_status": "DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION",
-  "generated_utc": "2026-10-16T20:31:04.046012+00:00",
+  "generated_utc": "2026-10-16T20:31:53.045768+00:00",
   "photo_originals_included": false,
   "file_scope": "Four explicitly named public-safe Markdown drafts",
   "unresolved": [
@@ -15,7 +15,7 @@
       "source_sha256": "fe46ee0f2699fb75f50d38606b651bd08efcbb2d435a5d45d9a5923d670a0a55",
       "pdf": "Tom_Street_Homeowner_Brief.pdf",
       "bytes": 3584,
-      "sha256": "d44cf545aeba13cb1521a6d6bd28fd161d18dcc438c6a3e3925b8afc86d90614",
+      "sha256": "4ef1d8f4292cf7e3ffbb7a06f6eda761e2b20348adffa0d50b65e91500a3db6f",
       "pages": 1,
       "page_text_lengths": [
         1938
@@ -26,7 +26,7 @@
       "source_sha256": "b5cd7b5f22b866e97b48a7b828437ceb5648895a5df35342f01b6b76bb1c02b3",
       "pdf": "Tom_Street_Commissioner_Cover_Letter_Draft.pdf",
       "bytes": 3451,
-      "sha256": "027c6f5bb1948c1e69b41b42eb805277fa5d0370d0ae3703a6e518f881f709dc",
+      "sha256": "3ab3f936618533d31288ce1fbb3f80e13dc2d4da04ec73f3c629c8a4ba8e3198",
       "pages": 1,
       "page_text_lengths": [
         1847
@@ -37,7 +37,7 @@
       "source_sha256": "14b0a2b13d3764e6a2b8df1d4b39b30a478532af8515707a2ecc5be6cfd0e0e2",
       "pdf": "Tom_Street_County_Letter_Draft.pdf",
       "bytes": 3615,
-      "sha256": "7f4bfc2083ce4b25b003b56941e603c59c18b6a52cff9eb107fd098aebb0ac41",
+      "sha256": "9b94fbb55e44f94abb331ea8ee09f7f3785745bc1fcff36225d76e6ca1f00690",
       "pages": 1,
       "page_text_lengths": [
         2093
@@ -48,7 +48,7 @@
       "source_sha256": "b001b3751b10aae416f708f5be8ba44b7209b3fa57fccbf4d9f6d598b69c2cd4",
       "pdf": "Tom_Street_Proxy_Meeting_Notes.pdf",
       "bytes": 3359,
-      "sha256": "73ed891ea34293977fe6bbb55e3191d34943902a15b1983f3b45fe0aa45ce501",
+      "sha256": "21efb5bb53aae6e4d778af9a3b15afc149e1b0bae1a2e3206b35daf3e2ac8721",
       "pages": 1,
       "page_text_lengths": [
         1697
@@ -59,7 +59,7 @@
       "source_sha256": "e143cef162d24d700d204deb642b67bdb4f0ba53335d2df6882f6b3f5eb4634a",
       "pdf": "Tom_Street_Records_Status_and_Follow_Up.pdf",
       "bytes": 3347,
-      "sha256": "49a4368de403a4cd31ab80932699f7466014495d1025f9e5c667a96995771fcd",
+      "sha256": "9cfebc1b56ad696f02c8e72394bf39404216fb44e95a4946181e5dd831d10908",
       "pages": 1,
       "page_text_lengths": [
         1747
