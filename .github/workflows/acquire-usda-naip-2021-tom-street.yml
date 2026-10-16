@@ -1,0 +1,58 @@
+name: Acquire federal 2021 USDA Tom Street aerial imagery
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_usda_naip_2021_tom_street.py'
+      - '.github/workflows/acquire-usda-naip-2021-tom-street.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: archive-naip2021-tom-street
+  cancel-in-progress: false
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check image acquisition script
+        run: python -m py_compile tools/acquire_usda_naip_2021_tom_street.py
+      - name: Install fixed image parser
+        run: python -m pip install pillow==11.3.0
+      - name: Download and verify USDA NAIP 2021 imagery metadata
+        id: attempt
+        continue-on-error: true
+        run: python tools/acquire_usda_naip_2021_tom_street.py
+      - name: Check checksum and catalogue status
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          p=pathlib.Path('11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2021/ACQUISITION_MANIFEST.json')
+          d=json.loads(p.read_text())
+          if d["image_status"].startswith("PUBLIC_"):
+              f=pathlib.Path(d["path"])
+              assert f.stat().st_size==d["bytes"]
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==d["sha256"]
+          print(d["image_status"],d["catalog_status"],d.get("image_failure"))
+          PY
+      - name: Save only public source photo and provenance
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2021/
+          if git diff --cached --quiet; then
+            echo "Existing dataset unchanged"
+          else
+            git commit -m "evidence: preserve original USDA 2021 orthophoto export [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
