@@ -31,3 +31,7 @@ Additional Project Library inputs include `Tom_Street_Record_Preservation_Toolki
 ## Printable packet generation
 
 The canonical public text comprises `01_HOMEOWNER_BRIEF.md`, `02_COUNTY_LETTER_DRAFT.md`, `03_PROXY_MEETING_NOTES.md`, and `05_RECORDS_STATUS_AND_FOLLOW_UP.md`. Run `python3 tools/build_reconciled_packet.py` to build four Letter-size PDFs, one combined packet and checksum/manifest files. The release status remains `DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION` until homeowner verification of current records and a print review. Never reuse the superseded `14_MEETING_PACKET` PDFs as final.
+
+## Preserved legal source PDFs
+
+Three previously missing **public primary/legal record PDFs** were downloaded and byte-hashed via the governed GitHub workflow: the 1989 Florida Supreme Court corrected *Westland* opinion and two FDEP final-order quarterly **indexes**. These are under [`08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/`](../08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/) with an acquisition manifest. No signed DEP consent order or lot-specific approved engineering plan was recovered by this legal-source acquisition. This annex is **not part of the public four-page homeowner handout**.

@@ -19,3 +19,5 @@
 4. **Phase C - Drainage/GIS** (Priority: HIGH)
    - [ ] Santa Rosa County GIS - examine Tom Street drainage, swales, culverts, easements
    - [ ] Map relationship of 2264/2265/2268 positions
+
+9. **DEP consent-order originals:** retrieve signed `DEP23-0087` / `OGC 22-2720` and `DEP24-0006` / `OGC 23-1387` with case sites, terms and supporting records. The official index PDFs are now archived, but do not establish relevance to Tom Street or substitute for signed orders. No request has been sent.

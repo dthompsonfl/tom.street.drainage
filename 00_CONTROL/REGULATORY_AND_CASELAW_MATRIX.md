@@ -174,7 +174,7 @@ compliance standard this investigation relies on.
 
 **Westland Skating Center, Inc. v. Gus Machado Buick, Inc., 542 So. 2d 959 (Fla. 1989)**, Florida Supreme Court, docket 72492, March 30, 1989.
 
-- **Primary document:** [FSU College of Law docket 72492](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/72492.html), [11-page corrected opinion](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/op-72492.pdf), retrieved and text-checked on 2026-10-15. The original PDF is not archived in this Git repository; its public source URL is retained.
+- **Primary document:** [FSU College of Law docket 72492](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/72492.html), [11-page corrected opinion](https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/op-72492.pdf), retrieved and text-checked on 2026-10-15. The **original PDF is now archived unchanged** at `08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/Westland_Skating_Center_v_Gus_Machado_Buick_Fla_1989_CORRECTED_OPINION.pdf` with independent SHA-256 recorded in the acquisition manifest.
 - **Rule adopted by Court:** Florida applies the **reasonable-use rule** to damage from interference with surface water. The court adopts it at opinion PDF page 6 and describes the comparison of improved-property conduct at PDF pages 7-8.
 - **Critical distinction:** compliance with a building code may be evidence of reasonable use but is **not reasonableness as a matter of law** (opinion PDF pages 9-10). This undermines both automatic allegations from high fill and automatic absolution from an approved building permit.
 - **Status:** primary text verified; subsequent citator/treatment and direct applicability to actual Tom Street engineering facts **not completed**. No liability finding is asserted.
@@ -203,3 +203,9 @@ means the compliance question cannot yet be reached in either direction.
 ## G. Edition and amendment control (October 2026)
 
 The county-hosted LDC edition identifies **Ord. 2025-25 (adopted November 10, 2025)** on its cover, with amendments to §§ 3.04.05 and 4.04.01. An internal PDF creation timestamp in January 2026 must not be reported as a new legal enactment. The 2026 Ordinances index shows later LDC-related enactments, some changing zoning/future-land-use maps. Review each ordinance's effective date and text against the actual permits **created February 11, 2026 and issued March 23, 2026** before asserting any amendment applied or did not apply. Sources: https://santarosa.fl.gov/182/Land-Development-Code and https://library.municode.com/fl/santa_rosa_county/ordinances/code_of_ordinances?nodeId=2026 .
+
+## H. DEP historical order-index leads (official PDFs preserved)
+
+- Official 2023 Q1 FDEP Final Order Report (local `SOURCE/PRIMARY_AUTHORITY/FDEP_FINAL_ORDER_INDEX_2023_Q1.pdf`, page 1): lists Holiday Builders, `OGC 22-2720 / DEP23-0087`, dated February 9, 2023. **Only the index PDF has been obtained, NOT the full signed consent order.**
+- Official 2024 Q1 FDEP Final Order Report (local `SOURCE/PRIMARY_AUTHORITY/FDEP_FINAL_ORDER_INDEX_2024_Q1.pdf`, page 2): lists Holiday Builders Inc, `OGC 23-1387 / DEP24-0006`, dated January 10, 2024. **Only the index PDF has been obtained, NOT the signed order.**
+- **Both are historical unrelated-case research leads**. The index entries do not identify a breach at 2264 or 2268 Tom Street, nor permit any inference that the builder was negligent in 2026. Request actual signed orders and project identifiers from DEP before citing the matters in external meetings. See [`PRIMARY_SOURCES_README.md`](../08_LEGAL_AND_REGULATORY/PRIMARY_SOURCES_README.md) and `SOURCE/PRIMARY_AUTHORITY/ACQUISITION_MANIFEST.json`.
