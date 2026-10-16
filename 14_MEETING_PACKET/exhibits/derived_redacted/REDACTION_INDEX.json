@@ -1,0 +1,16 @@
+[
+ {
+  "source": ".evidence_vault/restricted/03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_project.png",
+  "derivative": "14_MEETING_PACKET/exhibits/derived_redacted/03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_project.png",
+  "source_sha256": "8275c28589da967143c66b41b922a20b248a92f7c835c6bd24c3b5185b06a572",
+  "derivative_sha256": "585b76031c413daaec8252fb71752e83d3ae309062223f9dd95e2ffd25217fe5",
+  "derivative_bytes": 206022
+ },
+ {
+  "source": ".evidence_vault/restricted/03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_record.png",
+  "derivative": "14_MEETING_PACKET/exhibits/derived_redacted/03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_record.png",
+  "source_sha256": "778cacb705b6730a9d01c09043c03890027140b41f28c7bcd095d8ca09cb5d1f",
+  "derivative_sha256": "d3a99ec3f8393ef38427ec04b1df89de95caeff1a948d00c624cbae1edf6ccb1",
+  "derivative_bytes": 219639
+ }
+]

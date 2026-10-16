@@ -13,3 +13,7 @@ __pycache__/
 # Bulbulky original evidence retained locally but excluded from version control
 # (remove the comment marker below to start tracking evidence files)
 # 00_CONTROL/SYSTEM_RAW/*.html
+
+# Local-only restricted evidence vault (authenticated portal captures).
+# Bytes preserved on disk; see 00_CONTROL/RESTRICTED_EVIDENCE_INDEX.csv
+.evidence_vault/
