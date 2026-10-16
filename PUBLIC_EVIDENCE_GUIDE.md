@@ -18,6 +18,7 @@ Records were saved in October 2026. Permit statuses can change, so check with th
 | --- | --- | --- |
 | [Permit and inspection extracts](15_RECONCILED_DRAFTS/05_PRIMARY_SOURCE_EXTRACTS.md) | Permit IDs, saved administrative status, dates, actual inspection remarks | Approved finished grades, proof pipe work was installed or capacity is sufficient |
 | [County maintenance and five-question report](17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md) | County GIS calls the relevant road segment County Maintained | Ownership or maintenance of every private culvert, ditch or pipe |
+| [County stormwater map original feature 2068](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_PROVENANCE/ORIGINAL_GOMAPS_STORMWATER_FEATURE_2068.json) | The County map includes a problem-area record sourced to a foreman's marked-up map | Its date, cause or any 2026 construction-related flooding or fault |
 | [Original historical terrain and imagery index](00_CONTROL/HISTORICAL_EVIDENCE_COMPLETENESS_2026-10-16.md) | Archived 2006 LiDAR, 2017 terrain, historical photos, 2023 aerial and documented 2018 gap | Actual 2026 finished elevations or a verified change in drainage direction |
 | [County Land Development Code and ordinance research](00_CONTROL/REGULATORY_AND_CASELAW_MATRIX.md) | Text of possible grading/drainage requirements and their conditions | Which specific approval, exemption or violation applies to either lot |
 | [Request drafts](13_PUBLIC_RECORDS_REQUESTS/) | Exactly which records residents want from agencies | That anyone sent the requests or the County produced those records |
@@ -36,4 +37,4 @@ A County inspector's instruction is not a completed work record. A field marked 
 
 Use [the homeowner packet](15_RECONCILED_DRAFTS/README.md) to explain the concern and [the neighbor toolkit](18_NEIGHBOR_TOOLKIT/README.md) to document what happens near your home. If you receive a new official record, preserve the exact original privately, document when it arrived and propose a **redacted** update to the public source index. Do not replace an older agency record silently; each record needs its date and source.
 
-**This is a shared research record. It should help us ask better questions, not make claims that the missing evidence has not answered.**
+[See the tracked community-readiness and unresolved-items register](00_CONTROL/COMMUNITY_READINESS_2026-10-16.md).\n\n**This is a shared research record. It should help us ask better questions, not make claims that the missing evidence has not answered.**
