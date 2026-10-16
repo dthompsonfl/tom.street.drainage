@@ -1,0 +1,58 @@
+name: Acquire federal 2023 USDA Tom Street aerial imagery
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_usda_naip_2023_tom_street.py'
+      - '.github/workflows/acquire-usda-naip-2023-tom-street.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: archive-naip2023-tom-street
+  cancel-in-progress: false
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check acquisition script
+        run: python -m py_compile tools/acquire_usda_naip_2023_tom_street.py
+      - name: Install fixed JPEG parser
+        run: python -m pip install pillow==11.3.0
+      - name: Download and validate 2023 USDA NAIP image and mosaic metadata
+        id: attempt
+        continue-on-error: true
+        run: python tools/acquire_usda_naip_2023_tom_street.py
+      - name: Validate public image manifest
+        run: |
+          python - <<'PY'
+          import json, pathlib, hashlib
+          p=pathlib.Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023/ACQUISITION_MANIFEST.json")
+          d=json.loads(p.read_text())
+          if d["image_status"].startswith("PUBLIC_"):
+            f=pathlib.Path(d["path"])
+            assert f.stat().st_size==d["bytes"]
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==d["sha256"]
+          print(d["image_status"],d["catalog_status"],d.get("image_failure"))
+          PY
+      - name: Preserve only public source evidence with manifest
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/USDA_NAIP_2023/
+          if git diff --cached --quiet; then
+            echo "USDA data unchanged"
+          else
+            git commit -m "evidence: preserve USDA 2023 Tom Street orthophoto source [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
