@@ -47,6 +47,13 @@ public_paths = [
     "18_NEIGHBOR_TOOLKIT/02_REQUESTS_AND_RESPONSES.md",
     "18_NEIGHBOR_TOOLKIT/03_MEETING_GUIDE.md",
     "18_NEIGHBOR_TOOLKIT/04_PRIVACY_AND_SHARING.md",
+    "18_NEIGHBOR_TOOLKIT/05_ORIGINALS_AND_IDS.md",
+    "18_NEIGHBOR_TOOLKIT/06_DOCUMENTED_ROLES.md",
+    "18_NEIGHBOR_TOOLKIT/07_SOURCE_AND_MEASUREMENT_GUIDE.md",
+    "18_NEIGHBOR_TOOLKIT/08_COORDINATOR_CHECKLIST.md",
+    "18_NEIGHBOR_TOOLKIT/09_WHERE_TO_REQUEST_AND_REPORT.md",
+    "18_NEIGHBOR_TOOLKIT/print/README.md",
+    "18_NEIGHBOR_TOOLKIT/templates/README.md",
     "18_NEIGHBOR_TOOLKIT/templates/MEETING_NOTES.md",
     "18_NEIGHBOR_TOOLKIT/templates/CHANGE_AND_CORRECTION.md",
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/README.md",
@@ -177,9 +184,23 @@ else:
 # Control the scope of readable public-facing templates. Personal originals
 # must never be saved alongside these blank public toolkit files.
 allowed = {".md", ".csv"}
-unsafe = [p.relative_to(ROOT).as_posix()
-          for p in (ROOT / "18_NEIGHBOR_TOOLKIT").rglob("*")
-          if p.is_file() and p.suffix.lower() not in allowed]
+allowed_blank_pdfs = {
+    "18_NEIGHBOR_TOOLKIT/print/Tom_Street_Neighbor_Documentation_Forms.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/03_Event_Observation.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/04_Photo_and_Video_Index.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/10_Request_and_Response.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/11_Meeting_and_Inspection_Notes.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/13_Documented_Roles.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/14_Original_Files_and_Handoff.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/16_Missing_Records_Checklist.pdf",
+    "18_NEIGHBOR_TOOLKIT/print/18_Continuation_Page.pdf",
+}
+unsafe = []
+for p in (ROOT / "18_NEIGHBOR_TOOLKIT").rglob("*"):
+    if p.is_file():
+        rel = p.relative_to(ROOT).as_posix()
+        if p.suffix.lower() not in allowed and rel not in allowed_blank_pdfs:
+            unsafe.append(rel)
 check("no original resident media in public neighbor toolkit", not unsafe)
 
 for rel in ("14_MEETING_PACKET/README.md", "releases/2026-10-15/README.md"):

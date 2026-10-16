@@ -12,7 +12,7 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 | Understand the concern | [One-page homeowner brief](15_RECONCILED_DRAFTS/01_HOMEOWNER_BRIEF.md) |
 | Take a letter to a commissioner | [Commissioner letter draft](15_RECONCILED_DRAFTS/06_COMMISSIONER_COVER_LETTER_DRAFT.md) |
 | Request records from the County | [County records letter draft](15_RECONCILED_DRAFTS/02_COUNTY_LETTER_DRAFT.md) |
-| Document what you see near your home | [Neighbor guide and blank forms](18_NEIGHBOR_TOOLKIT/README.md) |
+| Document what you see near your home | [One-page event form](18_NEIGHBOR_TOOLKIT/print/03_Event_Observation.pdf) and [full neighbor toolkit](18_NEIGHBOR_TOOLKIT/README.md) |
 | Check evidence and sources | [Plain-English evidence guide](PUBLIC_EVIDENCE_GUIDE.md) |
 | See what we still need | [Open questions](00_CONTROL/OPEN_QUESTIONS.md) |
 | Check which packet is current | [Current draft release guide](15_RECONCILED_DRAFTS/README.md) and [five-page draft PDF](15_RECONCILED_DRAFTS/pdf/Tom_Street_Reconciled_Public_Meeting_Draft.pdf) |
