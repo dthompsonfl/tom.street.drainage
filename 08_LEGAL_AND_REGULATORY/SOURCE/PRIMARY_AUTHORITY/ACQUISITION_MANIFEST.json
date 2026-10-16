@@ -1,0 +1,41 @@
+{
+  "captured_utc": "2026-10-16T04:09:27.541545+00:00",
+  "purpose": "Public primary-source legal research, not a lot-specific engineering finding",
+  "final_orders_signed_pdf_obtained": false,
+  "all_public_pdfs_captured": true,
+  "sources": [
+    {
+      "file": "08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/Westland_Skating_Center_v_Gus_Machado_Buick_Fla_1989_CORRECTED_OPINION.pdf",
+      "source_url": "https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/op-72492.pdf",
+      "expected_pages": 11,
+      "interpretation_limit": "Florida Supreme Court corrected opinion; not a factual finding on Tom Street",
+      "redirect_url": "https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/72492/op-72492.pdf",
+      "status": "PUBLIC_PDF_CAPTURED",
+      "bytes": 590557,
+      "sha256": "df0781698ff26a89f11d75c678ad81dcbb93bffa0c34847a4af4005904e4973b",
+      "validated_pages": 11
+    },
+    {
+      "file": "08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/FDEP_FINAL_ORDER_INDEX_2023_Q1.pdf",
+      "source_url": "https://floridadep.gov/sites/default/files/Final_Order_Report_-_January_1,_2023_-_March_31,_2023.pdf",
+      "expected_pages": 7,
+      "interpretation_limit": "DEP index listing Holiday Builders OGC 22-2720 / DEP23-0087; NOT the signed consent order",
+      "redirect_url": "https://floridadep.gov/sites/default/files/Final_Order_Report_-_January_1,_2023_-_March_31,_2023.pdf",
+      "status": "PUBLIC_PDF_CAPTURED",
+      "bytes": 237641,
+      "sha256": "7e998c4731c42805553d531961fcd2eebef2a4348ee8ca64b24841a3ae0a2cec",
+      "validated_pages": 7
+    },
+    {
+      "file": "08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/FDEP_FINAL_ORDER_INDEX_2024_Q1.pdf",
+      "source_url": "https://floridadep.gov/sites/default/files/Final_Order_Report_-_January_1,_2024_-_March_31,_2024.pdf",
+      "expected_pages": 5,
+      "interpretation_limit": "DEP index listing Holiday Builders Inc OGC 23-1387 / DEP24-0006; NOT the signed consent order",
+      "redirect_url": "https://floridadep.gov/sites/default/files/Final_Order_Report_-_January_1,_2024_-_March_31,_2024.pdf",
+      "status": "PUBLIC_PDF_CAPTURED",
+      "bytes": 729837,
+      "sha256": "541a432859b4d484b837af920daec080e3867e7e78632b16210ab172bc84d1cc",
+      "validated_pages": 5
+    }
+  ]
+}
