@@ -139,8 +139,12 @@ check("ledger status marks verified copies rather than native originals",
 check("ledger distinguishes private copies from native originals",
       "15 independently hash-matched JPEG copies" in ledger and
       "native camera originals" in ledger.lower())
+claim_rows = list(csv.DictReader((ROOT / "00_CONTROL/EVIDENCE_LEDGER.csv").open(newline="")))
+erp_claim = next((item for item in claim_rows if item["claim_id"] == "CLM-013"), {})
 check("ledger does not treat nearby ERP as governing authorization",
-      "no absence or nonapplicability determination" in ledger.lower())
+      "not prove" in erp_claim.get("limitation", "").lower()
+      and "applicab" in erp_claim.get("limitation", "").lower()
+      and "limited" in erp_claim.get("claim", "").lower())
 check("superseded meeting packet clearly marked",
       "SUPERSEDED" in (ROOT / "14_MEETING_PACKET/RELEASE_README.md").read_text().upper())
 
