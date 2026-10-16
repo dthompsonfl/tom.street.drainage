@@ -60,5 +60,5 @@ This document deliberately omits contact details, account identifiers, original 
 - The road-grade instruction for 2268 provides no actual surveyed grade or lot freeboard.
 - Neither the ERP proximity search nor FEMA flood-zone geocoded-point results establish environmental permit applicability or whole-parcel flood behavior.
 - The original homeowner flooding photos/EXIF, surveys, approved plans, signed certifications, measured inverts and Public Works work-order results remain outstanding.
-- Five earlier Chapter 119 requests, the FDEP construction-stormwater draft and the County Public Works work-request draft are **NOT SUBMITTED** in the preserved workspace. No receipt is known.
+- Five foundational request files and three supplemental draft files (including separate historical-imagery requests to the County and FDOT) are **NOT SUBMITTED** in the preserved workspace. The eight files contain nine request/service templates. No receipt is known.
 
