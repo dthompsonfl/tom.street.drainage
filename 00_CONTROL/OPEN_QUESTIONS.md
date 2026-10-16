@@ -6,6 +6,7 @@ This checklist supersedes the earlier unchecked discovery-only version. It is ba
 - [x] 2264 Tom Street: parcel `21-2S-26-0780-0QQ00-1020`; permit `BP-2026-1621`, Active at snapshot.
 - [x] 2268 Tom Street: parcel `21-2S-26-0780-0QQ00-1490`; permit `BP-2026-1612`, Active at snapshot.
 - [x] Holiday Builders Inc. appears as owner/applicant business in saved primary records.
+- [x] Santa Rosa County Clerk original Crescent Shores PLAT A/70, two sheets (second marked 70 A), preserved October 16, 2026. The complete later deed/parcel history remains open.
 - [x] 2266 does not appear as a *current* parcel in the saved Property Appraiser roll; MGO records nevertheless use the address historically.
 - [x] Fifteen resident-supplied JPEG copies in the separate preservation toolkit matched their archived SHA-256 values (verification 2026-10-15). No native device originals authenticated; no permission to publish these images to the public GitHub repository established.
 
@@ -16,7 +17,7 @@ This checklist supersedes the earlier unchecked discovery-only version. It is ba
 - [ ] Certified drainage/as-built documents and CO stage; `Assigned` task does not prove presence or absence.
 - [ ] Survey and hydrology comparison of historic/approved/final conditions; effects on established homes; rainfall and other possible contributors to observed standing water.
 - [ ] Parcel/title and historical-address explanation for 2266; 2000-era MGO records previously attributed to 2268 reference `...-1060`, which maps to 2274 on the current roll.
-- [ ] Original Clerk deed images, actual subdivision plat and legal descriptions. Clerk search grid alone is insufficient.
+- [ ] Later Lot QQ conveyances, present-lot legal descriptions, road/drainage easements and recorded title instruments. The original Crescent Shores PLAT A/70 has been obtained; its 1946 dedication does not prove current asset ownership or modern lot boundaries.
 - [ ] Spatial permit exhibits for NWFWMD ERP 9220-2; nearby location is not proof it covers these lots.
 - [ ] Actual **signed FDEP consent-order documents** (not only the two now-preserved quarterly index reports) and verified project-site linkage before describing Holiday Builders' historical regulatory matters.
 - [ ] Confirm all original resident-photo capture data and written permission before release of identifying images/EXIF.
