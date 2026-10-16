@@ -30,7 +30,7 @@ Additional Project Library inputs include `Tom_Street_Record_Preservation_Toolki
 
 ## Printable packet generation
 
-The canonical public text comprises `01_HOMEOWNER_BRIEF.md`, `02_COUNTY_LETTER_DRAFT.md`, `03_PROXY_MEETING_NOTES.md`, and `05_RECORDS_STATUS_AND_FOLLOW_UP.md`. Run `python3 tools/build_reconciled_packet.py` to build four Letter-size PDFs, one combined packet and checksum/manifest files. The release status remains `DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION` until homeowner verification of current records and a print review. Never reuse the superseded `14_MEETING_PACKET` PDFs as final.
+The canonical public text comprises `01_HOMEOWNER_BRIEF.md`, `06_COMMISSIONER_COVER_LETTER_DRAFT.md`, `02_COUNTY_LETTER_DRAFT.md`, `03_PROXY_MEETING_NOTES.md`, and `05_RECORDS_STATUS_AND_FOLLOW_UP.md`. Run `python3 tools/build_reconciled_packet.py` to build five Letter-size PDFs, one combined packet and checksum/manifest files. The release status remains `DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION` until homeowner verification of current records and a print review. Never reuse the superseded `14_MEETING_PACKET` PDFs as final.
 
 ## Preserved legal source PDFs
 

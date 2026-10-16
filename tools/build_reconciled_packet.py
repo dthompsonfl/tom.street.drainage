@@ -25,6 +25,7 @@ SOURCE = ROOT / "15_RECONCILED_DRAFTS"
 OUT = SOURCE / "pdf"
 SELECTED = (
     ("01_HOMEOWNER_BRIEF.md", "Tom_Street_Homeowner_Brief.pdf"),
+    ("06_COMMISSIONER_COVER_LETTER_DRAFT.md", "Tom_Street_Commissioner_Cover_Letter_Draft.pdf"),
     ("02_COUNTY_LETTER_DRAFT.md", "Tom_Street_County_Letter_Draft.pdf"),
     ("03_PROXY_MEETING_NOTES.md", "Tom_Street_Proxy_Meeting_Notes.pdf"),
     ("05_RECORDS_STATUS_AND_FOLLOW_UP.md", "Tom_Street_Records_Status_and_Follow_Up.pdf"),

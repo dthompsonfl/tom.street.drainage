@@ -28,7 +28,7 @@ def digest(path):
 
 check("release remains unsigned DRAFT", manifest["release_status"] == "DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION")
 check("no original photographs in packet scope", manifest["photo_originals_included"] is False)
-check("exactly four explicit source PDFs and merged PDF", len(manifest["outputs"]) == 5)
+check("exactly five explicit source PDFs and merged PDF", len(manifest["outputs"]) == 6)
 
 targets = [
     ("2264", "BP-2026-1621", "1020", "21-2S-26-0780-0QQ00-1020", "03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_project_by_uid.json"),
@@ -36,6 +36,7 @@ targets = [
 ]
 brief = (SOURCE / "01_HOMEOWNER_BRIEF.md").read_text()
 letter = (SOURCE / "02_COUNTY_LETTER_DRAFT.md").read_text()
+commissioner = (SOURCE / "06_COMMISSIONER_COVER_LETTER_DRAFT.md").read_text()
 for address, permit, lot, formatted, source in targets:
     obj = json.loads((ROOT / source).read_text())["data"]
     check("archived county record " + address,
@@ -46,6 +47,7 @@ for address, permit, lot, formatted, source in targets:
           address in obj.get("projectAddress", ""))
     check("parcel number paired in public brief " + address, formatted in brief and permit in brief)
     check("parcel number paired in county letter " + address, formatted in letter and permit in letter)
+    check("parcel number paired in commissioner letter " + address, formatted in commissioner and permit in commissioner)
 
 all_pages = 0
 expected_zip = set()
@@ -68,7 +70,7 @@ for output in manifest["outputs"]:
         extracted = "\n".join(page.extract_text() or "" for page in reader.pages)
         check("draft footer present in " + p.name, "Evidence-based homeowner DRAFT" in extracted)
     else:
-        check("merged packet page count matches four components", pages == all_pages)
+        check("merged packet page count matches five components", pages == all_pages)
 
 sums = {}
 for line in (PDF / "SHA256SUMS.txt").read_text().splitlines():

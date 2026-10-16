@@ -51,9 +51,9 @@ jobs:
           m=json.loads((r/'RELEASE_MANIFEST.json').read_text())
           assert m['release_status']=='DRAFT_NOT_APPROVED_FOR_EXTERNAL_DISTRIBUTION'
           assert m['photo_originals_included'] is False
-          assert len(m['outputs'])==5
+          assert len(m['outputs'])==6
           assert all(item['pages']>=1 for item in m['outputs'])
-          assert len(PdfReader(str(r/'Tom_Street_Reconciled_Public_Meeting_Draft.pdf')).pages)==sum(item['pages'] for item in m['outputs'][:4])
+          assert len(PdfReader(str(r/'Tom_Street_Reconciled_Public_Meeting_Draft.pdf')).pages)==sum(item['pages'] for item in m['outputs'][:5])
           print('Public PDF QA: PASS')
           PY
       - name: Commit generated public PDFs to main

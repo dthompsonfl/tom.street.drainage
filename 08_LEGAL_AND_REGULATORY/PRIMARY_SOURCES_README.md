@@ -14,4 +14,4 @@ The files under `SOURCE/PRIMARY_AUTHORITY/` are downloaded **unchanged** from ex
 
 Obtain the original signed agency orders, findings, listed properties, supporting compliance history and any settlement/remediation terms directly from the DEP Office of General Counsel or official records portal. The DEP [Final Orders portal](https://floridadep.gov/ogc/ogc/content/final-orders) provides a contact (Office of General Counsel, 850-245-2242); the Department also provides its [public records request page](https://floridadep.gov/comm/ombudsman-public-services/content/public-record-request). No request has been sent by this research workflow.
 
-**Publication control:** This is an internal legal-reference annex, not part of the four-page public homeowner meeting packet. It contains no homeowner images or personal identification data.
+**Publication control:** This is an internal legal-reference annex, not part of the five-page public homeowner meeting packet. It contains no homeowner images or personal identification data.
