@@ -33,7 +33,8 @@ Run in a checkout from repository root:
 
 ```bash
 python -m unittest discover -s tools -p 'test_administration.py' -v
-python tools/check_administration.py --strict\npython tools/report_current_status.py
+python tools/check_administration.py --strict
+python tools/report_current_status.py
 python tools/autonomous_evidence_pipeline.py --mode full --dry-run
 ```
 
