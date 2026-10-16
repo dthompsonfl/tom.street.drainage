@@ -24,7 +24,7 @@ from urllib.error import HTTPError, URLError
 
 from PIL import Image, ImageStat
 
-BASE = Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS")
+BASE = Path(__file__).resolve().parents[1] / ("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS")
 API = "https://ca.dep.state.fl.us/image/rest/services"
 BBOX = [-86.8162, 30.4144, -86.8134, 30.4160]
 SIZE = [1600, 920]

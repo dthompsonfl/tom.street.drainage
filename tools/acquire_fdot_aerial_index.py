@@ -14,7 +14,7 @@ from tempfile import NamedTemporaryFile
 from urllib.request import Request,urlopen
 from pypdf import PdfReader
 
-ROOT=Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX")
+ROOT=Path(__file__).resolve().parents[1] / ("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX")
 BASE="https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/aplus/"
 DOCS={
     "FDOT_AVAILABLE_AERIAL_PHOTOGRAPHY_2026_LIST": BASE+"aerial-photography-listecc67b89-a9cc-4abe-9516-b7e8a977c432.pdf?sfvrsn=446ef142_4",

@@ -23,7 +23,7 @@ URL = (
     "tileindex_2006_FL_Panhandle_m57.gpkg"
 )
 METADATA_URL = "https://www.fisheries.noaa.gov/inport/item/48209"
-DEST = Path(
+DEST = Path(__file__).resolve().parents[1] / (
     "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/"
     "ORIGINAL_NOAA_2006/tileindex_2006_FL_Panhandle_m57.gpkg"
 )
