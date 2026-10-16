@@ -125,6 +125,9 @@ def main():
     for doc in wat["documents"]:
         if doc["original_status"].startswith("ORIGINAL_"):
             check("COUNTY_"+doc["document_id"],doc["path"],doc["sha256"],doc["bytes"],"official_published_pdf")
+        elif doc["document_id"] == "EAST_NAVARRE_WATERSHED_STUDY_AREA_MAP":
+            STATUS.append({"source":"COUNTY_EAST_NAVARRE_STUDY_AREA_MAP",
+                           "status":"ORIGINAL_JPEG_CAPTURED_SEPARATELY_PDF_REQUEST_WRONG_MEDIA_TYPE"})
         else:
             MISSING.append({"source":"COUNTY_"+doc["document_id"],"status":doc["original_status"]})
     e=parse(ROOT/"WATERSHED_DOCUMENTS/East_Navarre_Watershed_Study_Area_Official.acquisition.json")
