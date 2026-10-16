@@ -8,6 +8,7 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 
 | What you need | Where to go |
 | --- | --- |
+| **Review the project before our neighborhood discussion** | **[Neighbor review guide](NEIGHBOR_REVIEW_GUIDE.md)** |
 | Understand the concern | [One-page homeowner brief](15_RECONCILED_DRAFTS/01_HOMEOWNER_BRIEF.md) |
 | Take a letter to a commissioner | [Commissioner letter draft](15_RECONCILED_DRAFTS/06_COMMISSIONER_COVER_LETTER_DRAFT.md) |
 | Request records from the County | [County records letter draft](15_RECONCILED_DRAFTS/02_COUNTY_LETTER_DRAFT.md) |
@@ -16,7 +17,7 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 | See what we still need | [Open questions](00_CONTROL/OPEN_QUESTIONS.md) |
 | Check which packet is current | [Current draft release guide](15_RECONCILED_DRAFTS/README.md) and [five-page draft PDF](15_RECONCILED_DRAFTS/pdf/Tom_Street_Reconciled_Public_Meeting_Draft.pdf) |
 
-**All public letters and handouts remain DRAFTS until reviewed and signed by the person using them.** Older PDFs in [the previous meeting packet](14_MEETING_PACKET/RELEASE_README.md) and [older releases](releases/2026-10-15/) are superseded historical records. Do not hand them out as the current version.
+**This repository is available for neighbor review and corrections, not as an approved finding or a signed filing.** All public letters and handouts remain DRAFTS until reviewed and signed by the person using them. Older PDFs in [the previous meeting packet](14_MEETING_PACKET/RELEASE_README.md) and [older releases](releases/2026-10-15/) are superseded historical records. Do not hand them out as the current version.
 
 ## What we have confirmed from saved County records
 
@@ -45,6 +46,8 @@ Please do not upload original homeowner photos, precise photo GPS metadata, priv
 
 Official source files remain original records, **not rewritten in my voice**. Historical 2006/2017 LiDAR, earlier aerial images and the 2023 preconstruction aerial support investigation but do not measure completed 2026 grades or prove runoff direction.
 
-For local jurisdiction, County code scope and state/federal agency roles, see [the jurisdiction and authority control](00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md).\n\nFor detailed review, see [the sources](00_CONTROL/SOURCE_REGISTER.csv), [claim-to-source references](00_CONTROL/CLAIM_SOURCE_LINKS.csv), [evidence ledger](00_CONTROL/EVIDENCE_LEDGER.csv), [public records and permit archive](03_PERMITS_AND_INSPECTIONS/), [five-question findings](17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md), [historical imagery](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/README.md) and [publication controls](PUBLICATION_AND_VERSIONING.md).
+For local jurisdiction, County code scope and state/federal agency roles, see [the jurisdiction and authority control](00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md).
+
+For detailed review, see [the sources](00_CONTROL/SOURCE_REGISTER.csv), [claim-to-source references](00_CONTROL/CLAIM_SOURCE_LINKS.csv), [evidence ledger](00_CONTROL/EVIDENCE_LEDGER.csv), [public records and permit archive](03_PERMITS_AND_INSPECTIONS/), [five-question findings](17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md), [historical imagery](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/README.md) and [publication controls](PUBLICATION_AND_VERSIONING.md).
 
 **I am asking for clear records and a measured answer, not an assumption about the outcome.**

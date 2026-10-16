@@ -2,6 +2,10 @@
 
 **Public repository: treat anything committed as permanently discoverable.** Even deleting a file does not remove its earlier Git history or copies.
 
+## Neighbor review versus official submission
+
+The current Markdown and draft PDFs are **available for neighbor fact-checking**. That means neighbors can read them and point out mistakes; it does **not** mean the letters have been signed, sent, or approved by the County. See [the review guide](NEIGHBOR_REVIEW_GUIDE.md). Individual households should keep their own versioned notes and original evidence privately.
+
 ## Which version should neighbors use?
 
 Start with the [README](README.md), then the [current draft folder](15_RECONCILED_DRAFTS/README.md) and [plain-English source guide](PUBLIC_EVIDENCE_GUIDE.md). Everything inside [14_MEETING_PACKET](14_MEETING_PACKET/RELEASE_README.md) and [releases/2026-10-15](releases/2026-10-15/) is **SUPERSEDED**. Earlier documents are kept as historical research records and may contain mistakes.

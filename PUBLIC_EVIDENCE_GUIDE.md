@@ -35,6 +35,8 @@ A County inspector's instruction is not a completed work record. A field marked 
 
 ## What to do with this information
 
-Use [the homeowner packet](15_RECONCILED_DRAFTS/README.md) to explain the concern and [the neighbor toolkit](18_NEIGHBOR_TOOLKIT/README.md) to document what happens near your home. If you receive a new official record, preserve the exact original privately, document when it arrived and propose a **redacted** update to the public source index. Do not replace an older agency record silently; each record needs its date and source.
+Start with [the neighbor review guide](NEIGHBOR_REVIEW_GUIDE.md), then use [the homeowner packet](15_RECONCILED_DRAFTS/README.md) to explain the concern and [the neighbor toolkit](18_NEIGHBOR_TOOLKIT/README.md) to document what happens near your home. If you receive a new official record, preserve the exact original privately, document when it arrived and propose a **redacted** update to the public source index. Do not replace an older agency record silently; each record needs its date and source.
 
-[See the tracked community-readiness and unresolved-items register](00_CONTROL/COMMUNITY_READINESS_2026-10-16.md).\n\n**This is a shared research record. It should help us ask better questions, not make claims that the missing evidence has not answered.**
+[See the tracked community-readiness and unresolved-items register](00_CONTROL/COMMUNITY_READINESS_2026-10-16.md).
+
+**This is a shared research record. It should help us ask better questions, not make claims that the missing evidence has not answered.**

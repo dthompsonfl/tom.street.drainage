@@ -2,6 +2,8 @@
 
 You do **not** need to know GitHub, write code or understand surveying to help. This folder contains blank forms you can copy onto your phone or print. The goal is to keep a clear, dated record of what you personally saw and what agencies actually said.
 
+Before you begin, [read this short neighbor review guide](../NEIGHBOR_REVIEW_GUIDE.md). It explains how to give feedback without needing a GitHub account or uploading personal material.
+
 ## Three easy things to do
 
 1. **Write down the observation.** What happened, where did you stand, what was the date/time, what was the weather and what could you see? Separate what you saw from what you believe caused it. Use [the observation guide](01_DOCUMENT_AN_OBSERVATION.md) or [blank event log](templates/OBSERVATION_LOG.csv).
