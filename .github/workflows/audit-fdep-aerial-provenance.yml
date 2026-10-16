@@ -1,0 +1,53 @@
+name: Validate aerial mosaic historical source provenance
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/acquire_fdep_aerial_mosaic_provenance.py'
+      - '.github/workflows/audit-fdep-aerial-provenance.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: archive-tom-street-fdep-aerial-catalog
+  cancel-in-progress: false
+jobs:
+  inspect-source-mosaics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify acquisition source syntax
+        run: python -m py_compile tools/acquire_fdep_aerial_mosaic_provenance.py
+      - name: Query official aerial mosaic footprints and source metadata
+        id: probe
+        continue-on-error: true
+        run: python tools/acquire_fdep_aerial_mosaic_provenance.py
+      - name: Check provenance response format
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path("11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/MOSAIC_CATALOG_PROVENANCE.json")
+          d = json.loads(p.read_text())
+          assert len(d["records"]) == d["services_queried"]
+          print("Catalog point responses", d["catalog_features_found"], "/", d["services_queried"])
+          PY
+      - name: Preserve checked source catalog responses without modifying existing aerials
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/MOSAIC_CATALOG_PROVENANCE.json
+          if git diff --cached --quiet; then
+            echo "Catalog response was unchanged"
+          else
+            git commit -m "evidence: preserve historical aerial mosaic catalog intersection results [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
