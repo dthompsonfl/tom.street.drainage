@@ -46,6 +46,8 @@ Please do not upload original homeowner photos, precise photo GPS metadata, priv
 
 Official source files remain original records, **not rewritten in my voice**. Historical 2006/2017 LiDAR, earlier aerial images and the 2023 preconstruction aerial support investigation but do not measure completed 2026 grades or prove runoff direction.
 
+For a clear explanation of which documents are current, older, or incomplete, see [the document status guide](00_CONTROL/DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md).
+
 For local jurisdiction, County code scope and state/federal agency roles, see [the jurisdiction and authority control](00_CONTROL/JURISDICTION_AND_AUTHORITY_SCOPE_2026-10-15.md).
 
 For detailed review, see [the sources](00_CONTROL/SOURCE_REGISTER.csv), [claim-to-source references](00_CONTROL/CLAIM_SOURCE_LINKS.csv), [evidence ledger](00_CONTROL/EVIDENCE_LEDGER.csv), [public records and permit archive](03_PERMITS_AND_INSPECTIONS/), [five-question findings](17_CURRENT_RESEARCH/FIVE_QUESTION_FINDINGS_2026-10-16.md), [historical imagery](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/README.md) and [publication controls](PUBLICATION_AND_VERSIONING.md).

@@ -4,6 +4,8 @@
 
 This project deliberately keeps prior errors and raw records as evidence of the research process. **A historical assertion is not an active verified claim.** When two files disagree, review their role, source, retrieval date, and whether an explicit correction superseded one of them. Never silently rewrite an original agency capture merely to make it agree with a newer interpretation.
 
+For a neighbor-facing start, use the [review guide](../NEIGHBOR_REVIEW_GUIDE.md) and [document-status guide](DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md).
+
 ## Current controlling documents
 
 1. [Active assertion consistency](ACTIVE_ASSERTION_CONSISTENCY_2026-10-15.md): bounded source-backed facts and explicitly unknown questions; enforced by `tools/check_repository_consistency.py`.
@@ -20,6 +22,7 @@ This project deliberately keeps prior errors and raw records as evidence of the 
 | `CURRENT_STATE_RECONCILIATION.md` | An earlier local workstation/Git baseline | References paths, omissions and file counts that were true then; it is explicitly marked historical |
 | `ACQUISITION_CHECKPOINT.md`, `ACQUISITION_RESULTS.md`, `PROGRESS.md`, `CORRECTION_HISTORY.md` | Previous discovery runs and corrections | Some original overly confident remarks are quoted intentionally to preserve the audit trail; their governing revisions are in current ledgers |
 | `FINAL_FILE_SCOPE_INVENTORY_2026-10-15.csv` and `FINAL_REVIEW_READINESS_2026-10-15.md` | **Frozen 210-file** audit at commit `c76cef9` | A later repository contains additional tools/corrections; the old file count is not a current file-count claim |
+| `AUTONOMOUS_PIPELINE_COMPLETENESS_REPORT.md` and the earlier `RESEARCH_PLAN.md` | Historical planning and tool claims, including some code not installed on `main` | **NOT** proof that all scripts exist, were run or passed; see the current document-status guide |
 | `../14_MEETING_PACKET/` and `../releases/2026-10-15/` | Former public-style meeting packets | **WITHDRAWN/SUPERSEDED**, retained for traceability, not current distribution |
 
 ## Important unresolved facts, not internal contradictions

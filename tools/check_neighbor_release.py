@@ -8,6 +8,9 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import json
+import subprocess
+import sys
 import re
 from pathlib import Path
 
@@ -29,6 +32,8 @@ def text(path: str) -> str:
 
 public_paths = [
     "README.md",
+    "NEIGHBOR_REVIEW_GUIDE.md",
+    "00_CONTROL/DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md",
     "PUBLIC_EVIDENCE_GUIDE.md",
     "PUBLICATION_AND_VERSIONING.md",
     "15_RECONCILED_DRAFTS/README.md",
@@ -63,6 +68,35 @@ for rel in public_paths:
         except (OSError, ValueError):
             ok = False
         check("local link: " + rel + " -> " + destination, ok)
+
+# A literal escaped newline in Markdown renders as confusing backslash text.
+# Catch the formatting regression that previously affected the project homepage.
+for rel in ("README.md", "NEIGHBOR_REVIEW_GUIDE.md", "PUBLIC_EVIDENCE_GUIDE.md"):
+    check("no literal escaped paragraph breaks: " + rel,
+          "\\n\\n" not in text(rel))
+
+# This dry-run is a read-only script inventory check. It must not contact
+# government systems or write to tracked files. Incomplete automation should
+# be labeled as incomplete, not silently green.
+pipeline = ROOT / "tools" / "autonomous_evidence_pipeline.py"
+if pipeline.is_file():
+    result = subprocess.run(
+        [sys.executable, str(pipeline), "--mode", "full", "--dry-run"],
+        cwd=ROOT, capture_output=True, text=True, timeout=20,
+    )
+    check("autonomous runner diagnostic exits cleanly", result.returncode == 0)
+    try:
+        plan = json.loads(result.stdout)
+        advertised = {name for group in plan["phases"].values() for name in group}
+        missing = {name for name in advertised if not (ROOT / "tools" / name).is_file()}
+        check("autonomous runner reports each missing required implementation",
+              set(plan["missing_required_scripts"]) == missing)
+        check("autonomous runner does not call incomplete pipeline ready",
+              plan["ready_to_execute"] == (not missing))
+    except (ValueError, KeyError, TypeError):
+        check("autonomous runner produces a parsable diagnostic", False)
+else:
+    check("autonomous runner exists", False)
 
 # In claims that are intended to be current, the unsent request count must
 # distinguish eight draft files from their nine agency/service templates.
