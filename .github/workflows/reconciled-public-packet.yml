@@ -6,6 +6,9 @@ on:
     paths:
       - '15_RECONCILED_DRAFTS/*.md'
       - 'PUBLIC_EVIDENCE_GUIDE.md'
+      - 'NEIGHBOR_REVIEW_GUIDE.md'
+      - '00_CONTROL/DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md'
+      - 'tools/autonomous_evidence_pipeline.py'
       - 'PUBLICATION_AND_VERSIONING.md'
       - '18_NEIGHBOR_TOOLKIT/**'
       - 'tools/check_neighbor_release.py'

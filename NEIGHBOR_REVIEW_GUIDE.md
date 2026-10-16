@@ -24,6 +24,15 @@ I put this folder together so the people who live near Tom Street can look at th
 
 If you find an error, please give me the **document name, the exact statement and the correction you suggest**, plus an official or firsthand source when possible. It is perfectly acceptable to say, "I don't know whether that is correct."
 
+## If you need to contact the County
+
+These are two different official County processes:
+
+- **Request existing permits, plans or records:** [Santa Rosa County public-records request form](https://www.santarosa.fl.gov/FormCenter/Public-Record-Request-10/Submit-a-Public-Records-Request-55).
+- **Report a drainage problem or ask Public Works to investigate:** [Santa Rosa County Citizen Work Request form](https://www.santarosa.fl.gov/FormCenter/Public-Works-7/Citizen-Work-Request-48).
+
+A records request does not automatically schedule a field inspection, and a repair/work request is not the same as receiving approved plans. The draft requests in this repository have **not** been documented as sent. Keep your actual submission confirmation, response, and case number privately. The [request-tracking instructions](18_NEIGHBOR_TOOLKIT/02_REQUESTS_AND_RESPONSES.md) explain how.
+
 ## How to contribute without exposing private information
 
 For a **public document or wording correction**, you can use the repository's [public GitHub issue form](https://github.com/dthompsonfl/tom.street.drainage/issues/new/choose) if you already have an account. You can also share feedback privately with the person who gave you this link. No GitHub account is required to read the repository or PDFs.

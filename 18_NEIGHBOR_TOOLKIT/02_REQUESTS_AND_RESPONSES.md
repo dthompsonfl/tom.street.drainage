@@ -2,6 +2,12 @@
 
 The project already has [unsent agency request drafts](../13_PUBLIC_RECORDS_REQUESTS/). You can adapt one to your own question and submit it through the agency's published process. Sending a public-records request under Florida Chapter 119 is different from asking Public Works to inspect or repair a drainage issue.
 
+## Official Santa Rosa County forms
+
+Use the [public-records request form](https://www.santarosa.fl.gov/FormCenter/Public-Record-Request-10/Submit-a-Public-Records-Request-55) to ask for existing plans and records. Use the separate [Citizen Work Request form](https://www.santarosa.fl.gov/FormCenter/Public-Works-7/Citizen-Work-Request-48) for a drainage inspection or maintenance concern. Both pages were checked as official County links on October 16, 2026.
+
+**Neither request is considered submitted because a template exists here.** Only record the request as sent after you actually submit it and retain the acknowledgment or other reliable transmission evidence. Provide personal contact information on the County's own form, not in a public GitHub issue.
+
 ## After sending
 
 1. Keep the original outgoing message and a complete copy of any attachment.
