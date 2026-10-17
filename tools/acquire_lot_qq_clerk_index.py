@@ -84,6 +84,13 @@ def book_index(pg, kind, phrase):
                         fields.append({"id":ident["id"],"name":ident["name"]})
             except Exception:pass
         r["search_form_schema"]=schema[:30]
+        r["search_page_title"]=safe(pg.title())
+        r["search_form_count"]=len(pg.query_selector_all("form"))
+        r["search_page_landmark_flags"]={
+            "sign_in":bool(re.search(r"Sign In|Login As",pg.inner_text("body")[:700],re.I)),
+            "disclaimer":bool(re.search(r"Disclaimer",pg.inner_text("body")[:700],re.I)),
+            "site_error":bool(re.search(r"404|Not Found|Service Unavailable",pg.inner_text("body")[:700],re.I)),
+        }
         r["visible_text_form_fields"]=fields
         name_fields=("SearchOnName","SearchComments","SearchOnComment","SearchOnComments","Comments","SearchTerm","LegalDescription")
         identified=next((s for s in name_fields if any(s==v.get("name") or s==v.get("id") for v in fields)),None)
@@ -174,7 +181,7 @@ def plat_lookup():
                     entry=data["results"][0]
                     q["result_field_names"]=sorted(entry.keys()) if isinstance(entry,dict) else []
                     original=OUT/"ORIGINAL_SRCPA_PLAT_QUERY_00780.json"
-                    body=resp.content
+                    body=response.content
                     if original.exists() and original.read_bytes()!=body:
                         raise RuntimeError("Previous subdivision source changed; use dated snapshot")
                     if not original.exists():original.write_bytes(body)
