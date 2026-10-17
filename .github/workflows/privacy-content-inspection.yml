@@ -1,0 +1,54 @@
+name: Individually screen mechanically flagged source bytes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/privacy-content-inspection.yml'
+      - 'tools/review_privacy_flagged_bytes.py'
+      - '00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv'
+      - '00_CONTROL/INDIVIDUAL_PRIVACY_TECHNICAL_REVIEW_2026-10-16.csv'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tom-street-source-content-screen-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  screen-public-working-tree:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install read-only media parsers
+        run: |
+          python -m pip install -r requirements-release.txt
+          python -m pip install Pillow==11.3.0
+      - name: Update technical classifier in runner-local temporary worktree
+        run: |
+          python -B 00_CONTROL/tools/classify_for_release.py --write
+          python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Screen flagged original bytes without printing sensitive data
+        run: python -B tools/review_privacy_flagged_bytes.py
+      - name: Export only public-safe inspection summary for traceable integration
+        run: |
+          python - <<'PY'
+          import base64, pathlib
+          p=pathlib.Path('00_CONTROL/PRIVACY_CONTENT_INSPECTION_2026-10-16.csv')
+          print('SAFE_CONTENT_AUDIT_B64=' + base64.b64encode(p.read_bytes()).decode('ascii'))
+          PY
+      - name: Upload machine-only report for independent human review
+        uses: actions/upload-artifact@v4
+        with:
+          name: tom-street-public-safe-privacy-content-inspection-${{ github.sha }}
+          path: 00_CONTROL/PRIVACY_CONTENT_INSPECTION_2026-10-16.csv
+          retention-days: 14
+          if-no-files-found: error
+# No private values or original source bytes are emitted in this machine report.
