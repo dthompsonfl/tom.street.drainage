@@ -1,0 +1,141 @@
+{
+  "timestamp_utc": "2026-10-17T17:23:49.531546+00:00",
+  "exact_verified_grid_id": "648138",
+  "authoritative_id_source": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer/14",
+  "query_page": "https://www.labins.org/mapping_data/aerials/hi-resolution_images.cfm",
+  "status": "CELL_QUERY_COMPLETED",
+  "source_documents": [
+    {
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_LABINS_HIRES_CELL_DOWNLOAD_SEARCH_FORM.html",
+      "bytes": 19585,
+      "sha256": "2f3894b8533bdf9531848fb571e18bfecd936789202ad101515b123085712f06",
+      "official_url": "https://www.labins.org/mapping_data/aerials/hi-resolution_images.cfm"
+    }
+  ],
+  "form_schema": [
+    {
+      "method": "POST",
+      "official_action": "https://www.labins.org/mapping_data/aerials/hi-res_search.cfm",
+      "fields": [
+        {
+          "type": "text",
+          "name": "gridid",
+          "value": ""
+        },
+        {
+          "type": "hidden",
+          "name": "county",
+          "value": "0"
+        },
+        {
+          "type": "submit",
+          "name": null,
+          "value": "Find Hi-Res Images"
+        }
+      ]
+    }
+  ],
+  "search_results": [
+    {
+      "method": "POST",
+      "url": "https://www.labins.org/mapping_data/aerials/hi-res_search.cfm",
+      "field_name": "gridid",
+      "status": "OFFICIAL_PUBLIC_CELL_FORM_RESPONSE_ARCHIVED",
+      "validation": "Grid identifier echoed in official response",
+      "source_capture": {
+        "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_LABINS_CELL_648138_SEARCH_RESULT.html",
+        "bytes": 6507,
+        "sha256": "78ff73694b8c5a71707397de99f0dbb58b1c6b7c7f1df08a7c7b108ada109431",
+        "official_url": "https://www.labins.org/mapping_data/aerials/hi-res_search.cfm"
+      },
+      "candidate_download_links": [
+        {
+          "official_url": "https://www.labins.org/Imagery/2007/SantaRosa/cir/OP2007_IR_648138_24.sid",
+          "label": "OP2007_IR_648138_24.sid"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2007/SantaRosa/cir/OP2007_IR_648138_24.sdw",
+          "label": "OP2007_IR_648138_24.sdw"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2007/SantaRosa/cir/OP2007_IR_648138_24.aux",
+          "label": "OP2007_IR_648138_24.aux"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2007/SantaRosa/sid/OP2007_NC_648138_24.sid",
+          "label": "OP2007_NC_648138_24.sid"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2007/SantaRosa/sid/OP2007_NC_648138_24.sdw",
+          "label": "OP2007_NC_648138_24.sdw"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2007/SantaRosa/sid/OP2007_NC_648138_24.aux",
+          "label": "OP2007_NC_648138_24.aux"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2010/Santa_Rosa/sid/OP2010_NC_648138_24.sid",
+          "label": "OP2010_NC_648138_24.sid"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2010/Santa_Rosa/sid/OP2010_NC_648138_24.sdw",
+          "label": "OP2010_NC_648138_24.sdw"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2010/Santa_Rosa/sid/OP2010_NC_648138_24.aux",
+          "label": "OP2010_NC_648138_24.aux"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2013/Santa_Rosa/sid/OP2013_NC_648138_24.sid",
+          "label": "OP2013_NC_648138_24.sid"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2013/Santa_Rosa/sid/OP2013_NC_648138_24.sdw",
+          "label": "OP2013_NC_648138_24.sdw"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2013/Santa_Rosa/sid/OP2013_NC_648138_24.aux",
+          "label": "OP2013_NC_648138_24.aux"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.sid",
+          "label": "OP2016_NC_648138_24.sid"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.sdw",
+          "label": "OP2016_NC_648138_24.sdw"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.aux",
+          "label": "OP2016_NC_648138_24.aux"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.xml",
+          "label": "OP2016_NC_648138_24.xml"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2019/Santa_Rosa/sid/OP2019_NC_648138_24.sid",
+          "label": "OP2019_NC_648138_24.sid"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2019/Santa_Rosa/sid/OP2019_NC_648138_24.sdw",
+          "label": "OP2019_NC_648138_24.sdw"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2019/Santa_Rosa/sid/OP2019_NC_648138_24.aux",
+          "label": "OP2019_NC_648138_24.aux"
+        },
+        {
+          "official_url": "https://www.labins.org/Imagery/2019/Santa_Rosa/sid/OP2019_NC_648138_24.xml",
+          "label": "OP2019_NC_648138_24.xml"
+        }
+      ],
+      "search_title": ""
+    }
+  ],
+  "limits": [
+    "Aerial availability varies by collection year even when grid ID is correct.",
+    "Link to a file is not source-file acquisition; download and independently validate actual bytes and map metadata before claiming imagery obtained.",
+    "Zero links may reflect dynamic site UI, inventory omissions or inaccessible public download rather than absence of imagery."
+  ]
+}

@@ -1,0 +1,374 @@
+<a href="#main" aria-label="Skip to main content"></a>
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8' />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>LABINS - Survey and Mapping Data for Florida</title>  
+    <meta name="description" content="LABINS - Florida Survey and Mapping data" />
+
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1> -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T1209VBWWV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T1209VBWWV');
+</script>
+
+
+    <!-- JavaScript Imports -->
+	<script type='text/javascript' src='/js/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='/js/jquery-ui-1.10.3.custom.min.js'></script>
+    <!-- CSS Imports -->
+    <link href='/css/css.css?v=4' rel='stylesheet' type='text/css' />
+    <link href='/css/mediaqueries.css' rel='stylesheet' type='text/css' />
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	
+<script>
+$(document).ready(function(){
+    	$(".headingtext").click(function(){
+        	$(this).next('div').fadeToggle("fast", function () {
+        	    if($(this).hasClass('expanded'))
+                {
+                    $(this).addClass('collapsed').removeClass('expanded');
+                }
+                else
+                {
+                    $(this).addClass('expanded').removeClass('collapsed');
+                }
+        	});
+    	});
+
+    	$(".interiortwopart").click(function(){
+	       $(this).children('div').fadeToggle("fast");
+	    });
+	    
+	$(".twopart").click(function(){
+	$(this).next('div').fadeToggle("fast", function () {
+		});
+		
+		if($(this).hasClass('expandedinterior'))
+			{
+				$(this).addClass('collapsedinterior').removeClass('expandedinterior');
+			}
+			else
+			{
+				$(this).addClass('expandedinterior').removeClass('collapsedinterior');
+			}			
+		});
+
+	
+        $('#hamburger').click(function() {
+           $('#hamburger-menu').slideToggle('slow');
+        });
+		
+		  $('.clickanchor').click(function(e) {
+		e.preventDefault();
+      window.location.hash = $(this).attr('href');
+      $(window).scrollTop(parseInt($(window.location.hash).offset().top) - 140).scrollLeft(0);
+  });
+  
+    	$(".countylink").click(function(){
+		$(this).next('div').fadeToggle("fast", function () {
+		});
+	});	
+
+	});
+
+</script>
+	
+</head>
+<body>
+	<header class='header' id='banner'>			
+		<div class='headercontainer'>
+			<a href='/'>
+				<div id='headerlogo' class='left'>
+					LABINS
+					<div id='headerlogo2'>
+						Land Boundary Information System   
+					</div>
+					<div class='clear'></div>		 	
+				</div>			
+			</a>
+				<div class='right'>
+					<nav id="main-menu">
+						<a href='/'><div id='home_cube' name='home_cube' class='navcube left navcubehome'>Home</div></a>
+						<a href='/mapping_data/aerials/aerials.cfm'>           <div id='aerials_cube'     name='aerials_cube'     class='navcube left navcubelocation'>Aerials</div></a>
+						<a href='/survey_data/landrecords/landrecords.cfm'>    <div id='landrecords_cube' name='landrecords_cube' class='navcube left navcubereports'>Land Records</div></a>
+						<a href='/survey_data/water/water.cfm'>                <div id='water_cube'       name='water_cube'       class='navcube left navcubemarkets'>Water Boundary</div></a>
+						<a href='/survey_data/horizontal_vertical/control.cfm'><div id='control_cube'     name='control_cube'     class='navcube left navcubediversity'>Horz/Vert Control</div></a>
+						<a href='/mapping_data/mappingdata.cfm'>               <div id='mapping_cube'     name='mapping_cube'     class='navcube left navcubemapping'>Mapping Data</div></a>
+						<a href='/xtra_data/county_data/county_data.cfm' alt='header link to external data'>      <div id='external_cube'    name='external_cube'    class='navcube left navcubecensus'>External Data</div></a>
+						
+						<div class='clear'></div>						
+					</nav>
+					<nav id="main-menu-mobile">
+					    <div id="hamburger">
+					        <img  width="32" height="32" alt="a menu" src="/images/Icons/PNG/32px/menu2.png" />
+					        <span class="hamburger-text">Menu</span>
+					    </div>
+					</nav>					
+				</div>
+				<div id="hamburger-menu">
+                    <a href='/'><div id='hamb_home_cube' name='hamb_home_cube' class='navcube left navcubehome'>Home</div></a>
+                    <a href='/mapping_data/aerials/aerials.cfm'><div id='hamb_aerials_cube' name='hamb_aerials_cube' class='navcube left navcubelocation'>Aerials</div></a>
+                    <a href='/survey_data/landrecords/landrecords.cfm'><div id='hamb_landrecords_cube' name='hamb_landrecords_cube' class='navcube left navcubereports'>Land Records</div></a>
+                    <a href='/survey_data/water/water.cfm'><div id='hamb_water_cube' name='hamb_water_cube' class='navcube left navcubemarkets'>Water Boundary</div></a>
+                    <a href='/survey_data/horizontal_vertical/control.cfm'><div id='hamb_control_cube' name='hamb_control_cube' class='navcube left navcubediversity'>Horz/Vert Control</div></a>
+					<a href='/mapping_data/mappingdata.cfm'><div id='hamb_mapping_cube' name='hamb_mapping_cube' class='navcube left navcubemapping'>Mapping Data</div></a>
+                    <a href='/xtra_data/county_data/county_data.cfm'><div id='hamb_external_cube' name='hamb_external_cube' class='navcube left navcubecensus'>External Data</div></a>
+                    
+                    <div class='clear'></div>
+                </div>										
+		</div>
+		<div class='clear'></div>
+	</header>
+<script type="text/javascript">
+ $('#aerials_cube').addClass('navcubelocationactive');
+ $('#aerials_cube').addClass('active');
+ $('#hamb_aerials_cube').addClass('navcubelocationactive');
+ $('#hamb_aerials_cube').addClass('active');
+ 
+ $(document).ready(function(){
+
+
+  $('.iframe1button').click(function() {
+       $('#iframe1').show();
+    });
+	
+
+ 
+ var $head = $("#iframe1").contents().find("head");
+
+  $head.append($("/css/css.css",
+            
+ 			   { rel: "stylesheet", href: "/css/css.css", type: "text/css" }
+              ));
+  
+	});
+</script>
+
+
+<main id='main'><section class='main'>
+
+
+				
+		
+				<div class='maincontainer2'>
+					<div class='width'>
+						<div class='interiorcontainer'>							
+														<h1>High-Resolution Images</h1>
+							<div class='interiorcontentcontainer left'>	
+							<div class="contenttext6" id="about2">
+								<h2 style="color: #B30000; font-weight: bold;">
+									Remember you can use the map interface to find your image as well
+								</h2>
+							</div>							
+							<div class='contenttext6' id='about'>Download high-resolution 
+                            imagery for a <b>single cell</b>. 
+							
+							
+						
+</div>
+
+
+
+<form action="hi-res_search.cfm" method="post" target="hi-res">
+<div class="contentsubheading5" id="link1">Step 1.  Learn Your Grid ID </div>
+<div class="contenttext6">Use the maps below (in PDF format) to determine the grid cells.</div>
+<div class='fauxform' style='padding-top:30px;padding-right:30px;padding-bottom:30px;'>
+
+ North Zone 
+<div style="margin-left:25px;">
+
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Alachua.pdf" target="hi_res">Alachua</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Baker.pdf" target="hi_res">Baker</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Bay.pdf" target="hi_res">Bay</a>,  
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Bradford.pdf" target="hi_res">Bradford</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Calhoun.pdf" target="hi_res">Calhoun</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Columbia.pdf" target="hi_res">Columbia</span></a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Dixie.pdf" target="hi_res">Dixie</span></a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Escambia.pdf" target="hi_res">Escambia</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Franklin.pdf" target="hi_res">Franklin</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Gadsden.pdf" target="hi_res">Gadsden</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Gilchrist.pdf" target="hi_res">Gilchrist</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Gulf.pdf" target="hi_res">Gulf</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Hamilton.pdf" target="hi_res">Hamilton</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Holmes.pdf" target="hi_res">Holmes</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Jackson.pdf" target="hi_res">Jackson</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Jefferson.pdf" target="hi_res">Jefferson</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Lafayette.pdf" target="hi_res">Lafayette</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Leon.pdf" target="hi_res">Leon</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Liberty.pdf" target="hi_res">Liberty</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Madison.pdf" target="hi_res">Madison</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Okaloosa.pdf" target="hi_res">Okaloosa</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/SantaRosa.pdf" target="hi_res">Santa Rosa</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Suwannee.pdf" target="hi_res">Suwannee</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Taylor.pdf" target="hi_res">Taylor</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Union.pdf" target="hi_res">Union</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Wakulla.pdf" target="hi_res">Wakulla</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Walton.pdf" target="hi_res">Walton</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Washington.pdf" target="hi_res">Washington</a>
+</div>
+
+
+East Zone
+<div style="margin-left:25px;">
+
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Brevard.pdf" target=_"hi_res">Brevard</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Broward.pdf" target=_"hi_res">Broward</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Clay.pdf" target=_"hi_res">Clay</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Collier.pdf" target=_"hi_res">Collier</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Duval.pdf" target=_"hi_res">Duval</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Flagler.pdf" target=_"hi_res">Flagler</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Glades.pdf" target=_"hi_res">Glades</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Hendry.pdf" target=_"hi_res">Hendry</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Highlands.pdf" target=_"hi_res">Highlands</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/IndianRiver.pdf" target=_"hi_res">Indian River</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Lake.pdf" target=_"hi_res">Lake</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Martin.pdf" target=_"hi_res">Martin</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/MiamiDade.pdf" target=_"hi_res">Miami-Dade</a>,
+<!-- <a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Monroe-Everglades.pdf" target=_"hi_res">Monroe Everglades</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Monroe-Keys-North.pdf" target=_"hi_res">Monroe Keys North</a>,--->
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Monroe.pdf" target=_"hi_res">Monroe </a>,
+
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Nassau.pdf" target=_"hi_res">Nassau</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Okeechobee.pdf" target=_"hi_res">Okeechobee</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Orange.pdf" target=_"hi_res">Orange</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Osceola.pdf" target=_"hi_res">Osceola</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/PalmBeach.pdf" target=_"hi_res">Palm Beach</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Putnam.pdf" target=_"hi_res">Putnam</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Seminole.pdf" target=_"hi_res">Seminole</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/StJohns.pdf" target=_"hi_res">St. Johns</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/StLucie.pdf" target=_"hi_res">St. Lucie</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Volusia.pdf" target=_"hi_res">Volusia</a>
+</div>
+
+
+West Zone
+<div style="margin-left:25px;">
+
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Charlotte.pdf" target=_"hi_res">Charlotte</a>, 
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Citrus.pdf" target=_"hi_res">Citrus</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/DeSoto.pdf" target=_"hi_res">De Soto</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Hardee.pdf" target=_"hi_res">Hardee</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Hernando.pdf" target=_"hi_res">Hernando</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Hillsborough.pdf" target=_"hi_res">Hillsborough</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Lee.pdf" target=_"hi_res">Lee</span></a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Levy.pdf" target=_"hi_res">Levy</span></a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Manatee.pdf" target=_"hi_res">Manatee</span></a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Marion.pdf" target=_"hi_res">Marion</span></a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Pasco.pdf" target=_"hi_res">Pasco</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Pinellas.pdf" target=_"hi_res">Pinellas</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Polk.pdf" target=_"hi_res">Polk</a>,
+<!--<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Polk-SE.pdf" target=_"hi_res">Polk SE</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Polk-SW.pdf" target=_"hi_res">Polk SW</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Polk-NE.pdf" target=_"hi_res">Polk NE</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Polk-NW.pdf" target=_"hi_res">Polk NW</a>,-->
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Sarasota.pdf" target=_"hi_res">Sarasota</a>,
+<a target='_blank' href="https://ftp.labins.org/CountyGridMaps/Sumter.pdf" target=_"hi_res">Sumter</a>
+</div>
+</div>
+
+<div class='last'></div>
+<div class="contentsubheading5" id="link2">
+	<label>
+		Step 2.  Type the Grid Cell ID: 
+		<input type="text" name="gridid" value=""> (6 digits)
+	</label>
+</div>
+<div class='last'></div>
+
+		<input type="hidden" name="county" value="0">
+
+
+
+<div class='last'></div>
+<div class="contentsubheading5" id="link3">Step 3. </div> <input type="submit" value="Find Hi-Res Images">
+</form>
+
+
+ 						</div>
+                                <Iframe name="hi-res" height="500" width="100%" src="" class='xxxxiframe' id='iframe1' title="All images meeting user suppled inout"></iframe>	
+						</div>
+						<div class='clear'></div>
+						
+					</div>
+				</div>
+	</section>
+</main>
+	<footer class='footer'>			
+				<div class='footercontainer'>
+					<div class='footercontentcontainer'>
+						<div class='footercolumn left'>
+							<div class='footercolumnheader'>DEP</div>
+							<div class='footerimg'><div id='deplogo'></div></div>
+							<div class='footerlink'><a href='https://www.myflorida.com' target='_blank'>My Florida</a></div>
+							<div class='footerlink'><a href='https://floridadep.gov/' target='_blank'>Florida DEP</a></div>
+							<div class='footerlink'><a href='https://floridadep.gov/lands ' target='_blank'>Division of State Lands</a></div>
+							<div class='footerlink'><a href='https://floridadep.gov/lands/bureau-survey-mapping ' target='_blank'>Bureau of Survey and Mapping</a></div>                            
+						</div>
+						<div class='footercolumn left'>
+							<div class='footercolumnheader'>ABOUT</div>
+							<div class='footerlink'><a href='/general/about.cfm'>About LABINS</a></div>
+                           				<div class='footerlink'><a href='/general/site_map.cfm'>Site Map</a></div>							
+							<div class='footerlink'><a href='/xtra_data/image_gallery/imagegallery.cfm'>Image Gallery</a></div>
+                            
+						</div>
+						<div class='footercolumn left'>
+							<div class='footercolumnheader'>DATA</div>
+							<div class='footerlink'><a href='/general/purchase.cfm'>How to Purchase Data</a></div>
+                      					<div class='footerlink'><a href='/general/downloads.cfm'>Downloads</a></div>
+                            				<div class='footerlink'><a href='/general/links.cfm'>Useful Links</a></div>
+							<div class='footerlink'><a href='/xtra_data/geographic_profile/geographic_profile.cfm' alt='link to the Geographic Profile in the footer'</a></div>
+						</div>
+
+
+						<div class='footercolumn left'>
+							<div class='footercolumnheader'>CONTACT</div>	
+							<div class='footerlink'>
+
+								<span style="color: #B0B0B0;">For data questions, contact</span>
+									<a href="mailto:kevin.mears@floridadep.gov">Kevin Mears</a>
+									<br /><span style="color: #B0B0B0;">850.245.2640</span>                           
+								</div>  
+
+								<br /><br />
+							<div class='footerlink'>
+								 <span style="color: #B0B0B0;">For website questions, contact</span> 
+                                 					<a href="mailto:gstrode@fsu.edu">Technical Support</a>
+                                 						</br><span style="color: #B0B0B0;">850.644.2305</span> 
+										</div><br />
+ 							<div class='footerlink'><a href="/general/contact.cfm">More Contact Information</a></div>                               
+                                
+						</div>
+
+
+
+
+
+
+						
+
+
+						<div class='contact'>&copy;  2026 Florida Department of Environmental Protection</div>
+					</div>
+				</div>
+	</footer>
+    
+    
+
+</body>
+</html>
