@@ -1,0 +1,81 @@
+{
+  "captured_utc": "2026-10-17T17:13:32.867085+00:00",
+  "scope": "public Clerk guest search index / Property Appraiser subdivision-index probes",
+  "privacy": "No deed original, owner personal info, raw portal HTML, cookie or resident media in this derived index",
+  "completeness": "BOUNDED_DISCOVERY_NOT_COMPLETE_RECORDS_CUSTODIAN_SEARCH",
+  "searches": [
+    {
+      "kind": "legal",
+      "query": "CRESCENT SHORES",
+      "started_utc": "2026-10-17T17:13:33.561900+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "legal",
+      "query": "POPE SUBD",
+      "started_utc": "2026-10-17T17:13:43.132752+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "legal",
+      "query": "LOT QQ",
+      "started_utc": "2026-10-17T17:13:47.294214+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "legal",
+      "query": "21-2S-26",
+      "started_utc": "2026-10-17T17:13:51.450300+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "name",
+      "query": "HOLIDAY BUILDERS INC",
+      "started_utc": "2026-10-17T17:13:55.608452+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeName",
+      "visible_text_form_fields": []
+    }
+  ],
+  "srpa_plat": {
+    "source_url": "https://search.srcpa.gov/plat",
+    "status": "TWO_TARGETED_PA_PLAT_QUERIES_ATTEMPTED",
+    "queries": [
+      {
+        "query": "CRESCENT SHORES",
+        "endpoint": "https://search.srcpa.gov/plat/query",
+        "status": "PUBLIC_PLAT_INDEX_RESPONSE_RETRIEVED_NEEDS_SEMANTIC_REVIEW",
+        "content_type": "application/json; charset=utf-8",
+        "response_field_names": [
+          "results"
+        ],
+        "mentions_target": false,
+        "results_count": 0
+      },
+      {
+        "query": "00780",
+        "endpoint": "https://search.srcpa.gov/plat/query",
+        "status": "PUBLIC_PLAT_INDEX_RESPONSE_RETRIEVED_NEEDS_SEMANTIC_REVIEW",
+        "content_type": "application/json; charset=utf-8",
+        "response_field_names": [
+          "results"
+        ],
+        "mentions_target": false,
+        "results_count": 1
+      }
+    ]
+  }
+}
