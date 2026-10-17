@@ -1,0 +1,29 @@
+name: Verify Tom Street LABINS source integrity and evidence links
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/check_labins_primary_sources.py'
+      - '.github/workflows/verify-labins-evidence.yml'
+      - '00_CONTROL/SOURCE_REGISTER.csv'
+      - '00_CONTROL/EXHIBIT_INDEX.csv'
+      - '00_CONTROL/CLAIM_SOURCE_LINKS.csv'
+      - '00_CONTROL/EVIDENCE_LEDGER.csv'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-originals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify syntax
+        run: python -m py_compile tools/check_labins_primary_sources.py
+      - name: Check all 19 originals, six grid captures and 29 ledger sources
+        run: python tools/check_labins_primary_sources.py
