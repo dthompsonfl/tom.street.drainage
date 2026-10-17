@@ -43,6 +43,19 @@ class HandoffGovernanceTests(unittest.TestCase):
     def test_no_approvals_or_real_neighbor_observations_are_synthesized(self):
         approvals = rows("00_CONTROL/ATTRIBUTION_AND_PUBLICATION_APPROVAL.csv")
         self.assertGreaterEqual(len(approvals), 8)
+        # Older source versions remain recorded but cannot be used as approval
+        # for today's edited homeowner-facing copy.
+        import hashlib
+        active = [r for r in approvals if not r["superseded_by"]]
+        self.assertGreaterEqual(len(active), 8)
+        self.assertEqual(len(active), len({r["source_path"] for r in active}))
+        for row in active:
+            source = ROOT / row["source_path"]
+            self.assertTrue(source.is_file(), row["source_path"])
+            checksum = hashlib.sha256(source.read_bytes()).hexdigest()
+            self.assertEqual(checksum, row["source_sha256"],
+                             "Changed draft requires new version-specific approval row: " + row["source_path"])
+
         for row in approvals:
             self.assertTrue(row["approval_status"].startswith("AWAITING_"))
             self.assertEqual(row["private_approval_evidence_ref"], "")
