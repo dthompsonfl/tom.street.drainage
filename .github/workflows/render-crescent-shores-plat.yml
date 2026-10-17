@@ -42,3 +42,13 @@ jobs:
         run: |
           git status --short
           echo "Derived plat renders are not evidence of a modern lot survey and require review."
+      - name: Screen newly generated source-linked display derivatives
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Retain unapproved plat display images for review, never modify the original
+        uses: actions/upload-artifact@v4
+        with:
+          name: unapproved-source-capture-render-crescent-shores-plat-${{ github.sha }}
+          path: |
+            02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/PLAT_A_70_DISPLAY_DERIVATIVES/
+          retention-days: 7
+          if-no-files-found: error

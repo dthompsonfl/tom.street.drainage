@@ -50,3 +50,18 @@ jobs:
           if d['integrity_status']!='PASS':
               raise SystemExit('Original data integrity failed; see committed audit report')
           PY
+      - name: Screen for unsafe captures before creating a review-only artifact
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Retain acquired public-source candidates for manual review (never auto-publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: unapproved-source-capture-audit-historical-evidence-${{ github.sha }}
+          path: |
+            00_CONTROL/HISTORICAL_PUBLIC_EVIDENCE_INTEGRITY_AUDIT_2026-10-16.json
+            !**/.evidence_vault/**
+            !**/SYSTEM_RAW/**
+            !**/*_project.html
+            !**/*_record_page.html
+            !**/*.env
+          retention-days: 7
+          if-no-files-found: warn

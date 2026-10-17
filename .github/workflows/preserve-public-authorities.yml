@@ -41,3 +41,18 @@ jobs:
             print('Some official files could not be downloaded; see manifest. No missing documents were fabricated.')
             sys.exit(1)
           PY
+      - name: Screen for unsafe captures before creating a review-only artifact
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Retain acquired public-source candidates for manual review (never auto-publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: unapproved-source-capture-preserve-public-authorities-${{ github.sha }}
+          path: |
+            08_LEGAL_AND_REGULATORY/SOURCE/PRIMARY_AUTHORITY/
+            !**/.evidence_vault/**
+            !**/SYSTEM_RAW/**
+            !**/*_project.html
+            !**/*_record_page.html
+            !**/*.env
+          retention-days: 7
+          if-no-files-found: warn

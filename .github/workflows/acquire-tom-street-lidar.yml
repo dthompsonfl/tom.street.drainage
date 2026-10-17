@@ -37,3 +37,19 @@ jobs:
           d = json.loads(p.read_text())
           print(d["status"], d["sha256"], d["bytes"], d["source_url"])
           PY
+      - name: Screen for unsafe captures before creating a review-only artifact
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Retain acquired public-source candidates for manual review (never auto-publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: unapproved-source-capture-acquire-tom-street-lidar-${{ github.sha }}
+          path: |
+            11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2017/16reu175645.tif
+            11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/ORIGINAL_NOAA_2017/16reu175645.acquisition.json
+            !**/.evidence_vault/**
+            !**/SYSTEM_RAW/**
+            !**/*_project.html
+            !**/*_record_page.html
+            !**/*.env
+          retention-days: 7
+          if-no-files-found: warn

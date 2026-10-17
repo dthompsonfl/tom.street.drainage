@@ -38,3 +38,18 @@ jobs:
         run: |
           git status --short
           echo "Unreviewed acquired sources are not automatically committed or publicly republished."
+      - name: Screen for unsafe captures before creating a review-only artifact
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Retain acquired public-source candidates for manual review (never auto-publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: unapproved-source-capture-audit-fdep-aerial-provenance-${{ github.sha }}
+          path: |
+            11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/MOSAIC_CATALOG_PROVENANCE.json
+            !**/.evidence_vault/**
+            !**/SYSTEM_RAW/**
+            !**/*_project.html
+            !**/*_record_page.html
+            !**/*.env
+          retention-days: 7
+          if-no-files-found: warn

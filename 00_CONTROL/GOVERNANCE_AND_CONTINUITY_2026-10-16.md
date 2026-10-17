@@ -26,6 +26,12 @@ The previous 27 workflows included automatic direct-main acquisition and PDF com
 
 **Read-only neighborhood access:** share a specific approved edition only. GitHub read access must not be mistaken for permission to upload private files or edit the canonical evidence; no neighbor write access is conferred here.
 
+## Acquired source delivery after disabling unattended pushes
+
+All **21 deliberately started** official-record acquisition, source-preservation, provenance and historical-plat rendering jobs retain their bounded, source-specific output files as **review-only GitHub Actions artifacts for seven days**, after a local restricted-content pattern screen. These are *temporary staging artifacts*, not a checked-in official original, not a public neighborhood edition and not proof of rights to redistribute. Their capture path lists come from the previously committed allowlists; they exclude raw SYSTEM_RAW portal captures, project/record page HTML and .env files. The runner has read-only repository permissions and cannot push.
+
+**Coordinator process:** select a specific completed manual Actions run, download its named unapproved-source-capture artifact before expiry, independently inspect original bytes, SHA-256 manifests, access method, original source and any personal/session artifacts. Retain accepted, unchanged originals in the appropriate source directory using an authorized reviewed commit/merge to main. Update SOURCE_REGISTER, evidence and claim links only after verification. Record any rejected, failed or incomplete capture honestly in the gaps log. If the artifact contains private data, hold it in controlled storage, do not add it to Git, and consider the authenticated/public separation. CI content scanning is not adequate human privacy clearance. **No automatic GitHub release or neighborhood distribution occurs.**
+
 ## Operational recovery and interrupted runs
 
 1. In a disrupted handoff, stop new publications and identify last successfully reviewed source commit, known edition ID, current manifest SHA and outstanding human gates. Re-fetch `origin/main`, inspect status and CI; never reset others' commits to align a narrative.

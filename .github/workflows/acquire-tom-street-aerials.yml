@@ -39,3 +39,18 @@ jobs:
           for x in d["entries"]:
             print(x["service_year_label"], x["status"], x.get("sha256", ""), x.get("failure_details", ""))
           PY
+      - name: Screen for unsafe captures before creating a review-only artifact
+        run: python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Retain acquired public-source candidates for manual review (never auto-publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: unapproved-source-capture-acquire-tom-street-aerials-${{ github.sha }}
+          path: |
+            11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_HISTORICAL_AERIAL_EXPORTS/
+            !**/.evidence_vault/**
+            !**/SYSTEM_RAW/**
+            !**/*_project.html
+            !**/*_record_page.html
+            !**/*.env
+          retention-days: 7
+          if-no-files-found: warn
