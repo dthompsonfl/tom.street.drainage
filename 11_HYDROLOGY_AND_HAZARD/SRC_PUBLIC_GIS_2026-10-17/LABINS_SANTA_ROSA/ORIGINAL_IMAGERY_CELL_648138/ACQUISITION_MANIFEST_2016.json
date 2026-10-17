@@ -1,0 +1,57 @@
+{
+  "retrieved_utc": "2026-10-17T17:27:34.443308+00:00",
+  "year": 2016,
+  "official_grid_identifier": "648138",
+  "exact_download_index": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/LABINS_648138_IMAGE_DOWNLOAD_DISCOVERY_MANIFEST.json",
+  "published_file_count": 4,
+  "archived_file_count": 3,
+  "files": [
+    {
+      "year": 2016,
+      "source_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.sid",
+      "name": "OP2016_NC_648138_24.sid",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 5747589,
+      "content_type": "image/x-mrsid-image",
+      "bytes": 5747589,
+      "sha256": "7d5b3f2369837f00a4f967f2225f2e253cc5671e0f6180b9a6b3af6d889a5670",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2016/OP2016_NC_648138_24.sid"
+    },
+    {
+      "year": 2016,
+      "source_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.sdw",
+      "name": "OP2016_NC_648138_24.sdw",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 192,
+      "content_type": "application/octet-stream",
+      "bytes": 192,
+      "sha256": "ac34e26f42fe7427599e1b89f1073cd96328825608a44feb21b039b1f98800a3",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2016/OP2016_NC_648138_24.sdw"
+    },
+    {
+      "year": 2016,
+      "source_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.aux",
+      "name": "OP2016_NC_648138_24.aux",
+      "status": "SOURCE_DOWNLOAD_FAILED_OR_TOO_LARGE",
+      "error": "RuntimeError: HTTP 404"
+    },
+    {
+      "year": 2016,
+      "source_url": "https://www.labins.org/Imagery/2016/Santa_Rosa/sid/OP2016_NC_648138_24.xml",
+      "name": "OP2016_NC_648138_24.xml",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 3615,
+      "content_type": "text/xml",
+      "bytes": 15346,
+      "sha256": "1867060316aafb941a2148734b71d5b5d731f6db3bf81e6f9c8945bfe164585b",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2016/OP2016_NC_648138_24.xml"
+    }
+  ],
+  "limitations": [
+    "MrSID and sidecar bytes are original official material; no image transformation.",
+    "Source collection year is not precise photographic flight date.",
+    "Orthoimagery does not measure vertical lot grades or establish builder stormwater responsibility.",
+    "Oversized or inaccessible source files are explicitly excluded, not reported as saved.",
+    "Missing world/aux/xml sidecars prevent complete georeferenced image reuse."
+  ]
+}
