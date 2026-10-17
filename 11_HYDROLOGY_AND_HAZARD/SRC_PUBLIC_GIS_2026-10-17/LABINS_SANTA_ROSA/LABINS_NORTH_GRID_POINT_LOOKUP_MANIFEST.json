@@ -1,0 +1,118 @@
+{
+  "captured_utc": "2026-10-17T17:21:07.866381+00:00",
+  "official_source": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer",
+  "mapping_app_source": "https://github.com/FREAC/LABINS/blob/master/script.js",
+  "declared_layer": 14,
+  "declared_attribute": "spn_id",
+  "jurisdiction": "LABINS Florida State Plane North high resolution imagery 5,000-foot grid",
+  "captures": [
+    {
+      "official_url": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer?f=pjson",
+      "name": "ORIGINAL_FREAC_LABINS_MAPSERVICE_METADATA.json",
+      "status": "OFFICIAL_FREAC_SOURCE_ARCHIVED_AND_HASHED",
+      "reported_name": "Layers",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_FREAC_LABINS_MAPSERVICE_METADATA.json",
+      "sha256": "e0da72f6449fc4aa7b46e69c04b9bbb45deb6fb2a0b446e77baddd8d171078a4",
+      "bytes": 10248
+    },
+    {
+      "official_url": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer/14?f=pjson",
+      "name": "ORIGINAL_FREAC_STATE_PLANE_NORTH_GRID_LAYER14_METADATA.json",
+      "status": "OFFICIAL_FREAC_SOURCE_ARCHIVED_AND_HASHED",
+      "reported_name": "Hi-Res Imagery Grid State Plane North",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_FREAC_STATE_PLANE_NORTH_GRID_LAYER14_METADATA.json",
+      "sha256": "f5d823bccbb10b296138d7c54ab0fef62482cbe94e1b11ea4e55a31c83f7cc3b",
+      "bytes": 5076
+    },
+    {
+      "official_url": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer/14/query?geometry=-86.81466%2C30.41519&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "name": "ORIGINAL_FREAC_LABINS_NORTH_GRID_2264_TOM_ST_SAMPLE.json",
+      "status": "OFFICIAL_FREAC_SOURCE_ARCHIVED_AND_HASHED",
+      "feature_count": 1,
+      "grid_identifiers": [
+        648138
+      ],
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_FREAC_LABINS_NORTH_GRID_2264_TOM_ST_SAMPLE.json",
+      "sha256": "e11a7fde0fe9c0741dc1b561020afcb7dcb27a8ccf58934422726c4594c54100",
+      "bytes": 1572
+    },
+    {
+      "official_url": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer/14/query?geometry=-86.81466%2C30.41534&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "name": "ORIGINAL_FREAC_LABINS_NORTH_GRID_2268_TOM_ST_SAMPLE.json",
+      "status": "OFFICIAL_FREAC_SOURCE_ARCHIVED_AND_HASHED",
+      "feature_count": 1,
+      "grid_identifiers": [
+        648138
+      ],
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_FREAC_LABINS_NORTH_GRID_2268_TOM_ST_SAMPLE.json",
+      "sha256": "e11a7fde0fe9c0741dc1b561020afcb7dcb27a8ccf58934422726c4594c54100",
+      "bytes": 1572
+    },
+    {
+      "official_url": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer/14/query?geometry=-86.81521%2C30.41515&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "name": "ORIGINAL_FREAC_LABINS_NORTH_GRID_2265_TOM_ST_SAMPLE.json",
+      "status": "OFFICIAL_FREAC_SOURCE_ARCHIVED_AND_HASHED",
+      "feature_count": 1,
+      "grid_identifiers": [
+        648138
+      ],
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_FREAC_LABINS_NORTH_GRID_2265_TOM_ST_SAMPLE.json",
+      "sha256": "e11a7fde0fe9c0741dc1b561020afcb7dcb27a8ccf58934422726c4594c54100",
+      "bytes": 1572
+    },
+    {
+      "official_url": "https://maps.freac.fsu.edu/arcgis/rest/services/LABINS/LABINS_Data_ccr_relate/MapServer/14/query?geometry=-86.81475%2C30.41524&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+      "name": "ORIGINAL_FREAC_LABINS_NORTH_GRID_CORRIDOR_CENTER_SAMPLE.json",
+      "status": "OFFICIAL_FREAC_SOURCE_ARCHIVED_AND_HASHED",
+      "feature_count": 1,
+      "grid_identifiers": [
+        648138
+      ],
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_FREAC_LABINS_NORTH_GRID_CORRIDOR_CENTER_SAMPLE.json",
+      "sha256": "e11a7fde0fe9c0741dc1b561020afcb7dcb27a8ccf58934422726c4594c54100",
+      "bytes": 1572
+    }
+  ],
+  "point_intersections": [
+    {
+      "sample": "ORIGINAL_FREAC_LABINS_NORTH_GRID_2264_TOM_ST_SAMPLE.json",
+      "grid_ids": [
+        648138
+      ],
+      "features": 1,
+      "interpretation": "Approximate site point only; no imagery coverage assumption"
+    },
+    {
+      "sample": "ORIGINAL_FREAC_LABINS_NORTH_GRID_2268_TOM_ST_SAMPLE.json",
+      "grid_ids": [
+        648138
+      ],
+      "features": 1,
+      "interpretation": "Approximate site point only; no imagery coverage assumption"
+    },
+    {
+      "sample": "ORIGINAL_FREAC_LABINS_NORTH_GRID_2265_TOM_ST_SAMPLE.json",
+      "grid_ids": [
+        648138
+      ],
+      "features": 1,
+      "interpretation": "Approximate site point only; no imagery coverage assumption"
+    },
+    {
+      "sample": "ORIGINAL_FREAC_LABINS_NORTH_GRID_CORRIDOR_CENTER_SAMPLE.json",
+      "grid_ids": [
+        648138
+      ],
+      "features": 1,
+      "interpretation": "Approximate site point only; no imagery coverage assumption"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Published imagery grid is not an aerial photograph or guarantee of 2022/2025 local coverage.",
+    "Representative parcel points are based on saved county GIS and are not surveyed property boundary markers.",
+    "FREAC/LABINS source geometry and attributes may be authoritative for its own tiling scheme but do not establish permit conditions.",
+    "No date of imagery acquisition follows from grid identifiers."
+  ],
+  "status": "ALL_SOURCE_PROBES_CAPTURED"
+}

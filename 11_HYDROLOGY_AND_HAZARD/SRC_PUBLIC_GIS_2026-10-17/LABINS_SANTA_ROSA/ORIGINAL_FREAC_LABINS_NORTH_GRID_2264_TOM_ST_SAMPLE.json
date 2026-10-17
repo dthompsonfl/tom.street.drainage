@@ -1,0 +1,86 @@
+{
+ "displayFieldName": "spn_id",
+ "fieldAliases": {
+  "objectid": "objectid",
+  "spn_id": "spn_id",
+  "shape_leng": "shape_leng",
+  "st_area(shape)": "st_area(shape)",
+  "st_length(shape)": "st_length(shape)",
+  "old_spn_id": "Old_SPN_ID"
+ },
+ "geometryType": "esriGeometryPolygon",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "objectid"
+  },
+  {
+   "name": "spn_id",
+   "type": "esriFieldTypeInteger",
+   "alias": "spn_id"
+  },
+  {
+   "name": "shape_leng",
+   "type": "esriFieldTypeDouble",
+   "alias": "shape_leng"
+  },
+  {
+   "name": "st_area(shape)",
+   "type": "esriFieldTypeDouble",
+   "alias": "st_area(shape)"
+  },
+  {
+   "name": "st_length(shape)",
+   "type": "esriFieldTypeDouble",
+   "alias": "st_length(shape)"
+  },
+  {
+   "name": "old_spn_id",
+   "type": "esriFieldTypeInteger",
+   "alias": "Old_SPN_ID"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "objectid": 11183,
+    "spn_id": 648138,
+    "shape_leng": 20000.0,
+    "st_area(shape)": 3133623.6633382449,
+    "st_length(shape)": 7080.8398198695631,
+    "old_spn_id": 48138
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -86.827325856614848,
+       30.423018576776599
+      ],
+      [
+       -86.81146572028635,
+       30.423298224296804
+      ],
+      [
+       -86.811144183601769,
+       30.409553307279054
+      ],
+      [
+       -86.827002114566227,
+       30.409273697844984
+      ],
+      [
+       -86.827325856614848,
+       30.423018576776599
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
