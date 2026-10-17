@@ -28,7 +28,7 @@ A pre-existing **unapproved** neighborhood candidate artifact was downloaded and
 - Event observation form: one page.
 - GIS reference map: one page.
 
-**25 pages received limited visual contact-sheet examination.** No gross clipping or missing-page layout defect was evident at that overview resolution. This does **not** establish close-up page-by-page typographic quality, accessibility, full PDF/Markdown parity or permission to distribute. The map is explicitly a location reference, not a survey or engineering elevation map.
+**25 pages received limited visual contact-sheet examination.** Separately, all **five current combined packet pages** were rendered at 175 dpi and visually read page-by-page against the corresponding Markdown narratives, including parcel and permit IDs, headings, archived-status caveats, unsubmitted-request wording and draft disclaimers. Those five pages appeared legible without visible clipping, missing sections or broken page numbers. This is **not** an exact-character PDF/Markdown parity test, accessibility certification, approval of attribution or permission to distribute. The GIS map is a location reference, not a survey or engineering elevation map.
 
 ## Material source reconciliation
 
