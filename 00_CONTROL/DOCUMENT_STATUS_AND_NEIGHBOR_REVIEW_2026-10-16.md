@@ -34,6 +34,12 @@
 - GitHub Actions has reported success for the controlled **draft** packet build, including source/document/jurisdiction and neighbor-publication checks. That is **not** a human sign-off or professional engineering verification.
 - The privacy classification records many source files as `REVIEW_REQUIRED`. Sensitive data may also remain in older Git history. **Do not assume the entire public repository is cleared for unrestricted redistribution.**
 
+## Historical personal-Library drafts with obsolete parcel assignments
+
+During October 17 comparison of user-Library materials against the preserved County primary records, several earlier **October 15, 2026 two-site PDF/DOCX drafts** were found to associate **2268 with parcel suffix -1060** and **2264 with -1490**. Those pairings came from provisional public listings and are incorrect against the refreshed County records. The source-verified combinations are **2264 / -1020 / BP-2026-1621**, **2268 / -1490 / BP-2026-1612**, and **2274 / -1060**.
+
+**Do not submit or distribute the obsolete Library PDFs/DOCX as current records requests.** They are separate from this repository's revised drafts, and this notice does not delete or modify the personal files. The controlling County originals are in the October 16 Property Appraiser export archive. This warning is about administrative precision, not an assertion of wrongdoing.
+
 ## What we still cannot claim
 
 We have not recovered the stamped grading plans, parcel-specific approved changes, a common-datum current survey, measured culvert inverts/outfall, County acceptance/maintenance records for each structure, or signed applicable environmental permissions. No letter should imply that public-records requests have been submitted without receipts. No evidence presented establishes that the new construction caused a code violation or flooding.

@@ -44,6 +44,16 @@ County inspection records contain useful **observations and work instructions**,
 
 These comments **refer to** a roadway ditch and proposed connections to structures associated with nearby addresses. They do **not** prove what was installed, where structures sit relative to the right-of-way, the system's hydraulic adequacy or ownership. Please confirm **whether the County holds** approved plans, profiles, reviews and specifications; the customer-facing attachment endpoint returned no files.
 
+## October 17 targeted follow-up: installed pipe and pre-pour evidence
+
+Archived County inspection history for **2264 Tom Street, BP-2026-1621** records an August 6 instruction for approximately **100 feet of 12-inch ADS perforated pipe with sock**, a midpoint inlet, and removal/replacement of concrete drainage ends near 2260 and 2270 Tom Street. The County's archived October 1 **Driveway Pre-Pour Inspection** is recorded as **Passed**, with no explanatory remarks visible in the saved customer response.
+
+Please produce any existing **underlying October 1 inspector photos and field worksheets, as-installed pipe length and materials, product specifications, bedding and connections, inlet box locations, recorded slopes/invert elevations, design revisions, contractor completion records, ROW acceptance, and current drainage maintenance assignment** for that specific direction. A pass status without those records is not an installed-system as-built or hydraulic finding.
+
+For **2268 Tom Street, BP-2026-1612**, the archived October 6 snapshot still showed **Driveway Pre-Pour Inspection: Not Complete**. Please produce later status updates, subsequent field records and any changes to the September 10 direction to match existing roadway grades. This is a historical capture, not evidence that the work remains incomplete today.
+
+The county's historic problem-area GIS feature 2068 and the County-maintained road classification are **not** enough to determine responsibility for individual drainage facilities or the effect of 2026 construction.
+
 ## Records requested
 
 **Right-of-way construction**
