@@ -32,6 +32,8 @@ the neighbouring instrument 201603296), and "Hadleigh Hills".
 **Also search by grantee/grantor:** Holiday Builders Inc; Hadleigh Hills
 Development Group.
 
+**Specific historical deed to include in the title-chain search:** Clerk instrument **201734060**, Official Records Book 3653 beginning at Page 974, documented at https://acclaim.srccol.com/AcclaimWeb/Image/DocumentPdfAllPages/3266090. Its recorded cover/index refers explicitly to tax parcel `21-2S-26-0780-0QQ00-1020` associated today with 2264 Tom Street, alongside several other parcels, and refers to land split out of `21-2S-26-0780-0QQ55-0000`. This is a tract-title **lead only**. Please provide the referenced parent-tract instruments, later conveyances into the current owners, and the instrument chain for 2268 `-1490`, rather than assuming the listed split describes both lots or grants any drainage right.
+
 ## Records requested
 
 1. **All recorded deeds, conveyances and other instruments** conveying, or
