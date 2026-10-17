@@ -1,6 +1,8 @@
 # Cross-source reconciliation and release blockers
 Date: 2026-10-15. **This is an audit log, not a certification of completeness.**
 
+> **October 17, 2026 reconciliation:** This October 15 audit remains a **dated historical snapshot**, including its old draft counts and then-outstanding PDF generation task. Five current Markdown packet sections have since been rendered into a five-page **unapproved** draft PDF and each of those five pages received a new 175-dpi visual layout reading with no visible text clipping, broken pagination or missing section. Critical parcel/permit/disclaimer wording was compared against the current Markdown sources; no exhaustive byte-exact parity or independent homeowner approval has been established. The [corpus-wide audit](../00_CONTROL/DOCUMENT_CORPUS_AUDIT_AND_RELEASE_GATES_2026-10-17.md) defines the verified 168-document automated screen, 73 PDF non-text pages and outstanding manual review; [current source/packet status](README.md) controls distribution. The **eight request draft files containing nine templates remain unsent**. Do not misread the historical five-request count below as the current request inventory.
+
 ## Compared materials and access boundary
 - Current GitHub `main` files, including saved official PA/MGO JSON, inspection summaries, requests, and historical release package.
 - Project Library textual audits `Tom_Street_Independent_Audit_2026-10-15.md` (18 principal findings) and `00_Independent_Audit_Report.md` (Gemini Argon assessment of another workspace).
