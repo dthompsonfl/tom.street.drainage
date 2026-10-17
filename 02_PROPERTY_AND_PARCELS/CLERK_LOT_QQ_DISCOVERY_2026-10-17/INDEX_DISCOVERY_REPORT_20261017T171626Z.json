@@ -1,0 +1,96 @@
+{
+  "captured_utc": "2026-10-17T17:15:58.292541+00:00",
+  "scope": "public Clerk guest search index / Property Appraiser subdivision-index probes",
+  "privacy": "No deed original, owner personal info, raw portal HTML, cookie or resident media in this derived index",
+  "completeness": "BOUNDED_DISCOVERY_NOT_COMPLETE_RECORDS_CUSTODIAN_SEARCH",
+  "searches": [
+    {
+      "kind": "legal",
+      "query": "CRESCENT SHORES",
+      "started_utc": "2026-10-17T17:15:59.242854+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "search_form_schema": [],
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "legal",
+      "query": "POPE SUBD",
+      "started_utc": "2026-10-17T17:16:08.515704+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "search_form_schema": [],
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "legal",
+      "query": "LOT QQ",
+      "started_utc": "2026-10-17T17:16:12.737299+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "search_form_schema": [],
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "legal",
+      "query": "21-2S-26",
+      "started_utc": "2026-10-17T17:16:16.957273+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeComments",
+      "search_form_schema": [],
+      "visible_text_form_fields": []
+    },
+    {
+      "kind": "name",
+      "query": "HOLIDAY BUILDERS INC",
+      "started_utc": "2026-10-17T17:16:21.171208+00:00",
+      "status": "FORM_FIELDS_UNMAPPED_NEEDS_REVIEW",
+      "relevant_index_rows": [],
+      "landed_url": "https://acclaim.srccol.com/AcclaimWeb/search/SearchTypeName",
+      "search_form_schema": [],
+      "visible_text_form_fields": []
+    }
+  ],
+  "srpa_plat": {
+    "source_url": "https://search.srcpa.gov/plat",
+    "status": "TWO_TARGETED_PA_PLAT_QUERIES_ATTEMPTED",
+    "queries": [
+      {
+        "query": "CRESCENT SHORES",
+        "endpoint": "https://search.srcpa.gov/plat/query",
+        "status": "PUBLIC_PLAT_INDEX_RESPONSE_RETRIEVED_NEEDS_SEMANTIC_REVIEW",
+        "content_type": "application/json; charset=utf-8",
+        "response_field_names": [
+          "results"
+        ],
+        "mentions_target": false,
+        "results_count": 0
+      },
+      {
+        "query": "00780",
+        "endpoint": "https://search.srcpa.gov/plat/query",
+        "status": "PUBLIC_PLAT_QUERY_FAILED",
+        "content_type": "application/json; charset=utf-8",
+        "response_field_names": [
+          "results"
+        ],
+        "mentions_target": false,
+        "results_count": 1,
+        "result_field_names": [
+          "bookPage",
+          "fireDistrict",
+          "platNumber",
+          "secTwnRng",
+          "subdivisionCode",
+          "subdivisionKey",
+          "subdivisionName"
+        ],
+        "error": "NameError: name 'resp' is not defined"
+      }
+    ]
+  }
+}
