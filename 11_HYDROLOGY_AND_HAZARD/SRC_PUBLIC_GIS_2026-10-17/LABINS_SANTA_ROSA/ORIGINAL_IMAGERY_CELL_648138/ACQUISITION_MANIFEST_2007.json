@@ -1,0 +1,83 @@
+{
+  "retrieved_utc": "2026-10-17T17:27:05.965520+00:00",
+  "year": 2007,
+  "official_grid_identifier": "648138",
+  "exact_download_index": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/LABINS_648138_IMAGE_DOWNLOAD_DISCOVERY_MANIFEST.json",
+  "published_file_count": 6,
+  "archived_file_count": 6,
+  "files": [
+    {
+      "year": 2007,
+      "source_url": "https://www.labins.org/Imagery/2007/SantaRosa/cir/OP2007_IR_648138_24.sid",
+      "name": "OP2007_IR_648138_24.sid",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 3905721,
+      "content_type": "image/x-mrsid-image",
+      "bytes": 3905721,
+      "sha256": "bd824ccd6e6d6e2c23286fbecd1f97fe265de9a01579e7127231f4fc7e2d8e14",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2007/OP2007_IR_648138_24.sid"
+    },
+    {
+      "year": 2007,
+      "source_url": "https://www.labins.org/Imagery/2007/SantaRosa/cir/OP2007_IR_648138_24.sdw",
+      "name": "OP2007_IR_648138_24.sdw",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 192,
+      "content_type": "application/octet-stream",
+      "bytes": 192,
+      "sha256": "971d3f3b5f55fa0ae0b78088af3890d3ee216a1ef8e4b49588665ba76695f5e2",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2007/OP2007_IR_648138_24.sdw"
+    },
+    {
+      "year": 2007,
+      "source_url": "https://www.labins.org/Imagery/2007/SantaRosa/cir/OP2007_IR_648138_24.aux",
+      "name": "OP2007_IR_648138_24.aux",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 8956,
+      "content_type": "application/octet-stream",
+      "bytes": 8956,
+      "sha256": "b69a060a30ff89a558c36a6684216f1a428b8201e88e18bd93071005871032b8",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2007/OP2007_IR_648138_24.aux"
+    },
+    {
+      "year": 2007,
+      "source_url": "https://www.labins.org/Imagery/2007/SantaRosa/sid/OP2007_NC_648138_24.sid",
+      "name": "OP2007_NC_648138_24.sid",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 3897724,
+      "content_type": "image/x-mrsid-image",
+      "bytes": 3897724,
+      "sha256": "c9a0a72a3cd35a966790a19b90cd06ccc7d39fc55fb236e3c25a0907d3f21cc8",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2007/OP2007_NC_648138_24.sid"
+    },
+    {
+      "year": 2007,
+      "source_url": "https://www.labins.org/Imagery/2007/SantaRosa/sid/OP2007_NC_648138_24.sdw",
+      "name": "OP2007_NC_648138_24.sdw",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 192,
+      "content_type": "application/octet-stream",
+      "bytes": 192,
+      "sha256": "971d3f3b5f55fa0ae0b78088af3890d3ee216a1ef8e4b49588665ba76695f5e2",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2007/OP2007_NC_648138_24.sdw"
+    },
+    {
+      "year": 2007,
+      "source_url": "https://www.labins.org/Imagery/2007/SantaRosa/sid/OP2007_NC_648138_24.aux",
+      "name": "OP2007_NC_648138_24.aux",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 12654,
+      "content_type": "application/octet-stream",
+      "bytes": 12654,
+      "sha256": "a42c916c6a57b56628e5e1c9f37be601f5ff097709bfdea2ff3751982eb68781",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2007/OP2007_NC_648138_24.aux"
+    }
+  ],
+  "limitations": [
+    "MrSID and sidecar bytes are original official material; no image transformation.",
+    "Source collection year is not precise photographic flight date.",
+    "Orthoimagery does not measure vertical lot grades or establish builder stormwater responsibility.",
+    "Oversized or inaccessible source files are explicitly excluded, not reported as saved.",
+    "Missing world/aux/xml sidecars prevent complete georeferenced image reuse."
+  ]
+}
