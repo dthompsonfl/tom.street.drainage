@@ -1,0 +1,41 @@
+name: Render official LABINS Santa Rosa image grid for identification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/render_labins_grid.py'
+      - '.github/workflows/render-labins-grid.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF image renderer
+        run: python -m pip install pymupdf==1.26.4 pillow==11.3.0
+      - name: Validate render code
+        run: python -m py_compile tools/render_labins_grid.py
+      - name: Verify original LABINS PDF hash and render nonauthoritative preview
+        run: python tools/render_labins_grid.py
+      - name: Commit research preview without modifying the original
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/DERIVED_LABINS_SANTA_ROSA_GRID_PREVIEW.jpg 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/DERIVED_GRID_RENDER.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "evidence: render public LABINS aerial grid map for visual source review [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
