@@ -1,0 +1,49 @@
+name: Document corpus review (read-only)
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "**/*.pdf"
+      - "**/*.txt"
+      - "**/*.html"
+      - "tools/audit_document_corpus.py"
+      - "requirements-release.txt"
+      - ".github/workflows/document-corpus-review.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  document-corpus:
+    name: Tracked text and PDF extraction inventory
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing pinned PDF parser
+        run: python -m pip install --disable-pip-version-check --no-input -r requirements-release.txt
+      - name: Compile scanner
+        run: python -m py_compile tools/audit_document_corpus.py
+      - name: Inventory every tracked document and extract every PDF page
+        run: python tools/audit_document_corpus.py --output "$RUNNER_TEMP/tom-street-document-audit"
+      - name: Store only finding metadata and coverage for human review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: document-corpus-${{ github.sha }}
+          path: ${{ runner.temp }}/tom-street-document-audit/
+          if-no-files-found: warn
+          retention-days: 7
+
+# Inventory and machine screening ONLY: no publication, approval, findings
+# of regulatory fault, auto-push, original-asset modification or privacy clearance.

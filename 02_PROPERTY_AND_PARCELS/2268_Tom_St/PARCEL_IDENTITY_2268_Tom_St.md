@@ -46,7 +46,11 @@ Individual, 8.1 acres, Santa Rosa County, received 2016-11-14, decided
 Saved evidence:
 `09_ENVIRONMENTAL_PERMITS/SYSTEM_RAW/erp_nearest_permits_tom_street.json`
 
-ERP 9220-2's geographical and legal applicability to this parcel **has not been established**. Hadleigh Hills is a search lead; Crescent Shores is an appraiser filing name, not independently verified as a recorded plat.
+ERP 9220-2's geographical and legal applicability to this parcel **has not been established**. Hadleigh Hills is a nearby unlinked search lead. Crescent Shores is a Property Appraiser filing label with an original historical Clerk plat now preserved; whether the original Lot QQ corresponds by complete recorded title to this modern parcel remains unresolved.
+
+## Recorded-subdivision provenance update (October 17, 2026)
+
+The **original Clerk Crescent Shores Plat Book A, Page 70** (document `875693`; two sheets, second marked `70 A`) was acquired October 16 and preserved [unchanged](../PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_CLERK_PLAT_BOOK_A_PAGE_70.pdf). This confirms a historical recorded subdivision plat, **not** the present legal boundaries, later Lot QQ parcel divisions, drainage easements, grade changes or ownership of roadside drainage structures. Later deed/title and survey verification are still required.
 
 ## Still not established from an official source
 

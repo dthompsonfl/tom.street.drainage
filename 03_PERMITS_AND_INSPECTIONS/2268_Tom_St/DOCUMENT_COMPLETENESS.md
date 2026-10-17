@@ -3,7 +3,9 @@
 **Parcel (verified, Santa Rosa County Property Appraiser):** `21-2S-26-0780-0QQ00-1490`
 **Parcel as stored in MGO:** `212S2607800QQ001490`
 **Owner of record:** HOLIDAY BUILDERS INC
-**Audit date:** 2026-10-15
+**Audit baseline date:** 2026-10-15
+
+**October 17 supplementary note:** The original 1946 Crescent Shores recorded subdivision plat, Clerk `PLAT A/70` (document `875693`, two sheets), was subsequently acquired. The historic row below concerning unavailable deeds/plat records is retained as an October 15 snapshot, **not** the current plat acquisition status. See the [primary-source reconciliation](../../00_CONTROL/PRE_REQUEST_PRIMARY_SOURCE_REVIEW_2026-10-16.md). Later deeds linking Lot QQ to parcel `-1490`, recorded easements and site-specific approved drawings remain missing.
 
 Status key:
 `DOWNLOADED_VERIFIED` · `HISTORICAL_LEAD_UNLINKED` · `NOT_OBTAINED_FOR_SITE` · `NOT_OFFERED_IN_PORTAL` · `NOT_FOUND_IN_SEARCHED_SYSTEM` ·
