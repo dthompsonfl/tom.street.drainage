@@ -1,0 +1,30 @@
+{
+  "all_refs_blob_objects_enumerated": 2504,
+  "binary_pdf_and_image_embedded_contents": "NOT_SEMANTICALLY_SCREENED",
+  "git_checkout_shallow": false,
+  "git_refs_examined": 10,
+  "history_rewrite_authorization": "NOT_GRANTED",
+  "independent_human_security_review": "PENDING",
+  "indicators": {
+    "AUTH_CONTEXT_TEXT_PRESENT": 138,
+    "EMAIL_LIKE_CONTENT_PRESENT": 103,
+    "HISTORIC_PORTAL_OR_SESSION_CONTEXT_PATH": 9
+  },
+  "known_historic_authenticated_capture_path_hits": 9,
+  "next_action": "Authorized account-holder security reviewer must privately inspect historic suspect blobs; invalidate any active credentials, maintain preservation/rollback plan; do not publish private values.",
+  "original_source_availability_or_redistribution_rights": "NOT_ESTABLISHED_BY_THIS_SCREEN",
+  "outside_git_forks_and_expired_or_unreachable_objects": "NOT_EXAMINED",
+  "potential_credential_like_blobs": 0,
+  "review_type": "AUTOMATED_FULL_REACHABLE_REF_BYTE_SCREEN_NOT_INDEPENDENT_HUMAN_PRIVACY_CLEARANCE",
+  "scan_counts": {
+    "binary_or_compressed_blob_not_semantically_parsed": 351,
+    "oversized_blob_partial_byte_screened": 6,
+    "reachable_blobs": 1338,
+    "text_or_untyped_blob_byte_screened": 987,
+    "whole_blob_byte_screened": 1332
+  },
+  "session_validity_or_revocation": "NOT_EXAMINED",
+  "source_bytes_modified": 0,
+  "source_capture_deletion_or_history_rewrite_performed": false,
+  "source_git_head": "d5508a15d19e37374d61ba3ed2046c398904e79a"
+}
