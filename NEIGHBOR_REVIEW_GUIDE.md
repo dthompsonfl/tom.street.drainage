@@ -6,6 +6,8 @@ I put this folder together so the people who live near Tom Street can look at th
 
 **The short version:** I am concerned that grading near new construction might change how rainwater drains around existing homes. County records identify building permits for 2264 and 2268 Tom Street. I have not obtained the approved site-specific grading plans or a field survey showing actual 2026 drainage elevations. This collection is a request for answers, not proof of wrongdoing.
 
+**Edition status:** The existing links below point to **current unsigned draft documents**; they are not one personally approved edition. The [dated map and pinned neighborhood candidate](19_NEIGHBOR_REVIEW/README.md) are technically generated and available for source/visual review through read-only GitHub Actions. No version is authorized for neighborhood distribution yet. You can continue factual discussion using the public source library without treating a draft as a signed notice.
+
 ## Review it in about 10 minutes
 
 1. **Read the [homeowner brief](15_RECONCILED_DRAFTS/01_HOMEOWNER_BRIEF.md)** to understand the issue in plain English.

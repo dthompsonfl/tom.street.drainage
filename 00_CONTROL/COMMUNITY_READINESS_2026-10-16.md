@@ -24,6 +24,10 @@ This is the current disposition of the October 16 independent archive review. It
 | Environmental authorization and code pathway | **APPLICABILITY UNRESOLVED** | Signed ERP/CGP files or written exemption and applicable County approvals |
 | Case records and official answers | **REQUEST DRAFTS ONLY** | Send requests and retain official acknowledgments, records and written findings |
 
+## Later October 16 handoff control verification
+
+After the original readiness audit, read-only source acquisition and PDF staging replaced unreviewed bot pushes to main, and workflow governance tests passed at commit `551ded38932a`. The original 67 mechanical privacy flags now have a separate per-file technical register, and historic public-Git exposure is documented independently. A 469-entry current path/hash classification was reconciled at commit `02fa578`. The map and pinned neighborhood candidate build succeeded in [the candidate workflow](https://github.com/dthompsonfl/tom.street.drainage/actions/runs/38984978114) and were visually inspected as technical drafts. **No human privacy, signer or publication decision was inferred.** The [two-real-neighbor test protocol](REAL_NEIGHBOR_USABILITY_TEST_PROTOCOL_2026-10-16.md) is ready; actual participants, times and retests are pending. The proposed independent backup coordinator and evidence custodian have not been appointed, and the GitHub protection endpoint was inaccessible to this connected integration (HTTP 403); branch protection remains unverified/not enabled.
+
 ## What the new automated gates actually establish
 
 The [document-status index](DOCUMENT_STATUS_AND_NEIGHBOR_REVIEW_2026-10-16.md) identifies which documents are current, historical or proposed. The current checks are intended to verify selected statements, local links, file-format integrity, source hashes, draft status and current privacy-inventory coverage. They do **not** certify legal applicability, complete agency production, survey measurements, neighborhood consensus, or human permission to disclose third-party data.

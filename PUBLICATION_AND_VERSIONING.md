@@ -47,3 +47,9 @@ Start with the [README](README.md), then the [current draft folder](15_RECONCILE
 The County must produce its governing plans, surveys and records; a qualified professional must measure actual conditions if required; agencies must confirm ERP/CGP applicability; neighbors must authorize release of their material. Nothing in a repository refactor can manufacture those facts.
 
 **Known historical privacy issue:** earlier authenticated captures may still be reachable through Git history. A history rewrite or credential response requires separate owner-reviewed remediation. Do not assume changing today's files solved historic exposure.
+
+## Fixed candidate edition (technical build, not publication)
+
+The [neighborhood review directory](19_NEIGHBOR_REVIEW/README.md) documents the exact-commit candidate builder, source-linked GIS map and read-only CI artifact. Every candidate records source commit, source-commit timestamp, PDF/blank-form/map inclusions, SHA-256 checksums, purpose, explicit DRAFT status and pending independent/human gates. Later main commits create **different candidate IDs**, never a silent rewrite of an older distributed edition. Do not publish a GitHub Actions candidate artifact as an authorized review edition by itself.
+
+Before a fixed edition is approved, record the human source/privacy decision, original speaker approval for the precise first-person hashes, actual nontechnical-neighbor testing and retest results, and named approver's scope and exact artifact checksum. Keep approval evidence private with opaque public references. Branch protection remains owner-platform configuration pending. The final approved edition must be an immutable ZIP and manifest, not a link to floating main.

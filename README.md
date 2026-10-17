@@ -9,6 +9,7 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 | What you need | Where to go |
 | --- | --- |
 | **Review the project before our neighborhood discussion** | **[Neighbor review guide](NEIGHBOR_REVIEW_GUIDE.md)** |
+| **Check the dated neighborhood candidate/map and human release gates** | **[Fixed-edition candidate and geographic reference status](19_NEIGHBOR_REVIEW/README.md)** (candidate only; no approved release yet) |
 | Understand the concern | [One-page homeowner brief](15_RECONCILED_DRAFTS/01_HOMEOWNER_BRIEF.md) |
 | Take a letter to a commissioner | [Commissioner letter draft](15_RECONCILED_DRAFTS/06_COMMISSIONER_COVER_LETTER_DRAFT.md) |
 | Request records from the County | [County records letter draft](15_RECONCILED_DRAFTS/02_COUNTY_LETTER_DRAFT.md) |

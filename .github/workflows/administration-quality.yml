@@ -31,6 +31,7 @@ jobs:
           python -m unittest discover -s tools -p 'test_retired_builders.py' -v
           python -m unittest discover -s tools -p 'test_live_status.py' -v
           python -m unittest discover -s tools -p 'test_workflow_governance.py' -v
+          python -m unittest discover -s tools -p 'test_handoff_governance.py' -v
       - name: Check current evidence registers, active document links and privacy boundary
         run: python tools/check_administration.py --strict
       - name: Derive current evidence and engineering gap counts without writes
