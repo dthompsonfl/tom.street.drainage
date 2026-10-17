@@ -37,6 +37,12 @@ The construction permits showed **Active** when County records were saved in Oct
 
 County GIS identifies the relevant Tom Street segment as **County Maintained**. It does not prove which individual pipes, ditches or inlets the County owns or maintains.
 
+## Verified historic LABINS aerials (October 17, 2026)
+
+An official State Plane North grid query places the Tom Street representative locations in **imagery cell `648138`**. The [original LABINS aerial file archive](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/) now preserves **six original MrSID aerial images from 2007, 2010, 2013, 2016 and 2019**, plus 13 original world/auxiliary/XML companion files. One published 2016 `.aux` link returned 404; 2016's actual image, world file and XML were obtained. Each source has an individual checksum, exhibit reference and evidence-ledger limitation. [Read the source audit and remaining gaps](00_CONTROL/LABINS_2026-10-17_ORIGINAL_SOURCE_REVIEW.md).
+
+The aerial photographs are evidence of past visible site conditions, **not measurements of elevation**. Site-specific 2022/2025 FDOT images, permitted grading drawings and surveyed drainage elevations remain outstanding.
+
 ## Four questions for the County
 
 1. Which approved grading and drainage plans, revisions or written exemptions apply to **both** lots?
