@@ -19,3 +19,9 @@
 5. **Human decision still pending:** the independent privacy reviewer and publication approver must record a version-specific disposition for documents/derivatives before any broader neighborhood edition is authorized.
 
 The separate 67-row [technical disposition register](INDIVIDUAL_PRIVACY_TECHNICAL_REVIEW_2026-10-16.csv) records what was actually screened and which binary/rights reviews remain. The mechanical `RELEASE_PRIVACY_CLASSIFICATION.csv` is **not** a publication approval register.
+
+## Reachable-history scanner added for wider technical coverage
+
+The new [read-only historical Git screening utility](../tools/audit_historical_git_refs.py) is invoked by [its dedicated CI workflow](../.github/workflows/historical-git-screen.yml) using a **non-shallow full fetch**. It enumerates every reachable object across available local branches, remote refs and tags and screens underlying Git blob byte content without printing actual account information, tokens or sensitive values. An optional detailed owner-only report is required to be written **outside the public checkout**, with restricted file permissions. A [synthetic regression test](../tools/test_historical_git_screen.py) proves that removed fictional token material is detected without printing it.
+
+This technical scan is wider than the 100-commit initial snapshot, **but still cannot account for unreferenced/garbage-collected objects, copies on forks or mirrors, image pixels, embedded compressed PDF content, or actual token validity**. It is neither an independently reviewed security clearance nor authorization to rewrite history. Refer to the dated `HISTORICAL_GIT_TECHNICAL_SCREEN_2026-10-16.json` summary once the real workflow completes and its source commit is recorded. The issuer must privately review any suspected active credential in historical captures and invalidate it as appropriate. No original-source destruction occurs.

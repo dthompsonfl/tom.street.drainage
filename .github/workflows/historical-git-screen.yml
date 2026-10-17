@@ -1,0 +1,41 @@
+name: Screen all reachable Git history without public secret output
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/historical-git-screen.yml'
+      - 'tools/audit_historical_git_refs.py'
+      - 'tools/test_historical_git_screen.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tom-street-historic-git-screen-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scan-reachable-history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prove synthetic historic credential is detected without disclosure
+        run: python -m unittest discover -s tools -p 'test_historical_git_screen.py' -v
+      - name: Enumerate all fetched refs and stream original blob bytes without logging content
+        run: python -B tools/audit_historical_git_refs.py
+      - name: Preserve only public-safe technical summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: tom-street-public-safe-historic-git-screen-${{ github.sha }}
+          path: 00_CONTROL/HISTORICAL_GIT_TECHNICAL_SCREEN_2026-10-16.json
+          retention-days: 14
+          if-no-files-found: error
+# No archived source blob content, emails, secret values or private path indexes uploaded.

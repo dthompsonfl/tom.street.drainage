@@ -41,6 +41,10 @@ All **21 deliberately started** official-record acquisition, source-preservation
 5. Incoming corrections create a new dated note with prior version and source; disputed factual claims are marked open, not silently deleted. A resident restriction stops **new prospective distributions** until reviewed; historical public Git copies may remain accessible and require separate response.
 6. Future app migration must import immutable evidence identifiers and lineage from [the portable metadata contract](PRIVATE_INTAKE_AND_PORTABLE_METADATA_CONTRACT.md); do not couple IDs to Git issue numbers.
 
+## Historical credential and Git provenance investigation
+
+A dedicated fully fetched ref/blob scan is available in [the historical screening workflow](../.github/workflows/historical-git-screen.yml), with a synthetic test and a non-sensitive summary. If results raise any possible credential or resident-identification concern, only an authorized reviewer should use the script's optional private report outside the checkout to investigate actual historical bytes. Avoid reproducing values, checking validity by unauthorized use, or purging Git history without a recovery and owner-approval plan. A successful automated screen does not clear image pixels, encrypted/compressed source artifacts, unreferenced historical objects or forks.
+
 ## Decision gates
 
 The draft letter author must approve exact words. Each private evidence owner must approve exact use. The source/privacy reviewers document conclusions separately. The publication approver must authorize a pinned package. Two actual independent nontechnical-neighbor tests and required fixes must be recorded before the final neighborhood handoff. None of these actions is completed by creating a blank form or passing CI.
