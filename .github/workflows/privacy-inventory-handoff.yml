@@ -1,0 +1,53 @@
+name: Reconcile current privacy inventory (no publication)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tom-street-classification-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce current mechanical classification
+        run: |
+          python -B 00_CONTROL/tools/classify_for_release.py --write
+          python -B 00_CONTROL/tools/classify_for_release.py --check
+      - name: Report only new or changed public path/hash classifications
+        run: |
+          python - <<'PY'
+          import csv, io, json, pathlib, subprocess
+          path = '00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv'
+          before = subprocess.check_output(['git', 'show', 'HEAD:' + path], text=True)
+          after = pathlib.Path(path).read_text()
+          old = {r['path']:r for r in csv.DictReader(io.StringIO(before))}
+          new = {r['path']:r for r in csv.DictReader(io.StringIO(after))}
+          changed = [r for p,r in sorted(new.items()) if old.get(p) != r]
+          removed = sorted(set(old) - set(new))
+          head = subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          print('CLASSIFICATION_DELTA_JSON=' + json.dumps(
+              {'source_commit':head,'changed':changed,'removed':removed,'rows':len(new)},
+              ensure_ascii=True,separators=(',',':')))
+          PY
+      - name: Preserve the hash-indexed inventory as a review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tom-street-current-mechanical-inventory-${{ github.sha }}
+          path: 00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv
+          retention-days: 7
+          if-no-files-found: error
+# This mechanical inventory is not resident permission or privacy approval.
