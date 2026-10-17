@@ -71,11 +71,19 @@ def book_index(pg, kind, phrase):
         landing=open_search(pg,url)
         r["landed_url"]=landing.split("?")[0]
         fields=[]
-        for element in pg.query_selector_all("#schfrm input[type='text'], #schfrm input:not([type]), #schfrm textarea"):
+        schema=[]
+        for element in pg.query_selector_all("form input, form textarea"):
             try:
-                if element.is_visible() and not element.is_disabled() and not element.is_read_only():
-                    fields.append({"id":element.get_attribute("id"),"name":element.get_attribute("name")})
+                typ=(element.get_attribute("type") or "text").lower()
+                ident={"id":element.get_attribute("id"),
+                       "name":element.get_attribute("name"),"type":typ,
+                       "visible":element.is_visible(),"readonly":element.is_read_only()}
+                if typ in ("text","search","textarea"):
+                    schema.append(ident)
+                    if ident["visible"] and not element.is_disabled() and not ident["readonly"]:
+                        fields.append({"id":ident["id"],"name":ident["name"]})
             except Exception:pass
+        r["search_form_schema"]=schema[:30]
         r["visible_text_form_fields"]=fields
         name_fields=("SearchOnName","SearchComments","SearchOnComment","SearchOnComments","Comments","SearchTerm","LegalDescription")
         identified=next((s for s in name_fields if any(s==v.get("name") or s==v.get("id") for v in fields)),None)
@@ -86,8 +94,13 @@ def book_index(pg, kind, phrase):
                 raise RuntimeError("Unable to fill identified legal/name form control")
             r["filled_form_control"]=identified
         elif len(fields)==1:
-            element=pg.locator("#schfrm input[type='text'], #schfrm input:not([type]), #schfrm textarea").filter(visible=True).first
-            element.fill(phrase);r["filled_form_control"]=fields[0].get("name") or fields[0].get("id")
+            candidates=pg.locator("form input[type='text'], form input[type='search'], form textarea")
+            for i in range(candidates.count()):
+                el=candidates.nth(i)
+                if el.is_visible() and not el.is_disabled() and not el.is_read_only():
+                    el.fill(phrase)
+                    break
+            r["filled_form_control"]=fields[0].get("name") or fields[0].get("id")
         else:
             r["status"]="FORM_FIELDS_UNMAPPED_NEEDS_REVIEW"
             return r
@@ -155,9 +168,22 @@ def plat_lookup():
                 body=json.dumps(data,ensure_ascii=True)
                 q["mentions_target"]=("CRESCENT SHORES" in body.upper() or "00780" in body)
                 q["results_count"]=len(data.get("results",[])) if isinstance(data.get("results"),list) else None
-                # Original agency content from a matching subdivision may be
-                # saved separately later after API response semantics verified.
-                q["status"]="PUBLIC_PLAT_INDEX_RESPONSE_RETRIEVED_NEEDS_SEMANTIC_REVIEW"
+                if q["results_count"]==1 and phrase=="00780":
+                    # Official filtered subdivision-code query; only a single
+                    # target response is preserved as primary source bytes.
+                    entry=data["results"][0]
+                    q["result_field_names"]=sorted(entry.keys()) if isinstance(entry,dict) else []
+                    original=OUT/"ORIGINAL_SRCPA_PLAT_QUERY_00780.json"
+                    body=resp.content
+                    if original.exists() and original.read_bytes()!=body:
+                        raise RuntimeError("Previous subdivision source changed; use dated snapshot")
+                    if not original.exists():original.write_bytes(body)
+                    q["original_source"]={"path":original.relative_to(ROOT).as_posix(),
+                        "bytes":len(body),"sha256":hashlib.sha256(body).hexdigest(),
+                        "official_url":q["endpoint"]}
+                    q["status"]="OFFICIAL_TARGET_SUBDIVISION_INDEX_SAVED_NEEDS_IDENTITY_REVIEW"
+                else:
+                    q["status"]="PUBLIC_PLAT_INDEX_RESPONSE_RETRIEVED_NEEDS_SEMANTIC_REVIEW"
             except Exception as exc:
                 q["status"]="PUBLIC_PLAT_QUERY_FAILED"
                 q["error"]=type(exc).__name__+": "+str(exc)[:160]
