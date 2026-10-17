@@ -1,0 +1,50 @@
+{
+  "retrieved_utc": "2026-10-17T17:27:22.307055+00:00",
+  "year": 2013,
+  "official_grid_identifier": "648138",
+  "exact_download_index": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/LABINS_648138_IMAGE_DOWNLOAD_DISCOVERY_MANIFEST.json",
+  "published_file_count": 3,
+  "archived_file_count": 3,
+  "files": [
+    {
+      "year": 2013,
+      "source_url": "https://www.labins.org/Imagery/2013/Santa_Rosa/sid/OP2013_NC_648138_24.sid",
+      "name": "OP2013_NC_648138_24.sid",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 4021306,
+      "content_type": "image/x-mrsid-image",
+      "bytes": 4021306,
+      "sha256": "957757ba257bf4c019e56c8114c95c69cf8c7732c5cffb6bf45848673ff793f3",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2013/OP2013_NC_648138_24.sid"
+    },
+    {
+      "year": 2013,
+      "source_url": "https://www.labins.org/Imagery/2013/Santa_Rosa/sid/OP2013_NC_648138_24.sdw",
+      "name": "OP2013_NC_648138_24.sdw",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 192,
+      "content_type": "application/octet-stream",
+      "bytes": 192,
+      "sha256": "5ee54b687ed7194dd1f27bcd217624a55033f78a0af6d9b78c69b07c7b877cc8",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2013/OP2013_NC_648138_24.sdw"
+    },
+    {
+      "year": 2013,
+      "source_url": "https://www.labins.org/Imagery/2013/Santa_Rosa/sid/OP2013_NC_648138_24.aux",
+      "name": "OP2013_NC_648138_24.aux",
+      "status": "ORIGINAL_OFFICIAL_BYTES_ARCHIVED_AND_VALIDATED",
+      "declared_bytes": 12789,
+      "content_type": "application/octet-stream",
+      "bytes": 12789,
+      "sha256": "560180b9d8bf531354aec622138647670cbe6a3e566af51f5ed279307ea7be7e",
+      "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_IMAGERY_CELL_648138/2013/OP2013_NC_648138_24.aux"
+    }
+  ],
+  "limitations": [
+    "MrSID and sidecar bytes are original official material; no image transformation.",
+    "Source collection year is not precise photographic flight date.",
+    "Orthoimagery does not measure vertical lot grades or establish builder stormwater responsibility.",
+    "Oversized or inaccessible source files are explicitly excluded, not reported as saved.",
+    "Missing world/aux/xml sidecars prevent complete georeferenced image reuse."
+  ]
+}
