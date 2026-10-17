@@ -1,13 +1,9 @@
 name: Validate aerial mosaic historical source provenance
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_fdep_aerial_mosaic_provenance.py'
-      - '.github/workflows/audit-fdep-aerial-provenance.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: archive-tom-street-fdep-aerial-catalog
   cancel-in-progress: false
@@ -18,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -37,17 +33,8 @@ jobs:
           assert len(d["records"]) == d["services_queried"]
           print("Catalog point responses", d["catalog_features_found"], "/", d["services_queried"])
           PY
-      - name: Preserve checked source catalog responses without modifying existing aerials
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/MOSAIC_CATALOG_PROVENANCE.json
-          if git diff --cached --quiet; then
-            echo "Catalog response was unchanged"
-          else
-            git commit -m "evidence: preserve historical aerial mosaic catalog intersection results [skip ci]"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."

@@ -50,7 +50,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: reconciled-public-packet-main
@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
           fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
@@ -115,22 +115,12 @@ jobs:
           assert len(PdfReader(str(r/'Tom_Street_Reconciled_Public_Meeting_Draft.pdf')).pages)==sum(item['pages'] for item in m['outputs'][:5])
           print('Public PDF QA: PASS')
           PY
-      - name: Commit generated public PDFs to main
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 15_RECONCILED_DRAFTS/pdf/ 18_NEIGHBOR_TOOLKIT/print/*.pdf 00_CONTROL/EVIDENCE_MANIFEST.csv 00_CONTROL/RELEASE_PRIVACY_CLASSIFICATION.csv
-          if git diff --cached --quiet; then
-            echo "No new generated files"
-            exit 0
-          fi
-          git commit -m "docs: rebuild reconciled public draft PDF bundle [skip ci]"
-          for i in 1 2 3; do
-            git pull --rebase origin main || true
-            if git push origin HEAD:main; then
-              echo "pushed"
-              break
-            fi
-            echo "push failed, retry $i"
-            sleep 5
-          done
+      - name: Preserve validated draft PDF outputs as an unapproved review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tom-street-unapproved-public-draft-pdfs
+          path: |
+            15_RECONCILED_DRAFTS/pdf/
+            18_NEIGHBOR_TOOLKIT/print/*.pdf
+          retention-days: 14
+          if-no-files-found: error

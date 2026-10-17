@@ -1,13 +1,9 @@
 name: Preserve original NOAA lidar survey QA reports
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_noaa_survey_reports.py'
-      - '.github/workflows/acquire-noaa-survey-reports.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: preserve-noaa-survey-qa-docs
   cancel-in-progress: false
@@ -18,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -43,17 +39,8 @@ jobs:
                   assert f.exists() and f.stat().st_size == rec['bytes']
           print(d['retrieved_count'], 'reports preserved')
           PY
-      - name: Commit only official source documents and provenance
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/NOAA_SURVEY_REPORTS/
-          if git diff --cached --quiet; then
-            echo "No new official documents"
-          else
-            git commit -m "evidence: preserve NOAA historical survey quality control reports [skip ci]"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."

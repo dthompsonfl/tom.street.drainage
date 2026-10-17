@@ -1,15 +1,10 @@
 name: Acquire original Santa Rosa 2022 imagery and hosted stormwater geometry
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_county_cached_2022.py'
-      - '.github/workflows/acquire-county-cached-2022.yml'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: tom-street-2022-cached-tiles
   cancel-in-progress: false
@@ -21,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -45,14 +40,8 @@ jobs:
           assert "not proof" in "not proof" and d["imagery"]["note"]
           print("Verified saved source and derived-file hashes; imagery:",d["imagery"]["status"],"GIS:",d["stormwater"]["status"])
           PY
-      - name: Preserve public verified material on main without rewriting history
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_2022_CACHED_ORTHOPHOTO/ 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_HOSTED_FEATURE/
-          if git diff --cached --quiet; then echo "No newly acquired public evidence"; exit 0; fi
-          git commit -m "evidence: preserve official County 2022 cache tiles and stormwater GIS [skip ci]"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."

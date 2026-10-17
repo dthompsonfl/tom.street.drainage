@@ -1,15 +1,10 @@
 name: Capture public Clerk plat lookup and parcel refresh
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_clerk_plat_and_parcel_recheck.py'
-      - '.github/workflows/acquire-clerk-plat-and-parcels.yml'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: tom-street-clerk-pa-public-index
   cancel-in-progress: false
@@ -21,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -48,14 +43,8 @@ jobs:
                 assert hashlib.sha256(f.read_bytes()).hexdigest()==v[key]["sha256"]
           print("Validated official parcel original byte counts and SHA256 if obtainable")
           PY
-      - name: Preserve only safe public search indices and parcel exports on main
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m "evidence: preserve official Clerk plat search results and dated parcel refresh [skip ci]"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."

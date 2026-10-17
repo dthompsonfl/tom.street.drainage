@@ -1,13 +1,9 @@
 name: Audit historical public evidence integrity
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/audit_historical_public_evidence.py'
-      - '.github/workflows/audit-historical-evidence.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: audit-historical-public-evidence
   cancel-in-progress: false
@@ -18,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -41,20 +37,11 @@ jobs:
           for x in d['available_but_unacquired']:
               print('MISSING',x.get('source'),x.get('status'))
           PY
-      - name: Commit public manifest verification report without changing originals
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 00_CONTROL/HISTORICAL_PUBLIC_EVIDENCE_INTEGRITY_AUDIT_2026-10-16.json
-          if git diff --cached --quiet; then
-            echo "Evidence audit report unchanged"
-          else
-            git commit -m "audit: preserve actual public historical evidence hash verification [skip ci]"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."
       - name: Enforce source integrity
         run: |
           python - <<'PY'

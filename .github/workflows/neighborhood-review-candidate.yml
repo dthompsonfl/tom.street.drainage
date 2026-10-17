@@ -1,0 +1,62 @@
+name: Verify neighborhood GIS map and unapproved candidate
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/neighborhood-review-candidate.yml'
+      - 'tools/build_neighborhood_reference_map.py'
+      - 'tools/build_neighborhood_review_edition.py'
+      - 'tools/test_neighborhood_review.py'
+      - '19_NEIGHBOR_REVIEW/**'
+      - '15_RECONCILED_DRAFTS/**'
+      - '18_NEIGHBOR_TOOLKIT/print/**'
+      - 'README.md'
+      - 'NEIGHBOR_REVIEW_GUIDE.md'
+      - 'PUBLIC_EVIDENCE_GUIDE.md'
+      - '00_CONTROL/OPEN_QUESTIONS.md'
+      - 'CONTRIBUTING.md'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tom-street-neighbor-candidate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-unapproved-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install fixed PDF verification dependencies
+        run: python -m pip install -r requirements-release.txt
+      - name: Verify existing five-page PDF packet matches authoritative drafts
+        run: python tools/verify_reconciled_release.py
+      - name: Build source-linked static reference map
+        run: python tools/build_neighborhood_reference_map.py
+      - name: Build exactly one pinned, unapproved neighborhood review candidate
+        run: python tools/build_neighborhood_review_edition.py
+      - name: Validate source feature IDs, output hashes, PDF page dimensions, and candidate ZIP
+        run: python -m unittest discover -s tools -p 'test_neighborhood_review.py' -v
+      - name: Upload unapproved candidate, source-linked map and machine verification
+        uses: actions/upload-artifact@v4
+        with:
+          name: tom-street-unapproved-neighborhood-candidate-${{ github.sha }}
+          path: |
+            19_NEIGHBOR_REVIEW/map/*.svg
+            19_NEIGHBOR_REVIEW/map/*.pdf
+            19_NEIGHBOR_REVIEW/map/MAP_MANIFEST.json
+            19_NEIGHBOR_REVIEW/candidates/*_CANDIDATE.zip
+            19_NEIGHBOR_REVIEW/candidates/*.summary.json
+          retention-days: 30
+          if-no-files-found: error
+# Artifact is technical candidate for review, NOT publication or human approval.

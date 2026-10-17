@@ -1,13 +1,9 @@
 name: Capture official DEP stormwater and NWFWMD ERP public records
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_fdep_nwfwmd_public_gis.py'
-      - '.github/workflows/acquire-fdep-nwfwmd-public-gis.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: tom-street-fdep-nwfwmd-2026-source-capture
   cancel-in-progress: false
@@ -18,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -39,14 +35,8 @@ jobs:
               assert len(b)==s["bytes"] and hashlib.sha256(b).hexdigest()==s["sha256"]
           print("PASS public GIS original-byte integrity; no permit applicability assertion")
           PY
-      - name: Commit original public primary captures without force
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 09_ENVIRONMENTAL_PERMITS/PRE_REQUEST_PUBLIC_PERMIT_REFRESH_2026-10-16/
-          if git diff --cached --quiet; then echo "No source changes"; exit 0;fi
-          git commit -m "evidence: preserve FDEP stormwater and NWFWMD permit source queries [skip ci]"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."

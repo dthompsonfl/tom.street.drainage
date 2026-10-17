@@ -1,13 +1,9 @@
 name: Preserve FDOT historical aerial imagery index
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_fdot_aerial_index.py'
-      - '.github/workflows/acquire-fdot-aerial-index.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: preserve-fdot-historical-index
   cancel-in-progress: false
@@ -18,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -30,17 +26,8 @@ jobs:
         id: attempt
         continue-on-error: true
         run: python tools/acquire_fdot_aerial_index.py
-      - name: Commit verified primary PDFs and manifest
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FDOT_AERIAL_ARCHIVE_INDEX/
-          if git diff --cached --quiet; then
-            echo "FDOT catalogues already current"
-          else
-            git commit -m "evidence: preserve FDOT aerial history availability indexes [skip ci]"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."

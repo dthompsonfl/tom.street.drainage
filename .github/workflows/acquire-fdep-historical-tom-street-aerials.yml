@@ -1,13 +1,9 @@
 name: Acquire Florida historical Tom Street aerial exports
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/acquire_fdep_historical_tom_street_aerials.py'
-      - '.github/workflows/acquire-fdep-historical-tom-street-aerials.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: acquire-fdep-historical-tom-street-aerials
   cancel-in-progress: false
@@ -18,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -45,17 +41,8 @@ jobs:
               print(row['service_label'], row['status'], row.get('failure', ''))
           print('ACQUIRED', d['downloaded_validated_count'], 'of', d['requested_count'])
           PY
-      - name: Publish successful exports and explicit failures to main
+      - name: Report source capture for controlled integration
+        if: always()
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/FLORIDA_DEP_HISTORICAL_AERIALS/
-          if git diff --cached --quiet; then
-            echo "No changed public source bytes"
-          else
-            git commit -m "evidence: archive Florida 1994-2021 aerial exports with acquisition manifest [skip ci]"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+          git status --short
+          echo "Unreviewed acquired sources are not automatically committed or publicly republished."
