@@ -25,10 +25,6 @@ I want the County to show us the approved plans, inspect the actual drainage, id
 
 The [original Santa Rosa County Clerk Crescent Shores PLAT A/70 (two sheets, the second labeled 70 A)](02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/ORIGINAL_CLERK_PLAT_BOOK_A_PAGE_70.pdf) has been downloaded and preserved. County [Property Appraiser primary exports](02_PROPERTY_AND_PARCELS/PRE_REQUEST_OCT16_PRIMARY_LOOKUPS/) have reconfirmed 2264/`-1020`, 2268/`-1490`, 2265/`-1180` and 2274/`-1060`. The [original hosted County stormwater problem-area 2068 capture](11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/COUNTY_STORMWATER_HOSTED_FEATURE/) has also been preserved. The plat is historical, **not a site-specific approved engineering or current lot survey**. Individual title/lot divisions, easements, 2022 archived aerial originals, current permit approvals and field drainage measurements remain unverified. [Review these source limits and request gaps](00_CONTROL/PRE_REQUEST_PRIMARY_SOURCE_REVIEW_2026-10-16.md).
 
-## October 17 pre-submission evidence priorities
-
-[Review the critical source and submission checks](00_CONTROL/PRE_SUBMISSION_CRITICAL_EVIDENCE_CHECK_2026-10-17.md). This note identifies the archived 2264 pipe/inlet instruction and passed pre-pour inspection, the still-missing installation records and engineering plans, and obsolete external drafts with incorrect parcel identifiers. No requests have been submitted.
-
 ## What we have confirmed from saved County records
 
 | Property | Parcel number | Saved permit |
