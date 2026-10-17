@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Santa Rosa</origin>
+        <origin>FL</origin>
+        <pubdate>20200124</pubdate>
+        <title>FL Santa Rosa 2019 Accuplus Project</title>
+        <geoform>vector digital data</geoform>
+        <onlink>FLSANT_6in_Delivery_Grid_NEW.shp</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The dataset consists of tiled orthogonal imagery produced from nadir images captured by Pictometry International.  Automatic aerial triangulation (AAT) was performed.  The triangulated frames were rectified to a LiDAR derived DEM.  Mosaicking was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.</abstract>
+      <purpose>Orthogonal image mosaic to support the needs of FL Santa Rosa. Other uses expected.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20190125</begdate>
+          <enddate>20190306</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>Unknown</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-86.827321</westbc>
+        <eastbc>-86.811139</eastbc>
+        <northbc>30.423293</northbc>
+        <southbc>30.409268</southbc>
+      </bounding>
+      <lboundng>
+        <leftbc Sync="TRUE">1235000.000000</leftbc>
+        <rightbc Sync="TRUE">1240000.000000</rightbc>
+        <bottombc Sync="TRUE">520000.000000</bottombc>
+        <topbc Sync="TRUE">525000.000000</topbc>
+      </lboundng>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>EDI Thesaurus</themekt>
+        <themekey>Digital Orthophotography</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Index Service</placekt>
+        <placekey>Santa Rosa</placekey>
+        <placekey>FL</placekey>
+      </place>
+      <temporal>
+        <tempkt>None</tempkt>
+        <tempkey>Current</tempkey>
+      </temporal>
+    </keywords>
+    <accconst>Access to this data is constrained by the license agreements between Pictometry International and FL Santa Rosa.</accconst>
+    <useconst>Use of this data is constrained by the license agreements between Pictometry International and FL Santa Rosa.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Pictometry International Corp.</cntorg>
+          <cntper>Thom S. Salter</cntper>
+        </cntorgp>
+        <cntpos>Director, Photogrammetric Production</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical address</addrtype>
+          <address>25 Methodist Hill Drive</address>
+          <city>Rochester</city>
+          <state>New York</state>
+          <postal>14623</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>585-486-0093</cntvoice>
+        <cntfax>585-486-0098</cntfax>
+        <hours>0900-1700 EST</hours>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows 7 Enterprise Service Pack 1; ESRI ArcCatalog 10.4.1.5686</native>
+    <crossref>
+      <citeinfo>
+        <origin>Santa Rosa</origin>
+        <origin>FL</origin>
+        <pubdate>20200124</pubdate>
+        <title>FL Santa Rosa 2019 Accuplus Project</title>
+        <geoform>vector digital data</geoform>
+        <onlink>FLSANT_6in_Delivery_Grid_NEW.shp</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataIdInfo>
+    <envirDesc Sync="TRUE">Microsoft Windows 2000 Version 5.2 (Build 3790) Service Pack 2; ESRI ArcCatalog 9.3.1.3000</envirDesc>
+    <dataLang>
+      <languageCode Sync="TRUE" value="en" />
+    </dataLang>
+    <idCitation>
+      <resAerial Sync="TRUE">FLSANT_6in_Delivery_Grid_NEW</resAerial>
+      <presForm>
+        <PresFormCd Sync="TRUE" value="005" />
+      </presForm>
+    </idCitation>
+    <spatRpType>
+      <SpatRepTypCd Sync="TRUE" value="001" />
+    </spatRpType>
+    <dataExt>
+      <geoEle>
+        <GeoBndBox esriExtentType="native">
+          <westBL Sync="TRUE">1235000.000000</westBL>
+          <eastBL Sync="TRUE">1240000.000000</eastBL>
+          <northBL Sync="TRUE">525000.000000</northBL>
+          <southBL Sync="TRUE">520000.000000</southBL>
+          <exTypeCode Sync="TRUE">1</exTypeCode>
+        </GeoBndBox>
+      </geoEle>
+    </dataExt>
+    <geoBox esriExtentType="decdegrees">
+      <westBL Sync="TRUE">-86.827321</westBL>
+      <eastBL Sync="TRUE">-86.811139</eastBL>
+      <northBL Sync="TRUE">30.423293</northBL>
+      <southBL Sync="TRUE">30.409268</southBL>
+      <exTypeCode Sync="TRUE">1</exTypeCode>
+    </geoBox>
+  </dataIdInfo>
+  <dataqual>
+    <logic>Dataset is orthoimagery.  Logical consistency is not applicable.</logic>
+    <complete>The 2019 FL Santa Rosa Orthogonal data associated with this metadata file completely covers the project-specified boundary.</complete>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Santa Rosa</origin>
+            <origin>FL</origin>
+            <pubdate>20200124</pubdate>
+            <title>FL Santa Rosa 2019 Accuplus Project</title>
+            <geoform>vector digital data</geoform>
+            <onlink>FLSANT_6in_Delivery_Grid_NEW.shp</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>disc</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20190125</begdate>
+              <enddate>20190306</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>disc</srccitea>
+        <srccontr>N/A</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>GPS/INS processing: Data was post-processed using NGS CORS base station data.</procdesc>
+        <procdate>Unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Pictometry International Corp.</cntorg>
+              <cntper>Thom S. Salter</cntper>
+            </cntorgp>
+            <cntpos>Director, Photogrammetric Production</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical address</addrtype>
+              <address>25 Methodist Hill Drive</address>
+              <city>Rochester</city>
+              <state>New York</state>
+              <postal>14623</postal>
+              <country>USA</country>
+            </cntaddr>
+            <cntvoice>585-486-0093</cntvoice>
+            <cntfax>585-486-0098</cntfax>
+            <hours>0900-1700 EST</hours>
+          </cntinfo>
+        </proccont>
+        <procsv>Applanix POSPac v7.2</procsv>
+      </procstep>
+      <procstep>
+        <procdesc>AeroTriangulation:  Imagery was aerotriangulated using Inpho's Match-AT software.</procdesc>
+        <procdate>Unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Pictometry International Corp.</cntorg>
+              <cntper>Thom S. Salter</cntper>
+            </cntorgp>
+            <cntpos>Director, Photogrammetric Production</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical address</addrtype>
+              <address>25 Methodist Hill Drive</address>
+              <city>Rochester</city>
+              <state>New York</state>
+              <postal>14623</postal>
+              <country>USA</country>
+            </cntaddr>
+            <cntvoice>585-486-0093</cntvoice>
+            <cntfax>585-486-0098</cntfax>
+            <hours>0900-1700 EST</hours>
+          </cntinfo>
+        </proccont>
+        <procsv>Match-AT v8.0</procsv>
+      </procstep>
+      <procstep>
+        <procdesc>Rectification:  Ortho-rectification was performed using Inpho's OrthoMaster software. A LiDAR based DEM was used as the rectification surface.</procdesc>
+        <procdate>Unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Pictometry International Corp.</cntorg>
+              <cntper>Thom S. Salter</cntper>
+            </cntorgp>
+            <cntpos>Director, Photogrammetric Production</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical address</addrtype>
+              <address>25 Methodist Hill Drive</address>
+              <city>Rochester</city>
+              <state>New York</state>
+              <postal>14623</postal>
+              <country>USA</country>
+            </cntaddr>
+            <cntvoice>585-486-0093</cntvoice>
+            <cntfax>585-486-0098</cntfax>
+            <hours>0900-1700 EST</hours>
+          </cntinfo>
+        </proccont>
+        <procsv>OrthoMaster v8.0</procsv>
+      </procstep>
+      <procstep>
+        <procdesc>Mosaicking:  Mosaicking was performed using Inpho's OrthoVista software and SeamEditor was employed for manual corrections.</procdesc>
+        <procdate>Unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Pictometry International Corp.</cntorg>
+              <cntper>Thom S. Salter</cntper>
+            </cntorgp>
+            <cntpos>Director, Photogrammetric Production</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical address</addrtype>
+              <address>25 Methodist Hill Drive</address>
+              <city>Rochester</city>
+              <state>New York</state>
+              <postal>14623</postal>
+              <country>USA</country>
+            </cntaddr>
+            <cntvoice>585-486-0093</cntvoice>
+            <cntfax>585-486-0098</cntfax>
+            <hours>0900-1700 EST</hours>
+          </cntinfo>
+        </proccont>
+        <procsv>OrthoVista v8.0</procsv>
+      </procstep>
+    </lineage>
+    <cloud>0</cloud>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>1149</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <planci>
+          <plance Sync="TRUE">coordinate pair</plance>
+          <plandu Sync="TRUE">US Survey Feet</plandu>
+          <coordrep>
+            <absres>0.5</absres>
+            <ordres>0.5</ordres>
+          </coordrep>
+        </planci>
+        <mapproj>
+          <mapprojn>Lambert Conformal Conic 2SP</mapprojn>
+          <lambertc>
+            <stdparll Sync="TRUE">29.583333333333</stdparll>
+            <stdparll Sync="TRUE">30.750000000000</stdparll>
+            <longcm Sync="TRUE">-84.500000000000</longcm>
+            <latprjo Sync="TRUE">29.000000000000</latprjo>
+            <feast Sync="TRUE">1968500.000000000000</feast>
+            <fnorth Sync="TRUE">0.000000000000</fnorth>
+          </lambertc>
+        </mapproj>
+      </planar>
+      <geodetic>
+        <horizdn Sync="TRUE">north_american_datum_1983</horizdn>
+        <ellips Sync="TRUE">GRS 1980</ellips>
+        <semiaxis Sync="TRUE">6378137</semiaxis>
+        <denflat Sync="TRUE">298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+    <vertdef>
+      <altsys>
+        <altdatum>North American Vertical Datum of 1988</altdatum>
+        <altunits>feet</altunits>
+        <altres>1000.0</altres>
+        <altenc>Implicit coordinate</altenc>
+      </altsys>
+    </vertdef>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>FLSANT_6in_Delivery_Grid_NEW</enttypl>
+        <enttypd>FL Santa Rosa Accuplus Flight Tiling Scheme</enttypd>
+        <enttypds>Pictometry International Corp.</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TILELABEL</attrlabl>
+        <attrdef>Tile Label</attrdef>
+        <attrdefs>Pictometry International Corp.</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Pictometry International Corp.</cntorg>
+          <cntper>Thom S. Salter</cntper>
+        </cntorgp>
+        <cntpos>Director, Photogrammetric Production</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical address</addrtype>
+          <address>25 Methodist Hill Drive</address>
+          <city>Rochester</city>
+          <state>New York</state>
+          <postal>14623</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>585-486-0093</cntvoice>
+        <cntfax>585-486-0098</cntfax>
+        <hours>0900-1700 EST</hours>
+      </cntinfo>
+    </distrib>
+    <resdesc>Downloadable Data</resdesc>
+    <distliab>Distribution of this dataset is constrained by the existing license agreement between the Pictometry International Corp. and FL Santa Rosa.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>TIFF</formname>
+          <transize>0.097</transize>
+        </digtinfo>
+        <digtopt>
+          <offoptn>
+            <offmedia>CD-ROM</offmedia>
+            <reccap>
+              <recden>1</recden>
+              <recdenu>percent</recdenu>
+            </reccap>
+            <recfmt>N/A</recfmt>
+          </offoptn>
+        </digtopt>
+      </digform>
+      <fees>$TBD</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20200124</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Pictometry International Corp.</cntorg>
+          <cntper>Emma Witherwax</cntper>
+        </cntorgp>
+        <cntpos>Aerial Triangulation Manager</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical address</addrtype>
+          <address>25 Methodist Hill Drive</address>
+          <city>Rochester</city>
+          <state>New York</state>
+          <postal>14623</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>585-486-0093</cntvoice>
+        <cntfax>585-486-0098</cntfax>
+        <hours>0900-1700 EST</hours>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metextns>
+      <onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+      <metprof>ESRI Metadata Profile</metprof>
+    </metextns>
+  </metainfo>
+  <Esri>
+    <ModDate>20200124</ModDate>
+    <ModTime>09463900</ModTime>
+  </Esri>
+  <mdDateSt Sync="TRUE">20200124</mdDateSt>
+</metadata>
