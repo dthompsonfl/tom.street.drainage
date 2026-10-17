@@ -20,7 +20,7 @@ From the intended fixed source commit with Python 3.12 and the release requireme
     python tools/build_neighborhood_review_edition.py
     python -m unittest discover -s tools -p 'test_neighborhood_review.py' -v
 
-The generated GIS map is located under 19_NEIGHBOR_REVIEW/map/. The pinned, unapproved ZIP, checksums and status summary are under 19_NEIGHBOR_REVIEW/candidates/. The source commit and its timestamp are recorded inside the edition manifest; timestamp alone is not evidence of publication.
+The generated GIS map is located under 19_NEIGHBOR_REVIEW/map/. The pinned, unapproved ZIP, checksums and status summary are under 19_NEIGHBOR_REVIEW/candidates/. The candidate filename uses the **America/Chicago date of its exact source commit**, plus a source-input fingerprint; the GIS map retains its original source-capture date of 2026-10-16. Rebuilding the same source can change PDF binary metadata, so the immutable identifier for a reviewed candidate is the **complete ZIP SHA-256** in its build summary, not the displayed date alone. The summary records the actual build UTC timestamp; no candidate should be represented as a released edition.
 
 ## Human publication path (not completed)
 

@@ -11,10 +11,12 @@ import json
 import re
 import subprocess
 import zipfile
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DATE = "2026-10-16"
+SOURCE_COMMIT_TIMEZONE = "America/Chicago"
 OUT = ROOT / "19_NEIGHBOR_REVIEW" / "candidates"
 SELECTED = [
     ("NEIGHBOR_REVIEW_GUIDE.md", "Navigation, audience and feedback instructions"),
@@ -65,6 +67,14 @@ def git(*args: str) -> str:
     return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
 
 
+def candidate_date(source_commit_timestamp: str) -> str:
+    """Use the pinned commit's local calendar date, never a hardcoded release date."""
+    instant = datetime.fromisoformat(source_commit_timestamp.replace("Z", "+00:00"))
+    if instant.tzinfo is None:
+        raise ValueError("Git commit timestamp must contain a timezone")
+    return instant.astimezone(ZoneInfo(SOURCE_COMMIT_TIMEZONE)).date().isoformat()
+
+
 def check_source_parity():
     from pypdf import PdfReader
     draft_manifest = json.loads((ROOT / "15_RECONCILED_DRAFTS/pdf/RELEASE_MANIFEST.json").read_text())
@@ -103,8 +113,8 @@ def build():
     if not re.fullmatch(r"[0-9a-f]{40}", source_commit):
         raise RuntimeError("Unable to pin checkout source commit")
     timestamp = git("show", "-s", "--format=%cI", "HEAD")
+    dated_source = candidate_date(timestamp)
     check_source_parity()
-    edition = f"Tom_Street_Neighborhood_Review_{DATE}_v1_{source_commit[:12]}_CANDIDATE"
     contents = {}
     manifest_entries = []
     for path, purpose in SELECTED:
@@ -117,6 +127,9 @@ def build():
             "path": path, "bytes": len(data), "sha256": sha(data),
             "purpose": purpose, "status": "DRAFT_OR_BLANK_MATERIAL",
         })
+    fingerprint_lines = [f"{name}  {sha(data)}" for name, data in sorted(contents.items())]
+    input_fingerprint = sha(("\n".join(fingerprint_lines) + "\n").encode("utf-8"))[:12]
+    edition = f"Tom_Street_Neighborhood_Review_{dated_source}_v1_{source_commit[:12]}_{input_fingerprint}_CANDIDATE"
     intro = READ_ME.replace("STATUS: UNAPPROVED", f"VERSION: {edition}\nSOURCE COMMIT: {source_commit}\nSTATUS: UNAPPROVED")
     contents["START_HERE.txt"] = intro.encode("utf-8")
     manifest_entries.insert(0, {
@@ -128,7 +141,10 @@ def build():
         "edition_id": edition,
         "source_commit": source_commit,
         "source_commit_timestamp": timestamp,
-        "build_timestamp_basis": "fixed source-commit timestamp for byte-reproducible builds",
+        "candidate_date": dated_source,
+        "candidate_date_basis": "America/Chicago calendar date of pinned source commit; not a public release date",
+        "input_fingerprint": input_fingerprint,
+        "build_timestamp_basis": "source-commit timestamp for versioning; actual build UTC is in separate summary",
         "edition_status": "CANDIDATE_NOT_AUTHORIZED_FOR_PUBLIC_DISTRIBUTION",
         "publication_decision": "AWAITING_HUMAN_APPROVAL",
         "author_and_speaker_approval": "PENDING",
@@ -150,9 +166,10 @@ def build():
     data_path = OUT / (edition + ".summary.json")
     import io
     memory = io.BytesIO()
+    zip_day = tuple(int(component) for component in dated_source.split("-"))
     with zipfile.ZipFile(memory, "w") as archive:
         for path in sorted(contents):
-            info = zipfile.ZipInfo(path, date_time=(2026, 10, 16, 12, 0, 0))
+            info = zipfile.ZipInfo(path, date_time=(*zip_day, 12, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, contents[path], compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
@@ -163,6 +180,7 @@ def build():
     summary = {"status": manifest["edition_status"], "edition_id": edition,
                "source_commit": source_commit, "zip_sha256": sha(data),
                "zip_bytes": len(data), "included_file_count": len(contents),
+               "build_timestamp_utc": datetime.now(timezone.utc).isoformat(),
                "human_approval": "PENDING"}
     data_path.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
     print(json.dumps(summary, indent=2))

@@ -15,6 +15,15 @@ on:
       - 'PUBLIC_EVIDENCE_GUIDE.md'
       - '00_CONTROL/OPEN_QUESTIONS.md'
       - 'CONTRIBUTING.md'
+      - 'tools/build_reconciled_packet.py'
+      - 'tools/build_neighbor_toolkit.py'
+      - 'tools/verify_reconciled_release.py'
+      - '11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-16/SANTA_ROSA_COUNTY_PRIMARY_GEOMETRIES.json'
+      - '03_PERMITS_AND_INSPECTIONS/2264_Tom_St/BP-2026-1621_project_by_uid.json'
+      - '03_PERMITS_AND_INSPECTIONS/2268_Tom_St/BP-2026-1612_project_by_uid.json'
+      - '00_CONTROL/EVIDENCE_LEDGER.csv'
+      - '00_CONTROL/SOURCE_REGISTER.csv'
+      - '00_CONTROL/CLAIM_SOURCE_LINKS.csv'
   pull_request:
   workflow_dispatch:
 
@@ -39,7 +48,11 @@ jobs:
           python-version: '3.12'
       - name: Install fixed PDF verification dependencies
         run: python -m pip install -r requirements-release.txt
-      - name: Verify existing five-page PDF packet matches authoritative drafts
+      - name: Rebuild unsigned PDFs and blank forms from editable canonical sources
+        run: |
+          python tools/build_reconciled_packet.py
+          python tools/build_neighbor_toolkit.py
+      - name: Verify regenerated five-page PDF packet and recorded source parity
         run: python tools/verify_reconciled_release.py
       - name: Build source-linked static reference map
         run: python tools/build_neighborhood_reference_map.py

@@ -11,6 +11,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 import build_neighborhood_reference_map as site_map
+import build_neighborhood_review_edition as edition_builder
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -20,6 +21,12 @@ def sha(data: bytes) -> str:
 
 
 class NeighborhoodReferenceTests(unittest.TestCase):
+    def test_candidate_date_tracks_pinned_commit_not_fixed_generator_day(self):
+        self.assertEqual(edition_builder.candidate_date('2026-10-17T00:32:01+00:00'), '2026-10-16')
+        self.assertEqual(edition_builder.candidate_date('2026-10-17T06:32:01+00:00'), '2026-10-17')
+        with self.assertRaises(ValueError):
+            edition_builder.candidate_date('2026-10-17T00:32:01')
+
     def test_gis_features_are_official_identified_records(self):
         data, caps, parcels, road = site_map.extract()
         self.assertEqual(set(parcels), {"2264", "2265", "2268"})
@@ -70,6 +77,12 @@ class NeighborhoodReferenceTests(unittest.TestCase):
             self.assertFalse(m["resident_private_originals_included"])
             self.assertFalse(m["government_originals_included"])
             self.assertIn(m["source_commit"][:12], files[0].name)
+            self.assertEqual(m["candidate_date"], edition_builder.candidate_date(m["source_commit_timestamp"]))
+            self.assertIn(m["candidate_date"], files[0].name)
+            self.assertIn(m["input_fingerprint"], files[0].name)
+            material = [f"{p}  {sha(z.read(p))}" for p, _ in sorted(edition_builder.SELECTED)]
+            input_fingerprint = sha(("\n".join(material) + "\n").encode("utf-8"))[:12]
+            self.assertEqual(m["input_fingerprint"], input_fingerprint)
             self.assertIn(m["source_commit"], z.read("START_HERE.txt").decode())
             self.assertEqual(len(m["included_files"]), len(names) - 2)
             self.assertIn("19_NEIGHBOR_REVIEW/map/Tom_Street_GIS_Reference_2026-10-16.pdf", names)

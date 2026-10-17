@@ -51,6 +51,13 @@ class TestWorkflowGovernance(unittest.TestCase):
             self.assertIn("retention-days: 7", workflow, p.name)
             self.assertNotIn("contents: write", workflow, p.name)
 
+    def test_candidate_rebuilds_authoritative_pdfs_before_verification(self):
+        workflow = (WORKFLOWS / "neighborhood-review-candidate.yml").read_text(encoding="utf-8")
+        for program in ("tools/build_reconciled_packet.py", "tools/build_neighbor_toolkit.py"):
+            self.assertIn(program, workflow)
+            self.assertLess(workflow.index(program), workflow.index("tools/verify_reconciled_release.py"))
+        self.assertIn("SANTA_ROSA_COUNTY_PRIMARY_GEOMETRIES.json", workflow)
+
     def test_source_acquisitions_are_operator_initiated_only(self):
         for p in WORKFLOWS.glob("*.yml"):
             if not (p.name.startswith("acquire-") or p.name in {
