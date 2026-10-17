@@ -1,0 +1,155 @@
+{
+  "captured_utc": "2026-10-17T17:14:57.624396+00:00",
+  "location_query": "Santa Rosa County, Florida",
+  "official_grid_index": {
+    "source_url": "https://ftp.labins.org/CountyGridMaps/SantaRosa.pdf",
+    "status": "ORIGINAL_GRID_PDF_SAVED_AND_HASHED",
+    "path": "11_HYDROLOGY_AND_HAZARD/SRC_PUBLIC_GIS_2026-10-17/LABINS_SANTA_ROSA/ORIGINAL_LABINS_SANTA_ROSA_HIRES_GRID_MAP.pdf",
+    "sha256": "ef95acfb412961dc129ff4aabf285a72fdb748ef767c701626c684ce32961d8f",
+    "bytes": 1412537,
+    "page_count": 1,
+    "meaning": "Official imagery tile index map, not actual 2022 or 2025 image"
+  },
+  "inventory": {
+    "index_url": "https://www.labins.org/mapping_data/aerials/image_inventory.cfm",
+    "status": "PUBLIC_SOURCE_PAGE_ACCESSED",
+    "search_attempts": [
+      {
+        "year": "2022",
+        "selected_fields": [
+          "sel_county",
+          "sel_year"
+        ],
+        "status": "RESULT_PAGE_RETURNED_RECORDS_NEED_INTERPRETATION",
+        "final_url": "https://www.labins.org/mapping_data/aerials/inventory_search.cfm",
+        "county_rows": [],
+        "matching_row_count": 0
+      },
+      {
+        "year": "2025",
+        "selected_fields": [
+          "sel_county"
+        ],
+        "status": "RESULT_PAGE_RETURNED_RECORDS_NEED_INTERPRETATION",
+        "final_url": "https://www.labins.org/mapping_data/aerials/inventory_search.cfm",
+        "county_rows": [
+          {
+            "columns": [
+              "2019",
+              "Santa Rosa",
+              "",
+              "\u2714 0.5 ft Jan-Mar 2019 SPN NAD83 ready",
+              "0.5 ft",
+              "Jan-Mar 2019",
+              "SPN",
+              "NAD83",
+              "ready"
+            ]
+          },
+          {
+            "columns": [
+              "2013",
+              "Santa Rosa",
+              "Link",
+              "\u2714 1 ft Oct 2012 SPN NAD83 ready",
+              "1 ft",
+              "Oct 2012",
+              "SPN",
+              "NAD83",
+              "ready"
+            ]
+          },
+          {
+            "columns": [
+              "2010",
+              "Santa Rosa",
+              "Link",
+              "\u2714 1 ft Nov 2009 SPN NAD83 ready",
+              "1 ft",
+              "Nov 2009",
+              "SPN",
+              "NAD83",
+              "ready"
+            ]
+          },
+          {
+            "columns": [
+              "2010",
+              "Santa Rosa",
+              "Link",
+              "\u2714 1 m 2010 UTM16 NAD83 ready",
+              "1 m",
+              "2010",
+              "UTM16",
+              "NAD83",
+              "ready"
+            ]
+          },
+          {
+            "columns": [
+              "2007",
+              "Santa Rosa",
+              "Link",
+              "\u2714 1 ft Nov 2006 SPN NAD83 ready",
+              "1 ft",
+              "Nov 2006",
+              "SPN",
+              "NAD83",
+              "ready"
+            ]
+          }
+        ],
+        "matching_row_count": 5
+      }
+    ],
+    "published_form_schema": [
+      {
+        "method": "GET",
+        "action": "inventory_search.cfm",
+        "controls": [
+          {
+            "name": "sel_county",
+            "id": null,
+            "options_count": 68,
+            "santa_rosa_options": [
+              [
+                "Santa_Rosa",
+                "Santa Rosa"
+              ]
+            ],
+            "years_present": []
+          },
+          {
+            "name": "sel_year",
+            "id": null,
+            "options_count": 20,
+            "santa_rosa_options": [],
+            "years_present": [
+              "2010",
+              "2011",
+              "2012",
+              "2013",
+              "2014",
+              "2015",
+              "2016",
+              "2017",
+              "2018",
+              "2019",
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "No individual Tom Street frame/tile is identified solely by county dataset availability.",
+    "The official 2022/2025 inventory years do not prove particular photographic flight dates or local coverage.",
+    "A grid PDF is an index, not original photographic evidence.",
+    "The public inventory's derived search rows may be incomplete due to Javascript/session filtering."
+  ]
+}
